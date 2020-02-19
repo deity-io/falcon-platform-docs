@@ -1,91 +1,129 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "DEITY Falcon Platform",
+  tagline: "Documentation",
+  url: "https://deity.io",
+  baseUrl: "/",
+  favicon: "img/favicon.png",
+  organizationName: "DEITY", // Usually your GitHub org/user name.
+  projectName: "falcon-platform-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: "Deity Platform",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Deity Platform Logo",
+        src: "img/deity-logo.svg"
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: "docs/getting-started/intro", label: "Docs", position: "left" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+          href: "https://github.com/deity-io/deity-cloud",
+          label: "GitHub",
+          position: "right"
+        }
+      ]
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Falcon Platform Documentation",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
+              label: "Getting Started",
+              to: "docs/getting-started/intro"
+            }
+          ]
         },
         {
-          title: 'Community',
+          title: "More Documentation",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Falcon",
+              href: "https://falcon.deity.io/docs/getting-started/intro"
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-          ],
+              label: "Deity Cloud",
+              href: "https://falcon.deity.io/docs/getting-started/intro"
+            }
+          ]
         },
         {
-          title: 'Social',
+          title: "Community",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Community Chat",
+              href: "http://slack.deity.io/"
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
+              label: "Twitter",
+              href: "https://twitter.com/deity_pwa"
+            }
+          ]
         },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Status",
+              href: "https://status.deity.io/"
+            },
+            {
+              label: "Blog",
+              href: "https://medium.com/deity-io"
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/deity-io/deity-cloud"
+            },
+            {
+              html: `
+                <a
+                  class="github-button"
+                  href="https://github.com/deity-io/deity-cloud"
+                  data-icon="octicon-star"
+                  data-count-href="/deity-io/deity-cloud/stargazers"
+                  data-show-count="true"
+                  data-count-aria-label="# stargazers on GitHub"
+                  aria-label="Star this project on GitHub">
+                  Star
+                </a>
+              `
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      logo: {
+        alt: "DEITY Falcon Platform Logo",
+        src: "img/deity-logo.svg"
+      },
+      copyright: `Copyright © ${new Date().getFullYear()} Deity B.V.`
     },
+    image: "img/deity-logo.svg",
+
+    algolia: {
+      apiKey: "873c5f29d2334cb9c44ef4a407d8b269",
+      indexName: "deity_cloud",
+      algoliaOptions: {}
+    },
+
+    googleAnalytics: {
+      trackingID: "UA-115774797-2"
+    }
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/deity-io/deity-cloud/edit/master/website"
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
+          customCss: require.resolve("./src/css/custom.css")
+        }
+      }
+    ]
   ],
+
+  scripts: ["https://buttons.github.io/buttons.js"]
 };

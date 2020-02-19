@@ -10,6 +10,16 @@
   overflow: hidden;
 }
 
+.heroNote {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.heroNote__link {
+  color: white;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
