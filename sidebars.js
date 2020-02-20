@@ -6,7 +6,12 @@
  */
 
 module.exports = {
-  someSidebar: {
-    'Getting Started': ['getting-started/intro']
+  falconClientSidebar: {
+    'Getting Started': [
+      'falcon-client/getting-started/intro'
+    ]
+  },
+  cloudSidebar: {
+    'Getting Started': ['cloud/getting-started/intro']
   },
 };

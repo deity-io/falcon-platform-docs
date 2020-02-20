@@ -1,6 +1,6 @@
 module.exports = {
-  title: "DEITY Falcon Platform",
-  tagline: "Documentation",
+  title: "DEITY Documentation",
+  tagline: "Empowering Ecommerce Excellence",
   url: "https://deity.io",
   baseUrl: "/",
   favicon: "img/favicon.png",
@@ -8,15 +8,16 @@ module.exports = {
   projectName: "falcon-platform-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "Deity Platform",
+      title: "DEITY Documentation",
       logo: {
-        alt: "Deity Platform Logo",
+        alt: "DEITY Logo",
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "docs/getting-started/intro", label: "Docs", position: "left" },
+        { to: "docs/falcon-client/getting-started/intro", label: "Falcon Client", position: "left" },
+        { to: "docs/cloud/getting-started/intro", label: "DEITY Cloud", position: "left" },
         {
-          href: "https://github.com/deity-io/deity-cloud",
+          href: "https://github.com/deity-io/",
           label: "GitHub",
           position: "right"
         }
@@ -26,29 +27,24 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Falcon Platform Documentation",
+          title: "Our documentation",
           items: [
             {
-              label: "Getting Started",
-              to: "docs/getting-started/intro"
-            }
-          ]
-        },
-        {
-          title: "More Documentation",
-          items: [
-            {
-              label: "Falcon",
-              href: "https://falcon.deity.io/docs/getting-started/intro"
+              label: "Falcon Client",
+              to: "docs/falcon-client/getting-started/intro"
             },
             {
-              label: "Deity Cloud",
+              label: "DEITY cloud",
+              to: "docs/cloud/getting-started/intro"
+            },
+            {
+              label: "Falcon V1",
               href: "https://falcon.deity.io/docs/getting-started/intro"
             }
           ]
         },
         {
-          title: "Community",
+          title: "Community & Help",
           items: [
             {
               label: "Community Chat",
@@ -57,12 +53,20 @@ module.exports = {
             {
               label: "Twitter",
               href: "https://twitter.com/deity_pwa"
+            },
+            {
+              label: "Contact Us",
+              href: "https://deity.io/contact"
             }
           ]
         },
         {
-          title: "More",
+          title: "Useful Links",
           items: [
+            {
+              label: "Marketing Site",
+              href: "https://deity.io/"
+            },
             {
               label: "Status",
               href: "https://status.deity.io/"
@@ -73,30 +77,25 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/deity-io/deity-cloud"
-            },
+              href: "https://github.com/deity-io/"
+            }
+          ]
+        },
+        {
+          title: "Legal",
+          items: [
             {
-              html: `
-                <a
-                  class="github-button"
-                  href="https://github.com/deity-io/deity-cloud"
-                  data-icon="octicon-star"
-                  data-count-href="/deity-io/deity-cloud/stargazers"
-                  data-show-count="true"
-                  data-count-aria-label="# stargazers on GitHub"
-                  aria-label="Star this project on GitHub">
-                  Star
-                </a>
-              `
+              label: "Privacy Policy",
+              href: "https://deity.io/privacy-policy"
             }
           ]
         }
       ],
       logo: {
-        alt: "DEITY Falcon Platform Logo",
+        alt: "DEITY Logo",
         src: "img/deity-logo.svg"
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Deity B.V.`
+      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`
     },
     image: "img/deity-logo.svg",
 
@@ -123,7 +122,5 @@ module.exports = {
         }
       }
     ]
-  ],
-
-  scripts: ["https://buttons.github.io/buttons.js"]
+  ]
 };

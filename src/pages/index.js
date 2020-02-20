@@ -8,35 +8,35 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>What is Falcon Platform?</>,
+    title: <>Falcon Platform</>,
     imageUrl: 'img/deity-logo.svg',
     description: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </>
     ),
   },
   {
-    title: <>Who is it for?</>,
+    title: <>DEITY Cloud</>,
     imageUrl: 'img/deity-logo.svg',
     description: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </>
     ),
   },
   {
-    title: <>How much does it cost?</>,
+    title: <>Falcon Client</>,
     imageUrl: 'img/deity-logo.svg',
     description: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
@@ -53,11 +53,11 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Documentation for Deity Cloud"
+      description="DEITY documentation and user guides"
     >
       <header className={classnames("hero hero--theme", styles.heroBanner)}>
         <div className="container">
@@ -69,27 +69,27 @@ function Home() {
                 "button button--outline button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/getting-started/intro")}
+              to="https://deity.io"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Get Started
+              What is DEITY?
             </Link>
           </div>
           <p className={styles.heroNote}>
-            Falcon Platform is an enterprise product, please{" "}
-            <Link
+            If you need help please <Link
               to="https://deity.io/contact"
               className={styles.heroNote__link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               contact our sales team
-            </Link>{" "}
-            to get started. You can find our{" "}
-            <Link
+            </Link>. If you're looking for our Falcon V1 docs, <Link
               to="https://falcon.deity.io/docs/getting-started/intro"
               className={styles.heroNote__link}
-            >
-              open source version here
-            </Link>
-            .
+              target="_blank"
+              rel="noopener noreferrer"
+            >find them here.</Link>
           </p>
         </div>
       </header>
