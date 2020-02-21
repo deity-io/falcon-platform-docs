@@ -15,7 +15,7 @@ module.exports = {
       },
       links: [
         { to: "docs/falcon-client/getting-started/intro", label: "Falcon Client", position: "left" },
-        { to: "docs/cloud/getting-started/intro", label: "DEITY Cloud", position: "left" },
+        { to: "docs/cloud/overview/about", label: "DEITY Cloud", position: "left" },
         {
           href: "https://github.com/deity-io/",
           label: "GitHub",
@@ -35,7 +35,7 @@ module.exports = {
             },
             {
               label: "DEITY cloud",
-              to: "docs/cloud/getting-started/intro"
+              to: "docs/cloud/overview/about"
             },
             {
               label: "Falcon V1",
@@ -100,7 +100,7 @@ module.exports = {
     image: "img/deity-logo.svg",
 
     algolia: {
-      apiKey: "873c5f29d2334cb9c44ef4a407d8b269",
+      apiKey: "-",
       indexName: "deity_cloud",
       algoliaOptions: {}
     },

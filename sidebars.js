@@ -12,6 +12,18 @@ module.exports = {
     ]
   },
   cloudSidebar: {
-    'Getting Started': ['cloud/getting-started/intro']
+    'Overview': [
+      'cloud/overview/about',
+      'cloud/overview/technical',
+      'cloud/overview/pricing'
+    ],
+    'Getting Started': [
+      'cloud/getting-started/prerequisites',
+      'cloud/getting-started/account'
+    ],
+    'Support': [
+      'cloud/support/contact',
+      'cloud/support/faqs'
+    ]
   },
 };
