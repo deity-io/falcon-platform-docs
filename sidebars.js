@@ -19,7 +19,9 @@ module.exports = {
     ],
     'Getting Started': [
       'cloud/getting-started/prerequisites',
-      'cloud/getting-started/account'
+      'cloud/getting-started/account',
+      'cloud/getting-started/setup',
+      'cloud/getting-started/dcloud'
     ],
     'Support': [
       'cloud/support/contact',

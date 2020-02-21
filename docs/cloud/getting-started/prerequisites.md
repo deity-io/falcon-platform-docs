@@ -12,3 +12,8 @@ sidebar_label: Prerequisites
 ## Technical Requirements
 
 - Node (Minimum requirement is version 8.10). <a href="https://nodejs.org/en/download/" target="_blank" rel="noreferrer noopener">How to install Node</a>.
+
+
+:::note Are you using Falcon Platform?
+If you're using **Falcon platform** you'll need an auth token so you can access packages from <a href="https://npm.deity.io" target="_blank" rel="noreferrer noopener">https://npm.deity.io</a>. 
+:::
