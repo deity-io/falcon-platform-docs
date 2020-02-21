@@ -1,4 +1,11 @@
-# Website
+# DEITY Documentation
+
+## Overview
+
+This repository contains the documentation for DEITY services, including DEITY cloud, Falcon Client and Falcon Server.
+
+
+## How the docs work
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
