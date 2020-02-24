@@ -20,8 +20,8 @@ module.exports = {
     'Getting Started': [
       'cloud/getting-started/prerequisites',
       'cloud/getting-started/account',
-      'cloud/getting-started/repository-access',
-      'cloud/getting-started/setup',
+      'cloud/getting-started/installation',
+      'cloud/getting-started/repository',
       'cloud/getting-started/dcloud'
     ],
     'Support': [
