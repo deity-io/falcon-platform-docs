@@ -15,7 +15,7 @@ module.exports = {
       },
       links: [
         { to: "docs/falcon-client/getting-started/intro", label: "Falcon Client", position: "left" },
-        { to: "docs/cloud/overview/about", label: "DEITY Cloud", position: "left" },
+        { to: "docs/cloud/overview/about", label: "Falcon Cloud", position: "left" },
         {
           href: "https://github.com/deity-io/",
           label: "GitHub",
@@ -34,7 +34,7 @@ module.exports = {
               to: "docs/falcon-client/getting-started/intro"
             },
             {
-              label: "Cloud",
+              label: "Falcon Cloud",
               to: "docs/cloud/overview/about"
             },
             {

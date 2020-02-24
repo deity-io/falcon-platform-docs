@@ -24,6 +24,9 @@ module.exports = {
       'cloud/getting-started/repository',
       'cloud/getting-started/dcloud'
     ],
+    'Guides & Tutorials': [
+      'cloud/guides/setup'
+    ],
     'Support': [
       'cloud/support/contact',
       'cloud/support/faqs'

@@ -66,14 +66,6 @@ function Home() {
         </div>
       </header>
       <main>
-        <section className={styles.features}>
-          <div className="container centered">
-            <div className="row">
-              <h3>Looking for Falcon V1 docs?</h3>
-              <p></p>
-            </div>
-          </div>
-        </section>
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
@@ -85,6 +77,14 @@ function Home() {
             </div>
           </section>
         )}
+        <section className={styles.infoBanner}>
+          <div className="container">
+            <div className={styles.infoBanner__content}>
+              <h3>Looking for Falcon V1 docs?</h3>
+              <p>If you're using Falcon V1 the docs can be found <Link href="https://falcon.deity.io/docs/getting-started/intro" target="_blank" rel="noreferrer noopener">here</Link></p>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );
