@@ -1,6 +1,6 @@
 module.exports = {
-  title: "DEITY Documentation",
-  tagline: "Empowering Ecommerce Excellence",
+  title: "Falcon Platform",
+  tagline: "Documentation",
   url: "https://deity.io",
   baseUrl: "/",
   favicon: "img/favicon.png",
@@ -8,7 +8,7 @@ module.exports = {
   projectName: "falcon-platform-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "DEITY Documentation",
+      title: "Falcon Platform Documentation",
       logo: {
         alt: "DEITY Logo",
         src: "img/deity-logo.svg"
@@ -34,7 +34,7 @@ module.exports = {
               to: "docs/falcon-client/getting-started/intro"
             },
             {
-              label: "DEITY cloud",
+              label: "Cloud",
               to: "docs/cloud/overview/about"
             },
             {
