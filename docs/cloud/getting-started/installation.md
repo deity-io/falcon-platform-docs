@@ -16,7 +16,7 @@ npm i -g dcloud
 
 Adding `-g` will install it globally so you can use it where ever you want.
 
-![Installing DCloud](/static/img/docs/cloud/npm-install-dcloud.gif)
+![Installing DCloud](/img/docs/cloud/npm-install-dcloud.gif)
 
 To test it's working run `dcloud`. You should list a list of available commands.
 
@@ -32,7 +32,7 @@ dcloud login
 
 You will be prompted to add your cloud credentials.
 
-![DCloud Login](/static/img/docs/cloud/dcloud-login.png)
+![DCloud Login](/img/docs/cloud/dcloud-login.png)
 
 To check you're logged in correctly run `whoami`
 

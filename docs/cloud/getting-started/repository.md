@@ -25,14 +25,14 @@ dcloud repo:list -i
 - Go to `https://github.com/<accountName>/<repoName>/settings/keys/new`
 - Add your key
 
-![GitHub SSH access](/static/img/docs/cloud/github-ssh-key.png)
+![GitHub SSH access](/img/docs/cloud/github-ssh-key.png)
 
 ### Adding a web hook
 
 - Go to `https://github.com/<accountName>/<repoName>/settings/hooks/new`
 - Add the webhook provided by `dcloud repo:list -i`.
 
-![GitHub WebHook](/static/img/docs/cloud/github-webhook.png)
+![GitHub WebHook](/img/docs/cloud/github-webhook.png)
 
 ---
 ## Bitbucket
@@ -42,7 +42,7 @@ dcloud repo:list -i
 - Go to `https://bitbucket.org/<accountName>/<repoName>/admin/access-keys/`
 - Add your key
 
-![BitBucket SSH access - add](/static/img/docs/cloud/bitbucket-ssh-key-2.png)
+![BitBucket SSH access - add](/img/docs/cloud/bitbucket-ssh-key-2.png)
 
 ### Adding a web hook
 
@@ -57,7 +57,7 @@ Coming soon
 - Open the **Deploy keys** section
 - Add your key
 
-![GitLab SSH access](/static/img/docs/cloud/gitlab-ssh-key.png)
+![GitLab SSH access](/img/docs/cloud/gitlab-ssh-key.png)
 
 ### Adding a web hook
 
