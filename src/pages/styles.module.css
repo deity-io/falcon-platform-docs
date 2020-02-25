@@ -31,6 +31,8 @@
 
 .about {
   padding: 2rem;
+  background: white;
+  color: black;
 }
 
 @media screen and (min-width: 966px) {
@@ -67,6 +69,7 @@
   background: whitesmoke;
   padding: 2rem 0;
   width: 100%;
+  color: black;
 }
 
 .infoBanner__content {
