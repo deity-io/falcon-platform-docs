@@ -8,7 +8,14 @@
 module.exports = {
   falconClientSidebar: {
     'Getting Started': [
-      'falcon-client/getting-started/intro'
+      'client/getting-started/intro'
+    ],
+    'Guides & Tutorials': [
+      'client/guides/setup'
+    ],
+    'Support': [
+      'client/support/contact',
+      'client/support/faqs'
     ]
   },
   cloudSidebar: {

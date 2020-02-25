@@ -14,7 +14,7 @@ module.exports = {
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "docs/falcon-client/getting-started/intro", label: "Falcon Client", position: "left" },
+        { to: "docs/client/getting-started/intro", label: "Falcon Client", position: "left" },
         { to: "docs/cloud/overview/about", label: "Falcon Cloud", position: "left" },
         {
           href: "https://github.com/deity-io/",
@@ -31,7 +31,7 @@ module.exports = {
           items: [
             {
               label: "Falcon Client",
-              to: "docs/falcon-client/getting-started/intro"
+              to: "docs/client/getting-started/intro"
             },
             {
               label: "Falcon Cloud",
