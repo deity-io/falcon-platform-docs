@@ -159,7 +159,7 @@ const EnvironmentLayout = ({ environments }) => {
 const PlanLayout = ({ plan }) => {
   const { features, name, popular, environments, price } = plan;
   return (
-    <article className={classnames(styles.plan, popular && styles.popularPlan)}>
+    <article className={classnames(styles.plan, popular && `${styles.popularPlan} pricePlan--highlight`)}>
       {popular &&
         <span className={styles.flag}>Popular</span>
       }
