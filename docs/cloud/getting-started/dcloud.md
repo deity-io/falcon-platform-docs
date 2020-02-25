@@ -1,7 +1,7 @@
 ---
 id: dcloud
-title: DCloud Commands
-sidebar_label: DCloud Commands
+title: CLI Commands
+sidebar_label: CLI Commands
 ---
 
 ## Build List
