@@ -4,22 +4,17 @@
  */
 
 .heroBanner {
-  padding: 6rem 0;
+  padding: 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+
 }
 
-@media screen and (max-width: 966px) {
+@media screen and (min-width: 966px) {
   .heroBanner {
-    padding: 4rem;
+    padding: 6rem 0;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .features {
@@ -32,6 +27,40 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.about {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 966px) {
+  .about {
+    padding: 4rem 0;
+  }
+}
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.aboutColumn {
+  width: 100%;
+}
+
+@media screen and (min-width: 966px) {
+  .aboutColumn {
+    width: 50%;
+  }
+}
+
+.aboutImg {
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .infoBanner {
