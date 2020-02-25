@@ -65,6 +65,12 @@
   display: block;
 }
 
+.architectureContainer {
+  background: white;
+  padding: 4rem;
+  color: black;
+}
+
 .infoBanner {
   background: whitesmoke;
   padding: 2rem 0;
