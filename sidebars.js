@@ -48,8 +48,14 @@ module.exports = {
     'Overview': [
       'integrations/overview/about'
     ],
+    'Our Integrations': [
+      'integrations/our-integrations/algolia',
+      'integrations/our-integrations/bigcommerce',
+      'integrations/our-integrations/magento2',
+      'integrations/our-integrations/stripe'
+    ],
     'Getting Started': [
-      'integrations/getting-started/intro'
+      'integrations/getting-started/custom'
     ],
     'Guides & Tutorials': [
       'integrations/guides/setup'
