@@ -6,19 +6,19 @@
  */
 
 module.exports = {
-  falconClientSidebar: {
+  falconPlatformSidebar: {
     'Overview': [
-      'client/overview/about'
+      'platform/overview/about'
     ],
     'Getting Started': [
-      'client/getting-started/intro'
+      'platform/getting-started/intro'
     ],
     'Guides & Tutorials': [
-      'client/guides/setup'
+      'platform/guides/setup'
     ],
     'Support': [
-      'client/support/contact',
-      'client/support/faqs'
+      'platform/support/contact',
+      'platform/support/faqs'
     ]
   },
   cloudSidebar: {

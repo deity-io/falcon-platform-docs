@@ -1,6 +1,6 @@
 ---
 id: about
-title: What is Falcon Client?
+title: What is Falcon Platform?
 sidebar_label: About
 ---
 

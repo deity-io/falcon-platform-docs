@@ -1,6 +1,6 @@
 ---
 id: about
-title: What are integrations?
+title: Integrating with Falcon Platform
 sidebar_label: About
 ---
 

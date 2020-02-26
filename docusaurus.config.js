@@ -14,7 +14,7 @@ module.exports = {
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "docs/client/overview/about", label: "Falcon Client", position: "right" },
+        { to: "docs/platform/overview/about", label: "Falcon Platform", position: "right" },
         { to: "docs/cloud/overview/about", label: "Falcon Cloud", position: "right" },
         { to: "docs/integrations/overview/about", label: "Integrations", position: "right" }
       ]
@@ -26,8 +26,8 @@ module.exports = {
           title: "Our documentation",
           items: [
             {
-              label: "Falcon Client",
-              to: "docs/client/overview/about"
+              label: "Falcon Platform",
+              to: "docs/platform/overview/about"
             },
             {
               label: "Falcon Cloud",
