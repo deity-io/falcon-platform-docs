@@ -15,5 +15,5 @@ sidebar_label: Prerequisites
 
 
 :::note Important
-To use **Falcon platform** for your site you'll need an **auth token** so you can access packages from <a href="https://npm.deity.io" target="_blank" rel="noreferrer noopener">https://npm.deity.io</a>. This will be provided when you create an account.
+To use **Falcon platform V2** for your site you'll need an **auth token** so you can access packages from <a href="https://npm.deity.io" target="_blank" rel="noreferrer noopener">https://npm.deity.io</a>. This will be provided when you create an account.
 :::
