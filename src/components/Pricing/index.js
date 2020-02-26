@@ -194,7 +194,7 @@ const PlanLayout = ({ plan }) => {
       </div>
       <div className={styles.price}>
         <p className={styles.priceAmount}>&euro;{price}</p>
-        <p className={styles.priceNote}>(per month)</p>
+        <p className={styles.priceNote}>per month</p>
       </div>
     </article>
   )
