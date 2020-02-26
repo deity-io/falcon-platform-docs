@@ -29,7 +29,7 @@ const PricePlans = [
   },
   {
     name: 'Basic',
-    price: 200,
+    price: 199,
     features: [1, 2, 3, 4, 5, 6],
     popular: false,
     environments: [
@@ -59,7 +59,7 @@ const PricePlans = [
   ,
   {
     name: 'Extra',
-    price: 200,
+    price: 499,
     features: [1, 2, 3, 4, 5, 6],
     popular: true,
     environments: [
@@ -88,7 +88,7 @@ const PricePlans = [
   },
   {
     name: 'Plus',
-    price: 300,
+    price: 999,
     features: [1, 2, 3, 4, 5, 6],
     popular: false,
     environments: [
