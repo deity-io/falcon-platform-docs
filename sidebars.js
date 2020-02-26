@@ -11,7 +11,9 @@ module.exports = {
       'platform/overview/about'
     ],
     'Getting Started': [
-      'platform/getting-started/intro'
+      'platform/getting-started/prerequisites',
+      'platform/getting-started/npm',
+      'platform/getting-started/create'
     ],
     'Guides & Tutorials': [
       'platform/guides/setup'
