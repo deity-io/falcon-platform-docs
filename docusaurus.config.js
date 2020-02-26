@@ -14,9 +14,9 @@ module.exports = {
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right" },
+        //{ to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right" },
         { to: "/docs/cloud/overview/about", label: "Falcon Cloud", position: "right" },
-        { to: "/docs/integrations/overview/about", label: "Integrations", position: "right" }
+        // { to: "/docs/integrations/overview/about", label: "Integrations", position: "right" }
       ]
     },
     footer: {
