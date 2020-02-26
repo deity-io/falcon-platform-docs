@@ -36,7 +36,7 @@ dcloud build:info [id]
 - `-w` Watch a build (if it's not finished)
 - `-o` Show build output to the console
 
-**Example: Watch build 20**
+**Example: Watch the build with id 20**
 
 ```javascript
 dcloud build:info 20 -w
