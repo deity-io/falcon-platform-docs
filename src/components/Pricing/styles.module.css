@@ -29,17 +29,30 @@
 }
 
 .flag {
-  color: white;
-  background: #7d9a2e;
-  text-transform: uppercase;
   position: absolute;
-  top: 10px;
+  overflow: hidden;
+  top: -2px;
   right: -2px;
-  display: block;
-  padding: 2px 10px;
-  text-align: center;
-  font-weight: 600;
+  width: 150px;
+  height: 150px;
 }
+
+.flagText {
+  color: white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  background: #7d9a2e;
+  padding: 5px 10px;
+  text-align: center;
+  display: block;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  position: absolute;
+  left: -15px;
+  width: 250px;
+  top: 15px;
+  transform: rotate(35deg);
+}
+
 .planTitle {
   text-transform: uppercase;
   font-size: 1.5rem;

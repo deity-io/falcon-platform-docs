@@ -161,7 +161,9 @@ const PlanLayout = ({ plan }) => {
   return (
     <article className={classnames(styles.plan, popular && `${styles.popularPlan} pricePlan--highlight`)}>
       {popular &&
-        <span className={styles.flag}>Popular</span>
+        <span className={styles.flag}>
+          <span className={styles.flagText}>Popular</span>
+        </span>
       }
       <div>
         <h3 className={styles.planTitle}>{name}</h3>
