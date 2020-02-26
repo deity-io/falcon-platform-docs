@@ -8,7 +8,7 @@
 module.exports = {
   falconClientSidebar: {
     'Overview': [
-      'integrations/overview/about'
+      'client/overview/about'
     ],
     'Getting Started': [
       'client/getting-started/intro'
