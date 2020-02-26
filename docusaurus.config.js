@@ -14,9 +14,9 @@ module.exports = {
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "docs/platform/overview/about", label: "Falcon Platform", position: "right" },
-        { to: "docs/cloud/overview/about", label: "Falcon Cloud", position: "right" },
-        { to: "docs/integrations/overview/about", label: "Integrations", position: "right" }
+        { to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right" },
+        { to: "/docs/cloud/overview/about", label: "Falcon Cloud", position: "right" },
+        { to: "/docs/integrations/overview/about", label: "Integrations", position: "right" }
       ]
     },
     footer: {
@@ -27,19 +27,19 @@ module.exports = {
           items: [
             {
               label: "Falcon Platform",
-              to: "docs/platform/overview/about"
+              to: "/docs/platform/overview/about"
             },
             {
               label: "Falcon Cloud",
-              to: "docs/cloud/overview/about"
+              to: "/docs/cloud/overview/about"
             },
             {
               label: "Integrating with Falcon Platform",
-              to: "docs/integrations/overview/about"
+              to: "/docs/integrations/overview/about"
             },
             {
               label: "Falcon V1",
-              href: "https://falcon.deity.io/docs/getting-started/intro"
+              to: "/docs/falcon-v1/getting-started/intro"
             }
           ]
         },

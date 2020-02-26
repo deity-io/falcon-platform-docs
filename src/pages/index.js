@@ -53,7 +53,7 @@ function Home() {
           <div className="container">
             <div className={styles.infoBanner__content}>
               <h3>Looking for Falcon V1 docs?</h3>
-              <p>If you're using Falcon V1 the docs can be found <Link href="https://falcon.deity.io/docs/getting-started/intro" target="_blank" rel="noreferrer noopener">here</Link></p>
+              <p>If you're using Falcon V1 the docs can be found <Link to="/docs/falcon-v1/getting-started/intro">here</Link></p>
             </div>
           </div>
         </section>
