@@ -11,7 +11,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="DEITY documentation and user guides"
+      description="DEITY Falcon Platform documentation and user guides"
     >
       <header className={classnames("hero hero--theme", styles.heroBanner)} style={{ backgroundImage: "url('img/pattern-honeycomb-secondary.svg')" }}>
         <div className="container">

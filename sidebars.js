@@ -26,8 +26,7 @@ module.exports = {
   cloudSidebar: {
     'Overview': [
       'cloud/overview/about',
-      'cloud/overview/technical',
-      'cloud/overview/pricing'
+      'cloud/overview/technical'
     ],
     'Getting Started': [
       'cloud/getting-started/prerequisites',
