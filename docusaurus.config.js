@@ -14,8 +14,9 @@ module.exports = {
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "docs/client/getting-started/intro", label: "Falcon Client", position: "right" },
-        { to: "docs/cloud/overview/about", label: "Falcon Cloud", position: "right" }
+        { to: "docs/client/overview/about", label: "Falcon Client", position: "right" },
+        { to: "docs/cloud/overview/about", label: "Falcon Cloud", position: "right" },
+        { to: "docs/integrations/overview/about", label: "Integrations", position: "right" }
       ]
     },
     footer: {
@@ -26,11 +27,15 @@ module.exports = {
           items: [
             {
               label: "Falcon Client",
-              to: "docs/client/getting-started/intro"
+              to: "docs/client/overview/about"
             },
             {
               label: "Falcon Cloud",
               to: "docs/cloud/overview/about"
+            },
+            {
+              label: "Integrating with Falcon Platform",
+              to: "docs/integrations/overview/about"
             },
             {
               label: "Falcon V1",

@@ -7,6 +7,9 @@
 
 module.exports = {
   falconClientSidebar: {
+    'Overview': [
+      'integrations/overview/about'
+    ],
     'Getting Started': [
       'client/getting-started/intro'
     ],
@@ -37,6 +40,21 @@ module.exports = {
     'Support': [
       'cloud/support/contact',
       'cloud/support/faqs'
+    ]
+  },
+  integrationsSidebar: {
+    'Overview': [
+      'integrations/overview/about'
+    ],
+    'Getting Started': [
+      'integrations/getting-started/intro'
+    ],
+    'Guides & Tutorials': [
+      'integrations/guides/setup'
+    ],
+    'Support': [
+      'integrations/support/contact',
+      'integrations/support/faqs'
     ]
   },
 };
