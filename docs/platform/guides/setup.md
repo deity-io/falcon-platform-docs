@@ -1,7 +1,7 @@
 ---
 id: setup
-title: Setup
-sidebar_label: Setup
+title: Theming
+sidebar_label: Theming
 ---
 
 ### Getting started with theming
