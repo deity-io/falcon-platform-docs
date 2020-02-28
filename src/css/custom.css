@@ -46,3 +46,20 @@ html[data-theme="dark"] {
 html[data-theme="dark"] .pricePlan--highlight {
   background: #2b3077;
 }
+
+
+.codeBlock {
+  border-radius: var(--ifm-pre-border-radius);
+  float: left;
+  min-width: 100%;
+  padding: var(--ifm-pre-padding);
+  font-family: var(--ifm-font-family-monospace);
+  color: rgb(191, 199, 213);
+  background-color: rgb(41, 45, 62);
+  font-size: var(--ifm-code-font-size);
+  line-height: var(--ifm-pre-line-height);
+}
+
+.codeBlock a {
+  color: inherit;
+}
