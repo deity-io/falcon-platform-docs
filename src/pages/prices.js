@@ -13,7 +13,7 @@ function Prices() {
       title="Falcon Platform Prices"
       description="Price list for DEITY Falcon Platform plans."
     >
-      <header className={classnames("hero hero--theme", styles.heroBanner)} style={{ backgroundImage: "url('img/pattern-honeycomb-secondary.svg')" }}>
+      <header className={classnames("hero hero--theme", styles.heroBanner)} style={{ backgroundImage: "url('../img/pattern-honeycomb-secondary.svg')" }}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">Prices</p>
