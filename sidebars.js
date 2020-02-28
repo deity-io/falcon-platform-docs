@@ -7,66 +7,43 @@
 
 module.exports = {
   falconPlatformSidebar: {
-    'Overview': [
-      'platform/overview/about'
+    Overview: ["platform/overview/about"],
+    "Getting Started": [
+      "platform/getting-started/prerequisites",
+      "platform/getting-started/npm",
+      "platform/getting-started/create"
     ],
-    'Getting Started': [
-      'platform/getting-started/prerequisites',
-      'platform/getting-started/npm',
-      'platform/getting-started/create'
+    "Falcon Client": [
+      "platform/client/files",
+      "platform/client/theming",
+      "platform/client/overrides"
     ],
-    'Falcon Client': [
-      'platform/client/files',
-      'platform/client/theming'
-    ],
-    'Guides & Tutorials': [
-      'platform/guides/client'
-    ],
-    'Support': [
-      'platform/support/contact',
-      'platform/support/faqs'
-    ]
+    "Guides & Tutorials": ["platform/guides/client"],
+    Support: ["platform/support/contact", "platform/support/faqs"]
   },
   cloudSidebar: {
-    'Overview': [
-      'cloud/overview/about',
-      'cloud/overview/technical'
+    Overview: ["cloud/overview/about", "cloud/overview/technical"],
+    "Getting Started": [
+      "cloud/getting-started/prerequisites",
+      "cloud/getting-started/account",
+      "cloud/getting-started/installation",
+      "cloud/getting-started/repository",
+      "cloud/getting-started/dcloud"
     ],
-    'Getting Started': [
-      'cloud/getting-started/prerequisites',
-      'cloud/getting-started/account',
-      'cloud/getting-started/installation',
-      'cloud/getting-started/repository',
-      'cloud/getting-started/dcloud'
-    ],
-    'Guides & Tutorials': [
-      'cloud/guides/setup'
-    ],
-    'Support': [
-      'cloud/support/contact',
-      'cloud/support/faqs'
-    ]
+    "Guides & Tutorials": ["cloud/guides/setup"],
+    Support: ["cloud/support/contact", "cloud/support/faqs"]
   },
   integrationsSidebar: {
-    'Overview': [
-      'integrations/overview/about'
+    Overview: ["integrations/overview/about"],
+    "Our Integrations": [
+      "integrations/our-integrations/algolia",
+      "integrations/our-integrations/bigcommerce",
+      "integrations/our-integrations/magento2",
+      "integrations/our-integrations/stripe"
     ],
-    'Our Integrations': [
-      'integrations/our-integrations/algolia',
-      'integrations/our-integrations/bigcommerce',
-      'integrations/our-integrations/magento2',
-      'integrations/our-integrations/stripe'
-    ],
-    'Getting Started': [
-      'integrations/getting-started/custom'
-    ],
-    'Guides & Tutorials': [
-      'integrations/guides/setup'
-    ],
-    'Support': [
-      'integrations/support/contact',
-      'integrations/support/faqs'
-    ]
+    "Getting Started": ["integrations/getting-started/custom"],
+    "Guides & Tutorials": ["integrations/guides/setup"],
+    Support: ["integrations/support/contact", "integrations/support/faqs"]
   },
   falconV1Sidebar: {
     "Getting Started": [
@@ -97,23 +74,21 @@ module.exports = {
       "falcon-v1/falcon-server/falcon-server-api",
       "falcon-v1/falcon-server/customizing-extension-api"
     ],
-    "Payments": [
+    Payments: [
       "falcon-v1/payments/intro",
       "falcon-v1/payments/api",
       "falcon-v1/payments/plugins"
     ],
-    "Backend": [
+    Backend: [
       "falcon-v1/backend/installing-magento2",
       "falcon-v1/backend/installing-wordpress"
     ],
-    "Miscellaneous": [
+    Miscellaneous: [
       "falcon-v1/miscellaneous/falcon-logger",
       "falcon-v1/miscellaneous/config"
     ],
-    "Deployment": [
-      "falcon-v1/deployment/intro"
-    ],
-    "Support": [
+    Deployment: ["falcon-v1/deployment/intro"],
+    Support: [
       "falcon-v1/support/troubleshooting",
       "falcon-v1/support/flowcharts"
     ]
