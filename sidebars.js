@@ -15,8 +15,12 @@ module.exports = {
       'platform/getting-started/npm',
       'platform/getting-started/create'
     ],
+    'Falcon Client': [
+      'platform/client/files',
+      'platform/client/theming'
+    ],
     'Guides & Tutorials': [
-      'platform/guides/setup'
+      'platform/guides/client'
     ],
     'Support': [
       'platform/support/contact',

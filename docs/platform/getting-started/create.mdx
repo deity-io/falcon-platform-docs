@@ -1,0 +1,104 @@
+---
+id: create
+title: Creating your application
+sidebar_label: Creating your application
+---
+
+## Create Falcon App
+
+To generate a new application based on Falcon Platform you can use our CLI tool....create falcon app.
+
+:::note Using the new theme?
+By default the demo based on "new-theme" assumes it's connected to a **BigCommerce** instance, which uses **Algolia** and **Stripe**. Without these credentials the application will not start (you'll see the errors in the console). The old theme will, by default, be connected to our demo **Magento 2** and **Wordpress** instances.
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npx create-falcon-app <project-name>
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn create falcon-app <project-name>
+```
+
+</TabItem>
+</Tabs>
+
+This will generate a Falcon site into a directory with the name of your projects (`<project-name>`).
+
+```
+project-name/
+ |- server
+ |- client
+```
+
+### Options
+
+- `--example <name-of-example>` The example flag is used to define which example we want to start with. The options are `shop-with-blog`(default) and `new-theme`.
+  `shop-with-blog` by default connects to a demo **Magento 2** and **Wordpress** instance. To use the <a href="https://demo.deity.io" target="_blank" rel="noreferrer noopener">latest demo</a> use `new-theme`. This requires you to have your own **BigCommerce**, **Algolia** and **Stripe** accounts.
+
+```bash
+npx @deity/create-falcon-app --example new-theme <project-name>
+
+```
+
+## Starting your app
+
+To get your app started you'll need to start (and keep running), both **Falcon Client** and **Falcon Server**.
+
+In 2 seperate terminal windows go into each directory (`cd server/`, `cd client/`) and run the start command.
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+**Server**
+```bash
+cd server/
+npm start
+```
+
+**Client**
+```bash
+cd client/
+npm start
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+**Server**
+```bash
+cd server/
+yarn start
+```
+
+**Client**
+```bash
+cd client/
+yarn start
+```
+
+</TabItem>
+</Tabs>
+
+Once these have started, visit <a href="http://localhost:3000" target="_blank" rel="noreferrer noopener">http://localhost:3000</a> to see your app.

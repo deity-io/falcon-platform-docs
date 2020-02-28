@@ -1,7 +1,7 @@
 ---
-id: setup
-title: Theming
-sidebar_label: Theming
+id: client
+title: Falcon Client
+sidebar_label: Falcon Client
 ---
 
 ### Getting started with theming
