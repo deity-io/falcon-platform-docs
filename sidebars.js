@@ -7,22 +7,36 @@
 
 module.exports = {
   falconPlatformSidebar: {
-    Overview: ["platform/overview/about"],
+    "Overview": [
+      "platform/overview/about"
+    ],
     "Getting Started": [
       "platform/getting-started/prerequisites",
       "platform/getting-started/npm",
       "platform/getting-started/create"
     ],
     "Falcon Client": [
+      "platform/client/about",
+      "platform/client/technical",
       "platform/client/files",
+      "platform/client/getting-started",
       "platform/client/theming",
-      "platform/client/overrides"
+      "platform/client/overrides",
+      "platform/client/routing",
+      "platform/client/state",
+      "platform/client/testing",
     ],
     "Guides & Tutorials": ["platform/guides/client"],
-    Support: ["platform/support/contact", "platform/support/faqs"]
+    "Support": [
+      "platform/support/contact",
+      "platform/support/faqs"
+    ]
   },
   cloudSidebar: {
-    Overview: ["cloud/overview/about", "cloud/overview/technical"],
+    "Overview": [
+      "cloud/overview/about",
+      "cloud/overview/technical"
+    ],
     "Getting Started": [
       "cloud/getting-started/prerequisites",
       "cloud/getting-started/account",
@@ -31,10 +45,15 @@ module.exports = {
       "cloud/getting-started/dcloud"
     ],
     "Guides & Tutorials": ["cloud/guides/setup"],
-    Support: ["cloud/support/contact", "cloud/support/faqs"]
+    "Support": [
+      "cloud/support/contact",
+      "cloud/support/faqs"
+    ]
   },
   integrationsSidebar: {
-    Overview: ["integrations/overview/about"],
+    "Overview": [
+      "integrations/overview/about"
+    ],
     "Our Integrations": [
       "integrations/our-integrations/algolia",
       "integrations/our-integrations/bigcommerce",
@@ -43,7 +62,10 @@ module.exports = {
     ],
     "Getting Started": ["integrations/getting-started/custom"],
     "Guides & Tutorials": ["integrations/guides/setup"],
-    Support: ["integrations/support/contact", "integrations/support/faqs"]
+    "Support": [
+      "integrations/support/contact",
+      "integrations/support/faqs"
+    ]
   },
   falconV1Sidebar: {
     "Getting Started": [
