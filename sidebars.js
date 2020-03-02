@@ -25,6 +25,7 @@ module.exports = {
       "platform/client/routing",
       "platform/client/state",
       "platform/client/testing",
+      "platform/client/deployment",
     ],
     "Guides & Tutorials": ["platform/guides/client"],
     "Support": [
