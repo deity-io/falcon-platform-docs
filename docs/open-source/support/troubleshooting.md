@@ -22,7 +22,7 @@ Make sure you don’t have create-falcon-app package installed globally on your 
 
 ### FalconServer: "apis" is not iterable
 
-Make sure your Falcon-Server config is set properly [read the documentation](/docs/falcon-v1/falcon-server/basics#configuration)
+Make sure your Falcon-Server config is set properly [read the documentation](/docs/open-source/falcon-server/basics#configuration)
 
 ### Error: No category found with id = 25
 

@@ -8,7 +8,8 @@
 module.exports = {
   falconPlatformSidebar: {
     "Overview": [
-      "platform/overview/about"
+      "platform/overview/about",
+      "platform/overview/enterprise"
     ],
     "Getting Started": [
       "platform/getting-started/prerequisites",
@@ -68,52 +69,52 @@ module.exports = {
       "integrations/support/faqs"
     ]
   },
-  falconV1Sidebar: {
+  falconOpenSourceSidebar: {
     "Getting Started": [
-      "falcon-v1/getting-started/intro",
-      "falcon-v1/getting-started/requirements",
-      "falcon-v1/getting-started/installation",
-      "falcon-v1/getting-started/project-overview",
-      "falcon-v1/getting-started/example"
+      "open-source/getting-started/intro",
+      "open-source/getting-started/requirements",
+      "open-source/getting-started/installation",
+      "open-source/getting-started/project-overview",
+      "open-source/getting-started/example"
     ],
     "Falcon Client": [
-      "falcon-v1/falcon-client/basics",
-      "falcon-v1/falcon-client/configurations",
-      "falcon-v1/falcon-client/code-splitting",
-      "falcon-v1/falcon-client/data-management",
-      "falcon-v1/falcon-client/local-state-management",
-      "falcon-v1/falcon-client/internationalization",
-      "falcon-v1/falcon-client/falcon-ui",
-      "falcon-v1/falcon-client/search-and-filtering"
+      "open-source/falcon-client/basics",
+      "open-source/falcon-client/configurations",
+      "open-source/falcon-client/code-splitting",
+      "open-source/falcon-client/data-management",
+      "open-source/falcon-client/local-state-management",
+      "open-source/falcon-client/internationalization",
+      "open-source/falcon-client/falcon-ui",
+      "open-source/falcon-client/search-and-filtering"
     ],
     "Falcon Server": [
-      "falcon-v1/falcon-server/basics",
-      "falcon-v1/falcon-server/schema-stitching",
-      "falcon-v1/falcon-server/extensions",
-      "falcon-v1/falcon-server/api-providers",
-      "falcon-v1/falcon-server/endpoints",
-      "falcon-v1/falcon-server/caching",
-      "falcon-v1/falcon-server/falcon-server-env",
-      "falcon-v1/falcon-server/falcon-server-api",
-      "falcon-v1/falcon-server/customizing-extension-api"
+      "open-source/falcon-server/basics",
+      "open-source/falcon-server/schema-stitching",
+      "open-source/falcon-server/extensions",
+      "open-source/falcon-server/api-providers",
+      "open-source/falcon-server/endpoints",
+      "open-source/falcon-server/caching",
+      "open-source/falcon-server/falcon-server-env",
+      "open-source/falcon-server/falcon-server-api",
+      "open-source/falcon-server/customizing-extension-api"
     ],
     Payments: [
-      "falcon-v1/payments/intro",
-      "falcon-v1/payments/api",
-      "falcon-v1/payments/plugins"
+      "open-source/payments/intro",
+      "open-source/payments/api",
+      "open-source/payments/plugins"
     ],
     Backend: [
-      "falcon-v1/backend/installing-magento2",
-      "falcon-v1/backend/installing-wordpress"
+      "open-source/backend/installing-magento2",
+      "open-source/backend/installing-wordpress"
     ],
     Miscellaneous: [
-      "falcon-v1/miscellaneous/falcon-logger",
-      "falcon-v1/miscellaneous/config"
+      "open-source/miscellaneous/falcon-logger",
+      "open-source/miscellaneous/config"
     ],
-    Deployment: ["falcon-v1/deployment/intro"],
+    Deployment: ["open-source/deployment/intro"],
     Support: [
-      "falcon-v1/support/troubleshooting",
-      "falcon-v1/support/flowcharts"
+      "open-source/support/troubleshooting",
+      "open-source/support/flowcharts"
     ]
   }
 };

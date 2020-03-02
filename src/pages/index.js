@@ -57,7 +57,7 @@ function Home() {
           <div className="container">
             <div className={styles.infoBanner__content}>
               <h3>Looking for Falcon V1 docs?</h3>
-              <p>If you're using Falcon V1 the docs can be found <Link to="/docs/falcon-v1/getting-started/intro">here</Link></p>
+              <p>If you're using Falcon V1 the docs can be found <Link to="/docs/open-source/getting-started/intro">here</Link></p>
             </div>
           </div>
         </section>

@@ -3,7 +3,7 @@ title: API Providers
 ---
 
 Every Falcon Extension provides its own part of the GraphQL Schema and in addition, an Extension requires
-to have an assigned [API Provider](/docs/falcon-v1/falcon-server/falcon-server-api#apidatasource) that is able
+to have an assigned [API Provider](/docs/open-source/falcon-server/falcon-server-api#apidatasource) that is able
 to communicate with the actual backend service. Every API Provider must implement all required
 methods of a specific Extension and be compatible with Queries, Mutations and types that are required by this Extension.
 
@@ -17,7 +17,7 @@ Currently, DEITY provides the following list of officially supported API provide
 If you used `create-falcon-app` to generate your project, `falcon-magento2-api` and `falcon-shop-extension`
 may already be installed in which case you can **skip the installation step.**
 
-> This API requires [DEITY Falcon PHP Module](/docs/falcon-v1/backend/installing-magento2) for Magento2 to be installed on your Magento instance.
+> This API requires [DEITY Falcon PHP Module](/docs/open-source/backend/installing-magento2) for Magento2 to be installed on your Magento instance.
 
 ### Overview and installation
 
@@ -78,7 +78,7 @@ This is a short overview of the way how authentication between Falcon Magento 2 
 Falcon Magento 2 API provides implementation for endpoints that require authorization (customer related data)
 as well as endpoints that don't require a customer to be authenticated (product catalog etc).
 
-Every incoming GraphQL request sets the context to the [Falcon Server](/docs/falcon-v1/falcon-server/basics) GraphQL resolver,
+Every incoming GraphQL request sets the context to the [Falcon Server](/docs/open-source/falcon-server/basics) GraphQL resolver,
 so all connected API providers would have access to it, including `headers` and `session` objects.
 
 Once a user signs in with his Magento 2 credentials his access token is stored in the `session` so it can be used for interaction with Magento 2.

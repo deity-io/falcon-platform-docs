@@ -128,7 +128,7 @@ const server = new FalconServer(config);
 server.start();
 ```
 
-> Read more on how to write your own Extension [here](/docs/falcon-v1/falcon-server/falcon-server-api#extension)
+> Read more on how to write your own Extension [here](/docs/open-source/falcon-server/falcon-server-api#extension)
 
 ### Endpoints configurations
 
@@ -149,7 +149,7 @@ const server = new FalconServer(config);
 server.start();
 ```
 
-> Read more on how to write your own Endpoint [here](/docs/falcon-v1/falcon-server/falcon-server-api#extension)
+> Read more on how to write your own Endpoint [here](/docs/open-source/falcon-server/falcon-server-api#extension)
 
 ### Session configuration
 
