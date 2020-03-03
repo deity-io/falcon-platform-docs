@@ -109,6 +109,31 @@ You will also notice some props are shortcuts for the css property, e.g. `m="xxl
 
 ### Responsive Styling
 
+If you want a property to change based on window width based media queries you can pass it an object. Each object key refers to a breakpoint (these can be defined in your `theme.js` if you don't want to keep the core ones `@deity/falcon-ui/src/theme/theme.ts`). These breakpoints create mobile first css (`@media and (max-width: <breakpoint>`).
+
+**`client/src/components/myComponent.js`**
+```js
+<Box
+  py={
+    xs: 'xs',
+    sm: 'sm'
+  }
+>
+...
+</Box>
+```
+
+**`@deity/falcon-ui/src/theme/theme.ts`**
+```js
+breakpoints: {
+  xs: 0,
+  sm: 640,
+  md: 860,
+  lg: 1280,
+  xl: 1920
+}
+```
+
 ### Adding complex css
 
 
