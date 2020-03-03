@@ -30,7 +30,8 @@ module.exports = {
           "platform/client/theming/css-mapping",
           "platform/client/theming/components",
           "platform/client/theming/css-sass",
-          'platform/client/theming/examples/change-logo'
+          'platform/client/theming/examples/change-logo',
+          'platform/client/theming/examples/scss-global'
         ],
       },
       "platform/client/overrides",
