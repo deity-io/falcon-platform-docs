@@ -26,9 +26,11 @@ module.exports = {
         type: 'category',
         label: 'Theming',
         items: [
-          "platform/client/theming",
-          "platform/client/css-mapping",
-          'platform/client/examples/change-logo'
+          "platform/client/theming/overview",
+          "platform/client/theming/css-mapping",
+          "platform/client/theming/components",
+          "platform/client/theming/css-sass",
+          'platform/client/theming/examples/change-logo'
         ],
       },
       "platform/client/overrides",

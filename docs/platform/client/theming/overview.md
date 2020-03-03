@@ -1,5 +1,5 @@
 ---
-id: theming
+id: overview
 title: Theming Overview
 sidebar_label: Overview
 ---
@@ -18,7 +18,7 @@ Here's a quick introduction to theming Falcon Platform.
 ## Overview
 `@deity/falcon-ui` comes with a `ThemeProvider` out of the box. This allows us to have shared and global styles (written in js) across your application.
 
-Out of the box Falcon Platform also supports [**css** and **scss**](#css--sass-support).
+Out of the box Falcon Platform also supports [**css** and **scss**](./css-sass).
 
 :::note Writing CSS in ReactJs
 If you're new to writing CSS in ReactJs, it's worth reading <a href="https://www.w3schools.com/react/react_css.asp" target="_blank" rel="noopener noreferrer">these docs</a>.
@@ -134,44 +134,23 @@ breakpoints: {
 
 ### Adding complex css
 
+If you want to add more complex css, for instance styling child selectors, pseudo elements or state changes you can do this in the `css` prop.
 
+It's also possible to access the `theme` object here so you can still use global variables.
 
-## Themed Components
+**n.b. You can't use CSS shortcuts or theme mapping in the CSS prop**
 
-- themed{()}
-
-### CSS Mapping
-You will notice that some of the properties in the theme don't relate exactly to CSS properties. That's because we've created shortcuts making theming even more simple.
-
-
-## Creating New Components
-
-## css & Sass support
-To add your styles using a `css` or `scss` file simply import it.
-
-**`styles.scss`**
-```css
-.myBlock {
-  backgrouund: red;
-}
-```
-
-**`your-component.js`**
+**`client/src/components/myComponent.js`**
 ```js
-...
-import './styles.scss';
-...
 
-<div className="myBlock">
-  Block with a red background
-</div>
+<Box style={({ theme }) => {
+  '&:focus': {
+    outline: `1px dotted ${theme.colors.secondary}`
+  },
+  span: {
+    color: theme.colors.primary
+  }
+}}>
+...
+</Box>
 ```
-
----
-
-## Examples / Cookbook
-
-### Changing the site logo
-[View example](./examples/change-logo)
-
-### Updating an existing layout
