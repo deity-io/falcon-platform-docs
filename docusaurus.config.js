@@ -56,6 +56,10 @@ module.exports = {
               href: "https://twitter.com/deity_pwa"
             },
             {
+              label: "Youtube",
+              href: "https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ"
+            },
+            {
               label: "Contact Us",
               href: "https://deity.io/contact"
             }

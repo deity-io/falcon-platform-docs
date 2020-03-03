@@ -15,7 +15,7 @@ It's worth looking at <a href="https://falcon-ui.docs.deity.io/" target="_blank"
 ## Don't want to read the docs?
 Here's a quick introduction to theming Falcon Platform.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K07bMRuzXfc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W8WoLoF54kI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ## Global Styles
 
