@@ -1,4 +1,3 @@
-
 ---
 id: scss-global
 title: 'Example: Loading a global scss file'
