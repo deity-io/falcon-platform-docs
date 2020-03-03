@@ -1,10 +1,8 @@
 ---
 id: theming
-title: Theming
-sidebar_label: Theming
+title: Theming Overview
+sidebar_label: Overview
 ---
-
-
 
 :::note Falcon Client ships with `@deity/falcon-ui`.
 This contains a powerful `ThemeProvider` and a library of composable, themable, design-system-driven UI components.
@@ -169,10 +167,11 @@ import './styles.scss';
 </div>
 ```
 
+---
 
-
-## Examples
+## Examples / Cookbook
 
 ### Changing the site logo
+[View example](./examples/change-logo)
 
 ### Updating an existing layout

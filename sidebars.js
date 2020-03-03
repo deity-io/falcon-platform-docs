@@ -22,8 +22,15 @@ module.exports = {
       "platform/client/files",
       "platform/client/getting-started",
       "platform/client/configuration",
-      "platform/client/theming",
-      "platform/client/css-mapping",
+      {
+        type: 'category',
+        label: 'Theming',
+        items: [
+          "platform/client/theming",
+          "platform/client/css-mapping",
+          'platform/client/examples/change-logo'
+        ],
+      },
       "platform/client/overrides",
       "platform/client/routing",
       "platform/client/state",
