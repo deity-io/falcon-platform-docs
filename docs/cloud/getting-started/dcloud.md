@@ -8,7 +8,7 @@ sidebar_label: CLI Commands
 
 List your current builds.
 
-```javascript
+```bash
 dcloud build:list
 ```
 
@@ -18,7 +18,7 @@ dcloud build:list
 
 **Example: show 30 results**
 
-```javascript
+```bash
 dcloud build:list -l 30
 ```
 
@@ -28,7 +28,7 @@ dcloud build:list -l 30
 
 Get information on a build.
 
-```javascript
+```bash
 dcloud build:info [id]
 ```
 
@@ -38,7 +38,7 @@ dcloud build:info [id]
 
 **Example: Watch the build with id 20**
 
-```javascript
+```bash
 dcloud build:info 20 -w
 ```
 
@@ -47,7 +47,7 @@ dcloud build:info 20 -w
 ## Deployment List
 List your deployments
 
-```javascript
+```bash
 dcloud deployment:list
 ```
 
@@ -61,7 +61,7 @@ dcloud deployment:list
 
 Get information on a deployment.
 
-```javascript
+```bash
 dcloud deployment:info [id]
 ```
 
@@ -75,7 +75,7 @@ dcloud deployment:info [id]
 
 Deploy a build
 
-```javascript
+```bash
 dcloud deploy [buildId] [environmentName]
 ```
 
@@ -84,7 +84,7 @@ dcloud deploy [buildId] [environmentName]
 
 **Example: Deploy build 20 to the development environment**
 
-```javascript
+```bash
 dcloud deploy 20 development
 ```
 
@@ -94,7 +94,7 @@ dcloud deploy 20 development
 
 List all available environments
 
-```javascript
+```bash
 dcloud env:list
 ```
 
@@ -107,7 +107,7 @@ N/A
 
 Get info on a specific environment
 
-```javascript
+```bash
 dcloud env:info <env>
 ```
 
@@ -120,7 +120,7 @@ N/A
 
 Get deployments for an environment
 
-```javascript
+```bash
 dcloud env:deployments <env>
 ```
 
@@ -134,7 +134,7 @@ dcloud env:deployments <env>
 
 Set a variable on an environment
 
-```javascript
+```bash
 dcloud env:var <env> <name> [value]
 ```
 
@@ -147,7 +147,7 @@ N/A
 
 Set the domain for an environment
 
-```javascript
+```bash
 dcloud env:setDomain <env> [domainName]
 ```
 
@@ -160,7 +160,7 @@ N/A
 
 Remove the domain for an environment
 
-```javascript
+```bash
 dcloud env:removeDomain <env>
 ```
 
@@ -173,7 +173,7 @@ N/A
 
 Get a list of your current/active repositories
 
-```javascript
+```bash
 dcloud repo:list
 ```
 
@@ -186,7 +186,7 @@ dcloud repo:list
 
 Logs into DEITY Falcon Cloud using provided credentials. If credentials aren't passed you will be prompted to add them.
 
-```javascript
+```bash
 dcloud login [email] [password]
 ```
 
@@ -199,7 +199,7 @@ N/A
 
 Logs the current user out
 
-```javascript
+```bash
 dcloud logout
 ```
 
@@ -212,7 +212,7 @@ N/A
 
 Change the account password
 
-```javascript
+```bash
 dcloud change-password
 ```
 
@@ -225,7 +225,7 @@ N/A
 
 Get the current logged in user
 
-```javascript
+```bash
 dcloud whoami
 ```
 

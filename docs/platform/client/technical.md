@@ -9,8 +9,7 @@ sidebar_label: Technical Information
 - <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">ReactJs</a>
 - <a href="https://www.apollographql.com/" target="_blank" rel="noopener noreferrer">Apollo</a>
 - <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">Webpack</a>
-
-**WIP - More content to be added**
+- <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a>
 
 ## Key Packages
 - `@deity/falcon-ui`

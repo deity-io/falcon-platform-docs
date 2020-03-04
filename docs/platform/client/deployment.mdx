@@ -1,0 +1,35 @@
+---
+id: deployment
+title: Deployment
+sidebar_label: Deployment
+---
+
+Deployment is handled through **Falcon Cloud**, all you need to do is push your code.
+
+To check your build code locally you can run the `falcon-client build` command.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm build
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn build
+```
+
+</TabItem>
+</Tabs>
