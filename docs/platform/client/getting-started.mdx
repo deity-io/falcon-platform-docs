@@ -1,0 +1,132 @@
+---
+id: getting-started
+title: Getting Started
+sidebar_label: Getting Started / CLI Commands
+---
+
+Falcon Client is part of Falcon Platform and is included when using [create-falcon-app](../getting-started/create).
+
+## Falcon Client Commands
+
+From the `client` directory you can run the following commands (in your terminal).
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Start
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm start
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn start
+```
+
+</TabItem>
+</Tabs>
+
+**Options**
+- `--inspect=[host:port]` - To debug the node server, you can use `falcon-client start --inspect`. This will start the node server and enable the inspector agent. The =[host:port] is optional and defaults to `=127.0.0.1:9229`. For more information, <a href="https://nodejs.org/en/docs/guides/debugging-getting-started/" target="_blank" rel="noopener noreferrer">see this</a>.
+- `--inspect-brk=[host:port]` - This is the same as --inspect, but will also break before user code starts. (to give a debugger time to attach before early code runs)
+
+### Test
+
+This run the test watcher (<a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">Jest</a>) in an interactive mode. By default, runs tests related to files changed since the last commit.
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm test
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn test
+```
+
+</TabItem>
+</Tabs>
+
+### Build
+
+Builds the app for production, and outputs to the `./build` folder.
+
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm build
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn build
+```
+
+</TabItem>
+</Tabs>
+
+### Size
+
+Runs an interactive zoomable treemap of output files to visualize their size. Report will be automatically open in default browser at `http://localhost:8888`.
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm size
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn size
+```
+
+</TabItem>
+</Tabs>
+
+### Restart
+
+If your application is running, and you need to manually restart your server, you do not need to completely kill and rebundle your application. Instead you can just type `rs` and press enter in terminal.
+
+```bash
+rs
+```
