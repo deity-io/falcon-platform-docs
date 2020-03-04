@@ -45,6 +45,7 @@ module.exports = {
       "platform/client/overrides",
       "platform/client/routing",
       "platform/client/state",
+      "platform/client/translations",
       "platform/client/testing",
       "platform/client/deployment",
     ],
