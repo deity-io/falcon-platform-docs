@@ -22,6 +22,7 @@ module.exports = {
       "platform/client/files",
       "platform/client/getting-started",
       "platform/client/configuration",
+      "platform/client/webpack",
       {
         type: 'category',
         label: 'Theming',
@@ -29,9 +30,16 @@ module.exports = {
           "platform/client/theming/overview",
           "platform/client/theming/css-mapping",
           "platform/client/theming/components",
+          "platform/client/theming/icons",
           "platform/client/theming/css-sass",
-          'platform/client/theming/examples/change-logo',
-          'platform/client/theming/examples/scss-global'
+          {
+            type: 'category',
+            label: 'Cookbook',
+            items: [
+              'platform/client/theming/cookbook/change-logo',
+              'platform/client/theming/cookbook/scss-global'
+            ],
+          },
         ],
       },
       "platform/client/overrides",

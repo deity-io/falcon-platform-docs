@@ -1,7 +1,7 @@
 ---
 id: scss-global
-title: 'Example: Loading a global scss file'
-sidebar_label: 'Example: Loading a global scss file'
+title: 'Loading a global scss file'
+sidebar_label: 'Loading a global scss file'
 ---
 
 If you are using `scss` and want to load a global file to all your other `scss` files it's possible by extending the webpack config.

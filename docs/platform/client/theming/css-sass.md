@@ -23,3 +23,6 @@ import './styles.scss';
   Block with a red background
 </div>
 ```
+
+### Global SCSS files
+Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](./cookbook/scss-global).
