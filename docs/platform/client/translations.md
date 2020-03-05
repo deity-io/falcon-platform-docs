@@ -1,7 +1,7 @@
 ---
 id: translations
-title: Translations
-sidebar_label: Translations
+title: Translations / Internationalization
+sidebar_label: Translations / Internationalization
 ---
 
-F
+Coming soon

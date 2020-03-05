@@ -46,6 +46,8 @@ module.exports = {
       "platform/client/routing",
       "platform/client/state",
       "platform/client/translations",
+      "platform/client/cache",
+      "platform/client/code-splitting",
       "platform/client/testing",
       "platform/client/deployment",
     ],
