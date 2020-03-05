@@ -19,7 +19,7 @@ const BannerContent = () => (
     <div className={styles.bannerContent}>
       <div className={styles.bannerWrapper}>
         <h4>Can't find the information you need?</h4>
-        <p style={{ fontSize: '0.9', margin: 0 }}>We are working hard to document everything. If you can't find what you need the information might be in the <Link to="/docs/open-source/getting-started/intro">Falcon Open Source docs</Link>.</p>
+        <p style={{ fontSize: '0.9', margin: 0 }}>We are working hard to document everything. If you can't find what you need, the information might be in our <Link to="/docs/open-source/getting-started/intro">Falcon Open Source docs</Link>.</p>
       </div>
     </div>
   </section>
