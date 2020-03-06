@@ -49,6 +49,7 @@ module.exports = {
         label: 'Falcon Client',
         items: [
           'platform/cookbook/client/change-logo',
+          'platform/cookbook/client/icon',
           'platform/cookbook/client/scss-global'
         ],
       },

@@ -41,6 +41,8 @@ export const globalCss = {
 
 By default the `ThemeProvider` component is included in `client/src/App.js`. The `globalCss` object is normal exported in your `client/src/styling/theme.js` file.
 
+**If you're not using the new theme the `theme.js` file can be found here: `client/src/theme.js`**
+
 ```js
 <ThemeProvider theme={props.theme} globalCss={globalCss}>
 ...

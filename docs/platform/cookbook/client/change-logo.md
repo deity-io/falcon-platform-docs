@@ -1,7 +1,7 @@
 ---
 id: change-logo
-title: 'Changing the site logo'
-sidebar_label: 'Changing the site logo'
+title: Changing the site logo
+sidebar_label: Changing the site logo
 ---
 
 Changing the site logo is probablty one of the first things you will want to do, so we've created a step by step guide to doing it.

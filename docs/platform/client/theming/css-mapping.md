@@ -6,10 +6,10 @@ sidebar_label: CSS Mapping
 
 `@deity/falcon-ui` uses a mapping function to define 2 things:
 
-- CSS property shortcuts
+- CSS property shortcuts, 'responsive props'
 - Which key from the theme object is used for each CSS property.
 
-## CSS Shortcuts
+## CSS Shortcuts / Respoonsive Props
 
 To keep your code slim `@deity/falcon-ui` maps certain component props to css properties. 
 

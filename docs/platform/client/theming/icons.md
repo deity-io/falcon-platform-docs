@@ -4,11 +4,42 @@ title: Site Icons
 sidebar_label: Site Icons
 ---
 
-Icons such as your hamburger menu, account link and social network logos are all managed in 1 component. `client/src/styling/icons.js`
+Falcon Client comes with an Icon component `@deity/falcon-ui`. This component expects you to have icons set in your theme.
 
-![Image of icons](../../../../img/docs/platform/icons.png)
+**`client/src/styling/theme.js`**
+```js
+...
+export const yourThemeName = createTheme({
+  ...
+  icons: {}
+})
+```
 
-The icon component exports and object with each icon included. We have the <a href="https://boxicons.com/" target="_blank" rel="noopener noreferrer">boxicons package</a> included so you have access to all these icons right from the start.
+If you're using the `demo-v2` example , you'll see a `client/src/styling/icons.js` file. This is imported into your theme.
+
+**`client/src/styling/theme.js`**
+```js
+...
+import { icons } from './icons';
+export const yourThemeName = createTheme({
+  ...
+  icons
+})
+```
+
+**`client/src/styling/icons.js`**
+```js
+...
+import Icon from '../assets/icon.svg';
+
+export const icons = {
+  ...
+  newIcon: { icon: NewIcon },
+  ...
+};
+```
+
+The `client/src/styling/icons.js` component exports and object with each icon included. We have the <a href="https://boxicons.com/" target="_blank" rel="noopener noreferrer">boxicons package</a> included so you have access to all these icons right from the start.
 
 **`client/src/styling/icons.js`**
 ```js
