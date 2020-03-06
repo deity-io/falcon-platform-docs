@@ -138,12 +138,12 @@ If you want to add more complex css, for instance styling child selectors, pseud
 
 It's also possible to access the `theme` object here so you can still use global variables.
 
-**n.b. You can't use CSS shortcuts or theme mapping in the CSS prop**
+**n.b. You can't use CSS shortcuts like `mb` for `marginBottom` in the CSS prop**
 
 **`client/src/components/myComponent.js`**
 ```js
 
-<Box style={({ theme }) => {
+<Box css={({ theme }) => {
   '&:focus': {
     outline: `1px dotted ${theme.colors.secondary}`
   },
