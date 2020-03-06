@@ -63,10 +63,19 @@ yarn add boxicons --save
 </TabItem>
 </Tabs>
 
+We now need to pass the `icons` to our theme. In your `theme.js` file you can pass it to the object in `createTheme`.
 
+**`client/src/styling/theme.js`**
+```js
+...
+import { icons } from './icons';
+export const yourThemeName = createTheme({
+  ...
+  icons
+})
+```
 
-## Get your icon
-Falcon Client 
+## 2. Import your icon
 First you need to get the SVG you want to add.
 
 Here's one you can use...
@@ -82,3 +91,53 @@ Here's one you can use...
 ```
 
 **One 'gotcha' is that some SVGs don't cammel case `viewBox` e.g. `viewbox`. This will cause issues so it's best to change it to `viewBox`.**
+
+Add your svg file to your assets directory (`client/src/assets/new-icon.svg`) and import it in the icon component (`client/src/styling/icons.js`).
+
+**`client/src/styling/icons.js`**
+```js
+...
+import NewIcon from '../assets/new-icon.svg';
+
+export const icons = {
+  ...
+  newIcon: { icon: NewIcon },
+  ...
+};
+
+```
+
+## 3. Use your icon
+
+The last step is actually using your icon. Open up the component you want to add it to, import it and let it know which icon to display.
+
+**`client/src/components/YourComponent.js`**
+```js
+...
+import { Box, Icon } from '@deity/falcon-ui';
+...
+
+const YourComponent = () => (
+  <Box>
+      <Icon src="newIcon" />
+  </Box>
+);
+
+```
+`src` should be the key defined in your `client/src/styling/icons.js` file.
+
+`<Icon>` is themable so you can pass css like any other component.
+
+**`client/src/components/YourComponent.js`**
+```js
+...
+const YourComponent = () => (
+  <Box>
+      <Icon src="newIcon" css={{fill: 'red'}} />
+  </Box>
+);
+
+```
+
+## 4. Done
+That's it, you've added a new icon.
