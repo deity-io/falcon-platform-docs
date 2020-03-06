@@ -41,3 +41,6 @@ To this:
 ```js
 import { Icon } from '@deity/falcon-ui';
 ```
+
+## Watch our 'how to' guide
+<iframe width="560" height="315" src="https://www.youtube.com/embed/caaWQ1S-lOQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

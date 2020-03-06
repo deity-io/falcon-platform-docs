@@ -25,4 +25,4 @@ import './styles.scss';
 ```
 
 ### Global SCSS files
-Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](./cookbook/scss-global).
+Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](/docs/platform/cookbook/client/scss-global).

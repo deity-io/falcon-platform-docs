@@ -31,15 +31,7 @@ module.exports = {
           "platform/client/theming/css-mapping",
           "platform/client/theming/components",
           "platform/client/theming/icons",
-          "platform/client/theming/css-sass",
-          {
-            type: 'category',
-            label: 'Cookbook',
-            items: [
-              'platform/client/theming/cookbook/change-logo',
-              'platform/client/theming/cookbook/scss-global'
-            ],
-          },
+          "platform/client/theming/css-sass"
         ],
       },
       "platform/client/overrides",
@@ -51,7 +43,19 @@ module.exports = {
       "platform/client/testing",
       "platform/client/deployment",
     ],
-    "Guides & Tutorials": ["platform/guides/client"],
+    "Cookbook": [
+      {
+        type: 'category',
+        label: 'Falcon Client',
+        items: [
+          'platform/cookbook/client/change-logo',
+          'platform/cookbook/client/scss-global'
+        ],
+      },
+    ],
+    "Video Guides": [
+      "platform/guides/client"
+    ],
     "Support": [
       "platform/support/contact",
       "platform/support/faqs"
