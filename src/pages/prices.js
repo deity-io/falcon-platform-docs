@@ -8,6 +8,7 @@ import Pricing from './../../src/components/Pricing';
 function Prices() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+  const comingSoon = true;
   return (
     <Layout
       title="Falcon Platform Prices"
@@ -22,7 +23,11 @@ function Prices() {
       <main>
         <section style={{padding: '2rem 0'}}>
           <div className="container">
-            <Pricing />
+            {comingSoon ?
+              <p><strong>Coming Soon</strong>, please contact us for more information.</p>
+            :
+              <Pricing />
+            }
           </div>
         </section>
       </main>
