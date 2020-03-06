@@ -48,4 +48,8 @@ Once you're logged in you can use the CLI tool to check your linked repository i
 dcloud repo:list -i
 ```
 
-This will also give you a Webhook and SSH key, both need for the next part of setup.
+This will also give you a Webhook and SSH key, both need for the [next part of setup](./repository).
+
+
+## What our 'how to' video.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CSrkxZgtY6w?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
