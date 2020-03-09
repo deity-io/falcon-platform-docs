@@ -52,7 +52,8 @@ module.exports = {
         items: [
           'platform/cookbook/client/change-logo',
           'platform/cookbook/client/icon',
-          'platform/cookbook/client/scss-global'
+          'platform/cookbook/client/scss-global',
+          'platform/cookbook/client/post-css-support'
         ],
       },
     ],

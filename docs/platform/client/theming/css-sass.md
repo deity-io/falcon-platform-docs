@@ -26,3 +26,6 @@ import './styles.scss';
 
 ### Global SCSS files
 Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](/docs/platform/cookbook/client/scss-global).
+
+### POST CSS
+Want to use Post CSS files for you variables, mixins and function? [Check out our cookbook](/docs/platform/cookbook/client/post-css-support).
