@@ -43,6 +43,8 @@ module.exports = {
       "platform/client/testing",
       "platform/client/deployment",
     ],
+    "Falcon Server": ["platform/server"],
+    "Integration": ["platform/integration"],
     "Cookbook": [
       {
         type: 'category',
@@ -78,23 +80,6 @@ module.exports = {
     "Support": [
       "cloud/support/contact",
       "cloud/support/faqs"
-    ]
-  },
-  integrationsSidebar: {
-    "Overview": [
-      "integrations/overview/about"
-    ],
-    "Our Integrations": [
-      "integrations/our-integrations/algolia",
-      "integrations/our-integrations/bigcommerce",
-      "integrations/our-integrations/magento2",
-      "integrations/our-integrations/stripe"
-    ],
-    "Getting Started": ["integrations/getting-started/custom"],
-    "Guides & Tutorials": ["integrations/guides/setup"],
-    "Support": [
-      "integrations/support/contact",
-      "integrations/support/faqs"
     ]
   },
   falconOpenSourceSidebar: {
