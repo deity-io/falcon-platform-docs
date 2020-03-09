@@ -39,7 +39,7 @@ const Example = ({ example }) => {
         <p><code>{`--example ${shortName}`}</code></p>
         <p>{description}</p>
         {url &&
-          <Link href={url} target="_blank" rel="noopener noreferrer">View Demo</Link>
+          <Link href={url} target="_blank" className="button" rel="noopener noreferrer">View Demo</Link>
         }
       </div>
     </section>

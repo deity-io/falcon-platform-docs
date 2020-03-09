@@ -9,7 +9,8 @@
   --ifm-color-primary: #338537;
   --ifm-footer-background-color: #262828;
   --ifm-hero-text-color: #ffffff;
-  --ifm-button-background-color: #82bd00;
+  --ifm-button-background-color: #338537;
+  --ifm-button-border-color: #338537;
   --ifm-button-padding-vertical: 1rem;
 }
 
