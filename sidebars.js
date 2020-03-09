@@ -9,7 +9,12 @@ module.exports = {
   falconPlatformSidebar: {
     "Overview": [
       "platform/overview/about",
-      "platform/overview/enterprise"
+      "platform/overview/enterprise",
+    ],
+    "Packages": [
+      "platform/packages/overview",
+      "platform/packages/falcon-shop-data",
+      "platform/packages/falcon-blog-data"
     ],
     "Getting Started": [
       "platform/getting-started/prerequisites",
