@@ -13,8 +13,27 @@ module.exports = {
     ],
     "Packages": [
       "platform/packages/overview",
+      "platform/packages/create-falcon-app",
+      "platform/packages/falcon-blog-data",
+      "platform/packages/falcon-blog-extension",
+      "platform/packages/falcon-client",
+      "platform/packages/falcon-data",
+      "platform/packages/falcon-errors",
+      "platform/packages/falcon-front-kit",
+      "platform/packages/falcon-i18n",
+      "platform/packages/falcon-logger",
+      "platform/packages/falcon-magento2-api",
+      "platform/packages/falcon-payment-plugin",
+      "platform/packages/falcon-server-env",
+      "platform/packages/falcon-server",
+      "platform/packages/falcon-service-worker",
       "platform/packages/falcon-shop-data",
-      "platform/packages/falcon-blog-data"
+      "platform/packages/falcon-shop-extension",
+      "platform/packages/falcon-theme-editor",
+      "platform/packages/falcon-ui-kit",
+      "platform/packages/falcon-ui",
+      "platform/packages/falcon-wordpress-api",
+      "platform/packages/payment"
     ],
     "Getting Started": [
       "platform/getting-started/prerequisites",
