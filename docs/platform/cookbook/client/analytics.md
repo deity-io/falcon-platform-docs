@@ -6,7 +6,7 @@ sidebar_label: Setting up Google Analytics
 
 You're in luck, Falcon support both Google Analytics and Tag Manager out of the box.
 
-## 1. Add your credentials in a file.
+## Adding & commiting your credentials in a file.
 
 The config can be added to the config files in the `client/config` directory. Find out more aobut that [here](/docs/platform/client/configuration)
 
@@ -23,7 +23,7 @@ The config can be added to the config files in the `client/config` directory. Fi
 
 Chances are you won't want to commit these into your repo. If you do, you can add them to your `client/config/production.json` file.
 
-## 2. Add your credentials on the server (advised).
+## Adding your credentials on the server (advised).
 
 It's advised you add this kind of config as a server variable.
 
