@@ -11,7 +11,7 @@ sidebar_label: Prerequisites
 
 ## Technical Requirements
 
-- Node (Minimum requirement is version 8.10). <a href="https://nodejs.org/en/download/" target="_blank" rel="noreferrer noopener">How to install Node</a>.
+- Node (Minimum requirement is version 10). <a href="https://nodejs.org/en/download/" target="_blank" rel="noreferrer noopener">How to install Node</a>.
 
 
 :::note Important
