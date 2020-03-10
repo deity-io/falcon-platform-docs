@@ -9,8 +9,8 @@ Falcon is available as both an enterprise product and an <a href="https://github
 
 <div style={{display: 'flex', flexWrap: 'wrap'}}>
 
-<img src="../../../../img/docs/platform/falcon-platform-v2.png" alt="Falcon Platform Infographic" width="200" style={{margin: '10px 20px'}} />
-<img src="../../../../img/docs/platform/falcon-os-v2.png" alt="Falcon Open Source Infographic" width="200" style={{margin: '10px 20px'}} />
+<img src="/img/docs/platform/falcon-platform-v2.png" alt="Falcon Platform Infographic" width="200" style={{margin: '10px 20px'}} />
+<img src="/img/docs/platform/falcon-os-v2.png" alt="Falcon Open Source Infographic" width="200" style={{margin: '10px 20px'}} />
 
 </div>
 
