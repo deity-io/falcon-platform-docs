@@ -45,12 +45,12 @@ Once you've got that file you'll need to map your environment variables to the c
 }
 ```
 
-### 2. Set the environment variable values
+### 2. Set the environment variable values on the server
 
 You can find a full explaination [here](/docs/platform/client/configuration#custom-environment-variablesjson).
 
 - Log into your `dcloud` instance.
 - Set your value `dcloud env:var production GTM_CODE XXXXXXXXX`
 
-## 3. Finished
+### 3. Finished
 You should now see analytics data coming in as expexcted.
