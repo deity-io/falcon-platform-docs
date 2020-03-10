@@ -27,12 +27,12 @@ Falcon is available as both an enterprise product and an <a href="https://github
 - PWA frontend
 
 
-To have access to the **latest codebase**, **features** and **Falcon Cloud** you'll need to create a Falcon Platform (enterprise) account. You can do that by <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">contacting our team</a>. Falcon Platform is more performant and developer friendly.
+To have access to the **latest codebase**, **features** and **Falcon Cloud** you'll need to create a Falcon Platform account. You can do that by <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">contacting our team</a>. Falcon Platform is more performant and developer friendly.
 
 The docuementation for the open source version can be [found here](/docs/open-source/getting-started/intro).
 
 
-## Falcon Platform (Enterprise) Key Features
+## Falcon Platform Key Features
 
 - To improve the customization and flexibility of the components - Falcon E-commerce UI Kit package has been discontinued (falcon-ecommerce-uikit). Instead falcon-front-kit, falcon-ui-kit, falcon-data, falcon-shop-data and falcon-blog-data were introduced (alongside with breaking changes to adopt these packages).
 
