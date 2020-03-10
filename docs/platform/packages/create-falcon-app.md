@@ -4,4 +4,13 @@ title: '@deity/create-falcon-app'
 sidebar_label: '@deity/create-falcon-app'
 ---
 
-**Coming Soon**
+This CLI tool helps you to create your application based on [DEITY Falcon](https://github.com/deity-io/falcon) with just one command.
+
+[More information and usage examples](/docs/platform/getting-started/create)
+
+## Usage
+
+```bash
+npx @deity/create-falcon-app <my-project>
+yarn create @deity/falcon-app <my-project>
+```
