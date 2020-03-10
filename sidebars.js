@@ -60,6 +60,7 @@ module.exports = {
       },
       "platform/client/overrides",
       "platform/client/routing",
+      "platform/client/data",
       "platform/client/state",
       "platform/client/translations",
       "platform/client/cache",
@@ -77,7 +78,8 @@ module.exports = {
           'platform/cookbook/client/change-logo',
           'platform/cookbook/client/icon',
           'platform/cookbook/client/scss-global',
-          'platform/cookbook/client/post-css-support'
+          'platform/cookbook/client/post-css-support',
+          'platform/cookbook/client/analytics'
         ],
       },
     ],
