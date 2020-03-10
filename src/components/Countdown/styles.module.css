@@ -1,0 +1,12 @@
+.countdown {
+  background: darkred;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.countdown p {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}

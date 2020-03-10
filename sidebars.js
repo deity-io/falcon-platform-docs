@@ -77,6 +77,7 @@ module.exports = {
         items: [
           'platform/cookbook/client/change-logo',
           'platform/cookbook/client/icon',
+          'platform/cookbook/client/themaeble-component',
           'platform/cookbook/client/scss-global',
           'platform/cookbook/client/post-css-support',
           'platform/cookbook/client/analytics'
