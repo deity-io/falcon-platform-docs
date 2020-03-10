@@ -1,15 +1,33 @@
 ---
 id: enterprise
-title: Enterprise vs Open source
-sidebar_label: Enterprise vs Open source
+title: Falcon Platform vs Falcon Open source
+sidebar_label: Falcon Platform vs Falcon Open source
 ---
 
-- Falcon Platform: **This is an Enterprise product (paid)**
-- Falcon Open Source: **This is a free, open source product**
+Falcon is available as both an enterprise product and an <a href="https://github.com/deity-io/falcon" target="_blank" rel="noopener noreferrer">open source product</a>.
 
-Falcon is available as both an Enterprise product and an <a href="https://github.com/deity-io/falcon" target="_blank" rel="noopener noreferrer">open source product</a>.
 
-To have access to the **newest codebase**, **features** and **Falcon Cloud** you'll need to create a Falcon Platform (enterprise) account. You can do that by <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">contacting our team</a>. Falcon Platform is more performant and developer friendly.
+<div style={{display: 'flex', flexWrap: 'wrap'}}>
+
+<img src="../../../../img/docs/platform/falcon-platform-v2.png" alt="Falcon Platform Infographic" width="200" style={{margin: '10px 20px'}} />
+<img src="../../../../img/docs/platform/falcon-os-v2.png" alt="Falcon Open Source Infographic" width="200" style={{margin: '10px 20px'}} />
+
+</div>
+
+## Falcon Platform
+
+- PWA frontend
+- Latest code and features
+- Hosting / Deployments with DEITY Cloud
+- 24/7 Monitoring & a 99.9% uptime agreement.
+
+
+## Falcon Open Source
+
+- PWA frontend
+
+
+To have access to the **latest codebase**, **features** and **Falcon Cloud** you'll need to create a Falcon Platform (enterprise) account. You can do that by <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">contacting our team</a>. Falcon Platform is more performant and developer friendly.
 
 The docuementation for the open source version can be [found here](/docs/open-source/getting-started/intro).
 
