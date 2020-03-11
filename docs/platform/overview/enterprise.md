@@ -6,15 +6,9 @@ sidebar_label: Falcon Platform vs Falcon Open source
 
 Falcon is available as both an enterprise product and an <a href="https://github.com/deity-io/falcon" target="_blank" rel="noopener noreferrer">open source product</a>.
 
-
-<div style={{display: 'flex', flexWrap: 'wrap'}}>
-
-<img src="/img/docs/platform/falcon-platform-v2.png" alt="Falcon Platform Infographic" width="200" style={{margin: '10px 20px'}} />
-<img src="/img/docs/platform/falcon-os-v2.png" alt="Falcon Open Source Infographic" width="200" style={{margin: '10px 20px'}} />
-
-</div>
-
 ## Falcon Platform
+
+<img src="/img/docs/platform/falcon-pl-icons.png" alt="Falcon Platform Infographic" width="200" style={{margin: '10px 0'}} />
 
 - PWA frontend
 - Latest code and features
@@ -23,6 +17,8 @@ Falcon is available as both an enterprise product and an <a href="https://github
 
 
 ## Falcon Open Source
+
+<img src="/img/docs/platform/falcon-os-icons.png" alt="Falcon Open Source Infographic" width="200" style={{margin: '10px 0'}} />
 
 - PWA frontend
 
