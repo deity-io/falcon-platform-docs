@@ -274,10 +274,130 @@ export class TodoListQuery extends Query {
 }
 ```
 
-## 6. Rendering your data in a component.
+## 6. Rendering your data in a component
 
-<img src="/img/docs/platform/todolist.png" alt="todo list component" width="300" />
+Let's use our data in some components...
 
-## 7. All done.
+<img src="/img/docs/platform/todolist.png" alt="todo list component" width="300" style={{margin: '20px 0'}}/>
+
+For this we need to create 2 more components.
+
+```bash
+|-client
+  |-src
+    |-components
+      |- Todo
+        TodoItem.js
+        TodoList.js
+```
+
+We also need to export them from our `index.js` file.
+
+**`client/src/components/Todo/index.js`**
+```js
+...
+export * from './TodoList';
+export * from './TodoList';
+```
+
+### Todo Item Component
+
+**`client/src/components/Todo/TodoItem.js`**
+```js
+import React from 'react';
+import { TodoItemQuery } from './TodoItemQuery';
+
+export const TodoItem = ({ todoId }) => {
+  return (
+    <>
+      <TodoItemQuery variables={{ id: todoId }}>
+        {({ data: { todo } }) => {
+          if (todo) {
+            return <h1>{todo.title}</h1>;
+          }
+
+          return null;
+        }}
+      </TodoItemQuery>
+    </>
+  );
+};
+```
+
+There is a few things going on here. We import our `TodoItemQuery` component. 
+
+This accepts a `variables` prop. This is an object of variables that are passed to our query. In this case, the ID of our todo.
+
+Each query returns `data`, this returns the response from our query...in our case, `todo`.
+
+### Todo List Component
+
+**`client/src/components/Todo/TodoList.js`**
+```js
+import React from 'react';
+import { TodoListQuery } from './TodoListQuery';
+
+export const TodoList = ({ pagination = {} }) => {
+  return (
+    <>
+      <TodoListQuery variables={{ pagination }}>
+        {({ data: { todoList = {} } }) => {
+          const { items = [] } = todoList;
+          if (items.length) {
+            const todoItems = items.map(item => {
+              const { completed, title } = item;
+              return completed ? (
+                <li>{title}</li>
+              ) : (
+                <li>
+                  <del>{title}</del>
+                </li>
+              );
+            });
+
+            return <ul>{todoItems}</ul>;
+          }
+          return null;
+        }}
+      </TodoListQuery>
+    </>
+  );
+};
+```
+
+This works in exactly the same way as our `TodoItem` component.
+
+## 7. Use our components.
+
+We've done all the hard work, we now just need to use our components somewhere in our application.
+
+I'm going to add them to the homepage.
+
+**`client/src/pages/home/Home.js`**
+```js
+...
+import {
+  TodoItem,
+  TodoList
+} from '../../components';
+
+const Home = () => {
+  ...
+  return (
+    <PageLayout css={{ paddingTop: 72, paddingBottom: 72, gridGap: 72 }}>
+      ...
+      <TodoItem todoId={2} />
+      <Divider variant="fullWidth" />
+      <TodoList pagination={{ perPage: 9, page: 1 }} />
+      ...
+    </PageLayout>
+  );
+};
+
+export default Home;
+```
+
+
+## 8. All done.
 
 That's it. You can use this same concept to get data from any API.
