@@ -142,7 +142,7 @@ We map these to query parameters in `server/src/falcon-jsonplaceholder-api/index
 ```js
 if (pagination) {
   query._limit = pagination.perPage;
-  query._start = pagination.page;
+  query._start = pagination.page * pagination.perPage;
 }
 return this.get('todos', query);
 ```
