@@ -8,9 +8,15 @@ Falcon Platform was built around integrating with other services, from **BigComm
 
 Integrations often involve both handling data in our middleware (`falcon-server`) and using it on our frontend (`falcon-client`).
 
-## Json Placeholder
+## Json Placeholder (EXAMPLE)
 https://jsonplaceholder.typicode.com/ offers free and open APIs for testing.
 
 We've created a guide showing how to integrate with this and use it's data on the frontout.
 
 [Checkout out the Guide](cookbook/integrations/jsonplaceholder)
+
+## BigCommerce
+Our BigCommerce Integration is available as part of Falcon Platform `@deity/falcon-bigcommerce-api` + `@deity/falcon-shop-extension` + `@falcon-shop-data`
+
+## Stripe
+Our Stripe Integration is available as part of Falcon Platform `@deity/falcon-stripe-plugin`
