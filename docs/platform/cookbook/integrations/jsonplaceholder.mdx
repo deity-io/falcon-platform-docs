@@ -37,34 +37,23 @@ const { ApiDataSource } = require('@deity/falcon-server-env');
 
 module.exports = class JsonPlaceholderApi extends ApiDataSource {
 
-  // Get todo list with pagination passed to it
-  getTodoList(pagination) {
+  async todoList(_, { pagination }) {
     const query = {};
 
     if (pagination) {
       query._limit = pagination.perPage;
       query._start = pagination.page;
     }
-    return this.get('todos', query);
-  }
 
-  async todoList(_, { pagination }) {
-    const todos = await this.getTodoList(pagination);
+    const todos = await this.get('todos', query);
 
     return {
       items: todos
-    };
-  }
-
-  // get single todo based on ID
-  getTodo(id) {
-    return this.get(`todos/${id}`);
+    }
   }
 
   async todo(_, { id }) {
-    const todo = await this.getTodo(id);
-
-    return todo;
+    return this.get(`todos/${id}`);
   }
 };
 ```
