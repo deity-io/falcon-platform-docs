@@ -20,3 +20,7 @@ Our BigCommerce Integration is available as part of Falcon Platform `@deity/falc
 
 ## Stripe
 Our Stripe Integration is available as part of Falcon Platform `@deity/falcon-stripe-plugin`
+
+---
+
+More integration docs coming soon.
