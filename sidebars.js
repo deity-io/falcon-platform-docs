@@ -83,6 +83,13 @@ module.exports = {
           'platform/cookbook/client/analytics'
         ],
       },
+      {
+        type: 'category',
+        label: 'Integrations',
+        items: [
+          'platform/cookbook/integrations/jsonplaceholder'
+        ],
+      }
     ],
     "Video Guides": [
       "platform/guides/client"
