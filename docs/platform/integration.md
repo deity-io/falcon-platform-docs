@@ -15,7 +15,7 @@ We've created a guide showing how to integrate with this and use it's data on th
 
 [Checkout out the Guide](cookbook/integrations/jsonplaceholder)
 
-## Json Placeholder (EXAMPLE)
+## Contentful (EXAMPLE)
 https://www.contentful.com/ is an enterise, API first CMS.
 
 We've created a guide showing how to integrate with this and use it's data on the frontout.
