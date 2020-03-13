@@ -1,7 +1,7 @@
 ---
-id: setup
-title: Setup
-sidebar_label: Setup
+id: cloud
+title: Falcon Cloud
+sidebar_label: Falcon Cloud
 ---
 
 ## Getting Started with Cloud

@@ -27,7 +27,7 @@ The Falcon Middleware Server is the force behind Falcon Client and comes with ma
 ### Falcon Cloud
 Cloud is not only the infastructure your Falcon Platform will be hosted on but also your deployment, monitoring and testing tool.
 
-[Learn about Falcon Cloud](../../cloud/overview/about)
+[Learn about Falcon Cloud](../cloud/about)
 
 
 ## Dive Straight In
