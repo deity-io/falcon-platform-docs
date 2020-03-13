@@ -15,7 +15,6 @@ module.exports = {
       },
       links: [
         { to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right" },
-        { to: "/docs/cloud/overview/about", label: "Falcon Cloud", position: "right" },
         { to: "/docs/open-source/getting-started/intro", label: "Falcon Open Source", position: "right" }
       ]
     },
@@ -31,7 +30,7 @@ module.exports = {
             },
             {
               label: "Falcon Cloud",
-              to: "/docs/cloud/overview/about"
+              to: "/docs/platform/cloud/about"
             },
             {
               label: "Falcon Open Source",

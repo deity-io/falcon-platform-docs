@@ -69,6 +69,15 @@ module.exports = {
       "platform/client/deployment",
     ],
     "Falcon Server": ["platform/server"],
+    "Falcon Cloud" : [
+        "platform/cloud/about",
+        "platform/cloud/technical",
+        "platform/cloud/prerequisites",
+        "platform/cloud/account",
+        "platform/cloud/installation",
+        "platform/cloud/repository",
+        "platform/cloud/dcloud"
+    ],
     "Integration": ["platform/integration"],
     "Cookbook": [
       {
@@ -92,29 +101,12 @@ module.exports = {
       }
     ],
     "Video Guides": [
-      "platform/guides/client"
+      "platform/guides/client",
+      "platform/guides/cloud",
     ],
     "Support": [
       "platform/support/contact",
       "platform/support/faqs"
-    ]
-  },
-  cloudSidebar: {
-    "Overview": [
-      "cloud/overview/about",
-      "cloud/overview/technical"
-    ],
-    "Getting Started": [
-      "cloud/getting-started/prerequisites",
-      "cloud/getting-started/account",
-      "cloud/getting-started/installation",
-      "cloud/getting-started/repository",
-      "cloud/getting-started/dcloud"
-    ],
-    "Guides & Tutorials": ["cloud/guides/setup"],
-    "Support": [
-      "cloud/support/contact",
-      "cloud/support/faqs"
     ]
   },
   falconOpenSourceSidebar: {
