@@ -1,0 +1,8 @@
+/docs/cloud/overview/about                      /docs/platform/cloud/about
+/docs/cloud/overview/technical                  /docs/platform/cloud/technical
+/docs/cloud/getting-started/prerequisites       /docs/platform/cloud/prerequisites
+/docs/cloud/getting-started/account             /docs/platform/cloud/account
+/docs/cloud/getting-started/installation        /docs/platform/cloud/installation
+/docs/cloud/getting-started/repository          /docs/platform/cloud/repository
+/docs/cloud/getting-started/dcloud              /docs/platform/cloud/dcloud
+/docs/cloud/guides/setup                        /docs/platform/guides/cloud
