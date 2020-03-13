@@ -1,0 +1,102 @@
+---
+id: contentful
+title: Integrating with Contentful
+sidebar_label: Contentful
+description: DEITY Platform Contentful integration
+---
+
+<a href="https://www.contentful.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Contentful site">
+  <img src="/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{margin: '0 0 40px'}}/>
+</a>
+
+In this tutorial we will implement a **basic** integration with <a href="https://www.contentful.com//" target="_blank" rel="noopener noreferrer">Contentful</a>.
+
+Contentful provide a few ways to get data, including **GraphQL**. In this tutorial we will be using **REST** as it's included in all their plans.
+
+:::note Read this first
+We recommend you go through [this](json-placeholder) example first as we will be skipping past a few details.
+:::
+
+## Overview
+
+We will get 'course' data from <a href="https://www.contentful.com/" rel="noreferrer noopener" target="_blank">Contentfuls</a> example data. 
+
+We will expalin adding API auth details to server + `server/config/local.json` file.
+
+## 1. Getting set up with Contentful
+
+### Create an account
+
+If you don't already have a Contentful you'll have to create one. This is easy and they have free plans if you're just testing it out.
+
+### Set up your content model
+
+This tutorial focusses on getting a **course** content model. This comes as part of their example data.  If you're not using this model a few details later on may vary.
+
+![contentful content model](/img/docs/platform/contentful-data.png)
+
+### Add some content entries
+
+Once you've got your content model setup you'll need to add some content. Again we are using the sample data that comes with 2 'courses' ('Hello Contentful' & 'Hello SDKs').
+
+### Get your credentials
+
+The last thing you'll need to do on Contentfuls side is get your credentials.
+
+You'll need your:
+
+- Content Delivery API key
+- Space ID
+- Environment ID
+- Content Type ID
+
+You can get all of these from your admin.
+
+![contentful admin](/img/docs/platform/contentful-admin.png)
+
+You can get your `Content Delivery API Key` and `Space ID` from the API keys section in your dashboard.
+
+Your `Environment ID` from the environments section. If you're using sample data, this is **master**.
+
+To get your `Content Type ID` go to your content model and it will be in the sidebar. Using the sample data it will be **course**.
+
+## 2. Creating your API and Extension packages
+
+:::note Want to test your API outside of Falcon Platform?
+Contentful have a really handy <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/content-types/content-type/get-a-single-content-type/console" rel="noopener noreferrer" target="_blank">API testing tool</a> as part of their docs meaning you don't need to use a tool like <a href="https://www.postman.com/" target="_blank" rel="noreferrer noopenner">Postman</a>.
+:::
+
+**`server/config/default.json`**
+```json
+```
+
+## 3. Adding your credentials locally
+
+We don't want to commit our API keys so, for now we'll add these to a `server/config/local.json`. This is merged into your `default.json` but not commited ([see this doc for more information](/docs/platform/client/configuration)).
+
+The name of the API needs to be the same as in `server/config/default.json`. In this case it's `contentful`.
+
+**`server/config/local.json`**
+```json
+{
+  ...
+  "apis": {
+    "contentful": {
+      "config": {
+        "spaceId": "[SPACE_ID]",
+        "contentDeliveryApi": "[CONTENT_DELIVERY_API]",
+        "environment": "[ENVIRONMENT_ID]"
+      }
+    }
+  },
+}
+
+```
+
+## 4. Testing your GraphQL
+
+## 5. Using your data in Falcon Client
+
+## 6. Moving your credentials to your environment
+
+## 7. Finished
