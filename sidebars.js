@@ -96,7 +96,8 @@ module.exports = {
         type: 'category',
         label: 'Integrations',
         items: [
-          'platform/cookbook/integrations/jsonplaceholder'
+          'platform/cookbook/integrations/jsonplaceholder',
+          'platform/cookbook/integrations/contentful'
         ],
       }
     ],
