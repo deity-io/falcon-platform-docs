@@ -15,6 +15,13 @@ We've created a guide showing how to integrate with this and use it's data on th
 
 [Checkout out the Guide](cookbook/integrations/jsonplaceholder)
 
+## Json Placeholder (EXAMPLE)
+https://www.contentful.com/ is an enterise, API first CMS.
+
+We've created a guide showing how to integrate with this and use it's data on the frontout.
+
+[Checkout out the Guide](cookbook/integrations/contentful)
+
 ## BigCommerce
 Our BigCommerce Integration is available as part of Falcon Platform `@deity/falcon-bigcommerce-api` + `@deity/falcon-shop-extension` + `@falcon-shop-data`
 
