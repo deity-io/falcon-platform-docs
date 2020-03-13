@@ -14,8 +14,6 @@ Depending on your plan you'll be able to have as many enviroments as you need ma
 
 Built with internationalisation in mind, Cloud supports multi-region based on geolocation.
 
-[See our plans](/prices)
-
 
 ## DCloud CLI tool
 
