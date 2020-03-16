@@ -4,4 +4,4 @@ title: '@deity/falcon-errors'
 sidebar_label: '@deity/falcon-errors'
 ---
 
-**Coming Soon**
+This package helps handle errors within Falcon.
