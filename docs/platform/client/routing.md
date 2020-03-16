@@ -17,6 +17,8 @@ In our example projects the routing happens in `client/src/App.js`.
 
 ### Static
 
+#### URL Queries
+
 ### Dynamic
 
 ### SwitchDynamicURL
