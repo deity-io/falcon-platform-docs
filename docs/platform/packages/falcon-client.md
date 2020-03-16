@@ -4,4 +4,6 @@ title: '@deity/falcon-client'
 sidebar_label: '@deity/falcon-client'
 ---
 
-**Coming Soon**
+Falcon Client is your applications frontend.
+
+To find out more about `falcon-client` see [the docs](/docs/platform/client/about)
