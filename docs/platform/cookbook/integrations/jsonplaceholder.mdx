@@ -21,7 +21,7 @@ To add a new data type from a new data source we will need to integrate with a f
 - Queries (to decide what data is needed)
 - Components (to render the data on the frontend)
 
-**n.b.** In this tutorial we will be adding everything directly into our repositiry `client/src` and `server/src`. If you plan to reuse your functionality it's highly recommended you add it to your own `NPM` packages.
+**n.b.** In this tutorial we will be adding everything directly into our repository `client/src` and `server/src`. If you plan to reuse your functionality it's highly recommended you add it to your own `NPM` packages.
 
 ## 1. Add your API connection
 
@@ -192,7 +192,7 @@ If you've got `falcon-server` running and it's on port `4000` (this is the defau
 
 Now we need to create query components. You will often see these named like `[package]-[data_type]-data` e.g. `falcon-blog-data`.
 
-Because we aren't adding our code to `NPM` pacakges we are going to add the code to our `client/src/components` directory.
+Because we aren't adding our code to `NPM` packages we are going to add the code to our `client/src/components` directory.
 
 ```bash
 |-client
@@ -209,7 +209,7 @@ Our `index.js` file will just be used to export our components.
 **`client/src/components/Todo/index.js`**
 ```js
 export * from './TodoListQuery';
-export * from './TodoListQuery';
+export * from './TodoItemQuery';
 ```
 
 We now need to create a `Query` component for each data type, `TodoItem` and `TodoList`.
@@ -286,7 +286,7 @@ We also need to export them from our `index.js` file.
 ```js
 ...
 export * from './TodoList';
-export * from './TodoList';
+export * from './TodoItem';
 ```
 
 ### Todo Item Component
@@ -385,7 +385,6 @@ const Home = () => {
 
 export default Home;
 ```
-
 
 ## 8. All done.
 
