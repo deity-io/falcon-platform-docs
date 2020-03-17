@@ -103,7 +103,8 @@ module.exports = {
         label: 'Integrations',
         items: [
           'platform/cookbook/integrations/jsonplaceholder',
-          'platform/cookbook/integrations/contentful'
+          'platform/cookbook/integrations/contentful',
+          'platform/cookbook/integrations/contentful2'
         ],
       }
     ],
