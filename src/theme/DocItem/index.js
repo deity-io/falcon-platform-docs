@@ -94,7 +94,7 @@ function DocItem(props) {
         {keywords && keywords.length && (
           <meta name="keywords" content={keywords.join(',')} />
         )}
-        <meta property="og:title" content={`${title} | ${siteTitle}`} />
+        <meta property="og:title" content={title} />
         {metaImage && <meta property="og:image" content={metaImageUrl} />}
         {metaImage && <meta property="twitter:image" content={metaImageUrl} />}
         {metaImage && (
