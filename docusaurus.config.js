@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Falcon Platform",
+  title: "DEITY Falcon",
   tagline: "Documentation",
   url: "https://deity.io",
   baseUrl: "/",
@@ -8,7 +8,7 @@ module.exports = {
   projectName: "falcon-platform-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "Falcon Platform Documentation",
+      title: "Falcon Documentation",
       logo: {
         alt: "DEITY Logo",
         src: "img/deity-logo.svg"
