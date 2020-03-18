@@ -6,32 +6,15 @@ sidebar_label: Routing
 
 ## Overview
 
-In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a> in version 4.
+In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
+
+[Dynamic Routing](/docs/platform/server/dynamic-routes) relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/docs/platform/cookbook/integrations/contentful2).
+
+---
 
 In our example projects the routing happens in `client/src/App.js`.
 
-
-## Overview
-
-## Client side
-
-### Static
-
-#### URL Queries
-
-### Dynamic
-
-### SwitchDynamicURL
-### OnlyUnauthenticatedRoute
-### ProtectedRoute
-
-
-## Server side
-
-### DynamicRouteResolver
-### URL Priorities
-
-You can see the key components involved in routing below. `@deity/falcon-front-kit` has 3 core components, `SwitchDynamicURL`, `ProtectedRoute` & `OnlyUnauthenticatedRoute`. 
+`SwitchDynamicURL`, imported from `@deity/falcon-front-kit` is used to handle routes.
 
 **`client/src/App.js`**
 ```js
@@ -39,8 +22,6 @@ You can see the key components involved in routing below. `@deity/falcon-front-k
 import { Route } from 'react-router-dom';
 import {
   ...
-  OnlyUnauthenticatedRoute,
-  ProtectedRoute,
   SwitchDynamicURL,
 } from '@deity/falcon-front-kit';
 ...
@@ -50,20 +31,6 @@ const App = () => (
   <SwitchDynamicURL>
     <Route exact path="/" component={Home} />
     <Route exact path="/blog/:page?" component={Blog} />
-    <Route exact path="/cart" component={Cart} />
-    <Route exact path="/checkout" component={Checkout} />
-    <Route exact path="/checkout/sign-in" component={CheckoutSignIn} />
-    <Route exact path="/checkout/confirmation" component={CheckoutConfirmation} />
-    <Route exact path="/checkout/failure" component={CheckoutFailure} />
-    <Route exact path="/search" component={Search} />
-    <ProtectedRoute
-      path="/account"
-      redirectTo={`/?sidebar=${SIDEBAR_TYPE.account}`}
-      component={Account}
-    />
-    <OnlyUnauthenticatedRoute exact path="/reset-password" component={ResetPassword} />
-    <Route exact type="blog-post" component={BlogPost} />
-    <Route exact type="shop-category" component={Category} />
     <Route exact type="shop-product" component={Product} />
     <Route component={NotFound} />
   </SwitchDynamicURL>
@@ -73,7 +40,7 @@ const App = () => (
 export default App;
 ```
 
-### `SwitchDynamicURL` basics:
+## `SwitchDynamicURL` basics:
 
 This component `@deity/falcon-front-kit/src/DynamicRoute/SwitchDynamicUrl`, wraps your `<Route>` much like `import { Switch } from "react-router-dom";`.
 
@@ -93,11 +60,31 @@ e.g. if the URL was `https://yourstore/checkout`, the `Checkout` component would
 If you want your URL to match exactly you can pass `exact` as a prop. Read more [here](https://reacttraining.com/react-router/web/api/Route/exact-bool)
 :::
 
+## Static Routing
+
+As explained above, static URLs use the `path` prop to match a path to a component.
+
+You will see we are also matching on `path` with a dynamic variable for `:page?`. In this instance it handles the blogs pagination is is later avaialable as params passed automatically to the `Blog` component. 
+
+```js
+<Route exact path="/" component={Home} />
+<Route exact path="/blog/:page?" component={Blog} />
+```
+**`Blog.js`**
+```js
+const Blog = ({ match = {} }) => {
+  const { params } = match;
+  ...
+  <BlogPostListQuery variables={{ pagination: { perPage: 9, page: +params.page || 1 } }}>
+  ...
+}
+```
+
 ## Dynamic Routing
 
-In most cases your site won't be made up of flat routes and you'll need to render components based on `dynamic` routes such as product `slugs`.
+In a lot of instances you won't know exactly which URLs you are looking for, for example `https://your-site/product-name.html`. This is what we refer to as **dynamic routing**. It requires you to query your APIs to look for a match.
 
-We Still use `<SwitchDynamicURL>` for this, but we pass `type` to our child `<Route>` component.
+In this case we would match on `type` and **not** `path`.
 
 ```js
 <SwitchDynamicURL>
@@ -105,48 +92,26 @@ We Still use `<SwitchDynamicURL>` for this, but we pass `type` to our child `<Ro
 </SwitchDynamicURL>
 ```
 
-If `path` prop is passed the `type` will be ignored.
+The `type` is returned by a method in your API code (in Falcon Server).
 
-### `DynamicRouteResolver`
+For more details please checkout out our [dynamic routing docs](/docs/platform/server/dynamic-routes).
 
-`@deity/falcon-server/src/resolvers/DynamicRouteResolver.ts`
+**n.b.** If `path` prop is passed the `type` will be ignored.
 
-[DynamicRouteResolver](/docs/platform/server/dynamic-routes) is where the magic happens.
+## Protected Routes
 
-`SwitchDynamicURL` uses `@deity/falcon-data/src/Url/UrlQuery.tsx` to check each API to determine if they can handle a URL.
+If you want a route to protected to logged in customer only you should use `<ProtectedRoute>` instead of `<Route>`.
 
-As long as your Api resolver extends [`import { ApiDataSource } from '@deity/falcon-server-env';`](/docs/platform/packages/falcon-server-env#apidatasource) then you have a few methods available to you.
+This accepts the same props as `<Route>` but also `redirectsTo`. This is used for unauthenticated users.
 
-- `getFetchUrlPriority`
-- `fetchUrl`
+An example of this is the account area. This will redirect to the `sign-in` page if the customer isn't logged in.
 
-### URL Priority
-
-Each API can also provide a priorty to its URLs. By **default** the API priorty order is the order they are added in your `server/config/default.json` file. With the first API being checked first.
-
-You might want to do this if you're worried about URLs clashing, e.g. a product and blog post having the same URL.
-
-To change the priority of your API you will first need to import `ApiUrlPriority`. This contains an object which maps priorites to values. You can then use the `getFetchUrlPriority` function to set your priority.
-
-**`@deity/falcon-server-env/src/types.ts`**
-```tsx
-export enum ApiUrlPriority {
-  HIGHEST = 1,
-  HIGH = 2,
-  NORMAL = 3,
-  LOW = 4,
-  LOWEST = 5,
-  OFF = 0
-}
-```
-
-**YOUR_API_RESOLVER.js**
 ```js
-import { ApiUrlPriority } from '@deity/falcon-server-env';
-
-getFetchUrlPriority(path) {
-  return path.endsWith(this.itemUrlSuffix) ? ApiUrlPriority.HIGH : ApiUrlPriority.NORMAL;
-}
+<SwitchDynamicURL>
+  <ProtectedRoute
+    path="/account"
+    redirectTo={`/sign-in`}
+    component={Account}
+  />
+</SwitchDynamicURL>
 ```
-
-The above example is used for our **Magento 2 API**, we add a high priorty to URLs that end with `.html`.

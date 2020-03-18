@@ -50,6 +50,22 @@ class WordpressApi {
 So in that case `DynamicRouteResolver` will call `ShopExtension.fetchUrl()` first, if that call returns `null`,
 it will call `BlogExtension.fetchUrl()` second.
 
+By **default** the API priorty order is the order they are added in your `server/config/default.json` file. With the first API being checked first. If the priorities are the same this order will be used.
+
+We provide these orders:
+
+**`@deity/falcon-server-env/src/types.ts`**
+```tsx
+export enum ApiUrlPriority {
+  HIGHEST = 1,
+  HIGH = 2,
+  NORMAL = 3,
+  LOW = 4,
+  LOWEST = 5,
+  OFF = 0
+}
+```
+
 ## DynamicRouteResolver result structure
 
 The correct response must match the following structure:
