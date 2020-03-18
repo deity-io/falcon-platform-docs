@@ -40,7 +40,7 @@ function Home() {
             </div>
             <div className={styles.aboutColumn}>
               <img
-                srcset="img/hero-pwa-falcon-700.png 700w,
+                srcSet="img/hero-pwa-falcon-700.png 700w,
                 img/hero-pwa-falcon-1200.png 1200w"
                 sizes="(max-width: 600px) 700px, 120px"
                 loading="lazy"
