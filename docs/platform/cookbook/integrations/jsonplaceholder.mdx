@@ -360,7 +360,16 @@ This works in exactly the same way as our `TodoItem` component.
 
 We've done all the hard work, we now just need to use our components somewhere in our application.
 
-I'm going to add them to the homepage.
+To access our component in an standardised way we will first export it to the component root.
+
+**`client/src/components/index.js`**
+```
+...
+export * from './Todo';
+```
+
+Now that it is available from the components directory I'm going to add them to the homepage.
+
 
 **`client/src/pages/home/Home.js`**
 ```js
