@@ -22,7 +22,22 @@ module.exports = {
       "platform/packages/falcon-client",
       "platform/packages/falcon-data",
       "platform/packages/falcon-errors",
-      "platform/packages/falcon-front-kit",
+      {
+        type: 'category',
+        label: '@deity/falcon-front-kit',
+        items: [
+          "platform/packages/falcon-front-kit/overview",
+          {
+            type: 'category',
+            label: 'Checkout',
+            items: [
+              "platform/packages/falcon-front-kit/checkout/overview",
+              "platform/packages/falcon-front-kit/checkout/checkout-provider",
+              "platform/packages/falcon-front-kit/checkout/checkout",
+            ],
+          }
+        ],
+      },
       "platform/packages/falcon-i18n-webpack-plugin",
       "platform/packages/falcon-i18n",
       "platform/packages/falcon-logger",
@@ -75,14 +90,14 @@ module.exports = {
       "platform/client/deployment",
     ],
     "Falcon Server": ["platform/server"],
-    "Falcon Cloud" : [
-        "platform/cloud/about",
-        "platform/cloud/technical",
-        "platform/cloud/prerequisites",
-        "platform/cloud/account",
-        "platform/cloud/installation",
-        "platform/cloud/repository",
-        "platform/cloud/dcloud"
+    "Falcon Cloud": [
+      "platform/cloud/about",
+      "platform/cloud/technical",
+      "platform/cloud/prerequisites",
+      "platform/cloud/account",
+      "platform/cloud/installation",
+      "platform/cloud/repository",
+      "platform/cloud/dcloud"
     ],
     "Integration": ["platform/integration"],
     "Cookbook": [
