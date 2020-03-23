@@ -13,7 +13,7 @@
 
 .bannerContent {
   width: 100%;
-  padding: 2rem var(--ifm-spacing-horizontal);
+  padding: 1rem var(--ifm-spacing-horizontal);
   background: var(--ra-color-note);
   color: var(--ra-color-text-dark);
   text-align: center;
