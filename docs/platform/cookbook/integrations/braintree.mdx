@@ -23,8 +23,8 @@ export const Highlight = ({children, color}) => (
 );
 
 export const colors = {
-  server: '#596690',
-  client: '#a7345c',
+  server: '#a7345c',
+  client: '#596690',
   braintree: '#202020'
 }
 
@@ -68,16 +68,20 @@ We will be focussing soley on Card Payments in the checkout.
 
 
 ### File Flow
+This is an example of the data flow from a file perspective (using `demo-v2`):
+<img src="/img/docs/platform/payment-flow.jpg" alt="Payment flow diagram" />
+
 
 ## Useful Packages
 
-- Links to Packages
+- [Braintree Client Side](https://www.npmjs.com/package/react-braintree-fields)
+- [GraphQL Client](https://github.com/graphql-dotnet/graphql-client)
 
 ## Useful docs
 
-- Links to internal and external docs here.
+- [Braintree, creating a payment using GraphQL](https://graphql.braintreepayments.com/guides/creating_transactions/#charging-a-payment-method)
 
-## Steps
+## Creating your integration
 
 ### 1. Add your provider
 
