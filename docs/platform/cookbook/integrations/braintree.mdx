@@ -6,8 +6,39 @@ description: DEITY Platform Braintree Payments integration
 ---
 
 <a href="https://www.braintreepayments.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Braintree site">
-  <img src="/img/docs/platform/braintree.svg" alt="Braintree Logo" width="200" style={{margin: '0 0 40px'}}/>
+  <img src="/img/docs/platform/braintree.svg" alt="Braintree Logo" width="200" />
 </a>
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem 0.5rem',
+      textTransform: 'uppercase'
+    }}>
+    {children}
+  </span>
+);
+
+export const colors = {
+  server: '#596690',
+  client: '#a7345c',
+  braintree: '#202020'
+}
+
+export const ServerFlag = () => (
+  <Highlight color={colors.server}>Falcon Server</Highlight>
+)
+
+export const ClientFlag = () => (
+  <Highlight color={colors.client}>Falcon Client</Highlight>
+)
+
+export const BraintreeFlag = () => (
+  <Highlight color={colors.braintree}>Braintree</Highlight>
+)
 
 
 ## Overview
@@ -19,7 +50,24 @@ We will be focussing soley on Card Payments in the checkout.
 
 ## How it works
 
--- Diagram here
+### Data Flow
+
+1. <ServerFlag /> Configuration data (API keys etc)
+
+2. <ClientFlag /> Braintree form initialised
+
+3. <ClientFlag /> User inputs card data
+
+4. <BraintreeFlag /> `nonce` token grabbed from Braintree
+
+5. <ServerFlag /> Payment query created (using token)
+
+6. <BraintreeFlag /> Payment handled
+
+6. <ServerFlag /> Payment status returned
+
+
+### File Flow
 
 ## Useful Packages
 
