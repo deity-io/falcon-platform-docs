@@ -46,7 +46,7 @@ Logger.info('My log message');
 This will simply add `"app": "my-app"` data to every log message you send (not visible when using `logger-pretty`),
 so you'll be able to filter your log messages by this key:
 
-[![DEITY Falcon Logger setApp](assets/logger-setapp.png)](assets/logger-setapp.png)
+[![DEITY Falcon Logger setApp](/img/opensource/logger-setapp.png)](/img/opensource/logger-setapp.png)
 
 > Setting **LogLevel** and **App** for Falcon-based apps is done automatically using the provided config values
 
@@ -64,7 +64,7 @@ subLogger.info('My log message');
 This call will add `"module": "my-module"` data to every log entry you send via `subLogger`. In conjunction with
 [logger-pretty](#logger-pretty) - it will render an additional `[my-module]` section in the log message output:
 
-[![DEITY Falcon Logger getFor](assets/logger-getfor.png)](assets/logger-getfor.png)
+[![DEITY Falcon Logger getFor](/img/opensource/logger-getfor.png)](/img/opensource/logger-getfor.png)
 
 ### `traceTime` method
 
@@ -106,14 +106,14 @@ Due to a nature of Pino logger - you can use this package as a part of pipelinin
 
 As a result, your console output should look similar to this:
 
-[![DEITY Falcon Logger Pretty](assets/logger-pretty.png)](assets/logger-pretty.png)
+[![DEITY Falcon Logger Pretty](/img/opensource/logger-pretty.png)](/img/opensource/logger-pretty.png)
 
 This way, the formatting code offloads your application (which gives an extra performance boost) and handles it in a dedicated sub-process.
 It also gives you the ability to apply your own formatting without changing any internal code, you simply change the last part of the pipeline.
 
 > For `production` mode - you simply remove the last part of the pipeline and you will start seeing a raw JSON output:
 >
-> [![DEITY Falcon Logger Raw](assets/logger-production.png)](assets/logger-production.png)
+> [![DEITY Falcon Logger Raw](/img/opensource/logger-production.png)](/img/opensource/logger-production.png)
 
 ### Logger-Pretty on production
 
@@ -137,7 +137,7 @@ There's an extra mode included into `logger-pretty` - it's called `minimal`. To 
 like `logger-pretty -m`. Best to use with Falcon-based apps when running `falcon-scripts` or `falcon-client` commands
 as it does not show a log level nor date time information in the output:
 
-[![DEITY Falcon Logger Minimal](assets/logger-minimal.png)](assets/logger-minimal.png)
+[![DEITY Falcon Logger Minimal](/img/opensource/logger-minimal.png)](/img/opensource/logger-minimal.png)
 
 ## Transports
 

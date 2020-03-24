@@ -21,7 +21,7 @@ It should look like this:
 import React from 'react';
 import ArrowBack from 'boxicons/svg/regular/bx-arrow-back.svg';
 ...
-import Logo from '../assets/logo.svg';
+import Logo from '..//img/opensource/logo.svg';
 
 export const icons = {
   logo: {
@@ -92,12 +92,12 @@ Here's one you can use...
 
 **One 'gotcha' is that some SVGs don't cammel case `viewBox` e.g. `viewbox`. This will cause issues so it's best to change it to `viewBox`.**
 
-Add your svg file to your assets directory (`client/src/assets/new-icon.svg`) and import it in the icon component (`client/src/styling/icons.js`).
+Add your svg file to your assets directory (`client/src//img/opensource/new-icon.svg`) and import it in the icon component (`client/src/styling/icons.js`).
 
 **`client/src/styling/icons.js`**
 ```js
 ...
-import NewIcon from '../assets/new-icon.svg';
+import NewIcon from '..//img/opensource/new-icon.svg';
 
 export const icons = {
   ...

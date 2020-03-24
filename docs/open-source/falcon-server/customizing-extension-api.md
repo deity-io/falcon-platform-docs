@@ -6,7 +6,7 @@ title: Customizing Extension/API
 
 By default `falcon-shop-extension` provides GraphQL types required by related Falcon packages. At some point you might want to change the data returned by some queries or mutations i.e. to add new fields not returned by default.
 
-> NOTE: please read about [`extensions`](falcon-server/extensions.md) and [`apis`](falcon-server/api-providers.md) first to understand the purpose of extensions and APIs in Falcon's environment.
+> NOTE: please read about [`extensions`](/docs/open-source/falcon-server/extensions) and [`apis`](/docs/open-source/falcon-server/api-providers) first to understand the purpose of extensions and APIs in Falcon's environment.
 
 The way we recommend to do that is to create your own extension and your own API client:
 
@@ -88,7 +88,7 @@ Let's assume you'll call your extension `falcon-custom-shop` and your API `falco
 
 > NOTE: To keep things simple we'll assume that both the extension and API are placed in the project's repository.
 
-In most cases you'll want to modify the data returned by queries or mutations. In order to do so it's best to create a new class for extensions based on `Extension` class provided by [`@deity/falcon-server-env`](falcon-server/falcon-server-env.md) package.
+In most cases you'll want to modify the data returned by queries or mutations. In order to do so it's best to create a new class for extensions based on `Extension` class provided by [`@deity/falcon-server-env`](/docs/open-source/falcon-server/falcon-server-env) package.
 
 Let's assume you want to add `extensionAttributes` property to `Product` type. To do so you need to create a very simple class that extends type `Product` and adds this attribute (plus any extra types if required - like `type ExtensionAttribute` in this case).
 

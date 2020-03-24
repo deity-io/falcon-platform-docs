@@ -30,7 +30,7 @@ export const yourThemeName = createTheme({
 **`client/src/styling/icons.js`**
 ```js
 ...
-import Icon from '../assets/icon.svg';
+import Icon from '..//img/opensource/icon.svg';
 
 export const icons = {
   ...
@@ -44,7 +44,7 @@ The `client/src/styling/icons.js` component exports and object with each icon in
 **`client/src/styling/icons.js`**
 ```js
 import User from 'boxicons/svg/regular/bx-user.svg';
-import Logo from '../assets/logo.svg';
+import Logo from '..//img/opensource/logo.svg';
 
 export const icons = {
   logo: {

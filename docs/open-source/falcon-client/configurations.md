@@ -24,7 +24,7 @@ import clientApolloSchema from './src/clientState';
 export { clientApolloSchema };
 ```
 
-For more information see [this](falcon-client/local-state-management.md)
+For more information see [this](/docs/open-source/falcon-client/local-state-management)
 
 ### `bootstrap.js`
 

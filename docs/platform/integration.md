@@ -37,6 +37,9 @@ We've created a guide showing how to integrate with it.
 
 ## Production Ready Integrations
 
+### Algolia
+**Docs coming soon**
+
 ### BigCommerce
 Our BigCommerce Integration is available as part of Falcon Platform `@deity/falcon-bigcommerce-api` + `@deity/falcon-shop-extension` + `@falcon-shop-data`
 

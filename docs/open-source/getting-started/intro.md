@@ -17,7 +17,7 @@ DEITY Falcon is a platform agnostic, stand-alone but modular library to be used 
 
 ## Community
 
-Any contributions, small or big, are very welcome! Please take a look at our [Contributor guidelines](https://github.com/deity-io/falcon/blob/master/.github/CONTRIBUTING.md) and [Code of Conduct](https://github.com/deity-io/falcon/blob/master/.github/CODE_OF_CONDUCT.md)
+Any contributions, small or big, are very welcome! Please take a look at our [Contributor guidelines](https://github.com/deity-io/falcon/blob/master/.github/CONTRIBUTING) and [Code of Conduct](https://github.com/deity-io/falcon/blob/master/.github/CODE_OF_CONDUCT)
 
 Join the official chat channel
 
@@ -73,4 +73,4 @@ Falcon API, it's important to "meet" the schema definition). All optional method
 
 ## Overall DEITY Falcon data flow schema
 
-![DEITY Falcon schema](assets/falcon-schema.png)
+![DEITY Falcon schema](/img/opensource/falcon-schema.png)
