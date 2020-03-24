@@ -74,7 +74,10 @@ module.exports = {
       "platform/client/testing",
       "platform/client/deployment",
     ],
-    "Falcon Server": ["platform/server"],
+    "Falcon Server": [
+      "platform/server",
+      "platform/server/dynamic-routes"
+    ],
     "Falcon Cloud" : [
         "platform/cloud/about",
         "platform/cloud/technical",
@@ -104,6 +107,7 @@ module.exports = {
         items: [
           'platform/cookbook/integrations/jsonplaceholder',
           'platform/cookbook/integrations/contentful',
+          'platform/cookbook/integrations/contentful2',
           'platform/cookbook/integrations/braintree'
         ],
       }

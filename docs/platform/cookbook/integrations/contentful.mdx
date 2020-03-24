@@ -1,7 +1,7 @@
 ---
 id: contentful
-title: Integrating with Contentful
-sidebar_label: Contentful
+title: Integrating with Contentful Part 1
+sidebar_label: Contentful Part 1
 description: DEITY Platform Contentful integration
 ---
 
@@ -124,7 +124,7 @@ module.exports = () => ({});
 **`server/src/falcon-content-extension/schema.graphql`**
 ```js
 extend type Query {
-  course: Courses! @cache(ttl: 15)
+  courses: Courses! @cache(ttl: 15)
 }
 
 type Courses {
@@ -151,7 +151,7 @@ const { ApiDataSource } = require('@deity/falcon-server-env');
 
 module.exports = class ContentfulApi extends ApiDataSource {
 
- async course() {
+ async courses() {
     const { environment, spaceId, contentDeliveryApi } = this.config;
     const query = {
       access_token: contentDeliveryApi,
