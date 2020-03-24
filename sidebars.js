@@ -87,8 +87,10 @@ module.exports = {
         "platform/cloud/repository",
         "platform/cloud/dcloud"
     ],
-    "Integration": ["platform/integration"],
+    "Payments": ["platform/payments/overview"],
+    "Integrations": ["platform/integration"],
     "Cookbook": [
+      "platform/cookbook/about",
       {
         type: 'category',
         label: 'Falcon Client',
