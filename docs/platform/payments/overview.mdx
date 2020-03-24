@@ -1,0 +1,27 @@
+---
+id: overview
+title: Overview
+sidebar_label: Overview
+---
+
+Payment providers all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be a indiscriminate as possible.
+
+The general flow looks like this:
+
+import HighlightFlag from '../../../src/components/HighlightFlag';
+
+### Data Flow
+
+1. <HighlightFlag type="server" /> Configuration data (API keys etc)
+
+2. <HighlightFlag type="client" /> Braintree form initialised
+
+3. <HighlightFlag type="client" /> User inputs card data
+
+4. <HighlightFlag text="Payment Provider" /> `nonce` token grabbed from Braintree
+
+5. <HighlightFlag type="server" /> Payment query created (using token)
+
+6. <HighlightFlag text="Payment Provider" /> Payment handled
+
+6. <HighlightFlag type="server" /> Payment status returned
