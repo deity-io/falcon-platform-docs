@@ -147,9 +147,86 @@ const payment = code =>
   loadable(() => import(/* webpackChunkName: "shop/checkout/payments/[request]" */ `../components/payments/${code}`));
 ```
 
+**`client/src/pages/shop/Checkout/components/PaymentMethodPicker.js`.**
+```js
+import { SimplePayment } from '@deity/falcon-payment-plugin';
+import Stripe from './payments/Stripe';
+
+const paymentCodeToPluginMap = {
+  cash: SimplePayment,
+  stripe: Stripe
+};
+```
+
 The `key` for each value in `paymentCodeToPluginMap` should be linked to the name of the `provider` in the your config.
 
+As a general rule we advise having 2 payment components, one for the UI and the other (normally a `plugin`) to handle the functionality. This may vary for different implementations.
+
 ### Your component
+
+**Examples are from our Stripe Component**
+
+**`client/src/pages/shop/Checkout/components/payments/Stripe.js`**
+```js
+import React, { useState } from 'react';
+import { StripePlugin, CardElement } from '@deity/falcon-stripe-plugin';
+import { Box, themed } from '@deity/falcon-ui';
+
+const StripeCardLayout = themed({
+  tag: Box,
+  defaultTheme: {
+    stripeCardLayout: {
+      my: 'md',
+      css: ({ theme }) => ({
+        width: '100%',
+        '.StripeElement': {
+          border: theme.borders.regular,
+          borderColor: theme.colors.secondaryDark,
+          borderRadius: theme.borderRadius.md,
+          padding: `${theme.spacing.xs}px ${theme.spacing.sm}px`
+        }
+      })
+    }
+  }
+});
+
+const Payment = ({ children, ...props }) => {
+  const [loading, setLoading] = useState(false);
+  const fn = () => {
+    setLoading(true);
+    return Promise.resolve();
+  };
+
+  return (
+    <StripePlugin {...props}>
+      {pay =>
+        children(
+          () =>
+            fn()
+              .then(() => pay())
+              .then(x => {
+                setLoading(false);
+                return x;
+              })
+              .catch(x => {
+                setLoading(false);
+                return Promise.reject(x);
+              }),
+          { loading }
+        )
+      }
+    </StripePlugin>
+  );
+};
+Payment.UI = () => (
+  <StripeCardLayout>
+    <CardElement hidePostalCode />
+  </StripeCardLayout>
+);
+
+export default Payment;
+
+```
 
 ### Your plugin
 
