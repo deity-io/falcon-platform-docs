@@ -10,18 +10,26 @@ The general flow looks like this:
 
 import HighlightFlag from '../../../src/components/HighlightFlag';
 
-### Data Flow
+1. <HighlightFlag text="Payment Provider" /> Account / API keys created
 
-1. <HighlightFlag type="server" /> Configuration data (API keys etc)
+2. <HighlightFlag type="server" /> Payment provider created and configured in config files.
 
-2. <HighlightFlag type="client" /> Braintree form initialised
+3. <HighlightFlag type="client" /> Client side UI component created (payment form)
 
-3. <HighlightFlag type="client" /> User inputs card data
+4. <HighlightFlag type="client" /> Client side component mapped to provider
 
-4. <HighlightFlag text="Payment Provider" /> `nonce` token grabbed from Braintree
+5. <HighlightFlag type="client" /> Client side component initiated
 
-5. <HighlightFlag type="server" /> Payment query created (using token)
+6. <HighlightFlag type="server" /> Triggers `initiate` method in payment provider. Authentication requested
 
-6. <HighlightFlag text="Payment Provider" /> Payment handled
+7. <HighlightFlag text="Payment Provider" /> Token / Auth info returned
 
-6. <HighlightFlag type="server" /> Payment status returned
+8. <HighlightFlag type="server" /> PSP auth pushed to client side component
+
+9. <HighlightFlag type="client" /> User triggers payment (fills in form and submits)
+
+10. <HighlightFlag type="server" /> Triggers `validate` method in payment provider
+
+11. <HighlightFlag text="Payment Provider" /> Payment handled
+
+12. <HighlightFlag type="server" /> Payment response handled

@@ -31,7 +31,7 @@ const HighlightFlag = ({ type, text }) => {
       break;
     case 'client':
       data.color = colors.client;
-      data.text = text ? text : 'Falcon Server';
+      data.text = text ? text : 'Falcon Client';
       break;
     default:
       break;
