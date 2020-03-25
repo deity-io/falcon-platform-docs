@@ -87,7 +87,10 @@ module.exports = {
         "platform/cloud/repository",
         "platform/cloud/dcloud"
     ],
-    "Payments": ["platform/payments/overview"],
+    "Payments": [
+      "platform/payments/overview",
+      "platform/payments/getting-started"
+    ],
     "Integrations": ["platform/integration"],
     "Cookbook": [
       "platform/cookbook/about",
