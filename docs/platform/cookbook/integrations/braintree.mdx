@@ -9,36 +9,7 @@ description: DEITY Platform Braintree Payments integration
   <img src="/img/docs/platform/braintree.svg" alt="Braintree Logo" width="200" />
 </a>
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem 0.5rem',
-      textTransform: 'uppercase'
-    }}>
-    {children}
-  </span>
-);
-
-export const colors = {
-  server: '#a7345c',
-  client: '#596690',
-  braintree: '#202020'
-}
-
-export const ServerFlag = () => (
-  <Highlight color={colors.server}>Falcon Server</Highlight>
-)
-
-export const ClientFlag = () => (
-  <Highlight color={colors.client}>Falcon Client</Highlight>
-)
-
-export const BraintreeFlag = () => (
-  <Highlight color={colors.braintree}>Braintree</Highlight>
-)
+import HighlightFlag from '../../../../src/components/HighlightFlag';
 
 
 ## Overview
@@ -54,19 +25,19 @@ In this example all files will be created directly into our codebase. For the sa
 
 ### Data Flow
 
-1. <ServerFlag /> Configuration data (API keys etc)
+1. <HighlightFlag type="server" /> Configuration data (API keys etc)
 
-2. <ClientFlag /> Braintree form initialised
+2. <HighlightFlag type="client" /> Braintree form initialised
 
-3. <ClientFlag /> User inputs card data
+3. <HighlightFlag type="client" /> User inputs card data
 
-4. <BraintreeFlag /> `nonce` token grabbed from Braintree
+4. <HighlightFlag text="Braintree" /> `nonce` token grabbed from Braintree
 
-5. <ServerFlag /> Payment query created (using token)
+5. <HighlightFlag type="server" /> Payment query created (using token)
 
-6. <BraintreeFlag /> Payment handled
+6. <HighlightFlag text="Braintree" /> Payment handled
 
-6. <ServerFlag /> Payment status returned
+6. <HighlightFlag type="server" /> Payment status returned
 
 
 ### File Flow
