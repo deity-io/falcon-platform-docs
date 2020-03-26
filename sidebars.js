@@ -88,7 +88,14 @@ module.exports = {
         "platform/cloud/dcloud"
     ],
     "Payments": ["platform/payments/overview"],
-    "Integrations": ["platform/integration"],
+    "Integrations": [
+      "platform/integration/examples",
+      "platform/integration/algolia",
+      "platform/integration/bigcommerce",
+      "platform/integration/magento2",
+      "platform/integration/stripe",
+      "platform/integration/wordpress"
+    ],
     "Cookbook": [
       "platform/cookbook/about",
       {
