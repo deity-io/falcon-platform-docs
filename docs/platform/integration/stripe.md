@@ -24,10 +24,15 @@ You can test transactions using these details:
 - Expiry Date: Any future date
 - CVV: `123`
 
+Our integration includes:
+
+- `client/src/pages/shop/Checkout/components/payments/Stripe.js` (Client side component)
+- `@deity-io/falcon-stripe-plugin`(Client side plugin)
+- `@deity/falcon-payments/src/provider/stripe.js` (Server side provider)
+
 ## Supported Features
 
 - Credit card payments
-
 
 ## Getting Started
 
