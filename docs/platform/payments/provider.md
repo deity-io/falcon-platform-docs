@@ -38,7 +38,7 @@ Payment Providers are registered in your server side config (`server/config/defa
 }
 ```
 
-Each provider has a package associated with it and a `config` object. You can use this config to pass data such as API keys to your provider.  As per any config it's worth looking at which [config](docs/platform/client/configuration) file should contain which configurations (to avoid sensitive data by commited to your repository).
+Each provider has a package associated with it and a `config` object. You can use this config to pass data such as API keys to your provider.  As per any config it's worth looking at which [config](/docs/platform/client/configuration) file should contain which configurations (to avoid sensitive data by commited to your repository).
 
 **Stripe** and **Cash on delivery** providers are both shipped with our `@deity/falcon-payments` package.
 
@@ -53,7 +53,7 @@ There are a few keys things to understand about payment providers:
 
 This is a good example of what your payment provider might look like:
 
-**`/@deity/falcon-payments/src/provider/plain.js`**
+**`@deity/falcon-payments/src/provider/plain.js`**
 ```js
 module.exports = class PlainPayment {
   /**
