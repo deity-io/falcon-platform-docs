@@ -75,7 +75,7 @@ There are a few keys things to understand about payment providers:
 
 This is a good example of what your payment provider might look like:
 
-**`/@deity/falcon-payments/src/provider/plain.js`**
+**`@deity/falcon-payments/src/provider/plain.js`**
 ```js
 module.exports = class PlainPayment {
   /**
