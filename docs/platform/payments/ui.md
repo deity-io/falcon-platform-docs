@@ -8,7 +8,7 @@ sidebar_label: Payment UI Components
 
 All payment providers defined in your config are passed to the frontend, these are then in turn mapped to components.
 
-**`client/src/pages/shop/Checkout/sections/PlaceOrderSection.js`.**
+**`client/src/pages/shop/Checkout/sections/PlaceOrderSection.js`**
 ```js
 const paymentCodeToPluginMap = {
   cash: `SimplePayment`,
