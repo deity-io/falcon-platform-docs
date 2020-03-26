@@ -85,7 +85,8 @@ Using our example project, `demo-v1` you will have Magento 2 support without hav
 Install our [Magento 2 module](https://github.com/deity-io/falcon-magento2-module). Please read the readme for installation instructions.
 
 ### Step 2
-Create API keys in Magento
+Create connection details for Deity to use.
+`bin/magento  admin:user:create  --admin-user='your-admin-username' --admin-password='your-admin-password' --admin-email='admin@deity.test' --admin-firstname='node' --admin-lastname='Deity'`
 
 ### Step 3
 Install Falcon Platform using the `demo-v1` example.
@@ -94,7 +95,7 @@ Install Falcon Platform using the `demo-v1` example.
 Add your Magento 2 details to your config.
 
 ### Step 5
-Disable your Magento 2 frontend.
+Disable your Magento 2 frontend. We have a [Magento module](https://github.com/deity-io/disable-frontend) you can use.
 
 ### Step 6
 Complete, you should now have a fully working Magento 2 / Falcon Platform site
