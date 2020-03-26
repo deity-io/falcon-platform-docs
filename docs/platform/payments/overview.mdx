@@ -6,7 +6,13 @@ sidebar_label: Overview
 
 Payment providers all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be a indiscriminate as possible.
 
-The general flow looks like this:
+There are 3 main parts involved involved in the payment process:
+
+- A [Payment Provider](provider) registered in your server config
+- A [Payment UI](ui) that is mapped to a provider
+- Payment service provider API (Stripe, Braintree, PayPal etc)
+
+## Payment Flow Steps
 
 import HighlightFlag from '../../../src/components/HighlightFlag';
 
@@ -33,3 +39,15 @@ import HighlightFlag from '../../../src/components/HighlightFlag';
 11. <HighlightFlag text="Payment Provider" /> Payment handled
 
 12. <HighlightFlag type="server" /> Payment response handled
+
+## Payment Flow Diagram
+
+This is a general overview of how payments work in the Falcon Platform checkout. All payment service providers are different, as are all implementations so this may vary slightly for you.
+
+<img src="/img/docs/platform/payment-flow-core.jpg" alt="Payment flow diagram" />
+
+## Examples
+
+This example contains a step by step guide to adding a new payment method.
+
+- [Braintree Payments](/docs/platform/cookbook/integrations/braintree)

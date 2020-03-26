@@ -89,7 +89,8 @@ module.exports = {
     ],
     "Payments": [
       "platform/payments/overview",
-      "platform/payments/getting-started"
+      "platform/payments/provider",
+      "platform/payments/ui"
     ],
     "Integrations": ["platform/integration"],
     "Cookbook": [
