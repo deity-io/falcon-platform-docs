@@ -20,7 +20,7 @@ const payment = code =>
   loadable(() => import(/* webpackChunkName: "shop/checkout/payments/[request]" */ `../components/payments/${code}`));
 ```
 
-**`client/src/pages/shop/Checkout/components/PaymentMethodPicker.js`.**
+**`client/src/pages/shop/Checkout/components/PaymentMethodPicker.js`**
 ```js
 import { SimplePayment } from '@deity/falcon-payment-plugin';
 import Stripe from './payments/Stripe';
