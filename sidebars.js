@@ -87,7 +87,11 @@ module.exports = {
         "platform/cloud/repository",
         "platform/cloud/dcloud"
     ],
-    "Payments": ["platform/payments/overview"],
+    "Payments": [
+      "platform/payments/overview",
+      "platform/payments/provider",
+      "platform/payments/ui"
+    ],
     "Integrations": [
       "platform/integration/examples",
       "platform/integration/algolia",
