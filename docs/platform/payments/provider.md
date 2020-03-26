@@ -102,7 +102,7 @@ The param `payload` is an object that will look like this:
 }
 ```
 
-It expects a `PaymentMethodInstance` to be returned, this will look like this:
+It expects an object of type `PaymentMethodInstance` to be returned, this will look like this:
 
 ```js
 {
