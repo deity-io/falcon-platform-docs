@@ -16,7 +16,7 @@ const Highlight = ({ text, color }) => (
 const colors = {
   server: '#a7345c',
   client: '#596690',
-  payment: '#562988'
+  payment: '#483958'
 }
 
 const HighlightFlag = ({ type, text }) => {
