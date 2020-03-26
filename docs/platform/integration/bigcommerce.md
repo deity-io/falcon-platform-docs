@@ -18,7 +18,12 @@ We are actively developing our BigCommerce integration and will be adding suppor
 
 ## Overview
 
-Coming soon
+Our BigCommerce integration provides everything you need to get your shop online. From product pages to the checkout.
+
+The key packages involved in the integration are:
+
+- `@deity/`
+- `@deity/`
 
 ## Supported Features
 
