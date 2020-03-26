@@ -10,6 +10,28 @@ Your payment provider acts as the middleware between your frontend components an
 
 Payment Providers are registered in your server side config (`server/config/default.json`).
 
+They are registered against the api.
+
+```json
+"apis": {
+  "bigcommerce": {
+    "package": "./src/falcon-custom-bc-api",
+    "config": {
+      ...
+      "paymentsComponent": "payments"
+    }
+  }
+}
+```
+
+The value `payments` maps to the section within `components`
+
+```json
+"components": {
+  "payments": {}
+}
+```
+
 ```json
 {
   "components": {
