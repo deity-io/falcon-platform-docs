@@ -6,7 +6,7 @@ sidebar_label: Payment Provider
 
 ## Registering a new Payment Provider
 
-Your payment provider acts as the middleware between your frontend components and the payment service provider (Stripe, Braintree, PayPal etc).
+Your payment provider acts as the middleware between your frontend components and the payment service provider (Stripe, Braintree, PayPal etc.).
 
 Payment Providers are registered in your server side config (`server/config/default.json`).
 
