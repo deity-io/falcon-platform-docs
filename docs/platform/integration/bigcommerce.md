@@ -14,19 +14,16 @@ sidebar_label: BigCommerce
 
 ## Overview
 
+Coming Soon
+
 ## Supported Features
 
-- Credit card payments
+Coming Soon
 
 
 ## Getting Started
 
-All you need to do is add your BigCommerce configuration.
-
-### 1. Create a Stripe account / API keys
-
-
-### 2. Add your Stripe details to your Falcon Platform config
+Coming Soon
 
 
 ## Useful Links
