@@ -41,6 +41,41 @@ You'll need you API keys later.
 
 ### 2. Add your Stripe details to your Falcon Platform config
 
+If you're using our example app `demo-v2` all you need to do now is add your Stripe details to your server side config.
+
+The Stripe provider should already exist in your components->payments.
+**`server/config/default.json`**
+```json
+{
+  "components": {
+    "payments": {
+      "package": "@deity/falcon-payments",
+      "config": {
+        "providers": {
+          "stripe": {
+            "package": "@deity/falcon-payments/src/provider/stripe",
+            "config": {
+              "title": "Stripe",
+              "secretKey": null,
+              "publicKey": null
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+You just need to add your `secretKey` and `publicKey`. These should be added in your `server/config/local.json` locally and on your production environment you can use these constants:
+
+```json
+"secretKey": "PAYMENT_STRIPE_SECRET_KEY",
+"publicKey": "PAYMENT_STRIPE_PUBLIC_KEY"
+```
+
+
+
 
 
 
