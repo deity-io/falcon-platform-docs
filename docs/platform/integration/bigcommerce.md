@@ -139,6 +139,10 @@ If you `API Path` is https://api.bigcommerce.com/stores/abcdefg123/v3/ then your
 
 You'll also need your stores frontend URL. This is simply the URL you visit to see your store. It will look something like `https://test-store.mybigcommerce.com/`
 
+#### GraphQl Token
+**More info coming soon**
+https://developer.bigcommerce.com/api-docs/storefront/graphql/graphql-storefront-api-overview#authentication
+
 ### 2. Configure BigCommerce
 
 The default configuration for BigCommerce looks like this:
@@ -201,7 +205,7 @@ Use your `server/config/local.xml` or your `environment variables` (Deity Cloud)
       "clientId": "[CLIENT_ID]",
       "clientSecret": "[CLIENT_SECRET]",
       "gqlUrl": "[STORE_URL]/graphql",
-      "gqlToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJlYXQiOjE5MjQ5OTE5OTksInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxLCJjb3JzIjpbXSwiY2lkIjoxLCJpYXQiOjE1NzEyMzk3MTgsInN1YiI6InF1bDVkdzU0OHRodjBxaDB5bms0OGMzaXU0cmE4Ym0iLCJzaWQiOjEwMDA1NzUyOTAsImlzcyI6IkJDIn0.lzYr2wEAT1NLiEwfgFAnRGNdeTG6RihVrDY_Wkkz5FmAOvqpsNvLRBCR4u4xtbsvSLybNoGmVFrTnkW08g3BcQ"
+      "gqlToken": "[GRAPHGL_TOKEN]"
     }
   }
 }
