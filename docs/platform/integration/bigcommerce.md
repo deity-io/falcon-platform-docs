@@ -13,7 +13,7 @@ sidebar_label: BigCommerce
 ---
 
 :::note New features coming soon
-We are actively developing our BigCommerce integration and will be adding support for more and more features.
+We are actively developing our BigCommerce integration and will be adding support for more features.
 :::
 
 ## Overview
@@ -22,8 +22,13 @@ Our BigCommerce integration provides everything you need to get your shop online
 
 The key packages involved in the integration are:
 
-- `@deity/`
-- `@deity/`
+- `@deity/falcon-bigcommerce-api`
+- `@deity/falcon-bigcommerce-endpoints`
+
+These integrate with:
+
+- `@deity/falcon-shop-extension`
+- `@deity/falcon-shop-data`
 
 ## Supported Features
 
@@ -94,7 +99,113 @@ The key packages involved in the integration are:
 
 ## Getting Started
 
-Coming Soon
+If you're using our example app, `demo-v2` most of the heavy lifting will be done for you and you'll only need to add a few configurations.
+
+### 1. Create a BigCommerce Account
+
+You can create an account and start your free trial [here](https://www.bigcommerce.com/essentials/free-trial/)
+
+<img src="/img/docs/platform/bigcommerce-account-1.png" alt="BigCommerce Account" width="300" style={{marginBottom: 20}}/>
+
+Once you've created an account, or if you already had one you'll need to create API keys. From within your dashboard visit **Advanced Settings -> API Accounts**.
+
+<img src="/img/docs/platform/bigcommerce-account-2.png" alt="BigCommerce Account" width="180" style={{marginBottom: 20}}/>
+
+You should then be able to create a **V2/V3 API Token**.
+
+<img src="/img/docs/platform/bigcommerce-account-3.png" alt="BigCommerce Account" width="180" style={{marginBottom: 20}}/>
+
+We recommend enabling **all permissions** for you API so you don't have to regenerate it at a later date.
+
+<img src="/img/docs/platform/bigcommerce-account-4.png" alt="BigCommerce Account" width="140" style={{marginBottom: 20}}/>
+
+You will then get a download with your API keys. Keep this safe as you won't be able to generate it again. We recommend storing this information in a secure password manager such as 1password.
+
+You should get the following credentials:
+
+- ACCESS TOKEN
+- CLIENT ID
+- CLIENT SECRET
+- NAME
+- API PATH
+
+#### Your Store hash
+
+From your `API Path` you will be able to get your `Store Hash`. 
+
+If you `API Path` is https://api.bigcommerce.com/stores/abcdefg123/v3/ then your `Store Hash` is `abcdefg123`. You will need this later.
+
+#### Your Store url
+
+You'll also need your stores frontend URL. This is simply the URL you visit to see your store. It will look something like `https://test-store.mybigcommerce.com/`
+
+### 2. Configure BigCommerce
+
+The default configuration for BigCommerce looks like this:
+
+**`server/config/default.json`**
+```json
+"endpoints": {
+  "bigcommerce": {
+    "package": "@deity/falcon-bigcommerce-endpoints",
+    "config": {
+      "protocol": "https",
+      "host": null,
+      "accessToken": null,
+      "clientId": null,
+      "clientSecret": null,
+      "url": "/bc/webhook",
+      "webhookBaseUrl": null
+    }
+  }
+},
+"apis": {
+  "bigcommerce": {
+    "package": "./src/falcon-custom-bc-api",
+    "config": {
+      "protocol": "https",
+      "paymentHost": null,
+      "host": null,
+      "accessToken": null,
+      "clientId": null,
+      "clientSecret": null,
+      "gqlUrl": null,
+      "gqlToken": null,
+      "frontendUrl": "http://localhost:3000",
+      "mailerComponent": "mailer",
+      "paymentsComponent": "payments"
+    }
+  }
+}
+```
+
+Use your `server/config/local.xml` or your `environment variables` (Deity Cloud) to add the sensitive data where needed.
+
+```json
+"endpoints": {
+  "bigcommerce": {
+    "config": {
+      "host": "api.bigcommerce.com/stores/[STORE_HASH]",
+      "accessToken": "[ACCESS_TOKEN]",
+      "clientId": "[CLIENT_ID]",
+      "clientSecret": "[CLIENT_SECRET]"
+    }
+  }
+},
+"apis": {
+  "bigcommerce": {
+    "config": {
+      "paymentHost": "payments.bigcommerce.com/stores/[STORE_HASH]/",
+      "host": "api.bigcommerce.com/stores/[STORE_HASH]",
+      "accessToken": "[ACCESS_TOKEN]",
+      "clientId": "[CLIENT_ID]",
+      "clientSecret": "[CLIENT_SECRET]",
+      "gqlUrl": "[STORE_URL]/graphql",
+      "gqlToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJlYXQiOjE5MjQ5OTE5OTksInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxLCJjb3JzIjpbXSwiY2lkIjoxLCJpYXQiOjE1NzEyMzk3MTgsInN1YiI6InF1bDVkdzU0OHRodjBxaDB5bms0OGMzaXU0cmE4Ym0iLCJzaWQiOjEwMDA1NzUyOTAsImlzcyI6IkJDIn0.lzYr2wEAT1NLiEwfgFAnRGNdeTG6RihVrDY_Wkkz5FmAOvqpsNvLRBCR4u4xtbsvSLybNoGmVFrTnkW08g3BcQ"
+    }
+  }
+}
+```
 
 
 ## Useful Links
