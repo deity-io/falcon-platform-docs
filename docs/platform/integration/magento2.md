@@ -92,7 +92,34 @@ Create connection details for Deity to use.
 Install Falcon Platform using the `demo-v1` example.
 
 ### Step 4
-Add your Magento 2 details to your config.
+Add your Magento 2 details to your `server/config/` files. Below is an example of the config variables you'll need to add.
+If you're using `demo-v1` this will be set up to use our demo Magento 2 instance and should work out of the box.
+
+```json
+{
+  "endpoints": {
+    "magento": {
+      "config": {
+        "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]"
+      }
+    }
+  },
+  "apis": {
+    "magento2": {
+      "config": {
+        "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]",
+        "auth": {
+          "consumerKey": "[CONSUMER_KEY]",
+          "consumerSecret": "[CONSUMER_SECRET]",
+          "accessToken": "[ACCESS_TOKEN]",
+          "accessTokenSecret": "[ACCESS_TOKEN_SECRET]"
+        }
+      }
+    }
+  }
+}
+
+```
 
 ### Step 5
 Disable your Magento 2 frontend. We have a [Magento module](https://github.com/deity-io/disable-frontend) you can use.
