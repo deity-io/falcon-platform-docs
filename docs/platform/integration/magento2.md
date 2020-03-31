@@ -81,17 +81,30 @@ We have tried to support as many features as possible but as Magento is continuo
 
 Using our example project, `demo-v1` you will have Magento 2 support without having to do any custom dev.
 
-### Step 1
+### 1. Add our Magento Module
 Install our [Magento 2 module](https://github.com/deity-io/falcon-magento2-module). Please read the readme for installation instructions.
 
-### Step 2
+### 2. Create a deity user within Magento
 Create connection details for Deity to use.
 `bin/magento  admin:user:create  --admin-user='your-admin-username' --admin-password='your-admin-password' --admin-email='admin@deity.test' --admin-firstname='node' --admin-lastname='Deity'`
 
-### Step 3
-Install Falcon Platform using the `demo-v1` example.
+### 3. Create an integration within Magento.
 
-### Step 4
+From the admin (system->integrations) you can create a new integration.
+
+<img src="/img/docs/platform/magento2-admin.png" alt="Magento admin" width="300" style={{ marginBottom: 20 }}/>
+
+From here you will get the following credentials to use later:
+
+- `CONSUMER_KEY`
+- `CONSUMER_SECRET`
+- `ACCESS_TOKEN`
+- `ACCESS_TOKEN_SECRET`
+
+### 4. Create your Falcon App.
+Install Falcon Platform using the `demo-v1` example and `create-falcon-app`
+
+### 5. Configure your Magento connection
 Add your Magento 2 details to your `server/config/` files. Below is an example of the config variables you'll need to add.
 If you're using `demo-v1` this will be set up to use our demo Magento 2 instance and should work out of the box.
 
@@ -121,8 +134,8 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 
 ```
 
-### Step 5
+### 6. Disable your Magento frontned
 Disable your Magento 2 frontend. We have a [Magento module](https://github.com/deity-io/disable-frontend) you can use.
 
-### Step 6
+### 7. Complete
 Complete, you should now have a fully working Magento 2 / Falcon Platform site
