@@ -6,4 +6,6 @@ sidebar_label: About
 
 Falcon Client serves as a your PWA theme. It's a set of ReactJs components that build up your UI.
 
-It's the entrypoint for frontend features of the Falcon Platform stack. It acts as host for your project - provides app building capabilities and features set which can be used to create your desired shop application.
+It's the entrypoint for frontend features of the Falcon Platform stack. It provides app building capabilities and features which can be used to create your application.
+
+Falcon Client includes everything you need to create a fully functioning PWA with offline support, optimum performance and server side rendering.
