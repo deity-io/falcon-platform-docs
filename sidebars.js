@@ -87,6 +87,11 @@ module.exports = {
         "platform/cloud/repository",
         "platform/cloud/dcloud"
     ],
+    "Configuration": [
+      "platform/configuration/overview",
+      "platform/configuration/client",
+      "platform/configuration/server",
+    ],
     "Payments": [
       "platform/payments/overview",
       "platform/payments/provider",
