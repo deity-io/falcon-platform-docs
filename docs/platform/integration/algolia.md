@@ -54,7 +54,7 @@ Once you've created an account you should be able to get your **API keys**.
 
 <img src="/img/docs/platform/algolia-admin-1.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
 
-### 2. Add config to Falcon Server
+### 2. Add your config to Falcon Server
 
 The next thing you'll need to do is add your API keys to your config files.
 
