@@ -203,7 +203,7 @@ Now you just need to start your app (Falcon Server) and all the products will be
 
 To keep indexes up to date with product data we use webhooks. 
 
-Falcon server has 2 events we listen for `falcon-server.entity-updated` and `falcon-server.entity-deleted`.
+Falcon server has 2 events we subscribe to `falcon-server.entity-updated` and `falcon-server.entity-deleted`.
 
 `falcon-server.entity-updated` also runs when new entries (products) are added.
 
