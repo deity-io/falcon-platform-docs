@@ -76,7 +76,6 @@ This is a full list of the config you'll need.
     "algolia": {
       "package": "@deity/falcon-algoliasearch-endpoints",
       "config": {
-        "host": "fake",
         "component": "algolia",
         "autoReindex": false,
         "url": "/algolia-info",
@@ -197,6 +196,8 @@ To run your initial index you just need to use the `autoReindex` flag in your co
 Now you just need to start your app (Falcon Server) and all the products will be indexed. 
 
 **n.b.** If you want to run a fresh reindex of all your products we advise going into the Algolia admin and emptying your indexes there first.
+
+This is a temporary config only needed for the initial index.
 
 
 ### 3. Updating indexes when product data changes
