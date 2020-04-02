@@ -15,7 +15,12 @@ module.exports = {
       },
       links: [
         { to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right" },
-        { to: "/docs/open-source/getting-started/intro", label: "Falcon Open Source", position: "right" }
+        { to: "/docs/open-source/getting-started/intro", label: "Falcon Open Source", position: "right" },
+        {
+          label: "Falcon UI",
+          href: "https://falcon-ui.docs.deity.io/",
+          position: "right"
+        }
       ]
     },
     footer: {
@@ -35,6 +40,10 @@ module.exports = {
             {
               label: "Falcon Open Source",
               to: "/docs/open-source/getting-started/intro"
+            },
+            {
+              label: "Falcon UI",
+              href: "https://falcon-ui.docs.deity.io/"
             }
           ]
         },
