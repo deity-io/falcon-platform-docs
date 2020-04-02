@@ -89,17 +89,6 @@ module.exports = {
       "platform/client/testing",
       "platform/client/deployment",
     ],
-<<<<<<< HEAD
-    "Falcon Server": ["platform/server"],
-    "Falcon Cloud": [
-      "platform/cloud/about",
-      "platform/cloud/technical",
-      "platform/cloud/prerequisites",
-      "platform/cloud/account",
-      "platform/cloud/installation",
-      "platform/cloud/repository",
-      "platform/cloud/dcloud"
-=======
     "Falcon Server": [
       "platform/server",
       "platform/server/dynamic-routes"
@@ -112,7 +101,6 @@ module.exports = {
         "platform/cloud/installation",
         "platform/cloud/repository",
         "platform/cloud/dcloud"
->>>>>>> master
     ],
     "Configuration": [
       "platform/configuration/overview",
