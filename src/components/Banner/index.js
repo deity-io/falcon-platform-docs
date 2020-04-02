@@ -18,7 +18,7 @@ const BannerContent = () => (
   <section className={styles.banner}>
     <div className={styles.bannerContent}>
       <div className={styles.bannerWrapper}>
-        <p style={{ fontSize: '0.9', margin: 0 }}><strong>Can't find the information you need?</strong> If you can't find what you need, the information might be in our <Link to="/docs/open-source/getting-started/intro">Falcon Open Source docs</Link>.</p>
+        <p style={{ fontSize: '0.9', margin: 0 }}><strong>Can't find the information you need?</strong> The information might be in our <Link to="/docs/open-source/getting-started/intro">Falcon Open Source docs</Link> or in our <Link href="https://deity-community.slack.com/archives/CDL2XDSHZ" target="_blank" rel="noopener noreferrer">community Slack channel</Link>.</p>
       </div>
     </div>
   </section>
