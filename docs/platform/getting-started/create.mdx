@@ -16,7 +16,7 @@ import Examples from './../../../src/components/Examples';
 To generate a new application based on Falcon Platform you can use our CLI tool, **create falcon app**.
 
 :::note Using the new theme?
-By default the demo based on "new-theme" assumes it's connected to a **BigCommerce** instance, which uses **Algolia** and **Stripe**. Without these credentials the application will not start (you'll see the errors in the console). The old theme will, by default, be connected to our demo **Magento 2** and **Wordpress** instances.
+By default the demo based on "demo-v2" assumes it's connected to a **BigCommerce** instance, which uses **Algolia** and **Stripe**. Without these credentials the application will not start (you'll see the errors in the console). The old theme will, by default, be connected to our demo **Magento 2** and **Wordpress** instances.
 :::
 
 import Tabs from '@theme/Tabs';
@@ -55,11 +55,11 @@ project-name/
 
 ### Options
 
-- `--example <name-of-example>` The example flag is used to define which example we want to start with. The options are `shop-with-blog`(default) and `new-theme`.
-  `shop-with-blog` by default connects to a demo **Magento 2** and **Wordpress** instance. To use the <a href="https://demo.deity.io" target="_blank" rel="noreferrer noopener">latest demo</a> use `new-theme`. This requires you to have your own **BigCommerce**, **Algolia** and **Stripe** accounts.
+- `--example <name-of-example>` The example flag is used to define which example we want to start with. The options are `demo-v1`(default) and `demo-v2`.
+  `demo-v1` by default connects to a demo **Magento 2** and **Wordpress** instance. To use the <a href="https://demo.deity.io" target="_blank" rel="noreferrer noopener">latest demo</a> use `demo-v2`. This requires you to have your own **BigCommerce**, **Algolia** and **Stripe** accounts.
 
 ```bash
-npx @deity/create-falcon-app --example new-theme <project-name>
+npx @deity/create-falcon-app --example demo-v2 <project-name>
 
 ```
 
