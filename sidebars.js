@@ -7,11 +7,8 @@
 
 module.exports = {
   falconPlatformSidebar: {
-    "Overview": [
-      "platform/overview/about",
-      "platform/overview/enterprise",
-    ],
-    "Packages": [
+    Overview: ["platform/overview/about", "platform/overview/enterprise"],
+    Packages: [
       "platform/packages/overview",
       "platform/packages/babel-preset-falcon-client",
       "platform/packages/create-falcon-app",
@@ -39,7 +36,7 @@ module.exports = {
       "platform/packages/falcon-ui-kit",
       "platform/packages/falcon-ui",
       "platform/packages/falcon-wordpress-api",
-      "platform/packages/normal-module-override-webpack-plugin",
+      "platform/packages/normal-module-override-webpack-plugin"
     ],
     "Getting Started": [
       "platform/getting-started/prerequisites",
@@ -54,15 +51,15 @@ module.exports = {
       "platform/client/configuration",
       "platform/client/webpack",
       {
-        type: 'category',
-        label: 'Theming',
+        type: "category",
+        label: "Theming",
         items: [
           "platform/client/theming/overview",
           "platform/client/theming/css-mapping",
           "platform/client/theming/components",
           "platform/client/theming/icons",
           "platform/client/theming/css-sass"
-        ],
+        ]
       },
       "platform/client/overrides",
       "platform/client/routing",
@@ -72,32 +69,30 @@ module.exports = {
       "platform/client/cache",
       "platform/client/code-splitting",
       "platform/client/testing",
-      "platform/client/deployment",
+      "platform/client/deployment"
     ],
-    "Falcon Server": [
-      "platform/server",
-      "platform/server/dynamic-routes"
+    "Falcon Server": ["platform/server", "platform/server/dynamic-routes"],
+    "Falcon Cloud": [
+      "platform/cloud/about",
+      "platform/cloud/technical",
+      "platform/cloud/prerequisites",
+      "platform/cloud/account",
+      "platform/cloud/installation",
+      "platform/cloud/repository",
+      "platform/cloud/dcloud"
     ],
-    "Falcon Cloud" : [
-        "platform/cloud/about",
-        "platform/cloud/technical",
-        "platform/cloud/prerequisites",
-        "platform/cloud/account",
-        "platform/cloud/installation",
-        "platform/cloud/repository",
-        "platform/cloud/dcloud"
-    ],
-    "Configuration": [
+    Configuration: [
       "platform/configuration/overview",
       "platform/configuration/client",
-      "platform/configuration/server",
+      "platform/configuration/server"
     ],
-    "Payments": [
+    Logging: ["platform/logging/overview"],
+    Payments: [
       "platform/payments/overview",
       "platform/payments/provider",
       "platform/payments/ui"
     ],
-    "Integrations": [
+    Integrations: [
       "platform/integration/examples",
       "platform/integration/algolia",
       "platform/integration/bigcommerce",
@@ -105,39 +100,34 @@ module.exports = {
       "platform/integration/stripe",
       "platform/integration/wordpress"
     ],
-    "Cookbook": [
+    Testing: ["platform/testing/overview"],
+    Cookbook: [
       "platform/cookbook/about",
       {
-        type: 'category',
-        label: 'Falcon Client',
+        type: "category",
+        label: "Falcon Client",
         items: [
-          'platform/cookbook/client/change-logo',
-          'platform/cookbook/client/icon',
-          'platform/cookbook/client/themaeble-component',
-          'platform/cookbook/client/scss-global',
-          'platform/cookbook/client/post-css-support',
-          'platform/cookbook/client/analytics'
-        ],
+          "platform/cookbook/client/change-logo",
+          "platform/cookbook/client/icon",
+          "platform/cookbook/client/themaeble-component",
+          "platform/cookbook/client/scss-global",
+          "platform/cookbook/client/post-css-support",
+          "platform/cookbook/client/analytics"
+        ]
       },
       {
-        type: 'category',
-        label: 'Integrations',
+        type: "category",
+        label: "Integrations",
         items: [
-          'platform/cookbook/integrations/jsonplaceholder',
-          'platform/cookbook/integrations/contentful',
-          'platform/cookbook/integrations/contentful2',
-          'platform/cookbook/integrations/braintree'
-        ],
+          "platform/cookbook/integrations/jsonplaceholder",
+          "platform/cookbook/integrations/contentful",
+          "platform/cookbook/integrations/contentful2",
+          "platform/cookbook/integrations/braintree"
+        ]
       }
     ],
-    "Video Guides": [
-      "platform/guides/client",
-      "platform/guides/cloud",
-    ],
-    "Support": [
-      "platform/support/contact",
-      "platform/support/faqs"
-    ]
+    "Video Guides": ["platform/guides/client", "platform/guides/cloud"],
+    Support: ["platform/support/contact", "platform/support/faqs"]
   },
   falconOpenSourceSidebar: {
     "Getting Started": [
