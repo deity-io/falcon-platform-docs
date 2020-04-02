@@ -89,6 +89,7 @@ module.exports = {
       "platform/client/testing",
       "platform/client/deployment",
     ],
+<<<<<<< HEAD
     "Falcon Server": ["platform/server"],
     "Falcon Cloud": [
       "platform/cloud/about",
@@ -98,9 +99,41 @@ module.exports = {
       "platform/cloud/installation",
       "platform/cloud/repository",
       "platform/cloud/dcloud"
+=======
+    "Falcon Server": [
+      "platform/server",
+      "platform/server/dynamic-routes"
     ],
-    "Integration": ["platform/integration"],
+    "Falcon Cloud" : [
+        "platform/cloud/about",
+        "platform/cloud/technical",
+        "platform/cloud/prerequisites",
+        "platform/cloud/account",
+        "platform/cloud/installation",
+        "platform/cloud/repository",
+        "platform/cloud/dcloud"
+>>>>>>> master
+    ],
+    "Configuration": [
+      "platform/configuration/overview",
+      "platform/configuration/client",
+      "platform/configuration/server",
+    ],
+    "Payments": [
+      "platform/payments/overview",
+      "platform/payments/provider",
+      "platform/payments/ui"
+    ],
+    "Integrations": [
+      "platform/integration/examples",
+      "platform/integration/algolia",
+      "platform/integration/bigcommerce",
+      "platform/integration/magento2",
+      "platform/integration/stripe",
+      "platform/integration/wordpress"
+    ],
     "Cookbook": [
+      "platform/cookbook/about",
       {
         type: 'category',
         label: 'Falcon Client',
@@ -118,7 +151,9 @@ module.exports = {
         label: 'Integrations',
         items: [
           'platform/cookbook/integrations/jsonplaceholder',
-          'platform/cookbook/integrations/contentful'
+          'platform/cookbook/integrations/contentful',
+          'platform/cookbook/integrations/contentful2',
+          'platform/cookbook/integrations/braintree'
         ],
       }
     ],

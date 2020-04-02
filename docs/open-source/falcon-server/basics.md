@@ -46,7 +46,7 @@ Config `object`:
 * `extensions: object` - a map of extensions configuration (see [extensions configuration](#extensions-configuration))
 * `endpoints: object` - a map of endpoints configurations (see [endpoints configuration](#endpoints-configuration))
 * `session: object` - session configuration (see [session configuration](#session-configuration))
-* `cache: object` - cache configuration (see [caching section](falcon-server/caching.md#cache-adapters))
+* `cache: object` - cache configuration (see [caching section](/docs/open-source/falcon-server/caching#cache-adapters))
 * `maxListeners: number` (`20` by default) - number of max listeners per event
 * `verboseEvents: boolean` (`false` by default) - toggling "Logger.debug" call for tracing all event handlers (`Logger.debug('Triggering "${event}" event...')`)
 * `logLevel: string` (`info` by default) - Logger level (one of: `info`, `error`, `debug`)
@@ -76,7 +76,7 @@ const server = new FalconServer(config);
 server.start();
 ```
 
-> Read more on how to write your own API Provider [here](falcon-server/falcon-server-api.md#apidatasource)
+> Read more on how to write your own API Provider [here](/docs/open-source/falcon-server/falcon-server-api#apidatasource)
 
 ### Extensions configuration
 

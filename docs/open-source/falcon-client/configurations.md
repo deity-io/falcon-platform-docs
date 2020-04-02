@@ -24,7 +24,7 @@ import clientApolloSchema from './src/clientState';
 export { clientApolloSchema };
 ```
 
-For more information see [this](falcon-client/local-state-management.md)
+For more information see [this](/docs/open-source/falcon-client/local-state-management)
 
 ### `bootstrap.js`
 
@@ -232,7 +232,7 @@ Please note that webpack `alias`'es are not supported.
 
 ### Babel
 
-Falcon Client gives you Ecma Script 6 compiled via Babel 7. However, if you want to add your own babel transformations, you can override defaults by adding the `.babelrc` file into the root of your project. Please note that it is necessary to at the very minimum the default `@deity/babel-preset-falcon-client` preset:
+Falcon Client gives you Ecma Script 6 compiled via Babel 7. However, if you want to add your own babel transformations, you can override defaults by adding the `babel.config.json` (or `babel.config.js`) file into the root of your project. Please note that it is necessary to at the very minimum the default `@deity/babel-preset-falcon-client` preset:
 
 ```json
 {

@@ -6,14 +6,14 @@ import styles from './styles.module.css';
 const ExampleProjects = [
   {
     name: 'Demo V1',
-    shortName: 'shop-with-blog',
+    shortName: 'demo-v1',
     url: '',
     img: '/img/docs/platform/demo-v1-700.png',
     description: 'This example will work straight out of the box. It\'s connected to our example Magento 2 store and wordpress blog.'
   },
   {
     name: 'Demo V2',
-    shortName: 'new-theme',
+    shortName: 'demo-v2',
     url: 'https://demo.deity.io',
     img: '/img/docs/platform/demo-v2-700.png',
     description: 'This is our most feature rich example. It requires a BigCommerce, Stripe and Algolia account to get started.'

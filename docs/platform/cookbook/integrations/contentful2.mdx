@@ -1,0 +1,297 @@
+---
+id: contentful2
+title: Integrating with Contentful Part 2
+sidebar_label: Contentful Part 2
+description: DEITY Platform Contentful integration
+---
+
+<a href="https://www.contentful.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Contentful site">
+  <img src="/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{margin: '0 0 40px'}}/>
+</a>
+
+In this tutorials we will look at **dynamic routing** using the `extension` from [part 1](contentful).
+
+## Overview
+
+Using the `course` data from [part 1](contentful) we will make routes like `https://your-site.com/course/course-name` render content for that course.
+
+## 1. Create an API to access course data based on it's ID
+
+At the moment we have a `courses` query that allows us to access all of the `courses`. We now want to create a `course` query so we can get a specific `course`.
+
+### i. Add to your API
+**`server/src/falcon-contentful-api/index.js`**
+```js
+...
+async course(_, { id }) {
+  const { environment, spaceId, contentDeliveryApi } = this.config;
+  const query = {
+    access_token: contentDeliveryApi,
+    content_type: 'course'
+  };
+  const data = await this.get(`/spaces/${spaceId}/environments/${environment}/entries/${id}`, query);
+  return JSON.parse(data);
+}
+...
+```
+
+### ii. Add to your extensions GraphQL Schema
+
+We will also need to add this query to our GraphQL schema.
+
+**`server/src/falcon-content-extension/schema.graphql`**
+```js
+extend type Query {
+  courses: Courses! @cache(ttl: 15)
+  course(id: ID!): Course! @cache(ttl: 15)
+}
+...
+```
+
+### iii. Test your endpoint.
+
+You should now be able to test your GrpahQL. Make sure `falcon-server` is running and is on `https://localhost:4000/graphql`.
+
+Also remember to replace `YOUR_CONTENT_ID` with your course ID.
+
+
+<iframe
+     src="https://codesandbox.io/embed/falcon-platform-graphql-contentful-part2-qsdwy?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style={{width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden'}}
+     title="falcon-platform-graphQL-contentful"
+     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+   ></iframe>
+
+
+## 2. Create your content query and component
+
+You now need to create a component to access this data.
+
+As before we want to add a content component and a query component.
+
+```bash
+|-client
+  |-src
+    |-components
+      |- Course
+        index.js
+        CourseList.js
+        CourseListQuery.js
+
+        Course.js
+        CourseQuery.js
+```
+
+### i. CourseQuery.js
+
+**`client/src/components/Course/CourseQuery.js`**
+```js
+import gql from 'graphql-tag';
+import { Query } from '@deity/falcon-data';
+
+const GET_COURSE = gql`
+  query Course($id: ID!) {
+    course(id: $id) {
+      fields {
+        title
+        description
+      }
+    }
+  }
+`;
+
+export class CourseQuery extends Query {
+  static defaultProps = {
+    query: GET_COURSE
+  };
+}
+```
+
+At the moment we are only querying the title and description. If you want more data you'd have to add it to `server/src/falcon-content-extension/schema.graphql` as well as your query here.
+
+### ii. Course.js
+
+At the moment we just rendering the title, description and changing the page title.
+
+Notice we are using `<Helmet>` to change the page title. To learn more about this [click here](/docs/platform/client/meta-data).
+
+**`client/src/components/Course/Course.js`**
+```js
+import React from 'react';
+import { PageLayout } from '@deity/falcon-ui-kit';
+import { Helmet } from 'react-helmet-async';
+import { CourseQuery } from './CourseQuery';
+
+const Course = ({ match: { params } }) => {
+  const { id } = params;
+  return (
+    <PageLayout>
+      <CourseQuery variables={{ id }}>
+        {({ data: { course } }) => {
+
+          const { fields: { title, description } } = course;
+          return (
+            <React.Fragment>
+
+              <Helmet>
+                <title>{title}</title>
+              </Helmet>
+
+              <h1>{title}</h1>
+              <p>{description}</p>
+
+            </React.Fragment>
+          )
+
+        }}
+      </CourseQuery>
+    </PageLayout>
+  );
+};
+
+export default Course;
+
+```
+
+## 3. Return URL data from our API
+
+`<SwitchDynamicURL>` is used for routing in Falcon Platform, it's worth looking at routing details [here](/docs/platform/client/routing).
+
+All APIs that are registered in our `server/config/default.json` and contain **both** the below methods will be checked.
+
+- `fetchUrl`
+- `getFetchUrlPriority`
+
+`getFetchUrlPriority` is used to set priority of your API. You might want to alter the priority if you're worried about URLs clashing. This is covered in our [docs](/docs/platform/client/routing).
+
+**`server/src/falcon-contentful-api/index.js`**
+
+```js
+...
+module.exports = class ContentfulApi extends ApiDataSource {
+  ...
+
+  async getCourses() {
+    const { environment, spaceId, contentDeliveryApi } = this.config;
+
+    const query = {
+      access_token: contentDeliveryApi,
+      content_type: 'course'
+    };
+
+    const data = await this.get(`/spaces/${spaceId}/environments/${environment}/entries`, query);
+    const courseCollection = JSON.parse(data);
+
+    const { items } = courseCollection;
+
+    return items;
+  }
+
+  async fetchUrl(_, params) {
+    const { path } = params;
+
+    if (path.split('/')[1] === 'course') {
+      const items = await this.getCourses();
+      const current = items.find(item => `/course/${item.fields.slug}` === path);
+
+      if (current) {
+        const { fields, sys } = current;
+        return {
+          id: sys.id,
+          path: fields.slug,
+          type: 'content-course'
+        }
+      }
+    }
+    return null;
+  }
+
+  getFetchUrlPriority() {
+    return this.fetchUrlPriority;
+  }
+}
+```
+
+There is quite a bit going on here.
+
+### i. getFetchUrlPriority
+We are just returing the default priority set in `ApiDataSource`.
+
+If you wanted to change this you could follow a similar pattern to the example below. This returns a low priority for all urls except 'hello'.
+
+**EXAMPLE**
+
+```js
+import { ApiUrlPriority } from '@deity/falcon-server-env';
+...
+getFetchUrlPriority(path) {
+  return (path === 'hello') ? ApiUrlPriority.HIGH : ApiUrlPriority.LOW;
+}
+```
+
+### ii. fetchUrl
+
+In this method we are checking a few things. Firstly we are checking the current path starts with `course`.
+
+```js
+if (path.split('/')[1] === 'course') {
+```
+
+We then check all the courses to see if any of them have a matching `slug`.
+
+```js
+const items = await this.getCourses();
+const current = items.find(item => `/course/${item.fields.slug}` === path);
+```
+
+If they match then we return an `FetchUrlResult` object.
+
+**`@deity/falcon-server-env/src/types.ts`**
+
+```js
+export interface FetchUrlResult {
+  id: string | number;
+  type: string;
+  path: string;
+  redirect: boolean;
+}
+```
+
+In our case we don't need to pass a `redirect` so just pass a `type`, `id` and `path`.
+
+```js
+return {
+  id: sys.id,
+  path: fields.slug,
+  type: 'content-course'
+}
+```
+
+**If your URLs don't match remember to return null**
+
+## 4. Add a `<Route>` check for your content type.
+
+Now we need to check for our type, `content-course`.
+
+In our example apps the routing is handled in `client/src/App.js`. 
+
+**`client/src/App.js`**
+```js
+...
+import { SwitchDynamicURL } from '@deity/falcon-front-kit';
+...
+const Course = loadable(() => import('./components/Course/Course'));
+...
+<SwitchDynamicURL>
+  <Route exact type="content-course" component={Course} />
+</SwitchDynamicURL>
+...
+```
+
+You will see here we pass the prop `type` to our `<Route>`. This will return the `Course` component if the type matches.
+
+**n.b. If your'e using `loadable` your component needs to be the default export**
+
+## 5. Finished
+That's it. There is a lot covered in this short tutorial and it's highly recommended to read up on routing in more details.

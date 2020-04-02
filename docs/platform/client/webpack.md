@@ -48,4 +48,4 @@ However, you can still modify Falcon Client defaults
 Checkout out our **cookbook** for examples of changing the build process.
 
 - [Adding a global SCSS file](../cookbook/client/scss-global])
-- [Adding a Post CSS support](../cookbook/client/post-css-support)
+- [Adding Post CSS support](../cookbook/client/post-css-support)

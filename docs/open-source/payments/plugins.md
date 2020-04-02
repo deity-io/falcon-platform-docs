@@ -92,7 +92,7 @@ This plugin is "based" on `SimplePayment` because it does not require any fronte
 
 ### PayPal PHP module
 
-This payment does not require any extra packages to be installed except the main [Magento 2 Module](backend/installing-magento2.md#installing).
+This payment does not require any extra packages to be installed except the main [Magento 2 Module](backend/installing-magento2#installing).
 
 ## Simple Payment
 
@@ -127,4 +127,4 @@ The purpose of this plugin is to provide some "simple" payment support which doe
 confirmations and cannot simply "fail" (payment methods like "bank transfer" or "cash on delivery").
 
 If you're adding your custom Payment Method - make sure you add it to your Payment mapping and follow
-[Payment API](payments/api.md).
+[Payment API](payments/api).

@@ -13,7 +13,7 @@ The header logo uses your themes [icon component](./../icons) out of the box.
 **`client/src/styling/icons.js`**
 ```js
 ...
-import Logo from '../assets/logo.svg';
+import Logo from '..//img/opensource/logo.svg';
 ...
 export const icons = {
   logo: {
@@ -32,7 +32,7 @@ import { Icon } from '@deity/falcon-ui';
 <Icon src="logo" />
 ```
 
-To change the logo, all you need to do is change the file `client/src/assets/logo.svg`.
+To change the logo, all you need to do is change the file `client/src//img/opensource/logo.svg`.
 
 If you don't want to use an SVG or the icon component then you could just load your asset in `client/src/components/Header/HeaderMenuBar.js` and use an `<img>` element.
 
@@ -43,11 +43,11 @@ Your favicon and other `meta` icons such as touch icons are added in your `clien
 **`client/src/App.js`**
 ```js
 ...
-import logo from 'src/assets/logo.png';
-import icon16x16 from './assets/icons/appicons/16x16.png';
-import icon32x32 from './assets/icons/appicons/32x32.png';
-import icon180x180 from './assets/icons/appicons/180x180.png';
-import favicon from './assets/icons/appicons/favicon.ico';
+import logo from 'src//img/opensource/logo.png';
+import icon16x16 from './/img/opensource/icons/appicons/16x16.png';
+import icon32x32 from './/img/opensource/icons/appicons/32x32.png';
+import icon180x180 from './/img/opensource/icons/appicons/180x180.png';
+import favicon from './/img/opensource/icons/appicons/favicon.ico';
 ...
 const HeadMetaTags = () => (
   <Locale>
@@ -76,12 +76,12 @@ It wouldn't be a **PWA** with your `manifest.json` file. You can change this by 
   ...
   "icons": [
     {
-      "src": "./assets/icons/appicons/192x192.png",
+      "src": ".//img/opensource/icons/appicons/192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./assets/icons/appicons/512x512.png",
+      "src": ".//img/opensource/icons/appicons/512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

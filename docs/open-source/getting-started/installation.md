@@ -46,7 +46,7 @@ npm start
 
 then open http://localhost:3000 in your browser
 
-![DEITY create-falcon-app](assets/create-falcon-app.gif)
+![DEITY create-falcon-app](/img/opensource/create-falcon-app.gif)
 
 ## Longer version
 
@@ -118,18 +118,18 @@ By default the `shop-with-blog` example uses demo Magento 2 and WordPress server
 
 If you want to connect the generated app to your own Magento 2 backend you will need to install the
 [Falcon Magento2 module](https://github.com/deity-io/falcon-magento2-module) which delivers REST endpoints required
-by DEITY Falcon and change the [configuration file of your Falcon-Server](miscellaneous/config.md)
+by DEITY Falcon and change the [configuration file of your Falcon-Server](miscellaneous/config)
 to point the application to the correct url.
 
-See [Installing Magento 2 Module](backend/installing-magento2.md) for more.
+See [Installing Magento 2 Module](backend/installing-magento2) for more.
 
 #### Wordpress
 
 Also if you want to connect a DEITY Falcon application to your WordPress server, you'll have to install
 [Falcon WordPress module](https://github.com/deity-io/falcon-wordpress-module) and also change the
-[configuration file of your Falcon-Server](miscellaneous/config.md) to point the application to the correct server.
+[configuration file of your Falcon-Server](miscellaneous/config) to point the application to the correct server.
 
-See [Installing Wordpress 2 Module](backend/installing-wordpress.md) for more.
+See [Installing Wordpress 2 Module](backend/installing-wordpress) for more.
 
 ## Development
 
