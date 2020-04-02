@@ -1,12 +1,14 @@
 ---
-id: deployment
+id: overview
 title: Deployment
-sidebar_label: Deployment
+sidebar_label: Overview
 ---
 
 Deployment is handled through **Falcon Cloud**, all you need to do is push your code.
 
-To check your build code locally you can run the `falcon-client build` command.
+Read more about [Falcon Cloud](/docs/platform/cloud/about)
+
+To check your build code locally you can run the `build` & `start` commands with the `:prod` flag from both the `server` and `client`.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,14 +23,16 @@ import TabItem from '@theme/TabItem';
 <TabItem value="npm">
 
 ```bash
-npm build
+npm build:prod
+npm start:prod
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn build
+yarn build:prod
+yarn start:prod
 ```
 
 </TabItem>

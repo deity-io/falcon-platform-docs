@@ -68,8 +68,7 @@ module.exports = {
       "platform/client/translations",
       "platform/client/cache",
       "platform/client/code-splitting",
-      "platform/client/testing",
-      "platform/client/deployment"
+      "platform/client/testing"
     ],
     "Falcon Server": ["platform/server", "platform/server/dynamic-routes"],
     "Falcon Cloud": [
@@ -86,6 +85,7 @@ module.exports = {
       "platform/configuration/client",
       "platform/configuration/server"
     ],
+    Deployment: ["platform/deployment/overview"],
     Logging: ["platform/logging/overview"],
     Payments: [
       "platform/payments/overview",
