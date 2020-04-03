@@ -19,7 +19,22 @@ module.exports = {
       "platform/packages/falcon-client",
       "platform/packages/falcon-data",
       "platform/packages/falcon-errors",
-      "platform/packages/falcon-front-kit",
+      {
+        type: 'category',
+        label: '@deity/falcon-front-kit',
+        items: [
+          "platform/packages/falcon-front-kit/overview",
+          {
+            type: 'category',
+            label: 'Checkout',
+            items: [
+              "platform/packages/falcon-front-kit/checkout/overview",
+              "platform/packages/falcon-front-kit/checkout/checkout-provider",
+              "platform/packages/falcon-front-kit/checkout/checkout",
+            ],
+          }
+        ],
+      },
       "platform/packages/falcon-i18n-webpack-plugin",
       "platform/packages/falcon-i18n",
       "platform/packages/falcon-logger",
