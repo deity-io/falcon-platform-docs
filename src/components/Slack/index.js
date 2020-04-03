@@ -19,8 +19,7 @@ const Slack = () => (
         </div>
         <div className={styles.slackBanner__content}>
           <h3>
-            Ask the community{" "}
-            <Link
+            Ask the community. <Link
               href="https://deity-community.slack.com/archives/CDL2XDSHZ"
               target="_blank"
               rel="noopener noreferrer"
