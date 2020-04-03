@@ -13,7 +13,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-import Banner from './../../components/Banner';
 import Slack from "./../../components/Slack";
 
 function FooterLink({ to, href, label, ...props }) {
@@ -55,7 +54,6 @@ function Footer() {
 
   return (
     <>
-      <Banner />
       <Slack />
       <footer
         className={classnames('footer', {

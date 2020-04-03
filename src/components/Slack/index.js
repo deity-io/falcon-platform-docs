@@ -29,7 +29,7 @@ const Slack = () => (
             </Link>
           </h3>
           <p>
-            If you can't find what you're looking for the answer might be on our
+            If you can't find what you're looking for, the answer might be on our
             community slack channel (
             <Link
               href="https://deity-community.slack.com/archives/CDL2XDSHZ"

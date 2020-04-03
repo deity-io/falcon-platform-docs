@@ -63,6 +63,7 @@ module.exports = {
       },
       "platform/client/overrides",
       "platform/client/routing",
+      "platform/client/meta-data",
       "platform/client/data",
       "platform/client/state",
       "platform/client/translations",
