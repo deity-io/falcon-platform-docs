@@ -53,14 +53,6 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.infoBanner}>
-          <div className="container">
-            <div className={styles.infoBanner__content}>
-              <h3>Looking for Falcon Open Source docs?</h3>
-              <p>If you're using the open source version of Falcon the docs can be found <Link to="/docs/open-source/getting-started/intro">here</Link></p>
-            </div>
-          </div>
-        </section>
         <section className="hero hero--theme" style={{ backgroundImage: "url('img/waves.jpg')" }}>
           <div className={classnames("container", styles.architectureContainer)}>
             <div>
