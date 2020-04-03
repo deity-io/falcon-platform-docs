@@ -14,6 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 import Banner from './../../components/Banner';
+import Slack from "./../../components/Slack";
 
 function FooterLink({ to, href, label, ...props }) {
   const toUrl = useBaseUrl(to);
@@ -55,6 +56,7 @@ function Footer() {
   return (
     <>
       <Banner />
+      <Slack />
       <footer
         className={classnames('footer', {
           'footer--dark': footer.style === 'dark',

@@ -1,0 +1,170 @@
+.slack {
+  background: var(--ifm-code-background)
+}
+
+.slackWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 20px 40px 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .slackWrapper {
+    padding: 20px;
+  }
+}
+
+.slackBanner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .slackBanner {
+    text-align: left;
+  }
+}
+
+.slackBanner__content {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .slackBanner__content {
+    width: 80%
+  }
+}
+
+.slackBanner__content p {
+  font-size: var(--ifm-h4-font-size);
+  margin: 0;
+}
+
+.slackBanner__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+  .slackBanner__logo {
+    width: 20%
+  }
+}
+
+.slackLogo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  animation: rotate 10s infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+.slackLogo__color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0 0;
+  display: block;
+}
+
+.slackLogo__color__yellow .slackLogo__tip,
+.slackLogo__color__yellow .slackLogo__drop {
+  background-color: #ebb12d;
+}
+
+.slackLogo__color__red {
+  transform: rotateZ(90deg);
+}
+.slackLogo__color__red .slackLogo__tip,
+.slackLogo__color__red .slackLogo__drop {
+  background-color: #df1e5a;
+}
+
+.slackLogo__color__blue {
+  transform: rotateZ(180deg);
+}
+.slackLogo__color__blue .slackLogo__tip,
+.slackLogo__color__blue .slackLogo__drop {
+  background-color: #36c5ef;
+}
+
+.slackLogo__color__green {
+  transform: rotateZ(270deg);
+}
+.slackLogo__color__green .slackLogo__tip,
+.slackLogo__color__green .slackLogo__drop {
+  background-color: #2db67c;
+}
+
+.slackLogo__tip {
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  border-radius: 17rem;
+  width: 36%;
+  height: 16%;
+  animation: scale 10s infinite;
+  display: block;
+}
+
+.slackLogo__drop {
+  margin-top: 4%;
+  margin-left: 2.5%;
+  border-radius: 17rem;
+  border-top-left-radius: 0;
+  width: 16%;
+  height: 16%;
+  animation: scale 10s infinite;
+  display: block;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(360deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  95% {
+   transform: rotate(0);
+  }
+  100% {
+   transform: rotate(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  5% {
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+  95% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
