@@ -36,7 +36,7 @@ const Slack = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-            deity-community.slack.com</Link>). Our team keep a close eye on this and will usually get back to you within a few hours.
+            deity-community.slack.com</Link>). Our team keep a close eye on this and will usually get back to you within a few hours, if not straight away.
           </p>
         </div>
       </div>
