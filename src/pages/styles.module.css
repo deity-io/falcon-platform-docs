@@ -81,3 +81,17 @@
 .infoBanner__content {
   text-align: center;
 }
+
+.comparison {
+  text-align: center;
+  background-color: var(--ifm-table-stripe-background);
+  padding: 4rem 2rem;
+}
+
+.comparison table {
+  margin: 0 auto 20px;
+  width: auto;
+  display: inline-block;
+  text-align: left;
+  background: var(--ifm-navbar-background-color);
+}

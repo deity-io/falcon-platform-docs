@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import ComparisonTable from './../components/ComparisonTable';
 import styles from './styles.module.css';
 
 function Home() {
@@ -35,7 +36,7 @@ function Home() {
               >Find out more</Link>
               <Link
                 to="/prices"
-                style={{marginLeft: 20}}
+                style={{ marginLeft: 20 }}
               >View Prices</Link>
             </div>
             <div className={styles.aboutColumn}>
@@ -51,6 +52,25 @@ function Home() {
                 className={styles.aboutImg}
               />
             </div>
+          </div>
+        </section>
+        <section className={styles.comparison}>
+          <div className="container">
+            <h3>Falcon Platform vs Falcon Open Source</h3>
+            <p>We provide 2 variations of Falcon. Falcon Open Source is the open-source <strong>predecessor</strong> to Falcon Platform.</p>
+            <ComparisonTable />
+            <p>To get started with Falcon Open Source you can download it <Link
+              href="https://github.com/deity-io/falcon"
+              target="_blank"
+              rel="noreferrer noopener"
+            >from our GitHub</Link>.</p>
+            <p>If you want to use Falcon Platform please get in touch with our team for who will help you get set up and give you pricing information.</p>
+            <p><Link
+              href="https://deity.io/contact"
+              target="_blank"
+              className="button"
+              rel="noreferrer noopener"
+            >Get in touch</Link></p>
           </div>
         </section>
         <section className="hero hero--theme" style={{ backgroundImage: "url('img/waves.jpg')" }}>

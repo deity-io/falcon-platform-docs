@@ -35,4 +35,4 @@ Cloud is not only the infastructure your Falcon Platform will be hosted on but a
 We have a cookbook with examples of code and a Youtube channel with video guides.
 
 - [Falcon Platform Cookbook](./../cookbook)
-- <a href="https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ" target="_blank" rel="noopener noreferrer">OUr Youtube Channel</a>.
+- <a href="https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ" target="_blank" rel="noopener noreferrer">Our Youtube Channel</a>.
