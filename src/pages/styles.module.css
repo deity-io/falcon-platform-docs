@@ -8,13 +8,19 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-
 }
 
 @media screen and (min-width: 966px) {
   .heroBanner {
     padding: 6rem 0;
   }
+}
+
+.heroSearch {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .features {

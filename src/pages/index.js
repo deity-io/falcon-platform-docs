@@ -2,6 +2,8 @@ import React from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import SearchBar from '@theme/SearchBar';
+
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import ComparisonTable from './../components/ComparisonTable';
 import styles from './styles.module.css';
@@ -18,6 +20,14 @@ function Home() {
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.heroSearch}>
+            <SearchBar
+              placeholder="Search our documentation"
+              position="home"
+              isSearchBarExpanded={true}
+              size="large"
+            />
+          </div>
         </div>
       </header>
       <main>
