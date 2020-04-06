@@ -8,4 +8,4 @@ Falcon UI is a library of composable, themable, design-system-driven UI componen
 
 Think of Falcon UI as a replacement for Bootstrap or Material UI.
 
-[View the docs](https://falcon-ui.docs.deity.io/)
+[View the docs](https://falcon-ui.docs.deity.io/).
