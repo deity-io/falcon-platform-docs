@@ -4,4 +4,6 @@ title: '@deity/falcon-i18n'
 sidebar_label: '@deity/falcon-i18n'
 ---
 
-**Coming Soon**
+This package is used for internationalization in Falcon Platform.
+
+Full details and usage can be found [here](/docs/open-source/falcon-client/internationalization)
