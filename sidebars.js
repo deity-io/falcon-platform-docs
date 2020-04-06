@@ -67,7 +67,6 @@ module.exports = {
       "platform/client/data",
       "platform/client/state",
       "platform/client/translations",
-      "platform/client/cache",
       "platform/client/code-splitting",
       "platform/client/testing"
     ],
@@ -86,6 +85,7 @@ module.exports = {
       "platform/configuration/client",
       "platform/configuration/server"
     ],
+    Caching: ["platform/cache/overview"],
     Deployment: ["platform/deployment/overview"],
     Logging: ["platform/logging/overview"],
     Payments: [
