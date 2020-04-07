@@ -58,7 +58,7 @@ This defines project details including package requirements.
 Falcon Platform uses <a href="https://prettier.io/" target="_blank" rel="noreferrer noopener">Prettier</a> for code formatting. You can change the config in this file.
 
 ### public
-This folder is publically accessible. You can use it for files such as `robots.txt`.
+This folder is publicly accessible. You can use it for files such as `robots.txt`.
 
 ### src/App.js
 This file contains your app. Everything in Falcon Client starts here. A lot happens in this file including mapping components to routes.
