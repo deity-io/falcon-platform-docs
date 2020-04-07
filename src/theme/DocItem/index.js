@@ -84,7 +84,7 @@ function DocItem(props) {
       <Head>
         {title && (
           <title>
-            {title} | {siteTitle}
+            {title}
           </title>
         )}
         {description && <meta name="description" content={description} />}

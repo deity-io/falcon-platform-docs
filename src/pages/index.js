@@ -13,7 +13,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title="Documentation for DEITY Falcon"
       description="DEITY Falcon Platform documentation and user guides"
     >
       <header className={classnames("hero hero--theme", styles.heroBanner)} style={{ backgroundImage: "url('img/pattern-honeycomb-secondary.svg')" }}>
