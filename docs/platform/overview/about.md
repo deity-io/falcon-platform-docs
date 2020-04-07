@@ -12,7 +12,7 @@ Falcon is not just a PWA theme, it is a complete platform to build the best shop
 
 [Get started with Falcon Platform](../getting-started/prerequisites)
 
-![Falcon Platform infastructure illustration](/img/docs/platform/business-service-applications.svg)
+<img src="/img/docs/platform/business-service-applications.svg" alt="Falcon Platform infastructure illustration" width="500" />
 
 ## What do you get
 
