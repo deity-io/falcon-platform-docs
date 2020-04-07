@@ -15,7 +15,7 @@ This means they will accept props such as `m` for margin, and values from the `t
 </Box>
 ```
 
-To make your custom component 'themable' you will need to use the `themed` function.
+To make your custom component 'themeable' you will need to use the `themed` function.
 
 **`client/src/components/myComponent.js`**
 ```js

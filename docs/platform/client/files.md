@@ -34,19 +34,19 @@ client/<br />
 ---
 
 ### build
-The build directory contains the built assets for your site. This should not be commited to your git repo.
+The build directory contains the built assets for your site. This should not be committed to your git repo.
 
 ### config
 The config directory contains Falcon Client config json files (`default.json`, `production.json` etc). In these files you'll be able to configure things like the port Falcon Client is running on. 
 
 ### i18n
-This directory contains your sites translations. The stucture is `<language>/translations.json`. e.g. `en/translations.json` for english translations.
+This directory contains your sites translations. The structure is `<language>/translations.json`. e.g. `en/translations.json` for english translations.
 
 ### index.js
 This is where everything starts. Other that exporting the app and client state nothing much happens here.
 
 ### moduleOverride.js
-From this file you can override components from within node pacakges. This is create if you want to change a component from `@deity/falcon-ui-kit` for example. [Find out more about overriding](./overrides).
+From this file you can override components from within node packages. This is create if you want to change a component from `@deity/falcon-ui-kit` for example. [Find out more about overriding](./overrides).
 
 ### node_modules
 This is where npm packages are installed to.

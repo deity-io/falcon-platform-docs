@@ -9,7 +9,7 @@ sidebar_label: CSS Mapping
 - CSS property shortcuts, 'responsive props'
 - Which key from the theme object is used for each CSS property.
 
-## CSS Shortcuts / Respoonsive Props
+## CSS Shortcuts / Responsive Props
 
 To keep your code slim `@deity/falcon-ui` maps certain component props to css properties. 
 
@@ -138,7 +138,7 @@ export const falconThemeV2 = createTheme({
 
 In the above example you can see the **prop**, `py="xxs"`. In the theme object you can there is both `spacing.xxs` and `fontSizes.xxs`. This is where the mapping comes in.
 
-If you look in `@deity/falcon-ui/src/theme/responsiveprops.ts` you will see where these properties are mapped. You will see the `themeProp` which referes to which **key** in the **theme** object, and `cssProp` which is the css property it's mapped to.
+If you look in `@deity/falcon-ui/src/theme/responsiveprops.ts` you will see where these properties are mapped. You will see the `themeProp` which refers to which **key** in the **theme** object, and `cssProp` which is the css property it's mapped to.
 
 **`@deity/falcon-ui/src/theme/responsiveprops.ts`**
 ```js

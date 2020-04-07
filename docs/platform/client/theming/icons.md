@@ -15,7 +15,7 @@ export const yourThemeName = createTheme({
 })
 ```
 
-If you're using the `demo-v2` example , you'll see a `client/src/styling/icons.js` file. This is imported into your theme.
+If you're using the `demo-v2` example, you'll see a `client/src/styling/icons.js` file. This is imported into your theme.
 
 **`client/src/styling/theme.js`**
 ```js

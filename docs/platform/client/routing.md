@@ -64,7 +64,7 @@ If you want your URL to match exactly you can pass `exact` as a prop. Read more 
 
 As explained above, static URLs use the `path` prop to match a path to a component.
 
-You will see we are also matching on `path` with a dynamic variable for `:page?`. In this instance it handles the blogs pagination is is later avaialable as params passed automatically to the `Blog` component. 
+You will see we are also matching on `path` with a dynamic variable for `:page?`. In this instance it handles the blogs pagination and is later available as param passed automatically to the `Blog` component. 
 
 ```js
 <Route exact path="/" component={Home} />
