@@ -37,9 +37,15 @@ yarn start
 </TabItem>
 </Tabs>
 
+This will call the `falcon-client` executable to start up the client process with Node.js.
+
 **Options**
-- `--inspect=[host:port]` - To debug the node server, you can use `falcon-client start --inspect`. This will start the node server and enable the inspector agent. The =[host:port] is optional and defaults to `=127.0.0.1:9229`. For more information, <a href="https://nodejs.org/en/docs/guides/debugging-getting-started/" target="_blank" rel="noopener noreferrer">see this</a>.
-- `--inspect-brk=[host:port]` - This is the same as --inspect, but will also break before user code starts. (to give a debugger time to attach before early code runs)
+- `--inspect=[host:port]` - To debug the node server. This will start the node server and enable the inspector agent. The =[host:port] is optional and defaults to `=127.0.0.1:9229`. <a href="https://nodejs.org/en/docs/guides/debugging-getting-started/" target="_blank" rel="noopener noreferrer">See the Node.js debugging guide for more information</a>.
+- `--inspect-brk=[host:port]` - This is the same as --inspect, but will also break before user code starts. (to give a debugger time to attach before early code runs).
+
+**Useful Variants**
+- `start:dbg` - An alias for `--inspect`
+- `start:dbg-brk` - An alias for `--inspect-brk`
 
 ### Test
 
@@ -84,14 +90,14 @@ The build is minified and the filenames include the hashes. Your app is ready to
 <TabItem value="npm">
 
 ```bash
-npm build
+npm build:prod
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn build
+yarn build:prod
 ```
 
 </TabItem>
