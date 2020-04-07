@@ -6,18 +6,20 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #338537;
+  --ifm-color-primary: #26642C;
   --ifm-footer-background-color: #262828;
   --ifm-hero-text-color: #ffffff;
-  --ifm-button-background-color: #338537;
-  --ifm-button-border-color: #338537;
+  --ifm-button-background-color: #26642C;
+  --ifm-button-border-color: #26642C;
   --ifm-button-padding-vertical: 1rem;
 }
 
 html[data-theme="dark"] {
     --ifm-navbar-background-color:  #262828;
     --ra-color-note: #262828;
+    --ifm-background-color: #1a1720;
     --ra-color-text-dark: #ffffff;
+    --ifm-color-primary: #aac957;
 }
 
 .footer.footer--dark {

@@ -44,10 +44,6 @@ function Home() {
                 rel="noreferrer noopener"
                 aria-label="Find out more about the Falcon Platform"
               >Find out more</Link>
-              <Link
-                to="/prices"
-                style={{ marginLeft: 20 }}
-              >View Prices</Link>
             </div>
             <div className={styles.aboutColumn}>
               <img
