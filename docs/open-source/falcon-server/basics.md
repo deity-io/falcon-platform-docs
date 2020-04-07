@@ -171,7 +171,7 @@ server.start()
 
 ## Extensions system
 
-The essence of Falcon Server is realisation of the access to the external services via GraphQL. That objective is achieved via simple extensions system. Extensions are JavaScript classes that implement particuar methods to deliver the data or modify existing data.
+The essence of Falcon Server is realization of the access to the external services via GraphQL. That objective is achieved via simple extensions system. Extensions are JavaScript classes that implement particuar methods to deliver the data or modify existing data.
 
 Each extension can extend GraphQL configuration by providing its own config. When all extensions are instantiated FalconServer asks each and every extension for the configuration, combines all the received configurations and passes the combined configuration to Apollo Server configuration.
 

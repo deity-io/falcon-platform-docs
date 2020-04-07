@@ -27,7 +27,7 @@ In this example all files will be created directly into our codebase. For the sa
 
 1. <HighlightFlag type="server" /> Configuration data (API keys etc)
 
-2. <HighlightFlag type="client" /> Braintree form initialised
+2. <HighlightFlag type="client" /> Braintree form initialized
 
 3. <HighlightFlag type="client" /> User inputs card data
 
@@ -142,7 +142,7 @@ You will now have access to all of these details in your provider. They will be 
 
 ### 4. Passing config data to the frontend (Falcon Client)
 
-Each payment provider should include 2 methods. `initialize` when the providier is initialised and `validate` when the payment is submitted.
+Each payment provider should include 2 methods. `initialize` when the providier is initialized and `validate` when the payment is submitted.
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
 ```js
@@ -421,7 +421,7 @@ module.exports = class BraintreePayment {
 
 #### iii. Test your connection
 
-We can test the connection using the [`ping`](https://graphql.braintreepayments.com/reference/#Query--ping) query Braintree provide.  To test this I've called the `ping` method in the `initialize` step. This way we should get a console log (in the terminal window running falcon server) when initialising the payment method on the frontend (visit the checkout and select Braintree).
+We can test the connection using the [`ping`](https://graphql.braintreepayments.com/reference/#Query--ping) query Braintree provide.  To test this I've called the `ping` method in the `initialize` step. This way we should get a console log (in the terminal window running falcon server) when initializing the payment method on the frontend (visit the checkout and select Braintree).
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
 ```js

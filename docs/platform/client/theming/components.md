@@ -35,7 +35,7 @@ const MyComponentLayout = themed({
 </MyComponentLayout>
 ```
 
-You will notice that we have suffixed the names with **layout**. This is a helpful convention to easily recognise when a component is a `themed` layout.
+You will notice that we have suffixed the names with **layout**. This is a helpful convention to easily recognize when a component is a `themed` layout.
 
 ## Changing the html element of a component
 

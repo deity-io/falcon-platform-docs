@@ -14,7 +14,7 @@ sidebar_label: Magento 2
 
 ## Overview
 
-Our Magento 2 integration allows you to manage your product catalogue, discounts, shipping rules and customers within Magento and use Falcon Platform to provide a PWA frontend to your users.
+Our Magento 2 integration allows you to manage your product catalog, discounts, shipping rules and customers within Magento and use Falcon Platform to provide a PWA frontend to your users.
 
 We support **magento >= 2.3**
 
