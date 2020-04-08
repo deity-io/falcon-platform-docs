@@ -12,7 +12,7 @@ Cloud will scale automatically depending on your needs and traffic meaning your 
 
 Depending on your plan you'll be able to have as many enviroments as you need making it easy to test new features before putting them live.
 
-Built with internationalisation in mind, Cloud supports multi-region based on geolocation.
+Built with internationalization in mind, Cloud supports multi-region based on geolocation.
 
 
 ## DCloud CLI tool

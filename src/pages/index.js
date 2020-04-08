@@ -84,7 +84,7 @@ function Home() {
             <div>
               <h3>The Falcon Platform Architecture</h3>
               <p>The Falcon Front-End Platform has a unique decentralized architecture. This architecture makes the platform extremely reliable, flexible and unlimitedly scalable, while at the same time reducing complexity.</p>
-              <p>Combined with Falcon Platform Cloud you can enjoy easy deployments, localised hosting and automatic scalability.</p>
+              <p>Combined with Falcon Platform Cloud you can enjoy easy deployments, localized hosting and automatic scalability.</p>
             </div>
             <div>
               <img

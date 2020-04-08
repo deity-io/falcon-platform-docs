@@ -70,4 +70,4 @@ Based on that result - the visitor can be redirected to 3 options:
 
 - `/checkout/confirmation` in case of a successful payment
 - `/checkout/failure` if for some reason the payment transaction cannot be completed
-- `/cart`  in case of "cancelled" transaction
+- `/cart`  in case of "canceled" transaction
