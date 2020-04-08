@@ -5,7 +5,7 @@ sidebar_label: Dynamic Route Resolver
 ---
 
 `DynamicRouteResolver` handles dynamic route resolution for the client application.
-When user goes to a page that is not defined in React routing - then client asks back-end for the type of content for that particular url:
+When a user goes to a page that is not defined in React routing - then the client will ask the back-end for the type of content for that particular url:
 
 - It asks every extension to get "fetch URL priority" from the assigned API DataSource instance
 - It sorts API DataSource instances that are able to determine dynamic content type by their "priority"
@@ -50,7 +50,7 @@ class WordpressApi {
 So in that case `DynamicRouteResolver` will call `ShopExtension.fetchUrl()` first, if that call returns `null`,
 it will call `BlogExtension.fetchUrl()` second.
 
-By **default** the API priorty order is the order they are added in your `server/config/default.json` file. With the first API being checked first. If the priorities are the same this order will be used.
+By **default** the API priority order is the order they are added in your `server/config/default.json` file. With the first API being checked first. If the priorities are the same this order will be used.
 
 We provide these orders:
 
