@@ -6,7 +6,7 @@ sidebar_label: Wordpress
 
 ---
 
-<a href="https://wordpress.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wordpresss site">
+<a href="https://wordpress.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wordpress site">
   <img src="/img/docs/platform/wordpress-logo.svg" alt="Wordpress Logo" width="200"/>
 </a>
 
@@ -24,9 +24,9 @@ Please see our [Github](https://github.com/deity-io/falcon-wordpress-module) for
 
 ## Supported Features
 
-Our plugin adds endpoints for many of Wordpresses features incuding posts, tags, comments, media and more. We also support menus and `Advanced Custom Fields`.
+Our plugin adds endpoints for many of Wordpresses features including posts, tags, comments, media and more. We also support menus and `Advanced Custom Fields`.
 
-Using `demo-v1` we have full support (including FE rendering and components) for the following features:
+Using `demo-v1` we have full support (including components and routes) for the following features:
 
 - Blog Posts
 - Blog Categories
@@ -73,4 +73,4 @@ All you need to do is add your sites URL and you're away.
 
 ### 5. Finished
 
-That's it. If you're using our example app (`demo-v2`) then you should see your latests posts appear on your Falcon Platform apps homepage.
+That's it. If you're using our example app (`demo-v2`) then you should see your latest posts appear on your Falcon Platform apps homepage.

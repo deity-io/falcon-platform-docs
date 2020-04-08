@@ -60,7 +60,7 @@ The value `payments` maps to the section within `components`
 }
 ```
 
-Each provider has a package associated with it and a `config` object. You can use this config to pass data such as API keys to your provider.  As per any config it's worth looking at which [config](/docs/platform/client/configuration) file should contain which configurations (to avoid sensitive data by commited to your repository).
+Each provider has a package associated with it and a `config` object. You can use this config to pass data such as API keys to your provider.  As per any config it's worth looking at which [config](/docs/platform/client/configuration) file should contain which configurations (to avoid sensitive data by committed to your repository).
 
 **Stripe** and **Cash on delivery** providers are both shipped with our `@deity/falcon-payments` package.
 

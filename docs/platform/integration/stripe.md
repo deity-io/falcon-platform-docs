@@ -46,7 +46,7 @@ Once you've created an account you should be able to find your API keys in the d
 
 <img src="/img/docs/platform/stripe-account-1.png" alt="Stripe Account Sidebar" width="200" style={{marginBottom: 20}}/>
 
-**n.b.** Take not of if you're in `test` or `live` mode.
+**n.b.** Take note of if you're in `test` or `live` mode.
 
 <img src="/img/docs/platform/stripe-account-2.png" alt="Stripe Account API section" style={{marginBottom: 20}} />
 

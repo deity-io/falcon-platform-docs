@@ -14,7 +14,7 @@ Webpack generates unique chunk names during each build. These chunks are set to 
 
 Our service worker will cache these static assets in local storage.
 
-We have 2 components to help with this a prevent users getting served stale content. These are imported from our `@deity/falcon-service-worker` package. They will show users a message to fetch new content if changes are detected.
+We have 2 components to help with this and to prevent that users are getting served stale content. These are imported from our `@deity/falcon-service-worker` package. They will show users a message to fetch new content if changes are detected.
 
 **`client/src/App.js`**
 ```js

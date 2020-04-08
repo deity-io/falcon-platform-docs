@@ -11,14 +11,14 @@ We've created a series of example Integrations to help you understand how to int
 ### Json Placeholder
 https://jsonplaceholder.typicode.com/ offers free and open APIs for testing.
 
-We've created a guide showing how to integrate with this and use it's data on the frontout.
+We've created a guide showing how to integrate with this and use it's data on the frontend.
 
 - [Basic Integration](../cookbook/integrations/jsonplaceholder)
 
 ### Contentful
 https://www.contentful.com/ is an enterprise, API first CMS.
 
-We've created a guide showing how to integrate with this and use it's data on the frontout.
+We've created a guide showing how to integrate with this and use it's data on the frontend.
 
 - [Basic Integration](../cookbook/integrations/contentful)
 - [Routing](../cookbook/integrations/contentful2)

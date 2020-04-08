@@ -20,7 +20,7 @@ Adding `-g` will install it globally so you can use it where ever you want.
 
 To test it's working run `dcloud`. You should list a list of available commands.
 
-## Loggin in
+## Logging in
 
 The next step is to log into [your cloud account](account).
 
