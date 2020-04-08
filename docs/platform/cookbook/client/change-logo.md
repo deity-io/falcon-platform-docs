@@ -4,16 +4,17 @@ title: Changing the site logo
 sidebar_label: Changing the site logo
 ---
 
-Changing the site logo is probablty one of the first things you will want to do, so we've created a step by step guide to doing it.
+
+Changing the site logo is probably one of the first things you will want to do, so we've created a step by step guide to doing it.
+We will base these changes on the [demo-v2 example](./../../getting-started/create#our-examples) client, but the same principles will apply regardless of specific implementation.
 
 ## The header logo
-
-The header logo uses your themes [icon component](./../icons) out of the box.  
+The header logo uses your themes [icon component](./../../client/theming/icons) out of the box.  
 
 **`client/src/styling/icons.js`**
 ```js
 ...
-import Logo from '..//img/opensource/logo.svg';
+import Logo from '../assets/logo.svg';
 ...
 export const icons = {
   logo: {
@@ -27,12 +28,12 @@ export const icons = {
 **`client/src/components/Header/HeaderMenuBar.js`**
 ```js
 ...
-import { Icon } from '@deity/falcon-ui';
+import { ... Icon ...  } from '@deity/falcon-ui';
 ...
-<Icon src="logo" />
+<Icon src="logo" ... />
 ```
 
-To change the logo, all you need to do is change the file `client/src//img/opensource/logo.svg`.
+To change the logo, all you need to do is change the file `client/src/assets/logo.svg`.
 
 If you don't want to use an SVG or the icon component then you could just load your asset in `client/src/components/Header/HeaderMenuBar.js` and use an `<img>` element.
 
@@ -43,11 +44,11 @@ Your favicon and other `meta` icons such as touch icons are added in your `clien
 **`client/src/App.js`**
 ```js
 ...
-import logo from 'src//img/opensource/logo.png';
-import icon16x16 from './/img/opensource/icons/appicons/16x16.png';
-import icon32x32 from './/img/opensource/icons/appicons/32x32.png';
-import icon180x180 from './/img/opensource/icons/appicons/180x180.png';
-import favicon from './/img/opensource/icons/appicons/favicon.ico';
+import logo from 'src/assets/logo.png';
+import icon16x16 from './assets/icons/appicons/16x16.png';
+import icon32x32 from './assets/icons/appicons/32x32.png';
+import icon180x180 from './assets/icons/appicons/180x180.png';
+import favicon from './assets/icons/appicons/favicon.ico';
 ...
 const HeadMetaTags = () => (
   <Locale>
@@ -76,12 +77,12 @@ It wouldn't be a **PWA** with your `manifest.json` file. You can change this by 
   ...
   "icons": [
     {
-      "src": ".//img/opensource/icons/appicons/192x192.png",
+      "src": "./assets/icons/192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": ".//img/opensource/icons/appicons/512x512.png",
+      "src": "./assets/icons/512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -90,7 +91,7 @@ It wouldn't be a **PWA** with your `manifest.json` file. You can change this by 
 ```
 ---
 
-That's it! you're site is ready to go.
+That's it! Your site is ready to go.
 
 
 :::note Don't forget your emails...

@@ -8,7 +8,7 @@ If you are using `scss` and want to load a global file to all your other `scss` 
 
 This can be done in `client/falcon-client.build.config.js`.
 
-Within the `modify` arguement you can pass your new webpack rule.
+Within the `modify` argument you can pass your new webpack rule.
 
 ```js
 modify: (cfg, { target }) => {

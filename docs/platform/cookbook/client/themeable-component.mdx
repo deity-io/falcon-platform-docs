@@ -1,11 +1,11 @@
 ---
-id: themaeble-component
+id: themeable-component
 title: Creating a themeable component
 sidebar_label: Creating a themeable component
 ---
 
 :::note React version
-In this guide we're going to be using **React hooks** added in React v16.8. If you're using the old demo you will have to convert these to lifecycle functions (e.g. `componentWillMount`).
+In this guide we're going to be using **React hooks** added in React v16.8. If you're using the old demo-v1 you will have to convert these to lifecycle functions (e.g. `componentWillMount`).
 :::
 
 
@@ -49,8 +49,7 @@ export const Countdown = ({ seconds }) => {
   useLayoutEffect(() => {
     let tick = setTimeout(() => {
       if (time <= 0) {
-        console.log('ere')
-        setIsActive(false);
+``        setIsActive(false);
       } else {
         setTime(time - millisecond);
       }
@@ -262,7 +261,6 @@ export const Countdown = ({ seconds }) => {
   useLayoutEffect(() => {
     let tick = setTimeout(() => {
       if (time <= 0) {
-        console.log('ere')
         setIsActive(false);
       } else {
         setTime(time - millisecond);

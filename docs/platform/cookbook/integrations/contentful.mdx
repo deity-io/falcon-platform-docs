@@ -9,19 +9,19 @@ description: DEITY Platform Contentful integration
   <img src="/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{margin: '0 0 40px'}}/>
 </a>
 
-In this tutorial we will implement a **basic** integration with <a href="https://www.contentful.com//" target="_blank" rel="noopener noreferrer">Contentful</a>.
+In this tutorial we will implement a **basic** integration with <a href="https://www.contentful.com" target="_blank" rel="noopener noreferrer">Contentful</a>.
 
 Contentful provide a few ways to get data, including **GraphQL**. In this tutorial we will be using **REST** as it's included in all their plans.
 
 :::note Read this first
-We recommend you go through [this](json-placeholder) example first as we will be skipping past a few details.
+We recommend you go through [the json placeholder](jsonplaceholder) example first as it explains the basics of writing an extension and we will be skipping past a few details.
 :::
 
 ## Overview
 
 We will get 'course' information from <a href="https://www.contentful.com/" rel="noreferrer noopener" target="_blank">Contentfuls</a> example data. 
 
-We will expalin adding API auth details to your DEITY Cloud instances and to your `server/config/local.json` file.
+We will be explaining how to add API auth details to your DEITY Cloud instances and to your `server/config/local.json` file.
 
 ## 1. Getting set up with Contentful
 
@@ -31,7 +31,7 @@ If you don't already have a Contentful you'll have to create one. This is easy a
 
 ### ii. Set up your content model
 
-This tutorial focusses on getting a **course** content model. This comes as part of their example data.  If you're not using this model a few details later on may vary.
+This tutorial focuses on getting a **course** content model. This comes as part of their example data.  If you're not using this model a few details later on may vary.
 
 ![contentful content model](/img/docs/platform/contentful-data.png)
 
@@ -63,10 +63,10 @@ To get your `Content Type ID` go to your content model and it will be in the sid
 ## 2. Creating your API and Extension packages
 
 :::note Want to test your API outside of Falcon Platform?
-Contentful have a really handy <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/content-types/content-type/get-a-single-content-type/console" rel="noopener noreferrer" target="_blank">API testing tool</a> as part of their docs meaning you don't need to use a tool like <a href="https://www.postman.com/" target="_blank" rel="noreferrer noopenner">Postman</a>.
+Contentful have a really handy <a href="https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/content-types/content-type/get-a-single-content-type/console" rel="noopener noreferrer" target="_blank">API testing tool</a> as part of their docs meaning you don't need to use a tool like <a href="https://www.postman.com/" target="_blank" rel="noreferrer noopener">Postman</a>.
 :::
 
-[This example](json-placeholder) covers this section in more detail.
+[The json placeholder](jsonplaceholder) example covers this section in more detail.
 
 ### i. Create your extension and API files
 
@@ -86,7 +86,7 @@ You'll need to create the following files:
 
 ### ii. Register you API and extension 
 
-These are registered in your `server/config/default.json`. Remeber the api passed to the extension must match the name defined in the api, in this case `contentful`.
+These are registered in your `server/config/default.json`. Remember the api passed to the extension must match the name defined in the api, in this case `contentful`.
 
 **`server/config/default.json`**
 ```json
@@ -141,7 +141,7 @@ type CourseData {
 }
 ```
 
-n.b. We're only adding `title` and `description` to the course for now. You could of course add what ever fields you need.
+**n.b.** We're only adding `title` and `description` to the course for now. You could of course add what ever fields you need.
 
 ### iiii. Create your API files
 
@@ -177,7 +177,7 @@ The `content_type` const should be your **Content Type ID**, in our case it's **
 
 ## 3. Adding your credentials locally
 
-We don't want to commit our API keys so, for now we'll add these to a `server/config/local.json`. This is merged into your `default.json` but not commited ([see this doc for more information](/docs/platform/client/configuration)).
+We don't want to commit our API keys so, for now we'll add these to a `server/config/local.json`. This is merged into your `default.json` but not committed ([see this doc for more information](/docs/platform/client/configuration)).
 
 The name of the API needs to be the same as in `server/config/default.json`. In this case it's `contentful`.
 
@@ -202,7 +202,7 @@ The name of the API needs to be the same as in `server/config/default.json`. In 
 
 You're now ready to test your extension. Make sure `falcon-server` is up and running.
 
-To use this tool it must be running on post `4000` (`http://localhost/4000/graphql`).
+To use this tool it must be running on port `4000` (`http://localhost/4000/graphql`).
 
 <iframe
      src="https://codesandbox.io/embed/falcon-platform-graphql-contentful-nv8k1?fontsize=14&hidenavigation=1&theme=dark&view=preview"
@@ -215,7 +215,7 @@ To use this tool it must be running on post `4000` (`http://localhost/4000/graph
 
 ## 5. Using your data in Falcon Client
 
-As before, this section is largely covered in [this example](json-placeholder).
+As before, this section is largely covered in [the json placeholder](jsonplaceholder) example.
 
 We will need to create the following files in `client`.
 
@@ -302,9 +302,9 @@ Now you've created your `<CourseList>` component, if you want to see it on the f
 
 ## 6. Moving your credentials to your environment
 
-In [step 3](#3-adding-your-credentials-locally) we added our API keys to our `config/local.json` file. This isn't commited so won't work anywhere other than locally.
+In [step 3](#3-adding-your-credentials-locally) we added our API keys to our `config/local.json` file. This isn't committed so won't work anywhere other than locally.
 
-To add use this config on a remote environment we will want to use a `server/config/custom-environment-variables.json` file.
+To use this config on a remote environment we will want to use a `server/config/custom-environment-variables.json` file.
 
 Learn about our config files [here](/docs/platform/client/configuration).
 
@@ -347,6 +347,6 @@ dcloud env:var production CONTENTFUL_CONTENT_DELIVERY_API [your api key here]
 
 ## 7. Finished
 
-That's it, you now have a **basic** integration with Contentful. Contentful is a really powerful tool and the integration possibilites are endless but the principle should always remain the same.
+That's it, you now have a **basic** integration with Contentful. Contentful is a really powerful tool and the integration possibilities are endless but the principle should always remain the same.
 
 Happy coding.

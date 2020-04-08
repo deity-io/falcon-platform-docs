@@ -14,9 +14,9 @@ import HighlightFlag from '../../../../src/components/HighlightFlag';
 
 ## Overview
 
-In this tutorial we will look integrate with Braintree using their **hosted fields** and their **GraphQl** endpoint.
+In this tutorial we will look at integrating with Braintree using their **hosted fields** and their **GraphQl** endpoint.
 
-We will be focussing soley on Card Payments in the checkout.
+We will be focusing solely on Card Payments in the checkout.
 
 In this example all files will be created directly into our codebase. For the sake of reusability it's advised you create your own `npm` packages and import them.
 
@@ -142,7 +142,7 @@ You will now have access to all of these details in your provider. They will be 
 
 ### 4. Passing config data to the frontend (Falcon Client)
 
-Each payment provider should include 2 methods. `initialize` when the providier is initialized and `validate` when the payment is submitted.
+Each payment provider should include 2 methods. `initialize` when the provider is initialized and `validate` when the payment is submitted.
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
 ```js
@@ -168,7 +168,7 @@ module.exports = class BraintreePayment {
     this.tokenizationKey = this.config.tokenizationKey;
   }
 
-  // payload contains information about the paymemnt, e.g. total, currency, customer ID
+  // payload contains information about the payment, e.g. total, currency, customer ID
   async initialize(payload) {
     return {
       title: this.config.title,
@@ -184,7 +184,7 @@ module.exports = class BraintreePayment {
 
 ### 5. Install the Braintree React Package
 
-We will install this pacakge `client` side. It's does a lot of the heavy lifting for rendering a Braintree form with **hosted fields**.
+We will install this package `client` side. It does a lot of the heavy lifting for rendering a Braintree form with **hosted fields**.
 
 [react-braintree-fields](https://www.npmjs.com/package/react-braintree-fields)
 
@@ -275,7 +275,7 @@ export default Payment;
 
 ```
 
-n.b. The `<HostedField>` components should have associated labels.
+**n.b.** The `<HostedField>` components should have associated labels.
 
 It's worth reading the package docs to see how the `<Braintree>` component works. The main detail we need to know about is the `getTokenRef` prop.
 
@@ -346,9 +346,10 @@ const paymentCodeToPluginMap = {
   braintree: `Braintree`
 };
 ```
-n.b. `PlaceOrderSection.js` maps the component based on it being within the `client/src/pages/shop/checkout/payments/` directory.
 
-If you visit the checkout now you should now see Braintree as an option and should also see the form appearing as expected.
+**n.b.** `PlaceOrderSection.js` maps the component based on it being within the `client/src/pages/shop/checkout/payments/` directory.
+
+If you visit the checkout now you should see Braintree as an option and should also see the form appearing as expected.
 
 ### 7. Create a transaction
 
@@ -358,7 +359,7 @@ It's worth reading through [their docs](https://graphql.braintreepayments.com/),
 
 #### i. Add GraphQL Request Package
 
-This package allows us to easilly make well formatted GraphQL requests to 3rd party clients.
+This package allows us to easily make well formatted GraphQL requests to 3rd party clients.
 
 We install this `server` side.
 

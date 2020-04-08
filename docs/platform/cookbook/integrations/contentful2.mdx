@@ -50,7 +50,7 @@ extend type Query {
 
 ### iii. Test your endpoint.
 
-You should now be able to test your GrpahQL. Make sure `falcon-server` is running and is on `https://localhost:4000/graphql`.
+You should now be able to test your GraphQL. Make sure `falcon-server` is running and is on `https://localhost:4000/graphql`.
 
 Also remember to replace `YOUR_CONTENT_ID` with your course ID.
 
@@ -114,7 +114,7 @@ At the moment we are only querying the title and description. If you want more d
 
 At the moment we just rendering the title, description and changing the page title.
 
-Notice we are using `<Helmet>` to change the page title. To learn more about this [click here](/docs/platform/client/meta-data).
+Notice we are using `<Helmet>` to change the page title. To learn more about this read how [falcon manages meta data via helmet](/docs/platform/client/meta-data).
 
 **`client/src/components/Course/Course.js`**
 ```js
@@ -216,7 +216,7 @@ module.exports = class ContentfulApi extends ApiDataSource {
 There is quite a bit going on here.
 
 ### i. getFetchUrlPriority
-We are just returing the default priority set in `ApiDataSource`.
+We are just returning the default priority set in `ApiDataSource`.
 
 If you wanted to change this you could follow a similar pattern to the example below. This returns a low priority for all urls except 'hello'.
 
