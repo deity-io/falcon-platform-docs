@@ -17,4 +17,4 @@ Built with internationalisation in mind, Cloud supports multi-region based on ge
 
 ## DCloud CLI tool
 
-**DCloud** is our <a href="https://www.w3schools.com/whatis/whatis_cli.asp">CLI Tool</a> to help you make the most of Falcon Platform Cloud. Find out more [about DCloud](../getting-started/dcloud).
+**DCloud** is our <a href="https://www.w3schools.com/whatis/whatis_cli.asp">CLI Tool</a> to help you make the most of Falcon Platform Cloud. Find out more [about DCloud](/docs/platform/cloud/dcloud).
