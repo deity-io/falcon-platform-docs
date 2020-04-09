@@ -102,6 +102,10 @@ module.exports = {
       "platform/integration/wordpress"
     ],
     Testing: ["platform/testing/overview"],
+    Routing: [
+      "platform/routing/overview",
+      "platform/routing/redirects"
+    ],
     Cookbook: [
       "platform/cookbook/about",
       {
