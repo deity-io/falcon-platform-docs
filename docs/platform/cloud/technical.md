@@ -18,7 +18,7 @@ A build is a full build of a particular commit. This is not accessible unless it
 Deployments are when a build has been pushed to an environment.
 
 ### Environments
-The number of environments available depends on your Cloud plan. An environment is a complete infrastructure with an accessible URL. Each environment can be configured to point to a different git branch. 
+The number of environments available depends on your Cloud plan. An environment is a complete infrastructure with an accessible URL.
 
 ### Repositories
 This refers to the code repository for your site.   
