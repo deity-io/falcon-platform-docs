@@ -34,7 +34,7 @@ This file is **not** committed to your repository. It **can** contain sensitive 
 ## custom-environment-variables.json
 This file has the highest priority and should be used to map config to environment variables (set on your Node environment). These mapping can be used for sensitive data such as passwords that you wouldn't want committed to your repository.
 
-If you're using Falcon Cloud you can set env variables using the [dcloud CLI tool](../../cloud/getting-started/dcloud).
+If you're using Falcon Cloud you can set env variables using the [dcloud CLI tool](/docs/platform/cloud/dcloud).
 
 **CLI Command**
 ```bash

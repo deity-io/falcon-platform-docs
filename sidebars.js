@@ -113,7 +113,8 @@ module.exports = {
           "platform/cookbook/client/themaeble-component",
           "platform/cookbook/client/scss-global",
           "platform/cookbook/client/post-css-support",
-          "platform/cookbook/client/analytics"
+          "platform/cookbook/client/analytics",
+          "platform/cookbook/client/testing"
         ]
       },
       {
