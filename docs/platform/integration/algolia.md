@@ -136,7 +136,7 @@ This should be added to your env variables or your local.json. They can all be f
 
 ### 3. Index your products
 
-Once you've created an account and configured it the last thing to do is [index your data](#indexing--managing-indexes).
+Once you've created an account and configured it, the last thing to do is [index your data](#indexing--managing-indexes).
 
 ## Indexing / Managing indexes
 
@@ -144,7 +144,7 @@ This can be broken down into 3 sections. Configuring what data is searchable, ru
 
 ### 1. Configuring your indexes
 
-This first thing you'll need to do is configure what data is searchable. You can also configure **facets** (filters) here.
+The first thing you'll need to do is configure what data is searchable. You can also configure **facets** (filters) here.
 
 This is done in your server config:
 

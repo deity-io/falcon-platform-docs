@@ -4,7 +4,7 @@ title: Falcon Server Configuration
 sidebar_label: Falcon Server
 ---
 
-Acessing server config is simple.
+Accessing server config is simple.
 
 As your `APIs`, `payments`, `components` and `extensions` are all defined in the config files themselves you are able to pass config variables at that point.
 
@@ -22,7 +22,7 @@ This config is available within the constructor method:
 
 **`your-package/index.js`**
 ```js
-module.exports = class YourPacakge {
+module.exports = class YourPackage {
 
   constructor(code, config) {
     this.config = config;

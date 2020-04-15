@@ -134,7 +134,7 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 
 ```
 
-### 6. Disable your Magento frontned
+### 6. Disable your Magento frontend
 Disable your Magento 2 frontend. We have a [Magento module](https://github.com/deity-io/disable-frontend) you can use.
 
 ### 7. Complete

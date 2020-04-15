@@ -9,7 +9,7 @@ To add your styles using a `css` or `scss` file simply import it.
 **`styles.scss`**
 ```css
 .myBlock {
-  backgrouund: red;
+  background: red;
 }
 ```
 

@@ -8,11 +8,11 @@ sidebar_label: Overriding Components
 We will occasionally be pushing changes to our components. If they have been overridden you won't automatically get these changes when you upgrade.
 :::
 
-Falcon Platform makes overidding components very simple.
+Falcon Platform makes overriding components very simple.
 
 Within the client directory you'll find a `moduleOverride.js` file.
 
-You can use this to overide components pulled in from external packages.
+You can use this to override components pulled in from external packages.
 
 ```js
 module.exports = {

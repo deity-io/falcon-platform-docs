@@ -1,7 +1,7 @@
 ---
 id: state
-title: Local State Managment
-sidebar_label: Local State Managment
+title: Local State Management
+sidebar_label: Local State Management
 ---
 
 State management is the same as Falcon Open Source.

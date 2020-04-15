@@ -23,7 +23,7 @@ The order in which the config files are merged is:
 `default.json` < `[NODE_CONFIG_ENV].json` < `local.json` < `custom-environment-variables.json`
 
 ## default.json
-The `default.json` contains shared config that can be commited to your repository (not passwords and API keys).
+The `default.json` contains shared config that can be committed to your repository (not passwords and API keys).
 
 ## [NODE_CONFIG_ENV].json
 The name of this file depends on the config `NODE_CONFIG_ENV`. For your `production` environment it would be `production.json` and would only be loaded on that env. For this reason this file should contain environment specific config.

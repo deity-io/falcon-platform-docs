@@ -21,7 +21,7 @@ It should look like this:
 import React from 'react';
 import ArrowBack from 'boxicons/svg/regular/bx-arrow-back.svg';
 ...
-import Logo from '..//img/opensource/logo.svg';
+import Logo from '../assets/logo.svg';
 
 export const icons = {
   logo: {
@@ -63,7 +63,7 @@ yarn add boxicons --save
 </TabItem>
 </Tabs>
 
-We now need to pass the `icons` to our theme. In your `theme.js` file you can pass it to the object in `createTheme`.
+We now need to pass the `icons` to our theme. In your `theme.js` file you can pass it to the object in `createTheme`. It can be that icons is already defined, in that case you want to simply replace it.
 
 **`client/src/styling/theme.js`**
 ```js
@@ -90,14 +90,14 @@ Here's one you can use...
 </svg>
 ```
 
-**One 'gotcha' is that some SVGs don't cammel case `viewBox` e.g. `viewbox`. This will cause issues so it's best to change it to `viewBox`.**
+**One 'gotcha' is that some SVGs don't camel case `viewBox` e.g. `viewbox`. This will cause issues so it's best to change it to `viewBox`.**
 
-Add your svg file to your assets directory (`client/src//img/opensource/new-icon.svg`) and import it in the icon component (`client/src/styling/icons.js`).
+Add your svg file to your assets directory (`client/src/img/opensource/new-icon.svg`) and import it in the icon component (`client/src/styling/icons.js`).
 
 **`client/src/styling/icons.js`**
 ```js
 ...
-import NewIcon from '..//img/opensource/new-icon.svg';
+import NewIcon from '../img/opensource/new-icon.svg';
 
 export const icons = {
   ...
@@ -126,7 +126,7 @@ const YourComponent = () => (
 ```
 `src` should be the key defined in your `client/src/styling/icons.js` file.
 
-`<Icon>` is themable so you can pass css like any other component.
+`<Icon>` is themeable so you can pass css like any other component.
 
 **`client/src/components/YourComponent.js`**
 ```js
@@ -141,3 +141,4 @@ const YourComponent = () => (
 
 ## 4. Done
 That's it, you've added a new icon.
+
