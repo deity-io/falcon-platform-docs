@@ -112,8 +112,8 @@ module.exports = {
     image: "img/deity-logo.svg",
 
     algolia: {
-      apiKey: "873c5f29d2334cb9c44ef4a407d8b269",
-      indexName: "deity_falcon",
+      apiKey: "3cd0500212418e98ed4f90579abbe0fb",
+      indexName: "deity",
       algoliaOptions: {}
     },
 
