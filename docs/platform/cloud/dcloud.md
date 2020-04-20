@@ -29,7 +29,7 @@ dcloud build:list -l 30
 Get information on a build.
 
 ```bash
-dcloud build:info [id]
+dcloud build [id]
 ```
 
 **Options**
@@ -39,7 +39,7 @@ dcloud build:info [id]
 **Example: Watch the build with id 20**
 
 ```bash
-dcloud build:info 20 -w
+dcloud build 20 -w
 ```
 
 ---
