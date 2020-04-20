@@ -38,12 +38,11 @@ function Home() {
               <p>The Falcon Platform is a fully packed hosted front-end platform, which allows to create the best front-end experiences for eCommerce.</p>
               <p>Falcon is not just a PWA theme, it is a complete platform to build the best shopping experience with top performance and unlimited flexibility, enabling your future growth.</p>
               <Link
-                href="https://deity.io/falcon"
+                to="/docs/platform/overview/about"
                 target="_blank"
                 className="button"
                 rel="noreferrer noopener"
-                aria-label="Find out more about the Falcon Platform"
-              >Find out more</Link>
+              >Read our documentation</Link>
             </div>
             <div className={styles.aboutColumn}>
               <img
