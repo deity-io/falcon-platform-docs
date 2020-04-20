@@ -39,9 +39,7 @@ function Home() {
               <p>Falcon is not just a PWA theme, it is a complete platform to build the best shopping experience with top performance and unlimited flexibility, enabling your future growth.</p>
               <Link
                 to="/docs/platform/overview/about"
-                target="_blank"
                 className="button"
-                rel="noreferrer noopener"
               >Read our documentation</Link>
             </div>
             <div className={styles.aboutColumn}>
