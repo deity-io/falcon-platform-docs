@@ -30,7 +30,7 @@ const FaqCategories = [
     icon: "/img/bxs-cog.svg",
   },
   {
-    name: "Miscellaneous",
+    name: "Miscellaneous + Troubleshooting",
     url: "/docs/platform/support/faqs/misc",
     icon: "/img/bx-question-mark.svg",
   },
