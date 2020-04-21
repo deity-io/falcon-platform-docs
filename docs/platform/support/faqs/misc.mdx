@@ -9,8 +9,12 @@ import Link from '@docusaurus/Link';
 import Categories from '../../../../src/components/Faqs/Categories';
 import Accordion from '../../../../src/components/Accordion';
 
-<Accordion title="Coming Soon">
-  There aren't any questions or answers here just yet.
+<Accordion title="Error: Your lockfile needs to be updated, but yarn was run with `--frozen-lockfile`.">
+  If you're seeing this error it is likley to be an issue with your globally installed version of `create-react-app`. To fix it run the following commands and then try to install you app again.
+  ```bash
+    npm uninstall -g create-falcon-app
+    npm uninstall -g @deity/create-falcon-app
+  ```
 </Accordion>
 
 ### Check out our other FAQs
