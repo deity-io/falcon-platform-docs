@@ -181,10 +181,8 @@ const PlanLayout = ({ plan, monthly }) => {
   );
 };
 
-const PlanPriceLayout = (plan, monthly) => {
-  console.log(plan);
-  const { price, monthlyCost } = plan.plan;
-  console.log(price);
+const PlanPriceLayout = ({ plan, monthly }) => {
+  const { price, monthlyCost } = plan;
   return (
     <div className={styles.price}>
       {!price ? (
@@ -201,7 +199,7 @@ const PlanPriceLayout = (plan, monthly) => {
   );
 }
 
-const PlanTable = (monthly) => (
+const PlanTable = ({ monthly }) => (
   <table>
     <tbody>
       <tr className={styles.table__row}>
@@ -226,8 +224,7 @@ const PlanTable = (monthly) => (
                 <h3 className={styles.planTitle}>{plan.name}</h3>
                 <h4 className={styles.planDescription}>{plan.description}</h4>
               </div>
-              {monthly ? "hey" : "ho"}
-              <PlanPriceLayout monthly={monthly} plan />
+              <PlanPriceLayout monthly={monthly} plan={plan} />
             </div>
           </td>
         ))}
