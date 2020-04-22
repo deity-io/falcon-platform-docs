@@ -27,6 +27,7 @@ function Prices() {
       <main>
         <section style={{ padding: "2rem 0" }}>
           <div className="container">
+            <h3 style={{textAlign: "center", textTransform: "uppercase"}}>Our Plans</h3>
             <Pricing />
           </div>
         </section>

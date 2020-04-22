@@ -3,171 +3,86 @@ import classnames from "classnames";
 import styles from "./styles.module.css";
 
 const PlanFeatures = {
-  1: "Containerised Cluster",
-  2: "Managed CI/CD Flow",
-  3: "Build & Deploy Pipeline",
-  4: "SLA 99.9% / month",
-  5: "Monitoring 24/7/365",
-  6: "Custom SSL / domain",
+  1: "Multi tenant",
+  2: "Access to Falcon Server",
+  3: "SLA 99.99% / month",
+  4: "Monitoring 24/7/365",
+  5: "Custom SSL / domain",
+  6: "Containerised Cluster",
+  7: "Managed CI/CD flow",
+  8: "Build & Deploy Pipeline",
+  9: "Autoscaling",
+  10: "Optional Geo-Region"
+};
+
+const PlanEnvironments = {
+  1: "Test",
+  2: "Acceptance",
+  3: "Production"
 };
 
 const PricePlans = [
   {
     name: "Sandbox",
-    price: 99,
+    description: "For Developers",
+    price: 82.50,
     monthlyCost: 120,
-    features: [1, 2, 3, 4, 5],
+    features: [6, 7, 8],
     popular: false,
-    environments: [
-      {
-        name: "Test",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-    ],
+    environments: [1],
   },
   {
-    name: "Basic",
-    price: 199,
-    monthlyCost: 120,
-    features: [1, 2, 3, 4, 5, 6],
-    popular: false,
-    environments: [
-      {
-        name: "Test",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-      {
-        name: "Accept",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-      {
-        name: "Prod",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-    ],
-  },
-  ,
-  {
-    name: "Extra",
-    price: 499,
-    monthlyCost: 120,
-    features: [1, 2, 3, 4, 5, 6],
+    name: "Production",
+    description: "For Shop Owners",
+    price: 207,
+    monthlyCost: 249,
+    features: [3, 4, 5, 6, 7, 8, 9, 10],
     popular: true,
-    environments: [
-      {
-        name: "Test",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-      {
-        name: "Accept",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-      {
-        name: "Prod",
-        cpu: 1.0,
-        ram: 1.0,
-        bandwidth: 10,
-        storage: 20,
-      },
-    ],
+    environments: [1, 2, 3],
   },
   {
-    name: "Plus",
-    price: 999,
-    monthlyCost: 120,
-    features: [1, 2, 3, 4, 5, 6],
+    name: "Enterprise",
+    description: "For Agencies",
+    price: null,
+    monthlyCost: null,
+    features: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     popular: false,
-    environments: [
-      {
-        name: "Test",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-      {
-        name: "Accept",
-        cpu: 0.5,
-        ram: 0.5,
-        bandwidth: 5,
-        storage: 10,
-      },
-      {
-        name: "Prod",
-        cpu: 2.0,
-        ram: 2.0,
-        bandwidth: 20,
-        storage: 20,
-      },
-    ],
+    environments: [1, 2, 3],
   },
 ];
 
 const EnvironmentLayout = ({ environments }) => {
   const environmentCount = environments.length;
-  const items = environments.map((environment) => {
-    const { name, cpu, ram, bandwidth, storage } = environment;
-    return (
-      <tr key={name} className={styles.environmentsRow}>
-        <td
-          className={classnames(
-            styles.environmentsName,
-            styles.environmentsCell
-          )}
-        >
-          {name}
-        </td>
-        <td className={styles.environmentsCell}>{cpu}</td>
-        <td className={styles.environmentsCell}>{ram}</td>
-        <td className={styles.environmentsCell}>{bandwidth}</td>
-        <td className={styles.environmentsCell}>{storage}</td>
-      </tr>
-    );
-  });
+  
+  const items = (
+    <ul className={styles.environmentsList}>
+      {Object.keys(PlanEnvironments).map((key) => {
+        if (environments.includes(parseInt(key))) {
+          return (
+            <li key={key} className={styles.environmentsItem}>
+              {PlanEnvironments[key]}
+            </li>
+          );
+        }
+      })}
+    </ul>
+  );
 
   return (
-    <table className={styles.environments}>
-      <thead>
-        <tr className={styles.environmentsRow}>
-          <th className={styles.environmentsCell}>
-            <span
-              className={classnames(
-                styles.environmentCount,
-                environmentCount > 1 ? styles.environmentCountHighlighted : ""
-              )}
-            >
-              <span className={styles.environmentCount__amount}>
-                {environmentCount}
-              </span>
-              <span className={styles.environmentCount__text}>Env</span>
-            </span>
-          </th>
-          <th className={styles.environmentsHeading}>CPU</th>
-          <th className={styles.environmentsHeading}>RAM (gb)</th>
-          <th className={styles.environmentsHeading}>Bandwidth (gb)</th>
-          <th className={styles.environmentsHeading}>Storage (gb)</th>
-        </tr>
-      </thead>
-      <tbody>{items}</tbody>
-    </table>
+    <div className={styles.environments}>
+      <span
+        className={classnames(
+          styles.environmentCount,
+          environmentCount > 1 ? styles.environmentCountHighlighted : ""
+        )}
+      >
+        <span className={styles.environmentCount__amount}>
+          {environmentCount}
+        </span>
+        <span className={styles.environmentCount__text}>Env</span>
+      </span>
+      {items}
+    </div>
   );
 };
 
@@ -178,22 +93,36 @@ const PaymentPeriodSwitcher = ({ monthly, setMonthly }) => (
       name="payment-switcher"
       type="checkbox"
       checked={monthly}
-      className={styles.switcher__input}
+      className={styles.input}
       onChange={() => setMonthly(!monthly)}
     />
-    <span className={styles.switcher__label}>Monthly</span>
+    <span
+      className={classnames(
+        styles.label,
+        monthly ? styles.label__active : null
+      )}
+    >
+      Monthly
+    </span>
     <span
       className={classnames(
         styles.switch,
         !monthly ? styles.switch__active : null
       )}
     ></span>
-    <span className={styles.switcher__label}>Annualy (Save 25%)</span>
+    <span
+      className={classnames(
+        styles.label,
+        !monthly ? styles.label__active : null
+      )}
+    >
+      Annualy <span className={styles.label__highlight}>(2 months free)</span>
+    </span>
   </label>
 );
 
 const PlanLayout = ({ plan, monthly }) => {
-  const { features, name, popular, environments, price, monthlyCost } = plan;
+  const { features, name, description, popular, environments, price, monthlyCost } = plan;
   return (
     <article
       className={classnames(
@@ -206,10 +135,25 @@ const PlanLayout = ({ plan, monthly }) => {
           <span className={styles.flagText}>Popular</span>
         </span>
       )}
-      <div>
+      <div className={styles.titles}>
         <h3 className={styles.planTitle}>{name}</h3>
-        <EnvironmentLayout environments={environments} />
+        <h4 className={styles.planDescription}>{description}</h4>
       </div>
+      <div className={styles.price}>
+        {!price ? (
+          <p className={styles.priceQuote}>Contact us for a price</p>
+        ) : (
+          <>
+            <p className={styles.priceAmount}>
+              ${monthly ? monthlyCost : price}
+            </p>
+            <p className={styles.priceNote}>
+              {monthly ? "per month" : "per year"}
+            </p>
+          </>
+        )}
+      </div>
+      <EnvironmentLayout environments={environments} />
       <div>
         <ul className={styles.planFeatures}>
           {Object.keys(PlanFeatures).map((key) => {
@@ -233,15 +177,115 @@ const PlanLayout = ({ plan, monthly }) => {
           })}
         </ul>
       </div>
-      <div className={styles.price}>
-        <p className={styles.priceAmount}>
-          &euro;{monthly ? monthlyCost : price}
-        </p>
-        <p className={styles.priceNote}>{monthly ? "per month" : "per year"}</p>
-      </div>
     </article>
   );
 };
+
+const PlanPriceLayout = (plan, monthly) => {
+  console.log(plan);
+  const { price, monthlyCost } = plan.plan;
+  console.log(price);
+  return (
+    <div className={styles.price}>
+      {!price ? (
+        <p className={styles.priceQuote}>Contact us for a price</p>
+      ) : (
+        <>
+          <p className={styles.priceAmount}>${monthly ? monthlyCost : price}</p>
+          <p className={styles.priceNote}>
+            {monthly ? "per month" : "per year"}
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+
+const PlanTable = (monthly) => (
+  <table>
+    <tbody>
+      <tr className={styles.table__row}>
+        <th className={styles.table__head}>Details</th>
+        {PricePlans.map((plan) => (
+          <td
+            key={`${plan.name}-details`}
+            className={classnames(
+              styles.table__cell,
+              styles.cellCurve,
+              styles.cellCurve__top,
+              plan.popular ? styles.popular : ""
+            )}
+          >
+            <div className={styles.table__cellContent}>
+              {plan.popular && (
+                <span className={styles.flag}>
+                  <span className={styles.flagText}>Popular</span>
+                </span>
+              )}
+              <div className={styles.titles}>
+                <h3 className={styles.planTitle}>{plan.name}</h3>
+                <h4 className={styles.planDescription}>{plan.description}</h4>
+              </div>
+              {monthly ? "hey" : "ho"}
+              <PlanPriceLayout monthly={monthly} plan />
+            </div>
+          </td>
+        ))}
+      </tr>
+      <tr className={styles.table__row}>
+        <th className={styles.table__head}>Environments</th>
+        {PricePlans.map((plan) => (
+          <td
+            key={`${plan.name}-env`}
+            className={classnames(
+              styles.table__cell,
+              plan.popular ? styles.popular : ""
+            )}
+          >
+            <div className={styles.table__cellContent}>{plan.description}</div>
+          </td>
+        ))}
+      </tr>
+      {Object.keys(PlanFeatures).map((key) => (
+        <tr key={key} className={styles.table__row}>
+          <th className={styles.table__head}>{PlanFeatures[key]}</th>
+          {PricePlans.map((plan) => (
+            <td
+              key={`${plan.name}-${key}`}
+              className={classnames(
+                styles.table__cell,
+                plan.popular ? styles.popular : ""
+              )}
+            >
+              <div className={styles.table__cellContent}>
+                {plan.price ? plan.price : null}
+              </div>
+            </td>
+          ))}
+        </tr>
+      ))}
+      <tr className={styles.table__row}>
+        <td className={classnames(styles.table__head, styles.table__cellFoot)}>
+          &nbsp;
+        </td>
+        {PricePlans.map((plan) => (
+          <td
+            key={`${plan.name}-foot`}
+            className={classnames(
+              styles.table__cell,
+              styles.table__cellFoot,
+              styles.cellCurve,
+              styles.cellCurve__bottom,
+              plan.popular ? styles.popular : ""
+            )}
+          >
+            <div className={styles.table__cellContent}>&nbsp;</div>
+          </td>
+        ))}
+      </tr>
+    </tbody>
+  </table>
+);
 
 /**
  * Pricing widget
@@ -250,17 +294,15 @@ const PlanLayout = ({ plan, monthly }) => {
 const Pricing = () => {
   if (PricePlans.length) {
     const [monthly, setMonthly] = useState(false);
-    const plans = PricePlans.map((plan) => {
-      return <PlanLayout key={plan.name} plan={plan} monthly={monthly} />;
-    });
 
     return (
       <>
         <header>
           <PaymentPeriodSwitcher monthly={monthly} setMonthly={setMonthly} />
         </header>
-        {monthly && <p>Is Monthly</p>}
-        <section className={styles.plans}>{plans}</section>
+        <section className={styles.plans}>
+          <PlanTable monthly={monthly} />
+        </section>
       </>
     );
   }
