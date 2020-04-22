@@ -199,6 +199,34 @@ const PlanPriceLayout = ({ plan, monthly }) => {
   );
 }
 
+const PlanFeatureLayout = ({ plan, featureKey }) => {
+  const { features } = plan;
+  const specialFeatures = [9, 10];
+  if (features.includes(parseInt(featureKey))) {
+    return (
+      <div key={featureKey}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          fill="#7d9a2e"
+          viewBox="0 0 24 24"
+          className={styles.tick}
+        >
+          <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+        </svg>
+        <span className={styles.feature}>{PlanFeatures[featureKey]}</span>
+        {specialFeatures.includes(parseInt(featureKey)) &&
+          <a href="" className={styles.feature__link}>View Details</a>
+        }
+      </div>
+    );
+  }
+  if (specialFeatures.includes(parseInt(featureKey))) return <>N/A</>;
+
+  return <>&nbsp;</>;
+}
+
 const PlanTable = ({ monthly }) => (
   <table>
     <tbody>
@@ -224,6 +252,7 @@ const PlanTable = ({ monthly }) => (
                 <h3 className={styles.planTitle}>{plan.name}</h3>
                 <h4 className={styles.planDescription}>{plan.description}</h4>
               </div>
+
               <PlanPriceLayout monthly={monthly} plan={plan} />
             </div>
           </td>
@@ -255,7 +284,7 @@ const PlanTable = ({ monthly }) => (
               )}
             >
               <div className={styles.table__cellContent}>
-                {plan.price ? plan.price : null}
+                <PlanFeatureLayout featureKey={key} plan={plan} />
               </div>
             </td>
           ))}
@@ -276,7 +305,7 @@ const PlanTable = ({ monthly }) => (
               plan.popular ? styles.popular : ""
             )}
           >
-            <div className={styles.table__cellContent}>&nbsp;</div>
+            <div className={styles.table__cellContent} style={{ padding: 0 }}>&nbsp;</div>
           </td>
         ))}
       </tr>
