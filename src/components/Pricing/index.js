@@ -12,20 +12,20 @@ const PlanFeatures = {
   7: "Managed CI/CD flow",
   8: "Build & Deploy Pipeline",
   9: "Autoscaling",
-  10: "Optional Geo-Region"
+  10: "Optional Geo-Region",
 };
 
 const PlanEnvironments = {
   1: "Test",
   2: "Acceptance",
-  3: "Production"
+  3: "Production",
 };
 
 const PricePlans = [
   {
     name: "Sandbox",
     description: "For Developers",
-    price: 82.50,
+    price: 82.5,
     monthlyCost: 120,
     features: [6, 7, 8],
     popular: false,
@@ -53,7 +53,7 @@ const PricePlans = [
 
 const EnvironmentLayout = ({ environments }) => {
   const environmentCount = environments.length;
-  
+
   const items = (
     <ul className={styles.environmentsList}>
       {Object.keys(PlanEnvironments).map((key) => {
@@ -121,65 +121,25 @@ const PaymentPeriodSwitcher = ({ monthly, setMonthly }) => (
   </label>
 );
 
-const PlanLayout = ({ plan, monthly }) => {
-  const { features, name, description, popular, environments, price, monthlyCost } = plan;
-  return (
-    <article
-      className={classnames(
-        styles.plan,
-        popular && `${styles.popularPlan} pricePlan--highlight`
-      )}
-    >
-      {popular && (
-        <span className={styles.flag}>
-          <span className={styles.flagText}>Popular</span>
-        </span>
-      )}
-      <div className={styles.titles}>
-        <h3 className={styles.planTitle}>{name}</h3>
-        <h4 className={styles.planDescription}>{description}</h4>
-      </div>
-      <div className={styles.price}>
-        {!price ? (
-          <p className={styles.priceQuote}>Contact us for a price</p>
-        ) : (
-          <>
-            <p className={styles.priceAmount}>
-              ${monthly ? monthlyCost : price}
-            </p>
-            <p className={styles.priceNote}>
-              {monthly ? "per month" : "per year"}
-            </p>
-          </>
+const PlanTabsLayout = ({ activePlan, setActivePlan }) => (
+  <nav className={styles.tabs}>
+    {PricePlans.map((plan) => (
+      <button
+        key={`${plan.name}-tab`}
+        type="button"
+        className={classnames(
+          styles.tab,
+          activePlan === plan.name ? styles.activeTab : null
         )}
-      </div>
-      <EnvironmentLayout environments={environments} />
-      <div>
-        <ul className={styles.planFeatures}>
-          {Object.keys(PlanFeatures).map((key) => {
-            if (features.includes(parseInt(key))) {
-              return (
-                <li key={key} className={styles.planFeature}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
-                    fill="#7d9a2e"
-                    viewBox="0 0 24 24"
-                    className={styles.tick}
-                  >
-                    <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
-                  </svg>
-                  {PlanFeatures[key]}
-                </li>
-              );
-            }
-          })}
-        </ul>
-      </div>
-    </article>
-  );
-};
+        onClick={() => setActivePlan(plan.name)}
+      >
+        <span className={styles.tabName}>{plan.name}</span>
+        <span className={styles.tabDescription}>{plan.description}</span>
+      </button>
+    ))}
+  </nav>
+);
+
 
 const PlanPriceLayout = ({ plan, monthly }) => {
   const { price, monthlyCost } = plan;
@@ -197,12 +157,11 @@ const PlanPriceLayout = ({ plan, monthly }) => {
       )}
     </div>
   );
-}
+};
 
-const PlanFeatureLayout = ({ plan, featureKey }) => {
-  const { features } = plan;
+const PlanFeatureLayout = ({ hasFeature, featureKey }) => {
   const specialFeatures = [9, 10];
-  if (features.includes(parseInt(featureKey))) {
+  if (hasFeature) {
     return (
       <div key={featureKey}>
         <svg
@@ -216,20 +175,21 @@ const PlanFeatureLayout = ({ plan, featureKey }) => {
           <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
         </svg>
         <span className={styles.feature}>{PlanFeatures[featureKey]}</span>
-        {specialFeatures.includes(parseInt(featureKey)) &&
-          <a href="" className={styles.feature__link}>View Details</a>
-        }
       </div>
     );
   }
   if (specialFeatures.includes(parseInt(featureKey))) return <>N/A</>;
 
   return <>&nbsp;</>;
+};
+
+const planHasFeature = (plan, featureKey) => {
+  return plan.features.includes(parseInt(featureKey));
 }
 
-const PlanTable = ({ monthly }) => (
-  <table>
-    <tbody>
+const PlanTable = ({ monthly, activePlan }) => (
+  <table className={styles.table}>
+    <tbody className={styles.table__body}>
       <tr className={styles.table__row}>
         <th className={styles.table__head}>Details</th>
         {PricePlans.map((plan) => (
@@ -239,7 +199,8 @@ const PlanTable = ({ monthly }) => (
               styles.table__cell,
               styles.cellCurve,
               styles.cellCurve__top,
-              plan.popular ? styles.popular : ""
+              plan.popular ? styles.popular : "",
+              plan.name === activePlan ? styles.activePlan : ""
             )}
           >
             <div className={styles.table__cellContent}>
@@ -265,29 +226,39 @@ const PlanTable = ({ monthly }) => (
             key={`${plan.name}-env`}
             className={classnames(
               styles.table__cell,
-              plan.popular ? styles.popular : ""
+              plan.popular ? styles.popular : "",
+              plan.name === activePlan ? styles.activePlan : ""
             )}
           >
-            <div className={styles.table__cellContent}>{plan.description}</div>
+            <div className={styles.table__cellContent}>
+              <EnvironmentLayout environments={plan.environments} />
+            </div>
           </td>
         ))}
       </tr>
       {Object.keys(PlanFeatures).map((key) => (
         <tr key={key} className={styles.table__row}>
           <th className={styles.table__head}>{PlanFeatures[key]}</th>
-          {PricePlans.map((plan) => (
-            <td
-              key={`${plan.name}-${key}`}
-              className={classnames(
-                styles.table__cell,
-                plan.popular ? styles.popular : ""
-              )}
-            >
-              <div className={styles.table__cellContent}>
-                <PlanFeatureLayout featureKey={key} plan={plan} />
-              </div>
-            </td>
-          ))}
+          {PricePlans.map((plan) => {
+            const hasFeature = planHasFeature(plan, key);
+            return (
+              <td
+                key={`${plan.name}-${key}`}
+                className={classnames(
+                  styles.table__cell,
+                  plan.popular ? styles.popular : "",
+                  plan.name === activePlan && hasFeature
+                    ? styles.activePlan
+                    : ""
+                )}
+              >
+                <div className={styles.table__cellContent}>
+                  <PlanFeatureLayout featureKey={key} hasFeature={hasFeature} />
+                </div>
+              </td>
+            );
+            
+          })}
         </tr>
       ))}
       <tr className={styles.table__row}>
@@ -302,10 +273,13 @@ const PlanTable = ({ monthly }) => (
               styles.table__cellFoot,
               styles.cellCurve,
               styles.cellCurve__bottom,
-              plan.popular ? styles.popular : ""
+              plan.popular ? styles.popular : "",
+              plan.name === activePlan ? styles.activePlan : ""
             )}
           >
-            <div className={styles.table__cellContent} style={{ padding: 0 }}>&nbsp;</div>
+            <div className={styles.table__cellContent} style={{ padding: 0 }}>
+              &nbsp;
+            </div>
           </td>
         ))}
       </tr>
@@ -314,20 +288,30 @@ const PlanTable = ({ monthly }) => (
 );
 
 /**
+ * Get the first plan marked as Popular
+ */
+const getPopularPlan = () => {
+  const popularPlans = PricePlans.filter((plan) => plan.popular);
+  return popularPlans[0];
+};
+
+/**
  * Pricing widget
  * @todo - replace data source (so plans aren't hardcoded)
  */
 const Pricing = () => {
   if (PricePlans.length) {
+    const popularPlan = getPopularPlan();
     const [monthly, setMonthly] = useState(false);
-
+    const [activePlan, setActivePlan] = useState(popularPlan.name);
     return (
       <>
         <header>
           <PaymentPeriodSwitcher monthly={monthly} setMonthly={setMonthly} />
+          <PlanTabsLayout activePlan={activePlan} setActivePlan={setActivePlan} />
         </header>
         <section className={styles.plans}>
-          <PlanTable monthly={monthly} />
+          <PlanTable monthly={monthly} activePlan={activePlan} />
         </section>
       </>
     );

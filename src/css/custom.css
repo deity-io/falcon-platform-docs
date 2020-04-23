@@ -13,6 +13,8 @@
   --ifm-button-background-color: #26642C;
   --ifm-button-border-color: #26642C;
   --ifm-button-padding-vertical: 1rem;
+  --ifm-font-size-sm: .8rem;
+  --ifm-font-size-xs: .6rem;
 }
 
 html[data-theme="dark"] {
