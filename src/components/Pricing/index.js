@@ -191,18 +191,21 @@ const PlanTable = ({ monthly, activePlan }) => (
   <table className={styles.table}>
     <tbody className={styles.table__body}>
       <tr className={styles.table__row}>
-        <th className={styles.table__head}>Details</th>
+        <th className={styles.table__head} arial-lable="Plan Details">
+          &nbsp;
+        </th>
         {PricePlans.map((plan) => (
           <td
             key={`${plan.name}-details`}
             className={classnames(
               styles.table__cell,
-              styles.cellCurve,
-              styles.cellCurve__top,
               plan.popular ? styles.popular : "",
               plan.name === activePlan ? styles.activePlan : ""
             )}
           >
+            <div
+              className={classnames(styles.cellCurve, styles.cellCurve__top)}
+            ></div>
             <div className={styles.table__cellContent}>
               {plan.popular && (
                 <span className={styles.flag}>
@@ -257,7 +260,6 @@ const PlanTable = ({ monthly, activePlan }) => (
                 </div>
               </td>
             );
-            
           })}
         </tr>
       ))}
@@ -271,15 +273,13 @@ const PlanTable = ({ monthly, activePlan }) => (
             className={classnames(
               styles.table__cell,
               styles.table__cellFoot,
-              styles.cellCurve,
-              styles.cellCurve__bottom,
               plan.popular ? styles.popular : "",
               plan.name === activePlan ? styles.activePlan : ""
             )}
           >
-            <div className={styles.table__cellContent} style={{ padding: 0 }}>
-              &nbsp;
-            </div>
+            <div
+              className={classnames(styles.cellCurve, styles.cellCurve__bottom)}
+            ></div>
           </td>
         ))}
       </tr>

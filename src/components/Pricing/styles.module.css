@@ -2,7 +2,7 @@
 .flag {
   position: absolute;
   overflow: hidden;
-  top: -17px;
+  top: -20px;
   right: -2px;
   width: 150px;
   height: 150px;
@@ -238,8 +238,10 @@
 
 .table__cellFoot {
   border-bottom: none!important;
+  padding-bottom: 10px!important;
 }
-.table__cellFoot:after {
+.table__cellFoot:after,
+.table__cellFoot:before {
   display: none!important;
 }
 
@@ -321,7 +323,7 @@
 }
 
 .table__cell.popular .table__cellContent,
-.popular.cellCurve:before {
+.popular .cellCurve:after {
   background: #ebecfb;
 }
 
@@ -333,8 +335,22 @@
   content: "";
   display: block;
   position: absolute;
-  left: .5rem;
-  width: calc(100% - 1rem);
+  z-index: 1;
+  left: -5px;
+  right: -5px;
+  top: 0;
+  height: 25px;
+  background: white;
+}
+
+.cellCurve:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: -1px;
+  right: -1px;
+  top: 0;
   height: 25px;
   border: 1px solid #dcdcfc;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
@@ -346,8 +362,7 @@
   padding-top: 20px;
 }
 
-.cellCurve__top:before {
-  top: 5px;
+.cellCurve__top:after {
   border-bottom: none;
   border-radius: 10px 10px 0 0;
 }
@@ -356,8 +371,7 @@
   padding-bottom: 20px;
 }
 
-.cellCurve__bottom:before {
-  bottom: 5px;
+.cellCurve__bottom:after {
   border-top: none;
   border-radius: 0 0 10px 10px;
 }
@@ -388,24 +402,17 @@
   margin: 0 .2rem;
 }
 
-.tab:after {
+.activeTab:after {
   display: block;
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -1px;
   left: -1px;
   right: -1px;
-  height: 5px;
-  background: white;
+  height: 1px;
+  background: #ebecfb;
   border-left: 1px solid #dcdcfc;
   border-right: 1px solid #dcdcfc;
-}
-
-
-.activeTab:after {
-  background: #ebecfb;
-  height: 6px;
-  bottom: -6px;
 }
 
 .activeTab,
