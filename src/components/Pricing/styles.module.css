@@ -45,6 +45,7 @@
 /* Features */
 .tick {
   margin-right: 5px;
+  fill: var(--ifm-color-primary);
 }
 
 @media screen and (max-width: 966px) {
@@ -121,6 +122,7 @@
 .price {
   text-align: center;
   padding: 1rem 0;
+  min-height: 90px;
 }
 
 .priceAmount {
@@ -198,7 +200,7 @@
   left: 3px;
   top: 3px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--ifm-table-background);
   transition: .3s;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
 }
@@ -225,9 +227,10 @@
 
 .table__row {
   border: none;
-  background: none;
-  background: white!important;
-  height: 100%;
+}
+
+.table .table__row {
+  background: var(--ifm-table-background);
 }
 
 @media screen and (max-width: 966px) {
@@ -236,18 +239,9 @@
   }
 }
 
-.table__cellFoot {
-  border-bottom: none!important;
-  padding-bottom: 10px!important;
-}
-.table__cellFoot:after,
-.table__cellFoot:before {
-  display: none!important;
-}
-
 .table__head {
   border: none;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid var(--ifm-table-border-color);
   padding: 0 .5rem;
   font-size: var(--ifm-font-size-sm);
   text-align: right;
@@ -261,9 +255,8 @@
 
 .table__cell {
   border: none;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid var(--ifm-table-border-color);
   min-width: 300px;
-  height: 100%;
   padding: 0 .5rem;
   position: relative;
   text-align: center;
@@ -291,21 +284,19 @@
 .table__cell:before {
     box-shadow: -5px 0 5px -5px inset rgba(0, 0, 0, .1);
     left: 2px;
-    border-right: 1px solid #dcdcfc;
+    border-right: 1px solid var(--ifm-table-border-color-highlight);
 }
 .table__cell:after {
     box-shadow: 5px 0 5px -5px inset rgba(0, 0, 0, .1);
     right: 2px;
-    border-left: 1px solid #dcdcfc;
+    border-left: 1px solid var(--ifm-table-border-color-highlight);
 }
 
 .table__cellContent {
   width: 100%;
-  height: 100%;
   border-top: none;
   border-bottom: none;
   padding: 1rem;
-  background: white;
   position: relative;
   z-index: 10;
 }
@@ -319,12 +310,12 @@
   content: "";
   display: block;
   height: 1px;
-  border-bottom: 1px solid #dcdcfc;
+  border-bottom: 1px solid var(--ifm-table-border-color-highlight);
 }
 
 .table__cell.popular .table__cellContent,
 .popular .cellCurve:after {
-  background: #ebecfb;
+  background: var(--ifm-table-background-highlight);
 }
 
 .cellCurve {
@@ -340,7 +331,7 @@
   right: -5px;
   top: 0;
   height: 25px;
-  background: white;
+  background: var(--ifm-table-background);
 }
 
 .cellCurve:after {
@@ -352,8 +343,7 @@
   right: -1px;
   top: 0;
   height: 25px;
-  border: 1px solid #dcdcfc;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--ifm-table-border-color-highlight);
   z-index: 1;
   box-sizing: border-box;
 }
@@ -365,6 +355,7 @@
 .cellCurve__top:after {
   border-bottom: none;
   border-radius: 10px 10px 0 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .cellCurve__bottom {
@@ -374,6 +365,17 @@
 .cellCurve__bottom:after {
   border-top: none;
   border-radius: 0 0 10px 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.table__cellFoot {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.table__cellFoot:after,
+.table__cellFoot:before {
+  display: none;
 }
 
 /* Tabs */
@@ -394,11 +396,11 @@
 .tab {
   background: none;
   border-radius: 5px 5px 0 0;
-  padding: .5rem 1rem;
+  padding: 1rem;
   background: none;
   position: relative;
   border-bottom: none;
-  border-color: #dcdcfc;
+  border-color: var(--ifm-table-border-color-highlight);
   margin: 0 .2rem;
 }
 
@@ -410,22 +412,21 @@
   left: -1px;
   right: -1px;
   height: 1px;
-  background: #ebecfb;
-  border-left: 1px solid #dcdcfc;
-  border-right: 1px solid #dcdcfc;
+  background: var(--ifm-table-background-highlight);
+  border-left: 1px solid var(--ifm-table-border-color-highlight);
+  border-right: 1px solid var(--ifm-table-border-color-highlight);
 }
 
 .activeTab,
 .tab:hover {
-  background: #ebecfb;
+  background: var(--ifm-table-background-highlight);
 }
 
 .tab:hover:after {
-  background: #ebecfb;
+  background: var(--ifm-table-background-highlight);
 }
 
 .tabName {
-  margin-top: 5px;
   display: block;
   text-transform: uppercase;
   font-size: var(--ifm-font-size-sm);

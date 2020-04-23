@@ -168,7 +168,6 @@ const PlanFeatureLayout = ({ hasFeature, featureKey }) => {
           xmlns="http://www.w3.org/2000/svg"
           width="14"
           height="14"
-          fill="#7d9a2e"
           viewBox="0 0 24 24"
           className={styles.tick}
         >
