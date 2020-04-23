@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classnames from "classnames";
+import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 
 const PlanFeatures = {
@@ -307,10 +308,21 @@ const Pricing = () => {
       <>
         <header>
           <PaymentPeriodSwitcher monthly={monthly} setMonthly={setMonthly} />
-          <PlanTabsLayout activePlan={activePlan} setActivePlan={setActivePlan} />
+          <PlanTabsLayout
+            activePlan={activePlan}
+            setActivePlan={setActivePlan}
+          />
         </header>
         <section className={styles.plans}>
           <PlanTable monthly={monthly} activePlan={activePlan} />
+          <div className={styles.plansAdditional}>
+            <p>
+              ** Autoscaling may increase the cost listed. Please{" "}
+              <Link href="https://deity.io/contact">
+                contact us for more information
+              </Link>
+            </p>
+          </div>
         </section>
       </>
     );

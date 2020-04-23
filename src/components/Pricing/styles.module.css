@@ -440,3 +440,13 @@
   color: var(--ifm-menu-color);
   font-weight: var(--ifm-font-weight-bold);
 }
+
+/* Additional */
+.plansAdditional {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.plansAdditional p {
+  font-size: var(--ifm-font-size-sm);
+}
