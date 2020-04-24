@@ -62,7 +62,7 @@ dcloud deployment:list
 Get information on a deployment.
 
 ```bash
-dcloud deployment:info [id]
+dcloud deployment [id]
 ```
 
 **Options**
@@ -76,7 +76,7 @@ dcloud deployment:info [id]
 Deploy a build
 
 ```bash
-dcloud deploy [buildId] [environmentName]
+dcloud deployment:run [buildId] [environmentName]
 ```
 
 **Options**
@@ -85,7 +85,7 @@ dcloud deploy [buildId] [environmentName]
 **Example: Deploy build 20 to the development environment**
 
 ```bash
-dcloud deploy 20 development
+dcloud deployment:run 20 development
 ```
 
 ---
@@ -108,7 +108,7 @@ N/A
 Get info on a specific environment
 
 ```bash
-dcloud env:info <env>
+dcloud env <env>
 ```
 
 **Options**
@@ -135,7 +135,7 @@ dcloud env:deployments <env>
 Set a variable on an environment
 
 ```bash
-dcloud env:var <env> <name> [value]
+dcloud env:var:set <env> <name> [value]
 ```
 
 **Options**
@@ -148,20 +148,7 @@ N/A
 Set the domain for an environment
 
 ```bash
-dcloud env:setDomain <env> [domainName]
-```
-
-**Options**
-N/A
-
----
-
-## Environment Remove Domain
-
-Remove the domain for an environment
-
-```bash
-dcloud env:removeDomain <env>
+dcloud env:domain:set <env> [domainName]
 ```
 
 **Options**
@@ -174,7 +161,7 @@ N/A
 Get a list of your current/active repositories
 
 ```bash
-dcloud repo:list
+dcloud repo
 ```
 
 **Options**
@@ -182,12 +169,77 @@ dcloud repo:list
 
 ---
 
+## Project Info
+
+Get your project information
+
+```bash
+dcloud project <name>
+```
+
+**Options**
+N/A
+
+---
+
+## Projects List
+
+Get a list of your projects
+
+```bash
+dcloud project:list
+```
+
+**Options**
+N/A
+
+---
+
+## Project Current
+
+Get the current project
+
+```bash
+dcloud project:current
+```
+
+**Options**
+N/A
+
+---
+
+## Project Set Current
+
+Set a project as current
+
+```bash
+dcloud project:current:set <name>
+```
+
+**Options**
+N/A
+
+---
+
 ## Login
 
-Logs into DEITY Falcon Cloud using provided credentials. If credentials aren't passed you will be prompted to add them.
+Logs into DEITY Falcon Cloud using credentials. If credentials aren't passed you will be prompted to add them.
 
 ```bash
 dcloud login [email] [password]
+```
+
+**Options**
+N/A
+
+---
+
+## Login with token
+
+Logs into DEITY Falcon Cloud using a token. If a token isn't passed you will be prompted to add one.
+
+```bash
+dcloud login:token [token]
 ```
 
 **Options**
@@ -201,19 +253,6 @@ Logs the current user out
 
 ```bash
 dcloud logout
-```
-
-**Options**
-N/A
-
----
-
-## Change Password
-
-Change the account password
-
-```bash
-dcloud change-password
 ```
 
 **Options**
