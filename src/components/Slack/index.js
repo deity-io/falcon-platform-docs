@@ -12,7 +12,7 @@ const Slack = () => (
             href="https://deity-community.slack.com/archives/CDL2XDSHZ"
             target="_blank"
             rel="noopener noreferrer"
-            title="Go to community our Slack Channel"
+            title="Go to our community Slack Channel"
           >
             <Logo />
           </Link>
@@ -23,7 +23,7 @@ const Slack = () => (
               href="https://deity-community.slack.com/archives/CDL2XDSHZ"
               target="_blank"
               rel="noopener noreferrer"
-              title="Go to community our Slack Channel"
+              title="Go to our community Slack Channel"
             >
               #help
             </Link>
