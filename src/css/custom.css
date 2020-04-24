@@ -12,10 +12,12 @@
   --ifm-button-background-color: #26642C;
   --ifm-button-border-color: #26642C;
   --ifm-button-padding-vertical: 1rem;
+  --ifm-background-secondary: whitesmoke;
 }
 
 html[data-theme="dark"] {
     --ifm-navbar-background-color:  #262828;
+    --ifm-background-secondary: #262828;
     --ra-color-note: #262828;
     --ifm-background-color: #1a1720;
     --ra-color-text-dark: #ffffff;
@@ -65,4 +67,10 @@ html[data-theme="dark"] .pricePlan--highlight {
 
 .codeBlock a {
   color: inherit;
+}
+
+@media screen and (min-width: 996px) {
+  .navbar .navbar__items.navbar__items--right {
+    flex: 3 0 0;
+  }
 }

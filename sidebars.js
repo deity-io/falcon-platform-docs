@@ -36,12 +36,12 @@ module.exports = {
       "platform/packages/falcon-ui-kit",
       "platform/packages/falcon-ui",
       "platform/packages/falcon-wordpress-api",
-      "platform/packages/normal-module-override-webpack-plugin"
+      "platform/packages/normal-module-override-webpack-plugin",
     ],
     "Getting Started": [
       "platform/getting-started/prerequisites",
       "platform/getting-started/npm",
-      "platform/getting-started/create"
+      "platform/getting-started/create",
     ],
     "Falcon Client": [
       "platform/client/about",
@@ -58,8 +58,8 @@ module.exports = {
           "platform/client/theming/css-mapping",
           "platform/client/theming/components",
           "platform/client/theming/icons",
-          "platform/client/theming/css-sass"
-        ]
+          "platform/client/theming/css-sass",
+        ],
       },
       "platform/client/overrides",
       "platform/client/routing",
@@ -68,7 +68,7 @@ module.exports = {
       "platform/client/state",
       "platform/client/translations",
       "platform/client/code-splitting",
-      "platform/client/testing"
+      "platform/client/testing",
     ],
     "Falcon Server": ["platform/server", "platform/server/dynamic-routes"],
     "Falcon Cloud": [
@@ -78,12 +78,12 @@ module.exports = {
       "platform/cloud/account",
       "platform/cloud/installation",
       "platform/cloud/repository",
-      "platform/cloud/dcloud"
+      "platform/cloud/dcloud",
     ],
     Configuration: [
       "platform/configuration/overview",
       "platform/configuration/client",
-      "platform/configuration/server"
+      "platform/configuration/server",
     ],
     Caching: ["platform/cache/overview"],
     Deployment: ["platform/deployment/overview"],
@@ -91,7 +91,7 @@ module.exports = {
     Payments: [
       "platform/payments/overview",
       "platform/payments/provider",
-      "platform/payments/ui"
+      "platform/payments/ui",
     ],
     Integrations: [
       "platform/integration/examples",
@@ -99,7 +99,7 @@ module.exports = {
       "platform/integration/bigcommerce",
       "platform/integration/magento2",
       "platform/integration/stripe",
-      "platform/integration/wordpress"
+      "platform/integration/wordpress",
     ],
     Testing: ["platform/testing/overview"],
     Cookbook: [
@@ -114,8 +114,8 @@ module.exports = {
           "platform/cookbook/client/scss-global",
           "platform/cookbook/client/post-css-support",
           "platform/cookbook/client/analytics",
-          "platform/cookbook/client/testing"
-        ]
+          "platform/cookbook/client/testing",
+        ],
       },
       {
         type: "category",
@@ -124,12 +124,27 @@ module.exports = {
           "platform/cookbook/integrations/jsonplaceholder",
           "platform/cookbook/integrations/contentful",
           "platform/cookbook/integrations/contentful2",
-          "platform/cookbook/integrations/braintree"
-        ]
-      }
+          "platform/cookbook/integrations/braintree",
+        ],
+      },
     ],
     "Video Guides": ["platform/guides/client", "platform/guides/cloud"],
-    Support: ["platform/support/contact", "platform/support/faqs"]
+    Support: [
+      "platform/support/contact",
+      {
+        type: "category",
+        label: "FAQs",
+        items: [
+          "platform/support/faqs",
+          "platform/support/faqs/general",
+          "platform/support/faqs/client",
+          "platform/support/faqs/server",
+          "platform/support/faqs/cloud",
+          "platform/support/faqs/config",
+          "platform/support/faqs/misc",
+        ],
+      },
+    ],
   },
   falconOpenSourceSidebar: {
     "Getting Started": [
@@ -137,7 +152,7 @@ module.exports = {
       "open-source/getting-started/requirements",
       "open-source/getting-started/installation",
       "open-source/getting-started/project-overview",
-      "open-source/getting-started/example"
+      "open-source/getting-started/example",
     ],
     "Falcon Client": [
       "open-source/falcon-client/basics",
@@ -147,7 +162,7 @@ module.exports = {
       "open-source/falcon-client/local-state-management",
       "open-source/falcon-client/internationalization",
       "open-source/falcon-client/falcon-ui",
-      "open-source/falcon-client/search-and-filtering"
+      "open-source/falcon-client/search-and-filtering",
     ],
     "Falcon Server": [
       "open-source/falcon-server/basics",
@@ -158,25 +173,25 @@ module.exports = {
       "open-source/falcon-server/caching",
       "open-source/falcon-server/falcon-server-env",
       "open-source/falcon-server/falcon-server-api",
-      "open-source/falcon-server/customizing-extension-api"
+      "open-source/falcon-server/customizing-extension-api",
     ],
     Payments: [
       "open-source/payments/intro",
       "open-source/payments/api",
-      "open-source/payments/plugins"
+      "open-source/payments/plugins",
     ],
     Backend: [
       "open-source/backend/installing-magento2",
-      "open-source/backend/installing-wordpress"
+      "open-source/backend/installing-wordpress",
     ],
     Miscellaneous: [
       "open-source/miscellaneous/falcon-logger",
-      "open-source/miscellaneous/config"
+      "open-source/miscellaneous/config",
     ],
     Deployment: ["open-source/deployment/intro"],
     Support: [
       "open-source/support/troubleshooting",
-      "open-source/support/flowcharts"
-    ]
-  }
+      "open-source/support/flowcharts",
+    ],
+  },
 };
