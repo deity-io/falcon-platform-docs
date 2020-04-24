@@ -152,7 +152,7 @@ const PlanPriceLayout = ({ plan, monthly }) => {
         <>
           <p className={styles.priceAmount}>${monthly ? monthlyCost : price}</p>
           <p className={styles.priceNote}>
-            {monthly ? "per month" : "per year"}
+              {monthly ? "per month" : "per month, billed annually"}
           </p>
         </>
       )}
