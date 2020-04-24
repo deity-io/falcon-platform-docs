@@ -223,6 +223,10 @@ N/A
 
 ## Login
 
+:::note Deprecated
+This is deprecated, please use <a href="#login-with-token">Login with Token</a> to log in.
+:::
+
 Logs into DEITY Falcon Cloud using credentials. If credentials aren't passed you will be prompted to add them.
 
 ```bash
