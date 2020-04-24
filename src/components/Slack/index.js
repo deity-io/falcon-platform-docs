@@ -29,14 +29,18 @@ const Slack = () => (
             </Link>
           </h3>
           <p>
-            If you can't find what you're looking for, the answer might be on our
-            community slack channel (
-            <Link
+            If you can't find what you're looking for, the answer might be on our <Link
               href="https://deity-community.slack.com/archives/CDL2XDSHZ"
               target="_blank"
               rel="noopener noreferrer"
             >
-            deity-community.slack.com</Link>). Our team keep a close eye on this and will usually get back to you within a few hours, if not straight away.
+              community slack channel</Link>. Our team keep a close eye on this and will usually get back to you within a few hours, if not straight away. If you haven't created an account yet please sign up here <Link
+              href="https://slack.deity.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              slack.deity.io
+            </Link>.
           </p>
         </div>
       </div>
