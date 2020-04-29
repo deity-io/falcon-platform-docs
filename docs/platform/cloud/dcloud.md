@@ -1,7 +1,7 @@
 ---
 id: dcloud
-title: CLI Commands
-sidebar_label: CLI Commands
+title: CLI Reference
+sidebar_label: CLI Reference
 ---
 
 ## Build List
@@ -224,7 +224,7 @@ N/A
 ## Login
 
 :::note Deprecated
-This is deprecated, please use <a href="#login-with-token">Login with Token</a> to log in.
+This is deprecated, please use <a href="#login-with-token">Login with Token</a> to log in.  Existing users will be promted to migrate to using a token for logging in.
 :::
 
 Logs into DEITY Falcon Cloud using credentials. If credentials aren't passed you will be prompted to add them.
