@@ -48,6 +48,31 @@ module.exports = {
           ]
         },
         {
+          title: "Our Integrations",
+          items: [
+            {
+              label: "Algolia",
+              to: "/docs/platform/integration/algolia"
+            },
+            {
+              label: "BigCommerce",
+              to: "/docs/platform/integration/bigcommerce"
+            },
+            {
+              label: "Magento 2",
+              to: "/docs/platform/integration/magento2"
+            },
+            {
+              label: "Stripe",
+              to: "/docs/platform/integration/stripe"
+            },
+            {
+              label: "Wordpress",
+              to: "/docs/platform/integration/wordpress"
+            }
+          ]
+        },
+        {
           title: "Community & Help",
           items: [
             {
@@ -90,12 +115,7 @@ module.exports = {
             {
               label: "GitHub",
               href: "https://github.com/deity-io/"
-            }
-          ]
-        },
-        {
-          title: "Legal",
-          items: [
+            },
             {
               label: "Privacy Policy",
               href: "https://deity.io/privacy-policy"
