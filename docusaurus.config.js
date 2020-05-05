@@ -14,8 +14,8 @@ module.exports = {
         src: "img/deity-logo.svg"
       },
       links: [
-        { to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right" },
-        { to: "/docs/open-source/getting-started/intro", label: "Falcon Open Source", position: "right" },
+        { to: "/docs/platform", label: "Falcon Platform", position: "right" },
+        { to: "/docs/open-source", label: "Falcon Open Source", position: "right" },
         {
           label: "Falcon UI",
           href: "https://falcon-ui.docs.deity.io/",

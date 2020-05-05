@@ -69,6 +69,7 @@ module.exports = {
       "platform/client/translations",
       "platform/client/code-splitting",
       "platform/client/testing",
+      "platform/client/static-files"
     ],
     "Falcon Server": ["platform/server", "platform/server/dynamic-routes"],
     "Falcon Cloud": [
