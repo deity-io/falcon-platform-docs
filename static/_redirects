@@ -1,3 +1,4 @@
+# Cloud Redirects
 /docs/cloud/overview/about                      /docs/platform/cloud/about
 /docs/cloud/overview/technical                  /docs/platform/cloud/technical
 /docs/cloud/getting-started/prerequisites       /docs/platform/cloud/prerequisites
@@ -6,3 +7,44 @@
 /docs/cloud/getting-started/repository          /docs/platform/cloud/repository
 /docs/cloud/getting-started/dcloud              /docs/platform/cloud/dcloud
 /docs/cloud/guides/setup                        /docs/platform/guides/cloud
+
+# Old Docs redirects
+/docs/getting-started/intro             /docs/open-source/getting-started/intro   
+/docs/getting-started/requirements      /docs/open-source/getting-started/requirements
+/docs/getting-started/installation      /docs/open-source/getting-started/installation
+/docs/getting-started/project-overview  /docs/open-source/getting-started/project-overview
+/docs/getting-started/example           /docs/open-source/getting-started/example
+
+/docs/falcon-client/basics                  /docs/open-source/falcon-client/basics
+/docs/falcon-client/configurations          /docs/open-source/falcon-client/configurations
+/docs/falcon-client/code-splitting          /docs/open-source/falcon-client/code-splitting
+/docs/falcon-client/data-management         /docs/open-source/falcon-client/data-management
+/docs/falcon-client/local-state-management  /docs/open-source/falcon-client/local-state-management
+/docs/falcon-client/internationalization    /docs/open-source/falcon-client/internationalization
+/docs/falcon-client/falcon-ui               /docs/open-source/falcon-client/falcon-ui
+/docs/falcon-client/search-and-filtering    /docs/open-source/falcon-client/search-and-filtering
+
+/docs/falcon-server/basics                      /docs/open-source/falcon-server/basics
+/docs/falcon-server/schema-stitching            /docs/open-source/falcon-server/schema-stitching
+/docs/falcon-server/extensions                  /docs/open-source/falcon-server/extensions
+/docs/falcon-server/api-providers               /docs/open-source/falcon-server/api-providers
+/docs/falcon-server/endpoints                   /docs/open-source/falcon-server/endpoints
+/docs/falcon-server/caching                     /docs/open-source/falcon-server/caching
+/docs/falcon-server/falcon-server-env           /docs/open-source/falcon-server/falcon-server-env
+/docs/falcon-server/falcon-server-api           /docs/open-source/falcon-server/falcon-server-api
+/docs/falcon-server/customizing-extension-api   /docs/open-source/falcon-server/customizing-extension-api
+
+/docs/payments/intro     /docs/open-source/payments/intro
+/docs/payments/api       /docs/open-source/payments/api
+/docs/payments/plugins   /docs/open-source/payments/plugins
+
+/docs/backend/installing-magento2   /docs/open-source/backend/installing-magento2
+/docs/backend/installing-wordpress  /docs/open-source/backend/installing-wordpress
+
+/docs/miscellaneous/falcon-logger   /docs/open-source/miscellaneous/falcon-logger
+/docs/miscellaneous/config          /docs/open-source/miscellaneous/config
+
+/docs/deployment/intro  /docs/open-source/deployment/intro
+
+/docs/support/troubleshooting   /docs/open-source/support/troubleshooting
+/docs/support/flowcharts        /docs/open-source/support/flowcharts
