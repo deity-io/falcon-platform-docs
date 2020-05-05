@@ -48,10 +48,3 @@
 
 /docs/support/troubleshooting   /docs/open-source/support/troubleshooting
 /docs/support/flowcharts        /docs/open-source/support/flowcharts
-
-# Root redirects
-/docs/open-source/  /docs/open-source/getting-started/intro  
-/docs/platform/     /docs/platform/overview/about
-
-/docs/open-source  /docs/open-source/getting-started/intro  
-/docs/platform    /docs/platform/overview/about
