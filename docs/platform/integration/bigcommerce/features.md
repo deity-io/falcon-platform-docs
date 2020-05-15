@@ -5,14 +5,6 @@ sidebar_label: Features
 description: Falcon Platform has a large percentage coverage of BigCommerce features.
 ---
 
----
-
-<a href="https://www.bigcommerce.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the BigCommerce site">
-  <img src="/img/docs/platform/bigcommerce-logo.svg" alt="BigCommerce Logo" width="200"/>
-</a>
-
----
-
 :::note New features coming soon
 We are actively developing our BigCommerce integration and will be adding support for more features.
 :::
