@@ -32,11 +32,7 @@ const BreadcrumbContent = ({ info }) => (
 const Breadcrumbs = ({ history }) => {
 
   const hasBreadcrumbInfo = getDocType(history.location.pathname);
-  const [breadcrumbInfo, setBreadcrumbInfo] = useState(hasBreadcrumbInfo);
-
-  history.listen((location) => {
-    setBreadcrumbInfo(getDocType(location.pathname));
-  });
+  const [breadcrumbInfo] = useState(hasBreadcrumbInfo);
 
   return breadcrumbInfo ? <BreadcrumbContent info={breadcrumbInfo} /> : null;
 };

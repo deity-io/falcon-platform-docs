@@ -89,3 +89,7 @@ html[data-theme="dark"] .pricePlan--highlight {
     flex: 3 0 0;
   }
 }
+
+button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
+  color: white;
+}
