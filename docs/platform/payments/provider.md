@@ -2,6 +2,7 @@
 id: provider
 title: Payment Provider
 sidebar_label: Payment Provider
+enterprise_only: true
 ---
 
 ## Registering a new Payment Provider

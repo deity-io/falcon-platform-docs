@@ -2,6 +2,7 @@
 id: ui
 title: Payment UI Components
 sidebar_label: Payment UI Components
+enterprise_only: true
 ---
 
 ## Mapping payment components to providers

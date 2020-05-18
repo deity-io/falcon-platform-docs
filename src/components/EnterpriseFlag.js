@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 
 const EnterpriseFlag = () => (
   <Link
-    to="/docs/platform/overview/enterprise"
+    to="/docs/platform/overview/plans#enterprise"
     style={{
       backgroundColor: 'rgb(45, 36, 89)',
       color: '#fff',

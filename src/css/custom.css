@@ -7,23 +7,36 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #26642C;
+  --ifm-color-purple: #545df6;
   --ifm-footer-background-color: #262828;
   --ifm-hero-text-color: #ffffff;
   --ifm-button-background-color: #26642C;
   --ifm-button-border-color: #26642C;
   --ifm-button-padding-vertical: 1rem;
   --ifm-background-secondary: whitesmoke;
+  --ifm-font-size-sm: .8rem;
+  --ifm-font-size-xs: .6rem;
+  --ifm-table-background: white;
+  --ifm-table-border-color: whitesmoke;
+  --ifm-table-background-highlight: #ebecfb;
+  --ifm-table-border-color-highlight: #dcdcfc;
 }
 
 html[data-theme="dark"] {
     --ifm-navbar-background-color:  #262828;
     --ifm-background-secondary: #262828;
+    --ifm-color-purple: #7f86f4;
     --ra-color-note: #262828;
     --ifm-background-color: #1a1720;
     --ra-color-text-dark: #000000;
     --ifm-color-primary: #aac957;
     --ra-admonition-icon-color: #262828;
     --ifm-button-color: #ffffff;
+    --ifm-text-color: #ffffff;
+    --ifm-table-background: #1a1720;
+    --ifm-table-border-color: var(--ifm-color-emphasis-200);
+    --ifm-table-background-highlight: #2d2459;
+    --ifm-table-border-color-highlight: #524691;
 }
 
 .footer.footer--dark {

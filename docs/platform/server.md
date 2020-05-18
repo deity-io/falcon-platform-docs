@@ -2,6 +2,7 @@
 id: server
 title: Falcon Server
 sidebar_label: Falcon Server
+enterprise_only: true
 ---
 
 Our Falcon Server documentation can be found [here](/docs/open-source/falcon-server/basics).

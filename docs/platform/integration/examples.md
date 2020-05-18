@@ -2,6 +2,7 @@
 id: examples
 title: Example Integrations
 sidebar_label: Example Integrations
+enterprise_only: true
 ---
 
 We've created a series of example Integrations to help you understand how to integrate your services with Falcon Platform.

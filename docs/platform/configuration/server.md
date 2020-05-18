@@ -2,6 +2,7 @@
 id: server
 title: Falcon Server Configuration
 sidebar_label: Falcon Server
+enterprise_only: true
 ---
 
 Accessing server config is simple.

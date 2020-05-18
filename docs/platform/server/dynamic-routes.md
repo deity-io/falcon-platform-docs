@@ -2,6 +2,7 @@
 id: dynamic-routes
 title: Dynamic Route Resolver
 sidebar_label: Dynamic Route Resolver
+enterprise_only: true
 ---
 
 `DynamicRouteResolver` handles dynamic route resolution for the client application.

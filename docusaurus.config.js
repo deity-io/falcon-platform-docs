@@ -101,10 +101,6 @@ module.exports = {
               href: "https://deity.io/"
             },
             {
-              label: "Prices",
-              to: "/prices"
-            },
-            {
               label: "Status",
               href: "https://status.deity.io/"
             },
