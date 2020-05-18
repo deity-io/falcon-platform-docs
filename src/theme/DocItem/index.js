@@ -17,6 +17,7 @@ import classnames from 'classnames';
 import styles from './styles.module.css';
 
 import Breadcrumbs from './../../components/Breadcrumbs';
+import EnterpriseFlag from './../../components/EnterpriseFlag';
 
 const LINK_CLASS_NAME = 'contents__link';
 const ACTIVE_LINK_CLASS_NAME = 'contents__link--active';
@@ -58,7 +59,7 @@ function DocItem(props) {
   const {siteConfig = {}} = useDocusaurusContext();
   const {url: siteUrl, title: siteTitle} = siteConfig;
   const {content: DocContent} = props;
-  const {metadata} = DocContent;
+  const { metadata } = DocContent;
   const {
     description,
     title,
@@ -67,6 +68,7 @@ function DocItem(props) {
     lastUpdatedAt,
     lastUpdatedBy,
     version,
+    test
   } = metadata;
   const {
     frontMatter: {
@@ -74,6 +76,7 @@ function DocItem(props) {
       keywords,
       hide_title: hideTitle,
       hide_table_of_contents: hideTableOfContents,
+      enterprise_only: enterpriseOnly
     },
   } = DocContent;
 
@@ -105,6 +108,9 @@ function DocItem(props) {
             <div className={classnames('col', styles.docItemCol)}>
               <div className={styles.docItemContainer}>
                 <article>
+                  {enterpriseOnly &&
+                    <EnterpriseFlag />
+                  }
                   <Breadcrumbs />
                   {version && (
                     <span

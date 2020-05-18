@@ -10,12 +10,12 @@ const getDocType = path => {
 
   if (path.includes(platformDocsPath)) {
     return {
-      title: 'Falcon Platform Documentation',
+      title: 'Falcon Platform',
       url: '/docs/platform/overview/about'
     }
   } else if (path.includes(openSourceDocsPath)) {
     return {
-      title: 'Falcon Open Source Documentation',
+      title: 'Falcon Open Source',
       url: '/docs/open-source/getting-started/intro'
     }
   }

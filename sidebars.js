@@ -7,7 +7,10 @@
 
 module.exports = {
   falconPlatformSidebar: {
-    Overview: ["platform/overview/about"],
+    Overview: [
+      "platform/overview/about",
+      "platform/overview/plans"
+    ],
     Packages: [
       "platform/packages/overview",
       "platform/packages/babel-preset-falcon-client",
