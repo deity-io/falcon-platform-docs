@@ -56,7 +56,7 @@ module.exports = {
             },
             {
               label: "BigCommerce",
-              to: "/docs/platform/integration/bigcommerce"
+              to: "/docs/platform/integration/bigcommerce/overview"
             },
             {
               label: "Magento 2",

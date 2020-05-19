@@ -71,7 +71,17 @@ module.exports = {
     Integrations: [
       "platform/integration/examples",
       "platform/integration/algolia",
-      "platform/integration/bigcommerce",
+      {
+        type: "category",
+        label: "BigCommerce",
+        items: [
+          "platform/integration/bigcommerce/overview",
+          "platform/integration/bigcommerce/getting-started",
+          "platform/integration/bigcommerce/features",
+          "platform/integration/bigcommerce/technical",
+          "platform/integration/bigcommerce/manual"
+        ]
+      },
       "platform/integration/magento2",
       "platform/integration/stripe",
       "platform/integration/wordpress",
