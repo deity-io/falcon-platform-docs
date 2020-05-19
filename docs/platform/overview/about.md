@@ -20,9 +20,14 @@ Falcon is not just a PWA theme, it is a complete platform to build the best shop
 Falcon client serves as a your **PWA theme**. It's a set of <a href="https://reactjs.org/" target="_blank" rel="noreferrer noopener">ReactJs</a> components that build up your UI. <a href="https://deity.io/falcon" target="_blank" rel="noreferrer noopener">Learn more about Falcon Client</a>.
 
 ### Falcon Middleware Server
+
 Falcon Server is the middleware layer between the front-end (Falcon Client) and the back-end services providing data, including BigCommerce, but simultaneously this could also be Wordpress, Algolia, Stripe or any other your business requires.
 
 The Falcon Middleware Server is the force behind Falcon Client and comes with many great features.
+
+:::note Important
+To have access to Falcon Server and make changes you need to have an Enterprise plan. For other plans we provide an out of the box Falcon Server instance.
+:::
 
 ### Falcon Cloud
 Cloud is not only the infastructure your Falcon Platform will be hosted on but also your deployment, monitoring and testing tool.
