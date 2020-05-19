@@ -76,11 +76,73 @@ npx @deity/create-falcon-app --example demo-v2 <project-name>
 npx @deity/create-falcon-app --full <project-name>
 ```
 
+## Configuring Falcon Client
+
+:::note Running Falcon Server Locally?
+If you're an Enterprise customer and running Falcon Server locally you can skip this step and connect to Falcon Server using the default settings.
+:::
+
+Before you can start your app you'll need to configure Falcon Client to point to Falcon Server. 
+
+### 1. Create a local.json file
+
+Create a `local.json` file in your `client/config/` direcotry. This file is ignored by `git` and should **not** be committed. 
+
+### 2. Add your details.
+
+Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` with your site URL.
+
+```json
+  
+{
+  "graphqlUrl": "[YOUR_SITE_URL]/graphql",
+}
+```
+
 ## Starting your app
 
-To get your app started you'll need to start (and keep running), both **Falcon Client** and **Falcon Server**.
+### Sandbox / Production customers
 
-In 2 separate terminal windows go into each directory (`cd server/`, `cd client/`) and run the start command.
+To get your app started you'll need to start (and keep running) **Falcon Client**.
+
+In a terminal window go into the client directory (`cd client/`) and run the start command.
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+**Client**
+```bash
+cd client/
+npm start
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+**Client**
+```bash
+cd client/
+yarn start
+```
+
+</TabItem>
+</Tabs>
+
+Once these have started, visit <a href="http://localhost:3000" target="_blank" rel="noreferrer noopener">http://localhost:3000</a> to see your app.
+
+### Enterprise customers
+
+If you're on an Enterprise plan and have access to **Falcon Server** you may also want to run this locally. 
+
+By default **Falcon Server** runs on `http://localhost:4000` and uses `http://localhost:4000/graphql` for it's graphQl endpoint.
+
+As well as having **Falcon Client** running you'll need to open a new terminal window and run the start command in the `server` directory.
 
 <Tabs
   defaultValue="npm"
@@ -97,12 +159,6 @@ cd server/
 npm start
 ```
 
-**Client**
-```bash
-cd client/
-npm start
-```
-
 </TabItem>
 <TabItem value="yarn">
 
@@ -112,19 +168,7 @@ cd server/
 yarn start
 ```
 
-**Client**
-```bash
-cd client/
-yarn start
-```
-
 </TabItem>
 </Tabs>
 
-Once these have started, visit <a href="http://localhost:3000" target="_blank" rel="noreferrer noopener">http://localhost:3000</a> to see your app.
-
 ---
-
-:::note Adding your project to git.
-We recommend that you keep both **client** and **server** in one **git repository** even if you're hosting them in different places. If you're using our **cloud** service this is a requirement. 
-:::
