@@ -7,7 +7,7 @@ sidebar_label: Prerequisites
 Before you start you'll need the following:
 
 - A Falcon Platform account. <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">Contact our support team</a> to get an account setup. If you're using our **BigCommerce** integration you can [set up and account](/docs/platform/integration/bigcommerce/getting-started) through our app.
-- An [NPM auth token](npm) to access packages from <a href="https://npm.deity.io" target="_blank" rel="noreferrer noopener">https://npm.deity.io</a>.
+- An [NPM auth token](npm) to access packages from <a href="https://npm.deity.io" target="_blank" rel="noreferrer noopener">https://npm.deity.io</a>. You can get this from your admin panel.
 
 ## Technical requirements
 

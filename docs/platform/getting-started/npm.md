@@ -6,7 +6,7 @@ sidebar_label: Adding your NPM auth token
 
 In order to be able to get access to the **Falcon Platform packages**, you will need to connect to our private npm registry.
 
-You can do this using an **authorisation token**.
+You can do this using an **authorisation token**. You can get this from your admin panel or by contacting us.
 
 To set up your token please follow these steps:
 

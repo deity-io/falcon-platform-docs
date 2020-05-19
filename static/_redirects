@@ -48,3 +48,6 @@
 
 /docs/support/troubleshooting   /docs/open-source/support/troubleshooting
 /docs/support/flowcharts        /docs/open-source/support/flowcharts
+
+# Moved Pages
+/docs/platform/cloud/repository  /docs/platform/getting-started/repository

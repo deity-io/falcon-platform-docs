@@ -12,9 +12,11 @@ module.exports = {
       "platform/overview/plans"
     ],
     "Getting Started": [
+      "platform/getting-started/overview",
       "platform/getting-started/prerequisites",
       "platform/getting-started/npm",
       "platform/getting-started/create",
+      "platform/getting-started/repository",
     ],
     "Falcon Client": [
       "platform/client/about",
@@ -30,6 +32,7 @@ module.exports = {
           "platform/client/theming/overview",
           "platform/client/theming/css-mapping",
           "platform/client/theming/components",
+          "platform/client/theming/fonts",
           "platform/client/theming/icons",
           "platform/client/theming/css-sass",
         ],
@@ -52,7 +55,6 @@ module.exports = {
       "platform/cloud/prerequisites",
       "platform/cloud/account",
       "platform/cloud/installation",
-      "platform/cloud/repository",
       "platform/cloud/dcloud",
     ],
     Configuration: [

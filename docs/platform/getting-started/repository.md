@@ -8,15 +8,27 @@ Our cloud platform will need access to your code repository.  We use an **SSH ke
 
 We currently support <a href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub</a>, <a href="https://bitbucket.org/" target="_blank" rel="noreferrer noopener">BitBucket</a> or <a href="https://about.gitlab.com/" target="_blank" rel="noreferrer noopener">GitLab</a>.
 
-We'll only need **read access** to do our thing.
+We'll only need **read access** to your repo.
 
 ## Getting your details
 
-Running `repo:list -i` will list all your linked repositories and the **web hook** & **SSH key** you'll need to add.
+You can get your **SSH key** and **web hook** details 2 ways.
 
-```javascript
+### 1. Admin Panel
+
+If you're using our BigCommerce integration your details these details can be found there.
+
+
+### 2. Using DCloud
+
+[DCloud](/docs/platform/cloud/installation) is our CLI tool that is used to help you manage your deployments and environments.  Your **SSH key** and **web hook** details can be found here.
+
+Simply run the following command from a terminal window when logged into `dcloud`:
+
+```bash
 dcloud repo:list -i
 ```
+
 ---
 ## GitHub
 
@@ -66,3 +78,5 @@ Coming soon
 ## Setup Complete
 
 That's everything done. You're now ready to start using Deity Cloud. View the full list of `dcloud` [commands](dcloud).
+
+Next step, [deploy](/docs/platform/deployment/overview) your code.
