@@ -27,12 +27,10 @@ The next step is to log into [your cloud account](account).
 From your terminal window run the login command.
 
 ```javascript
-dcloud login
+dcloud login:token [token]
 ```
 
 You will be prompted to add your cloud credentials.
-
-![DCloud Login](/img/docs/cloud/dcloud-login.png)
 
 To check you're logged in correctly run `whoami`
 

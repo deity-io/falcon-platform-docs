@@ -4,8 +4,6 @@ title: Getting a cloud account
 sidebar_label: Getting a cloud account
 ---
 
-:::note Coming Soon
-We are working on account creation. It's not long until you'll be able to create and manage your cloud account with a few clicks.
-:::
+As part of the your Falcon Platform account you'll get access to Falcon Cloud.
 
-To create an account please <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">contact our support team</a>. We will ask you for your **email address** &amp; **repository url**. Once you've provided these we will get back to you with your **DEITY cloud logins**.
+If you're using our **BigCommerce** integration you can create and manage your account through our BigCommerce app.  If you're not using BigCommerce please <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">contact our support team</a> to create an account.

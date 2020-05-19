@@ -10,6 +10,7 @@ Getting started with Falcon Platform can be broken down into a few simple steps.
 2. [Get access to our private NPM packages](npm)
 3. [Create and configure your app](create)
 4. [Create and configure your code repository](repository)
+5. [Install DCloud to manage deployments and environments](/docs/platform/cloud/installation)
 
 Once you've finished those steps you're ready to start developing and [deploying](/docs/platform/deployment/overview) your app.
 

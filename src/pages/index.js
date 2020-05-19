@@ -40,7 +40,7 @@ function Home() {
                 <ul>
                   <li>
                     <Link
-                      to="/docs/platform/overview/about"
+                      to="/docs/platform/getting-started/overview"
                     >Getting Started</Link>
                   </li>
                   <li>
