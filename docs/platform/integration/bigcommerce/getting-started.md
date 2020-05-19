@@ -167,7 +167,14 @@ When developing your app locally you'll want to connect your Falcon Client app t
 
 This can be done by adding your Falcon Server credentials to your `client/config/local.json` file. You can find out more about configurations [here](/docs/platform/configuration/overview).
 
-You Falcon Server credentials can be found....
+Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` with your site URL.
+
+```json
+  
+{
+  "graphqlUrl": "[YOUR_SITE_URL]/graphql",
+}
+```
 
 ## 6. Faclon Cloud + Deployments
 
