@@ -40,6 +40,11 @@
   color: black;
 }
 
+.aboutDark {
+  background: var(--ifm-table-stripe-background);
+  color: var(--ifm-font-base-color);
+}
+
 @media screen and (min-width: 966px) {
   .about {
     padding: 4rem 0;
@@ -62,12 +67,25 @@
   }
 }
 
+.padded {
+  padding: 1rem;
+}
+
 .aboutImg {
   width: 70%;
   max-width: 500px;
   height: auto;
   margin: 0 auto;
   display: block;
+}
+
+
+.aboutBlock {
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--ifm-navbar-background-color);
 }
 
 .architectureContainer {
@@ -89,7 +107,7 @@
 
 .comparison {
   text-align: center;
-  background-color: var(--ifm-table-stripe-background);
+  background-color: var(--ifm-background-color);
   padding: 4rem 2rem;
 }
 

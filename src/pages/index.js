@@ -31,7 +31,59 @@ function Home() {
         </div>
       </header>
       <main>
-        <section className={styles.about}>
+        <section className={classnames(styles.aboutDark, styles.about)}>
+          <h3 style={{ textAlign: "center" }}>Jump right in</h3>
+          <div className={classnames("container", styles.aboutContainer)}>
+            <div className={classnames(styles.padded, styles.aboutColumn)}>
+              <div className={styles.aboutBlock}>
+                <h4>Falcon Platform</h4>
+                <ul>
+                  <li>
+                    <Link
+                      to="/docs/platform/overview/about"
+                    >Getting Started</Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/docs/platform/overview/about"
+                    >Theming</Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/docs/platform/overview/about"
+                    >Setup your BigCommerce Integration</Link>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+              
+            <div className={classnames(styles.padded, styles.aboutColumn)}>
+              <div className={styles.aboutBlock}>
+                <h4>Falcon Open Source</h4>
+                <ul>
+                  <li>
+                    <Link
+                      to="/docs/open-source/getting-started/installation"
+                    >Getting Started</Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/docs/open-source/falcon-client/basics"
+                    >Falcon Client</Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/docs/open-source/falcon-server/basics"
+                    >Falcon Server</Link>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <section className={styles.about}>
           <div className={classnames("container", styles.aboutContainer)}>
             <div className={styles.aboutColumn}>
               <h3>What is Falcon Platform?</h3>
@@ -56,7 +108,7 @@ function Home() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
         <section className={styles.comparison}>
           <div className="container">
             <h3>Falcon Platform vs Falcon Open Source</h3>
@@ -79,8 +131,8 @@ function Home() {
         <section className="hero hero--theme" style={{ backgroundImage: "url('img/waves.jpg')" }}>
           <div className={classnames("container", styles.architectureContainer)}>
             <div>
-              <h3>The Falcon Platform Architecture</h3>
-              <p>The Falcon Front-End Platform has a unique decentralized architecture. This architecture makes the platform extremely reliable, flexible and unlimitedly scalable, while at the same time reducing complexity.</p>
+              <h3>Falcon Architecture</h3>
+              <p>Falcon has a unique decentralized architecture. This architecture makes the platform extremely reliable, flexible and unlimitedly scalable, while at the same time reducing complexity.</p>
               <p>Combined with Falcon Platform Cloud you can enjoy easy deployments, localized hosting and automatic scalability.</p>
             </div>
             <div>
