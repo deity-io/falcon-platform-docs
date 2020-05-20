@@ -133,6 +133,9 @@ This should be added to your env variables or your local.json. They can all be f
   }
 }
 ```
+You'll need the **admin API key**
+
+<img src="/img/docs/platform/algolia-admin-key.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
 
 ### 3. Index your products
 
@@ -194,6 +197,8 @@ To run your initial index you just need to use the `autoReindex` flag in your co
 ```
 
 Now you just need to start your app (Falcon Server) and all the products will be indexed. 
+
+<img src="/img/docs/platform/algolia-import.png" alt="Algolia import" width="300" style={{ marginBottom: 20 }}/>
 
 **n.b.** If you want to run a fresh reindex of all your products we advise going into the Algolia admin and emptying your indexes there first.
 
