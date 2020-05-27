@@ -88,6 +88,10 @@
   background: var(--ifm-navbar-background-color);
 }
 
+.aboutBlock li {
+  margin-bottom: .5rem;
+}
+
 .architectureContainer {
   background: white;
   padding: 4rem;
