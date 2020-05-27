@@ -84,12 +84,29 @@ html[data-theme="dark"] .pricePlan--highlight {
   color: inherit;
 }
 
-@media screen and (min-width: 996px) {
-  .navbar .navbar__items.navbar__items--right {
-    flex: 3 0 0;
-  }
-}
-
 button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   color: white;
+}
+
+/* -- Header --*/
+
+.navbar__title {
+  font-size: .8rem;
+}
+
+@media screen and (min-width: 996px) {
+  .navbar .navbar__items {
+    flex: 25%;
+  }
+  .navbar .navbar__items.navbar__items--right {
+    flex: 75%;
+  }
+
+  .navbar__link {
+    font-size: .9rem;
+  }
+
+  .navbar__title {
+    font-size: .9rem;
+  }
 }
