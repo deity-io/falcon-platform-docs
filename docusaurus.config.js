@@ -135,6 +135,10 @@ module.exports = {
 
     googleAnalytics: {
       trackingID: "UA-115774797-2"
+    },
+
+    intercomChat: {
+      appId: "z91ewqiv"
     }
   },
   presets: [

@@ -8,6 +8,8 @@
 import React from 'react';
 import classnames from 'classnames';
 
+import Intercom from "react-intercom";
+
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -43,9 +45,12 @@ function Footer() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const { themeConfig = {} } = siteConfig;
-  const { footer } = themeConfig;
+  const { footer, intercomChat } = themeConfig;
 
-  const { copyright, links = [], logo = {} } = footer || {};
+  const { copyright, links = [], logo = {},  } = footer || {};
+  const { appId: IntercomAppId = null } = intercomChat || {};
+
+    footer || {};
   const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
@@ -56,9 +61,10 @@ function Footer() {
     <>
       <Slack />
       <footer
-        className={classnames('footer', {
-          'footer--dark': footer.style === 'dark',
-        })}>
+        className={classnames("footer", {
+          "footer--dark": footer.style === "dark",
+        })}
+      >
         <div className="container">
           {links && links.length > 0 && (
             <div className="row footer__links">
@@ -68,26 +74,29 @@ function Footer() {
                     <h4 className="footer__title">{linkItem.title}</h4>
                   ) : null}
                   {linkItem.items != null &&
-                    Array.isArray(linkItem.items) &&
-                    linkItem.items.length > 0 ? (
-                      <ul className="footer__items">
-                        {linkItem.items.map((item, key) =>
-                          item.html ? (
-                            <li
-                              key={key}
-                              className="footer__item"
-                              dangerouslySetInnerHTML={{
-                                __html: item.html,
-                              }}
-                            />
-                          ) : (
-                              <li key={item.href || item.to} className="footer__item">
-                                <FooterLink {...item} />
-                              </li>
-                            ),
-                        )}
-                      </ul>
-                    ) : null}
+                  Array.isArray(linkItem.items) &&
+                  linkItem.items.length > 0 ? (
+                    <ul className="footer__items">
+                      {linkItem.items.map((item, key) =>
+                        item.html ? (
+                          <li
+                            key={key}
+                            className="footer__item"
+                            dangerouslySetInnerHTML={{
+                              __html: item.html,
+                            }}
+                          />
+                        ) : (
+                          <li
+                            key={item.href || item.to}
+                            className="footer__item"
+                          >
+                            <FooterLink {...item} />
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  ) : null}
                 </div>
               ))}
             </div>
@@ -101,17 +110,19 @@ function Footer() {
                       href={logo.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={styles.footerLogoLink}>
+                      className={styles.footerLogoLink}
+                    >
                       <FooterLogo alt={logo.alt} url={logoUrl} />
                     </a>
                   ) : (
-                      <FooterLogo alt={logo.alt} url={logoUrl} />
-                    )}
+                    <FooterLogo alt={logo.alt} url={logoUrl} />
+                  )}
                 </div>
               )}
               {copyright}
             </div>
           )}
+          {IntercomAppId && <Intercom appID={IntercomAppId} />}
         </div>
       </footer>
     </>
