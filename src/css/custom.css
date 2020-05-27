@@ -103,6 +103,12 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   }
 }
 
+/* -- Footer -- */
+
+.footer__item {
+  margin-bottom: .5rem;
+}
+
 /* -- Home -- */
 .hero.hero--theme {
   background-image: linear-gradient(195deg, rgb(16, 9, 46) 20%, rgb(77, 64, 146));
