@@ -83,7 +83,7 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
 /* -- Header --*/
 
 .navbar__title {
-  font-size: .8rem;
+  font-size: .7rem;
 }
 
 @media screen and (min-width: 996px) {
@@ -99,7 +99,7 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   }
 
   .navbar__title {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
 

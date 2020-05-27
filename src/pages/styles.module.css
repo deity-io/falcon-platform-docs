@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 4rem;
+  padding: 4rem 1rem;
   text-align: center;
   position: relative;
 }
@@ -35,7 +35,7 @@
 }
 
 .about {
-  padding: 2rem;
+  padding: 2rem 1rem;
   background: white;
   color: black;
 }
@@ -112,7 +112,7 @@
 .comparison {
   text-align: center;
   background-color: var(--ifm-background-color);
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
 }
 
 .comparison table {
