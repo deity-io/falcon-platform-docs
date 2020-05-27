@@ -178,6 +178,7 @@ function Home() {
                 loading="lazy"
                 width="1012"
                 height="730"
+                style={{ height: 'auto' }}
               />
             </div>
           </div>
