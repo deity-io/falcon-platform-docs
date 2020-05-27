@@ -48,14 +48,6 @@ html[data-theme="dark"] {
   background: var(--ifm-color-primary);
 }
 
-.hero.hero--theme {
-  background-image: linear-gradient(195deg, rgb(16, 9, 46) 20%, rgb(77, 64, 146));
-  background-color: rgb(45, 36, 89);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-}
-
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -110,3 +102,28 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
     font-size: .9rem;
   }
 }
+
+/* -- Home -- */
+.hero.hero--theme {
+  background-image: linear-gradient(195deg, rgb(16, 9, 46) 20%, rgb(77, 64, 146));
+  background-color: rgb(45, 36, 89);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+}
+
+.hero-background {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero .container {
+  z-index: 2;
+  position: relative;
+} 

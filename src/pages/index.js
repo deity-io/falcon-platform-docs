@@ -16,7 +16,12 @@ function Home() {
       title="Documentation for DEITY Falcon"
       description="DEITY Falcon Platform documentation and user guides"
     >
-      <header className={classnames("hero hero--theme", styles.heroBanner)} style={{ backgroundImage: "url('img/pattern-honeycomb-secondary.svg')" }}>
+      <header
+        className={classnames("hero hero--theme", styles.heroBanner)}
+        style={{
+          backgroundImage: "url('img/pattern-honeycomb-secondary.svg')",
+        }}
+      >
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -39,46 +44,42 @@ function Home() {
                 <h4>Falcon Platform</h4>
                 <ul>
                   <li>
-                    <Link
-                      to="/docs/platform/getting-started/overview"
-                    >Getting Started</Link>
+                    <Link to="/docs/platform/getting-started/overview">
+                      Getting Started
+                    </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/docs/platform/overview/about"
-                    >Theming</Link>
+                    <Link to="/docs/platform/overview/about">Theming</Link>
                   </li>
                   <li>
-                    <Link
-                      to="/docs/platform/overview/about"
-                    >Setup your BigCommerce Integration</Link>
+                    <Link to="/docs/platform/overview/about">
+                      Setup your BigCommerce Integration
+                    </Link>
                   </li>
                 </ul>
-
               </div>
             </div>
-              
+
             <div className={classnames(styles.padded, styles.aboutColumn)}>
               <div className={styles.aboutBlock}>
                 <h4>Falcon Open Source</h4>
                 <ul>
                   <li>
-                    <Link
-                      to="/docs/open-source/getting-started/installation"
-                    >Getting Started</Link>
+                    <Link to="/docs/open-source/getting-started/installation">
+                      Getting Started
+                    </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/docs/open-source/falcon-client/basics"
-                    >Falcon Client</Link>
+                    <Link to="/docs/open-source/falcon-client/basics">
+                      Falcon Client
+                    </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/docs/open-source/falcon-server/basics"
-                    >Falcon Server</Link>
+                    <Link to="/docs/open-source/falcon-server/basics">
+                      Falcon Server
+                    </Link>
                   </li>
                 </ul>
-
               </div>
             </div>
           </div>
@@ -112,33 +113,71 @@ function Home() {
         <section className={styles.comparison}>
           <div className="container">
             <h3>Falcon Platform vs Falcon Open Source</h3>
-            <p>We provide 2 variations of Falcon. Falcon Open Source is the open-source <strong>predecessor</strong> to Falcon Platform.</p>
+            <p>
+              We provide 2 variations of Falcon. Falcon Open Source is the
+              open-source <strong>predecessor</strong> to Falcon Platform.
+            </p>
             <ComparisonTable />
-            <p>To get started with Falcon Open Source you can download it <Link
-              href="https://github.com/deity-io/falcon"
-              target="_blank"
-              rel="noreferrer noopener"
-            >from our GitHub</Link>.</p>
-            <p>If you want to use Falcon Platform please get in touch with our team for who will help you get set up and give you pricing information.</p>
-            <p><Link
-              href="https://deity.io/contact"
-              target="_blank"
-              className="button"
-              rel="noreferrer noopener"
-            >Get in touch</Link></p>
+            <p>
+              To get started with Falcon Open Source you can download it{" "}
+              <Link
+                href="https://github.com/deity-io/falcon"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                from our GitHub
+              </Link>
+              .
+            </p>
+            <p>
+              If you want to use Falcon Platform please get in touch with our
+              team for who will help you get set up and give you pricing
+              information.
+            </p>
+            <p>
+              <Link
+                href="https://deity.io/contact"
+                target="_blank"
+                className="button"
+                rel="noreferrer noopener"
+              >
+                Get in touch
+              </Link>
+            </p>
           </div>
         </section>
-        <section className="hero hero--theme" style={{ backgroundImage: "url('img/waves.jpg')" }}>
-          <div className={classnames("container", styles.architectureContainer)}>
+        <section
+          className="hero hero--theme"
+        >
+          <img
+            src="img/waves.jpg"
+            alt="Wave background"
+            loading="lazy"
+            className="hero-background"
+          />
+          <div
+            className={classnames("container", styles.architectureContainer)}
+          >
             <div>
               <h3>Falcon Architecture</h3>
-              <p>Falcon has a unique decentralized architecture. This architecture makes the platform extremely reliable, flexible and unlimitedly scalable, while at the same time reducing complexity.</p>
-              <p>Combined with Falcon Platform Cloud you can enjoy easy deployments, localized hosting and automatic scalability.</p>
+              <p>
+                Falcon has a unique decentralized architecture. This
+                architecture makes the platform extremely reliable, flexible and
+                unlimitedly scalable, while at the same time reducing
+                complexity.
+              </p>
+              <p>
+                Combined with Falcon Platform Cloud you can enjoy easy
+                deployments, localized hosting and automatic scalability.
+              </p>
             </div>
             <div>
               <img
                 src="img/falcon-architecture-expansive.svg"
                 alt="Deity Falcon architecture diagram"
+                loading="lazy"
+                width="1012"
+                height="730"
               />
             </div>
           </div>
