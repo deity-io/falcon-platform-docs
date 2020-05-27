@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import classnames from 'classnames';
 
 import Intercom from "react-intercom";
@@ -16,6 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 import Slack from "./../../components/Slack";
+import { registerServiceWorker  } from "./../../components/ServiceWorker";
 
 function FooterLink({ to, href, label, ...props }) {
   const toUrl = useBaseUrl(to);
@@ -56,6 +57,11 @@ function Footer() {
   if (!footer) {
     return null;
   }
+
+  // Very basic service worker registration
+  useEffect(() => {
+    registerServiceWorker();
+  }, []);
 
   return (
     <>
