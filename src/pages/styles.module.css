@@ -35,7 +35,7 @@
 }
 
 .about {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   background: white;
   color: black;
 }
@@ -94,8 +94,14 @@
 
 .architectureContainer {
   background: white;
-  padding: 4rem;
+  padding: 2rem 1rem;
   color: black;
+}
+
+@media screen and (min-width: 966px) {
+  .architectureContainer {
+    padding: 4rem;
+  }
 }
 
 .infoBanner {
