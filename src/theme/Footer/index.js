@@ -5,18 +5,18 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useEffect } from 'react';
-import classnames from 'classnames';
+import React, { useEffect } from "react";
+import classnames from "classnames";
 
 import Intercom from "react-intercom";
 
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
 
 import Slack from "./../../components/Slack";
-import { registerServiceWorker  } from "./../../components/ServiceWorker";
+import { registerServiceWorker } from "./../../components/ServiceWorker";
 
 function FooterLink({ to, href, label, ...props }) {
   const toUrl = useBaseUrl(to);
@@ -25,14 +25,15 @@ function FooterLink({ to, href, label, ...props }) {
       className="footer__link-item"
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href,
-        }
+            target: "_blank",
+            rel: "noopener noreferrer",
+            href,
+          }
         : {
-          to: toUrl,
-        })}
-      {...props}>
+            to: toUrl,
+          })}
+      {...props}
+    >
       {label}
     </Link>
   );
@@ -48,10 +49,10 @@ function Footer() {
   const { themeConfig = {} } = siteConfig;
   const { footer, intercomChat } = themeConfig;
 
-  const { copyright, links = [], logo = {},  } = footer || {};
+  const { copyright, links = [], logo = {} } = footer || {};
   const { appId: IntercomAppId = null } = intercomChat || {};
 
-    footer || {};
+  footer || {};
   const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
@@ -131,6 +132,14 @@ function Footer() {
           {IntercomAppId && <Intercom appID={IntercomAppId} />}
         </div>
       </footer>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-N4NQJGX"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
     </>
   );
 }

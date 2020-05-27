@@ -6,6 +6,7 @@ module.exports = {
   favicon: "img/favicon.png",
   organizationName: "DEITY", // Usually your GitHub org/user name.
   projectName: "falcon-platform-docs", // Usually your repo name.
+  scripts: ["/tagmanager.js"],
   themeConfig: {
     navbar: {
       title: "Falcon Documentation",
@@ -142,12 +143,6 @@ module.exports = {
       indexName: "deity",
       algoliaOptions: {},
     },
-    
-    gtag: {
-      trackingID: "UA-115774797-2",
-      anonymizeIP: true,
-    },
-
     intercomChat: {
       appId: "z91ewqiv",
     },
