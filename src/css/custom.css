@@ -103,6 +103,12 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   }
 }
 
+@media (max-width: 996px) {
+  .navbar__search-input {
+      width: 8rem;
+  }
+}
+
 /* -- Footer -- */
 
 .footer__item {
