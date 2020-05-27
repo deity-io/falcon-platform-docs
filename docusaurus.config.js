@@ -11,17 +11,27 @@ module.exports = {
       title: "Falcon Documentation",
       logo: {
         alt: "DEITY Logo",
-        src: "img/deity-logo.svg"
+        src: "img/deity-logo.svg",
       },
       links: [
-        { to: "/docs/platform/overview/about", label: "Falcon Platform", position: "right", activeBasePath: "/docs/platform/" },
-        { to: "/docs/open-source/getting-started/intro", label: "Falcon Open Source", position: "right", activeBasePath: "/docs/open-source/" },
+        {
+          to: "/docs/platform/overview/about",
+          label: "Falcon Platform",
+          position: "right",
+          activeBasePath: "/docs/platform/",
+        },
+        {
+          to: "/docs/open-source/getting-started/intro",
+          label: "Falcon Open Source",
+          position: "right",
+          activeBasePath: "/docs/open-source/",
+        },
         {
           label: "Falcon UI",
           href: "https://falcon-ui.docs.deity.io/",
-          position: "right"
-        }
-      ]
+          position: "right",
+        },
+      ],
     },
     footer: {
       style: "dark",
@@ -31,128 +41,141 @@ module.exports = {
           items: [
             {
               label: "Falcon Platform",
-              to: "/docs/platform/overview/about"
+              to: "/docs/platform/overview/about",
             },
             {
               label: "Falcon Cloud",
-              to: "/docs/platform/cloud/about"
+              to: "/docs/platform/cloud/about",
             },
             {
               label: "Falcon Open Source",
-              to: "/docs/open-source/getting-started/intro"
+              to: "/docs/open-source/getting-started/intro",
             },
             {
               label: "Falcon UI",
-              href: "https://falcon-ui.docs.deity.io/"
-            }
-          ]
+              href: "https://falcon-ui.docs.deity.io/",
+            },
+          ],
         },
         {
           title: "Our Integrations",
           items: [
             {
               label: "Algolia",
-              to: "/docs/platform/integration/algolia"
+              to: "/docs/platform/integration/algolia",
             },
             {
               label: "BigCommerce",
-              to: "/docs/platform/integration/bigcommerce/overview"
+              to: "/docs/platform/integration/bigcommerce/overview",
             },
             {
               label: "Magento 2",
-              to: "/docs/platform/integration/magento2"
+              to: "/docs/platform/integration/magento2",
             },
             {
               label: "Stripe",
-              to: "/docs/platform/integration/stripe"
+              to: "/docs/platform/integration/stripe",
             },
             {
               label: "Wordpress",
-              to: "/docs/platform/integration/wordpress"
-            }
-          ]
+              to: "/docs/platform/integration/wordpress",
+            },
+          ],
         },
         {
           title: "Community & Help",
           items: [
             {
               label: "Community Chat",
-              href: "http://slack.deity.io/"
+              href: "http://slack.deity.io/",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/deity_pwa"
+              href: "https://twitter.com/deity_pwa",
             },
             {
               label: "Youtube",
-              href: "https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ"
+              href: "https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ",
             },
             {
               label: "Contact Us",
-              href: "https://deity.io/contact"
-            }
-          ]
+              href: "https://deity.io/contact",
+            },
+          ],
         },
         {
           title: "Useful Links",
           items: [
             {
               label: "Marketing Site",
-              href: "https://deity.io/"
+              href: "https://deity.io/",
             },
             {
               label: "Status",
-              href: "https://status.deity.io/"
+              href: "https://status.deity.io/",
             },
             {
               label: "Blog",
-              href: "https://medium.com/deity-io"
+              href: "https://medium.com/deity-io",
             },
             {
               label: "GitHub",
-              href: "https://github.com/deity-io/"
+              href: "https://github.com/deity-io/",
             },
             {
               label: "Privacy Policy",
-              href: "https://deity.io/privacy-policy"
-            }
-          ]
-        }
+              href: "https://deity.io/privacy-policy",
+            },
+          ],
+        },
       ],
       logo: {
         alt: "DEITY Logo",
-        src: "img/deity-logo.svg"
+        src: "img/deity-logo.svg",
       },
-      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`
+      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`,
     },
     image: "img/deity-logo.svg",
 
     algolia: {
       apiKey: "3cd0500212418e98ed4f90579abbe0fb",
       indexName: "deity",
-      algoliaOptions: {}
+      algoliaOptions: {},
     },
-
-    googleAnalytics: {
-      trackingID: "UA-115774797-2"
+    
+    gtag: {
+      trackingID: "UA-115774797-2",
+      anonymizeIP: true,
     },
 
     intercomChat: {
-      appId: "z91ewqiv"
-    }
+      appId: "z91ewqiv",
+    },
   },
+  plugins: [
+    "@docusaurus/plugin-google-gtag",
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        cacheTime: 600 * 1000, // 600 sec - cache purge period
+        changefreq: "weekly",
+        priority: 0.5,
+      },
+    ],
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/deity-io/falcon-platform-docs/edit/master/website"
+          editUrl:
+            "https://github.com/deity-io/falcon-platform-docs/edit/master/website",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }
-    ]
-  ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
 };
