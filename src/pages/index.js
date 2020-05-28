@@ -49,10 +49,10 @@ function Home() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/docs/platform/overview/about">Theming</Link>
+                    <Link to="/docs/platform/client/theming/overview">Theming</Link>
                   </li>
                   <li>
-                    <Link to="/docs/platform/overview/about">
+                    <Link to="/docs/platform/integration/bigcommerce/overview">
                       Setup your BigCommerce Integration
                     </Link>
                   </li>
