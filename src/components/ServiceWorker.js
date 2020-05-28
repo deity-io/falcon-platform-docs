@@ -8,7 +8,7 @@ const isSupported = () => {
 }
 
 export const registerServiceWorker = () => {
-  if (isSupported) {
+  if (isSupported && navigator.serviceWorker !== undefined) {  
      navigator.serviceWorker.register("/sw.js");
    }
 }
