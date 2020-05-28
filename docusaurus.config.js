@@ -164,7 +164,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            "https://github.com/deity-io/falcon-platform-docs/edit/master/website",
+            "https://github.com/deity-io/falcon-platform-docs/edit/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
