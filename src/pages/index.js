@@ -153,6 +153,8 @@ function Home() {
             src="img/waves.jpg"
             alt="Wave background"
             loading="lazy"
+            width="1200"
+            height="1200"
             className="hero-background"
           />
           <div
