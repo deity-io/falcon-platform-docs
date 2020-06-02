@@ -4,7 +4,15 @@ title: Installation
 sidebar_label: Installation
 ---
 
-## Installing DCloud
+## Overview
+
+1. [Install Dcloud](#1-installing-dcloud)
+2. [Log into Dcloud](#2-logging-in)
+3. [Configure your code repository](#3-configure-your-code-repository)
+4. [Configure your app](#4-configure-your-app)
+5. [Deploy your code](#5-deploy-your-code)
+
+## 1. Installing DCloud
 
 Before doing anything you'll need to install our CLI tool on your local machine.
 
@@ -20,7 +28,11 @@ Adding `-g` will install it globally so you can use it where ever you want.
 
 To test it's working run `dcloud`. You should list a list of available commands.
 
-## Logging in
+## 2. Logging in
+
+:::note Getting your login token
+To get your login token please log into [your cloud account](https://app.deity.cloud/sign-in/authorization-token). If you've not yet created an account please contact our support.
+:::
 
 The next step is to log into [your cloud account](account).
 
@@ -38,16 +50,54 @@ To check you're logged in correctly run `whoami`
 dcloud whoami
 ```
 
-## Check you repository details
+## 3. Configure your code repository
 
-Once you're logged in you can use the CLI tool to check your linked repository is correct.
+You'll need to have a Falcon app in a code repository ready to deploy.
 
-```javascript
+To do this please follow [these steps](/docs/platform/getting-started/overview).
+
+### Link your code repository
+
+If you've followed the [instructions above](/docs/platform/getting-started/repository) you'll have added a webhook to your repo. This will automatically link it to your `dcloud` account.  **n.b. You'll need to push at least one commit before the repo is linked.**
+
+To check this run the following command:
+
+```bash
 dcloud repo:list -i
 ```
 
-This will also give you a Webhook and SSH key, both need for the [next part of setup](./repository).
+## 4. Configure your app
 
+Depending on the setup you are running you'll need to set various **environement variables**. These include **BigCommerce**, **Algolia** and **Stripe**  credentials.  To learn more about configuration please read [these docs](/docs/platform/configuration/overview).
+
+To set variables using dcloud use the following command:
+
+```bash
+dcloud env:var:set <env> <name> [value]
+```
+
+### Example - BigCommerce
+[This document](/docs/platform/integration/bigcommerce/manual) explains BigCommerce configuration in more details.
+
+There are quite a few confirations you'll need to add. Adding them might look something like the command below:
+
+```bash
+dcloud env:var:set production BIGCOMMERCE_ACCESS_TOKEN [YOUR_ACCESS_TOKEN]
+```
+
+
+## 5. Deploy your code
+
+### Find your build ID
+Each commit pushed to your repo is created as a build. To check these you can run the command `dcloud build:list`. Take note of the build ID for the build you want to deploy.
+
+### Choose your environment
+Depending on your price plan you may have multiple environments (testing, production etc). To check your environments run `dcloud env:list`. Take note of the name of the environment you want to deploy to.
+
+### Deploy your build
+To deploy your build run the command `dcloud deployment:run [buildId] [environmentName]` replacing `buildId` and `environmentName` with the values above. You deployment should be very quick as the build is already created.
+
+---
 
 ## What our 'how to' video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CSrkxZgtY6w?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -26,7 +26,7 @@ If you're using our BigCommerce integration your details these details can be fo
 Simply run the following command from a terminal window when logged into `dcloud`:
 
 ```bash
-dcloud repo:list -i
+dcloud repo -i
 ```
 
 ---
