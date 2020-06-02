@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: "DEITY Falcon",
   tagline: "Documentation",
@@ -6,7 +8,6 @@ module.exports = {
   favicon: "img/favicon.png",
   organizationName: "DEITY", // Usually your GitHub org/user name.
   projectName: "falcon-platform-docs", // Usually your repo name.
-  scripts: ["/tagmanager.js"],
   themeConfig: {
     navbar: {
       title: "Falcon Documentation",
@@ -143,9 +144,6 @@ module.exports = {
       indexName: "deity",
       algoliaOptions: {},
     },
-    intercomChat: {
-      appId: "z91ewqiv",
-    },
   },
   plugins: [
     [
@@ -156,6 +154,18 @@ module.exports = {
         priority: 0.5,
       },
     ],
+    [
+      path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
+      {
+        containerId: 'GTM-N4NQJGX'
+      }
+    ],
+    [
+      path.resolve(__dirname, './src/plugins/deity-intercom/src/index.js'),
+      {
+        appId: 'z91ewqiv'
+      }
+    ]
   ],
   presets: [
     [

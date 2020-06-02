@@ -8,8 +8,6 @@
 import React, { useEffect } from "react";
 import classnames from "classnames";
 
-import Intercom from "react-intercom";
-
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -25,13 +23,13 @@ function FooterLink({ to, href, label, ...props }) {
       className="footer__link-item"
       {...(href
         ? {
-            target: "_blank",
-            rel: "noopener noreferrer",
-            href,
-          }
+          target: "_blank",
+          rel: "noopener noreferrer",
+          href,
+        }
         : {
-            to: toUrl,
-          })}
+          to: toUrl,
+        })}
       {...props}
     >
       {label}
@@ -47,10 +45,9 @@ function Footer() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const { themeConfig = {} } = siteConfig;
-  const { footer, intercomChat } = themeConfig;
+  const { footer } = themeConfig;
 
   const { copyright, links = [], logo = {} } = footer || {};
-  const { appId: IntercomAppId = null } = intercomChat || {};
 
   footer || {};
   const logoUrl = useBaseUrl(logo.src);
@@ -81,29 +78,29 @@ function Footer() {
                     <h4 className="footer__title">{linkItem.title}</h4>
                   ) : null}
                   {linkItem.items != null &&
-                  Array.isArray(linkItem.items) &&
-                  linkItem.items.length > 0 ? (
-                    <ul className="footer__items">
-                      {linkItem.items.map((item, key) =>
-                        item.html ? (
-                          <li
-                            key={key}
-                            className="footer__item"
-                            dangerouslySetInnerHTML={{
-                              __html: item.html,
-                            }}
-                          />
-                        ) : (
-                          <li
-                            key={item.href || item.to}
-                            className="footer__item"
-                          >
-                            <FooterLink {...item} />
-                          </li>
-                        )
-                      )}
-                    </ul>
-                  ) : null}
+                    Array.isArray(linkItem.items) &&
+                    linkItem.items.length > 0 ? (
+                      <ul className="footer__items">
+                        {linkItem.items.map((item, key) =>
+                          item.html ? (
+                            <li
+                              key={key}
+                              className="footer__item"
+                              dangerouslySetInnerHTML={{
+                                __html: item.html,
+                              }}
+                            />
+                          ) : (
+                              <li
+                                key={item.href || item.to}
+                                className="footer__item"
+                              >
+                                <FooterLink {...item} />
+                              </li>
+                            )
+                        )}
+                      </ul>
+                    ) : null}
                 </div>
               ))}
             </div>
@@ -122,24 +119,15 @@ function Footer() {
                       <FooterLogo alt={logo.alt} url={logoUrl} />
                     </a>
                   ) : (
-                    <FooterLogo alt={logo.alt} url={logoUrl} />
-                  )}
+                      <FooterLogo alt={logo.alt} url={logoUrl} />
+                    )}
                 </div>
               )}
               {copyright}
             </div>
           )}
-          {IntercomAppId && <Intercom appID={IntercomAppId} />}
         </div>
       </footer>
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-N4NQJGX"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        ></iframe>
-      </noscript>
     </>
   );
 }
