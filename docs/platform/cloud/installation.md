@@ -30,10 +30,6 @@ To test it's working run `dcloud`. You should list a list of available commands.
 
 ## 2. Logging in
 
-:::note Getting your login token
-To get your login token please log into [your cloud account](https://app.deity.cloud/sign-in/authorization-token). If you've not yet created an account please contact our support.
-:::
-
 The next step is to log into [your cloud account](account).
 
 From your terminal window run the login command.
@@ -42,7 +38,13 @@ From your terminal window run the login command.
 dcloud login:token [token]
 ```
 
-You will be prompted to add your cloud credentials.
+You'll be asked to go to [https://app.deity.cloud/sign-in/authorization-token](https://app.deity.cloud/sign-in/authorization-token) in order to generate the token for your account (you'll have to sign in with your account to access it).
+ 
+Once the token is generated you can copy it from the browser and paste into CLI.
+
+:::note 
+If you've not yet created an account please contact our support.
+:::
 
 To check you're logged in correctly run `whoami`
 
