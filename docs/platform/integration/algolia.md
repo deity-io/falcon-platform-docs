@@ -182,6 +182,15 @@ This is done in your server config:
   
 ```
 
+### Deity Cloud Environment Variables
+
+- `ALGOLIA_ENABLED`: [bool] - is Algolia enabled 
+- `ALGOLIA_APP_ID`: Your App ID
+- `ALGOLIA_API_KEY`: Your API key
+- `ALGOLIA_INDEX_NAME`: The base index, if this index doesn't exist in Algolia yet it will be created for you.
+- `SEARCH_API_NAME`: You'll need to set Algolia as the search API. The value shoul be `algolia`
+
+
 ### 2. Running an initial index
 
 To run your initial index you just need to use the `autoReindex` flag in your config files.
