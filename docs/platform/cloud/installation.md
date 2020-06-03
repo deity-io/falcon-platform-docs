@@ -78,6 +78,38 @@ To set variables using dcloud use the following command:
 dcloud env:var:set <env> <name> [value]
 ```
 
+Each integration will have a different set of required environment variables. These can be found listed with their individual integration guides:
+
+- [Algolia](/docs/platform/integration/algolia#deity-cloud-environment-variables)
+- [BigCommerce](/docs/platform/integration/bigcommerce/manual#deity-cloud-environment-variables)
+- [Magento 2](/docs/platform/integration/magento2#deity-cloud-environment-variables)
+- [Stripe](/docs/platform/integration/stripe#deity-cloud-environment-variables)
+- [Wordpress](/docs/platform/integration/wordpress#deity-cloud-environment-variables)
+
+Alongside 3rd party integrations there are a few other core configurations you might want to set:
+
+**Email**
+
+We use [NodeMailer](https://nodemailer.com/smtp/well-known/) and a list of available email services can be found there.
+
+- `MAILER_SERVICE`: email service provider e.g. `gmail`
+- `MAILER_USER`: email user e.g. `hello@deity.io`
+- `MAILER_PASSWORD`: email password
+
+**Search**
+
+You'll need to define which search API you want to use. Currently only `algolia` and `bigcommerce` are supported.
+
+- `SEARCH_API_NAME`: search api e.g. `bigcommerce`
+
+**Google Tag Manager**
+
+If you want to use Tag Manager you'll have to set your container ID.
+
+- `GTM_CODE`: gtm container ID e.g. `GTM-12345`
+
+
+
 ### Example - BigCommerce
 [This document](/docs/platform/integration/bigcommerce/manual) explains BigCommerce configuration in more details.
 

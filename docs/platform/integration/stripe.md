@@ -87,6 +87,14 @@ You just need to add your `secretKey` and `publicKey`. These should be added in 
 "publicKey": "PAYMENT_STRIPE_PUBLIC_KEY"
 ```
 
+## Deity Cloud Environment Variables
+
+- `FALCON_PAYMENTS_ENABLED`: [bool] - You need to use Falcon Payments to use our Stripe integration.
+- `PAYMENT_STRIPE_ENABLED`: [bool] - Enable Striep
+- `PAYMENT_STRIPE_TITLE`: The title that appears above the payment method e.g. Credit Card
+- `PAYMENT_STRIPE_SECRET_KEY`: Your secret key
+- `PAYMENT_STRIPE_PUBLIC_KEY`: Your public key
+
 ## Useful Links
 
 - [Stripe Docs](https://stripe.com/docs/)

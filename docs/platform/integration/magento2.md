@@ -134,6 +134,11 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 
 ```
 
+### Deity Cloud Environment Variables
+
+- `PAYMENT_STRIPE_SECRET_KEY`: your secret key
+- `PAYMENT_STRIPE_PUBLIC_KEY`: your public key
+
 ### 6. Disable your Magento frontend
 Disable your Magento 2 frontend. We have a [Magento module](https://github.com/deity-io/disable-frontend) you can use.
 

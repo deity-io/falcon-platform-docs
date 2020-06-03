@@ -127,3 +127,13 @@ Use your `server/config/local.json` or your `environment variables` (Deity Cloud
   }
 }
 ```
+
+### Deity Cloud Environment Variables
+
+- `BIGCOMMERCE_HOST`
+- `BIGCOMMERCE_ACCESS_TOKEN`
+- `BIGCOMMERCE_CLIENT_ID`
+- `BIGCOMMERCE_GQL_URL`
+- `BIGCOMMERCE_GQL_TOKEN`
+- `BIGCOMMERCE_FRONTENT_URL`
+- `SEARCH_API_NAME`: If you want to use BigCommerce for search the value shoul be `bigcommerce`
