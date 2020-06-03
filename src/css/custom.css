@@ -135,6 +135,7 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
   background-attachment: fixed;
   background-position: center center;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-background {
