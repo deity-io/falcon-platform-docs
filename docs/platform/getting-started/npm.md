@@ -24,6 +24,10 @@ npm login --registry=https://npm.deity.io --scope=@deity
 //npm.deity.io/:_authToken=<YOUR_TOKEN>
 ```
 
+:::note Using Deity Cloud?
+If you're using Deity Cloud and are logged into `dcloud` you can run `dcloud project:npm-token` to get your NPM token.
+:::
+
 3. To let Falcon Cloud use your NPM token for the deployments and keep your token outside of GIT, run the following command in your terminal.
 
 ```javascript

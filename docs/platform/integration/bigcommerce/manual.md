@@ -100,7 +100,7 @@ The default configuration for BigCommerce looks like this:
 }
 ```
 
-Use your `server/config/local.xml` or your `environment variables` (Deity Cloud) to add the sensitive data where needed.
+Use your `server/config/local.json` or your `environment variables` (Deity Cloud) to add the sensitive data where needed.
 
 ```json
 "endpoints": {
