@@ -24,4 +24,4 @@ In order to avoid the requirement for your server to be PCI compliant, it is rec
 
 ### Legacy product option support
 
-We don't support legacy (`v2`) product options. These will display but don't currently add to cart. [Find out more](https://support.bigcommerce.com/s/article/Product-Options-v3#compare) about the differences between product options.
+We don't currently support legacy (`v2`) product options. These will display but don't currently add to cart. [Find out more](https://support.bigcommerce.com/s/article/Product-Options-v3#compare) about the differences between product options.
