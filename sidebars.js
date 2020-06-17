@@ -7,10 +7,7 @@
 
 module.exports = {
   falconPlatformSidebar: {
-    Overview: [
-      "platform/overview/about",
-      "platform/overview/plans"
-    ],
+    Overview: ["platform/overview/about", "platform/overview/plans"],
     "Getting Started": [
       "platform/getting-started/overview",
       "platform/getting-started/prerequisites",
@@ -81,8 +78,8 @@ module.exports = {
           "platform/integration/bigcommerce/getting-started",
           "platform/integration/bigcommerce/features",
           "platform/integration/bigcommerce/technical",
-          "platform/integration/bigcommerce/manual"
-        ]
+          "platform/integration/bigcommerce/manual",
+        ],
       },
       "platform/integration/magento2",
       "platform/integration/stripe",
@@ -145,6 +142,9 @@ module.exports = {
       "platform/packages/falcon-ui",
       "platform/packages/falcon-wordpress-api",
       "platform/packages/normal-module-override-webpack-plugin",
+    ],
+    "Release Notes": [
+      "platform/release/2-3-0",
     ],
     Support: [
       "platform/support/contact",
