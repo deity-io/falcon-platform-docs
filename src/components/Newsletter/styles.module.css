@@ -21,6 +21,8 @@
   font-size: 1rem;
   border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
   border-right: none;
+  background: var(--ifm-background-secondary);
+  color: var(--ifm-font-color-base);
 }
 
 .button {
