@@ -19,3 +19,9 @@ The current BigCommerce REST API does not provide any endpoints to resolve front
 The BigCommerce REST API does not support aggregations when navigating/filtering category products. In order to provide visitors with the best Search experience possible, it is recommended to use the falcon-algoliasearch module, which also allows fetching the products directly from the Algolia index (for this reason it's vital to configure Algolia and BigCommerce webhooks properly to ensure the correct data flow across backends because, Falcon-Server is the only middleware that connects them both).
 
 In order to avoid the requirement for your server to be PCI compliant, it is recommended to use @deity-io/falcon-payments module which handles this requirement for you and provides payments on the client-side, so you only get a transaction ID to check/verify server side. Otherwise, you'll have to handle sensitive payment information and pass this data to BigCommerce.
+
+## Known issues
+
+### Legacy product option support
+
+We don't currently support legacy (`v2`) product options. These will display but don't currently add to cart. [Find out more](https://support.bigcommerce.com/s/article/Product-Options-v3#compare) about the differences between product options.
