@@ -1,5 +1,6 @@
 import React from "react";
-import Mailchimp from "react-mailchimp-form";
+import Mailchimp from "./Mailchimp";
+import styles from "./styles.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 const Newsletter = () => {
@@ -17,34 +18,14 @@ const Newsletter = () => {
   }
   return (
     <section>
-      <h3>Stay up to date</h3>
-      <p>
-        Do you want to be informed when we release new features or fixes? Sign
-        up to our newsletter to stay in the loop.
-      </p>
-      <Mailchimp
-        action={submitUrl}
-        //Adding multiple fields:
-        fields={[
-          {
-            name: "EMAIL",
-            placeholder: "Email",
-            type: "email",
-            required: true,
-          }
-        ]}
-        // Change predetermined language
-        messages={{
-          sending: "Sending...",
-          success: "Thank you for subscribing!",
-          error: "An unexpected internal error has occurred.",
-          empty: "You must write an e-mail.",
-          duplicate: "Too many subscribe attempts for this email address",
-          button: "Subscribe!",
-        }}
-        // Add a personalized class
-        className="<YOUR_CLASSNAME>"
-      />
+      <div className={styles.wrapper}>
+        <h3>Stay up to date</h3>
+        <p>
+          Do you want to be informed when we release new features or fixes? Sign
+          up to our newsletter to stay in the loop.
+        </p>
+        <Mailchimp action={submitUrl} />
+      </div>
     </section>
   );
 };
