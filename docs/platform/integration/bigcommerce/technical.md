@@ -24,4 +24,8 @@ In order to avoid the requirement for your server to be PCI compliant, it is rec
 
 ### Legacy product option support
 
-We don't currently support legacy (`v2`) product options. These will display but don't currently add to cart. [Find out more](https://support.bigcommerce.com/s/article/Product-Options-v3#compare) about the differences between product options.
+When using legacy (`v2`) options, we currently support only the following option types: *Multiple Choice*, *Swatch*. This means you will be able to use legacy options for things like choosing size, color or model. If your product has other option types, the product will be visible in your storefront, but you won't be able to add it to cart.
+
+Furthermore, each product that has legacy options must have one or more SKUs associated with it. You can check if your product has SKUs in the [BigCommerce Control Panel](https://login.bigcommerce.com/), by viewing a product and going to *Options & SKUs* and clicking the tab *SKUs*. If you haven't already created SKUs, the easiest way to do so is to click the *Generate SKUs* button (the chosen options in the dialog are not important for us).
+
+To find out more about legacy options, check out this [BigCommerce Support article](https://support.bigcommerce.com/s/article/Product-Options-v3#compare).
