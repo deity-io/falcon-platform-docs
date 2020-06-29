@@ -22,6 +22,10 @@ In order to avoid the requirement for your server to be PCI compliant, it is rec
 
 ## Known issues
 
+### File Upload Modifier
+
+We don't currently support file upload product modifiers. Support will be added in a future release.
+
 ### Legacy product option support
 
 When using legacy (`v2`) options, we currently support only the following option types: *Multiple Choice*, *Swatch*. This means you will be able to use legacy options for things like choosing size, color or model. If your product has other option types, the product will be visible in your storefront, but you won't be able to add it to cart.
