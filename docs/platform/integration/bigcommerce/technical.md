@@ -22,9 +22,13 @@ In order to avoid the requirement for your server to be PCI compliant, it is rec
 
 ## Known issues
 
-### File Upload Modifier
+### File Upload Product Modifier
 
 We don't currently support file upload product modifiers. Support will be added in a future release.
+
+### Product Modifier Cache
+
+Unfortunately the BigCommerce product update webhook is not triggered if you make changes to product modifier options. This means that our cache clearing isn't triggered. To see updates immediately you'll need to change another product attrbute such as name, price or description. We suggest making a tiny change and then reverting it straight after.
 
 ### Legacy product option support
 
