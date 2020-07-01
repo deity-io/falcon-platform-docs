@@ -10,14 +10,21 @@ Before you get started you'll need a BigCommerce store and have access to the ad
 
 
 ## 1. Install our app
-<img
-  src="/img/docs/platform/bigcommerce/app.jpg"
-  alt="BigCommerce app"
-  width="200"
-  style={{ marginBottom: "20px", display: "block" }}
-/>
+<a
+  href="https://www.bigcommerce.com/apps/deity-falcon-pwa"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Download our BigCommerce App"
+>
+  <img
+    src="/img/docs/platform/bigcommerce/app.jpg"
+    alt="BigCommerce app"
+    width="200"
+    style={{ marginBottom: "20px", display: "block" }}
+  />
+</a>
 
-The first thing you'll need to do is visit the [BigCommerce App Store](https://www.bigcommerce.com/apps/) and download our app.
+The first thing you'll need to do is visit the [BigCommerce App Store](https://www.bigcommerce.com/apps/deity-falcon-pwa) and download our app.
 
 ## 2. Setup our app
 
