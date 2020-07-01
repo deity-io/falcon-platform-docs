@@ -96,7 +96,7 @@ module.exports = {
               href: 'https://twitter.com/deity_pwa',
             },
             {
-              label: 'Youtube',
+              label: 'YouTube',
               href: 'https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ',
             },
             {
