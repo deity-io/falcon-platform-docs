@@ -8,9 +8,6 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'DEITY', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
-  highlight: {
-    theme: 'atom one dark',
-  },
   themeConfig: {
     navbar: {
       title: 'Falcon Documentation',
