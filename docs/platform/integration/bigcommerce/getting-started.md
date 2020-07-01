@@ -11,7 +11,7 @@ Before you get started you'll need a BigCommerce store and have access to the ad
 
 ## 1. Install our app
 <a
-  href="https://www.bigcommerce.com/apps/deity-falcon-pwa"
+  href="https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/"
   target="_blank"
   rel="noopener noreferrer"
   title="Download our BigCommerce App"
@@ -24,7 +24,7 @@ Before you get started you'll need a BigCommerce store and have access to the ad
   />
 </a>
 
-The first thing you'll need to do is visit the [BigCommerce App Store](https://www.bigcommerce.com/apps/deity-falcon-pwa) and download our app.
+The first thing you'll need to do is visit the [BigCommerce App Store](https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/) and download our app.
 
 ## 2. Setup our app
 
