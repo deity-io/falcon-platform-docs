@@ -39,6 +39,16 @@ export const globalCss = {
 }
 ```
 
+If desired, you can also export a function that takes the current theme as a parameter:
+
+```js
+export const globalCss = theme => ({
+  body: {
+    background: theme.colors.primary
+  }
+})
+```
+
 By default the `ThemeProvider` component is included in `client/src/App.js`. The `globalCss` object is normal exported in your `client/src/styling/theme.js` file.
 
 **If you're not using the new theme the `theme.js` file can be found here: `client/src/theme.js`**
