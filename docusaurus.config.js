@@ -159,13 +159,7 @@ module.exports = {
       {
         containerId: 'GTM-N4NQJGX',
       },
-    ],
-    [
-      path.resolve(__dirname, './src/plugins/deity-intercom/src/index.js'),
-      {
-        appId: 'z91ewqiv',
-      },
-    ],
+    ]
   ],
   presets: [
     [
