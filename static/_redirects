@@ -51,3 +51,4 @@
 
 # Moved Pages
 /docs/platform/cloud/repository  /docs/platform/getting-started/repository
+/docs/platform/server/           /docs/platform/server/overview 
