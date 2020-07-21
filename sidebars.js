@@ -46,8 +46,8 @@ module.exports = {
       "platform/client/browser-support",
     ],
     "Falcon Server": [
-      "platform/server/overview",
-      "platform/server"
+      "platform/server",
+      "platform/server/dynamic-routes",
     ],
     "Falcon Cloud": [
       "platform/cloud/about",
