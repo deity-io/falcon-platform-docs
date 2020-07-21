@@ -47,10 +47,7 @@ module.exports = {
     ],
     "Falcon Server": [
       "platform/server/overview",
-      "platform/server/api-providers",
-      "platform/server/extensions",
-      "platform/server/data-providers",
-      "platform/server/dynamic-routes",
+      "platform/server"
     ],
     "Falcon Cloud": [
       "platform/cloud/about",
