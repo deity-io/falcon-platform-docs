@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { Button } from "./Button";
 
 /**
@@ -35,7 +36,19 @@ const loadScript = ({ appId }) => {
 };
 
 export const Chat = () => {
-  const appId = "z91ewqiv";
+  const context = useDocusaurusContext();
+  const {
+    siteConfig: {
+      themeConfig: {
+        intercom: { appId },
+      },
+    },
+  } = context;
+
+  if (!appId) {
+    return null;
+  }
+
   const [isLoaded, setIsLoaded] = useState(false); // Is window.Intercom loaded
   const [isMounted, setIsMounted] = useState(false); // Has the component mounted
   const [loadTriggered, setLoadTriggered] = useState(false); // Has a load of Intercom scripts been triggered

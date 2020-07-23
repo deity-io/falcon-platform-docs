@@ -144,6 +144,9 @@ module.exports = {
       indexName: 'deity',
       algoliaOptions: {},
     },
+    intercom: {
+      appId: 'z91ewqiv'
+    }
   },
   plugins: [
     [
