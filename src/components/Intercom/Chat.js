@@ -37,13 +37,7 @@ const loadScript = ({ appId }) => {
 
 export const Chat = () => {
   const context = useDocusaurusContext();
-  const {
-    siteConfig: {
-      themeConfig: {
-        intercom: { appId },
-      },
-    },
-  } = context;
+  const appId = context.siteConfig?.themeConfig?.intercom?.appId;
 
   if (!appId) {
     return null;
