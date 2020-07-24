@@ -37,9 +37,9 @@ The `key` for each value in `paymentCodeToPluginMap` should be linked to the nam
 
 ## How payment components work
 
-As a general rule, Payment UIs will need some form of authentication. We use the [initialize method](provider#initializepayload) in our provider to pass data to our component to do this. This is triggered when our payment method is selected and before the component is rendered.
+As a general rule, Payment UIs will need some form of authentication. We use the [initialize method](/docs/platform/payments/provider#initializepayload) in our provider to pass data to our component to do this. This is triggered when our payment method is selected and before the component is rendered.
 
-Each component is passed the `pay()` function. This function in turn triggers the [validate method](provider#validatepayload) in your provider.
+Each component is passed the `pay()` function. This function in turn triggers the [validate method](/docs/platform/payments/provider#validatepayload) in your provider.
 
 
 **`client/src/pages/shop/Checkout/components/payments/SimplePayment.js`**

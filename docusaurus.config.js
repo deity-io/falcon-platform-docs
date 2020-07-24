@@ -15,7 +15,7 @@ module.exports = {
         alt: 'DEITY Logo',
         src: 'img/deity-logo.svg',
       },
-      links: [
+      items: [
         {
           to: '/docs/platform/overview/about',
           label: 'Falcon Platform',
@@ -149,14 +149,6 @@ module.exports = {
     }
   },
   plugins: [
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        cacheTime: 600 * 1000, // 600 sec - cache purge period
-        changefreq: 'weekly',
-        priority: 0.5,
-      },
-    ],
     [
       path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
       {

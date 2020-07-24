@@ -12,7 +12,7 @@ This Wordpress Module registers required endpoints and filters for DEITY Falcon
 ### Connect Falcon to your WordPress instance
 
 Configure Falcon Server to connect to your Wordpress instance.
-You can do so by changing your [Falcon-Server config](miscellaneous/config).
+You can do so by changing your [Falcon-Server config](/docs/open-source/miscellaneous/config).
 
 ```json
 {

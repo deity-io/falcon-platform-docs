@@ -22,7 +22,7 @@ may already be installed in which case you can **skip the installation step.**
 ### Overview and installation
 
 This API class realizes communication with your Magento 2 backend.
-It provides resolvers for queries and mutations required by [Falcon Shop Extension](extensions#shop-extension).
+It provides resolvers for queries and mutations required by [Falcon Shop Extension](/docs/open-source/falcon-server/extensions#shop-extension).
 To add this API to your Falcon-based app install it in the server directory:
 
 <!--DOCUSAURUS_CODE_TABS-->

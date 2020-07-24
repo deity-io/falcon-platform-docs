@@ -18,7 +18,7 @@ Here's a quick introduction to theming Falcon Platform.
 ## Overview
 `@deity/falcon-ui` comes with a `ThemeProvider` out of the box. This allows us to have shared and global styles (written in js) across your application.
 
-Out of the box Falcon Platform also supports [**css** and **scss**](./css-sass).
+Out of the box Falcon Platform also supports [**css** and **scss**](/docs/platform/client/theming/css-sass).
 
 :::note Writing CSS in ReactJs
 If you're new to writing CSS in ReactJs, it's worth reading <a href="https://www.w3schools.com/react/react_css.asp" target="_blank" rel="noopener noreferrer">these docs</a>.
@@ -115,7 +115,7 @@ These are mapped to css properties meaning that the correct value is passed.
 
 You will also notice some props are shortcuts for the css property, e.g. `m="xxl"` is used instead of `margin="xxs"`. 
 
-[Find out more about css mapping and shortcuts](./css-mapping)
+[Find out more about css mapping and shortcuts](/docs/platform/client/theming/css-mapping)
 
 ### Responsive Styling
 

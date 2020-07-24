@@ -9,7 +9,7 @@ Our Cookbook is a collection of 'recipes' for you to reference and use in your o
 
 <img src="/img/docs/platform/noodles.svg" alt="Noodle Illustration" width="200" style={{margin: '20px 0 40px 0'}} />
 
-These 'recipes' vary from simple theming processes like [changing the logo](client/change-logo) to more complex integrations like [adding a new payment provider](integrations/braintree).
+These 'recipes' vary from simple theming processes like [changing the logo](/docs/platform/cookbook/client/change-logo) to more complex integrations like [adding a new payment provider](/docs/platform/cookbook/integrations/braintree).
 
 
 :::note Something missing?

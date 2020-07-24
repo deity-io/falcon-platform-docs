@@ -10,7 +10,7 @@ The Falcon Platform is a fully packed hosted front-end platform, which allows to
 
 Falcon is not just a PWA theme, it is a complete platform to build the best shopping experience with top performance and unlimited flexibility, enabling your future growth.
 
-[Get started with Falcon Platform](../getting-started/prerequisites)
+[Get started with Falcon Platform](/docs/platform/getting-started/prerequisites)
 
 <img src="/img/docs/platform/business-service-applications.svg" alt="Falcon Platform infastructure illustration" width="500" />
 
@@ -32,12 +32,12 @@ To have access to Falcon Server and make changes you need to have an Enterprise 
 ### Falcon Cloud
 Cloud is not only the infastructure your Falcon Platform will be hosted on but also your deployment, monitoring and testing tool.
 
-[Learn about Falcon Cloud](../cloud/about)
+[Learn about Falcon Cloud](/docs/platform/cloud/about)
 
 
 ## Dive Straight In
 
 We have a cookbook with examples of code and a Youtube channel with video guides.
 
-- [Falcon Platform Cookbook](./../cookbook)
+- [Falcon Platform Cookbook](/docs/platform/cookbook/about)
 - <a href="https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ" target="_blank" rel="noopener noreferrer">Our Youtube Channel</a>.
