@@ -144,7 +144,11 @@ module.exports = {
       "platform/packages/normal-module-override-webpack-plugin",
     ],
     "Release Notes": [
-      "platform/release/2-3-0",
+      "platform/release/2-4-4",
+      "platform/release/2-4-2",
+      "platform/release/2-4-0",
+      "platform/release/2-3-1",
+      "platform/release/2-3-0"
     ],
     Support: [
       "platform/support/contact",
