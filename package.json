@@ -1,6 +1,6 @@
 {
   "name": "falcon-platform-docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
@@ -10,8 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.55",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.55",
+    "@docusaurus/core": "^2.0.0-alpha.58",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.58",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

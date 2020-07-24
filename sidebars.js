@@ -45,7 +45,10 @@ module.exports = {
       "platform/client/static-files",
       "platform/client/browser-support",
     ],
-    "Falcon Server": ["platform/server", "platform/server/dynamic-routes"],
+    "Falcon Server": [
+      "platform/server",
+      "platform/server/dynamic-routes",
+    ],
     "Falcon Cloud": [
       "platform/cloud/about",
       "platform/cloud/technical",
@@ -143,9 +146,7 @@ module.exports = {
       "platform/packages/falcon-wordpress-api",
       "platform/packages/normal-module-override-webpack-plugin",
     ],
-    "Release Notes": [
-      "platform/release/2-3-0",
-    ],
+    "Release Notes": ["platform/release/2-3-0"],
     Support: [
       "platform/support/contact",
       {
