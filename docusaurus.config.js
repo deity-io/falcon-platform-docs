@@ -158,7 +158,6 @@ module.exports = {
     [
       "@docusaurus/plugin-pwa",
       {
-        debug: false,
         offlineModeActivationStrategies: ["always"],
         pwaHead: [
           {
