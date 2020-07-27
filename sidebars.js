@@ -45,7 +45,10 @@ module.exports = {
       "platform/client/static-files",
       "platform/client/browser-support",
     ],
-    "Falcon Server": ["platform/server", "platform/server/dynamic-routes"],
+    "Falcon Server": [
+      "platform/server",
+      "platform/server/dynamic-routes",
+    ],
     "Falcon Cloud": [
       "platform/cloud/about",
       "platform/cloud/technical",

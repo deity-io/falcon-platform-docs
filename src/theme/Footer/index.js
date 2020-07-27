@@ -14,6 +14,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 import Slack from "./../../components/Slack";
+import { Chat } from "./../../components/Intercom";
 import { registerServiceWorker } from "./../../components/ServiceWorker";
 
 function FooterLink({ to, href, label, ...props }) {
@@ -128,6 +129,7 @@ function Footer() {
           )}
         </div>
       </footer>
+      <Chat loadOnClick />
     </>
   );
 }
