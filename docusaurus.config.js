@@ -175,6 +175,11 @@ module.exports = {
             name: "theme-color",
             content: "#26642c",
           },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/logo-192.png',
+          },
         ],
       },
     ],
