@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   title: "DEITY Falcon",
@@ -176,9 +176,9 @@ module.exports = {
             content: "#26642c",
           },
           {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: '/img/logo-192.png',
+            tagName: "link",
+            rel: "apple-touch-icon",
+            href: "/img/logo-192.png",
           },
         ],
       },
