@@ -30,7 +30,7 @@ To test it's working run `dcloud`. You should list a list of available commands.
 
 ## 2. Logging in
 
-The next step is to log into [your cloud account](/docs/platform/cloud/account).
+The next step is to log into [your cloud account](account).
 
 From your terminal window run the login command.
 

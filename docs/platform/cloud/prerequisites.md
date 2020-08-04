@@ -7,7 +7,7 @@ sidebar_label: Prerequisites
 ## What you need before you start
 
 - A git repository pushed to <a href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub</a>, <a href="https://bitbucket.org/" target="_blank" rel="noreferrer noopener">BitBucket</a> or <a href="https://about.gitlab.com/" target="_blank" rel="noreferrer noopener">GitLab</a>.  This should contain a <a href="https://deity.io/falcon" target="_blank" rel="noreferrer noopener">Falcon site</a>.
-- A Falcon Platform account. Find out [how to set up an account](/docs/platform/cloud/account)
+- A Falcon Platform account. Find out [how to set up an account](account)
 
 ## Technical Requirements
 

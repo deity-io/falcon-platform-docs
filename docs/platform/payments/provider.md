@@ -150,4 +150,4 @@ const [ placeOrder ] = usePlaceOrder();
 
 In the `demo-v2` example project this is found in `client/src/pages/shop/Checkout/sections/PlaceOrderSection.js`.
 
-The param `payload` is passed from the `pay()` in your [payment component](/docs/platform/payments/ui).
+The param `payload` is passed from the `pay()` in your [payment component](ui).

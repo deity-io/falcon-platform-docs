@@ -7,7 +7,7 @@ and Falcon-Server applications.
 
 First, you need to configure such endpoint entries. If you were configuring ApiDataSources and
 Extensions in Falcon-Server previously - it won't be any different from that. Add the following configuration to
-your [Falcon-Server config](/docs/open-source/miscellaneous/config):
+your [Falcon-Server config](miscellaneous/config):
 
 ```json
 {

@@ -166,7 +166,7 @@ Once you have access to our packages you'll be able to create your app using `np
 
 The last step is to connect your app so it's being used by your Falcon Cloud account. If you visit the the `Falcon Client` tab you'll see information about **Authorising** Cloud to have access to your repository and adding a **Webhook** so cloud can listen for changes (so your Cloud instance knows when you push code).
 
-You can see detailed docs for this step [here](/docs/platform/getting-started/repository).
+You can see detailed docs for this step [here](/docs/platform/cloud/repository).
 
 ## 5. Local development
 

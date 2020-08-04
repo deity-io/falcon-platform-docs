@@ -77,6 +77,6 @@ Coming soon
 
 ## Setup Complete
 
-That's everything done. You're now ready to start using Deity Cloud. View the full list of `dcloud` [commands](/docs/platform/cloud/dcloud).
+That's everything done. You're now ready to start using Deity Cloud. View the full list of `dcloud` [commands](dcloud).
 
 Next step, [deploy](/docs/platform/deployment/overview) your code.

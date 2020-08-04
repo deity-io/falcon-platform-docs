@@ -6,10 +6,10 @@ sidebar_label: Changing the site logo
 
 
 Changing the site logo is probably one of the first things you will want to do, so we've created a step by step guide to doing it.
-We will base these changes on the [demo-v2 example](/docs/platform/getting-started/create#our-examples) client, but the same principles will apply regardless of specific implementation.
+We will base these changes on the [demo-v2 example](./../../getting-started/create#our-examples) client, but the same principles will apply regardless of specific implementation.
 
 ## The header logo
-The header logo uses your themes [icon component](/docs/platform/client/theming/icons) out of the box.  
+The header logo uses your themes [icon component](./../../client/theming/icons) out of the box.  
 
 **`client/src/styling/icons.js`**
 ```js

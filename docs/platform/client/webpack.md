@@ -27,7 +27,7 @@ module.exports = {
 - `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/open-source/falcon-client/internationalization#configuration)
 - `envToBuildIn` - (default: `[]`) an array of environment variable names which should be build in into bundle, [see the details](#environment-variables)
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
-- `moduleOverride` - (default: `{}`) array of module names to override, [see the details](/docs/platform/client/overrides)
+- `moduleOverride` - (default: `{}`) array of module names to override, [see the details](./overrides)
 
 Falcon Client provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
 
@@ -47,5 +47,5 @@ However, you can still modify Falcon Client defaults
 
 Checkout out our **cookbook** for examples of changing the build process.
 
-- [Adding a global SCSS file](/docs/platform/cookbook/client/scss-global)
-- [Adding Post CSS support](/docs/platform/cookbook/client/post-css-support)
+- [Adding a global SCSS file](../cookbook/client/scss-global])
+- [Adding Post CSS support](../cookbook/client/post-css-support)
