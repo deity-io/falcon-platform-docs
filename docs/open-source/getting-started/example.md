@@ -8,7 +8,7 @@ It uses [Falcon UI](https://github.com/deity-io/falcon/tree/master/packages/falc
 
 ## Quick Start
 
-The best place to start is to use [`create-falcon-app`](getting-started/installation).
+The best place to start is to use [`create-falcon-app`](installation).
 
 Or download the example [or clone the whole project](https://github.com/deity-io/falcon.git):
 

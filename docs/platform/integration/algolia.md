@@ -42,7 +42,7 @@ We are actively developing our Algolia integration and will adding new features 
 If you're using our example app, `demo-v2` most of the heavy lifting will be done for you and you'll only need to add a few configurations.
 
 **Prerequisites**
-You'll need an API attached to your shop extension so Algolia has a source for product data. Currently this only works with our [BigCommerce integration](bigcommerce). 
+You'll need an API attached to your shop extension so Algolia has a source for product data. Currently this only works with our [BigCommerce integration](bigcommerce/overview). 
 
 ### 1. Create an Algolia account
 
