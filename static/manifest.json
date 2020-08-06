@@ -1,0 +1,23 @@
+{
+  "short_name": "Falcon Docs",
+  "name": "Deity Falcon Platform Documentation",
+  "description": "Documentation & user guides for Falcon Platform",
+  "icons": [
+    {
+      "src": "/img/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#26642c"
+}

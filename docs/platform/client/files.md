@@ -79,7 +79,7 @@ This is the home to page & page specific components. You'll find most of the che
 This file exports SVG icons to be used throughout the site. 
 
 ### src/styling/theme.js
-This file contains your theme variables such as colors and spacing. [More information on theming](./theming). 
+This file contains your theme variables such as colors and spacing. [More information on theming](./theming/overview). 
 
 ### sw.js
 This is compiled into your sites service worker. You can add to this if you need custom service worker code.

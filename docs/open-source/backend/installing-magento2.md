@@ -56,7 +56,7 @@ bin/magento admin:user:create \
 
 
 Configure Falcon Server to connect to your Magento instance.
-You can do so by changing your [Falcon-Server config](miscellaneous/config).
+You can do so by changing your [Falcon-Server config](/docs/open-source/miscellaneous/config).
 
 > Note: Use your API admin user credentials that you've just created here
 

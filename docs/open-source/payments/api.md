@@ -13,7 +13,7 @@ DEITY Falcon provides `@deity/falcon-payment-plugin` package with the following 
 Every derived component from Payment Plugin Model will get the following props:
 
 - `config` - is an optional configuration object received from the Falcon-Server that may be required
-for a proper usage of a specific Payment Method (for example, [Adyen Credit Card plugin](payments/plugins#adyen-credit-card)
+for a proper usage of a specific Payment Method (for example, [Adyen Credit Card plugin](plugins#adyen-credit-card)
 requires a public client-side encryption key to be passed via this prop)
 - `onPaymentDetailsReady` - is a callback function with an optional `additionalData` argument to be passed to the `placeOrder`
 Mutation that may be required by the shop backend for a proper order placement (for example, Adyen Credit Card plugin requires
@@ -47,7 +47,7 @@ export class CustomnPayment extends PaymentPluginModel {
 The name of this component speaks for itself - it can be used whenever your payment does not require
 any frontend helpers for the submission.
 
-One of the examples of such a plugin could be [PayPal Express](payments/plugins#paypal-express)
+One of the examples of such a plugin could be [PayPal Express](plugins#paypal-express)
 payment method, when visitors do not have to enter any data on the Checkout page, they will be
 redirected to the PayPal log-in page to complete their payment after clicking on the "Place an order" button.
 
