@@ -5,19 +5,19 @@ sidebar_label: Overview
 enterprise_only: true
 ---
 
-Payment providers all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be as indiscriminate as possible.
+Payment service providers (PSPs) all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be as indiscriminate as possible.
 
 There are 3 main parts involved in the payment process:
 
-- A [Payment Provider](provider) registered in your server config
+- A [PSP](provider) registered in your server config
 - A [Payment UI](ui) that is mapped to a provider
-- Payment service provider API (Stripe, Braintree, PayPal etc.)
+- PSP API (Stripe, Braintree, PayPal etc.)
 
 ## Payment Flow Steps
 
 import HighlightFlag from '../../../src/components/HighlightFlag';
 
-1. <HighlightFlag text="Payment Provider" /> Account / API keys created
+1. <HighlightFlag text="PSP" /> Account / API keys created
 
 2. <HighlightFlag type="server" /> Payment provider created and configured in config files.
 
@@ -29,7 +29,7 @@ import HighlightFlag from '../../../src/components/HighlightFlag';
 
 6. <HighlightFlag type="server" /> Triggers `initiate` method in payment provider. Authentication requested
 
-7. <HighlightFlag text="Payment Provider" /> Token / Auth info returned
+7. <HighlightFlag text="PSP" /> Token / Auth info returned
 
 8. <HighlightFlag type="server" /> PSP auth pushed to client side component
 
@@ -37,7 +37,7 @@ import HighlightFlag from '../../../src/components/HighlightFlag';
 
 10. <HighlightFlag type="server" /> Triggers `validate` method in payment provider
 
-11. <HighlightFlag text="Payment Provider" /> Payment handled
+11. <HighlightFlag text="PSP" /> Payment handled
 
 12. <HighlightFlag type="server" /> Payment response handled
 
