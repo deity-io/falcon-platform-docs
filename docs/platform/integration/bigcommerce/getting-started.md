@@ -183,7 +183,7 @@ Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` wi
 }
 ```
 
-## 6. Faclon Cloud + Deployments
+## 6. Falcon Cloud + Deployments
 
 Falcon Cloud comes as part of Falcon Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/docs/platform/cloud/installation).  You'll need an **access token** to log into using DCloud. This can be found in the `Falcon Server` tab.
 
