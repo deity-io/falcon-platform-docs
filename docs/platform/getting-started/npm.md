@@ -37,6 +37,6 @@ dcloud build:var NPM_TOKEN "<YOUR_TOKEN>"
 4. To use the dcloud build variable, add a `.npmrc` file to the root folder of your project application (e.g. `client/.npmrc` and `server/.npmrc`) with the following content:
 
 ```javascript
-//npm.deity.io/:_authToken=${NPM_TOKEN}
 @deity:registry=https://npm.deity.io/
+//npm.deity.io/:_authToken=<YOUR_TOKEN>
 ```
