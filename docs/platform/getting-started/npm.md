@@ -31,7 +31,7 @@ If you're using Deity Cloud and are logged into `dcloud` you can run `dcloud pro
 3. To let Falcon Cloud use your NPM token for the deployments and keep your token outside of GIT, run the following command in your terminal.
 
 ```javascript
-dcloud build:var NPM_TOKEN "<YOUR_TOKEN>"
+dcloud project:var:set NPM_TOKEN "<YOUR_TOKEN>"
 ```
 
 4. To use the dcloud build variable, add a `.npmrc` file to the root folder of your project application (e.g. `client/.npmrc` and `server/.npmrc`) with the following content:
