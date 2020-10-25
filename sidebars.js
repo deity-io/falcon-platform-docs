@@ -67,6 +67,7 @@ module.exports = {
     Logging: ["platform/logging/overview"],
     Payments: [
       "platform/payments/overview",
+      "platform/payments/falcon-payments",
       "platform/payments/provider",
       "platform/payments/ui",
     ],

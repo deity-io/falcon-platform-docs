@@ -1,16 +1,23 @@
 ---
-id: overview
-title: Overview
-sidebar_label: Overview
+id: falcon-payments
+title: Falcon Payments
+sidebar_label: Falcon Payments
 enterprise_only: true
 ---
 
-Payments can be handled in 2 ways, either via your shop or using our payments package, [`@deity/falcon-payments`](falcon-payments).
+Payments can be handled in 2 ways, either via your shop or using our payments package, `falcon-payments`. We **highly recommend** using `falcon-payments` as this will provide the most flexibility and are continuously adding support for new payment providers.
 
-We **highly recommend** using [`@deity/falcon-payments`](falcon-payments) as this will provide the most flexibility and are continuously adding support for new payment providers.
+<img src="/img/docs/platform/payments/payment-providers.png" alt="Falcon Payment providers diagram" width="600" style={{ marginBottom: 20 }} />
 
+Payment service providers (PSPs) all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be as indiscriminate as possible.
 
-## Basic Payment Flow
+There are 3 main parts involved in the payment process:
+
+- A [PSP](provider) registered in your server config
+- A [Payment UI](ui) that is mapped to a provider
+- PSP API (Stripe, Braintree, PayPal etc.)
+
+## Payment Flow Steps
 
 import HighlightFlag from '../../../src/components/HighlightFlag';
 
@@ -43,3 +50,9 @@ import HighlightFlag from '../../../src/components/HighlightFlag';
 This is a general overview of how payments work in the Falcon Platform checkout. All payment service providers are different, as are all implementations so this may vary slightly for you.
 
 <img src="/img/docs/platform/payment-flow-core.jpg" alt="Payment flow diagram" />
+
+## Examples
+
+This example contains a step by step guide to adding a new payment method.
+
+- [Braintree Payments](/docs/platform/cookbook/integrations/braintree)
