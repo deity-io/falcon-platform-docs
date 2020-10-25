@@ -107,6 +107,25 @@ export const icons = {
 
 ```
 
+
+<details>
+<summary>Using a component as an icon</summary>
+It's also possible to use images as icons, or any other component.
+
+```js
+...
+export const icons = {
+    ...
+    newIcon:  {
+        icon: props => <img {...}/>,
+        stroke: 'none'
+    }
+    ...
+}
+```
+
+</details>
+
 ## 3. Use your icon
 
 The last step is actually using your icon. Open up the component you want to add it to, import it and let it know which icon to display.
@@ -141,4 +160,3 @@ const YourComponent = () => (
 
 ## 4. Done
 That's it, you've added a new icon.
-

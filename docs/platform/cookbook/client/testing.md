@@ -237,7 +237,7 @@ describe('<Banner />', () => {
 
 A few things to note here are the use of [`act`](https://reactjs.org/docs/test-utils.html#act) and [`waait`](https://github.com/wesbos/waait).
 
-`waiit` resolves a promise after a set timeout. This allows us to wait for the data to be fetched correctly so we don't get our loading state.
+`waait` resolves a promise after a set timeout. This allows us to wait for the data to be fetched correctly so we don't get our loading state.
 
 `act` is required when a components state changes / re-render occurs. Without this your test will work but will throw a horrible warning.
 
