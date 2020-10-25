@@ -5,54 +5,262 @@ sidebar_label: Falcon Payments
 enterprise_only: true
 ---
 
-Payments can be handled in 2 ways, either via your shop or using our payments package, `falcon-payments`. We **highly recommend** using `falcon-payments` as this will provide the most flexibility and are continuously adding support for new payment providers.
+Falcon Payments package is designed to make integrating with new payment providers clear and simple.
+
+We currenlty have integrations with <a href="https://www.mollie.com/" target="_blank" rel="noreferrer noopener">Mollie</a> &amp; <a href="https://stripe.com/" target="_blank" rel="noreferrer noopener">Stripe</a>, more integrations will be added soon.
 
 <img src="/img/docs/platform/payments/payment-providers.png" alt="Falcon Payment providers diagram" width="600" style={{ marginBottom: 20 }} />
 
-Payment service providers (PSPs) all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be as indiscriminate as possible.
+## Falcon Payments Packages
 
-There are 3 main parts involved in the payment process:
+- `@deity/falcon-payments` - The main payments package used within Falcon Server
+- `@deity/falcon-payments-endpoints` - This package adds endoiint routing for `@deity/falcon-payments`, used largely for payment webhooks
+- `@deity/falcon-payments-env` - This package provides types and utility methods for `@deity/falcon-payments`
+- `@deity/falcon-payments-plain` - This package provides a wrapper for simple payment methods (e.g. cash on delivery)
+- `@deity/falcon-payments-stripe` - This package is the bridge between the Stripe API and `@deity/falcon-payments`
+- `@deity/falcon-payments-mollie` - This package is the bridge between the Mollie API and `@deity/falcon-payments`
 
-- A [PSP](provider) registered in your server config
-- A [Payment UI](ui) that is mapped to a provider
-- PSP API (Stripe, Braintree, PayPal etc.)
 
-## Payment Flow Steps
+## Payment Flow Overview
 
 import HighlightFlag from '../../../src/components/HighlightFlag';
 
 1. <HighlightFlag text="PSP" /> Account / API keys created
 
-2. <HighlightFlag type="server" /> Payment provider created and configured in config files.
+2. <HighlightFlag type="server" /> Payment provider created and configured in Falcon config files.
 
-3. <HighlightFlag type="client" /> Client side UI component created (payment form)
+3. <HighlightFlag type="client" /> Customer goes to payment method selection
 
-4. <HighlightFlag type="client" /> Client side component mapped to provider
+4. <HighlightFlag type="server" /> `getMethodList` triggered and returns list of methods
 
-5. <HighlightFlag type="client" /> Client side component initiated
+5. <HighlightFlag type="client" /> Method selected
 
-6. <HighlightFlag type="server" /> Triggers `initiate` method in payment provider. Authentication requested
+6. <HighlightFlag type="client" /> Client side component initiated
 
-7. <HighlightFlag text="PSP" /> Token / Auth info returned
+7. <HighlightFlag type="server" /> Triggers `loadMethod` method in payment provider. Authentication requested
 
-8. <HighlightFlag type="server" /> PSP auth pushed to client side component
+8. <HighlightFlag text="PSP" /> Token / Auth info returned
 
-9. <HighlightFlag type="client" /> User triggers payment (fills in form and submits)
+9. <HighlightFlag type="server" /> PSP auth pushed to client side component
 
-10. <HighlightFlag type="server" /> Triggers `validate` method in payment provider
+10. <HighlightFlag type="client" /> User triggers payment (fills in form and submits)
 
-11. <HighlightFlag text="PSP" /> Payment handled
+11. <HighlightFlag type="server" /> Triggers `validate` method in payment provider
 
-12. <HighlightFlag type="server" /> Payment response handled
+12. <HighlightFlag text="PSP" /> Payment handled
 
-## Payment Flow Diagram
+13. <HighlightFlag type="server" /> Payment response handled (either as success or returns a redirect link (used for 3D secure etc))
 
-This is a general overview of how payments work in the Falcon Platform checkout. All payment service providers are different, as are all implementations so this may vary slightly for you.
 
-<img src="/img/docs/platform/payment-flow-core.jpg" alt="Payment flow diagram" />
+## Payment Provider Interface
 
-## Examples
+Every provider that runs through Falcon Paymemnts requires the following methods
 
-This example contains a step by step guide to adding a new payment method.
+```ts
+export interface ProviderInterface {
+  getAppliedSurcharge(method: string, inquiry: PaymentMethodSurchargeInquiry): null | Surcharge;
+  getMethodList(payload: PaymentLoadPayload): Promise<PaymentMethodList>;
+  loadMethod(method: string, payload: PaymentLoadPayload): Promise<PaymentMethodInstance>;
+  validate(payload: PaymentValidationPayload, method?: string): Promise<PaymentValidationResult>;
+}
+```
 
-- [Braintree Payments](/docs/platform/cookbook/integrations/braintree)
+### Get surchanges
+`getAppliedSurcharge`
+
+This method gets any surcharges applied for the payment method. 
+
+#### Parameters
+- method (`string`) - payment method code (e.g. paypal or creditcard)
+- inquiry (`PaymentMethodSurchargeInquiry`) - { country: string; currency: string; total: number; }
+
+#### Returns
+This method with returns `null` or `Surcharge`
+
+```ts
+type Surcharge = {
+  /** Total amount of the surcharge */
+  amount: number;
+  /** Fixed amount of the surcharge */
+  fixed?: number;
+  /** Percentage value of the surcharge */
+  percentage?: number;
+};
+```
+
+### Get methods
+`getMethodList`
+
+This method get the list of available payment methods from a provider.
+
+#### Parameters
+- payload (`PaymentLoadPayload`) 
+
+```ts
+type PaymentLoadPayload = {
+  /** Order/cart ID */
+  id: string;
+  /** Cart grand total (excluding the payment surcharge) */
+  total: number;
+  /** Order currency */
+  currency: string;
+  /** Order Billing email */
+  email: string;
+  /** Billing country code used for billing, in [ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format */
+  country: string;
+  /** Customer ID to be attached to the Payment Transaction */
+  customerId?: string;
+  /** Extra configuration data related to the payment method */
+  data?: object;
+};
+```
+
+#### Returns
+This method returns an array of payment methods (`PaymentMethodList`)
+
+```ts
+
+type PaymentMethodList = Array<PaymentMethodInstance>;
+
+type PaymentMethodInstance = {
+  /**
+   * The name of the payment service provider
+   */
+  provider: string;
+  /**
+   * A sub method identifier of the payment service
+   */
+  method: string;
+  /**
+   * Additional configuration
+   */
+  config?: {[key: string]: any};
+  /**
+   * A surcharge for this payment method for the specified country and currency
+   */
+  surcharge?: Surcharge;
+};
+```
+
+### Load method
+`loadMethod`
+
+Load method is used to pass additional data from the payment provider to the client. Often this is authentication to allow the client to load some form of UI.
+
+#### Parameters
+
+- method (`string`)
+- payload (`PaymentLoadPayload`)
+
+#### Returns
+
+- `PaymentMethodInstance`
+
+```ts
+type PaymentMethodInstance = {
+  /**
+   * The name of the payment service provider
+   */
+  provider: string;
+  /**
+   * A sub method identifier of the payment service
+   */
+  method: string;
+  /**
+   * Additional configuration
+   */
+  config?: {[key: string]: any};
+  /**
+   * A surcharge for this payment method for the specified country and currency
+   */
+  surcharge?: Surcharge;
+};
+
+```
+
+### Validate Payment
+`validate`
+
+The validate method is called when the customer places an order (usually in the final step of a checkout). This method passes the order data to the payment provider and returns information about to proceed and make payment.
+
+#### Parameters
+
+- method (`string`)
+- payload (`PaymentValidationPayload`)
+
+```ts
+type PaymentValidationPayload<T = object> = {
+  /** The user's billing address */
+  billingAddress: PaymentAddress;
+  /** The user's shipment address */
+  shippingAddress: PaymentAddress;
+  /** The user's locale */
+  locale: string;
+  /** The total payment amount */
+  total: TotalSummary;
+  /** Cart (product) items */
+  items: PaymentProduct[];
+  /** An optional order reference number, will be equivalent to id if left out */
+  orderReference?: string;
+  /** Additional payment data - usually for data that is specific to that provider */
+  data?: T;
+} & Pick<PaymentLoadPayload, 'id' | 'customerId' | 'currency' | 'email'> ;
+
+```
+
+#### Returns
+
+This method returns `PaymentValidationResult`. It has an optional parameter `intermediateStep`, this indicates if another step is needed (e.g. redirect to another page or make another request).
+
+```ts
+type PaymentValidationResult = {
+  /**
+   * [optional] External ID of the transaction to be stored on the shop backend
+   */
+  id?: string;
+  /**
+   * An additional step to be performed at the frontend
+   */
+  intermediateStep?: {
+    /**
+     * Issuer URL (target URL) for redirection
+     */
+    url: string;
+    /**
+     * HTTP method (GET or POST, get represents user redirect,
+     * post represents sending data on the user's behalf)
+     */
+    method: 'GET' | 'POST';
+    /**
+     * The fields to send
+     */
+    fields?: { name: string; value?: string }[];
+  };
+};
+```
+
+## Payment Provider Webhooks
+
+There is 1 method for webhooks triggered by your payment provider and another method for webhooks triggered by your shop:
+
+### Payment Provider Webhook
+
+```ts
+export interface PaymentWebhookHandlerInterface {
+  /** Handling the payment status update to be validated & verified, must return a result to be sent to the shop backend */
+  onPaymentUpdated(ctx: Context): Promise<PaymentWebhookResult | void>;
+}
+```
+
+This webhook is sent to your payment provider and is generally called with changes to a payment occur. This webhook can then send data to your shop accordingly.
+(Payment Provider -> Falcon Payments -> Shop)
+
+### Shop Webhook
+```ts
+export interface OrderUpdateHandlerInterface {
+  /** Handling the order status update to be sent to the PSP (like shipments or refunds) */
+  onOrderUpdated(payload: OrderWebhookResult): Promise<boolean>;
+}
+```
+This webhook is triggered by updates in your shop. Generally when an order is updated and you want to updated the payment provider.
+(Shop -> Falcon Payments -> Falcon Payments)
