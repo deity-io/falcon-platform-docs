@@ -67,8 +67,16 @@ module.exports = {
     Logging: ["platform/logging/overview"],
     Payments: [
       "platform/payments/overview",
-      "platform/payments/falcon-payments",
-      "platform/payments/provider",
+      {
+        type: "category",
+        label: "Falcon Payments",
+        items: [
+          "platform/payments/falcon-payments/overview",
+          "platform/payments/falcon-payments/packages",
+          "platform/payments/falcon-payments/provider",
+          "platform/payments/falcon-payments/getting-started",
+        ],
+      },
       "platform/payments/ui",
     ],
     Integrations: [

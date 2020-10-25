@@ -1,56 +1,11 @@
 ---
-id: falcon-payments
-title: Falcon Payments
-sidebar_label: Falcon Payments
+id: provider
+title: Falcon Payments Providers
+sidebar_label: Providers
 enterprise_only: true
 ---
 
-Falcon Payments package is designed to make integrating with new payment providers clear and simple.
-
-We currenlty have integrations with <a href="https://www.mollie.com/" target="_blank" rel="noreferrer noopener">Mollie</a> &amp; <a href="https://stripe.com/" target="_blank" rel="noreferrer noopener">Stripe</a>, more integrations will be added soon.
-
-<img src="/img/docs/platform/payments/payment-providers.png" alt="Falcon Payment providers diagram" width="600" style={{ marginBottom: 20 }} />
-
-## Falcon Payments Packages
-
-- `@deity/falcon-payments` - The main payments package used within Falcon Server
-- `@deity/falcon-payments-endpoints` - This package adds endoiint routing for `@deity/falcon-payments`, used largely for payment webhooks
-- `@deity/falcon-payments-env` - This package provides types and utility methods for `@deity/falcon-payments`
-- `@deity/falcon-payments-plain` - This package provides a wrapper for simple payment methods (e.g. cash on delivery)
-- `@deity/falcon-payments-stripe` - This package is the bridge between the Stripe API and `@deity/falcon-payments`
-- `@deity/falcon-payments-mollie` - This package is the bridge between the Mollie API and `@deity/falcon-payments`
-
-
-## Payment Flow Overview
-
-import HighlightFlag from '../../../src/components/HighlightFlag';
-
-1. <HighlightFlag text="PSP" /> Account / API keys created
-
-2. <HighlightFlag type="server" /> Payment provider created and configured in Falcon config files.
-
-3. <HighlightFlag type="client" /> Customer goes to payment method selection
-
-4. <HighlightFlag type="server" /> `getMethodList` triggered and returns list of methods
-
-5. <HighlightFlag type="client" /> Method selected
-
-6. <HighlightFlag type="client" /> Client side component initiated
-
-7. <HighlightFlag type="server" /> Triggers `loadMethod` method in payment provider. Authentication requested
-
-8. <HighlightFlag text="PSP" /> Token / Auth info returned
-
-9. <HighlightFlag type="server" /> PSP auth pushed to client side component
-
-10. <HighlightFlag type="client" /> User triggers payment (fills in form and submits)
-
-11. <HighlightFlag type="server" /> Triggers `validate` method in payment provider
-
-12. <HighlightFlag text="PSP" /> Payment handled
-
-13. <HighlightFlag type="server" /> Payment response handled (either as success or returns a redirect link (used for 3D secure etc))
-
+Each payment provider should have it's own package. We created some simple `interfaces` to make integration easy!
 
 ## Payment Provider Interface
 
@@ -264,8 +219,3 @@ export interface OrderUpdateHandlerInterface {
 ```
 This webhook is triggered by updates in your shop. Generally when an order is updated and you want to updated the payment provider.
 (Shop -> Falcon Payments -> Falcon Payments)
-
-
-## Getting Started / configuration
-
-If you want to use an existing payment integration then setup is as easy as creating an account and Falcon configuration.
