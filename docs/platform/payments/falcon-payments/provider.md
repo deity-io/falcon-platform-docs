@@ -23,7 +23,7 @@ export interface ProviderInterface {
 ### Get surchanges
 `getAppliedSurcharge`
 
-This method gets any surcharges applied for the payment method. 
+This method gets any surcharges applied for the payment method. To learn more about surcharges please see our [features documentation](features#surcharges).
 
 #### Parameters
 - method (`string`) - payment method code (e.g. paypal or creditcard)

@@ -74,6 +74,7 @@ module.exports = {
           "platform/payments/falcon-payments/overview",
           "platform/payments/falcon-payments/packages",
           "platform/payments/falcon-payments/provider",
+          "platform/payments/falcon-payments/features",
           "platform/payments/falcon-payments/getting-started",
         ],
       },
