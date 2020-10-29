@@ -79,7 +79,6 @@ module.exports = {
           "platform/payments/falcon-payments/integration",
         ],
       },
-      "platform/payments/ui",
     ],
     Integrations: [
       "platform/integration/examples",

@@ -172,6 +172,64 @@ Each method accepts 3 arguments:
 
 ### Overview
 
-Some payment mehtods require no interaction with a payment provider. These are still processed through Falcon Payments but will not be connected to a provider (e.g. Mollie / Stripe). Examples of these methods are **cash on delivery** or **money order**
+Some payment mehtods require no interaction with a payment provider for processing. These are still processed through Falcon Payments but will not be connected to a provider (e.g. Mollie / Stripe). Examples of these methods are **cash on delivery** or **money order**.  We have a simple provider package set up to handle these type of payments (`@deity/falcon-payments-plain`). 
 
 ### Configuring offline payments
+
+When a payment provider returns methods or loads a method data one of the props available is `isOffline`. If this is passed the shop API may choose to handle the payment slightly differently.
+
+An example can be seen below:
+
+**`@deity/falcon-payments-plain/src/index.ts`**
+
+```js
+import {
+  PaymentProvider,
+  ProviderInterface,
+  PaymentLoadPayload,
+  PaymentValidationPayload,
+  PaymentValidationResult,
+  PaymentMethodInstance,
+  PaymentMethodList,
+  ProviderConfig
+} from '@deity/falcon-payments-env';
+
+declare type PlainConfig = ProviderConfig & {
+  methodCode?: string;
+};
+
+export default class PlainPayment extends PaymentProvider<PlainConfig> implements ProviderInterface {
+  async getMethodList(payload: PaymentLoadPayload): Promise<PaymentMethodList> {
+    const methodCode = this.config.methodCode || 'cash';
+    return [
+      {
+        provider: this.providerCode,
+        method: methodCode,
+        isOffline: true, // Offline set to true
+        surcharge: this.getAppliedSurcharge(methodCode, {
+          country: payload.country,
+          currency: payload.currency,
+          total: payload.total
+        })
+      }
+    ];
+  }
+
+  async loadMethod(method: string, payload: PaymentLoadPayload): Promise<PaymentMethodInstance> {
+    return {
+      provider: this.providerCode,
+      method,
+      isOffline: true, // Offline set to true
+      surcharge: this.getAppliedSurcharge(method, {
+        country: payload.country,
+        currency: payload.currency,
+        total: payload.total
+      })
+    };
+  }
+
+  async validate(payload: PaymentValidationPayload): Promise<PaymentValidationResult> {
+    return {};
+  }
+}
+```
