@@ -183,3 +183,80 @@ You'll notice we have 2 additonal components also loaded:
 The UI components for each method can vary, some being very simple and some needing additional info (e.g. a credit card form).
 
 ### Simple UI Example
+
+The `Payment.UI` can return `null` if you don't need to display anything other than the name of the method.
+
+In this example below we display a simple line of text informing the customer they'll be redirected to complete the payment.
+
+It's impoertant that the `pay` method is passed to the children of `Payment`.
+
+```js
+import React, { useCallback } from 'react';
+import { T } from '@deity/falcon-i18n';
+import { Text, FlexLayout, withTheme } from '@deity/falcon-ui';
+
+const Payment = withTheme(({ children }) => {
+  const pay = useCallback(() => Promise.resolve({ id: undefined }), []);
+  return children(pay, { loading: false });
+});
+
+Payment.UI = () => (
+  <FlexLayout as="section" my="xs" css={{ width: '100%' }}>
+    <Text mt="xs" color="secondaryText" fontWeight="regular">
+      <T id="payment.redirect.default" />
+    </Text>
+  </FlexLayout>
+);
+
+export default Payment;
+```
+
+
+### Complex UI Example
+
+This example is taken from our `Stripe` credit card form. We wrap the entire form in `StripePlugin`, this loads the various scripts that are needed to load the Stripe card fields. You'll notice we pass `prop` to `StripePlugin`. These props are passed from `Falcon Payment` and depending on your method are likely to contain API keys needed to load the UI.
+
+```js
+import React, { useState } from 'react';
+import { StripePlugin, CardElement } from '@deity/falcon-stripe-plugin';
+import { Box } from '@deity/falcon-ui';
+
+
+const Payment = ({ children, ...props }) => {
+  const [loading, setLoading] = useState(false);
+  const fn = () => {
+    setLoading(true);
+    return Promise.resolve();
+  };
+
+  return (
+    <StripePlugin {...props}>
+      {pay =>
+        children(
+          () =>
+            fn()
+              .then(() => pay())
+              .then(x => {
+                setLoading(false);
+                return x;
+              })
+              .catch(x => {
+                setLoading(false);
+                return Promise.reject(x);
+              }),
+          { loading }
+        )
+      }
+    </StripePlugin>
+  );
+};
+Payment.UI = () => (
+  <Box>
+    {/* https://stripe.com/docs/stripe-js/reference#element-options */}
+    <CardElement hidePostalCode />
+  </Box>
+);
+
+export default Payment;
+
+```

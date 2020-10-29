@@ -166,3 +166,12 @@ Each method accepts 3 arguments:
 - `enabled` to enable or disable the method globally. This will override any configuration in the `countries` argument.
 - `surcharge` to configure surcharges (explained above).
 - `countries` this is an array of country codes the method is available in. If empty the method will be enabled for all countries.
+
+
+## Offline Payments
+
+### Overview
+
+Some payment mehtods require no interaction with a payment provider. These are still processed through Falcon Payments but will not be connected to a provider (e.g. Mollie / Stripe). Examples of these methods are **cash on delivery** or **money order**
+
+### Configuring offline payments
