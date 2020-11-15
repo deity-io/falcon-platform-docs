@@ -2,7 +2,7 @@
 title: Data Management
 ---
 
-This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](/docs/open-source/falcon-client/local-state-management).
+This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](/docs/2019/falcon-client/local-state-management).
 
 Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](../getting-started/installation#create-falcon-app) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
 
@@ -16,7 +16,7 @@ Falcon extends and is compatible with Apollo's standard `Query` and `Mutation` c
 
 ## Falcon's additional components
 
-Falcon comes with a few pre-defined queries and mutations when you create a project with [`create-falcon-app`](../getting-started/installation#create-falcon-app). These are primarily from our [`@deity/falcon-front-kit`](https://github.com/deity-io/falcon/tree/master/packages/falcon-front-kit) package and can be of great use when starting out with an eCommerce application with an integrated blog.
+Falcon comes with a few pre-defined queries and mutations when you create a project with [`create-falcon-app`](../getting-started/installation#create-falcon-app). These are primarily from our `@deity/falcon-front-kit` package and can be of great use when starting out with an eCommerce application with an integrated blog.
 
 Something you will see in our optional components is a custom `Query` component with the query added as a default prop. This can come in handy if you use the same query in multiple files.
 
@@ -28,7 +28,7 @@ export class CustomerQuery extends Query {
 }
 ```
 
-You can also use our wrapper `Query` component, which extends Apollo's `Query` component. The wrapper component will handle loading and error states for you. If you're curious how this works, you can check out the source code [here](https://github.com/deity-io/falcon/blob/v1.3/packages/falcon-ecommerce-uikit/src/Query/Query.tsx). You can use our `Query` component in the same way you would use the Apollo Client version.
+You can also use our wrapper `Query` component, which extends Apollo's `Query` component. The wrapper component will handle loading and error states for you. You can use our `Query` component in the same way you would use the Apollo Client version.
 
 ```jsx
 import { GET_BLOG_POST } from "./my-queries";
@@ -269,7 +269,7 @@ In the render prop function, we can destructure `loading` and `error` properties
 
 ## Local state management
 
-Continue reading about managing your local state [here](/docs/open-source/falcon-client/local-state-management).
+Continue reading about managing your local state [here](/docs/2019/falcon-client/local-state-management).
 
 ## Additional resources
 
