@@ -68,12 +68,6 @@
   width: 100%;
 }
 
-@media screen and (min-width: 966px) {
-  .aboutColumn {
-    width: 50%;
-  }
-}
-
 .padded {
   padding: 1rem;
 }
