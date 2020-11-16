@@ -148,7 +148,6 @@ module.exports = {
     ],
     Support: [
       'platform/support/contact',
-      'platform/support/migration-from-os',
       {
         type: 'category',
         label: 'FAQs',
