@@ -10,9 +10,10 @@ The migration involves several steps for your project to migrate to GitHub packa
 
 ### 1. Generate your github token
 
-Log in into github with the account that has access to Falcon. If you don't already have access please get in touch with us and we'll give it to you and your team. Once you are logged in, go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and press the "Generate new token" button. Add a suitable name and select the `read:packages` scope, then click "Generate token" at the bottom.
+Log in into github with the account that has access to Falcon. If you don't already have access please get in touch for more information.
+Once you are logged in, go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and press the "Generate new token" button. Add a suitable name and select the `read:packages` scope, then click "Generate token" at the bottom.
 
-Next, copy the token and put it in your environment variables (name it `GITHUB_TOKEN`) on the computer that will need to install Falcon (the same applies to CI/CD)  
+Next, copy the token and put it in your environment variables (name it `GITHUB_TOKEN`) on the computer that will need to install Falcon (the same applies to CI/CD)
 
 ### 2. Configure your npm to correctly access the packages repository
 
@@ -23,11 +24,11 @@ In order to tell NPM or Yarn to use a different registry to get Falcon packages 
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
-> Note: if you already have such file in your repository then you can add above lines to the existing file 
+> Note: if you already have such file in your repository then you can add above lines to the existing file
 
-### 3. Change the dependencies 
+### 3. Change the dependencies
 
-Run `npx fix-falcon-refs` inside your the root folder of your project  to fix the Falcon references from `@deity` to `@deity-io`. Next run `yarn install` in both `client` and `server` folders.
+Run `npx fix-falcon-refs` inside your the root folder of your project to fix the Falcon references from `@deity` to `@deity-io`. Next run `yarn install` in both `client` and `server` folders.
 
 ## Steps for migrating CI/CD
 
