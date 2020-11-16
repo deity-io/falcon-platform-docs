@@ -193,29 +193,3 @@ type PaymentValidationResult = {
   };
 };
 ```
-
-## Payment Provider Webhooks
-
-There is 1 method for webhooks triggered by your payment provider and another method for webhooks triggered by your shop:
-
-### Payment Provider Webhook
-
-```ts
-export interface PaymentWebhookHandlerInterface {
-  /** Handling the payment status update to be validated & verified, must return a result to be sent to the shop backend */
-  onPaymentUpdated(ctx: Context): Promise<PaymentWebhookResult | void>;
-}
-```
-
-This webhook is sent to your payment provider and is generally called with changes to a payment occur. This webhook can then send data to your shop accordingly.
-(Payment Provider -> Falcon Payments -> Shop)
-
-### Shop Webhook
-```ts
-export interface OrderUpdateHandlerInterface {
-  /** Handling the order status update to be sent to the PSP (like shipments or refunds) */
-  onOrderUpdated(payload: OrderWebhookResult): Promise<boolean>;
-}
-```
-This webhook is triggered by updates in your shop. Generally when an order is updated and you want to updated the payment provider.
-(Shop -> Falcon Payments -> Falcon Payments)
