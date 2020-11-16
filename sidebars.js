@@ -166,41 +166,37 @@ module.exports = {
   },
   falconOpenSourceSidebar: {
     'Getting Started': [
-      'open-source/getting-started/intro',
-      'open-source/getting-started/requirements',
-      'open-source/getting-started/installation',
-      'open-source/getting-started/project-overview',
-      'open-source/getting-started/example'
+      '2019/getting-started/intro',
+      '2019/getting-started/requirements',
+      '2019/getting-started/installation',
+      '2019/getting-started/project-overview',
+      '2019/getting-started/example'
     ],
     'Falcon Client': [
-      'open-source/falcon-client/basics',
-      'open-source/falcon-client/configurations',
-      'open-source/falcon-client/code-splitting',
-      'open-source/falcon-client/data-management',
-      'open-source/falcon-client/local-state-management',
-      'open-source/falcon-client/internationalization',
-      'open-source/falcon-client/falcon-ui',
-      'open-source/falcon-client/search-and-filtering'
+      '2019/falcon-client/basics',
+      '2019/falcon-client/configurations',
+      '2019/falcon-client/code-splitting',
+      '2019/falcon-client/data-management',
+      '2019/falcon-client/local-state-management',
+      '2019/falcon-client/internationalization',
+      '2019/falcon-client/falcon-ui',
+      '2019/falcon-client/search-and-filtering'
     ],
     'Falcon Server': [
-      'open-source/falcon-server/basics',
-      'open-source/falcon-server/schema-stitching',
-      'open-source/falcon-server/extensions',
-      'open-source/falcon-server/api-providers',
-      'open-source/falcon-server/endpoints',
-      'open-source/falcon-server/caching',
-      'open-source/falcon-server/falcon-server-env',
-      'open-source/falcon-server/falcon-server-api',
-      'open-source/falcon-server/customizing-extension-api'
+      '2019/falcon-server/basics',
+      '2019/falcon-server/schema-stitching',
+      '2019/falcon-server/extensions',
+      '2019/falcon-server/api-providers',
+      '2019/falcon-server/endpoints',
+      '2019/falcon-server/caching',
+      '2019/falcon-server/falcon-server-env',
+      '2019/falcon-server/falcon-server-api',
+      '2019/falcon-server/customizing-extension-api'
     ],
-    Payments: ['open-source/payments/intro', 'open-source/payments/api', 'open-source/payments/plugins'],
-    Backend: ['open-source/backend/installing-magento2', 'open-source/backend/installing-wordpress'],
-    Miscellaneous: ['open-source/miscellaneous/falcon-logger', 'open-source/miscellaneous/config'],
-    Deployment: ['open-source/deployment/intro'],
-    Support: [
-      'open-source/support/troubleshooting',
-      'open-source/support/flowcharts',
-      'open-source/support/migration-from-npmjs'
-    ]
+    Payments: ['2019/payments/intro', '2019/payments/api', '2019/payments/plugins'],
+    Backend: ['2019/backend/installing-magento2', '2019/backend/installing-wordpress'],
+    Miscellaneous: ['2019/miscellaneous/falcon-logger', '2019/miscellaneous/config'],
+    Deployment: ['2019/deployment/intro'],
+    Support: ['2019/support/troubleshooting', '2019/support/flowcharts', '2019/support/migration-from-npmjs']
   }
 };

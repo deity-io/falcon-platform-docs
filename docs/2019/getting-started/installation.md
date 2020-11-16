@@ -9,7 +9,7 @@ There are 2 possible ways of installing DEITY Falcon (depends on what you want t
 
 ## Create Falcon App (CLI tool)
 
-This CLI tool helps you to create your application based on [DEITY Falcon](https://github.com/deity-io/falcon) with just one command.
+This CLI tool helps you to create your application based on DEITY Falcon with just one command.
 
 ## TL;DR
 
@@ -100,7 +100,7 @@ npm start # or yarn start
 
 ### Selecting the template for your project during generation
 
-Currently we provide just one template for the generator which delivers basic features of shop and blog (the template itself is called [shop-with-blog](https://github.com/deity-io/falcon/tree/master/examples/shop-with-blog).
+Currently we provide just one template for the generator which delivers basic features of shop and blog (the template itself is called `shop-with-blog`.
 
 In the future we'll provide more templates that can be selected with an `--example` option. Full command that uses `shop-with-blog`  in that case will be as following:
 
@@ -117,7 +117,7 @@ By default the `shop-with-blog` example uses demo Magento 2 and WordPress server
 #### Magento 2
 
 If you want to connect the generated app to your own Magento 2 backend you will need to install the
-[Falcon Magento2 module](https://github.com/deity-io/falcon-magento2-module) which delivers REST endpoints required
+Falcon Magento2 module which delivers REST endpoints required
 by DEITY Falcon and change the [configuration file of your Falcon-Server](../miscellaneous/config)
 to point the application to the correct url.
 
@@ -126,43 +126,7 @@ See [Installing Magento 2 Module](../backend/installing-magento2) for more.
 #### Wordpress
 
 Also if you want to connect a DEITY Falcon application to your WordPress server, you'll have to install
-[Falcon WordPress module](https://github.com/deity-io/falcon-wordpress-module) and also change the
+Falcon WordPress module and also change the
 [configuration file of your Falcon-Server](../miscellaneous/config) to point the application to the correct server.
 
 See [Installing Wordpress 2 Module](../backend/installing-wordpress) for more.
-
-## Development
-
-If you want to help us building new features or fixing any [reported issues](https://github.com/deity-io/falcon/issues) for Falcon,
-there are several simple steps required:
-
-- You need to [fork](https://help.github.com/articles/fork-a-repo/) DEITY [Falcon](https://github.com/deity-io/falcon) repository
-- Create a [local clone of your fork](https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork)
-- Navigate to your local clone folder and run `yarn` command (which is required for local development)
-- You are ready to go!
-
-> `yarn` is required to be installed to work with [Lerna](https://lerna.js.org/) to ensure a proper Falcon's
-[mono-repository](https://developer.atlassian.com/blog/2015/10/monorepos-in-git/) installation.
-
-Yarn will:
-
-- Install all required packages
-- Create symlinks between Falcon packages for you, so you don't have to bother about that
-- Pre-build (compile) all required packages for you
-
-Having this setup locally - you could use any of `examples` for local development, all examples
-will get Falcon packages "installed" (symlinked) directly from your local folder.
-
-### Package naming conventions
-
-Back-end packages (`FalconServer`):
-
-- `falcon-X-extension` - represents a module that should be used within a FalconServer app in order
-to provide an abstract (higher-level) access to the data (shop, blog, CRM etc)
-- `falcon-X-api` - represents a module that should act as a "transport" layer between an extension
-and a certain back-end (REST API, remote GraphQL, service, database etc)
-
-Front-end packages (`FalconClient`):
-
-- `falcon-X-plugin` - represents a module that should be used within a FalconClient app in order to provide
-UI/UX (front-end) enhancements to the "client" application (analytics, maps, widgets etc)

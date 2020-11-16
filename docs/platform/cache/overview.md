@@ -41,4 +41,4 @@ import { ServiceWorkerRegistrar, ServiceWorker } from '@deity/falcon-service-wor
 
 ## Falcon Server
 
-Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/open-source/falcon-server/caching) docs.
+Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/2019/falcon-server/caching) docs.

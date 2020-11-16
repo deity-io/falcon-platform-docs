@@ -18,7 +18,7 @@ Our Magento 2 integration allows you to manage your product catalog, discounts, 
 
 We support **magento >= 2.3**
 
-Our integration requires you to add our [Magento 2 module](https://github.com/deity-io/falcon-magento2-module) to your site before you get started. This will add API endpoints that are missing from Magento's core offering.
+Our integration requires you to add our Magento 2 module to your site before you get started. This will add API endpoints that are missing from Magento's core offering.
 
 ## Supported Features
 
@@ -82,7 +82,7 @@ We have tried to support as many features as possible but as Magento is continuo
 Using our example project, `demo-v1` you will have Magento 2 support without having to do any custom dev.
 
 ### 1. Add our Magento Module
-Install our [Magento 2 module](https://github.com/deity-io/falcon-magento2-module). Please read the readme for installation instructions.
+Install our Magento 2 module. Please read the readme for installation instructions.
 
 ### 2. Create a deity user within Magento
 Create connection details for Deity to use.
@@ -140,7 +140,7 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 - `PAYMENT_STRIPE_PUBLIC_KEY`: your public key
 
 ### 6. Disable your Magento frontend
-Disable your Magento 2 frontend. We have a [Magento module](https://github.com/deity-io/disable-frontend) you can use.
+Disable your Magento 2 frontend. We have a Magento module you can use.
 
 ### 7. Complete
 Complete, you should now have a fully working Magento 2 / Falcon Platform site

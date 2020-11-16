@@ -9,18 +9,16 @@ the overall schema is shown on the image below:
 <span>Click to enlarge</span>
 
 > If you would like to contribute and make your own changes to this flowchart - please check
-> [Working with flowcharts](/docs/open-source/support/flowcharts) page first.
+> [Working with flowcharts](/docs/2019/support/flowcharts) page first.
 
 The required GraphQL schema is being provided by
-[`shop-extension`](/docs/open-source/falcon-server/extensions#shop-extension) itself, meaning that your ApiDataSource that is assigned to ShopExtension has to take care of all payment-related operations.
+[`shop-extension`](/docs/2019/falcon-server/extensions#shop-extension) itself, meaning that your ApiDataSource that is assigned to ShopExtension has to take care of all payment-related operations.
 
 ## Placing an order
 
 Whenever a visitor clicks on "__Place order__" button - the GraphQL Mutation request goes to your
 ApiDataSource instance (usually it's a `placeOrder` method) to submit your order (including your "payment"
 data as a part of the Mutation input) to the real shop backend (like Magento).
-
-> Check the current `@deity/falcon-shop-extension` GraphQL Schema [here](https://github.com/deity-io/falcon/blob/master/packages/falcon-shop-extension/src/schema.graphql) and specifically `input PlaceOrderInput` definition.
 
 ## Initial order placement on the backend
 
@@ -49,15 +47,15 @@ required checks and validations to verify your payment (like 3d-secure bank card
 After getting a `PlaceOrder3dSecureResult` result, visitor is going to be redirected to the Payment Gateway URL to proceed
 with the checks. It's important to keep the visitor within the same app - Falcon-Client, so any further "return callbacks" must
 be done to this app domain. This means that our Falcon-Client application must be able to process such callback requests and for this
-reason - we use [endpoints](/docs/open-source/falcon-server/endpoints) feature (`Proxy Manager` in the diagram above) to proxy the whole callback
+reason - we use [endpoints](/docs/2019/falcon-server/endpoints) feature (`Proxy Manager` in the diagram above) to proxy the whole callback
 request from Falcon-Client to Falcon-Server and further to the actual shop backend.
 
-> DEITY Falcon [provides](https://github.com/deity-io/falcon/blob/dev/packages/falcon-magento2-api/src/endpoints.js) such endpoints
+> DEITY Falcon provides such endpoints
 > for `@deity/falcon-magento2-api` package out-of-the-box to support PayPal and Adyen callback).
 
-Whenever _Falcon-Server_ starts - it initializes all configured [`endpoints`](/docs/open-source/falcon-server/endpoints) and exposes
+Whenever _Falcon-Server_ starts - it initializes all configured [`endpoints`](/docs/2019/falcon-server/endpoints) and exposes
 them via web-server router to be publicly accessible. Later, whenever _Falcon-Client_ starts with a properly configured `onRouterCreated`
-[hook](https://github.com/deity-io/falcon/blob/dev/examples/shop-with-blog/client/bootstrap.js#L18) - it fetches all the exposed
+hook - it fetches all the exposed
 endpoints that are needed to be proxied from the "frontend" to the "backend" and exposes them in the same way.
 
 So, whenever our visitor "comes back" from the Payment Gateway back to our Falcon-Client with a payload response - our Falcon-Client
