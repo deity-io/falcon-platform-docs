@@ -16,6 +16,6 @@ title: Requirements
 
 ## Supported Node versions
 
-Falcon Tests are ran against major Node versions - 8, 10 and 12.
+Falcon Tests are ran against major Node versions - 12 and 14.
 
 We recommend that you use one of the above versions. These are LTS versions of Node and thus will be supported for a longer period.
