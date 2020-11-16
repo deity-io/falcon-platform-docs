@@ -46,7 +46,7 @@ An example usecase for this is if a payment status changes within the payment pr
 
 The webhook URL is configured in your `server/config` files.
 
-```
+```json
 "components": {
     "payments": {
       "package": "@deity/falcon-payments",
@@ -70,7 +70,7 @@ In this case the webhook URL would be `YOUR_URL/falcon-payments/webhook/PROVIDER
 
 This method should return `PaymentWebhookResult`.
 
-```
+```ts
 type PaymentWebhookResult = {
   /** The id of the order that got updated */
   orderId: string;
@@ -96,7 +96,7 @@ enum PaymentStatus {
 
 To subscribe to the `PAYMENT_STATUS_UPDATED` event emitted by your payment provider package you'll need to add this code to your shops **endpoint package**.
 
-```
+```ts
 this.eventEmitter.on(PaymentEvents.PAYMENT_STATUS_UPDATED, async (payload: PaymentWebhookResult) => {
   if (!this.ds.onPaymentStatusUpdated) {
     return;
@@ -124,36 +124,90 @@ handleOrderUpdate(payload: OrderWebhookResult): Promise<Boolean>;
 
 This webhook sends data from your shop to your payment provider. 
 
+1. The webhook URL is configured in Falcon Server
+2. The webhook URL is sent to your shop when placing an order
+3. The shop triggers the webhook when an order is updated (usually `shipped`, `refunded` or `tracking_added`).
+4. This triggers a method in your shop API (`onOrderStatusUpdated`)
+5. This triggers a method in your payment provider API (`handleOrderUpdate`)
+6. Depending on the `status: OrderStatus` provided different methods are triggered e.g. refund.
+
 ### Usecase
 
-An example of this is if an order is marked as shipped in your shop, you may want to update it in your payment provider.
+An example of this is if an order is marked as shipped in your shop, you may want to update it in your payment provider. Other examples include refunded orders and shipment tracking being added.
 
 ### Params
 
-This webhook comes from your payment provider so we pass the entire `context` to the `onPaymentUpdated` method.
+`OrderWebhookResult`:
+
+```ts
+export type OrderWebhookResult = {
+  /** The provider of the payment method of the order that updated */
+  provider: string;
+  /** The the payment method of the order that updated */
+  method?: string;
+  /** The id of the order */
+  orderId: string;
+  /** New order status to be sent to the PSP */
+  status: OrderStatus;
+  /** A security code */
+  securityCode: string;
+  /** Any additional payload data */
+  payloadJson: string;
+  /** Specific order data that was changed */
+  additionalData?: OrderWebhookAdditional;
+};
+export type OrderWebhookAdditional = {
+  /** Shipping data of the update */
+  shippingData?: ShippingData;
+  /** The tracking data of the update */
+  trackingData?: ShipmentTracking;
+  /** The refund data of the update */
+  refundData?: RefundData;
+};
+
+export type ShippingData = {
+  items: ShippingItem[];
+};
+
+export type ShippingItem = {
+  id: string;
+  quantity?: number;
+};
+
+export type RefundData = {
+  transactionId?: string;
+  amount?: string;
+  currency: string;
+  adjustment?: string;
+  items?: RefundItem[];
+};
+
+export type RefundItem = {
+  type: RefundItemType;
+  amount?: string;
+  quantity?: number;
+  id?: string;
+};
+
+export enum RefundItemType {
+  product = 'product',
+  shipping = 'shipping',
+  surcharge = 'surcharge',
+  discount = 'discount'
+}
+
+export type ShipmentTracking = {
+  name: string;
+  number: string;
+};
+
+export enum OrderStatus {
+  shipped = 'shipped',
+  trackingAdded = 'tracking_added',
+  refund = 'refunded'
+}
+```
 
 ### Returns
 
-This method should return `PaymentWebhookResult`.
-
-```
-type PaymentWebhookResult = {
-  /** The id of the order that got updated */
-  orderId: string;
-  /** New payment status */
-  status: PaymentStatus;
-  /** Extra payload to be stored */
-  payload?: { [key: string]: any };
-};
-
-enum PaymentStatus {
-  open = 'open',
-  canceled = 'canceled',
-  pending = 'pending',
-  authorized = 'authorized',
-  expired = 'expired',
-  failed = 'failed',
-  paid = 'paid'
-}
-
-```
+`Boolean` - depending on if the update was successful or not.
