@@ -36,8 +36,7 @@ and just passes this encrypted information to the Adyen Payment Gateway.
 ### Adyen PHP module
 
 To use this plugin with the DEITY Magento module (PHP) - you need to install the
-[Deity Adyen Extension](https://github.com/deity-io/magento-adyen-api) in your
-Magento project (it will provide required endpoints to process Adyen payments):
+Deity Adyen Extension in your Magento project (it will provide required endpoints to process Adyen payments):
 
 ```bash
 php composer.phar require deity/falcon-magento-adyen
@@ -63,9 +62,6 @@ const adyen = (
 `AdyenCCPlugin` passes down `setCreditCardData` callback to the child component (`CreditCard` in our case), so whenever a user
 correctly fills out the form - this callback has to be called like `setCreditCardData({ number, expiry, cvc, name })` to pass
 the credit card information for further encryption and passing it as a part of the `placeOrder` Mutation.
-
-> Check the code of [`PaymentMethodItem` component](https://github.com/deity-io/falcon/blob/dev/examples/shop-with-blog/client/src/pages/shop/Checkout/components/PaymentMethodItem.js)
-> for more details.
 
 ## PayPal Express
 

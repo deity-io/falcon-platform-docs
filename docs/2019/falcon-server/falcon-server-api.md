@@ -63,7 +63,7 @@ needs for a proper data-flow and communication.
     for your REST API backend
   - `perPage` (default `10`) - is used to limit your listings to a certain amount
   - `fetchUrlPriority` (default `3`, which equals to `ApiUrlPriority.NORMAL`) - statically
-    set Fetch URL priority for [Dynamic Route](/docs/open-source/falcon-server/basics#dynamic-route-resolver)
+    set Fetch URL priority for [Dynamic Route](/docs/2019/falcon-server/basics#dynamic-route-resolver)
 - `eventEmitter` - an instance of `EventEmitter2` (_passed automatically by [ApiContainer](#apicontainer)_)
 - `apiContainer` - an instance of [ApiContainer](#apicontainer)
   class (_passed automatically by [ApiContainer](#apicontainer)_)
@@ -88,7 +88,7 @@ It should provide a simple logic to determine a custom priority or return a defa
 This method must be defined if a specific ApiDataSource supports Dynamic Routing.
 It will be called whenever Dynamic Route chooses this ApiDataSource instance to resolve URL type
 for the provided `path`. See Dynamic Route result response type
-[here](/docs/open-source/falcon-server/basics#dynamicrouteresolver-result-structure).
+[here](/docs/2019/falcon-server/basics#dynamicrouteresolver-result-structure).
 
 #### `api.getCacheContext()`
 
@@ -332,8 +332,7 @@ All endpoints that were collected from API DataSources will be stored in `apiCon
 ## ExtensionContainer
 
 The main purpose of `ExtensionContainer` is to store, initialize and manage all provided
-[`extensions`](https://github.com/deity-io/falcon/blob/master/packages/falcon-server-env/src/models/Extension.ts)
-from the configuration. It also generates main configuration object for ApolloServer instance.
+extensions from the configuration. It also generates main configuration object for ApolloServer instance.
 
 #### `new ExtensionContainer(eventEmitter)`
 
@@ -355,15 +354,14 @@ provided configuration and `dataSources` value.
 
 #### `async initialize()`
 
-This method will be called by [`FalconServer.start()`](https://github.com/deity-io/falcon/blob/master/packages/falcon-server/src/index.js) method.
+This method will be called by the `FalconServer.start()` method.
 It will initialize each registered extension.
 
 #### `async createGraphQLConfig(defaultConfig = {})`
 
 This method must return a valid [ApolloServer](https://www.apollographql.com/docs/apollo-server/getting-started.html#Step-3-Create-the-server)
 configuration. This method will be called right before starting the ApolloServer instance,
-after initializing all the [Extensions](https://github.com/deity-io/falcon/blob/master/packages/falcon-server-env/src/models/Extension.ts)
-and [API DataSources](https://github.com/deity-io/falcon/blob/master/packages/falcon-server-env/src/models/ApiDataSource.ts).
+after initializing all the extensions and API DataSources.
 
 #### `ExtensionInstanceConfig` type
 

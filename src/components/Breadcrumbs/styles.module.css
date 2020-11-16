@@ -11,3 +11,16 @@
   color: var(--ifm-menu-color);
   text-decoration: underline;
 }
+
+.deprecation {
+  border: 1px solid #A30000;
+  padding: 1rem;
+  color: #A30000;
+  background: #fdedf2;
+  margin: 0 0 1rem 0;
+}
+
+.deprecationLink {
+  color: #A30000;
+  text-decoration: underline;
+}

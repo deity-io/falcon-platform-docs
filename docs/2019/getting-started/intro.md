@@ -3,7 +3,7 @@ id: intro
 title: Introduction
 ---
 
-DEITY Falcon is a platform agnostic, stand-alone but modular library to be used to easily build decoupled PWA websites. [Check out the repository here](https://github.com/deity-io/falcon)
+DEITY Falcon is a platform agnostic, stand-alone but modular library to be used to easily build decoupled PWA websites.
 
 ## Technologies inside
 
@@ -16,8 +16,6 @@ DEITY Falcon is a platform agnostic, stand-alone but modular library to be used 
 - Jest
 
 ## Community
-
-Any contributions, small or big, are very welcome! Please take a look at our [Contributor guidelines](https://github.com/deity-io/falcon/blob/master/.github/CONTRIBUTING) and [Code of Conduct](https://github.com/deity-io/falcon/blob/master/.github/CODE_OF_CONDUCT)
 
 Join the official chat channel
 
@@ -58,7 +56,7 @@ platform-independent data provider.
 
 Falcon Extension must define abstract Queries, Mutations and types as a part of Falcon Server API, which
 will be "stitched" into the unified GraphQL Schema by Falcon Server. All defined methods must be proxied
-to the assigned Falcon API (defined in Falcon Server [configuration](/docs/open-source/falcon-server/basics#extensions-configuration)).
+to the assigned Falcon API (defined in Falcon Server [configuration](/docs/2019/falcon-server/basics#extensions-configuration)).
 
 #### Falcon API
 
