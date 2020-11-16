@@ -4,26 +4,29 @@ title: Migration from npmjs.com
 sidebar_label: Migration from npmjs.com
 ---
 
-## Steps
+## Steps for migrating local development environment
 
 The migration involves several steps for your project to migrate to GitHub packages from npmjs.com. Falcon packages (previously hosted on npmjs.com) will now be served from GitHub.
 
-### GitHub token
+### 1. Generate your github token
 
-To access GitHub packages you would need to create a token. Follow
-[this page](https://docs.github.com/en/free-pro-team@latest/packages/publishing-and-managing-packages/about-github-packages#authenticating-to-github-packages) to create a token with `read:packages` scope.
+Log in into github with the account that has access to Falcon project. Once you are logged in go to [https://github.com/settings/tokens](https://github.com/settings/tokens) and press "Generate new token" button, then add a suitable name and select `read:packages` scope and click "Generate token" at the bottom. Next, copy the token and put it in your environment variables (name it `GITHUB_TOKEN`) on the computer that will need to install Falcon (the same applies to CI/CD)  
 
-### `.npmrc` file
+### 2. Configure your npm to correctly access the packages repository
 
-Add `.npmrc` file (or update it if you already have one) to the root folder of your project with the following content:
+In order to tell NPM or Yarn to use a different registry to get Falcon packages add `.npmrc` file to both `client` and `server` folders of your Falcon's project. Both should have the following content:
 
 ```bash
-//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 @deity-io:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
-> Make sure `GITHUB_TOKEN` value is being passed to your project.
+> Note: if you already have such file in your repository then you can add above lines to the existing file 
 
-### Project files
+### 3. Change the dependencies 
 
-Run `npx fix-falcon-refs` inside your project folder to fix the Falcon references from `@deity` to `@deity-io`.
+Run `npx fix-falcon-refs` inside your the root folder of your project  to fix the Falcon references from `@deity` to `@deity-io`. Next run `yarn install` in both `client` and `server` folders.
+
+## Steps for migrating CI/CD
+
+Once migration of the local environment is ready all you need to do is to put `GITHUB_TOKEN` into environment variables of your CI/CD platform. Then it will be automatically used by Yarn or NPM during package installation.
