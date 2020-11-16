@@ -59,81 +59,15 @@ function Home() {
                 </ul>
               </div>
             </div>
-
-            <div className={classnames(styles.padded, styles.aboutColumn)}>
-              <div className={styles.aboutBlock}>
-                <h4>Falcon Open Source</h4>
-                <ul>
-                  <li>
-                    <Link to="/docs/open-source/getting-started/installation">
-                      Getting Started
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/docs/open-source/falcon-client/basics">
-                      Falcon Client
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/docs/open-source/falcon-server/basics">
-                      Falcon Server
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </section>
-        {/* <section className={styles.about}>
-          <div className={classnames("container", styles.aboutContainer)}>
-            <div className={styles.aboutColumn}>
-              <h3>What is Falcon Platform?</h3>
-              <p>The Falcon Platform is a fully packed hosted front-end platform, which allows to create the best front-end experiences for eCommerce.</p>
-              <p>Falcon is not just a PWA theme, it is a complete platform to build the best shopping experience with top performance and unlimited flexibility, enabling your future growth.</p>
-              <Link
-                to="/docs/platform/overview/about"
-                className="button"
-              >Read our documentation</Link>
-            </div>
-            <div className={styles.aboutColumn}>
-              <img
-                srcSet="img/hero-pwa-falcon-700.png 700w,
-                img/hero-pwa-falcon-1200.png 1200w"
-                sizes="(max-width: 600px) 700px, 120px"
-                loading="lazy"
-                width="1200px"
-                height="1197px"
-                src="img/hero-pwa-falcon-700.png"
-                alt="Deity Falcon illustration"
-                className={styles.aboutImg}
-              />
-            </div>
-          </div>
-        </section> */}
         <section className={styles.comparison}>
           <div className="container">
-            <h3>Falcon Platform vs Falcon Open Source</h3>
+            <h3>Falcon Platform Overview</h3>
             <p>
-              We provide 2 variations of Falcon. Falcon Open Source is the
-              open-source <strong>predecessor</strong> to Falcon Platform.
+              Falcon platform is a production ready, fully managed, lightening fast PWA for your ecommerce store.
             </p>
             <ComparisonTable />
-            <p>
-              To get started with Falcon Open Source you can download it{" "}
-              <Link
-                href="https://github.com/deity-io/falcon"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                from our GitHub
-              </Link>
-              .
-            </p>
-            <p>
-              If you want to use Falcon Platform please get in touch with our
-              team for who will help you get set up and give you pricing
-              information.
-            </p>
             <p>
               <Link
                 href="https://deity.io/contact"

@@ -68,7 +68,6 @@ function DocItem(props) {
     lastUpdatedAt,
     lastUpdatedBy,
     version,
-    test
   } = metadata;
   const {
     frontMatter: {
@@ -108,6 +107,7 @@ function DocItem(props) {
             <div className={classnames('col', styles.docItemCol)}>
               <div className={styles.docItemContainer}>
                 <article>
+
                   {enterpriseOnly &&
                     <EnterpriseFlag />
                   }

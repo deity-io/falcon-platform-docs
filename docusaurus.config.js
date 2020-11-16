@@ -23,12 +23,6 @@ module.exports = {
           activeBasePath: "/docs/platform/",
         },
         {
-          to: "/docs/open-source/getting-started/intro",
-          label: "Falcon Open Source",
-          position: "right",
-          activeBasePath: "/docs/open-source/",
-        },
-        {
           label: "Falcon UI",
           href: "https://falcon-ui.docs.deity.io/",
           position: "right",
@@ -50,8 +44,8 @@ module.exports = {
               to: "/docs/platform/cloud/about",
             },
             {
-              label: "Falcon Open Source",
-              to: "/docs/open-source/getting-started/intro",
+              label: "Falcon 2019",
+              to: "/docs/2019/getting-started/intro",
             },
             {
               label: "Falcon UI",
