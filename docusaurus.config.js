@@ -115,10 +115,6 @@ module.exports = {
               href: "https://medium.com/deity-io",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/deity-io/",
-            },
-            {
               label: "Privacy Policy",
               href: "https://deity.io/privacy-policy",
             },
