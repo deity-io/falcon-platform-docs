@@ -24,7 +24,7 @@ import clientApolloSchema from './src/clientState';
 export { clientApolloSchema };
 ```
 
-For more information see [this](/docs/open-source/falcon-client/local-state-management)
+For more information see [this](/docs/2019/falcon-client/local-state-management)
 
 ### `bootstrap.js`
 
@@ -48,12 +48,12 @@ This is configuration object used to setup `@deity/falcon-client`
 `config: object`
 
 - `port: number` - (default: `3000`) port number that client should be running on
-- `logLevel: string` - (default: `'error'`) [@deity/falcon-logger](https://github.com/deity-io/falcon/tree/master/packages/falcon-logger) logger level
-- `serverSideRendering: boolean` - (default `true`) switch to control whether the [SSR](/docs/open-source/falcon-client/basics#server-side-rendering) is enabled
-- `googleTagManager: object` - Google Tag Manager configuration, [see the details](/docs/open-source/falcon-client/basics#google-tag-manager)
+- `logLevel: string` - (default: `'error'`) `@deity/falcon-logger` logger level
+- `serverSideRendering: boolean` - (default `true`) switch to control whether the [SSR](/docs/2019/falcon-client/basics#server-side-rendering) is enabled
+- `googleTagManager: object` - Google Tag Manager configuration, [see the details](/docs/2019/falcon-client/basics#google-tag-manager)
 - `googleAnalytics: object`
   - `trackerID` - Google Analytics tracking code
-- `i18n: object` - internationalization configuration, [see the details](/docs/open-source/falcon-client/internationalization)
+- `i18n: object` - internationalization configuration, [see the details](/docs/2019/falcon-client/internationalization)
 - `menus: object` - menus configuration [TODO]
 - `graphqlUrl: string` - (default: `http://localhost:4000/graphql`) the real GraphQL URL to be proxied by Falcon-Client under `apolloClient.httpLink.uri` path. If you set this key with a falsy value - no proxying will be performed
 - `apolloClient: object`
@@ -107,8 +107,8 @@ module.exports = {
 
 - `devServerPort: number` - (default: `3001`) webpack dev server (HMR) port
 - `clearConsole: boolean` - (default: `true`) determines whether console should be cleared when starting script
-- `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/docs/open-source/falcon-client/basics#webmanifest) should be processed via webpack and included in output bundle
-- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/open-source/falcon-client/internationalization#configuration)
+- `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/docs/2019/falcon-client/basics#webmanifest) should be processed via webpack and included in output bundle
+- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/2019/falcon-client/internationalization#configuration)
 - `envToBuildIn` - (default: `[]`) an array of environment variable names which should be build in into bundle, [see the details](#environment-variables)
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
 - `moduleOverride` - (default: `{}`) dictionary of module names to override, [see the details](#normal-module-override)
@@ -247,7 +247,7 @@ Falcon Client gives you Ecma Script 6 compiled via Babel 7. However, if you want
 
 ### ESLint
 
-Falcon Client is ESLint ready. To turn it on you need to provide your favorite preset, or you can [use ours](https://github.com/deity-io/falcon/tree/master/packages/falcon-dev-tools/eslint-config-falcon).
+Falcon Client is ESLint ready. To turn it on you need to provide your favorite preset, or you can use ours.
 
 In order to incorporate ESLint you need to create `.eslintrc` file in the Application root. Bellow, you can find a configuration which uses `@deity/eslint-config-falcon` preset:
 

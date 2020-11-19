@@ -37,7 +37,7 @@ Here you should configure:
 1. `Falcon frontend url` - base url of your falcon-driven website. It is used by API's that feed content with url's for proper url replacement.
 2. `Url to flush cache on Falcon Server` - Magento will call this URL to flush falcon cache.
 
-> Note: You can configure this URL via [Falcon-Server config](/docs/open-source/falcon-server/caching#rest-endpoint)
+> Note: You can configure this URL via [Falcon-Server config](/docs/2019/falcon-server/caching#rest-endpoint)
 
 #### Connect Falcon to your Magento instance with admin token
 
@@ -56,7 +56,7 @@ bin/magento admin:user:create \
 
 
 Configure Falcon Server to connect to your Magento instance.
-You can do so by changing your [Falcon-Server config](/docs/open-source/miscellaneous/config).
+You can do so by changing your [Falcon-Server config](/docs/2019/miscellaneous/config).
 
 > Note: Use your API admin user credentials that you've just created here
 
@@ -104,10 +104,6 @@ To connect through [oAuth](https://devdocs.magento.com/guides/v2.3/get-started/a
 ```
 
 Please be aware that Magento performance depends heavily on which mode it is running in, `developer` mode will negatively impact performance. Also remember to follow Magento's best practices.
-
-## Versioning
-
-[SemVer](http://semver.org/) is used for versioning. For the versions available, see the [tags on this repository](https://github.com/deity-io/falcon-magento2-module/tags).
 
 ## Elements introduced to Magento by this module
 
@@ -229,7 +225,3 @@ Extension attributes:
       "available_qty": "string"
     }
     ```
-
-## Contribution
-
-For issues, feature or improvements or pull requests please go to [falcon-development](https://github.com/deity-io/falcon-magento2-development).

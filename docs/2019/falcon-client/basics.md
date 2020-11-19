@@ -28,8 +28,6 @@ yarn add @deity/falcon-client
 
 Use the project generator:
 
-[Create-falcon-app](https://github.com/deity-io/falcon/tree/master/packages/create-falcon-app)
-
 Out of the box, it connects to a public back-end service (Magento & WordPress), so you can start developing right away.
 
 ## Exposed Commands
@@ -88,8 +86,6 @@ Runs an interactive zoomable treemap of output files to visualize their size. Re
 ## Routing
 
 In-app routing is based on [react-router](https://github.com/ReactTraining/react-router) in version 4. If you are not familiar with it, see [this](https://reacttraining.com/react-router/web/example/basic)
-
-Falcon Client support async routes, more information can be found in [Code Splitting](/docs/open-source/falcon-client/code-splitting) section.
 
 ### Falcon Dynamic Routing
 

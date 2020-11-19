@@ -16,11 +16,9 @@ sidebar_label: Wordpress
 
 Our Wordpress integration comes with both our examples apps, `demo-v1` and `demo-v2`.
 
-It works using our [Wordpress Plugin](https://github.com/deity-io/falcon-wordpress-module) to extend and add API endpoints.
+It works using our Wordpress Plugin to extend and add API endpoints.
 
 <img src="/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
-
-Please see our [Github](https://github.com/deity-io/falcon-wordpress-module) for detailed docs about how the plugin works.
 
 ## Supported Features
 
@@ -42,7 +40,7 @@ You must have a wordpress instance up and running.
 
 ### 2. Install our plugin
 
-Now you must install our [Wordpress Plugin](https://github.com/deity-io/falcon-wordpress-module). If you download the code into your `plugins` directory you should then be able to **activate** it in the admin.
+Now you must install our Wordpress Plugin. If you download the code into your `plugins` directory you should then be able to **activate** it in the admin.
 
 <img src="/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
 

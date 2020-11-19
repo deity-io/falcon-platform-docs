@@ -12,7 +12,7 @@ This Wordpress Module registers required endpoints and filters for DEITY Falcon
 ### Connect Falcon to your WordPress instance
 
 Configure Falcon Server to connect to your Wordpress instance.
-You can do so by changing your [Falcon-Server config](/docs/open-source/miscellaneous/config).
+You can do so by changing your [Falcon-Server config](/docs/2019/miscellaneous/config).
 
 ```json
 {
@@ -102,7 +102,3 @@ You can do so by changing your [Falcon-Server config](/docs/open-source/miscella
 ## Add cdn support
 
 To support CDN make sure that W3 Total Cache plugin is installed : https://wordpress.org/plugins/w3-total-cache/
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/deity-io/falcon-wordpress-module/tags).

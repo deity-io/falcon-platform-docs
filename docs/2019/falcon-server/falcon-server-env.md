@@ -4,7 +4,7 @@ title: Falcon Server Env
 
 This package delivers base classes and helpers for ApiDataSources and Extensions.
 
-- [API reference](/docs/open-source/falcon-server/falcon-server-api)
+- [API reference](/docs/2019/falcon-server/falcon-server-api)
 
 ## Installation
 
@@ -53,7 +53,7 @@ module.exports = class CustomExtension extends Extension {
 }
 ```
 
-> Check [Extension API reference](/docs/open-source/falcon-server/falcon-server-api) for more methods.
+> Check [Extension API reference](/docs/2019/falcon-server/falcon-server-api) for more methods.
 
 To define your own API class (low-level data provider) - you would need to create a new package and export its main class:
 
@@ -101,9 +101,6 @@ Then in your project's config (`server` app) - you need to declare them and assi
 
 `falcon-server-env` package provides a list of events, that are being handled by Falcon-Server app
 during the whole runtime.
-
-To see a complete up-to-date list of events - check
-[this file](https://github.com/deity-io/falcon/blob/master/packages/falcon-server-env/src/events.ts).
 
 In order to use events - Falcon-Server exposes `eventEmitter` property
 (instantiated from [`eventemitter2`](https://www.npmjs.com/package/eventemitter2)) and passes it
