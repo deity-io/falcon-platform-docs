@@ -1,3 +1,4 @@
+
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
  *
@@ -140,7 +141,10 @@ module.exports = {
       'platform/packages/normal-module-override-webpack-plugin'
     ],
     'Release Notes': [
-      'platform/release/2-4-4',
+      'platform/release/full-changelog',
+      'platform/release/2-5-0',
+      'platform/release/2-4-8',
+      'platform/release/2-4-6',
       'platform/release/2-4-2',
       'platform/release/2-4-0',
       'platform/release/2-3-1',
