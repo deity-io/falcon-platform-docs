@@ -14,7 +14,7 @@ Please flush the Magento Cache
 
 ### Create-falcon-app throws an error: `Unexpected token (`
 
-Please make sure you have Node version 8.10+
+Please make sure you have Node version 12+
 
 ### `npx create-falcon-app` generates outdated code for my shop
 
