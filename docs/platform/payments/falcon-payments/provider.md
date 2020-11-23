@@ -5,11 +5,11 @@ sidebar_label: Providers
 enterprise_only: true
 ---
 
-Each payment provider should have it's own package. We created some simple `interfaces` to make integration easy!
+Each payment provider should have its own package. We created some simple `interfaces` to make integration easy!
 
 ## Payment Provider Interface
 
-Every provider that runs through Falcon Paymemnts requires the following methods
+Every provider that runs through Falcon Payments requires the following methods:
 
 ```ts
 export interface ProviderInterface {
@@ -20,16 +20,19 @@ export interface ProviderInterface {
 }
 ```
 
-### Get surchanges
+### Get surcharges
+
 `getAppliedSurcharge`
 
 This method gets any surcharges applied for the payment method. To learn more about surcharges please see our [features documentation](features#surcharges).
 
 #### Parameters
+
 - method (`string`) - payment method code (e.g. paypal or creditcard)
-- inquiry (`PaymentMethodSurchargeInquiry`) - { country: string; currency: string; total: number; }
+- inquiry (`PaymentMethodSurchargeInquiry`) - `{ country: string; currency: string; total: number; }`
 
 #### Returns
+
 This method with returns `null` or `Surcharge`
 
 ```ts
@@ -44,12 +47,14 @@ type Surcharge = {
 ```
 
 ### Get methods
+
 `getMethodList`
 
 This method get the list of available payment methods from a provider.
 
 #### Parameters
-- payload (`PaymentLoadPayload`) 
+
+- payload (`PaymentLoadPayload`)
 
 ```ts
 type PaymentLoadPayload = {
@@ -71,10 +76,10 @@ type PaymentLoadPayload = {
 ```
 
 #### Returns
+
 This method returns an array of payment methods (`PaymentMethodList`)
 
 ```ts
-
 type PaymentMethodList = Array<PaymentMethodInstance>;
 
 type PaymentMethodInstance = {
@@ -89,7 +94,7 @@ type PaymentMethodInstance = {
   /**
    * Additional configuration
    */
-  config?: {[key: string]: any};
+  config?: { [key: string]: any };
   /**
    * A surcharge for this payment method for the specified country and currency
    */
@@ -98,6 +103,7 @@ type PaymentMethodInstance = {
 ```
 
 ### Load method
+
 `loadMethod`
 
 Load method is used to pass additional data from the payment provider to the client. Often this is authentication to allow the client to load some form of UI.
@@ -124,16 +130,16 @@ type PaymentMethodInstance = {
   /**
    * Additional configuration
    */
-  config?: {[key: string]: any};
+  config?: { [key: string]: any };
   /**
    * A surcharge for this payment method for the specified country and currency
    */
   surcharge?: Surcharge;
 };
-
 ```
 
 ### Validate Payment
+
 `validate`
 
 The validate method is called when the customer places an order (usually in the final step of a checkout). This method passes the order data to the payment provider and returns information about to proceed and make payment.
@@ -159,8 +165,7 @@ type PaymentValidationPayload<T = object> = {
   orderReference?: string;
   /** Additional payment data - usually for data that is specific to that provider */
   data?: T;
-} & Pick<PaymentLoadPayload, 'id' | 'customerId' | 'currency' | 'email'> ;
-
+} & Pick<PaymentLoadPayload, 'id' | 'customerId' | 'currency' | 'email'>;
 ```
 
 #### Returns

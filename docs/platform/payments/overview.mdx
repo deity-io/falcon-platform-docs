@@ -7,11 +7,15 @@ enterprise_only: true
 
 Payments can be handled in 2 ways, either via your shop or using our payments package, [`@deity/falcon-payments`](falcon-payments/overview).
 
-We **highly recommend** using [`@deity/falcon-payments`](falcon-payments/overview) as this will provide the most flexibility and we are continuously adding support for new payment providers.
+We **highly recommend** using [`@deity/falcon-payments`](falcon-payments/overview) as this will provide the most flexibility,
+ensure your server doesn't need to be PCI-compliant (all payments are handled on the client-side) and we are continuously adding
+support for new payment providers.
 
 ### Payment using your shop
-Payment methods can be retrieved from your shop backend. Falcon can simply display a UI and pass order details to the backend via Falcon Server.  These are processed using your shops backend and NOT by Falcon.
+
+Payment methods can be retrieved from your shop backend. Falcon can simply display a UI and pass order details to the backend via Falcon Server. These are processed using your shops backend and NOT by Falcon.
 
 ### Payments using Falcon Payments (Recommended)
+
 Falcon Payments package acts as a middleware and handles all payment processing via APIs directly communicating with payment providers. This then sends payment statuses to your shops API via webhooks.
 [Learn more about `@deity/falcon-payments`](falcon-payments/overview)
