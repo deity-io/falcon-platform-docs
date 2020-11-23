@@ -11,7 +11,7 @@ This guide will talk you though how those integrations work and how to create yo
 
 ## 1. Getting and setting payment methods
 
-Getting the avaiable shipping methods in a component is simple.
+Getting the available shipping methods in a component is simple.
 
 We'll be using the `PaymentMethodListQuery` query from `@deity/falcon-shop-data` and `SetPaymentMethod` from `@deity/falcon-front-kit`.
 
@@ -68,8 +68,7 @@ export const PaymentMethodSection = () => {
 
 ```
 
-In this example we get the avaiable methods from `PaymentMethodListQuery` and set the payment method using the `setPayment` method from `SetPaymentMethod`.
-
+In this example we get the available methods from `PaymentMethodListQuery` and set the payment method using the `setPayment` method from `SetPaymentMethod`.
 
 ## 2. Loading the payment UI
 
@@ -98,7 +97,7 @@ paymentCodeToPluginMap.getFor = (providerCode, method) => {
   return provider;
 };
 
-const getPaymentUI = provider =>
+const getPaymentUI = (provider) =>
   loadable(() =>
     import(/* webpackChunkName: "shop/checkout/payments/[request]" */ `../components/payments/${provider}`)
   );
@@ -107,9 +106,7 @@ const getPaymentUI = provider =>
 Now we render the component. We're able to get the selected method from `useCheckout`
 
 ```js
-
 import { useCheckout } from '@deity/falcon-front-kit';
-
 
 export const PlaceOrderSection = () => {
   const { values, setStep, result } = useCheckout();
@@ -126,14 +123,14 @@ export const PlaceOrderSection = () => {
   const Payment = useRef(getPaymentUI(paymentPlugin)).current;
 
   return (
-    <>  
+    <>
       <Payment {...paymentMethod}>
         {(pay, { loading: paying }) => (
           <>
             {Payment.UI && <Payment.UI />}
             <NextStepButton
               onClick={() =>
-                pay().then(payResult =>
+                pay().then((payResult) =>
                   placeOrder(
                     {
                       ...values,
@@ -167,16 +164,19 @@ export const PlaceOrderSection = () => {
 };
 ```
 
-You'll notice we have 2 additonal components also loaded:
+You'll notice we have 2 additional components also loaded:
 
 ```js
-{result && result.url && <TestAdditionalPaymentStep {...result} />}
-{result && result.id && <Redirect to="/checkout/confirmation" />}
+{
+  result && result.url && <TestAdditionalPaymentStep {...result} />;
+}
+{
+  result && result.id && <Redirect to="/checkout/confirmation" />;
+}
 ```
 
 `TestAdditionalPaymentStep` is used to handle payment methods that require an additional step, e.g. 3D secure.
 `Redirect` simple redirects a user to your desired success page if result exists in `useCheckout`.
-
 
 ## 3. Example UI Components
 
@@ -188,7 +188,7 @@ The `Payment.UI` can return `null` if you don't need to display anything other t
 
 In this example below we display a simple line of text informing the customer they'll be redirected to complete the payment.
 
-It's impoertant that the `pay` method is passed to the children of `Payment`.
+It's important that the `pay` method is passed to the children of `Payment`.
 
 ```js
 import React, { useCallback } from 'react';
@@ -211,7 +211,6 @@ Payment.UI = () => (
 export default Payment;
 ```
 
-
 ### Complex UI Example
 
 This example is taken from our `Stripe` credit card form. We wrap the entire form in `StripePlugin`, this loads the various scripts that are needed to load the Stripe card fields. You'll notice we pass `prop` to `StripePlugin`. These props are passed from `Falcon Payment` and depending on your method are likely to contain API keys needed to load the UI.
@@ -220,7 +219,6 @@ This example is taken from our `Stripe` credit card form. We wrap the entire for
 import React, { useState } from 'react';
 import { StripePlugin, CardElement } from '@deity/falcon-stripe-plugin';
 import { Box } from '@deity/falcon-ui';
-
 
 const Payment = ({ children, ...props }) => {
   const [loading, setLoading] = useState(false);
@@ -231,16 +229,16 @@ const Payment = ({ children, ...props }) => {
 
   return (
     <StripePlugin {...props}>
-      {pay =>
+      {(pay) =>
         children(
           () =>
             fn()
               .then(() => pay())
-              .then(x => {
+              .then((x) => {
                 setLoading(false);
                 return x;
               })
-              .catch(x => {
+              .catch((x) => {
                 setLoading(false);
                 return Promise.reject(x);
               }),
@@ -258,5 +256,4 @@ Payment.UI = () => (
 );
 
 export default Payment;
-
 ```

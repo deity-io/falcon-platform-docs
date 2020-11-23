@@ -5,12 +5,12 @@ sidebar_label: Webhooks
 enterprise_only: true
 ---
 
-Falcon Payments can handle 2 webhooks out of the box. 
+Falcon Payments can handle 2 webhooks out of the box.
 
 - `handlePaymentUpdate` This is normally triggered by the payment provider when a payment is updated. `Payment Provider -> Falcon Payments -> Shop`.
 - `handleOrderUpdate` This is normally triggered by your shop and is used when an order is updated. `Shop -> Falcon Payments -> Payment Provider`.
 
-----
+---
 
 ## Payment Updated Webhook
 
@@ -26,21 +26,20 @@ handlePaymentUpdate(provider: string, ctx: Context): Promise<PaymentWebhookResul
 
 ### Overview
 
-This webhook sends data from your payment provider to your shop. 
+This webhook sends data from your payment provider to your shop.
 
 The basic flow is:
 
 1. Pass webhook URL to your payment provider when creating your order / payment intent.
 2. The payment provider triggers the webhook when a payment is changed within their system.
-3. The webhook triggers `onPaymentUpdated` in your  **payment provider** package.
-4. This returns `PaymentWebhookResult` and causes the `PAYMENT_STATUS_UPDATED` event to be emmited.
+3. The webhook triggers `onPaymentUpdated` in your **payment provider** package.
+4. This returns `PaymentWebhookResult` and causes the `PAYMENT_STATUS_UPDATED` event to be emitted.
 5. Your shop endpoints package listens for the `PAYMENT_STATUS_UPDATED` event.
 6. This then triggers a method in your shop API (`onPaymentStatusUpdated` in our core API packages).
 
+### Use-case
 
-### Usecase
-
-An example usecase for this is if a payment status changes within the payment provider you may want this information to be passed to your shop.
+An example use-case for this is if a payment status changes within the payment provider you may want this information to be passed to your shop.
 
 ### Configuration
 
@@ -89,7 +88,6 @@ enum PaymentStatus {
   failed = 'failed',
   paid = 'paid'
 }
-
 ```
 
 ### Subscribing to PAYMENT_STATUS_UPDATED
@@ -108,9 +106,10 @@ this.eventEmitter.on(PaymentEvents.PAYMENT_STATUS_UPDATED, async (payload: Payme
 
 This example will trigger the `onPaymentStatusUpdated` in your shops API where the payload is `PaymentWebhookResult`.
 
-----
+---
 
 ## Order Update Webhook
+
 ```ts
 /**
  * Handles the update when a shop indicates the order to be updated
@@ -122,7 +121,7 @@ handleOrderUpdate(payload: OrderWebhookResult): Promise<Boolean>;
 
 ### Overview
 
-This webhook sends data from your shop to your payment provider. 
+This webhook sends data from your shop to your payment provider.
 
 1. The webhook URL is configured in Falcon Server
 2. The webhook URL is sent to your shop when placing an order
@@ -131,11 +130,11 @@ This webhook sends data from your shop to your payment provider.
 5. This triggers a method in your payment provider API (`handleOrderUpdate`)
 6. Depending on the `status: OrderStatus` provided different methods are triggered e.g. refund.
 
-### Usecase
+### Use-case
 
 An example of this is if an order is marked as shipped in your shop, you may want to update it in your payment provider. Other examples include refunded orders and shipment tracking being added.
 
-### Params
+### Parameters
 
 `OrderWebhookResult`:
 
