@@ -63,7 +63,7 @@ In this case the webhook URL would be `YOUR_URL/falcon-payments/webhook/PROVIDER
 ### Params
 
 - `provider` - The payment provide code, e.g. `mollie`. This is used so we know which provider should handle the `onPaymentUpdated`.
-- `context` - This webhook comes from your payment provider so we pass the entire `context` to the `onPaymentUpdated` method.
+- `context` - This webhook comes from your payment provider so we pass the entire HTTP request `context` to the `onPaymentUpdated` method, such that query and body data can be extracted.
 
 ### Returns
 
