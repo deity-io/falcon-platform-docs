@@ -50,7 +50,7 @@ type Surcharge = {
 
 `getMethodList`
 
-This method get the list of available payment methods from a provider.
+This method gets the list of available payment methods from a provider.
 
 #### Parameters
 
