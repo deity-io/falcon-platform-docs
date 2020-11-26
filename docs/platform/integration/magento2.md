@@ -121,6 +121,7 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
     "magento2": {
       "config": {
         "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]",
+        "defaultLocale": "[MAGENTO_DEFAULT_LOCALE]",
         "auth": {
           "consumerKey": "[CONSUMER_KEY]",
           "consumerSecret": "[CONSUMER_SECRET]",
@@ -136,8 +137,12 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 
 ### Deity Cloud Environment Variables
 
-- `PAYMENT_STRIPE_SECRET_KEY`: your secret key
-- `PAYMENT_STRIPE_PUBLIC_KEY`: your public key
+- `MAGENTO_SITE_URL_WITHOUT_PROTOCOL`: Your Magento site URL (without protocol) e.g. magento.deity.io
+- `CONSUMER_KEY`: your consumer key
+- `CONSUMER_SECRET`: your consumer secret
+- `ACCESS_TOKEN`: your access token
+- `ACCESS_TOKEN_SECRET`: your access token secret
+- `MAGENTO_DEFAULT_LOCALE`: default locale for your Magento store. e.g. `en_GB`
 
 ### 6. Disable your Magento frontend
 Disable your Magento 2 frontend. We have a Magento module you can use.
