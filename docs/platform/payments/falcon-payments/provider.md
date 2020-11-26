@@ -142,7 +142,7 @@ type PaymentMethodInstance = {
 
 `validate`
 
-The validate method is called when the customer places an order (usually in the final step of a checkout). This method passes the order data to the payment provider and returns information about to proceed and make payment.
+The validate method is called when the customer places an order (usually in the final step of a checkout). This method passes the order data to the payment provider and returns information about the status, possibly including data to finish the payment at the front-end.
 
 #### Parameters
 
