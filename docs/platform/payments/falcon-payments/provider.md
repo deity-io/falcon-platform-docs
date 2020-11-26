@@ -33,7 +33,7 @@ This method gets any surcharges applied for the payment method. To learn more ab
 
 #### Returns
 
-This method with returns `null` or `Surcharge`
+This method returns `null` or `Surcharge`
 
 ```ts
 type Surcharge = {
