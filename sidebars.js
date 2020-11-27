@@ -110,6 +110,45 @@ module.exports = {
       }
     ],
     'Video Guides': ['platform/guides/client', 'platform/guides/cloud'],
+    Training: [
+      'platform/training/overview',
+      {
+        type: 'category',
+        label: 'Setup',
+        items: [
+          'platform/training/setup/setup',
+          'platform/training/setup/cli',
+          'platform/training/setup/dcloud-setup',
+          'platform/training/setup/dcloud-usage'
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Falcon Client',
+        items: [
+          'platform/training/client/files',
+          'platform/training/client/theming',
+          'platform/training/client/overrides',
+          'platform/training/client/routing',
+          'platform/training/client/seo',
+          'platform/training/client/code-splitting',
+          'platform/training/client/examples'
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Falcon Server',
+        items: [
+          'platform/training/server/files',
+          'platform/training/server/packages',
+          'platform/training/server/configuration',
+          'platform/training/server/overrides',
+          'platform/training/server/middleware',
+          'platform/training/server/cache',
+          'platform/training/server/examples'
+        ]
+      }
+    ],
     Packages: [
       'platform/packages/overview',
       'platform/packages/babel-preset-falcon-client',
