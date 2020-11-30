@@ -68,10 +68,6 @@ The Mollie provider should already exist in your components->payments.
   "components": {
     "payments": {
       "config": {
-        "webhookBaseUrl": null,
-        "webhookUrl": "/falcon-payments/webhook",
-        "redirectBaseUrl": null,
-        "redirectUrl": "/checkout/pending",
         "providers": {
           "mollie": {
             "enabled": true,
@@ -96,9 +92,6 @@ You just need to add you `profileId` and `apiKey`. These should be added in your
 "profileId": "PAYMENT_MOLLIE_PROFILE",
 "apiKey": "PAYMENT_MOLLIE_KEY"
 ```
-
-TODO: describe some of the webhook and redirect stuff
-
 
 ## Deity Cloud Environment Variables
 
