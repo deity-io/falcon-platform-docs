@@ -80,6 +80,7 @@ module.exports = {
       },
       'platform/integration/magento2',
       'platform/integration/stripe',
+      'platform/integration/mollie',
       'platform/integration/wordpress'
     ],
     Testing: ['platform/testing/overview'],

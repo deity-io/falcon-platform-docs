@@ -73,6 +73,10 @@ module.exports = {
               to: "/docs/platform/integration/stripe",
             },
             {
+              label: "Mollie",
+              to: "/docs/platform/integration/mollie",
+            },
+            {
               label: "Wordpress",
               to: "/docs/platform/integration/wordpress",
             },
