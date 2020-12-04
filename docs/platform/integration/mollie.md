@@ -23,7 +23,7 @@ Our integration includes:
 
 - `client/src/pages/shop/Checkout/components/payments/Mollie` (Client side components)
 - `@deity-io/falcon-mollie-plugin`(Client side plugin)
-- `@deity/falcon-payments/packages/falcon-payments-mollie` (Server side provider)
+- `@deity/falcon-payments-mollie` (Server side provider)
 
 ## Supported Features
 
