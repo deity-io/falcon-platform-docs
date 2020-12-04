@@ -28,7 +28,7 @@ Our integration includes:
 
 - `client/src/pages/shop/Checkout/components/payments/Stripe.js` (Client side component)
 - `@deity-io/falcon-stripe-plugin`(Client side plugin)
-- `@deity/falcon-payments/packages/falcon-payments-stripe` (Server side provider)
+- `@deity/falcon-payments-stripe` (Server side provider)
 
 ## Supported Features
 
