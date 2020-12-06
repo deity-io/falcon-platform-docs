@@ -37,6 +37,7 @@ We have tried to support as many features as possible but as Magento is continuo
 - Add to cart from list page
 
 **Prices**
+
 - Tax Calculations
 - Sale Prices
 - Discount codes / Price Rules
@@ -66,6 +67,7 @@ We have tried to support as many features as possible but as Magento is continuo
 - Saved Addresses
 
 **Payment Methods**
+
 - Adyen (with 3D secure)
 - PayPal Express
 - Purchase Order
@@ -76,17 +78,18 @@ We have tried to support as many features as possible but as Magento is continuo
 - Canonical URLs
 - Meta Data
 
-
 ## Getting Started
 
 Using our example project, `demo-v1` you will have Magento 2 support without having to do any custom dev.
 
 ### 1. Add our Magento Module
+
 Install our Magento 2 module. Please read the readme for installation instructions.
 
 ### 2. Create a deity user within Magento
+
 Create connection details for Deity to use.
-`bin/magento  admin:user:create  --admin-user='your-admin-username' --admin-password='your-admin-password' --admin-email='admin@deity.test' --admin-firstname='node' --admin-lastname='Deity'`
+`bin/magento admin:user:create --admin-user='your-admin-username' --admin-password='your-admin-password' --admin-email='admin@deity.test' --admin-firstname='node' --admin-lastname='Deity'`
 
 ### 3. Create an integration within Magento.
 
@@ -101,10 +104,12 @@ From here you will get the following credentials to use later:
 - `ACCESS_TOKEN`
 - `ACCESS_TOKEN_SECRET`
 
-### 4. Create your Falcon App.
+### 4. Create your Falcon App
+
 Install Falcon Platform using the `demo-v1` example and `create-falcon-app`
 
 ### 5. Configure your Magento connection
+
 Add your Magento 2 details to your `server/config/` files. Below is an example of the config variables you'll need to add.
 If you're using `demo-v1` this will be set up to use our demo Magento 2 instance and should work out of the box.
 
@@ -113,14 +118,14 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
   "endpoints": {
     "magento": {
       "config": {
-        "host": "MAGENTO_SITE_URL_WITHOUT_PROTOCOL"
+        "host": "MAGENTO_HOST"
       }
     }
   },
   "apis": {
     "magento2": {
       "config": {
-        "host": "MAGENTO_SITE_URL_WITHOUT_PROTOCOL",
+        "host": "MAGENTO_HOST",
         "defaultLocale": "MAGENTO_DEFAULT_LOCALE",
         "auth": {
           "consumerKey": "MAGENTO_CONSUMER_KEY",
@@ -132,12 +137,11 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
     }
   }
 }
-
 ```
 
 ### Deity Cloud Environment Variables
 
-- `MAGENTO_SITE_URL_WITHOUT_PROTOCOL`: Your Magento site URL (without protocol) e.g. magento.deity.io
+- `MAGENTO_HOST`: Your Magento site URL (without protocol) e.g. `magento.deity.io`
 - `MAGENTO_CONSUMER_KEY`: your consumer key
 - `MAGENTO_CONSUMER_SECRET`: your consumer secret
 - `MAGENTO_ACCESS_TOKEN`: your access token
@@ -145,7 +149,9 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 - `MAGENTO_DEFAULT_LOCALE`: default locale for your Magento store. e.g. `en_GB`
 
 ### 6. Disable your Magento frontend
+
 Disable your Magento 2 frontend. We have a Magento module you can use.
 
 ### 7. Complete
+
 Complete, you should now have a fully working Magento 2 / Falcon Platform site
