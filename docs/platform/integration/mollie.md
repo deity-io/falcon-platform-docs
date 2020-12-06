@@ -88,16 +88,16 @@ The Mollie provider should already exist in your components->payments.
 You just need to add you `profileId` and `apiKey`. These should be added in your `server/config/local.json` locally and on your production environment you can use these constants:
 
 ```json
-"profileId": "PAYMENT_MOLLIE_PROFILE",
-"apiKey": "PAYMENT_MOLLIE_KEY"
+"profileId": "PAYMENT_MOLLIE_PROFILE_ID",
+"apiKey": "PAYMENT_MOLLIE_API_KEY"
 ```
 
 ## Deity Cloud Environment Variables
 
 - `FALCON_PAYMENTS_ENABLED`: [bool] - You need to use Falcon Payments to use our Mollie integration.
 - `PAYMENT_MOLLIE_ENABLED`: [bool] - Enable Mollie
-- `PAYMENT_MOLLIE_PROFILE`: Your profile id
-- `PAYMENT_MOLLIE_KEY`: Your mollie key
+- `PAYMENT_MOLLIE_PROFILE_ID`: Your profile id
+- `PAYMENT_MOLLIE_API_KEY`: Your mollie key
 - `PAYMENT_MOLLIE_TEST_MODE`: [bool] - Whether mollie is running in test mode
 
 - `PAYMENT_MOLLIE_METHOD_PAYPAL`: [bool] - Whether the paypal payment method is enabled
