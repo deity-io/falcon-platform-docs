@@ -16,7 +16,7 @@ sidebar_label: Stripe Payments
 
 Our integration with Stripe payments uses [https://github.com/stripe/react-stripe-js](https://github.com/stripe/react-stripe-js) to provide a production ready credit card form in the checkout. This ships with our `demo-v2` example project.
 
-If you want to see a live example head over to [our demo site](https://demo.deity.io/). 
+If you want to see a live example head over to [our demo site](https://demo.deity.io/).
 
 You can test transactions using these details:
 
@@ -58,6 +58,7 @@ If you're using our example app `demo-v2` all you need to do now is add your Str
 
 The Stripe provider should already exist in your components->payments.
 **`server/config/default.json`**
+
 ```json
 {
   "components": {
@@ -68,7 +69,6 @@ The Stripe provider should already exist in your components->payments.
           "stripe": {
             "package": "@deity/falcon-payments/src/provider/stripe",
             "config": {
-              "title": "Stripe",
               "secretKey": null,
               "publicKey": null
             }
@@ -91,7 +91,6 @@ You just need to add your `secretKey` and `publicKey`. These should be added in 
 
 - `FALCON_PAYMENTS_ENABLED`: [bool] - You need to use Falcon Payments to use our Stripe integration.
 - `PAYMENT_STRIPE_ENABLED`: [bool] - Enable Stripe
-- `PAYMENT_STRIPE_TITLE`: The title that appears above the payment method e.g. Credit Card
 - `PAYMENT_STRIPE_SECRET_KEY`: Your secret key
 - `PAYMENT_STRIPE_PUBLIC_KEY`: Your public key
 

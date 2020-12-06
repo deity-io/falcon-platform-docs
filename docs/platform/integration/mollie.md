@@ -4,7 +4,6 @@ title: Mollie Payments Integration
 sidebar_label: Mollie Payments
 ---
 
-
 ---
 
 <a href="https://www.mollie.com" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site">
@@ -17,7 +16,7 @@ sidebar_label: Mollie Payments
 
 Our integration with Mollie payments uses [https://github.com/mollie/mollie-api-node](https://github.com/mollie/mollie-api-node) to provide a production ready checkout that supports multiple payment methods. This ships with both our example projects.
 
-If you want to see a live example head over to [our demo site](https://demo.deity.io/). 
+If you want to see a live example head over to [our demo site](https://demo.deity.io/).
 
 Our integration includes:
 
@@ -30,18 +29,18 @@ Our integration includes:
 - Refunds
 - Shipments
 - Payment methods:
-    - iDeal
-    - Credit card: 
-        - Mastercard
-        - Visa
-        - American Express
-        - Maestro
-    - Paypal
-    - Klarna
-    - Sofort
-    - Giropay
-    - Bancontact/MisterCash
-    - Fashioncheque
+  - iDeal
+  - Credit card:
+    - Mastercard
+    - Visa
+    - American Express
+    - Maestro
+  - Paypal
+  - Klarna
+  - Sofort
+  - Giropay
+  - Bancontact/MisterCash
+  - Fashioncheque
 
 ## Getting started
 
@@ -51,7 +50,7 @@ All yo need to do is add your Mollie configuration
 
 You can register for an account [here](https://www.mollie.com/dashboard/signup?lang=en).
 
-Once you've created an account you should be able to find your API keys and profile ID in the developers section. 
+Once you've created an account you should be able to find your API keys and profile ID in the developers section.
 
 <img src="/img/docs/platform/mollie-account-1.png" alt="Mollie Account Api keys" width="800" style={{marginBottom: 20}}/>
 
@@ -63,6 +62,7 @@ If you're using our example app `demo-v2` all you need to do now is add your Mol
 
 The Mollie provider should already exist in your components->payments.
 **`server/config/default.json`**
+
 ```json
 {
   "components": {
@@ -73,7 +73,6 @@ The Mollie provider should already exist in your components->payments.
             "enabled": true,
             "package": "@deity/falcon-payments-mollie",
             "config": {
-              "title": "Mollie",
               "apiKey": null,
               "profileId": null,
               "testMode": false
