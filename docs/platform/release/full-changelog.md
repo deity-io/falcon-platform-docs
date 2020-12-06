@@ -298,7 +298,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 ### Falcon E-commerce UI Kit discontinued
 
-- Breaking change: Falcon E-commerce UI Kit has been discontinued, instead we introduce [Falcon Front Kit](#falcon-front-kit-v1.0.0), [Falcon UI Kit](#falcon-ui-kit-v1.0.0), [Falcon Data](#falcon-data-v1.0.0), [Falcon Shop Data](#falcon-shop-data-v1.0.0) and [Falcon Blog Data](#falcon-blog-data-v1.0.0), (see rework [log](https://github.com/deity-io/falcon/blob/a5274623c148b9b0c8cc1d17254d7c89395955da/packages/falcon-ecommerce-uikit/uikit.md))
+- Breaking change: Falcon E-commerce UI Kit has been discontinued, instead we introduce [Falcon Front Kit](#falcon-front-kit-v1.0.0), [Falcon UI Kit](#falcon-ui-kit-v1.0.0), [Falcon Data](#falcon-data-v1.0.0), [Falcon Shop Data](#falcon-shop-data-v1.0.0) and [Falcon Blog Data](#falcon-blog-data-v1.0.0)
 
 ### Falcon Front Kit
 
@@ -309,7 +309,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 - improved dynamic url resolution
 - added `Add`/`EditAddressFormProvider` components to handle relevant form data
 - added `Submit` component which provides context to form submit components
-- fixed `LocaleSwitcher` which did not take into account `whitelist`ed languages, and `LocaleContext` which hardcoded language fallback instead of taking it from `clientConfig` falcon/pull/698))
+- fixed `LocaleSwitcher` which did not take into account `whitelist`ed languages, and `LocaleContext` which hardcoded language fallback instead of taking it from `clientConfig`
 - extracted `CurrencyProvider` and `Currency` components from `LocaleProvider` and `Locale`, also introduced `useLocale` and `useCurrency` hooks
 - updated Formik to version 2.0
 - added `InBrowserOnly` component
