@@ -22,7 +22,7 @@ class FalconServerExtended extends FalconServer {
 }
 ```
 
-Below you an find full example of how to register new ApiDatasource programmatically:
+Below you can find full example of how to register new ApiDatasource programmatically:
 
 ```javascript
 class TestDataSource extends ApiDataSource {
@@ -42,5 +42,6 @@ class FalconServerExtended extends FalconServer {
 ```
 
 
-You can read more about using inverify js on its [wiki pages](https://github.com/inversify/InversifyJS/tree/master/wiki#wiki)
+You can read more about using inverifyJS on its [wiki pages](https://github.com/inversify/InversifyJS/tree/master/wiki#wiki)
+
 
