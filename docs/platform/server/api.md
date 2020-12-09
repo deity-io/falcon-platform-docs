@@ -45,3 +45,29 @@ class FalconServerExtended extends FalconServer {
 You can read more about using inverifyJS on its [wiki pages](https://github.com/inversify/InversifyJS/tree/master/wiki#wiki)
 
 
+## ApiContainer
+
+The main purpose of `ApiContainer` is to register all provided APIs from the configuration.
+
+#### `new ApiContainer(container: Container, eventEmitter: EventEmitter2)`
+
+The constructor expects to receive an instance inversify Container and EventEmitter. It is done automatically as it is registered in inversify container.
+
+#### `register(name: string, implementation: ApiDataSourceType): string`
+
+This method allows to register DataSource class. It expects service name (postfix `DataSource` will be added automatically) and its implementation. As a result full service name will be returned.
+
+#### `register(name: string, binding: ApiDataSourceBinding, extraResolvers?: ApiDataSourceExtraResolvers): string`
+
+This method allows to register custom DataSource factory. It expects service name (postfix `DataSource` will be added automatically), DataSource factory implementation, and extra resolvers map associated with DataSource. As a result full service name will be returned
+
+#### `apiContainer.registerFromConfig(apiMap: ApiDataSourceConfigurationMap)`
+
+This method registers the provided APIs
+([`ApiInstanceConfig`](#apiinstanceconfig-type)) into inverifyJS container.
+
+#### `ApiInstanceConfig` type
+
+- `package: string` - Node package path (example: `@deity/falcon-wordpress-api`)
+- `config: object` - Config object to be passed to Api Instance constructor
+
