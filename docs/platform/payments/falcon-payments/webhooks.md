@@ -60,12 +60,12 @@ The webhook URLs are configured in your `server/config` files.
 
 In this case the webhook URL would be `YOUR_URL/falcon-payments/webhook/PROVIDER` e.g. `https://deity-shop.io/falcon-payments/webhook/mollie`
 
-`webhookBaseUrl` should be pointed at your falcon server instance. If you're running your app on cloud your URLs will be routed for you so your sites main domain is fine.
+`webhookBaseUrl` should be pointed at your falcon server instance. If you're running your app on cloud your URLs will be proxied for you so your sites main domain is fine.
 
 To configure this on a remote environement you can use the variable `PAYMENT_WEBHOOK_BASE_URL`.
 
 :::note Local Testing
-The webhook URL needs to be accessible so you can't use localhost. we recommend using a service like [ngrok](https://ngrok.com/) on your Falcon server instance and setting the `webhookBaseUrl` to point to that.  Once you've installed ngrok it should be as simple as running `ngrok http 4000`. Provided Falcon Server is running on port 4000 this will return you a `https` URL you can use.
+The webhook URL needs to be accessible so you can't use localhost. we recommend using a service like [ngrok](https://ngrok.com/) on your Falcon server instance and setting the `webhookBaseUrl` to point to that.  Once you've installed ngrok it should be as simple as running `ngrok http 4000`. Provided Falcon Server is running on port 4000 this will return you an `https` URL you can use.  
 :::
 
 ### Params
