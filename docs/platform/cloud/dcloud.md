@@ -156,6 +156,19 @@ N/A
 
 ---
 
+## Environment Variables Apply
+
+Apply environment variable changes without redeploying your app.
+
+```bash
+dcloud env:var:apply ENV_NAME
+```
+
+**Options**
+N/A
+
+---
+
 ## Repositories List
 
 Get a list of your current/active repositories
