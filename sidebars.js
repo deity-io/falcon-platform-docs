@@ -56,14 +56,29 @@ module.exports = {
       'platform/cloud/dcloud'
     ],
     Configuration: [
-      'platform/configuration/overview',
-      'platform/configuration/client',
-      'platform/configuration/server'
+      "platform/configuration/overview",
+      "platform/configuration/client",
+      "platform/configuration/server",
     ],
-    Caching: ['platform/cache/overview'],
-    Deployment: ['platform/deployment/overview'],
-    Logging: ['platform/logging/overview'],
-    Payments: ['platform/payments/overview', 'platform/payments/provider', 'platform/payments/ui'],
+    Caching: ["platform/cache/overview"],
+    Deployment: ["platform/deployment/overview"],
+    Logging: ["platform/logging/overview"],
+    Payments: [
+      "platform/payments/overview",
+      {
+        type: "category",
+        label: "Falcon Payments",
+        items: [
+          "platform/payments/falcon-payments/overview",
+          "platform/payments/falcon-payments/packages",
+          "platform/payments/falcon-payments/provider",
+          "platform/payments/falcon-payments/webhooks",
+          "platform/payments/falcon-payments/features",
+          "platform/payments/falcon-payments/getting-started",
+          "platform/payments/falcon-payments/integration",
+        ],
+      },
+    ],
     Integrations: [
       'platform/integration/examples',
       'platform/integration/algolia',
@@ -80,6 +95,7 @@ module.exports = {
       },
       'platform/integration/magento2',
       'platform/integration/stripe',
+      'platform/integration/mollie',
       'platform/integration/wordpress'
     ],
     Testing: ['platform/testing/overview'],
