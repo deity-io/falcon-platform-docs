@@ -133,5 +133,5 @@ To deploy your build run the command `dcloud deployment:run [buildId] [environme
 
 ---
 
-## What our 'how to' video.
+## Watch our 'how to' video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CSrkxZgtY6w?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

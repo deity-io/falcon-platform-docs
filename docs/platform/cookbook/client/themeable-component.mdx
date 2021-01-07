@@ -49,11 +49,11 @@ export const Countdown = ({ seconds }) => {
   useLayoutEffect(() => {
     let tick = setTimeout(() => {
       if (time <= 0) {
-``        setIsActive(false);
+        setIsActive(false);
       } else {
         setTime(time - millisecond);
       }
-    }, 1000);
+    }, millisecond);
 
     return () => {
       clearTimeout(tick);
@@ -81,13 +81,15 @@ Now you've created your component you will need to export it from the `client/sr
 export * from './Countdown';
 ```
 
+This simplifies the process of importing it in the future, by allowing it to be imported from the components folder directly rather than a subfile.
+
 ## 3. Include your component
 The next step is to include the component somewhere on the page. We're going to add it to the header. Once you've done this you should see your component appear on the page...it will just be unstyled.
 
 **`client/src/components/Header/HeaderMenuBar.js`**
 ```js
 ...
-import { Countdown } from './../Countdown';
+import { Countdown } from '..';
 
 export const HeaderMenuBar = props => {
   ...
@@ -207,11 +209,11 @@ export const Countdown = ({ seconds }) => {
 ```
 
 
-## 7. Finished
+## Finished
 That's it...you've now got a fancy countdown component you can theme using your `client/src/styling/theme.js` or modify with our theme editor tool.
 
 
-## 8. Resources.
+## Full Code
 
 Here's the complete `Countdown.js` file.
 

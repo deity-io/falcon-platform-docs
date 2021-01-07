@@ -15,7 +15,7 @@ import styles from "./styles.module.css";
 
 import Newsletter from "./../../components/Newsletter";
 import Slack from "./../../components/Slack";
-import { registerServiceWorker } from "./../../components/ServiceWorker";
+import { Chat } from "./../../components/Intercom";
 
 function FooterLink({ to, href, label, ...props }) {
   const toUrl = useBaseUrl(to);
@@ -56,12 +56,7 @@ function Footer() {
   if (!footer) {
     return null;
   }
-
-  // Very basic service worker registration
-  useEffect(() => {
-    registerServiceWorker();
-  }, []);
-
+  
   return (
     <>
       <Slack />
@@ -130,6 +125,7 @@ function Footer() {
           )}
         </div>
       </footer>
+      <Chat loadOnClick />
     </>
   );
 }

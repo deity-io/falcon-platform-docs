@@ -37,9 +37,9 @@ const PricePlans = [
     description: "For Shop Owners",
     price: 207,
     monthlyCost: 249,
-    features: [3, 4, 5, 6, 7, 8, 9, 10],
+    features: [4, 5, 6, 7, 8, 9, 10],
     popular: true,
-    environments: [1, 2, 3],
+    environments: [3],
   },
   {
     name: "Enterprise",

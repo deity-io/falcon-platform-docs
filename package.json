@@ -1,6 +1,6 @@
 {
   "name": "falcon-platform-docs",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
@@ -10,8 +10,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.55",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.55",
+    "@docusaurus/core": "^2.0.0-alpha.66",
+    "@docusaurus/plugin-pwa": "^2.0.0-alpha.66",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.66",
     "classnames": "^2.2.6",
     "formik": "^2.1.4",
     "jsonp": "^0.2.1",

@@ -22,6 +22,13 @@
   position: relative;
 }
 
+
+.heroSearch button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .features {
   display: flex;
   align-items: center;
@@ -59,12 +66,6 @@
 
 .aboutColumn {
   width: 100%;
-}
-
-@media screen and (min-width: 966px) {
-  .aboutColumn {
-    width: 50%;
-  }
 }
 
 .padded {

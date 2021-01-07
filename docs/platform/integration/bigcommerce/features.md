@@ -58,6 +58,7 @@ We are actively developing our BigCommerce integration and will be adding suppor
 - Customer Checkout
 - Shipping methods from admin
 - Saved customer addresses
+- Embedded one page checkout (supports BigCommerce payment and shipping methods).
 
 **SEO**
 

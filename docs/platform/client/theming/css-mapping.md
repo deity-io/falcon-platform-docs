@@ -23,85 +23,85 @@ In the above example `m` relates to **margin**.
 
 ```js
 m: {
-    cssProp: 'margin'
-  },
-  mt: {
-    cssProp: 'marginTop'
-  },
-  ml: {
-    cssProp: 'marginLeft'
-  },
-  mr: {
-    cssProp: 'marginRight'
-  },
-  mb: {
-    cssProp: 'marginBottom'
-  },
-  mx: {
-    transformToCss: value => ({
-      marginLeft: value,
-      marginRight: value
-    })
-  },
-  my: {
-    transformToCss: value => ({
-      marginTop: value,
-      marginBottom: value
-    })
-  },
-  p: {
-    cssProp: 'padding'
-  },
-  pt: {
-    cssProp: 'paddingTop'
-  },
-  pl: {
-    cssProp: 'paddingLeft'
-  },
-  pr: {
-    cssProp: 'paddingRight'
-  },
-  pb: {
-    cssProp: 'paddingBottom'
-  },
-  px: {
-    transformToCss: value => ({
-      paddingLeft: value,
-      paddingRight: value
-    })
-  },
-  py: {
-    transformToCss: value => ({
-      paddingTop: value,
-      paddingBottom: value
-    })
-  },
-  size: {
-    transformToCss: value => ({
-      height: value,
-      width: value
-    })
-  },
-  bg: {
-    cssProp: 'backgroundColor'
-  },
-  bgFullWidth: {
-    transformToCss: value => ({
-      position: 'relative',
-      zIndex: 1,
-      ':before': {
-        content: '""',
-        width: '200vw',
-        height: '100%',
-        background: value,
-        position: 'absolute',
-        left: '-50vw',
-        right: '50vw',
-        top: 0,
-        zIndex: -1
-      }
-    })
-  }
+  cssProp: 'margin'
+},
+mt: {
+  cssProp: 'marginTop'
+},
+ml: {
+  cssProp: 'marginLeft'
+},
+mr: {
+  cssProp: 'marginRight'
+},
+mb: {
+  cssProp: 'marginBottom'
+},
+mx: {
+  transformToCss: value => ({
+    marginLeft: value,
+    marginRight: value
+  })
+},
+my: {
+  transformToCss: value => ({
+    marginTop: value,
+    marginBottom: value
+  })
+},
+p: {
+  cssProp: 'padding'
+},
+pt: {
+  cssProp: 'paddingTop'
+},
+pl: {
+  cssProp: 'paddingLeft'
+},
+pr: {
+  cssProp: 'paddingRight'
+},
+pb: {
+  cssProp: 'paddingBottom'
+},
+px: {
+  transformToCss: value => ({
+    paddingLeft: value,
+    paddingRight: value
+  })
+},
+py: {
+  transformToCss: value => ({
+    paddingTop: value,
+    paddingBottom: value
+  })
+},
+size: {
+  transformToCss: value => ({
+    height: value,
+    width: value
+  })
+},
+bg: {
+  cssProp: 'backgroundColor'
+},
+bgFullWidth: {
+  transformToCss: value => ({
+    position: 'relative',
+    zIndex: 1,
+    ':before': {
+      content: '""',
+      width: '200vw',
+      height: '100%',
+      background: value,
+      position: 'absolute',
+      left: '-50vw',
+      right: '50vw',
+      top: 0,
+      zIndex: -1
+    }
+  })
+}
 ```
 
 ---
@@ -151,125 +151,125 @@ m: {
 
 ```js
 m: {
-    themeProp: 'spacing'
-  },
-  mt: {
-    themeProp: 'spacing'
-  },
-  ml: {
-    themeProp: 'spacing'
-  },
-  mr: {
-    themeProp: 'spacing'
-  },
-  mb: {
-    themeProp: 'spacing'
-  },
-  mx: {
-    themeProp: 'spacing'
-  },
-  my: {
-    themeProp: 'spacing'
-  },
-  p: {
-    themeProp: 'spacing'
-  },
-  pt: {
-    themeProp: 'spacing'
-  },
-  pl: {
-    themeProp: 'spacing'
-  },
-  pr: {
-    themeProp: 'spacing'
-  },
-  pb: {
-    themeProp: 'spacing'
-  },
-  px: {
-    themeProp: 'spacing'
-  },
-  py: {
-    themeProp: 'spacing'
-  },
-  height: {
-    themeProp: 'spacing'
-  },
-  width: {
-    themeProp: 'spacing'
-  },
-  size: {
-    themeProp: 'spacing'
-  },
-  gridGap: {
-    themeProp: 'spacing'
-  },
-  gridRowGap: {
-    themeProp: 'spacing'
-  },
-  gridColumnGap: {
-    themeProp: 'spacing'
-  },
-  color: {
-    themeProp: 'colors'
-  },
-  bg: {
-    themeProp: 'colors'
-  },
-  fill: {
-    themeProp: 'colors'
-  },
-  stroke: {
-    themeProp: 'colors'
-  },
-  borderColor: {
-    themeProp: 'colors'
-  },
-  bgFullWidth: {
-    themeProp: 'colors',
-  },
-  fontSize: {
-    themeProp: 'fontSizes'
-  },
-  fontFamily: {
-    themeProp: 'fonts'
-  },
-  lineHeight: {
-    themeProp: 'lineHeights'
-  },
-  fontWeight: {
-    themeProp: 'fontWeights'
-  },
-  letterSpacing: {
-    themeProp: 'letterSpacings'
-  },
-  border: {
-    themeProp: 'borders'
-  },
-  borderTop: {
-    themeProp: 'borders'
-  },
-  borderRight: {
-    themeProp: 'borders'
-  },
-  borderBottom: {
-    themeProp: 'borders'
-  },
-  borderLeft: {
-    themeProp: 'borders'
-  },
-  borderRadius: {
-    themeProp: 'borderRadius'
-  },
-  boxShadow: {
-    themeProp: 'boxShadows'
-  },
-  transitionTimingFunction: {
-    themeProp: 'easingFunctions'
-  },
-  transitionDuration: {
-    themeProp: 'transitionDurations'
-  }
+  themeProp: 'spacing'
+},
+mt: {
+  themeProp: 'spacing'
+},
+ml: {
+  themeProp: 'spacing'
+},
+mr: {
+  themeProp: 'spacing'
+},
+mb: {
+  themeProp: 'spacing'
+},
+mx: {
+  themeProp: 'spacing'
+},
+my: {
+  themeProp: 'spacing'
+},
+p: {
+  themeProp: 'spacing'
+},
+pt: {
+  themeProp: 'spacing'
+},
+pl: {
+  themeProp: 'spacing'
+},
+pr: {
+  themeProp: 'spacing'
+},
+pb: {
+  themeProp: 'spacing'
+},
+px: {
+  themeProp: 'spacing'
+},
+py: {
+  themeProp: 'spacing'
+},
+height: {
+  themeProp: 'spacing'
+},
+width: {
+  themeProp: 'spacing'
+},
+size: {
+  themeProp: 'spacing'
+},
+gridGap: {
+  themeProp: 'spacing'
+},
+gridRowGap: {
+  themeProp: 'spacing'
+},
+gridColumnGap: {
+  themeProp: 'spacing'
+},
+color: {
+  themeProp: 'colors'
+},
+bg: {
+  themeProp: 'colors'
+},
+fill: {
+  themeProp: 'colors'
+},
+stroke: {
+  themeProp: 'colors'
+},
+borderColor: {
+  themeProp: 'colors'
+},
+bgFullWidth: {
+  themeProp: 'colors',
+},
+fontSize: {
+  themeProp: 'fontSizes'
+},
+fontFamily: {
+  themeProp: 'fonts'
+},
+lineHeight: {
+  themeProp: 'lineHeights'
+},
+fontWeight: {
+  themeProp: 'fontWeights'
+},
+letterSpacing: {
+  themeProp: 'letterSpacings'
+},
+border: {
+  themeProp: 'borders'
+},
+borderTop: {
+  themeProp: 'borders'
+},
+borderRight: {
+  themeProp: 'borders'
+},
+borderBottom: {
+  themeProp: 'borders'
+},
+borderLeft: {
+  themeProp: 'borders'
+},
+borderRadius: {
+  themeProp: 'borderRadius'
+},
+boxShadow: {
+  themeProp: 'boxShadows'
+},
+transitionTimingFunction: {
+  themeProp: 'easingFunctions'
+},
+transitionDuration: {
+  themeProp: 'transitionDurations'
+}
 ```
 
 :::note Unmapped properties

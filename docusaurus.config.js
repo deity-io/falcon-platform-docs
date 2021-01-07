@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   title: "DEITY Falcon",
@@ -15,18 +15,12 @@ module.exports = {
         alt: "DEITY Logo",
         src: "img/deity-logo.svg",
       },
-      links: [
+      items: [
         {
           to: "/docs/platform/overview/about",
           label: "Falcon Platform",
           position: "right",
           activeBasePath: "/docs/platform/",
-        },
-        {
-          to: "/docs/open-source/getting-started/intro",
-          label: "Falcon Open Source",
-          position: "right",
-          activeBasePath: "/docs/open-source/",
         },
         {
           label: "Falcon UI",
@@ -50,8 +44,8 @@ module.exports = {
               to: "/docs/platform/cloud/about",
             },
             {
-              label: "Falcon Open Source",
-              to: "/docs/open-source/getting-started/intro",
+              label: "Falcon 2019",
+              to: "/docs/2019/getting-started/intro",
             },
             {
               label: "Falcon UI",
@@ -79,6 +73,10 @@ module.exports = {
               to: "/docs/platform/integration/stripe",
             },
             {
+              label: "Mollie",
+              to: "/docs/platform/integration/mollie",
+            },
+            {
               label: "Wordpress",
               to: "/docs/platform/integration/wordpress",
             },
@@ -96,7 +94,7 @@ module.exports = {
               href: "https://twitter.com/deity_pwa",
             },
             {
-              label: "Youtube",
+              label: "YouTube",
               href: "https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ",
             },
             {
@@ -121,10 +119,6 @@ module.exports = {
               href: "https://medium.com/deity-io",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/deity-io/",
-            },
-            {
               label: "Privacy Policy",
               href: "https://deity.io/privacy-policy",
             },
@@ -146,29 +140,46 @@ module.exports = {
     },
     mailchimp: {
       submitUrl: "https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d"
+    },
+    intercom: {
+      appId: "z91ewqiv",
     }
   },
   plugins: [
     [
-      "@docusaurus/plugin-sitemap",
+      path.resolve(__dirname, "./src/plugins/deity-gtm/src/index.js"),
       {
-        cacheTime: 600 * 1000, // 600 sec - cache purge period
-        changefreq: "weekly",
-        priority: 0.5,
+        containerId: "GTM-N4NQJGX",
       },
     ],
     [
-      path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
+      "@docusaurus/plugin-pwa",
       {
-        containerId: 'GTM-N4NQJGX'
-      }
+        offlineModeActivationStrategies: ["always"],
+        pwaHead: [
+          {
+            tagName: "link",
+            rel: "icon",
+            href: "/img/logo-512.png",
+          },
+          {
+            tagName: "link",
+            rel: "manifest",
+            href: "/manifest.json",
+          },
+          {
+            tagName: "meta",
+            name: "theme-color",
+            content: "#26642c",
+          },
+          {
+            tagName: "link",
+            rel: "apple-touch-icon",
+            href: "/img/logo-192.png",
+          },
+        ],
+      },
     ],
-    [
-      path.resolve(__dirname, './src/plugins/deity-intercom/src/index.js'),
-      {
-        appId: 'z91ewqiv'
-      }
-    ]
   ],
   presets: [
     [

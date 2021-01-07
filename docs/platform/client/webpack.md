@@ -24,7 +24,7 @@ module.exports = {
 - `devServerPort: number` - (default: `3001`) webpack dev server (HMR) port
 - `clearConsole: boolean` - (default: `true`) determines whether console should be cleared when starting script
 - `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/docs/platform/client/files#srcmanifestwebmanifest) should be processed via webpack and included in output bundle
-- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/open-source/falcon-client/internationalization#configuration)
+- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/2019/falcon-client/internationalization#configuration)
 - `envToBuildIn` - (default: `[]`) an array of environment variable names which should be build in into bundle, [see the details](#environment-variables)
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
 - `moduleOverride` - (default: `{}`) array of module names to override, [see the details](./overrides)
@@ -47,5 +47,5 @@ However, you can still modify Falcon Client defaults
 
 Checkout out our **cookbook** for examples of changing the build process.
 
-- [Adding a global SCSS file](../cookbook/client/scss-global])
+- [Adding a global SCSS file](../cookbook/client/scss-global)
 - [Adding Post CSS support](../cookbook/client/post-css-support)

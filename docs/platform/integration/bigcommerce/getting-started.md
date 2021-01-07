@@ -10,14 +10,21 @@ Before you get started you'll need a BigCommerce store and have access to the ad
 
 
 ## 1. Install our app
-<img
-  src="/img/docs/platform/bigcommerce/app.jpg"
-  alt="BigCommerce app"
-  width="200"
-  style={{ marginBottom: "20px", display: "block" }}
-/>
+<a
+  href="https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Download our BigCommerce App"
+>
+  <img
+    src="/img/docs/platform/bigcommerce/app.jpg"
+    alt="BigCommerce app"
+    width="200"
+    style={{ marginBottom: "20px", display: "block" }}
+  />
+</a>
 
-The first thing you'll need to do is visit the [BigCommerce App Store](https://www.bigcommerce.com/apps/) and download our app.
+The first thing you'll need to do is visit the [BigCommerce App Store](https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/) and download our app.
 
 ## 2. Setup our app
 
@@ -159,7 +166,7 @@ Once you have access to our packages you'll be able to create your app using `np
 
 The last step is to connect your app so it's being used by your Falcon Cloud account. If you visit the the `Falcon Client` tab you'll see information about **Authorising** Cloud to have access to your repository and adding a **Webhook** so cloud can listen for changes (so your Cloud instance knows when you push code).
 
-You can see detailed docs for this step [here](/docs/platform/cloud/repository).
+You can see detailed docs for this step [here](/docs/platform/getting-started/repository).
 
 ## 5. Local development
 
@@ -176,7 +183,7 @@ Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` wi
 }
 ```
 
-## 6. Faclon Cloud + Deployments
+## 6. Falcon Cloud + Deployments
 
 Falcon Cloud comes as part of Falcon Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/docs/platform/cloud/installation).  You'll need an **access token** to log into using DCloud. This can be found in the `Falcon Server` tab.
 
