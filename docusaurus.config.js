@@ -138,9 +138,12 @@ module.exports = {
       indexName: "deity",
       algoliaOptions: {},
     },
+    mailchimp: {
+      submitUrl: "https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d"
+    },
     intercom: {
       appId: "z91ewqiv",
-    },
+    }
   },
   plugins: [
     [
