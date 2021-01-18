@@ -1,11 +1,3 @@
-
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 module.exports = {
   falconPlatformSidebar: {
     Overview: ['platform/overview/about', 'platform/overview/plans'],
@@ -93,7 +85,14 @@ module.exports = {
           'platform/integration/bigcommerce/manual'
         ]
       },
-      'platform/integration/magento2',
+      {
+        type: 'category',
+        label: 'Magento 2',
+        items: [
+          'platform/integration/magento2/overview',
+          'platform/integration/magento2/getting-started',
+        ]
+      },
       'platform/integration/stripe',
       'platform/integration/mollie',
       'platform/integration/wordpress'
