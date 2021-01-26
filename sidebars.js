@@ -38,6 +38,7 @@ module.exports = {
       'platform/client/overrides',
       'platform/client/routing',
       'platform/client/meta-data',
+      'platform/client/schema-json',
       'platform/client/data',
       'platform/client/state',
       'platform/client/translations',
@@ -158,6 +159,8 @@ module.exports = {
     ],
     'Release Notes': [
       'platform/release/full-changelog',
+      'platform/release/2-6-2',
+      'platform/release/2-6-0',
       'platform/release/2-5-0',
       'platform/release/2-4-8',
       'platform/release/2-4-6',
