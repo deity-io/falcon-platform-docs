@@ -8,9 +8,9 @@ sidebar_label: Schema Markup / Rich Results
 
 Falcon UI Kit comes complete with a few handy components to provide your app with Schema markup in the form of JSON.
 
-To test your app you can use (Googles rich results testing tool)[https://search.google.com/test/rich-results].
+To test your app you can use [Googles rich results testing tool](https://search.google.com/test/rich-results).
 
-For full schema markup docs please see (schema.org)[https://schema.org/docs/gs.html].
+For full schema markup docs please see [schema.org](https://schema.org/docs/gs.html).
 
 
 ## Featues
