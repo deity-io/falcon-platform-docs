@@ -24,7 +24,7 @@ For full schema markup docs please see (schema.org)[https://schema.org/docs/gs.h
 
 ### Organisation Schema
 
-(Full docs)[https://schema.org/Organization]
+[Full docs](https://schema.org/Organization)
 
 Ideally the organisation schema component will be added to your route `App.js` file so it exists on all page.
 
@@ -57,7 +57,7 @@ The props expected are:
 
 ### Product Schema
 
-(Full docs)[https://schema.org/Product]
+[Full docs](https://schema.org/Product)
 
 The product schema should be added to your route product component (`client/src/pages/shop/Product.js` in our example apps).
 
@@ -82,13 +82,13 @@ import { ProductSchema } from '@deity/falcon-ui-kit';
 
 ### Product List Schema
 
-(Full docs)[https://schema.org/Product]
+[Full docs](https://schema.org/Product)
 
 The product list uses the product schema but is imported into our `ProductCard` component.
 
 ### Blog Post Schema
 
-(Full docs)[https://schema.org/Blog]
+[Full docs](https://schema.org/Blog)
 
 The blog post component is added to the root blog post component (`client/src/pages/blog/Post.js` in our example).
 
@@ -115,6 +115,6 @@ import { FormattedDate, Image, BlogPostSchema } from '@deity/falcon-ui-kit';
 
 ### Blog List Schema
 
-(Full docs)[https://schema.org/Blog]
+[Full docs](https://schema.org/Blog)
 
 The blog list schema uses the same component as the blog post but is added to the `BlogPostCard` component.
