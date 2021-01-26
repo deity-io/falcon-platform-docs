@@ -7,6 +7,46 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.6.2 (2021-01-26)
+
+- Dropped Node 10 support
+
+### Create Falcon App
+
+- fixed crashes during dependency installation on windows
+
+### Falcon Server Env
+
+- added `EndpointManager.getDataSource` method to get an instance of the required DataSource
+
+### Falcon UI
+
+- added more responsive style props and values
+- fixed sidebar overflow causing issues
+
+### Falcon Demo
+
+- added support for multiple cart coupons/vouchers in the frontend
+- added a content loader for the product page
+- added a feature which shows original prices of sale items in `Cart` and `MiniCart`
+- fixed loader not showing when changing which product you are viewing
+- fixed the invisibility of the mobile bottom bar when at the top of search/checkout pages
+- fixed input font sizes causing iOS Safari to zoom in on fields
+
+### Falcon BigCommerce API
+
+- added fetches for the `regularPrice` of items which are in the cart
+
+### Falcon Shop Data
+
+- added `regularPrice` and `rowTotalWithDiscount` fields to `MiniCartQuery`
+- added `regularPrice` to `CartItem`
+
+### Falcon Shop Extension
+
+- BREAKING: renamed `itemId` to `id`
+
+
 ## Falcon Platform v2.5.0 (2020-10-28)
 
 ### Falcon Demo
@@ -44,6 +84,10 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 ### Falcon UI
 
 - added dynamically generated negative spacings for all positive spacings
+
+### Falcon UI Kit
+
+- added schema.json components
 
 ## Falcon Platform v2.4.8 (2020-09-14)
 
