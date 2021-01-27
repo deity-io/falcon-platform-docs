@@ -66,6 +66,10 @@ import { Events } from '@deity/falcon-server-env';
 ...
 
 this.eventEmitter.on(Events.ERROR, async data => {
-  // Your code here
+  // ERROR code here
+});
+
+this.eventEmitter.on(Events.AFTER_INITIALIZED, async data => {
+  // AFTER_INITIALIZED code here
 });
 ```
