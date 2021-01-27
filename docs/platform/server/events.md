@@ -60,16 +60,43 @@ You can then use `eventEmitter` to intercept these events.
 
 ## Usage
 
+**server/index.js example**
+
 ```js
 const { Events } = require('@deity/falcon-server-env');
 
 ...
 
-this.eventEmitter.on(Events.ERROR, async data => {
+const server = new FalconServer(config);
+
+server.eventEmitter.on(Events.ERROR, async data => {
   // ERROR code here
 });
 
-this.eventEmitter.on(Events.AFTER_INITIALIZED, async data => {
+server.eventEmitter.on(Events.AFTER_INITIALIZED, async data => {
   // AFTER_INITIALIZED code here
 });
+
+server.start();
+```
+
+**API package example**
+
+```js
+const { Events } = require('@deity/falcon-server-env');
+...
+export default class YourClass extends ApiDataSource {
+  constructor(params) {
+    super(params)
+    ...
+    this.eventEmitter.on(Events.ERROR, async data => {
+      // ERROR code here
+    });
+
+    this.eventEmitter.on(Events.AFTER_INITIALIZED, async data => {
+      // AFTER_INITIALIZED code here
+    });
+
+  }
+}
 ```
