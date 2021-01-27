@@ -61,7 +61,7 @@ You can then use `eventEmitter` to intercept these events.
 ## Usage
 
 ```js
-import { Events } from '@deity/falcon-server-env';
+const { Events } = require('@deity/falcon-server-env');
 
 ...
 
