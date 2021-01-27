@@ -86,7 +86,7 @@ server.start();
 
 ### Emitting an event
 
-Due to the way API data sources are initiated we don't advised watching for events in them.
+Due to the way API data sources are initiated we don't advise watching for events in them.
 
 You can however `emit` a new or existing event.
 
