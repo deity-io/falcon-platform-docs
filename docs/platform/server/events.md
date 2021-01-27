@@ -53,7 +53,7 @@ export enum Events {
 
 ## How it works
 
-To use and of these events you'll need to first import `Events` enum from `'@deity/falcon-server-env'`.
+To use one of these events you'll need to first import `Events` enum from `'@deity/falcon-server-env'`.
 
 You can then use `eventEmitter` to intercept these events.
 
