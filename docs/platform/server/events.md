@@ -9,6 +9,8 @@ enterprise_only: true
 
 Falcon Server emits several event hooks that can be used to add your own custom code.
 
+We use (this package)[https://www.npmjs.com/package/eventemitter2] as a base for our events.
+
 ## Available Events
 
 ```ts
@@ -60,7 +62,9 @@ You can then use `eventEmitter` to intercept these events.
 
 ## Usage
 
-**server/index.js example**
+### Watching an event
+
+**server/index.js**
 
 ```js
 const { Events } = require('@deity/falcon-server-env');
@@ -80,23 +84,29 @@ server.eventEmitter.on(Events.AFTER_INITIALIZED, async data => {
 server.start();
 ```
 
-**API package example**
+### Emitting an event
 
+Due to the way API data sources are initiated we don't advised watching for events in them.
+
+You can however `emit` a new or existing event.
+
+**API data source package**
 ```js
 const { Events } = require('@deity/falcon-server-env');
 ...
 export default class YourClass extends ApiDataSource {
-  constructor(params) {
-    super(params)
-    ...
-    this.eventEmitter.on(Events.ERROR, async data => {
-      // ERROR code here
-    });
+  
+    yourMethod() {
+      // New event
+      this.eventEmitter.emit('event.name', value1, value2);
 
-    this.eventEmitter.on(Events.AFTER_INITIALIZED, async data => {
-      // AFTER_INITIALIZED code here
-    });
-
+      // Existing event
+      this.eventEmitter.emit(Events.ERROR, value1, value2);
+    }
   }
 }
 ```
+
+### Emitting Errors
+
+Errors in our API data source packages automatically `emit` the `Events.ERROR` event so you can latch onto this in `server/index.js` if you want to log your errors using a 3rd party service. 
