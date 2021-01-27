@@ -9,7 +9,7 @@ enterprise_only: true
 
 Falcon Server emits several event hooks that can be used to add your own custom code.
 
-We use (this package)[https://www.npmjs.com/package/eventemitter2] as a base for our events.
+We use [this package](https://www.npmjs.com/package/eventemitter2) as a base for our events.
 
 ## Available Events
 
