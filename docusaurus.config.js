@@ -66,7 +66,7 @@ module.exports = {
             },
             {
               label: "Magento 2",
-              to: "/docs/platform/integration/magento2",
+              to: "/docs/platform/integration/magento2/overview",
             },
             {
               label: "Stripe",

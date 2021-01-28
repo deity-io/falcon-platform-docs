@@ -82,7 +82,7 @@ Each integration will have a different set of required environment variables. Th
 
 - [Algolia](/docs/platform/integration/algolia#deity-cloud-environment-variables)
 - [BigCommerce](/docs/platform/integration/bigcommerce/manual#deity-cloud-environment-variables)
-- [Magento 2](/docs/platform/integration/magento2#deity-cloud-environment-variables)
+- [Magento 2](/docs/platform/integration/magento2/getting-started#deity-cloud-environment-variables)
 - [Stripe](/docs/platform/integration/stripe#deity-cloud-environment-variables)
 - [Wordpress](/docs/platform/integration/wordpress#deity-cloud-environment-variables)
 
