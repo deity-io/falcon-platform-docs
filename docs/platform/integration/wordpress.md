@@ -22,8 +22,6 @@ It works using our Wordpress Plugin to extend and add API endpoints.
 
 ## Supported Features
 
-Our plugin adds endpoints for many of Wordpresses features including posts, tags, comments, media and more. We also support menus and `Advanced Custom Fields`.
-
 Using `demo-v1` we have full support (including components and routes) for the following features:
 
 - Blog Posts
