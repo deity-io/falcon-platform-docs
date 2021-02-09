@@ -54,10 +54,10 @@ From the admin (system->integrations) you can create a new integration.
 From here you will get the following credentials to use later:
 <img src="/img/docs/platform/magento2/integration-details.png" alt="Integration details" width="300" style={{ marginBottom: 20 }}/>
 
-- `CONSUMER_KEY`
-- `CONSUMER_SECRET`
-- `ACCESS_TOKEN`
-- `ACCESS_TOKEN_SECRET`
+- `MAGENTO_CONSUMER_KEY`
+- `MAGENTO_CONSUMER_SECRET`
+- `MAGENTO_ACCESS_TOKEN`
+- `MAGENTO_ACCESS_TOKEN_SECRET`
 
 ### 4. Create your Falcon App.
 Install Falcon Platform using the `demo-v1` example and `create-falcon-app`
@@ -71,19 +71,20 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
   "endpoints": {
     "magento": {
       "config": {
-        "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]"
+        "host": "[MAGENTO_HOST]"
       }
     }
   },
   "apis": {
     "magento2": {
       "config": {
-        "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]",
+        "host": "[MAGENTO_HOST]",
+        "defaultLocale": "[MAGENTO_DEFAULT_LOCALE]",
         "auth": {
-          "consumerKey": "[CONSUMER_KEY]",
-          "consumerSecret": "[CONSUMER_SECRET]",
-          "accessToken": "[ACCESS_TOKEN]",
-          "accessTokenSecret": "[ACCESS_TOKEN_SECRET]"
+          "consumerKey": "[MAGENTO_CONSUMER_KEY]",
+          "consumerSecret": "[MAGENTO_CONSUMER_SECRET]",
+          "accessToken": "[MAGENTO_ACCESS_TOKEN]",
+          "accessTokenSecret": "[MAGENTO_ACCESS_TOKEN_SECRET]"
         }
       }
     }
