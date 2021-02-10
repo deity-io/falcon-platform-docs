@@ -71,31 +71,35 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
   "endpoints": {
     "magento": {
       "config": {
-        "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]"
+        "host": "MAGENTO_HOST"
       }
     }
   },
   "apis": {
     "magento2": {
       "config": {
-        "host": "[MAGENTO_SITE_URL_WITHOUT_PROTOCOL]",
+        "host": "MAGENTO_HOST",
+        "defaultLocale": "MAGENTO_DEFAULT_LOCALE",
         "auth": {
-          "consumerKey": "[CONSUMER_KEY]",
-          "consumerSecret": "[CONSUMER_SECRET]",
-          "accessToken": "[ACCESS_TOKEN]",
-          "accessTokenSecret": "[ACCESS_TOKEN_SECRET]"
+          "consumerKey": "MAGENTO_CONSUMER_KEY",
+          "consumerSecret": "MAGENTO_CONSUMER_SECRET",
+          "accessToken": "MAGENTO_ACCESS_TOKEN",
+          "accessTokenSecret": "MAGENTO_ACCESS_TOKEN_SECRET"
         }
       }
     }
   }
 }
-
 ```
 
 ### Deity Cloud Environment Variables
 
-- `PAYMENT_STRIPE_SECRET_KEY`: your secret key
-- `PAYMENT_STRIPE_PUBLIC_KEY`: your public key
+- `MAGENTO_HOST`: Your Magento site URL (without protocol) e.g. `magento.deity.io`
+- `MAGENTO_CONSUMER_KEY`: your consumer key
+- `MAGENTO_CONSUMER_SECRET`: your consumer secret
+- `MAGENTO_ACCESS_TOKEN`: your access token
+- `MAGENTO_ACCESS_TOKEN_SECRET`: your access token secret
+- `MAGENTO_DEFAULT_LOCALE`: default locale for your Magento store. e.g. `en_GB`
 
 
 ### 6. Update magento configuration

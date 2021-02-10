@@ -57,9 +57,9 @@ All you need to do is add your sites URL and you're away.
   "apis": {
     "wordpress": {
       "config": {
-        "host": "[SITE_URL_WITHOUT_PROTOCOL]",
-        "protocol": "[PROTOCOL]",
-        "apiPrefix": "/wp-json/wp/v2"
+        "host": "WORDPRESS_API_HOST",
+        "protocol": "WORDPRESS_API_PROTOCOL",
+        "apiPrefix": "WORDPRESS_API_PREFIX"
       }
     }
   }
@@ -69,7 +69,9 @@ All you need to do is add your sites URL and you're away.
 
 ## Deity Cloud Environment Variables
 
-Coming Soon
+- `WORDPRESS_API_HOST` - defaults to our demo instance `wordpress.deity.io`
+- `WORDPRESS_API_PROTOCOL` - defaults to `https`
+- `WORDPRESS_API_PREFIX` - defaults to `/wp-json/wp/v2`
 
 
 ### 5. Finished
