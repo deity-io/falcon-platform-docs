@@ -13,6 +13,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
+import Newsletter from "./../../components/Newsletter";
 import Slack from "./../../components/Slack";
 import { Chat } from "./../../components/Intercom";
 
@@ -59,6 +60,7 @@ function Footer() {
   return (
     <>
       <Slack />
+      <Newsletter />
       <footer
         className={classnames("footer", {
           "footer--dark": footer.style === "dark",

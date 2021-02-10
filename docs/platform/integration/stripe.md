@@ -16,7 +16,7 @@ sidebar_label: Stripe Payments
 
 Our integration with Stripe payments uses [https://github.com/stripe/react-stripe-js](https://github.com/stripe/react-stripe-js) to provide a production ready credit card form in the checkout. This ships with our `demo-v2` example project.
 
-If you want to see a live example head over to [our demo site](https://demo.deity.io/). 
+If you want to see a live example head over to [our demo site](https://demo.deity.io/).
 
 You can test transactions using these details:
 
@@ -28,7 +28,7 @@ Our integration includes:
 
 - `client/src/pages/shop/Checkout/components/payments/Stripe.js` (Client side component)
 - `@deity-io/falcon-stripe-plugin`(Client side plugin)
-- `@deity/falcon-payments/src/provider/stripe.js` (Server side provider)
+- `@deity/falcon-payments-stripe` (Server side provider)
 
 ## Supported Features
 
@@ -50,7 +50,7 @@ Once you've created an account you should be able to find your API keys in the d
 
 <img src="/img/docs/platform/stripe-account-2.png" alt="Stripe Account API section" style={{marginBottom: 20}} />
 
-You'll need you API keys later.
+You'll need your API keys later.
 
 ### 2. Add your Stripe details to your Falcon Platform config
 
@@ -58,6 +58,7 @@ If you're using our example app `demo-v2` all you need to do now is add your Str
 
 The Stripe provider should already exist in your components->payments.
 **`server/config/default.json`**
+
 ```json
 {
   "components": {
@@ -68,7 +69,6 @@ The Stripe provider should already exist in your components->payments.
           "stripe": {
             "package": "@deity/falcon-payments/src/provider/stripe",
             "config": {
-              "title": "Stripe",
               "secretKey": null,
               "publicKey": null
             }
@@ -90,8 +90,7 @@ You just need to add your `secretKey` and `publicKey`. These should be added in 
 ## Deity Cloud Environment Variables
 
 - `FALCON_PAYMENTS_ENABLED`: [bool] - You need to use Falcon Payments to use our Stripe integration.
-- `PAYMENT_STRIPE_ENABLED`: [bool] - Enable Striep
-- `PAYMENT_STRIPE_TITLE`: The title that appears above the payment method e.g. Credit Card
+- `PAYMENT_STRIPE_ENABLED`: [bool] - Enable Stripe
 - `PAYMENT_STRIPE_SECRET_KEY`: Your secret key
 - `PAYMENT_STRIPE_PUBLIC_KEY`: Your public key
 

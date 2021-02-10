@@ -5,50 +5,17 @@ sidebar_label: Overview
 enterprise_only: true
 ---
 
-Payment service providers (PSPs) all handle payments in different ways meaning every integration will be a little different. Because of this `@deity/falcon-payments` tries to be as indiscriminate as possible.
+Payments can be handled in 2 ways, either via your shop or using our payments package, [`@deity/falcon-payments`](falcon-payments/overview).
 
-There are 3 main parts involved in the payment process:
+We **highly recommend** using [`@deity/falcon-payments`](falcon-payments/overview) as this will provide the most flexibility,
+ensure your server doesn't need to be PCI-compliant (all payments are handled on the client-side) and we are continuously adding
+support for new payment providers.
 
-- A [PSP](provider) registered in your server config
-- A [Payment UI](ui) that is mapped to a provider
-- PSP API (Stripe, Braintree, PayPal etc.)
+### Payment using your shop
 
-## Payment Flow Steps
+Payment methods can be retrieved from your shop backend. Falcon can simply display a UI and pass order details to the backend via Falcon Server. These are processed using your shops backend and NOT by Falcon.
 
-import HighlightFlag from '../../../src/components/HighlightFlag';
+### Payments using Falcon Payments (Recommended)
 
-1. <HighlightFlag text="PSP" /> Account / API keys created
-
-2. <HighlightFlag type="server" /> Payment provider created and configured in config files.
-
-3. <HighlightFlag type="client" /> Client side UI component created (payment form)
-
-4. <HighlightFlag type="client" /> Client side component mapped to provider
-
-5. <HighlightFlag type="client" /> Client side component initiated
-
-6. <HighlightFlag type="server" /> Triggers `initiate` method in payment provider. Authentication requested
-
-7. <HighlightFlag text="PSP" /> Token / Auth info returned
-
-8. <HighlightFlag type="server" /> PSP auth pushed to client side component
-
-9. <HighlightFlag type="client" /> User triggers payment (fills in form and submits)
-
-10. <HighlightFlag type="server" /> Triggers `validate` method in payment provider
-
-11. <HighlightFlag text="PSP" /> Payment handled
-
-12. <HighlightFlag type="server" /> Payment response handled
-
-## Payment Flow Diagram
-
-This is a general overview of how payments work in the Falcon Platform checkout. All payment service providers are different, as are all implementations so this may vary slightly for you.
-
-<img src="/img/docs/platform/payment-flow-core.jpg" alt="Payment flow diagram" />
-
-## Examples
-
-This example contains a step by step guide to adding a new payment method.
-
-- [Braintree Payments](/docs/platform/cookbook/integrations/braintree)
+Falcon Payments package acts as a middleware and handles all payment processing via APIs directly communicating with payment providers. This then sends payment statuses to your shops API via webhooks.
+[Learn more about `@deity/falcon-payments`](falcon-payments/overview)

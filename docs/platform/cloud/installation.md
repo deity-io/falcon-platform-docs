@@ -82,7 +82,7 @@ Each integration will have a different set of required environment variables. Th
 
 - [Algolia](/docs/platform/integration/algolia#deity-cloud-environment-variables)
 - [BigCommerce](/docs/platform/integration/bigcommerce/manual#deity-cloud-environment-variables)
-- [Magento 2](/docs/platform/integration/magento2#deity-cloud-environment-variables)
+- [Magento 2](/docs/platform/integration/magento2/getting-started#deity-cloud-environment-variables)
 - [Stripe](/docs/platform/integration/stripe#deity-cloud-environment-variables)
 - [Wordpress](/docs/platform/integration/wordpress#deity-cloud-environment-variables)
 
@@ -133,5 +133,5 @@ To deploy your build run the command `dcloud deployment:run [buildId] [environme
 
 ---
 
-## What our 'how to' video.
+## Watch our 'how to' video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CSrkxZgtY6w?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

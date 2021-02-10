@@ -1,11 +1,3 @@
-
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 module.exports = {
   falconPlatformSidebar: {
     Overview: ['platform/overview/about', 'platform/overview/plans'],
@@ -38,6 +30,7 @@ module.exports = {
       'platform/client/overrides',
       'platform/client/routing',
       'platform/client/meta-data',
+      'platform/client/schema-json',
       'platform/client/data',
       'platform/client/state',
       'platform/client/translations',
@@ -46,7 +39,11 @@ module.exports = {
       'platform/client/static-files',
       'platform/client/browser-support'
     ],
-    'Falcon Server': ['platform/server', 'platform/server/dynamic-routes'],
+    'Falcon Server': [
+      'platform/server',
+      'platform/server/dynamic-routes',
+      'platform/server/event-hooks'
+    ],
     'Falcon Cloud': [
       'platform/cloud/about',
       'platform/cloud/technical',
@@ -56,14 +53,29 @@ module.exports = {
       'platform/cloud/dcloud'
     ],
     Configuration: [
-      'platform/configuration/overview',
-      'platform/configuration/client',
-      'platform/configuration/server'
+      "platform/configuration/overview",
+      "platform/configuration/client",
+      "platform/configuration/server",
     ],
-    Caching: ['platform/cache/overview'],
-    Deployment: ['platform/deployment/overview'],
-    Logging: ['platform/logging/overview'],
-    Payments: ['platform/payments/overview', 'platform/payments/provider', 'platform/payments/ui'],
+    Caching: ["platform/cache/overview"],
+    Deployment: ["platform/deployment/overview"],
+    Logging: ["platform/logging/overview"],
+    Payments: [
+      "platform/payments/overview",
+      {
+        type: "category",
+        label: "Falcon Payments",
+        items: [
+          "platform/payments/falcon-payments/overview",
+          "platform/payments/falcon-payments/packages",
+          "platform/payments/falcon-payments/provider",
+          "platform/payments/falcon-payments/webhooks",
+          "platform/payments/falcon-payments/features",
+          "platform/payments/falcon-payments/getting-started",
+          "platform/payments/falcon-payments/integration",
+        ],
+      },
+    ],
     Integrations: [
       'platform/integration/examples',
       'platform/integration/algolia',
@@ -78,8 +90,16 @@ module.exports = {
           'platform/integration/bigcommerce/manual'
         ]
       },
-      'platform/integration/magento2',
+      {
+        type: 'category',
+        label: 'Magento 2',
+        items: [
+          'platform/integration/magento2/overview',
+          'platform/integration/magento2/getting-started',
+        ]
+      },
       'platform/integration/stripe',
+      'platform/integration/mollie',
       'platform/integration/wordpress'
     ],
     Testing: ['platform/testing/overview'],
@@ -142,6 +162,8 @@ module.exports = {
     ],
     'Release Notes': [
       'platform/release/full-changelog',
+      'platform/release/2-6-2',
+      'platform/release/2-6-0',
       'platform/release/2-5-0',
       'platform/release/2-4-8',
       'platform/release/2-4-6',

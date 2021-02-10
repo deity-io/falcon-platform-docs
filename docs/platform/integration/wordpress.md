@@ -22,8 +22,6 @@ It works using our Wordpress Plugin to extend and add API endpoints.
 
 ## Supported Features
 
-Our plugin adds endpoints for many of Wordpresses features including posts, tags, comments, media and more. We also support menus and `Advanced Custom Fields`.
-
 Using `demo-v1` we have full support (including components and routes) for the following features:
 
 - Blog Posts
@@ -59,9 +57,9 @@ All you need to do is add your sites URL and you're away.
   "apis": {
     "wordpress": {
       "config": {
-        "host": "[SITE_URL_WITHOUT_PROTOCOL]",
-        "protocol": "[PROTOCOL]",
-        "apiPrefix": "/wp-json/wp/v2"
+        "host": "WORDPRESS_API_HOST",
+        "protocol": "WORDPRESS_API_PROTOCOL",
+        "apiPrefix": "WORDPRESS_API_PREFIX"
       }
     }
   }
@@ -71,7 +69,9 @@ All you need to do is add your sites URL and you're away.
 
 ## Deity Cloud Environment Variables
 
-Coming Soon
+- `WORDPRESS_API_HOST` - defaults to our demo instance `wordpress.deity.io`
+- `WORDPRESS_API_PROTOCOL` - defaults to `https`
+- `WORDPRESS_API_PREFIX` - defaults to `/wp-json/wp/v2`
 
 
 ### 5. Finished
