@@ -4,6 +4,7 @@ module.exports = {
     'Getting Started': [
       'platform/getting-started/overview',
       'platform/getting-started/prerequisites',
+      'platform/getting-started/dcloud',
       'platform/getting-started/npm',
       'platform/getting-started/create',
       'platform/getting-started/repository'
