@@ -62,6 +62,6 @@ Running a deployment will restart your app and will also apply new changes to en
 
 ### 5. Test your changes
 
-Unless your running Falcon Server locally (Enterprise plans only), now is a great time to test your changes.  By connecting your local client app to your remote server app (via the GraphQL URL [explained here](/docs/platform/getting-started/create#2-add-your-details)) you should be able to see any config changes you've made.
+Unless you're running Falcon Server locally (Enterprise plans only), now is a great time to test your changes.  By connecting your local client app to your remote server app (via the GraphQL URL [explained here](/docs/platform/getting-started/create#2-add-your-details)) you should be able to see any config changes you've made.
 
 We recommend changing your shop integration variables so you can see your own products and categories locally.
