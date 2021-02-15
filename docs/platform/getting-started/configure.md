@@ -18,7 +18,7 @@ We highly recommend you read our [config docs](/docs/platform/configuration/over
 
 ### 1. Log into your environment
 
-Hopefully you're still logged in from [step 2](/docs/platform/getting-started/dcloud#login-to-your-cloud-env). If not, follow the steps there.
+Hopefully you're still logged in from [the 'Install Dcloud' step](/docs/platform/getting-started/dcloud#login-to-your-cloud-env). If not, follow the steps there.
 
 ### 2. What variables need setting?
 

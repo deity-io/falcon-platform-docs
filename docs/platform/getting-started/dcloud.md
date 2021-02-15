@@ -48,7 +48,7 @@ After this you'll be redirected to login. You can use the credentials provided t
 
 ### Getting your NPM token
 
-Once you've successfully logged in, your **NPM access** token will appear in your current terminal window. You'll need this in a later step so we advise adding it to a password manager or storing it safely.
+Once you've successfully logged in, your **NPM access** token will appear in your current terminal window. You'll need this in a later step so we advise adding it to a password manager.
 
 :::note Lost your NPM token?
 If you've lost your NPM token you can run `dcloud project:npm-token` to get it.
