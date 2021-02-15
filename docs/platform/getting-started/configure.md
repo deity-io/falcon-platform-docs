@@ -50,7 +50,7 @@ dcloud env:var:set test MAGENTO_HOST magento.deity.io
 
 ### 4. Apply your changes
 
-To apply your vairable changes you can run the command:
+To apply your variable changes you can run the command:
 
 ```bash
 dcloud env:var:apply <env>
