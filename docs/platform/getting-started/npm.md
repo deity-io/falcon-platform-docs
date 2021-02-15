@@ -24,6 +24,10 @@ You'll need to either create or edit a `.npmrc` file. The user config can be fou
 nano ~/.npmrc
 ```
 
+:::note Using Windows?
+If you're using Windows you can just use file explorer and any text editor to create / edit this file.
+:::
+
 ### Add your token
 
 Add the following code to your `.npmrc` file, replacing `<YOUR_TOKEN>` with your token. 
