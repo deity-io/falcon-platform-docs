@@ -1,7 +1,7 @@
 ---
 id: prerequisites
-title: Prerequisites
-sidebar_label: Prerequisites
+title: 1. Prerequisites
+sidebar_label: 1. Prerequisites
 ---
 
 ## Falcon Platform account

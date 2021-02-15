@@ -1,22 +1,32 @@
 ---
 id: npm
-title: Adding your NPM auth token
-sidebar_label: Adding your NPM auth token
+title: 3. Access our packages
+sidebar_label: 3. Access our packages
 ---
+
+## Overview
 
 In order to be able to get access to the **Falcon Platform packages**, you will need to connect to our private npm registry.
 
-You can do this using an **authorisation token**. You can get this from your admin panel or by contacting us.
+You can do this using the **authorisation token** from [Step 2](/docs/platform/getting-started/dcloud#getting-your-npm-token). 
 
-To set up your token please follow these steps:
+You'll need to add your token to a [.npmrc file](https://docs.npmjs.com/cli/v7/configuring-npm/npmrc).
 
-1. Log in into <a href="https://npm.deity.io" target="_blank" rel="noreferrer noopener">https://npm.deity.io</a> (you can use any email) using credentials provided by DEITY:
+We recommend adding your token to a user config, it can however be added in your projects root.
 
-```javascript
-npm login --registry=https://npm.deity.io --scope=@deity
+## Setup
+
+### Add / Edit your .npmrc
+
+You'll need to either create or edit a `.npmrc` file. The user config can be found in your users root directory `~/.npmrc`.  If you don't have one, you can create one:
+
+```bash
+nano ~/.npmrc
 ```
 
-2. Your `~/.npmrc` file should contain your auth token. 
+### Add your token
+
+Add the following code to your `.npmrc` file, replacing `<YOUR_TOKEN>` with your token. 
 
 **Example:**
 ```javascript
@@ -24,19 +34,12 @@ npm login --registry=https://npm.deity.io --scope=@deity
 //npm.deity.io/:_authToken=<YOUR_TOKEN>
 ```
 
-:::note Using Deity Cloud?
-If you're using Deity Cloud and are logged into `dcloud` you can run `dcloud project:npm-token` to get your NPM token.
-:::
+### Test your access
 
-3. To let Falcon Cloud use your NPM token for the deployments and keep your token outside of GIT, run the following command in your terminal.
+To test your access you can run 
 
-```javascript
-dcloud project:var:set NPM_TOKEN "<YOUR_TOKEN>"
+```bash
+npm view @deity/create-falcon-app
 ```
 
-4. To use the dcloud build variable, add a `.npmrc` file to the root folder of your project application (e.g. `client/.npmrc` and `server/.npmrc`) with the following content:
-
-```javascript
-//npm.deity.io/:_authToken=${NPM_TOKEN}
-@deity:registry=https://npm.deity.io/
-```
+This will return the list of available versions of Create Falcon App. If you see version then you have access :-)

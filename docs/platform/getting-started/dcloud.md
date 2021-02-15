@@ -1,7 +1,7 @@
 ---
 id: dcloud
-title: Installing Dcloud
-sidebar_label: Install Dcloud
+title: 2. Installing Dcloud
+sidebar_label: 2. Install Dcloud
 ---
 
 ## What's Dcloud?

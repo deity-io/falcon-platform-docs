@@ -7,6 +7,7 @@ module.exports = {
       'platform/getting-started/dcloud',
       'platform/getting-started/npm',
       'platform/getting-started/create',
+      'platform/getting-started/configure',
       'platform/getting-started/repository'
     ],
     'Falcon Client': [
