@@ -84,7 +84,7 @@ dcloud repo
 
 ## 3. View your builds
 
-Every time you push a commit that will trigger a build. These builds are not 'deployed' automatically but are made available to deploy once they are finished.
+Every time you push a commit, a build is triggered. These builds are not 'deployed' automatically but are made available to deploy once they are finished.
 
 To view your builds run
 

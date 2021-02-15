@@ -6,7 +6,7 @@ sidebar_label: 2. Install Dcloud
 
 ## What's Dcloud?
 
-Dcloud is our CLI tool for managing your Deity cloud account. From here you can manage deployments, environment varaibles and much more. [Read our full Deity Cloud docs for more information.](/docs/platform/cloud/about)
+Dcloud is our CLI tool for managing your Deity cloud account. From here you can manage deployments, environment variables and much more. [Read our full Deity Cloud docs for more information.](/docs/platform/cloud/about)
 
 
 ## Install Dcloud
