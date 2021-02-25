@@ -13,7 +13,7 @@ const PlatformSolutions = [
   {
     name: "I'm going to set up Falcon Platform on my own",
     description: "For Magento 2 and custom integrations",
-    url: "/docs/platform/getting-started/overview#basic-setup-steps",
+    url: "/docs/platform/getting-started/prerequisites",
     img: "/img/docs/platform/deity-solution.jpg",
   },
 ];
