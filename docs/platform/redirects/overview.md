@@ -60,7 +60,7 @@ Each time you use the string `(.*)$` it is passed as a variable in numberical or
 **example**
 
 ```
-/product-1(.*)$  /product-2$1
+@\/product-1(\?.*)?$  /product-2$1
 ```
 
 In this example everything after `product-1` is saved as `$1` and passed to the end of the destination.  e.g. `https://deity.io/product-1?id=1&project=2` => `https://deity.io/product-2?id=1&project=2`
