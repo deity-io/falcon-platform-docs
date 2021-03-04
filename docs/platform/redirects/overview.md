@@ -40,7 +40,7 @@ In this example the url `/product-1` will 301 redirect to `/product-2`
 
 ### Regex support
 
-We also support regex. You can start using regex using the `@` character.  Anything between `@` and the next `\` is considered regex.
+We also support regex. Any entry prefixed with `@` is considered regex.
 
 **example**
 
