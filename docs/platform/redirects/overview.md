@@ -45,7 +45,7 @@ We also support regex. Any entry prefixed with `@` is considered regex.
 **example**
 
 ```
-@^\/product-1  /product-2
+@\/product-1$  /product-2
 ```
 
 In this example any url that ends in `/product-1` will be redirected to `/product-2`
