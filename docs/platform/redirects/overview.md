@@ -78,7 +78,7 @@ In this example everything before `product-1` is set to `$1` and everything afte
 
 Redirect support is directly injected into your shops `fetchUrl()` method. 
 
-We check for URL matches, if none are returned we then query the shops redirect API.  If a match is found we return and object:
+We check for URL matches, if none are returned we then query the shops redirect API.  If a match is found we return an object:
 
 ```js
 {
