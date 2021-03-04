@@ -26,6 +26,7 @@ Using `demo-v1` we have full support (including components and routes) for the f
 
 - Blog Posts
 - Blog Categories
+- Pages
 
 See our [demo](https://demo.deity.io/blog).
 

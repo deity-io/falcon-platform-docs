@@ -60,6 +60,7 @@ module.exports = {
       "platform/configuration/server",
     ],
     Caching: ["platform/cache/overview"],
+    Redirects: ["platform/redirects/overview"],
     Deployment: ["platform/deployment/overview"],
     Logging: ["platform/logging/overview"],
     Payments: [
@@ -164,6 +165,9 @@ module.exports = {
     ],
     'Release Notes': [
       'platform/release/full-changelog',
+      'platform/release/2-7-0',
+      'platform/release/2-6-5',
+      'platform/release/2-6-4',
       'platform/release/2-6-2',
       'platform/release/2-6-0',
       'platform/release/2-5-0',

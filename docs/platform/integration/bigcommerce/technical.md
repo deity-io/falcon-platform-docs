@@ -20,6 +20,12 @@ The BigCommerce REST API does not support aggregations when navigating/filtering
 
 In order to avoid the requirement for your server to be PCI compliant, it is recommended to use @deity-io/falcon-payments module which handles this requirement for you and provides payments on the client-side, so you only get a transaction ID to check/verify server side. Otherwise, you'll have to handle sensitive payment information and pass this data to BigCommerce.
 
+### Order Webhooks
+
+We use the Falcon Server config `appName` to avoid webhook collision amungst apps connecting to the same BigCommerce Store.
+
+For enterprise customers that are running their own instance of Falcon Server we highly recommend each app / developer chooses a unique name for their app and sets it in their `local.json` config file.
+
 ## Known issues
 
 ### File Upload Product Modifier
