@@ -16,11 +16,59 @@ We have support for shop redirects in our BigCommerce package and will be introd
 
 ## Flat redirects
 
+To add flat redirects you must first create a `server/config/redirects.txt` file. You can then add your redirects there. All redirects added to this file are treated as `301`.
+
+### 1 to 1 redirect
+
+The format of this file should have each redirect on a new line with the orgin and destination seperated by a space.
+
+```
+origin destination
+```
+
+**example**
+
+```
+/product-1 /product-2
+```
+
+In this example the url `/product-1` will 301 redirect to `/product-2`
+
+### Regex support
+
+We also support regex. You can start using regex using the `@` character.  Anything between `@` and the next `\` is considered regex.
+
+**example**
+
+```
+@^\/product-1  /product-2
+```
+
+In this example any url that ends in `/product-1` will be redirected to `/product-2`
 
 
 ### Query string support
 
-### Regex support
+If you want to pass query parameters accross that is also possible by assigning them to a variable using `(.*)$`.
+
+Each time you use the string `(.*)$` it is passed as a variable in numberical order to `$1` and then `$2` and so on.
+
+**example**
+
+```
+/product-1(.*)$  /product-2$1
+```
+
+In this example everything after `product-1` is saved as `$1` and passed to the end of the destination.  e.g. `https://deity.io/product-1?id=1&project=2` => `https://deity.io/product-2?id=1&project=2`
+
+**example 2**
+
+```
+@^\/(.*)$product-1(.*)$  $1/product-2$2
+```
+
+In this example everything before `product-1` is set to `$1` and everything after is set to `$2`. e.g. `https://deity.io/products/product-1?id=1&project=2` => `https://deity.io/products/product-2?id=1&project=2`
+
 
 ## Shop API redirects
 
