@@ -2,19 +2,14 @@
 id: overview
 title: Redirects
 sidebar_label: Overview
-enterprise_only: true
 ---
 
 ## Overview
 
 Redirects can be added in 2 ways. Either in a flat file (you'll need Falcon Server access for this), or, they can come from your shops API package.
 
-:::note Shop API support
-We have support for shop redirects in our BigCommerce package and will be introducing Magento 2 support soon.
-:::
 
-
-## Flat redirects
+## Flat redirects (Enterprise Only)
 
 To add flat redirects you must first create a `server/config/redirects.txt` file. You can then add your redirects there. All redirects added to this file are treated as `301`.
 
