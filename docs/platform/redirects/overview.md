@@ -13,6 +13,15 @@ Redirects can be added in 2 ways. Either in a flat file (you'll need Falcon Serv
 
 To add flat redirects you must first create a `server/config/redirects.txt` file. You can then add your redirects there. All redirects added to this file are treated as `301`.
 
+This file path can be configured in your `server/config` files. The config variable is `redirectFile`
+
+```json
+{
+  ...
+  "redirectFile": "config/redirects.txt" // default file path
+}
+```
+
 ### 1 to 1 redirect
 
 The format of this file should have each redirect on a new line with the orgin and destination seperated by a space.
