@@ -68,7 +68,7 @@ In this example everything after `product-1` is saved as `$1` and passed to the 
 **example 2**
 
 ```
-@^\/(.*)$product-1(.*)$  $1/product-2$2
+@^(.*)\/product-1(.*)$  $1/product-2$2
 ```
 
 In this example everything before `product-1` is set to `$1` and everything after is set to `$2`. e.g. `https://deity.io/products/product-1?id=1&project=2` => `https://deity.io/products/product-2?id=1&project=2`
