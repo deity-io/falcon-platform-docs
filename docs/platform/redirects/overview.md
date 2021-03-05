@@ -45,7 +45,7 @@ We also support regex. Any entry prefixed with `@` is considered regex.
 **example**
 
 ```
-@^\/product-1  /product-2
+@\/product-1$  /product-2
 ```
 
 In this example any url that ends in `/product-1` will be redirected to `/product-2`
@@ -60,7 +60,7 @@ Each time you use the string `(.*)$` it is passed as a variable in numberical or
 **example**
 
 ```
-/product-1(.*)$  /product-2$1
+@\/product-1(\?.*)?$  /product-2$1
 ```
 
 In this example everything after `product-1` is saved as `$1` and passed to the end of the destination.  e.g. `https://deity.io/product-1?id=1&project=2` => `https://deity.io/product-2?id=1&project=2`
@@ -68,7 +68,7 @@ In this example everything after `product-1` is saved as `$1` and passed to the 
 **example 2**
 
 ```
-@^\/(.*)$product-1(.*)$  $1/product-2$2
+@^(.*)\/product-1(.*)$  $1/product-2$2
 ```
 
 In this example everything before `product-1` is set to `$1` and everything after is set to `$2`. e.g. `https://deity.io/products/product-1?id=1&project=2` => `https://deity.io/products/product-2?id=1&project=2`
@@ -78,7 +78,7 @@ In this example everything before `product-1` is set to `$1` and everything afte
 
 Redirect support is directly injected into your shops `fetchUrl()` method. 
 
-We check for URL matches, if none are returned we then query the shops redirect API.  If a match is found we return and object:
+We check for URL matches, if none are returned we then query the shops redirect API.  If a match is found we return an object:
 
 ```js
 {
