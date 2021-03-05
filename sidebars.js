@@ -132,7 +132,7 @@ module.exports = {
         ]
       }
     ],
-    'Video Guides': ['platform/guides/client', 'platform/guides/cloud'],
+    'Video Guides': ['platform/guides/client'],
     Packages: [
       'platform/packages/overview',
       'platform/packages/babel-preset-falcon-client',
