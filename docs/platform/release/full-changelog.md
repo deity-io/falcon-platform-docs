@@ -7,6 +7,51 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.0
+
+### Falcon BigCommerce API
+
+- Fix order statuses
+- Fix cart restoration for failed payments
+- Fix issue with orders being archived
+- Add a check to webhooks to prevent webhook collisions
+
+### Falcon Magento API
+
+- Add support for native search
+- Fix order statuses blocking order processing
+
+### Falcon Client
+
+- Pass proper httpLink configuration to `getApolloClientUploadLink()`
+- Fix missing ApolloClient Link
+
+### Falcon Front Kit
+
+- Clear shipping method in `CheckoutProvider` when billing address is changed to line up with the session data
+
+### Demo V1
+
+- Add missing Mollie ENV vars
+- Add search components
+
+### New Features
+
+- Add support for redirects
+- Add support for blog 'pages'
+
+## Falcon Platform v2.6.5 (2021-02-25)
+
+### Falcon BigCommerce API
+
+- Fix issue cart being emptied on SSR.
+
+## Falcon Platform v2.6.4 (2021-02-23)
+
+### Falcon Magento API
+
+- Fix issue with shipping being sent to payments without tax.
+
 ## Falcon Platform 2.6.2 (2021-01-26)
 
 - Dropped Node 10 support

@@ -29,18 +29,23 @@ Our integration includes:
 - Refunds
 - Shipments
 - Payment methods:
-  - iDeal
-  - Credit card:
+  - iDEAL
+  - Credit Card:
     - Mastercard
     - Visa
     - American Express
     - Maestro
-  - Paypal
-  - Klarna
-  - Sofort
+  - PayPal
+  - Klarna Pay Later
+  - SOFORT Banking
   - Giropay
-  - Bancontact/MisterCash
-  - Fashioncheque
+  - SEPA Bank Transfer
+  - Bancontact
+  - Gift card (Fashioncheque)
+  - Voucher
+  - EPS
+  - Przelewy24
+  - KBC
 
 ## Getting started
 
@@ -100,15 +105,19 @@ You just need to add you `profileId` and `apiKey`. These should be added in your
 - `PAYMENT_MOLLIE_API_KEY`: Your mollie key
 - `PAYMENT_MOLLIE_TEST_MODE`: [bool] - Whether mollie is running in test mode
 
-- `PAYMENT_MOLLIE_METHOD_PAYPAL`: [bool] - Whether the paypal payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_IDEAL`: [bool] - Whether the idela payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_PAYPAL`: [bool] - Whether the PayPal payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_IDEAL`: [bool] - Whether the iDEAL payment method is enabled
 - `PAYMENT_MOLLIE_METHOD_CREDITCARD`: [bool] - Whether the credit card payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_PAYLATER`: [bool] - Whether the klarna paylater payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_SOFORT`: [bool] - Whether the sofort payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_GIFTCARD`: [bool] - Whether the giftcard payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_GIROPAY`: [bool] - Whether the giropay payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_VOUCHER`: [bool] - Whether the voucher payment method is enabled
-- `PAYMENT_MOLLIE_METHOD_BANCONTACT`: [bool] - Whether the bancontact payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_KLARNAPAYLATER`: [bool] - Whether the Klarna paylater payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_SOFORT`: [bool] - Whether the Sofort payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_GIFTCARD`: [bool] - Whether the Giftcard payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_GIROPAY`: [bool] - Whether the Giropay payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_VOUCHER`: [bool] - Whether the Voucher payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_BANCONTACT`: [bool] - Whether the Bancontact payment method is enabled
+- `PAYMENT_MOLLIE_METHOD_BANKTRANSFER`: [bool] - Whether SEPA Bank Transfer method is enabled
+- `PAYMENT_MOLLIE_METHOD_EPS`: [bool] - Whether EPS method is enabled
+- `PAYMENT_MOLLIE_METHOD_PRZELEWY24`: [bool] - Whether Przelewy24 method is enabled
+- `PAYMENT_MOLLIE_METHOD_KBC`: [bool] - Whether KBC method is enabled
 
 ## Useful Links
 

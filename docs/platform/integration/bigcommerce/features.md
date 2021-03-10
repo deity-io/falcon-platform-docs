@@ -68,6 +68,7 @@ We are actively developing our BigCommerce integration and will be adding suppor
 - Meta Data
 - Canonicals (partial support)
 - Site Maps (frontend specific)
+- 301 redirects
 
 ***Multi-store/Language**
 
