@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Upgrading
-sidebar_label: Upgrading
+sidebar_label: Overview
 ---
 
 ## Overview
