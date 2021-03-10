@@ -13,7 +13,7 @@ Our packages are all published to our private NPM account, along side these pack
 
 To update our packages you simply need to change them in your `package.json` and run either `yarn` or `npm update`.
 
-Falcon platform pacakges are all pegged to the same version number so we recommend upgrading them all at the same time.
+Falcon platform packages are all pegged to the same version number so we recommend upgrading them all at the same time.
 
 Falcon payment packages are also all pegged to the same version, but not to Falcon platform packages.
 
