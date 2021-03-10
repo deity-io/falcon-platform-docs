@@ -40,7 +40,7 @@ Falcon payment packages are also all pegged to the same version, but not to Falc
 ```
 
 ```json
-// package.json
+// server/package.json
  "dependencies": {
     "@deity/falcon-algoliasearch-api": "^2.7.1",
     "@deity/falcon-algoliasearch-component": "^2.7.1",
