@@ -59,6 +59,7 @@ module.exports = {
       "platform/configuration/client",
       "platform/configuration/server",
     ],
+    Upgrading: ['platform/upgrading/overview'],
     Caching: ["platform/cache/overview"],
     Redirects: ["platform/redirects/overview"],
     Deployment: ["platform/deployment/overview"],
