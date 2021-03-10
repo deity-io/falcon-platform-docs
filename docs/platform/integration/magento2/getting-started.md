@@ -32,7 +32,7 @@ Afterwards update you `composer.json` file with following data
 ### 2. Install falcon magento module
 Run the following composer command
 ```
-  composer require deity/falcon-magento ^5.3.8
+  composer require deity/falcon-magento ^5.3.10
 ```
 
 After package installed, install falcon module into your magento with
