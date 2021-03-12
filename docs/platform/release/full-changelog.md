@@ -7,6 +7,16 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.2
+
+### Falcon BigCommerce API
+
+- Fix `en` -> `en-GB` locale mapping.
+
+### Falcon Server
+
+- Update schema to allow language to be in 2 character format.
+
 ## Falcon Platform 2.7.1
 
 ### Dependencies
