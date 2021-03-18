@@ -7,7 +7,7 @@ const ExampleProjects = [
   {
     name: 'Demo V1',
     shortName: 'demo-v1',
-    url: '',
+    url: 'https://demov1.deity.io',
     img: '/img/docs/platform/demo-v1-700.png',
     description: 'This example will work straight out of the box. It\'s connected to our example Magento 2 store and wordpress blog.'
   },
