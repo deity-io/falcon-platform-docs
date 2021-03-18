@@ -7,7 +7,15 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
-## Falcon Platform 2.7.2
+## Falcon Platform 2.7.3 (2021-03-17)
+
+### Falcon Server
+
+- Added possibility to pass scope mapping configuration for WordPress via env variables
+
+- Added no-cache headers for sw.js and SSR rendered content
+
+## Falcon Platform 2.7.2 (2021-03-12)
 
 ### Falcon BigCommerce API
 
@@ -17,13 +25,13 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 - Update schema to allow language to be in 2 character format.
 
-## Falcon Platform 2.7.1
+## Falcon Platform 2.7.1 (2021-03-10)
 
 ### Dependencies
 
 - Update Falcon Payments dependencies from 2.6.4 -> 2.7.0
 
-## Falcon Platform 2.7.0
+## Falcon Platform 2.7.0 (2021-03-09)
 
 ### Falcon BigCommerce API
 
