@@ -8,6 +8,10 @@ sidebar_label: Overview
 
 Redirects can be added in 2 ways. Either in a flat file (you'll need Falcon Server access for this), or, they can come from your shops API package.
 
+- [Flat Redirects](#flat-redirects-enterprise-only)
+- [Shop API Redirects](#shop-api-redirects)
+- [Implementation](#implementation)
+
 
 ## Flat redirects (Enterprise Only)
 
@@ -85,4 +89,48 @@ We check for URL matches, if none are returned we then query the shops redirect 
  path, // the location to be redirected
  status // the type of redirect e.g. 301, 302, 404
 }
+```
+
+## Implementation
+
+To get redirects to work you'll need to make sure you have a `DynamicRedirect` component in your route `App.js`.
+
+This uses `react-router-dom` to handle the redirect.
+
+**client/src/components/DynamicRedirect.js**
+```js
+import React from 'react';
+import { Redirect } from 'react-router-dom';
+
+export const DynamicRedirect = ({ match, location, staticContext }) => {
+  const { path, status = 301 } = match.params;
+  if (staticContext) {
+    staticContext.status = status;
+  }
+  return <Redirect from={location.pathname} to={path} />;
+};
+```
+
+**client/src/App.js**
+```js
+...
+import { ..., DynamicRedirect } from './components';
+...
+const App = () => (
+  ...
+  <SwitchDynamicURL onLoading={({ component }) => <LoaderWrapper>{component}</LoaderWrapper>}>
+    ...
+    <Route exact type="redirect" component={DynamicRedirect} />
+    <Route component={NotFound} />
+  </SwitchDynamicURL>
+  ...
+)
+```
+n.b. the `DynamicRedirect` should be passed to the second to last `Route` component to allow the other routes to be rendered with a higher priority.
+
+**server/config/redirects.txt (for flat redirects)**
+```
+/contact/ /contact-us/
+/old-product/ /new-product/
+/old-page/ /
 ```
