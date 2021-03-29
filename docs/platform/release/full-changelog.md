@@ -7,6 +7,24 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+
+## Falcon Platform 2.7.5 (2021-03-29)
+
+### Falcon Magento API
+
+- Fix missing product description from product request.
+- Allow for Magento URL suffix to be controlled via env vars.
+
+## Falcon Platform 2.7.4 (2021-03-26)
+
+### Falcon Stripe Plugin
+
+- Return errors so they can be used in the client app.
+
+### Falcon Blog Extension
+
+- Add cache tags to blog posts and blog pages.
+
 ## Falcon Platform 2.7.3 (2021-03-17)
 
 ### Falcon Server
