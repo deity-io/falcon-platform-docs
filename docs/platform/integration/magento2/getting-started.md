@@ -120,7 +120,16 @@ To configure Deity Payment Gateway go to Magento admin `Stores->Configuration` a
 If your shop does not support offline payments (like Cash on Delivery) you can disable `Deity Offline Payments` on this page.
 
 ### 8. Disable your Magento frontend
-Disable your Magento 2 frontend. We have a Magento module you can use.
+Since Falcon magento module version 5.4.0 disable magento frontend function is included into the module core.
+To disable magento frontend from cli run 
+```
+php bin/magento config:set admin/deity_disable_frontend/block_frontend_access 1
+```
+Or go to magento admin config area
+```
+Stores > Configuration > Advanced > Admin > Disable Frontend
+```
+Flush cache after changing config.
 
 ### 9. Complete
 Complete, you should now have a fully working Magento 2 / Falcon Platform site
