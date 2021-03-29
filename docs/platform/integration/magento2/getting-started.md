@@ -80,6 +80,7 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
       "config": {
         "host": "MAGENTO_HOST",
         "defaultLocale": "MAGENTO_DEFAULT_LOCALE",
+        "itemUrlSuffix": "MAGENTO_URL_SUFFIX",
         "auth": {
           "consumerKey": "MAGENTO_CONSUMER_KEY",
           "consumerSecret": "MAGENTO_CONSUMER_SECRET",
@@ -100,6 +101,7 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 - `MAGENTO_ACCESS_TOKEN`: your access token
 - `MAGENTO_ACCESS_TOKEN_SECRET`: your access token secret
 - `MAGENTO_DEFAULT_LOCALE`: default locale for your Magento store. e.g. `en_GB`
+- `MAGENTO_URL_SUFFIX`: Your suffix for products and categories. e.g. `.html`. Defaults to `null`.
 
 
 ### 6. Update magento configuration
