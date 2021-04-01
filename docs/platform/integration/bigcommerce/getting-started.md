@@ -149,7 +149,7 @@ To access our private packages you'll need to use your **NPM Token** and **NPM U
 
 You can log into [deity.npm.io](https://npm.deity.io/) to view these pacakges.
 
-To have access to the packages for local development you can follow (these steps)[/docs/platform/getting-started/npm/].
+To have access to the packages for local development you can follow [these steps](/docs/platform/getting-started/npm/).
 
 <img
   src="/img/docs/platform/bigcommerce/npm-token.png"
