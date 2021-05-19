@@ -166,6 +166,13 @@ module.exports = {
     ],
     'Release Notes': [
       'platform/release/full-changelog',
+      'platform/release/2-7-12',
+      'platform/release/2-7-11',
+      'platform/release/2-7-10',
+      'platform/release/2-7-9',
+      'platform/release/2-7-8',
+      'platform/release/2-7-7',
+      'platform/release/2-7-6',
       'platform/release/2-7-5',
       'platform/release/2-7-4',
       'platform/release/2-7-3',
@@ -182,7 +189,7 @@ module.exports = {
       'platform/release/2-4-2',
       'platform/release/2-4-0',
       'platform/release/2-3-1',
-      'platform/release/2-3-0'
+      'platform/release/2-3-0',
     ],
     Support: [
       'platform/support/contact',

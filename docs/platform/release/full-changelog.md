@@ -7,6 +7,56 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.12 (2021-05-18)
+
+### Falcon Magento API
+
+- Security fix, preventing orders being exposed via GraphQL 
+
+## Falcon Platform 2.7.11 (2021-05-11)
+
+### Falcon Server
+
+- Enabled introspection when debug mode is enabled 
+
+## Falcon Platform 2.7.10 (2021-05-11)
+
+### Falcon Server
+
+- Added DEBUG env var on FS so it's possible to enable GraphQL Playground
+
+## Falcon Platform 2.7.9 (2021-05-10)
+
+- Update lodash in all packages to 4.17.21 to fix security issues
+
+### Falcon Client
+
+- Replace node-sass-chokidar with node-sass and update webpack config to fix support for scss modules
+
+## Falcon Platform 2.7.8 (2021-04-30)
+
+### Falcon Magento API
+
+- Fix url resolver so it doesn't pass query string parameters to Magento
+
+## Falcon Platform 2.7.7 (2021-04-28)
+
+### Falcon Server
+
+- Added falcon-file-redirect-api
+### Demo v1
+
+- Upgrade Falcon Payments packages to 2.7.1
+
+### Demo v2
+
+- Upgrade Falcon Payments packages to 2.7.1
+
+## Falcon Platform v2.7.6 (2021-04-06)
+
+### Demo v1
+
+- `@deity/falcon-search-extension` added as a dependency.
 
 ## Falcon Platform 2.7.5 (2021-03-29)
 
