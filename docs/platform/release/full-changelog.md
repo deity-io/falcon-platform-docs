@@ -15,7 +15,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 ### Demo v1 & Demo v2
 
-- Change the way the pending payment page redirects to be more efficient
+- Changed the way the pending payment page redirects to be more efficient
 
 ## Falcon Platform 2.7.12 (2021-05-18)
 
@@ -37,17 +37,17 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 ## Falcon Platform 2.7.9 (2021-05-10)
 
-- Update lodash in all packages to 4.17.21 to fix security issues
+- Updated lodash in all packages to 4.17.21 to fix security issues
 
 ### Falcon Client
 
-- Replace node-sass-chokidar with node-sass and update webpack config to fix support for scss modules
+- Replaced node-sass-chokidar with node-sass and updated webpack config to fix support for scss modules
 
 ## Falcon Platform 2.7.8 (2021-04-30)
 
 ### Falcon Magento API
 
-- Fix url resolver so it doesn't pass query string parameters to Magento
+- Fixed url resolver so it doesn't pass query string parameters to Magento
 
 ## Falcon Platform 2.7.7 (2021-04-28)
 
@@ -56,11 +56,11 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 - Added falcon-file-redirect-api
 ### Demo v1
 
-- Upgrade Falcon Payments packages to 2.7.1
+- Upgraded Falcon Payments packages to 2.7.1
 
 ### Demo v2
 
-- Upgrade Falcon Payments packages to 2.7.1
+- Upgraded Falcon Payments packages to 2.7.1
 
 ## Falcon Platform v2.7.6 (2021-04-06)
 
@@ -72,7 +72,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 ### Falcon Magento API
 
-- Fix missing product description from product request.
+- Fixed missing product description from product request.
 - Allow for Magento URL suffix to be controlled via env vars.
 
 ## Falcon Platform 2.7.4 (2021-03-26)
