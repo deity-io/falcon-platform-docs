@@ -7,11 +7,21 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.13 (2021-05-21)
+
+### Falcon BigCommerce API
+
+- Security patch 
+
+### Demo v1 & Demo v2
+
+- Change the way the pending payment page redirects to be more efficient
+
 ## Falcon Platform 2.7.12 (2021-05-18)
 
 ### Falcon Magento API
 
-- Security fix, preventing orders being exposed via GraphQL 
+- Security patch 
 
 ## Falcon Platform 2.7.11 (2021-05-11)
 
