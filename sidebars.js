@@ -166,6 +166,7 @@ module.exports = {
     ],
     'Release Notes': [
       'platform/release/full-changelog',
+      'platform/release/2-7-13',
       'platform/release/2-7-12',
       'platform/release/2-7-11',
       'platform/release/2-7-10',
