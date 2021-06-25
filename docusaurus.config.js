@@ -91,7 +91,11 @@ module.exports = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/deity_pwa'
+              href: 'https://twitter.com/deity_commerce'
+            },
+            {
+              label: 'Instagram',
+              href: 'https://instagram.com/deity_commerce'
             },
             {
               label: 'YouTube',
