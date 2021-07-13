@@ -38,11 +38,11 @@ If you're using Falcon Cloud you can set env variables using the [dcloud CLI too
 
 **CLI Command**
 ```bash
-dcloud env:var <env> <name> [value]
+dcloud env:var:set <env> <name> [value]
 ```
 
 ```bash
-dcloud env:var production GTM_CODE XXXXXXXXX
+dcloud env:var:set production GTM_CODE XXXXXXXXX
 ```
 
 **`client/config/custom-environment-variables.json`**
@@ -52,4 +52,12 @@ dcloud env:var production GTM_CODE XXXXXXXXX
     "id": "GTM_CODE"
   }
 }
+```
+
+### Adding encrypted environment variables in DCloud
+
+If an environment variable such as an API secret key needs to be encrypted you simply need to use the `-s` or `--secret` flag when setting it.
+
+```bash
+dcloud env:var:set -s production GTM_CODE XXXXXXXXX
 ```
