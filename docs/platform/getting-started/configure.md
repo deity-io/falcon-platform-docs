@@ -48,6 +48,11 @@ This example would set the `MAGENTO_HOST` variable on the `test` environment to 
 dcloud env:var:set test MAGENTO_HOST magento.deity.io
 ```
 
+:::note Encrypted / secret variables
+Use the `-s` flag when setting environment variables so they are encrypted.
+`dcloud env:var:set -s test API_KEY your_key`
+:::
+
 ### 4. Apply your changes
 
 To apply your variable changes you can run the command:

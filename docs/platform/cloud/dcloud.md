@@ -139,7 +139,7 @@ dcloud env:var:set <env> <name> [value]
 ```
 
 **Options**
-N/A
+- `-s` or `--secret` encrypt the variable being set
 
 ---
 
