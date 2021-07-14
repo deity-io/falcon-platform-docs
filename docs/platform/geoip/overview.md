@@ -18,6 +18,10 @@ X-GeoIP-City
 X-GeoIP-Postal-Code
 ```
 
+:::note Location Accuracy
+Currently we can only ensure the accuracy of country data and not city, postcode or region. We recommend only using country.
+:::
+
 ## 1. Passing GeoIP information from Falcon Server to Falcon Client (Enterprise Only)
 
 We have api packages available to pass GeoIP information from your middleware app to your client app.
