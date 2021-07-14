@@ -89,8 +89,8 @@ import { GeoLocation } from '@deity/falcon-front-kit'}
 ...
 <GeoLocation>
   {data => {
-    const { country, region, city, postCode}
-    return <p>Address data: {city}, {region}, {postCode}, {coutry}</p>;
+    const { country, region, city, postCode } = data;
+    return <p>Address data: {city}, {region}, {postCode}, {country}</p>;
   }}
 </GeoLocation>
 ```
