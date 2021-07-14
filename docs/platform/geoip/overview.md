@@ -22,15 +22,13 @@ X-GeoIP-Postal-Code
 Currently we can only ensure the accuracy of country data and not city, postcode or region. We recommend only using country.
 :::
 
-## 1. Passing GeoIP information from Falcon Server to Falcon Client (Enterprise Only)
+## Accessing GeoIP information in Falcon Server (Enterprise Only)
 
-We have api packages available to pass GeoIP information from your middleware app to your client app.
+We have api packages available to get GeoIP Data in the middleware.
 
-These should exist out of the box with our demo apps.
+If you're an enterprise customer and you've modified your Falcon Server instance you'll need to check the following:
 
-If you're an enterprise customer and you've modified your Falcon Server instsance you'll need to check the following:
-
-**i. Adding our packages as server dependencies**
+**1. Adding our packages as server dependencies**
 
 Inside your `server` directory run
 
@@ -39,7 +37,7 @@ yarn add @deity/falcon-geo-ip-api,
 yarn add @deity/falcon-geo-location-extension,
 ```
 
-**ii. Adding the data source**
+**2. Adding the data source**
 
 In your `server/config/default.json` add the following as a data source:
 
@@ -56,7 +54,7 @@ In your `server/config/default.json` add the following as a data source:
 
 ```
 
-**iii. Adding the extension**
+**3. Adding the extension**
 
 In your `server/config/default.json` add the following as an extension:
 
@@ -73,9 +71,9 @@ In your `server/config/default.json` add the following as an extension:
 }
 ```
 
-## 2. Accessing GeoIP information in Falcon Client.
+## Accessing GeoIP information in Falcon Client.
 
-Geographic data is available to the entire client app via a context provider. This data comes from **step 1** and the middleware.
+Geographic data is available to the entire client app via a context provider.
 
 The data provided contains:
 
@@ -99,7 +97,7 @@ import { GeoLocation } from '@deity/falcon-front-kit'}
 </GeoLocation>
 ```
 
-## 3. Testing GeoIP locally
+## Testing GeoIP locally
 
 GeoIP data is added via our cloud platform so is NOT available for local development.
 
@@ -117,7 +115,7 @@ X-GeoIP-City
 X-GeoIP-Postal-Code
 ```
 
-## 4. Getting GeoIP information in your own API packages (Enterprise Only)
+## Getting GeoIP information in your own API packages (Enterprise Only)
 
 If you want to access the GeoIP headers in your custom data source you can get it from `context.koa.request`.
 
