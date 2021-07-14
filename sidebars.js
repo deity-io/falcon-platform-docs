@@ -64,6 +64,7 @@ module.exports = {
     Redirects: ["platform/redirects/overview"],
     Deployment: ["platform/deployment/overview"],
     Logging: ["platform/logging/overview"],
+    GeoIP: ['platform/geoip/overview'],
     Payments: [
       "platform/payments/overview",
       {
