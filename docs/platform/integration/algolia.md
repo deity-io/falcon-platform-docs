@@ -124,18 +124,35 @@ This should be added to your env variables or your local.json. They can all be f
 {
   "components": {
     "algolia": {
+      "enabled": {
+        "__name": "ALGOLIA_ENABLED",
+        "__format": "json"
+      },
       "config": {
-        "appId": "[APP_ID]",
-        "apiKey": "[API_KEY]",
-        "indexName": "[INDEX_NAME]"
+        "appId": "ALGOLIA_APP_ID",
+        "apiKey": "ALGOLIA_API_KEY",
+        "indexName": "ALGOLIA_INDEX_NAME"
       }
     }
   }
 }
 ```
+
 You'll need the **admin API key**
 
 <img src="/img/docs/platform/algolia-admin-key.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
+
+You should also configure your search extension to use Algolia. This can be done in any of your config files or by setting an environment variable:
+
+```json
+"extensions": {
+    "search": {
+      "config": {
+        "api": "SEARCH_API_NAME"
+      }
+    }
+  }
+```
 
 ### 3. Index your products
 
