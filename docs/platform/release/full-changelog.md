@@ -21,6 +21,17 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 - Return author data that matches the author type declared in the blog extension.
 
+### Falcon Front Kit
+
+- Migrate to `@apollo/client` (away from `@apollo/react`, `graphql-tag`).
+
+### Falcon Client
+
+- Migrate to `@apollo/client` (away from `@apollo/react`, `graphql-tag`).
+
+### Demo Apps
+
+- Migrate to `@apollo/client` (away from `@apollo/react`, `graphql-tag`).
 
 ## Falcon Platform 2.7.13 (2021-05-21)
 
