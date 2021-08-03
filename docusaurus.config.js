@@ -45,7 +45,7 @@ module.exports = {
             },
             {
               label: 'Falcon 2019',
-              to: '/docs/2019/getting-started/intro'
+              to: '/docs/2019/platform/getting-started/intro'
             },
             {
               label: 'Falcon UI',

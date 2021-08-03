@@ -1,0 +1,781 @@
+{
+  "version-2/falconPlatformSidebar": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Overview",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/overview/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/overview/plans"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/prerequisites"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/dcloud"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/npm"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/create"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/configure"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/repository"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Falcon Client",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/technical"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/files"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/getting-started"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/configuration"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/webpack"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Theming",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/client/theming/overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/client/theming/css-mapping"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/client/theming/components"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/client/theming/fonts"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/client/theming/icons"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/client/theming/css-sass"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/overrides"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/routing"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/meta-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/schema-json"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/data"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/state"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/translations"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/code-splitting"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/testing"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/static-files"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/browser-support"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Falcon Server",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/server"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/server/dynamic-routes"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/server/event-hooks"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Falcon Cloud",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/cloud/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/cloud/technical"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/cloud/prerequisites"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/cloud/account"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/cloud/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/cloud/dcloud"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Configuration",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/configuration/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/configuration/client"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/configuration/server"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Upgrading",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/upgrading/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Caching",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/cache/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Redirects",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/redirects/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Deployment",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/deployment/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Logging",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/logging/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "GeoIP",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/geoip/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Payments",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/payments/overview"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Falcon Payments",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/packages"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/provider"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/webhooks"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/features"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/getting-started"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/payments/falcon-payments/integration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Integrations",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/integration/examples"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/integration/algolia"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "BigCommerce",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/bigcommerce/overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/bigcommerce/getting-started"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/bigcommerce/features"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/bigcommerce/technical"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/bigcommerce/manual"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Magento 2",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/magento2/overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/magento2/getting-started"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/integration/stripe"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/integration/mollie"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/integration/wordpress"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Testing",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/testing/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Cookbook",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/cookbook/about"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Falcon Client",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/change-logo"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/icon"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/themeable-component"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/scss-global"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/post-css-support"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/analytics"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/client/testing"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Integrations",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/integrations/jsonplaceholder"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/integrations/contentful"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/integrations/contentful2"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/cookbook/integrations/braintree"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Video Guides",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/guides/client"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Packages",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/babel-preset-falcon-client"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/create-falcon-app"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/eslint-config-falcon"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-adyen-plugin"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-blog-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-blog-extension"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-client"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-errors"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-front-kit"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-i18n-webpack-plugin"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-i18n"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-logger"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-magento2-api"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-payment-plugin"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-paypal-plugin"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-scripts"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-server-env"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-server"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-service-worker"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-shop-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-shop-extension"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-theme-editor"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-ui-kit"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-ui"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/falcon-wordpress-api"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/packages/normal-module-override-webpack-plugin"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Release Notes",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/full-changelog"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-14"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-13"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-12"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-11"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-10"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-9"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-8"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-7"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-6"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-5"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-4"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-3"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-2"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-1"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-7-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-6-5"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-6-4"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-6-2"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-6-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-5-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-4-8"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-4-6"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-4-2"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-4-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-3-1"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/2-3-0"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Support",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/support/contact"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "FAQs",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs/general"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs/client"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs/server"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs/cloud"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs/config"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/support/faqs/misc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

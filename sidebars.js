@@ -210,40 +210,6 @@ module.exports = {
         ]
       }
     ]
-  },
-  falconOpenSourceSidebar: {
-    'Getting Started': [
-      '2019/getting-started/intro',
-      '2019/getting-started/requirements',
-      '2019/getting-started/installation',
-      '2019/getting-started/project-overview',
-      '2019/getting-started/example'
-    ],
-    'Falcon Client': [
-      '2019/falcon-client/basics',
-      '2019/falcon-client/configurations',
-      '2019/falcon-client/code-splitting',
-      '2019/falcon-client/data-management',
-      '2019/falcon-client/local-state-management',
-      '2019/falcon-client/internationalization',
-      '2019/falcon-client/falcon-ui',
-      '2019/falcon-client/search-and-filtering'
-    ],
-    'Falcon Server': [
-      '2019/falcon-server/basics',
-      '2019/falcon-server/schema-stitching',
-      '2019/falcon-server/extensions',
-      '2019/falcon-server/api-providers',
-      '2019/falcon-server/endpoints',
-      '2019/falcon-server/caching',
-      '2019/falcon-server/falcon-server-env',
-      '2019/falcon-server/falcon-server-api',
-      '2019/falcon-server/customizing-extension-api'
-    ],
-    Payments: ['2019/payments/intro', '2019/payments/api', '2019/payments/plugins'],
-    Backend: ['2019/backend/installing-magento2', '2019/backend/installing-wordpress'],
-    Miscellaneous: ['2019/miscellaneous/falcon-logger', '2019/miscellaneous/config'],
-    Deployment: ['2019/deployment/intro'],
-    Support: ['2019/support/troubleshooting', '2019/support/flowcharts', '2019/support/migration-from-npmjs']
   }
 };
+

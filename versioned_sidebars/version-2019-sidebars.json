@@ -1,0 +1,192 @@
+{
+  "version-2019/falconOpenSourceSidebar": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/getting-started/intro"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/getting-started/requirements"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/getting-started/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/getting-started/project-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/getting-started/example"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Falcon Client",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/basics"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/configurations"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/code-splitting"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/data-management"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/local-state-management"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/internationalization"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/falcon-ui"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-client/search-and-filtering"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Falcon Server",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/basics"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/schema-stitching"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/extensions"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/api-providers"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/endpoints"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/caching"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/falcon-server-env"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/falcon-server-api"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/falcon-server/customizing-extension-api"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Payments",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/payments/intro"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/payments/api"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/payments/plugins"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Backend",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/backend/installing-magento2"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/backend/installing-wordpress"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Miscellaneous",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/miscellaneous/falcon-logger"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/miscellaneous/config"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Deployment",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/deployment/intro"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Support",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2019/platform/support/troubleshooting"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/support/flowcharts"
+        },
+        {
+          "type": "doc",
+          "id": "version-2019/platform/support/migration-from-npmjs"
+        }
+      ]
+    }
+  ]
+}
