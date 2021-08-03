@@ -10,6 +10,10 @@ module.exports = {
       'platform/getting-started/configure',
       'platform/getting-started/repository'
     ],
+    'Falcon Server': [
+      'platform/server-v3/about'
+    ]
+/*
     'Falcon Client': [
       'platform/client/about',
       'platform/client/technical',
@@ -210,6 +214,7 @@ module.exports = {
         ]
       }
     ]
+*/
   }
 };
 
