@@ -7,9 +7,15 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.15 (2021-08-04)
+
+### Falcon BigCommerce API
+
+- Fix the getRegionList method to pull all results (previously capped at 50)
+
 ## Falcon Platform 2.7.14 (2021-07-14)
 
-## GeoIP
+### GeoIP
 
 - Added support for GeoIP in both Falcon Server and Falcon Platform.
 
