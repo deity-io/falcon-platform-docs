@@ -11,7 +11,14 @@ module.exports = {
       'platform/getting-started/repository'
     ],
     'Falcon Server': [
-      'platform/server-v3/about'
+      'platform/server-v3/about',
+      'platform/server-v3/extensions',
+      'platform/server-v3/modules',
+      'platform/server-v3/data-sources',
+      'platform/server-v3/event-handlers',
+      'platform/server-v3/rest-endpoints',
+      'platform/server-v3/shop-extension',
+      'platform/server-v3/blog-extension'
     ]
 /*
     'Falcon Client': [
