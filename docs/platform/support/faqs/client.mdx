@@ -6,8 +6,8 @@ description: Falcon Client frequently asked questions, answered by the DEITY tea
 ---
 
 import Link from '@docusaurus/Link';
-import Categories from '../../../../src/components/Faqs/Categories';
-import Accordion from '../../../../src/components/Accordion';
+import Categories from '@site/src/components/Faqs/Categories';
+import Accordion from '@site/src/components/Accordion';
 
 <Accordion title="Can I use NextJS">
   Unfortunately, Falcon-Client (the frontend app) cannot be used together with NextJs.  NextJs uses its own template/routing system, which is incompatible with ours.  Falcon-Server (data/graphql server app) could be used as a middleware between Spree backend and your frontend. It could be even used to provide data for your NextJs frontend (depending on how you want to organize your whole setup).
