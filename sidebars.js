@@ -12,13 +12,30 @@ module.exports = {
     ],
     'Falcon Server': [
       'platform/server-v3/about',
-      'platform/server-v3/extensions',
-      'platform/server-v3/modules',
+      'platform/server-v3/migration-guide',
+      {
+        Extensions: [
+          'platform/server-v3/extensions/about',
+          'platform/server-v3/extensions/extension-api',
+          'platform/server-v3/extensions/shop-extension',
+          'platform/server-v3/extensions/blog-extension'
+        ]
+      },
+      {
+        Modules: [
+          'platform/server-v3/modules/about',
+          'platform/server-v3/modules/module-api',
+          'platform/server-v3/modules/bigcommerce-module',
+          'platform/server-v3/modules/commercetools-module',
+          'platform/server-v3/modules/magento2-module',
+          'platform/server-v3/modules/contentful-module',
+          'platform/server-v3/modules/wordpress-module',
+          'platform/server-v3/modules/algolia-search-module'
+        ]
+      },
       'platform/server-v3/data-sources',
       'platform/server-v3/event-handlers',
       'platform/server-v3/rest-endpoints',
-      'platform/server-v3/shop-extension',
-      'platform/server-v3/blog-extension'
     ]
 /*
     'Falcon Client': [

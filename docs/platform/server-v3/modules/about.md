@@ -1,9 +1,18 @@
 ---
-id: modules
+id: about
 title: Modules in Falcon Server
-sidebar_label: Modules
+sidebar_label: About
 enterprise_only: true
 ---
+
+## List of available modules
+
+- [BigCommerce module (shop)](./bigcommerce-module)
+- [CommerceTools module (shop)](./commercetools-module)
+- [Magento2 module (shop)](./magento2-module)
+- [Contentful module (blog)](./contentful-module)
+- [WordPress module (blog)](./wordpress-module)
+- [Algolia search module (search)](./algolia-search-module)
 
 ## Old vs new approach
 
@@ -90,21 +99,15 @@ and then Falcon Server on startup will try to load `src/custom-wordpress-module/
 
 ### Module auto-discovery
 
-[As mentioned earlier](#what-is-a-module-in-falcon) Falcon Server 3 modules can expose multiple things at once. In many cases the desired action is to expose just [Data Source](./data-sources) that implements resolvers for GraphQL schema.
+[As mentioned earlier](#what-is-a-module-in-falcon) Falcon Server 3 modules can expose multiple things at once. 
 
-In that case all you have to do is to export a class that extends [DataSource](#todo link here)
+The easiest way to extend Falcon Server with custom module is to extend the classes provided by Falcon Server and export these from a module. During startup Falcon Server will read everything from within that module and base on the types of exported things it will register these as proper things in IOC container.
 
-
-_(#TODO)_ auto discovery description
+See examples of [Data Sources](./data-sources), [Event Handlers](./event-handlers), and [Rest Endpoint Handlers](./rest-endpoints) for the details.
 
 ### Manual binding for module
 
-_(#TODO)_ manual registration description
+When you need to add a custom behavior to Falcon Server which is more complex or when you need to control lifetime of the instances of your modules you might want to implement the module in a manual way.
 
-
-
-
-
-
-
+In that case you need to implement all the classes as usual and then use [Falcon Module](./falcon-module) to register these classes to be loaded and instantiated in a particular way.
 
