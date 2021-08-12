@@ -47,7 +47,7 @@ If the server should wait till debugger will attache then run:
 yarn start:dbg-brk
 ```
 
-For more information, see [`falcon-client start`](/docs/2019/platform/falcon-client/basics#exposed-commands) command.
+For more information, see [`falcon-client start`](../falcon-client/basics#exposed-commands) command.
 
 ## Production package
 
@@ -64,4 +64,4 @@ You could view your application at http://localhost:3000
 
 This is a basic example of Shop with Blog scenario.
 
-If you would like to find more information about how it works please read about [@deity/falcon-client](/docs/2019/platform/falcon-client/basics)
+If you would like to find more information about how it works please read about [@deity/falcon-client](../falcon-client/basics)

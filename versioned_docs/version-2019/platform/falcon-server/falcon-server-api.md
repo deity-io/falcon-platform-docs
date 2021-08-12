@@ -63,7 +63,7 @@ needs for a proper data-flow and communication.
     for your REST API backend
   - `perPage` (default `10`) - is used to limit your listings to a certain amount
   - `fetchUrlPriority` (default `3`, which equals to `ApiUrlPriority.NORMAL`) - statically
-    set Fetch URL priority for [Dynamic Route](/docs/2019/platform/falcon-server/basics#dynamic-route-resolver)
+    set Fetch URL priority for [Dynamic Route](../falcon-server/basics#dynamic-route-resolver)
 - `eventEmitter` - an instance of `EventEmitter2` (_passed automatically by [ApiContainer](#apicontainer)_)
 - `apiContainer` - an instance of [ApiContainer](#apicontainer)
   class (_passed automatically by [ApiContainer](#apicontainer)_)
@@ -88,7 +88,7 @@ It should provide a simple logic to determine a custom priority or return a defa
 This method must be defined if a specific ApiDataSource supports Dynamic Routing.
 It will be called whenever Dynamic Route chooses this ApiDataSource instance to resolve URL type
 for the provided `path`. See Dynamic Route result response type
-[here](/docs/2019/platform/falcon-server/basics#dynamicrouteresolver-result-structure).
+[here](../falcon-server/basics#dynamicrouteresolver-result-structure).
 
 #### `api.getCacheContext()`
 

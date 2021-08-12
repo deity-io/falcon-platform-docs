@@ -18,7 +18,7 @@ const getDocType = (path) => {
     return {
       id: 2,
       title: 'Falcon 2019',
-      url: '/docs/2019/getting-started/intro'
+      url: '/docs/2019/platform/getting-started/intro'
     };
   }
 

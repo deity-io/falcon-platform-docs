@@ -18,7 +18,7 @@ This extension provides basic features for blog implementation:
 - _(coming soon)_
 
 As an example of the API Provider that provides a communication layer for Blog Extension -
-see [Wordpress API](/docs/2019/platform/falcon-server/api-providers#falcon-wordpress-api).
+see [Wordpress API](../falcon-server/api-providers#falcon-wordpress-api).
 
 To add this extension to your Falcon-based app install it in the server directory:
 

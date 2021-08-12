@@ -178,7 +178,7 @@ As it was previously mentioned, caching mechanism may be configured to use diffe
 
 There's a default cache TTL value, defined by `@cache` directive itself, which is being used when `@cache` directive is
 being used without any extra arguments. If you want to change this value - you could easily do it via your
-[Falcon-Server config](/docs/2019/platform/falcon-server/basics#configuration):
+[Falcon-Server config](../falcon-server/basics#configuration):
 
 ```json
 {

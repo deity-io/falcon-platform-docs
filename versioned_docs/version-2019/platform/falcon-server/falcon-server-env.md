@@ -4,7 +4,7 @@ title: Falcon Server Env
 
 This package delivers base classes and helpers for ApiDataSources and Extensions.
 
-- [API reference](/docs/2019/platform/falcon-server/falcon-server-api)
+- [API reference](../falcon-server/falcon-server-api)
 
 ## Installation
 
@@ -53,7 +53,7 @@ module.exports = class CustomExtension extends Extension {
 }
 ```
 
-> Check [Extension API reference](/docs/2019/platform/falcon-server/falcon-server-api) for more methods.
+> Check [Extension API reference](../falcon-server/falcon-server-api) for more methods.
 
 To define your own API class (low-level data provider) - you would need to create a new package and export its main class:
 

@@ -21,9 +21,9 @@ In previous version of Falcon Server (version 2) there was a distinct separation
 ## What is a module in Falcon
 
 Falcon Module is a package that contains implementations of all the pieces required to achieve particular thing. It can contain none, one or many of these:
-- [Data Source](./data-sources) (used by GraphQL resolvers to fetch the data from various services)
-- [Event Handler](./event-handlers)
-- [Rest Endpoint Handler](./rest-endpoints) (webhook handler)
+- [Data Source](../data-sources) (used by GraphQL resolvers to fetch the data from various services)
+- [Event Handler](../event-handlers)
+- [Rest Endpoint Handler](../rest-endpoints) (webhook handler)
 - anything else that's needed during request handling
 
 So in comparison to Falcon Server 2 it's a container that groups all the above things as one package.
@@ -47,7 +47,7 @@ So now, the 2 things need to be provided:
 
 ## Custom modules
 
-All the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](./extensions) and module that implements features for that Extension.
+All the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
 
 Modules can be registered in 2 ways - with auto-discovery mechanism or manually.
 
@@ -103,11 +103,11 @@ and then Falcon Server on startup will try to load `src/custom-wordpress-module/
 
 The easiest way to extend Falcon Server with custom module is to extend the classes provided by Falcon Server and export these from a module. During startup Falcon Server will read everything from within that module and base on the types of exported things it will register these as proper things in IOC container.
 
-See examples of [Data Sources](./data-sources), [Event Handlers](./event-handlers), and [Rest Endpoint Handlers](./rest-endpoints) for the details.
+See examples of [Data Sources](../data-sources), [Event Handlers](../event-handlers), and [Rest Endpoint Handlers](../rest-endpoints) for the details.
 
 ### Manual binding for module
 
 When you need to add a custom behavior to Falcon Server which is more complex or when you need to control lifetime of the instances of your modules you might want to implement the module in a manual way.
 
-In that case you need to implement all the classes as usual and then use [Falcon Module](./falcon-module) to register these classes to be loaded and instantiated in a particular way.
+In that case you need to implement all the classes as usual and then use [Falcon Module](./module-api) to register these classes to be loaded and instantiated in a particular way.
 

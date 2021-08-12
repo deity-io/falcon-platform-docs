@@ -2,7 +2,7 @@
 title: Data Management
 ---
 
-This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](/docs/2019/platform/falcon-client/local-state-management).
+This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](../falcon-client/local-state-management).
 
 Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](../getting-started/installation#create-falcon-app) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
 
@@ -269,7 +269,7 @@ In the render prop function, we can destructure `loading` and `error` properties
 
 ## Local state management
 
-Continue reading about managing your local state [here](/docs/2019/platform/falcon-client/local-state-management).
+Continue reading about managing your local state [here](../falcon-client/local-state-management).
 
 ## Additional resources
 

@@ -5,7 +5,7 @@ sidebar_label: Falcon Module API
 enterprise_only: true
 ---
  
-As mentioned [here](./modules#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in Falcon Server.
+As mentioned [here](./about#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in Falcon Server.
 
 With auto-discovery feature you can just export classes that extend interfaces and classes delivered by Falcon and Falcon Server will bind these correctly during startup.
 
@@ -24,15 +24,15 @@ To use falcon module you need to return instance of it from your main module fil
 
 That callback will be passed with `bind` function which allows for binding and scope control as [InversifyJS](https://github.com/inversify/InversifyJS/blob/master/wiki/scope.md) does plus exposes additional methods for registration of the following Falcon Server specific types:
 
-- [DataSources](./data-sources):
+- [DataSources](../data-sources):
   - `bind('name').toDataSource(Constructor)`
   - `bind('name').toDataSourceDynamicValue(function)`
 
-- [Rest Endpoint Handlers](./rest-endpoints):
+- [Rest Endpoint Handlers](../rest-endpoints):
   - `bind('name').toEndpointManager(Constructor)`
   - `bind('name').toEndpointManagerDynamicValue(function)`
 
-- [Event Handlers](./event-handlers):
+- [Event Handlers](../event-handlers):
   - `bind('name').toEventHandler(Constructor)`
   - `bind('name').toEventHandlerDynamicValue(function)`
 

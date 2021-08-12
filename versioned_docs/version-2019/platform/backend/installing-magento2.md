@@ -37,7 +37,7 @@ Here you should configure:
 1. `Falcon frontend url` - base url of your falcon-driven website. It is used by API's that feed content with url's for proper url replacement.
 2. `Url to flush cache on Falcon Server` - Magento will call this URL to flush falcon cache.
 
-> Note: You can configure this URL via [Falcon-Server config](/docs/2019/platform/falcon-server/caching#rest-endpoint)
+> Note: You can configure this URL via [Falcon-Server config](../falcon-server/caching#rest-endpoint)
 
 #### Connect Falcon to your Magento instance with admin token
 
@@ -56,7 +56,7 @@ bin/magento admin:user:create \
 
 
 Configure Falcon Server to connect to your Magento instance.
-You can do so by changing your [Falcon-Server config](/docs/2019/platform/miscellaneous/config).
+You can do so by changing your [Falcon-Server config](../miscellaneous/config).
 
 > Note: Use your API admin user credentials that you've just created here
 

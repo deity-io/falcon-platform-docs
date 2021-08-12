@@ -9,10 +9,10 @@ the overall schema is shown on the image below:
 <span>Click to enlarge</span>
 
 > If you would like to contribute and make your own changes to this flowchart - please check
-> [Working with flowcharts](/docs/2019/platform/support/flowcharts) page first.
+> [Working with flowcharts](../support/flowcharts) page first.
 
 The required GraphQL schema is being provided by
-[`shop-extension`](/docs/2019/platform/falcon-server/extensions#shop-extension) itself, meaning that your ApiDataSource that is assigned to ShopExtension has to take care of all payment-related operations.
+[`shop-extension`](../falcon-server/extensions#shop-extension) itself, meaning that your ApiDataSource that is assigned to ShopExtension has to take care of all payment-related operations.
 
 ## Placing an order
 
@@ -47,13 +47,13 @@ required checks and validations to verify your payment (like 3d-secure bank card
 After getting a `PlaceOrder3dSecureResult` result, visitor is going to be redirected to the Payment Gateway URL to proceed
 with the checks. It's important to keep the visitor within the same app - Falcon-Client, so any further "return callbacks" must
 be done to this app domain. This means that our Falcon-Client application must be able to process such callback requests and for this
-reason - we use [endpoints](/docs/2019/platform/falcon-server/endpoints) feature (`Proxy Manager` in the diagram above) to proxy the whole callback
+reason - we use [endpoints](../falcon-server/endpoints) feature (`Proxy Manager` in the diagram above) to proxy the whole callback
 request from Falcon-Client to Falcon-Server and further to the actual shop backend.
 
 > DEITY Falcon provides such endpoints
 > for `@deity/falcon-magento2-api` package out-of-the-box to support PayPal and Adyen callback).
 
-Whenever _Falcon-Server_ starts - it initializes all configured [`endpoints`](/docs/2019/platform/falcon-server/endpoints) and exposes
+Whenever _Falcon-Server_ starts - it initializes all configured [`endpoints`](../falcon-server/endpoints) and exposes
 them via web-server router to be publicly accessible. Later, whenever _Falcon-Client_ starts with a properly configured `onRouterCreated`
 hook - it fetches all the exposed
 endpoints that are needed to be proxied from the "frontend" to the "backend" and exposes them in the same way.
