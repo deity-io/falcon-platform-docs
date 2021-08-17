@@ -5,7 +5,8 @@ sidebar_label: Magento2 module
 enterprise_only: true
 ---
  
-:::note Package name: `@deity/falcon-magento2-module`
-:::
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-magento2-module" /> 
 
 _(todo)_

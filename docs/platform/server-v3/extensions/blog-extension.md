@@ -1,12 +1,13 @@
 ---
 id: blog-extension
-title: Blog extension in Falcon Server
+title: Blog extension
 sidebar_label: Blog extension
 enterprise_only: true
 ---
 
-:::note Package name: `@deity/falcon-blog-extension`
-:::
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-blog-extension" /> 
 
 
 This extension provides basic features for blog implementation:

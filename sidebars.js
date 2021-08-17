@@ -12,13 +12,15 @@ module.exports = {
     ],
     'Falcon Server': [
       'platform/server-v3/about',
+      'platform/server-v3/extending-falcon-server',
       'platform/server-v3/migration-guide',
       {
         Extensions: [
           'platform/server-v3/extensions/about',
-          'platform/server-v3/extensions/extension-api',
           'platform/server-v3/extensions/shop-extension',
-          'platform/server-v3/extensions/blog-extension'
+          'platform/server-v3/extensions/blog-extension',
+          'platform/server-v3/extensions/search-extension',
+          'platform/server-v3/extensions/geolocation-extension'
         ]
       },
       {

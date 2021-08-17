@@ -1,12 +1,13 @@
 ---
 id: shop-extension
-title: Shop extension in Falcon Server
+title: Shop extension 
 sidebar_label: Shop extension
 enterprise_only: true
 ---
 
-:::note Package name: `@deity/falcon-shop-extension`
-:::
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-shop-extension" /> 
 
 This extension provides basic features for a webshop implementation:
 
