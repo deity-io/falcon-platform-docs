@@ -17,8 +17,15 @@ const ExampleProjects = [
     url: 'https://demo.deity.io',
     img: '/img/docs/platform/demo-v2-700.png',
     description: 'This is our most feature rich example. It requires a BigCommerce, Stripe and Algolia account to get started.'
+  },
+  {
+    name: 'Demo V3',
+    shortName: 'demo-v3',
+    url: 'https://democc.deity.io',
+    img: '/img/docs/platform/demo-v2-700.png',
+    description: 'This is beta version connected to CommerceTools and Contentful. It requires a CommerceTools and Contentful accounts to get started.'
   }
-]
+];
 
 const Example = ({ example }) => {
   const { name, shortName, description, url, img } = example;

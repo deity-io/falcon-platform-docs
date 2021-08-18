@@ -1,6 +1,6 @@
 module.exports = {
   falconPlatformSidebar: {
-    Overview: ['platform/overview/about', 'platform/overview/plans'],
+    Overview: ['platform/overview/about'],
     'Getting Started': [
       'platform/getting-started/overview',
       'platform/getting-started/prerequisites',
@@ -10,36 +10,12 @@ module.exports = {
       'platform/getting-started/configure',
       'platform/getting-started/repository'
     ],
-    'Falcon Server': [
-      'platform/server-v3/about',
-      'platform/server-v3/extending-falcon-server',
-      'platform/server-v3/migration-guide',
-      {
-        Extensions: [
-          'platform/server-v3/extensions/about',
-          'platform/server-v3/extensions/shop-extension',
-          'platform/server-v3/extensions/blog-extension',
-          'platform/server-v3/extensions/search-extension',
-          'platform/server-v3/extensions/geolocation-extension'
-        ]
-      },
-      {
-        Modules: [
-          'platform/server-v3/modules/about',
-          'platform/server-v3/modules/module-api',
-          'platform/server-v3/modules/bigcommerce-module',
-          'platform/server-v3/modules/commercetools-module',
-          'platform/server-v3/modules/magento2-module',
-          'platform/server-v3/modules/contentful-module',
-          'platform/server-v3/modules/wordpress-module',
-          'platform/server-v3/modules/algolia-search-module'
-        ]
-      },
-      'platform/server-v3/data-sources',
-      'platform/server-v3/event-handlers',
-      'platform/server-v3/rest-endpoints',
-    ]
-/*
+
+    'General contcepts': [
+      'platform/general-concepts/configuration',
+      'platform/general-concepts/dynamic-routing'
+    ],
+
     'Falcon Client': [
       'platform/client/about',
       'platform/client/technical',
@@ -63,7 +39,6 @@ module.exports = {
       'platform/client/routing',
       'platform/client/meta-data',
       'platform/client/schema-json',
-      'platform/client/data',
       'platform/client/state',
       'platform/client/translations',
       'platform/client/code-splitting',
@@ -71,6 +46,39 @@ module.exports = {
       'platform/client/static-files',
       'platform/client/browser-support'
     ],
+
+    'Falcon Server': [
+      'platform/server-v3/about',
+      'platform/server-v3/configuration',
+      'platform/server-v3/extending-falcon-server',
+      {
+        Extensions: [
+          'platform/server-v3/extensions/about',
+          'platform/server-v3/extensions/shop-extension',
+          'platform/server-v3/extensions/blog-extension',
+          'platform/server-v3/extensions/search-extension',
+          'platform/server-v3/extensions/geolocation-extension'
+        ]
+      },
+      {
+        Modules: [
+          'platform/server-v3/modules/about',
+          'platform/server-v3/modules/module-api',
+          'platform/server-v3/modules/bigcommerce-module',
+          'platform/server-v3/modules/commercetools-module',
+          'platform/server-v3/modules/magento2-module',
+          'platform/server-v3/modules/contentful-module',
+          'platform/server-v3/modules/wordpress-module',
+          'platform/server-v3/modules/algolia-search-module',
+          'platform/server-v3/migration-guide'
+        ]
+      },
+      'platform/server-v3/data-sources',
+      'platform/server-v3/event-handlers',
+      'platform/server-v3/rest-endpoints',
+      'platform/server-v3/dynamic-routing'
+    ]
+/*
     'Falcon Server': [
       'platform/server',
       'platform/server/dynamic-routes',

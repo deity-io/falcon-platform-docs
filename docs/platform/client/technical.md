@@ -13,9 +13,6 @@ It's built using ReactJS and connects Falcon Server via GraphQl.
 ### Components
 - <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">ReactJs (v16)</a>
 
-### State management
-- <a href="https://www.apollographql.com/" target="_blank" rel="noopener noreferrer">Apollo</a>
-
 ### Build
 - <a href="https://webpack.js.org/" target="_blank" rel="noopener noreferrer">Webpack</a>
 - <a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel</a>

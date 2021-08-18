@@ -4,6 +4,7 @@ title: Routing
 sidebar_label: Routing
 ---
 
+_(todo) this guide requires review as it's based on Falcon Server v2_
 ## Overview
 
 In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
