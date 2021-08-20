@@ -6,6 +6,7 @@ import SearchBar from '@theme/SearchBar';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import ComparisonTable from './../components/ComparisonTable';
+import Integrations from '../components/Integrations';
 import styles from './styles.module.css';
 
 function Home() {
@@ -119,6 +120,7 @@ function Home() {
             </div>
           </div>
         </section>
+        <Integrations />
       </main>
     </Layout>
   );
