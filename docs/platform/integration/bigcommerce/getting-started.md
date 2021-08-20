@@ -160,7 +160,7 @@ To have access to the packages for local development you can follow [these steps
 
 ### ii. Create your app
 
-Once you have access to our packages you'll be able to create your app using `npx @deity/create-falcon-app --example demo-v2 [YOUR_DIRECTORY_NAME]`. For more information about creating an app follow [these instructions](/docs/platform/getting-started/create).
+Once you have access to our packages you'll be able to create your app using `npx @deity/create-falcon-app@beta --example demo-v2 [YOUR_DIRECTORY_NAME]`. For more information about creating an app follow [these instructions](/docs/platform/getting-started/create).
 
 ### iii. Connect your app
 

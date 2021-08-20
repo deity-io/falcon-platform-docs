@@ -5,6 +5,10 @@ sidebar_label: Manual Configuration
 description: Step by step guide to configure your BigCommerce and Falcon integration.
 ---
 
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-bigcommerce-module" /> 
+
 ## Getting Started
 
 You might want to manually configure your BigCommerce Integration if you're an **Enterprise customer** and are running **Falcon Server Locally**.
@@ -66,61 +70,51 @@ The default configuration for BigCommerce looks like this:
 
 **`server/config/default.json`**
 ```json
-"endpoints": {
-  "bigcommerce": {
-    "package": "@deity/falcon-bigcommerce-endpoints",
-    "config": {
-      "protocol": "https",
-      "host": null,
-      "accessToken": null,
-      "clientId": null,
-      "clientSecret": null,
-      "url": "/bc/webhook",
-      "webhookBaseUrl": null
+  "modules": {
+    ...
+    "bigcommerce": {
+      "package": "@deity/falcon-bigcommerce-module",
+      "config": {
+          "protocol": "https",
+          "paymentHost": null,
+          "host": null,
+          "accessToken": null,
+          "clientId": null,
+          "gqlUrl": null,
+          "gqlToken": null,
+          "frontendUrl": "http://localhost:3000",
+          "channelId": 1,
+          "mailerComponent": "mailer",
+          "paymentsComponent": "payments",
+          "defaultLocale": "en_US",
+          "url": "/bc/webhook",
+          "webhookBaseUrl": null
+      }
     }
-  }
-},
-"apis": {
-  "bigcommerce": {
-    "package": "./src/falcon-custom-bc-api",
-    "config": {
-      "protocol": "https",
-      "paymentHost": null,
-      "host": null,
-      "accessToken": null,
-      "clientId": null,
-      "clientSecret": null,
-      "gqlUrl": null,
-      "gqlToken": null,
-      "frontendUrl": "http://localhost:3000",
-      "mailerComponent": "mailer",
-      "paymentsComponent": "payments"
+  },
+  "extensions": {
+    ...
+    "shop": {
+      "package": "@deity/falcon-shop-extension",
+      "module": "bigcommerce"
     }
+    ...
   }
-}
 ```
 
-Use your `server/config/local.json` or your `environment variables` (Deity Cloud) to add the sensitive data where needed.
+Use your `server/config/local.json` (for local development) or your `environment variables` (for production setup) to the sensitive data where needed.
 
 ```json
-"endpoints": {
+"modules": {
   "bigcommerce": {
     "config": {
+      "clientId": "[CLIENT_ID]",
+      "clientSecret": "[CLIENT_SECRET]",
       "host": "api.bigcommerce.com/stores/[STORE_HASH]",
       "accessToken": "[ACCESS_TOKEN]",
-      "clientId": "[CLIENT_ID]",
-      "clientSecret": "[CLIENT_SECRET]"
-    }
-  }
-},
-"apis": {
-  "bigcommerce": {
-    "config": {
       "paymentHost": "payments.bigcommerce.com/stores/[STORE_HASH]/",
       "host": "api.bigcommerce.com/stores/[STORE_HASH]",
       "accessToken": "[ACCESS_TOKEN]",
-      "clientId": "[CLIENT_ID]",
-      "clientSecret": "[CLIENT_SECRET]",
       "gqlUrl": "[STORE_URL]/graphql",
       "gqlToken": "[GRAPHGL_TOKEN]"
     }
@@ -128,13 +122,14 @@ Use your `server/config/local.json` or your `environment variables` (Deity Cloud
 }
 ```
 
-### Deity Cloud Environment Variables
+### Environment Variables
+ 
+The following environment variables are mapped directly to the configuration option so it's recommended to use these when setting up production deployment (and of course these can be used in development mode)
 
 - `BIGCOMMERCE_HOST`
 - `BIGCOMMERCE_ACCESS_TOKEN`
 - `BIGCOMMERCE_CLIENT_ID`
 - `BIGCOMMERCE_GQL_URL`
 - `BIGCOMMERCE_GQL_TOKEN`
-- `BIGCOMMERCE_FRONTENT_URL`
-- `SEARCH_API_NAME`: If you want to use BigCommerce for search the value shoul be `bigcommerce`
-- `CHECKOUT_USE_EMBEDDED`: If you want to use the embedded checkout.
+- `BIGCOMMERCE_FRONTEND_URL`
+- `CHECKOUT_USE_EMBEDDED`: If you want to use the BigCommerce's embedded checkout.

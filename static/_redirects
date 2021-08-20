@@ -9,7 +9,7 @@
 /docs/cloud/guides/setup                        /docs/platform/guides/cloud
 
 # Old Docs redirects
-/docs/getting-started/intro             /docs/2019/getting-started/intro   
+/docs/getting-started/intro             /docs/2019/platform/getting-started/intro   
 /docs/getting-started/requirements      /docs/2019/getting-started/requirements
 /docs/getting-started/installation      /docs/2019/getting-started/installation
 /docs/getting-started/project-overview  /docs/2019/getting-started/project-overview
@@ -77,7 +77,7 @@
 
 /docs/open-source/getting-started/example /docs/2019/getting-started/example
 /docs/open-source/getting-started/installation /docs/2019/getting-started/installion
-/docs/open-source/getting-started/intro /docs/2019/getting-started/intro
+/docs/open-source/getting-started/intro /docs/2019/platform/getting-started/intro
 /docs/open-source/getting-started/project-overview /docs/2019/getting-started/project-overview
 /docs/open-source/getting-started/requirements /docs/2019/getting-started/requirements
 
