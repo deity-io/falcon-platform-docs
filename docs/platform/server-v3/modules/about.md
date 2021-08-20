@@ -11,8 +11,8 @@ enterprise_only: true
 - [CommerceTools module (shop)](../../integration/commercetools/overview)
 - [Magento2 module (shop)](../../integration/magento2/overview)
 - [Contentful module (blog)](../../integration/contentful/overview)
-- [WordPress module (blog)](../../integration/wordpress/overview)
-- [Algolia search module (search)](../../integration/algolia-search-module)
+- [WordPress module (blog)](../../integration/wordpress)
+- [Algolia search module (search)](../../integration/algolia)
 
 ## Old vs new approach
 

@@ -46,6 +46,6 @@ module.exports = () => ({
 
 ```
 
-Internally for example [Falcon GeoLocation Extension](./geo-location-extension) uses that mechanism to inject geo location data to each request's context.
+Internally for example [Falcon GeoLocation Extension](./geolocation-extension) uses that mechanism to inject geo location data to each request's context.
 
 _(todo)_

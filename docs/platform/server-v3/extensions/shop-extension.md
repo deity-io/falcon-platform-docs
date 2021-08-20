@@ -19,9 +19,9 @@ This extension provides basic features for a webshop implementation:
 
 ## Available integrations
 
-- [BigCommerce module](../modules/bigcommerce-module)
-- [CommerceTools module](../modules/commercetools-module)
-- [Magento2 module](../modules/magento2-module)
+- [BigCommerce module](../../integration/bigcommerce/overview)
+- [CommerceTools module](../../integration/commercetools/overview)
+- [Magento2 module](../../integration/magento2/overview)
 
 ## Usage
 
@@ -45,7 +45,7 @@ yarn add @deity/falcon-shop-extension
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-and add extension and module (in this example it's [Magento2 module](../modules/magento2-module)) to the configuration of the server:
+and add extension and module (in this example it's [Magento2 module](../../integration/magento2/overview)) to the configuration of the server:
 
 ```js
 {
