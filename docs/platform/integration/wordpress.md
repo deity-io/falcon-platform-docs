@@ -55,12 +55,12 @@ All you need to do is add your sites URL and you're away.
 
 ```json
 {
-  "apis": {
+  "modules": {
     "wordpress": {
       "config": {
-        "host": "WORDPRESS_API_HOST",
-        "protocol": "WORDPRESS_API_PROTOCOL",
-        "apiPrefix": "WORDPRESS_API_PREFIX"
+        "host": "",
+        "protocol": "",
+        "apiPrefix": ""
       }
     }
   }

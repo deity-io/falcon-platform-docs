@@ -7,12 +7,12 @@ enterprise_only: true
 
 ## List of available modules
 
-- [BigCommerce module (shop)](./bigcommerce-module)
-- [CommerceTools module (shop)](./commercetools-module)
-- [Magento2 module (shop)](./magento2-module)
-- [Contentful module (blog)](./contentful-module)
-- [WordPress module (blog)](./wordpress-module)
-- [Algolia search module (search)](./algolia-search-module)
+- [BigCommerce module (shop)](../../integration/bigcommerce/overview)
+- [CommerceTools module (shop)](../../integration/commercetools/overview)
+- [Magento2 module (shop)](../../integration/magento2/overview)
+- [Contentful module (blog)](../../integration/contentful/overview)
+- [WordPress module (blog)](../../integration/wordpress/overview)
+- [Algolia search module (search)](../../integration/algolia-search-module)
 
 ## Old vs new approach
 

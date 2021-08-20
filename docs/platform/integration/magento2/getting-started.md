@@ -4,6 +4,10 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-magento2-module" /> 
+
 ## Getting Started
 
 :::info
@@ -67,33 +71,56 @@ Add your Magento 2 details to your `server/config/` files. Below is an example o
 If you're using `demo-v1` this will be set up to use our demo Magento 2 instance and should work out of the box.
 
 ```json
-{
-  "endpoints": {
-    "magento": {
-      "config": {
-        "host": "MAGENTO_HOST"
-      }
-    }
-  },
-  "apis": {
+  "modules": {
+    ...
     "magento2": {
+      "module": "@deity/falcon-magento2-module",
       "config": {
-        "host": "MAGENTO_HOST",
-        "defaultLocale": "MAGENTO_DEFAULT_LOCALE",
-        "itemUrlSuffix": "MAGENTO_URL_SUFFIX",
+        "host": "",
+        "defaultLocale": "",
+        "itemUrlSuffix": "",
         "auth": {
-          "consumerKey": "MAGENTO_CONSUMER_KEY",
-          "consumerSecret": "MAGENTO_CONSUMER_SECRET",
-          "accessToken": "MAGENTO_ACCESS_TOKEN",
-          "accessTokenSecret": "MAGENTO_ACCESS_TOKEN_SECRET"
+          "consumerKey": "",
+          "consumerSecret": "",
+          "accessToken": "",
+          "accessTokenSecret": ""
         }
       }
     }
   }
-}
+  "extensions": {
+    ...
+    "shop": {
+      "package": "@deity/falcon-shop-extension",
+      "module": "commercetools"
+    }
+    ...
+  }
 ```
 
-### Deity Cloud Environment Variables
+Use your `server/config/local.json` (for local development) or your `environment variables` (for production setup) to the sensitive data where needed.
+
+```json
+  "modules": {
+    "magento2": {
+      "config": {
+        "host": "example.com",
+        "defaultLocale": "en",
+        "itemUrlSuffix": "",
+        "auth": {
+          "consumerKey": "key-here",
+          "consumerSecret": "secret-here",
+          "accessToken": "token-here",
+          "accessTokenSecret": "access-token-secret-here"
+        }
+      }
+    }
+  }
+```
+
+### Environment Variables
+
+The following environment variables are mapped directly to the configuration option so it's recommended to use these when setting up production deployment (and of course these can be used in development mode)
 
 - `MAGENTO_HOST`: Your Magento site URL (without protocol) e.g. `magento.deity.io`
 - `MAGENTO_CONSUMER_KEY`: your consumer key

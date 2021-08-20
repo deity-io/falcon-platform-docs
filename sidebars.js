@@ -64,12 +64,6 @@ module.exports = {
         Modules: [
           'platform/server-v3/modules/about',
           'platform/server-v3/modules/module-api',
-          'platform/server-v3/modules/bigcommerce-module',
-          'platform/server-v3/modules/commercetools-module',
-          'platform/server-v3/modules/magento2-module',
-          'platform/server-v3/modules/contentful-module',
-          'platform/server-v3/modules/wordpress-module',
-          'platform/server-v3/modules/algolia-search-module',
           'platform/server-v3/migration-guide'
         ]
       },
@@ -77,47 +71,6 @@ module.exports = {
       'platform/server-v3/event-handlers',
       'platform/server-v3/rest-endpoints',
       'platform/server-v3/dynamic-routing'
-    ]
-/*
-    'Falcon Server': [
-      'platform/server',
-      'platform/server/dynamic-routes',
-      'platform/server/event-hooks'
-    ],
-    'Falcon Cloud': [
-      'platform/cloud/about',
-      'platform/cloud/technical',
-      'platform/cloud/prerequisites',
-      'platform/cloud/account',
-      'platform/cloud/installation',
-      'platform/cloud/dcloud'
-    ],
-    Configuration: [
-      "platform/configuration/overview",
-      "platform/configuration/client",
-      "platform/configuration/server",
-    ],
-    Upgrading: ['platform/upgrading/overview'],
-    Caching: ["platform/cache/overview"],
-    Redirects: ["platform/redirects/overview"],
-    Deployment: ["platform/deployment/overview"],
-    Logging: ["platform/logging/overview"],
-    GeoIP: ['platform/geoip/overview'],
-    Payments: [
-      "platform/payments/overview",
-      {
-        type: "category",
-        label: "Falcon Payments",
-        items: [
-          "platform/payments/falcon-payments/overview",
-          "platform/payments/falcon-payments/packages",
-          "platform/payments/falcon-payments/provider",
-          "platform/payments/falcon-payments/webhooks",
-          "platform/payments/falcon-payments/features",
-          "platform/payments/falcon-payments/getting-started",
-          "platform/payments/falcon-payments/integration",
-        ],
-      },
     ],
     Integrations: [
       'platform/integration/examples',
@@ -135,17 +88,40 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'CommerceTools',
+        items: [
+          'platform/integration/commercetools/overview'
+        ]
+      },
+      {
+        type: 'category',
         label: 'Magento 2',
         items: [
           'platform/integration/magento2/overview',
           'platform/integration/magento2/getting-started',
         ]
       },
-      'platform/integration/stripe',
-      'platform/integration/mollie',
+      {
+        type: 'category',
+        label: 'Contentful',
+        items: [
+          'platform/integration/contentful/overview',
+          'platform/integration/contentful/getting-started',
+          'platform/integration/contentful/content-models'
+        ]
+      },
       'platform/integration/wordpress'
+
+      // commented out as that's now in DPSG
+      // 'platform/integration/stripe',
+      // 'platform/integration/mollie'
     ],
-    Testing: ['platform/testing/overview'],
+    Upgrading: ['platform/upgrading/overview'],
+    Caching: ["platform/cache/overview"],
+    Redirects: ["platform/redirects/overview"],
+    Deployment: ["platform/deployment/overview"],
+    Logging: ["platform/logging/overview"],
+    GeoIP: ['platform/geoip/overview'],
     Cookbook: [
       'platform/cookbook/about',
       {
@@ -166,8 +142,8 @@ module.exports = {
         label: 'Integrations',
         items: [
           'platform/cookbook/integrations/jsonplaceholder',
-          'platform/cookbook/integrations/contentful',
-          'platform/cookbook/integrations/contentful2',
+          // 'platform/cookbook/integrations/contentful',
+          // 'platform/cookbook/integrations/contentful2',
           'platform/cookbook/integrations/braintree'
         ]
       }
@@ -248,6 +224,41 @@ module.exports = {
         ]
       }
     ]
+/*
+    'Falcon Server': [
+      'platform/server',
+      'platform/server/dynamic-routes',
+      'platform/server/event-hooks'
+    ],
+    'Falcon Cloud': [
+      'platform/cloud/about',
+      'platform/cloud/technical',
+      'platform/cloud/prerequisites',
+      'platform/cloud/account',
+      'platform/cloud/installation',
+      'platform/cloud/dcloud'
+    ],
+    Configuration: [
+      "platform/configuration/overview",
+      "platform/configuration/client",
+      "platform/configuration/server",
+    ],
+    Payments: [
+      "platform/payments/overview",
+      {
+        type: "category",
+        label: "Falcon Payments",
+        items: [
+          "platform/payments/falcon-payments/overview",
+          "platform/payments/falcon-payments/packages",
+          "platform/payments/falcon-payments/provider",
+          "platform/payments/falcon-payments/webhooks",
+          "platform/payments/falcon-payments/features",
+          "platform/payments/falcon-payments/getting-started",
+          "platform/payments/falcon-payments/integration",
+        ],
+      },
+    ],
 */
   }
 };
