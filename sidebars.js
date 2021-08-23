@@ -1,5 +1,5 @@
 module.exports = {
-  falconPlatformSidebar: {
+  platformSidebar: {
     Overview: ['platform/overview/about'],
     'Getting Started': [
       'platform/getting-started/overview',
@@ -8,12 +8,12 @@ module.exports = {
       'platform/getting-started/npm',
       'platform/getting-started/create',
       'platform/getting-started/configure',
-      'platform/getting-started/repository'
+      'platform/getting-started/repository',
     ],
 
-    'General contcepts': [
+    'General concepts': [
       'platform/general-concepts/configuration',
-      'platform/general-concepts/dynamic-routing'
+      'platform/general-concepts/dynamic-routing',
     ],
 
     'Falcon Client': [
@@ -32,8 +32,8 @@ module.exports = {
           'platform/client/theming/components',
           'platform/client/theming/fonts',
           'platform/client/theming/icons',
-          'platform/client/theming/css-sass'
-        ]
+          'platform/client/theming/css-sass',
+        ],
       },
       'platform/client/overrides',
       'platform/client/routing',
@@ -44,7 +44,7 @@ module.exports = {
       'platform/client/code-splitting',
       'platform/client/testing',
       'platform/client/static-files',
-      'platform/client/browser-support'
+      'platform/client/browser-support',
     ],
 
     'Falcon Server': [
@@ -57,20 +57,20 @@ module.exports = {
           'platform/server-v3/extensions/shop-extension',
           'platform/server-v3/extensions/blog-extension',
           'platform/server-v3/extensions/search-extension',
-          'platform/server-v3/extensions/geolocation-extension'
-        ]
+          'platform/server-v3/extensions/geolocation-extension',
+        ],
       },
       {
         Modules: [
           'platform/server-v3/modules/about',
           'platform/server-v3/modules/module-api',
-          'platform/server-v3/migration-guide'
-        ]
+          'platform/server-v3/migration-guide',
+        ],
       },
       'platform/server-v3/data-sources',
       'platform/server-v3/event-handlers',
       'platform/server-v3/rest-endpoints',
-      'platform/server-v3/dynamic-routing'
+      'platform/server-v3/dynamic-routing',
     ],
     Integrations: [
       'platform/integration/examples',
@@ -83,15 +83,15 @@ module.exports = {
           'platform/integration/bigcommerce/getting-started',
           'platform/integration/bigcommerce/features',
           'platform/integration/bigcommerce/technical',
-          'platform/integration/bigcommerce/manual'
-        ]
+          'platform/integration/bigcommerce/manual',
+        ],
       },
       {
         type: 'category',
         label: 'CommerceTools',
         items: [
-          'platform/integration/commercetools/overview'
-        ]
+          'platform/integration/commercetools/overview',
+        ],
       },
       {
         type: 'category',
@@ -99,7 +99,7 @@ module.exports = {
         items: [
           'platform/integration/magento2/overview',
           'platform/integration/magento2/getting-started',
-        ]
+        ],
       },
       {
         type: 'category',
@@ -107,20 +107,16 @@ module.exports = {
         items: [
           'platform/integration/contentful/overview',
           'platform/integration/contentful/getting-started',
-          'platform/integration/contentful/content-models'
-        ]
+          'platform/integration/contentful/content-models',
+        ],
       },
-      'platform/integration/wordpress'
-
-      // commented out as that's now in DPSG
-      // 'platform/integration/stripe',
-      // 'platform/integration/mollie'
+      'platform/integration/wordpress',
     ],
     Upgrading: ['platform/upgrading/overview'],
-    Caching: ["platform/cache/overview"],
-    Redirects: ["platform/redirects/overview"],
-    Deployment: ["platform/deployment/overview"],
-    Logging: ["platform/logging/overview"],
+    Caching: ['platform/cache/overview'],
+    Redirects: ['platform/redirects/overview'],
+    Deployment: ['platform/deployment/overview'],
+    Logging: ['platform/logging/overview'],
     GeoIP: ['platform/geoip/overview'],
     Cookbook: [
       'platform/cookbook/about',
@@ -134,19 +130,17 @@ module.exports = {
           'platform/cookbook/client/scss-global',
           'platform/cookbook/client/post-css-support',
           'platform/cookbook/client/analytics',
-          'platform/cookbook/client/testing'
-        ]
+          'platform/cookbook/client/testing',
+        ],
       },
       {
         type: 'category',
         label: 'Integrations',
         items: [
           'platform/cookbook/integrations/jsonplaceholder',
-          // 'platform/cookbook/integrations/contentful',
-          // 'platform/cookbook/integrations/contentful2',
-          'platform/cookbook/integrations/braintree'
-        ]
-      }
+          'platform/cookbook/integrations/braintree',
+        ],
+      },
     ],
     'Video Guides': ['platform/guides/client'],
     Packages: [
@@ -177,36 +171,11 @@ module.exports = {
       'platform/packages/falcon-ui-kit',
       'platform/packages/falcon-ui',
       'platform/packages/falcon-wordpress-api',
-      'platform/packages/normal-module-override-webpack-plugin'
+      'platform/packages/normal-module-override-webpack-plugin',
     ],
     'Release Notes': [
       'platform/release/full-changelog',
-      'platform/release/2-7-14',
-      'platform/release/2-7-13',
-      'platform/release/2-7-12',
-      'platform/release/2-7-11',
-      'platform/release/2-7-10',
-      'platform/release/2-7-9',
-      'platform/release/2-7-8',
-      'platform/release/2-7-7',
-      'platform/release/2-7-6',
-      'platform/release/2-7-5',
-      'platform/release/2-7-4',
-      'platform/release/2-7-3',
-      'platform/release/2-7-2',
-      'platform/release/2-7-1',
-      'platform/release/2-7-0',
-      'platform/release/2-6-5',
-      'platform/release/2-6-4',
-      'platform/release/2-6-2',
-      'platform/release/2-6-0',
-      'platform/release/2-5-0',
-      'platform/release/2-4-8',
-      'platform/release/2-4-6',
-      'platform/release/2-4-2',
-      'platform/release/2-4-0',
-      'platform/release/2-3-1',
-      'platform/release/2-3-0',
+      // 'platform/release/3-0-0',
     ],
     Support: [
       'platform/support/contact',
@@ -220,99 +189,60 @@ module.exports = {
           'platform/support/faqs/server',
           'platform/support/faqs/cloud',
           'platform/support/faqs/config',
-          'platform/support/faqs/misc'
-        ]
-      }
-    ],
-    'Deity Payment Service Gateway': [
-      {
-      Overview: [
-        'dpsg/overview/about',
-        'dpsg/overview/how',
-      ]},
-      {'Getting Started': [
-        'dpsg/getting-started/config',
-        'dpsg/getting-started/usage',
-      ]},
-      {Features: [
-        'dpsg/features/surcharges',
-        'dpsg/features/locations',
-        'dpsg/features/sort',
-      ]},
-      {Integrations: [
-        {
-          type: 'category',
-          label: 'Adyen',
-          items: [
-            'dpsg/integrations/adyen/overview',
-            'dpsg/integrations/adyen/methods',
-            'dpsg/integrations/adyen/config',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Mollie',
-          items: [
-            'dpsg/integrations/mollie/overview',
-            'dpsg/integrations/mollie/methods',
-            'dpsg/integrations/mollie/config',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Stripe',
-          items: [
-            'dpsg/integrations/stripe/overview',
-            'dpsg/integrations/stripe/methods',
-            'dpsg/integrations/stripe/config',
-          ],
-        },
-      ]},
-      {Upgrading: [
-        'dpsg/upgrading/overview',
-      ]},
-    {'Release Notes': [
-        'dpsg/release/full-changelog',
-        'dpsg/release/1-0-0',
-      ]}
-    ]
-
-/*
-    'Falcon Server': [
-      'platform/server',
-      'platform/server/dynamic-routes',
-      'platform/server/event-hooks'
-    ],
-    'Falcon Cloud': [
-      'platform/cloud/about',
-      'platform/cloud/technical',
-      'platform/cloud/prerequisites',
-      'platform/cloud/account',
-      'platform/cloud/installation',
-      'platform/cloud/dcloud'
-    ],
-    Configuration: [
-      "platform/configuration/overview",
-      "platform/configuration/client",
-      "platform/configuration/server",
-    ],
-    Payments: [
-      "platform/payments/overview",
-      {
-        type: "category",
-        label: "Falcon Payments",
-        items: [
-          "platform/payments/falcon-payments/overview",
-          "platform/payments/falcon-payments/packages",
-          "platform/payments/falcon-payments/provider",
-          "platform/payments/falcon-payments/webhooks",
-          "platform/payments/falcon-payments/features",
-          "platform/payments/falcon-payments/getting-started",
-          "platform/payments/falcon-payments/integration",
+          'platform/support/faqs/misc',
         ],
       },
     ],
-*/
-  }
+  },
+  dpsgSidebar: {
+    Overview: [
+      'dpsg/overview/about',
+      'dpsg/overview/how',
+    ],
+    'Getting Started': [
+      'dpsg/getting-started/config',
+      'dpsg/getting-started/usage',
+    ],
+    Features: [
+      'dpsg/features/surcharges',
+      'dpsg/features/locations',
+      'dpsg/features/sort',
+    ],
+    Integrations: [
+      {
+        type: 'category',
+        label: 'Adyen',
+        items: [
+          'dpsg/integrations/adyen/overview',
+          'dpsg/integrations/adyen/methods',
+          'dpsg/integrations/adyen/config',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Mollie',
+        items: [
+          'dpsg/integrations/mollie/overview',
+          'dpsg/integrations/mollie/methods',
+          'dpsg/integrations/mollie/config',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Stripe',
+        items: [
+          'dpsg/integrations/stripe/overview',
+          'dpsg/integrations/stripe/methods',
+          'dpsg/integrations/stripe/config',
+        ],
+      },
+    ],
+    Upgrading: [
+      'dpsg/upgrading/overview',
+    ],
+    'Release Notes': [
+      'dpsg/release/full-changelog',
+      'dpsg/release/1-0-0',
+    ],
+  },
 };
-
