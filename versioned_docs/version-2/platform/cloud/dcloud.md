@@ -55,6 +55,12 @@ dcloud deployment:list
 - `-l <limit>` Limit the results
 - `-p <page>` Which page of results to show
 
+**Example: show 30 results on the second page**
+
+```bash
+dcloud deployment:list -l 30 -p 2
+```
+
 ---
 
 ## Deployment Info
@@ -68,6 +74,12 @@ dcloud deployment [id]
 **Options**
 - `-w` Watch a deployment (if it's not finished)
 - `-o` Show deployment output to the console
+
+**Example: show the output of deployment 2**
+
+```bash
+dcloud deployment -o 2
+```
 
 ---
 
@@ -140,6 +152,12 @@ dcloud env:var:set <env> <name> [value]
 
 **Options**
 - `-s` or `--secret` encrypt the variable being set
+
+**Example: set the variable API_KEY to 12345 on the test environment and encrypt it**
+
+```bash
+dcloud env:var:set -s test API_KEY 12345
+```
 
 ---
 
