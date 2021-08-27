@@ -22,10 +22,10 @@ module.exports = {
           dropdownActiveClassDisabled: true,
         },
         {
-          to: '/docs/dpsg/overview/about',
+          to: 'dpsg/docs/overview/about',
           label: 'DPSG',
           position: 'right',
-          activeBasePath: '/docs/dpsg/',
+          activeBasePath: '/dpsg/docs',
         },
         {
           label: 'Falcon UI',
