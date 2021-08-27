@@ -175,7 +175,7 @@ module.exports = {
     ],
     'Release Notes': [
       'platform/release/full-changelog',
-      // 'platform/release/3-0-0',
+      'platform/release/3-0-0',
     ],
     Support: [
       'platform/support/contact',
