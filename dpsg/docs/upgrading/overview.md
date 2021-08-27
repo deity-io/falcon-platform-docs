@@ -8,8 +8,6 @@ sidebar_label: Overview
 
 If you're running Falcon 2.x you'll need to upgrade your project to v3.x to use DPSG.
 
-[FULL V3 UPGRADE GUIDE COMING SOON]
-
 ## DPSG upgrade guide
 
 Once your app is running v3 the upgrade to DPSG is simple.

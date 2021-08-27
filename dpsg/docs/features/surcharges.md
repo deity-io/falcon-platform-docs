@@ -16,8 +16,6 @@ Unfortunately surcharges don't currently work with BigCommerce. We're looking ou
 
 All payment method config can be done via our `dcloud` cli tool.
 
-[DOCS COMING SOON]
-
 ### Configuration Options
 
 Surcharges should be passed as an array to each payment method on your environment.  

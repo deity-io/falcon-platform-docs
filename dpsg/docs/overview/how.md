@@ -8,9 +8,6 @@ sidebar_label: How it works
 
 To manage your payments methods, providers, payments and orders you should use our `dcloud` cli tool.
 
-[DOCS COMING SOON]
-
-
 ## How DPSG works with your app
 
 Interacting with DPSG is all done via our `@deity/falcon-payment-service-module` package.

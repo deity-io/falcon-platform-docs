@@ -12,8 +12,6 @@ The sort order methods are returned from DPSG in can be configured per method, p
 
 All payment method config can be done via our `dcloud` cli tool.
 
-[DOCS COMING SOON]
-
 ### Configuration Options
 
 Sort orders should be passed as an array.  Each sort order can have a `countries` arguement associated with it. This means you can make the sort order country specific. 
