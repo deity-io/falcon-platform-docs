@@ -41,7 +41,7 @@ module.exports = {
           title: 'Our documentation',
           items: [
             {
-              label: 'Falcon Platform',
+              label: 'Platform',
               to: '/docs/platform/overview/about',
             },
             {
@@ -49,8 +49,8 @@ module.exports = {
               to: '/docs/platform/cloud/about',
             },
             {
-              label: 'Falcon 2019',
-              to: '/docs/2019/platform/getting-started/intro',
+              label: 'DPSG',
+              to: '/dpsg/docs/overview/about',
             },
             {
               label: 'Falcon UI',
