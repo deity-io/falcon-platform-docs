@@ -210,7 +210,7 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: 'Platform (v3)',
+              label: 'Platform (v3) [BETA]',
               path: 'v3',
             },
             2: {
