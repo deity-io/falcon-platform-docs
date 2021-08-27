@@ -211,7 +211,6 @@ module.exports = {
           versions: {
             current: {
               label: 'Platform (v3) [BETA]',
-              path: 'v3',
             },
             2: {
               label: 'Platform (v2)',

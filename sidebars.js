@@ -16,7 +16,7 @@ module.exports = {
       'platform/general-concepts/dynamic-routing',
     ],
 
-    'Falcon Client': [
+    'Client App': [
       'platform/client/about',
       'platform/client/technical',
       'platform/client/files',
@@ -47,7 +47,7 @@ module.exports = {
       'platform/client/browser-support',
     ],
 
-    'Falcon Server': [
+    Middleware: [
       'platform/server-v3/about',
       'platform/server-v3/configuration',
       'platform/server-v3/extending-falcon-server',
@@ -71,6 +71,14 @@ module.exports = {
       'platform/server-v3/event-handlers',
       'platform/server-v3/rest-endpoints',
       'platform/server-v3/dynamic-routing',
+    ],
+    Cloud: [
+      'platform/cloud/about',
+      'platform/cloud/technical',
+      'platform/cloud/prerequisites',
+      'platform/cloud/account',
+      'platform/cloud/installation',
+      'platform/cloud/dcloud',
     ],
     Integrations: [
       'platform/integration/examples',

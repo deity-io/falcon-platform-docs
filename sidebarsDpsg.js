@@ -5,7 +5,9 @@ module.exports = {
       'docs/overview/how',
     ],
     'Getting Started': [
+      'docs/getting-started/overview',
       'docs/getting-started/config',
+      'docs/getting-started/connect',
       'docs/getting-started/usage',
     ],
     Features: [

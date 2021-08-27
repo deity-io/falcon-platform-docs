@@ -5,61 +5,67 @@ sidebar_label: Configuration
 description: How to configure DPSG
 ---
 
-## Connecting your Falcon App
+## Overview
 
-All the setup is done our side. All you need to do is configure your Falcon App to use DPSG and your good to go.
+Configuring DPSG can be done using our [`dcloud` CLI tool](/docs/platform/cloud/dcloud).
 
-To connect your app to DPSG you'll just need to make a few simple configuration changes.
+We have several methods available for configuring DPSG.
 
-:::note Get your DPSG credentials?
-DPSG is part of your subscription and your `user` and `token` should be provided to you by our team when you sign up. You can get this information by running `dcloud env [env]`.
-:::
+### `payments:provider:list:all`
+List all available payment providers
 
+### `payments:method:list:all`
+List all available payment methods of the required Provider
 
-## Configuring DPSG
+### `payments:provider:list`
+List configured payment providers for the required environment
 
-In your server config you'll need to add a new payments module.
+### `payments:provider:configure`
+Configure Payment Provider for the required Environment
 
-**`server/config/default.json` minimum configuration**
-```json
-"modules": {
-  "payments": {
-    "package": "@deity/falcon-payment-service-module",
-    "enabled": true,
-    "config": {
-      "redirectBaseUrl": "",
-      "redirectUrl": "/checkout/pending",
-      "serviceUser": "",
-      "serviceToken": ""
-    }
-  },
-  ...
-```
+### `payments:method:list`
+List configured payment providers for the required provider and environment
 
-:::note Using localhost?
-Some payment providers don't like passing `http://localhost` as a redirect URL (`redirectBaseUrl`). We reccommend using a service like [ngrok](https://ngrok.com/) for to tunnel your falcon server app.
-:::
+### `payments:method:configure`
+Configure Payment Methods for the required Environment and Payment Provider
+  
+### `payments:env:create`
+Create an entry for the existing DEITY Cloud environment or a test one for local development
+  
+### `payments:env:info`
+Get Environment configuration for Payments
 
-### Config Explained
+### `payments:env:apply` 
+Send Payments Token to the environment. It will fetch the token by applying the required env vars
 
-(config : type : default : description)
+## Setup
 
-- `redirectBaseUrl` : string : "" : The base url to be redirected to after payments (usually your client app)
-- `redirectUrl` : string : "/checkout/pending" : The url to be redirected to after payments (usually your client app)
-- `serviceUser` : string : "" : The DPSG user name, in the following format "org:project:env" e.g. "deity:falcon:production"
-- `serviceToken` : string : "" : The DPSG token associated with the user above
+### Prerequisites
 
-### Need payments in a custom module?
+These steps assume you have `dcloud` installed and are running the correct project (`dcloud project:current:set`)
 
-If you're adding a new module and need access to DPSG you'll need to make sure you pass the payments module name to it.
+### 1. Create your environment
 
-```json
-"yourModule": {
-  ...
-  "config": {
-    ...
-    "paymentsComponent": "payments",
-    ...
-  }
-},
-```
+The first step is to create your payment environment in DPSG. This is not the same as your platform environment although naming them the same can be helpful.
+
+Run `dcloud payments:env:create`.
+
+This will lead you through a few steps to creating your env.
+
+### 2. Connect your DPSG env to your platform app
+
+Run `dcloud payments:env:apply`, this will set the auth details for DPSG as environment varialbes for your platform app.
+
+### 3. Configure your payment providers
+
+Next you need to run `dcloud payments:provider:configure`.
+
+This weill take you through steps to enabling your required payment providers. In this step you will add API keys ans secrets needed for your provider.
+
+### 4. Configure your payment methods
+
+The final step is to enable payment methods.
+
+Run `dcloud payments:method:configure`. 
+
+This will take you through steps to configure your methods, including sorting and which countries your methods are enabled on.
