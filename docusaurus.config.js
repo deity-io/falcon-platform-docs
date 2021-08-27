@@ -207,6 +207,21 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/deity-io/falcon-platform-docs/edit/master',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'Platform (v3)',
+              path: 'v3',
+            },
+            2: {
+              label: 'Platform (v2)',
+              path: 'v2',
+            },
+            2019: {
+              label: 'Platform (v2019)',
+              path: 'v2019',
+            },
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
