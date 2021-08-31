@@ -19,7 +19,7 @@ This configuration can be done entirely using our `dcloud` CLI tool.
 
 To use DPSG in your app you need to connect to it. For this you just need to add a few config changes to your remote or local apps config.
 
-[Find out how](use)
+[Find out how](connect)
 
 ## 3. Using DPSG within your app
 

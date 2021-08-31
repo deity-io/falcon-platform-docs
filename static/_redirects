@@ -9,87 +9,87 @@
 /docs/cloud/guides/setup                        /docs/platform/guides/cloud
 
 # Old Docs redirects
-/docs/getting-started/intro             /docs/2019/platform/getting-started/intro   
-/docs/getting-started/requirements      /docs/2019/getting-started/requirements
-/docs/getting-started/installation      /docs/2019/getting-started/installation
-/docs/getting-started/project-overview  /docs/2019/getting-started/project-overview
-/docs/getting-started/example           /docs/2019/getting-started/example
+/docs/getting-started/intro             /docs/v2019/platform/getting-started/intro   
+/docs/getting-started/requirements      /docs/v2019/getting-started/requirements
+/docs/getting-started/installation      /docs/v2019/getting-started/installation
+/docs/getting-started/project-overview  /docs/v2019/getting-started/project-overview
+/docs/getting-started/example           /docs/v2019/getting-started/example
 
-/docs/falcon-client/basics                  /docs/2019/falcon-client/basics
-/docs/falcon-client/configurations          /docs/2019/falcon-client/configurations
-/docs/falcon-client/code-splitting          /docs/2019/falcon-client/code-splitting
-/docs/falcon-client/data-management         /docs/2019/falcon-client/data-management
-/docs/falcon-client/local-state-management  /docs/2019/falcon-client/local-state-management
-/docs/falcon-client/internationalization    /docs/2019/falcon-client/internationalization
-/docs/falcon-client/falcon-ui               /docs/2019/falcon-client/falcon-ui
-/docs/falcon-client/search-and-filtering    /docs/2019/falcon-client/search-and-filtering
+/docs/falcon-client/basics                  /docs/v2019/falcon-client/basics
+/docs/falcon-client/configurations          /docs/v2019/falcon-client/configurations
+/docs/falcon-client/code-splitting          /docs/v2019/falcon-client/code-splitting
+/docs/falcon-client/data-management         /docs/v2019/falcon-client/data-management
+/docs/falcon-client/local-state-management  /docs/v2019/falcon-client/local-state-management
+/docs/falcon-client/internationalization    /docs/v2019/falcon-client/internationalization
+/docs/falcon-client/falcon-ui               /docs/v2019/falcon-client/falcon-ui
+/docs/falcon-client/search-and-filtering    /docs/v2019/falcon-client/search-and-filtering
 
-/docs/falcon-server/basics                      /docs/2019/falcon-server/basics
-/docs/falcon-server/schema-stitching            /docs/2019/falcon-server/schema-stitching
-/docs/falcon-server/extensions                  /docs/2019/falcon-server/extensions
-/docs/falcon-server/api-providers               /docs/2019/falcon-server/api-providers
-/docs/falcon-server/endpoints                   /docs/2019/falcon-server/endpoints
-/docs/falcon-server/caching                     /docs/2019/falcon-server/caching
-/docs/falcon-server/falcon-server-env           /docs/2019/falcon-server/falcon-server-env
-/docs/falcon-server/falcon-server-api           /docs/2019/falcon-server/falcon-server-api
-/docs/falcon-server/customizing-extension-api   /docs/2019/falcon-server/customizing-extension-api
+/docs/falcon-server/basics                      /docs/v2019/falcon-server/basics
+/docs/falcon-server/schema-stitching            /docs/v2019/falcon-server/schema-stitching
+/docs/falcon-server/extensions                  /docs/v2019/falcon-server/extensions
+/docs/falcon-server/api-providers               /docs/v2019/falcon-server/api-providers
+/docs/falcon-server/endpoints                   /docs/v2019/falcon-server/endpoints
+/docs/falcon-server/caching                     /docs/v2019/falcon-server/caching
+/docs/falcon-server/falcon-server-env           /docs/v2019/falcon-server/falcon-server-env
+/docs/falcon-server/falcon-server-api           /docs/v2019/falcon-server/falcon-server-api
+/docs/falcon-server/customizing-extension-api   /docs/v2019/falcon-server/customizing-extension-api
 
-/docs/payments/intro     /docs/2019/payments/intro
-/docs/payments/api       /docs/2019/payments/api
-/docs/payments/plugins   /docs/2019/payments/plugins
+/docs/payments/intro     /docs/v2019/payments/intro
+/docs/payments/api       /docs/v2019/payments/api
+/docs/payments/plugins   /docs/v2019/payments/plugins
 
-/docs/backend/installing-magento2   /docs/2019/backend/installing-magento2
-/docs/backend/installing-wordpress  /docs/2019/backend/installing-wordpress
+/docs/backend/installing-magento2   /docs/v2019/backend/installing-magento2
+/docs/backend/installing-wordpress  /docs/v2019/backend/installing-wordpress
 
-/docs/miscellaneous/falcon-logger   /docs/2019/miscellaneous/falcon-logger
-/docs/miscellaneous/config          /docs/2019/miscellaneous/config
+/docs/miscellaneous/falcon-logger   /docs/v2019/miscellaneous/falcon-logger
+/docs/miscellaneous/config          /docs/v2019/miscellaneous/config
 
-/docs/deployment/intro  /docs/2019/deployment/intro
+/docs/deployment/intro  /docs/v2019/deployment/intro
 
-/docs/support/troubleshooting   /docs/2019/support/troubleshooting
-/docs/support/flowcharts        /docs/2019/support/flowcharts
+/docs/support/troubleshooting   /docs/v2019/support/troubleshooting
+/docs/support/flowcharts        /docs/v2019/support/flowcharts
 
 # Open source to 2019
 
-/docs/open-source/backend/installing-magento2 /docs/2019/backend/installing-magento2 
-/docs/open-source/backend/installing-wordpress /docs/2019/backend/installing-wordpress
+/docs/open-source/backend/installing-magento2 /docs/v2019/backend/installing-magento2 
+/docs/open-source/backend/installing-wordpress /docs/v2019/backend/installing-wordpress
 
-/docs/open-source/deployment/intro /docs/2019/deployment/intro
+/docs/open-source/deployment/intro /docs/v2019/deployment/intro
 
-/docs/open-source/falcon-client/basics /docs/2019/falcon-client/basics
-/docs/open-source/falcon-client/code-splitting /docs/2019/falcon-client/code-splitting
-/docs/open-source/falcon-client/configurations /docs/2019/falcon-client/configurations
-/docs/open-source/falcon-client/data-management /docs/2019/falcon-client/data-management
-/docs/open-source/falcon-client/falcon-ui /docs/2019/falcon-client/falcon-ui
-/docs/open-source/falcon-client/internationalization /docs/2019/falcon-client/internationalization
-/docs/open-source/falcon-client/local-state-management /docs/2019/falcon-client/local-state-management
-/docs/open-source/falcon-client/search-and-filtering /docs/2019/falcon-client/search-and-filtering
+/docs/open-source/falcon-client/basics /docs/v2019/falcon-client/basics
+/docs/open-source/falcon-client/code-splitting /docs/v2019/falcon-client/code-splitting
+/docs/open-source/falcon-client/configurations /docs/v2019/falcon-client/configurations
+/docs/open-source/falcon-client/data-management /docs/v2019/falcon-client/data-management
+/docs/open-source/falcon-client/falcon-ui /docs/v2019/falcon-client/falcon-ui
+/docs/open-source/falcon-client/internationalization /docs/v2019/falcon-client/internationalization
+/docs/open-source/falcon-client/local-state-management /docs/v2019/falcon-client/local-state-management
+/docs/open-source/falcon-client/search-and-filtering /docs/v2019/falcon-client/search-and-filtering
 
-/docs/open-source/falcon-server/api-providers /docs/2019/falcon-server/api-providers
-/docs/open-source/falcon-server/basics /docs/2019/falcon-server/basics
-/docs/open-source/falcon-server/caching /docs/2019/falcon-server/caching
-/docs/open-source/falcon-server/customizing-extension-api /docs/2019/falcon-server/customizing-extension-api
-/docs/open-source/falcon-server/endpoints /docs/2019/falcon-server/endpoints
-/docs/open-source/falcon-server/extensions /docs/2019/falcon-server/extensions
-/docs/open-source/falcon-server/falcon-server-api /docs/2019/falcon-server/falcon-server-api
-/docs/open-source/falcon-server/falcon-server-ev /docs/2019/falcon-server/falcon-server-env
-/docs/open-source/falcon-server/schema-stitching /docs/2019/falcon-server/schema-stitching
+/docs/open-source/falcon-server/api-providers /docs/v2019/falcon-server/api-providers
+/docs/open-source/falcon-server/basics /docs/v2019/falcon-server/basics
+/docs/open-source/falcon-server/caching /docs/v2019/falcon-server/caching
+/docs/open-source/falcon-server/customizing-extension-api /docs/v2019/falcon-server/customizing-extension-api
+/docs/open-source/falcon-server/endpoints /docs/v2019/falcon-server/endpoints
+/docs/open-source/falcon-server/extensions /docs/v2019/falcon-server/extensions
+/docs/open-source/falcon-server/falcon-server-api /docs/v2019/falcon-server/falcon-server-api
+/docs/open-source/falcon-server/falcon-server-ev /docs/v2019/falcon-server/falcon-server-env
+/docs/open-source/falcon-server/schema-stitching /docs/v2019/falcon-server/schema-stitching
 
-/docs/open-source/getting-started/example /docs/2019/getting-started/example
-/docs/open-source/getting-started/installation /docs/2019/getting-started/installion
-/docs/open-source/getting-started/intro /docs/2019/platform/getting-started/intro
-/docs/open-source/getting-started/project-overview /docs/2019/getting-started/project-overview
-/docs/open-source/getting-started/requirements /docs/2019/getting-started/requirements
+/docs/open-source/getting-started/example /docs/v2019/getting-started/example
+/docs/open-source/getting-started/installation /docs/v2019/getting-started/installion
+/docs/open-source/getting-started/intro /docs/v2019/platform/getting-started/intro
+/docs/open-source/getting-started/project-overview /docs/v2019/getting-started/project-overview
+/docs/open-source/getting-started/requirements /docs/v2019/getting-started/requirements
 
-/docs/open-source/miscellaneous/config /docs/2019/miscellaneous/config
-/docs/open-source/miscellaneous/falcon-logger /docs/2019/miscellaneous/falcon-logger
+/docs/open-source/miscellaneous/config /docs/v2019/miscellaneous/config
+/docs/open-source/miscellaneous/falcon-logger /docs/v2019/miscellaneous/falcon-logger
 
-/docs/open-source/payments/api /docs/2019/payments/api
-/docs/open-source/payments/intro /docs/2019/payments/intro
-/docs/open-source/payments/plugins /docs/2019/payments/plugins
+/docs/open-source/payments/api /docs/v2019/payments/api
+/docs/open-source/payments/intro /docs/v2019/payments/intro
+/docs/open-source/payments/plugins /docs/v2019/payments/plugins
 
-/docs/open-source/support/flowcharts /docs/2019/support/flowcharts
-/docs/open-source/support/troubleshooting /docs/2019/support/troubleshooting
+/docs/open-source/support/flowcharts /docs/v2019/support/flowcharts
+/docs/open-source/support/troubleshooting /docs/v2019/support/troubleshooting
 
 # Moved Pages
 /docs/platform/cloud/repository  /docs/platform/getting-started/repository
