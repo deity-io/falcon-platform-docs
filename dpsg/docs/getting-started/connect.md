@@ -65,7 +65,7 @@ If you're adding a new module and need access to DPSG you'll need to make sure y
 
 ## Remote Configuration
 
-Remote configuration should be done using env varialbes for any kind of senstive data.
+Remote configuration should be done using env variables for any kind of senstive data.
 
 This includes the `serviceUser` and `serviceToken`.
 

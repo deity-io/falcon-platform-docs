@@ -9,7 +9,7 @@ sidebar_label: Surcharges
 Surcharges can be configured on each payment method and allow you to charge a %, set fee or a mixture of both to customers who use that method.
 
 :::note Using BigCommerce?
-Unfortunately surcharges don't currently work with BigCommerce. We're looking out for changes their end so we can implement it.
+Unfortunately surcharges don't currently work with BigCommerce. We're looking out for changes on their end so we can implement it.
 :::
 
 ## How to configure surcharges
