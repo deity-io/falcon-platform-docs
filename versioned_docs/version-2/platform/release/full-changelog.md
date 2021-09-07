@@ -7,9 +7,23 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.16 (2021-08-05)
+
+### Falcon Shop Data
+- Fix remove cart mutation after upgrading to apollo/client
+
+### Demo V2
+- Fix sidebar action after adding to cart
+
+## Falcon Platform 2.7.15 (2021-08-04)
+
+### Falcon BigCommerce API
+
+- Add limit of 250 to regions so it's not capped at 50 entries
+
 ## Falcon Platform 2.7.14 (2021-07-14)
 
-## GeoIP
+### GeoIP
 
 - Added support for GeoIP in both Falcon Server and Falcon Platform.
 
