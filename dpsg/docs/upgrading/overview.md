@@ -22,4 +22,4 @@ To upgrade please use `create-falcon-app` to do a diff between your version and 
 
 ### Server Updates
 
-Unless you've overridden the DPSG related methods in your shop API package (get mthods, load method, place order etc) all you will need to do is remove old payment config values and define the new ones [seen here](../getting-started/config).
+Unless you've overridden the DPSG related methods in your shop API package (get methods, load method, place order etc) all you will need to do is remove old payment config values and define the new ones [seen here](../getting-started/config).

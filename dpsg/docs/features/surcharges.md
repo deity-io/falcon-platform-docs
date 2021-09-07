@@ -53,4 +53,4 @@ Surcharges can be an array, allowing different config for different countries (b
 ]
 ```
 
-In the example above all countries will get 1% of their subtotal added as a surcharge except customers in the Netherlands. They will get charged 1.5% of ther subtotal + a flat fee or 2 euros.
+In the example above all countries will get 1% of their subtotal added as a surcharge except customers in the Netherlands. They will get charged 1.5% of the subtotal + a flat fee or 2 euros.

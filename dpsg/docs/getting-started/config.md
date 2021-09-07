@@ -54,7 +54,7 @@ This will lead you through a few steps to creating your env.
 
 ### 2. Connect your DPSG env to your platform app
 
-Run `dcloud payments:env:apply`, this will set the auth details for DPSG as environment varialbes for your platform app.
+Run `dcloud payments:env:apply`, this will set the auth details for DPSG as environment variables for your platform app.
 
 ### 3. Configure your payment providers
 

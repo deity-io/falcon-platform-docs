@@ -35,9 +35,9 @@ You can get this from your Adyen account under `Developer -> API Credentials` th
 
 ### HMAC key
 
-This is used for recieving webhooks from Adyen. DPSG uses this when payments are updated.
+This is used for receiving webhooks from Adyen. DPSG uses this when payments are updated.
 
-You can get your HMAC key whenb configuring your webhook.
+You can get your HMAC key when configuring your webhook.
 
 
 ## Setting up your payment methods
@@ -47,7 +47,7 @@ You can get your HMAC key whenb configuring your webhook.
 
 For our integration to work with Adyen you'll need to set up a webhook in Adyen.
 
-To do this please log into your adyen account and visit `Developers -> Webhooks` in the left hand navigation.
+To do this please log into your Adyen account and visit `Developers -> Webhooks` in the left hand navigation.
 
 From their you can set up `Standard Notification` webhook.
 
@@ -61,7 +61,7 @@ From their you can set up `Standard Notification` webhook.
 **Additional Settings**
 
 - Add Acquirer Result: `Yes`
-- HMAC Key: Generate one and add it to yourt config (above).
+- HMAC Key: Generate one and add it to your config (above).
 
 
 :::note Test your webhook
