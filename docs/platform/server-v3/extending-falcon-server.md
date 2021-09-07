@@ -1,7 +1,7 @@
 ---
 id: extending-falcon-server
-title: Extending Falcon Server
-sidebar_label: Extending Falcon Server
+title: Extending DEITY Middleware
+sidebar_label: Extending DEITY Middleware
 enterprise_only: true
 ---
 

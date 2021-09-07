@@ -1,6 +1,6 @@
 ---
 id: about
-title: Modules in Falcon Server
+title: Modules in DEITY Middleware
 sidebar_label: About
 enterprise_only: true
 ---
@@ -16,7 +16,7 @@ enterprise_only: true
 
 ## Old vs new approach
 
-In previous version of Falcon Server (version 2) there was a distinct separation between extensions, api clients, rest endpoint handlers and event handlers. Each of these needed to be implemented and loaded as a separate package. Falcon Server 3 changes that approach and introduces concept of a module. 
+In previous version of DEITY Middleware (version 2) there was a distinct separation between extensions, api clients, rest endpoint handlers and event handlers. Each of these needed to be implemented and loaded as a separate package. DEITY Middleware 3 changes that approach and introduces concept of a module. 
 
 ## What is a module in Falcon
 
@@ -26,15 +26,15 @@ Falcon Module is a package that contains implementations of all the pieces requi
 - [Rest Endpoint Handler](../rest-endpoints) (webhook handler)
 - anything else that's needed during request handling
 
-So in comparison to Falcon Server 2 it's a container that groups all the above things as one package.
+So in comparison to DEITY Middleware 2 it's a container that groups all the above things as one package.
 
-In Falcon Server 2 it was necessary to add multiple packages to have full coverage of features. If we consider shop features that will be handled service X (Magento, BigCommerce, CommerceTools etc) the following packages ere required:
+In DEITY Middleware 2 it was necessary to add multiple packages to have full coverage of features. If we consider shop features that will be handled service X (Magento, BigCommerce, CommerceTools etc) the following packages ere required:
 - `@deity/falcon-shop-extension` that provides GraphQL schema for shop features
 - `@deity/falcon-X-api` that provides resolvers and all the calls to service X (implements the shop features)
 - `@deity/falcon-X-endpoints` that provides REST handlers (e.g. webhooks, or callbacks for payments)
-- `@deity/falcon-X-event-handlers` that provides handlers for events in Falcon Server (if such are required)
+- `@deity/falcon-X-event-handlers` that provides handlers for events in DEITY Middleware (if such are required)
 
-In Falcon Server you need only:
+In DEITY Middleware you need only:
 - `@deity/falcon-shop-extension` that provides GraphQL schema for shop features
 - `@deity/falcon-X-module` that provides implementation of all the required things in one package
 
@@ -47,13 +47,13 @@ So now, the 2 things need to be provided:
 
 ## Custom modules
 
-All the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
+All the integrations available in DEITY Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
 
 Modules can be registered in 2 ways - with auto-discovery mechanism or manually.
 
 ### Adding module
 
-In order to enable a module in Falcon Server you need to first add it in the configuration file under `"modules"` section. We recommend adding it in `config/default.json` file so it will be available no matter what mode (development, production or custom) Falcon Server is running. 
+In order to enable a module in DEITY Middleware you need to first add it in the configuration file under `"modules"` section. We recommend adding it in `config/default.json` file so it will be available no matter what mode (development, production or custom) DEITY Middleware is running. 
 If a module requires some credentials or secrets (sensitive configuration) then that configuration can be added in `config/local.json`. See configuration guide for more details.
 
 So let's assume that we want to add a Deity Falcon module that fetches the data from WordPress. Then you can use the following snippet in your `config/default.json` file:
@@ -74,7 +74,7 @@ So let's assume that we want to add a Deity Falcon module that fetches the data 
 }
 ```
 
-The `package` field is required, as it tells Falcon Server where from the module should be loaded. It can be a npm package name (which of course needs to be installed, so added to `package.json` file) or path to a local module placed inside application folder.
+The `package` field is required, as it tells DEITY Middleware where from the module should be loaded. It can be a npm package name (which of course needs to be installed, so added to `package.json` file) or path to a local module placed inside application folder.
 
 In case of local module it would be:
 
@@ -94,20 +94,19 @@ In case of local module it would be:
 }
 ```
 
-and then Falcon Server on startup will try to load `src/custom-wordpress-module/index.js` file.
+and then DEITY Middleware on startup will try to load `src/custom-wordpress-module/index.js` file.
 
 
 ### Module auto-discovery
 
-[As mentioned earlier](#what-is-a-module-in-falcon) Falcon Server 3 modules can expose multiple things at once. 
+[As mentioned earlier](#what-is-a-module-in-falcon) DEITY Middleware 3 modules can expose multiple things at once. 
 
-The easiest way to extend Falcon Server with custom module is to extend the classes provided by Falcon Server and export these from a module. During startup Falcon Server will read everything from within that module and base on the types of exported things it will register these as proper things in IOC container.
+The easiest way to extend DEITY Middleware with custom module is to extend the classes provided by DEITY Middleware and export these from a module. During startup DEITY Middleware will read everything from within that module and base on the types of exported things it will register these as proper things in IOC container.
 
 See examples of [Data Sources](../data-sources), [Event Handlers](../event-handlers), and [Rest Endpoint Handlers](../rest-endpoints) for the details.
 
 ### Manual binding for module
 
-When you need to add a custom behavior to Falcon Server which is more complex or when you need to control lifetime of the instances of your modules you might want to implement the module in a manual way.
+When you need to add a custom behavior to DEITY Middleware which is more complex or when you need to control lifetime of the instances of your modules you might want to implement the module in a manual way.
 
 In that case you need to implement all the classes as usual and then use [Falcon Module](./module-api) to register these classes to be loaded and instantiated in a particular way.
-

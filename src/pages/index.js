@@ -15,7 +15,7 @@ function Home() {
   return (
     <Layout
       title="Documentation for DEITY Falcon"
-      description="DEITY Falcon Platform documentation and user guides"
+      description="DEITY DEITY Platform documentation and user guides"
     >
       <header
         className={classnames("hero hero--theme", styles.heroBanner)}
@@ -42,7 +42,7 @@ function Home() {
           <div className={classnames("container", styles.aboutContainer)}>
             <div className={classnames(styles.padded, styles.aboutColumn)}>
               <div className={styles.aboutBlock}>
-                <h4>Falcon Platform</h4>
+                <h4>DEITY Platform</h4>
                 <ul>
                   <li>
                     <Link to="/docs/platform/getting-started/overview">
@@ -64,7 +64,7 @@ function Home() {
         </section>
         <section className={styles.comparison}>
           <div className="container">
-            <h3>Falcon Platform Overview</h3>
+            <h3>DEITY Platform Overview</h3>
             <p>
               Falcon platform is a production ready, fully managed, lightening fast PWA for your ecommerce store.
             </p>
@@ -104,7 +104,7 @@ function Home() {
                 complexity.
               </p>
               <p>
-                Combined with Falcon Platform Cloud you can enjoy easy
+                Combined with DEITY Platform Cloud you can enjoy easy
                 deployments, localized hosting and automatic scalability.
               </p>
             </div>

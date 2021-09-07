@@ -4,7 +4,7 @@ title: Troubleshooting
 
 This is a cumulative list of frequent hurdles. We try to provide a descriptive solution and keep everything up-to-date.
 
-### When trying to connect to Magento, Falcon Server outputs: `FalconServer: request failed, reason: connect ECONNREFUSED`
+### When trying to connect to Magento, DEITY Middleware outputs: `FalconServer: request failed, reason: connect ECONNREFUSED`
 
 Make sure you have your certificates set up properly. We recommend using [mkcert](https://github.com/FiloSottile/mkcert)
 

@@ -1,11 +1,11 @@
 ---
 id: data-sources
-title: Data Sources in Falcon Server
+title: Data Sources in DEITY Middleware
 sidebar_label: Data Sources
 enterprise_only: true
 ---
 
-DataSources in Falcon Server are the same as [Data Sources in Apollo Server](https://www.apollographql.com/docs/apollo-server/data/data-sources/) so we recommend to get familiar with Apollo Server documentation on that topic first.
+DataSources in DEITY Middleware are the same as [Data Sources in Apollo Server](https://www.apollographql.com/docs/apollo-server/data/data-sources/) so we recommend to get familiar with Apollo Server documentation on that topic first.
 
 In short (from [Apollo Server documentation](https://www.apollographql.com/docs/apollo-server/data/data-sources/)):
 
@@ -18,10 +18,10 @@ The same applies to all the integrations - there's always integration-specific D
 
 ## Resolvers auto-binding
 
-In Falcon Server Data Sources have also one more important feature - auto-binding of resolvers. When Falcon Server starts it loads all the extensions, and all modules (which deliver Data Sources). 
+In DEITY Middleware Data Sources have also one more important feature - auto-binding of resolvers. When DEITY Middleware starts it loads all the extensions, and all modules (which deliver Data Sources). 
 
-When extension configuration has `module` key then Falcon Server looks for a Data Source exposed by module with that name and tries to bind all the queries and mutations to methods of that Data Source. 
-That way you don't have to wire up resolvers to your schema extension manually - it's done by Falcon Server.
+When extension configuration has `module` key then DEITY Middleware looks for a Data Source exposed by module with that name and tries to bind all the queries and mutations to methods of that Data Source. 
+That way you don't have to wire up resolvers to your schema extension manually - it's done by DEITY Middleware.
 
 Let's consider we have an extension with the following schema:
 
@@ -75,7 +75,7 @@ and configuration including these:
 }
 ```
 
-In that situation extension named `"footer"` uses module called `"footer-links"`, so Falcon Server will bind method `footerLinks(obj, params, context, info)` to query `footerLinks`. 
+In that situation extension named `"footer"` uses module called `"footer-links"`, so DEITY Middleware will bind method `footerLinks(obj, params, context, info)` to query `footerLinks`. 
 That way every time when someone will send GraphQL query `footerLinks` method `FooterLinksDataSource.footerLinks` will be executed.
 
 # Falcon REST Data Source
@@ -83,7 +83,7 @@ That way every time when someone will send GraphQL query `footerLinks` method `F
 DEITY Falcon provides also its own Data Source abstract class `FalconRESTDataSource`. That class extends [RESTDataSource class](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-datasource-rest) provided by Apollo.
 This Data Source is recommended to be used as base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
 
-This class provides also set of features that make implementation of custom data sources for Falcon Server easier:
+This class provides also set of features that make implementation of custom data sources for DEITY Middleware easier:
 - pre-configured logger
 - access to cache
 - REST authorization hooks

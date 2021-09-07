@@ -141,7 +141,7 @@ To get this up and running we will do this in our `server/config/local.json`. Fo
 You will now have access to all of these details in your provider. They will be passed as `config`.
 
 
-### 4. Passing config data to the frontend (Falcon Client)
+### 4. Passing config data to the frontend (DEITY PWA Frontend)
 
 Each payment provider should include 2 methods. `initialize` when the provider is initialized and `validate` when the payment is submitted.
 
@@ -158,7 +158,7 @@ module.exports = class BraintreePayment {
 };
 ```
 
-We can use the `initialize` method to pass data from the provider to our Falcon Client components.
+We can use the `initialize` method to pass data from the provider to our DEITY PWA Frontend components.
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
 ```js

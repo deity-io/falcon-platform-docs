@@ -1,17 +1,17 @@
 ---
 id: configuration
-title: Configuration in Falcon Platform
+title: Configuration in DEITY Platform
 sidebar_label: Configuration
 enterprise_only: true
 ---
 
-Falcon Client and Falcon Server configuration systems work in the same way.
+DEITY PWA Frontend and DEITY Middleware configuration systems work in the same way.
 
 This section describes how the configuration works in general, as well as how to deal with configuration in production environment.
 
-To get more specific information how to use configuration in particular cases see [Configuration in Falcon Server](../server-v3/configuration) and [Configuration in Falcon Client](../client/configuration)
+To get more specific information how to use configuration in particular cases see [Configuration in DEITY Middleware](../server-v3/configuration) and [Configuration in DEITY PWA Frontend](../client/configuration)
 
-Both Falcon Client and Falcon Server keep the configuration in `config` folder in their root folders (`client` and `server`)
+Both DEITY PWA Frontend and DEITY Middleware keep the configuration in `config` folder in their root folders (`client` and `server`)
 
 The config is set up use <a href="https://www.npmjs.com/package/config" target="_blank" rel="noopener noreferrer">`NPM Config`</a>.
 

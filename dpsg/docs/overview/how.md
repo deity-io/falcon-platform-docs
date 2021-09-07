@@ -18,7 +18,7 @@ RestAPI endpoints and by watching for events in our RabbitMQ instance.
 
 
 :::note Want to integrate DPSG yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please checkout our [how to use guide](../getting-started/usage)
+If you're creating a custom integration or want more details on how DEITY Platform interacts with DPSG, please checkout our [how to use guide](../getting-started/usage)
 :::
 
 ### Methods

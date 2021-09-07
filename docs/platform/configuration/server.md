@@ -1,7 +1,7 @@
 ---
 id: server
-title: Falcon Server Configuration
-sidebar_label: Falcon Server
+title: DEITY Middleware Configuration
+sidebar_label: DEITY Middleware
 enterprise_only: true
 ---
 

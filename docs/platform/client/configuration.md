@@ -1,10 +1,10 @@
 ---
 id: configuration
-title: Configuration in Falcon Client
+title: Configuration in DEITY PWA Frontend
 sidebar_label: Configuration
 ---
 
-Falcon Client and Falcon Server use the same way of configuration. You can find the general concepts [here](../server-v3/configuration).
+DEITY PWA Frontend and DEITY Middleware use the same way of configuration. You can find the general concepts [here](../server-v3/configuration).
 
 In the client application configuration is stored as an object in Apollo State, so to get the values provided in config files you need to send the GraphQL query.
 

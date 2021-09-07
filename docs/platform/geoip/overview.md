@@ -22,11 +22,11 @@ X-GeoIP-Postal-Code
 Currently we can only ensure the accuracy of country data and not city, postcode or region. We recommend only using country.
 :::
 
-## Accessing GeoIP information in Falcon Server (Enterprise Only)
+## Accessing GeoIP information in DEITY Middleware (Enterprise Only)
 
 We have api packages available to get GeoIP Data in the middleware.
 
-If you're an enterprise customer and you've modified your Falcon Server instance you'll need to check the following:
+If you're an enterprise customer and you've modified your DEITY Middleware instance you'll need to check the following:
 
 **1. Adding our packages as server dependencies**
 
@@ -71,7 +71,7 @@ In your `server/config/default.json` add the following as an extension:
 }
 ```
 
-## Accessing GeoIP information in Falcon Client.
+## Accessing GeoIP information in DEITY PWA Frontend.
 
 Geographic data is available to the entire client app via a context provider.
 
@@ -103,7 +103,7 @@ GeoIP data is added via our cloud platform so is NOT available for local develop
 
 If you want to access it locally you have 2 options:
 
-1. Connect to a cloud instance of Falcon Server (this is already the case for all non-enterprise customers)
+1. Connect to a cloud instance of DEITY Middleware (this is already the case for all non-enterprise customers)
 
 2. Fake the headers. This can easily be done using a borwser extension such as [bewisse](https://bewisse.com/modheader/help/). The headers are below and aren't case sensitive:
 

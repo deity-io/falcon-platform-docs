@@ -6,7 +6,7 @@ sidebar_label: Testing a component
 
 ## Overview
 
-We are going to mock a **Falcon Client** component that grabs data from `Apollo`.
+We are going to mock a **DEITY PWA Frontend** component that grabs data from `Apollo`.
 
 ## 1. Create your component
 

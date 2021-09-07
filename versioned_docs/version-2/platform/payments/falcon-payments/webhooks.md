@@ -65,7 +65,7 @@ In this case the webhook URL would be `YOUR_URL/falcon-payments/webhook/PROVIDER
 To configure this on a remote environement you can use the variable `PAYMENT_WEBHOOK_BASE_URL`.
 
 :::note Local Testing
-The webhook URL needs to be accessible so you can't use localhost. we recommend using a service like [ngrok](https://ngrok.com/) on your Falcon server instance and setting the `webhookBaseUrl` to point to that.  Once you've installed ngrok it should be as simple as running `ngrok http 4000`. Provided Falcon Server is running on port 4000 this will return you an `https` URL you can use.  
+The webhook URL needs to be accessible so you can't use localhost. we recommend using a service like [ngrok](https://ngrok.com/) on your Falcon server instance and setting the `webhookBaseUrl` to point to that.  Once you've installed ngrok it should be as simple as running `ngrok http 4000`. Provided DEITY Middleware is running on port 4000 this will return you an `https` URL you can use.  
 :::
 
 ### Params
@@ -131,7 +131,7 @@ handleOrderUpdate(payload: OrderWebhookResult): Promise<Boolean>;
 
 This webhook sends data from your shop to your payment provider.
 
-1. The webhook URL is configured in Falcon Server
+1. The webhook URL is configured in DEITY Middleware
 2. The webhook URL is sent to your shop when placing an order
 3. The shop triggers the webhook when an order is updated (usually `shipped`, `refunded` or `tracking_added`).
 4. This triggers a method in your shop API (`onOrderStatusUpdated`)

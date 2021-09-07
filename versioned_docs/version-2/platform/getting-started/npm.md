@@ -6,7 +6,7 @@ sidebar_label: 3. Access our packages
 
 ## Overview
 
-In order to be able to get access to the **Falcon Platform packages**, you will need to connect to our private npm registry.
+In order to be able to get access to the **DEITY Platform packages**, you will need to connect to our private npm registry.
 
 You can do this using the **authorisation token** from [Step 2](/docs/platform/getting-started/dcloud#getting-your-npm-token). 
 

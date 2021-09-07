@@ -11,5 +11,5 @@ Our Internationalization is based on <a href="https://www.i18next.com/" target="
 [View Full Details](/docs/v2019/platform/falcon-client/internationalization)
 
 :::note Namespaces
-Falcon Platform doesn't currently support <a href="https://www.i18next.com/principles/namespaces" target="_blank" rel="noopener noreferrer">i18n namespaces</a>.
+DEITY Platform doesn't currently support <a href="https://www.i18next.com/principles/namespaces" target="_blank" rel="noopener noreferrer">i18n namespaces</a>.
 :::

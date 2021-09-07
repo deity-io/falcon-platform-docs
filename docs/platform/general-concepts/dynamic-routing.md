@@ -1,6 +1,6 @@
 ---
 id: dynamic-routing
-title: Dynamic Routing in Falcon Platform
+title: Dynamic Routing in DEITY Platform
 sidebar_label: Dynamic Routing
 ---
 

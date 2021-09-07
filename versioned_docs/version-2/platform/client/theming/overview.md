@@ -4,21 +4,21 @@ title: Theming Overview
 sidebar_label: Overview
 ---
 
-:::note Falcon Client ships with `@deity/falcon-ui`.
+:::note DEITY PWA Frontend ships with `@deity/falcon-ui`.
 This contains a powerful `ThemeProvider` and a library of composable, themeable, design-system-driven UI components.
 
 It's worth looking at <a href="https://falcon-ui.docs.deity.io/" target="_blank" rel="noopener noreferrer">these docs</a> for detailed theming information.
 :::
 
 ## Don't want to read the docs?
-Here's a quick introduction to theming Falcon Platform.
+Here's a quick introduction to theming DEITY Platform.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W8WoLoF54kI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 ## Overview
 `@deity/falcon-ui` comes with a `ThemeProvider` out of the box. This allows us to have shared and global styles (written in js) across your application.
 
-Out of the box Falcon Platform also supports [**css** and **scss**](./css-sass).
+Out of the box DEITY Platform also supports [**css** and **scss**](./css-sass).
 
 :::note Writing CSS in ReactJs
 If you're new to writing CSS in ReactJs, it's worth reading <a href="https://www.w3schools.com/react/react_css.asp" target="_blank" rel="noopener noreferrer">these docs</a>.

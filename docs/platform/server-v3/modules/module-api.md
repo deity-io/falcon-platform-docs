@@ -5,9 +5,9 @@ sidebar_label: Falcon Module API
 enterprise_only: true
 ---
  
-As mentioned [here](./about#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in Falcon Server.
+As mentioned [here](./about#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in DEITY Middleware.
 
-With auto-discovery feature you can just export classes that extend interfaces and classes delivered by Falcon and Falcon Server will bind these correctly during startup.
+With auto-discovery feature you can just export classes that extend interfaces and classes delivered by Falcon and DEITY Middleware will bind these correctly during startup.
 
 However, auto-discovery doesn't cover all the possible things you can do in FalconServer, as you might want to:
 - control the way your classes are instantiated 
@@ -22,7 +22,7 @@ For that purpose you can use Falcon Module that exposes helpers that allows you 
 
 To use falcon module you need to return instance of it from your main module file. Constructor of FalconModule accepts configuration object as first parameter which should contain property `serviceRegistry` which is a callback.
 
-That callback will be passed with `bind` function which allows for binding and scope control as [InversifyJS](https://github.com/inversify/InversifyJS/blob/master/wiki/scope.md) does plus exposes additional methods for registration of the following Falcon Server specific types:
+That callback will be passed with `bind` function which allows for binding and scope control as [InversifyJS](https://github.com/inversify/InversifyJS/blob/master/wiki/scope.md) does plus exposes additional methods for registration of the following DEITY Middleware specific types:
 
 - [DataSources](../data-sources):
   - `bind('name').toDataSource(Constructor)`

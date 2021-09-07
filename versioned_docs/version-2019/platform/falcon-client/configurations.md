@@ -83,7 +83,7 @@ It is also possible to extend `config` object about your custom properties.
 
 #### Runtime hooks
 
-Falcon Client exposes set of hooks to which you can attache custom logic:
+DEITY PWA Frontend exposes set of hooks to which you can attache custom logic:
 
 - `onServerCreated(server: Koa)` - handler invoked immediately after koa server creation
 - `onServerInitialized(server: Koa)` - handler invoked immediately after koa server setup (when middlewares like handling errors, serving static files and routes were set up)
@@ -113,18 +113,18 @@ module.exports = {
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
 - `moduleOverride` - (default: `{}`) dictionary of module names to override, [see the details](#normal-module-override)
 
-Falcon Client provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
+DEITY PWA Frontend provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
 
 ## Build process configuration
 
-Falcon Client comes with all necessary features and development tools turned on by default:
+DEITY PWA Frontend comes with all necessary features and development tools turned on by default:
 
 - Universal [HMR](https://webpack.js.org/concepts/hot-module-replacement/) - page auto-reload if you make edits (on both backend and frontend)
 - Latest JavaScript achieved via babel 7 compiler, [see the details](#babel).
 - ESLint with [Prettier](https://github.com/prettier/prettier) - to keep your code base clean and consistent, [see the details](#eslint)
 - Jest test runner setup with sensible defaults [see the details](#jest).
 
-However, you can still modify Falcon Client defaults
+However, you can still modify DEITY PWA Frontend defaults
 
 ### Environment Variables
 
@@ -150,9 +150,9 @@ module.exports = {
 
 ### Webpack
 
-Falcon Client gives you the possibility to extend the underlying webpack configuration. You can do it via exposed plugins API (not webpack plugins). It is worth to mention that Falcon Client plugins API is [razzle](https://github.com/jaredpalmer/razzle#plugins) compatible.
+DEITY PWA Frontend gives you the possibility to extend the underlying webpack configuration. You can do it via exposed plugins API (not webpack plugins). It is worth to mention that DEITY PWA Frontend plugins API is [razzle](https://github.com/jaredpalmer/razzle#plugins) compatible.
 
-To use Falcon Client (or Razzle) plugin, you need to install it in your project, and add it to `plugins` array in `falcon-client.build.config.js` file:
+To use DEITY PWA Frontend (or Razzle) plugin, you need to install it in your project, and add it to `plugins` array in `falcon-client.build.config.js` file:
 
 ```js
 module.exports = {
@@ -160,7 +160,7 @@ module.exports = {
 };
 ```
 
-Plugins are simply functions that modify and return Falcon Client's webpack config. Each plugin function will receive the following arguments:
+Plugins are simply functions that modify and return DEITY PWA Frontend's webpack config. Each plugin function will receive the following arguments:
 
 - `config: object` - webpack configuration object,
 - `env.target: 'web' | 'node'` - webpack build target,
@@ -232,7 +232,7 @@ Please note that webpack `alias`'es are not supported.
 
 ### Babel
 
-Falcon Client gives you Ecma Script 6 compiled via Babel 7. However, if you want to add your own babel transformations, you can override defaults by adding the `babel.config.json` (or `babel.config.js`) file into the root of your project. Please note that it is necessary to at the very minimum the default `@deity/babel-preset-falcon-client` preset:
+DEITY PWA Frontend gives you Ecma Script 6 compiled via Babel 7. However, if you want to add your own babel transformations, you can override defaults by adding the `babel.config.json` (or `babel.config.js`) file into the root of your project. Please note that it is necessary to at the very minimum the default `@deity/babel-preset-falcon-client` preset:
 
 ```json
 {
@@ -247,7 +247,7 @@ Falcon Client gives you Ecma Script 6 compiled via Babel 7. However, if you want
 
 ### ESLint
 
-Falcon Client is ESLint ready. To turn it on you need to provide your favorite preset, or you can use ours.
+DEITY PWA Frontend is ESLint ready. To turn it on you need to provide your favorite preset, or you can use ours.
 
 In order to incorporate ESLint you need to create `.eslintrc` file in the Application root. Bellow, you can find a configuration which uses `@deity/eslint-config-falcon` preset:
 
@@ -271,7 +271,7 @@ coverage/*
 
 ### Jest
 
-Falcon Client comes with configured [Jest](https://jestjs.io/) test runner. However it is possible to override it by adding `jest` node into `package.json`. Below example configures `setupTestFrameworkScriptFile` file:
+DEITY PWA Frontend comes with configured [Jest](https://jestjs.io/) test runner. However it is possible to override it by adding `jest` node into `package.json`. Below example configures `setupTestFrameworkScriptFile` file:
 
 ```json
 // package.json

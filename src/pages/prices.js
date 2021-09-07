@@ -10,8 +10,8 @@ function Prices() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title="Falcon Platform Prices"
-      description="Price list for DEITY Falcon Platform plans."
+      title="DEITY Platform Prices"
+      description="Price list for DEITY DEITY Platform plans."
     >
       <header
         className={classnames("hero hero--theme", styles.heroBanner)}
@@ -21,7 +21,7 @@ function Prices() {
       >
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">Falcon Platform Plans</p>
+          <p className="hero__subtitle">DEITY Platform Plans</p>
         </div>
       </header>
       <main>

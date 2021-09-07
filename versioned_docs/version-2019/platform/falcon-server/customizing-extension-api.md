@@ -27,7 +27,7 @@ In this case, you keep the extension and API in separate repositories and publis
 
 In this case, you keep the code in the project's repository. This is recommended when you need to do some changes only for a particular project.
 
-For either option you have to provide proper paths to the extension and API modules in config files for Falcon Server (by default placed in `server/config/default.json`)
+For either option you have to provide proper paths to the extension and API modules in config files for DEITY Middleware (by default placed in `server/config/default.json`)
 
 Let's assume you'll call your extension `falcon-custom-shop` and your API `falcon-custom-magento-api`. For those two you'll have to modify the config file to contain the following code (notice the difference between "package" values for both versions):
 

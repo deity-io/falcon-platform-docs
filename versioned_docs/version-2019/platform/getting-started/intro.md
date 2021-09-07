@@ -35,28 +35,28 @@ DEITY Falcon was built with the F.I.R.E. principal in mind:
 The main idea that stands behind having separate applications for Client and Server parts
 is to provide developers/project owners/DevOps with scaling abilities:
 
-- You can define special server requirements for a Falcon Server instance, but keeping the Falcon Client
+- You can define special server requirements for a DEITY Middleware instance, but keeping the DEITY PWA Frontend
 server instance more "lightweight"
-- You can have multiple Falcon Client instances (geo-distributed) connected to a single Falcon Server application
-- Falcon Server is stateless, so you could scale it up as you need (for example, you don't want to be stuck
-with a single Falcon Server instance while supporting your mobile visitors with a dedicated application
-that uses Falcon Server as data provider)
+- You can have multiple DEITY PWA Frontend instances (geo-distributed) connected to a single DEITY Middleware application
+- DEITY Middleware is stateless, so you could scale it up as you need (for example, you don't want to be stuck
+with a single DEITY Middleware instance while supporting your mobile visitors with a dedicated application
+that uses DEITY Middleware as data provider)
 
 ### Extension-API concept
 
-Falcon Server itself does not provide any data, but rather acts as a glue for your data extensions.
-As a result of its work - Falcon Server generates a unified [GraphQL](https://graphql.org/) Schema
+DEITY Middleware itself does not provide any data, but rather acts as a glue for your data extensions.
+As a result of its work - DEITY Middleware generates a unified [GraphQL](https://graphql.org/) Schema
 that can be used by GraphQL Clients to work with the data.
 
 #### Falcon Extension
 
-Falcon Server uses **Extension** as an abstract layer to work with a specific *entity* (for example,
+DEITY Middleware uses **Extension** as an abstract layer to work with a specific *entity* (for example,
 `shop-extension`, `blog-extension`, etc) in order to provide "agnostic" data access and be a
 platform-independent data provider.
 
-Falcon Extension must define abstract Queries, Mutations and types as a part of Falcon Server API, which
-will be "stitched" into the unified GraphQL Schema by Falcon Server. All defined methods must be proxied
-to the assigned Falcon API (defined in Falcon Server [configuration](../falcon-server/basics#extensions-configuration)).
+Falcon Extension must define abstract Queries, Mutations and types as a part of DEITY Middleware API, which
+will be "stitched" into the unified GraphQL Schema by DEITY Middleware. All defined methods must be proxied
+to the assigned Falcon API (defined in DEITY Middleware [configuration](../falcon-server/basics#extensions-configuration)).
 
 #### Falcon API
 

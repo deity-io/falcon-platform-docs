@@ -78,7 +78,7 @@ This is a short overview of the way how authentication between Falcon Magento 2 
 Falcon Magento 2 API provides implementation for endpoints that require authorization (customer related data)
 as well as endpoints that don't require a customer to be authenticated (product catalog etc).
 
-Every incoming GraphQL request sets the context to the [Falcon Server](../falcon-server/basics) GraphQL resolver,
+Every incoming GraphQL request sets the context to the [DEITY Middleware](../falcon-server/basics) GraphQL resolver,
 so all connected API providers would have access to it, including `headers` and `session` objects.
 
 Once a user signs in with his Magento 2 credentials his access token is stored in the `session` so it can be used for interaction with Magento 2.

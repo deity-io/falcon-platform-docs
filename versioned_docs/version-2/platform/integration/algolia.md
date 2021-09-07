@@ -54,7 +54,7 @@ Once you've created an account you should be able to get your **API keys**.
 
 <img src="/img/docs/platform/algolia-admin-1.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
 
-### 2. Add your config to Falcon Server
+### 2. Add your config to DEITY Middleware
 
 The next thing you'll need to do is add your API keys to your config files.
 
@@ -222,7 +222,7 @@ To run your initial index you just need to use the `autoReindex` flag in your co
 }
 ```
 
-Now you just need to start your app (Falcon Server) and all the products will be indexed. 
+Now you just need to start your app (DEITY Middleware) and all the products will be indexed. 
 
 <img src="/img/docs/platform/algolia-import.png" alt="Algolia import" width="300" style={{ marginBottom: 20 }}/>
 
@@ -239,7 +239,7 @@ Falcon server has 2 events we subscribe to `falcon-server.entity-updated` and `f
 
 `falcon-server.entity-updated` also runs when new entries (products) are added.
 
-With our **BigCommerce** integration we use the WebHooks provided by **BigCommerce** to trigger these **Falcon Server** events which our `@deity/falcon-algoliasearch-endpoints` listens for.
+With our **BigCommerce** integration we use the WebHooks provided by **BigCommerce** to trigger these **DEITY Middleware** events which our `@deity/falcon-algoliasearch-endpoints` listens for.
 
 
 ## Useful Links

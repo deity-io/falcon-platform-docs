@@ -11,7 +11,7 @@ const getDocType = (path) => {
   if (path.includes(platformDocsPath)) {
     return {
       id: 1,
-      title: 'Falcon Platform',
+      title: 'DEITY Platform',
       url: '/docs/platform/overview/about'
     };
   } else if (path.includes(openSourceDocsPath)) {

@@ -35,7 +35,7 @@ On Magento configuration page (`Stores->Configuration`) go to `Services->Falcon`
 
 Here you should configure:
 1. `Falcon frontend url` - base url of your falcon-driven website. It is used by API's that feed content with url's for proper url replacement.
-2. `Url to flush cache on Falcon Server` - Magento will call this URL to flush falcon cache.
+2. `Url to flush cache on DEITY Middleware` - Magento will call this URL to flush falcon cache.
 
 > Note: You can configure this URL via [Falcon-Server config](../falcon-server/caching#rest-endpoint)
 
@@ -55,7 +55,7 @@ bin/magento admin:user:create \
 ```
 
 
-Configure Falcon Server to connect to your Magento instance.
+Configure DEITY Middleware to connect to your Magento instance.
 You can do so by changing your [Falcon-Server config](../miscellaneous/config).
 
 > Note: Use your API admin user credentials that you've just created here

@@ -37,7 +37,7 @@ client/<br />
 The build directory contains the built assets for your site. This should not be committed to your git repo.
 
 ### config
-The config directory contains Falcon Client config json files (`default.json`, `production.json` etc). In these files you'll be able to configure things like the port Falcon Client is running on. 
+The config directory contains DEITY PWA Frontend config json files (`default.json`, `production.json` etc). In these files you'll be able to configure things like the port DEITY PWA Frontend is running on. 
 
 ### i18n
 This directory contains your sites translations. The structure is `<language>/translations.json`. e.g. `en/translations.json` for english translations.
@@ -55,13 +55,13 @@ This is where npm packages are installed to.
 This defines project details including package requirements.
 
 ### prettier.config.js
-Falcon Platform uses <a href="https://prettier.io/" target="_blank" rel="noreferrer noopener">Prettier</a> for code formatting. You can change the config in this file.
+DEITY Platform uses <a href="https://prettier.io/" target="_blank" rel="noreferrer noopener">Prettier</a> for code formatting. You can change the config in this file.
 
 ### public
 This folder is publicly accessible. You can use it for files such as `robots.txt`.
 
 ### src/App.js
-This file contains your app. Everything in Falcon Client starts here. A lot happens in this file including mapping components to routes.
+This file contains your app. Everything in DEITY PWA Frontend starts here. A lot happens in this file including mapping components to routes.
 
 ### src/assets
 This is where static assets live. It's a great place to put files like touch icons and other similar images.

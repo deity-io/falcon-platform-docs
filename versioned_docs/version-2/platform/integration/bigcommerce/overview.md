@@ -24,7 +24,7 @@ All you need is a BigCommerce store and our BigCommerce App and you can be up an
   aria-label="visit the BigCommerce site"
   style={{ marginBottom: "20px", display: "block" }}
 >
-  <img src="/img/docs/platform/bigcommerce/partner-header.jpg" alt="BigCommerce and Falcon Platform Graphic" width="500"/>
+  <img src="/img/docs/platform/bigcommerce/partner-header.jpg" alt="BigCommerce and DEITY Platform Graphic" width="500"/>
 </a>
 
 

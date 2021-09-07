@@ -8,7 +8,7 @@ sidebar_label: Overriding Components
 We will occasionally be pushing changes to our components. If they have been overridden you won't automatically get these changes when you upgrade.
 :::
 
-Falcon Platform makes overriding components very simple.
+DEITY Platform makes overriding components very simple.
 
 Within the client directory you'll find a `moduleOverride.js` file.
 

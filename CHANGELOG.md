@@ -1,4 +1,4 @@
-# Falcon Platform Docs Changelog
+# DEITY Platform Docs Changelog
 
 ## 1.0.1
 

@@ -6,9 +6,9 @@ sidebar_label: Overview
 
 ## Overview
 
-Caching occurs in a few different forms with Falcon Platform. You have asset caches via the browser and a service worker, and data caches handled by Falcon Server (GraphQL).
+Caching occurs in a few different forms with DEITY Platform. You have asset caches via the browser and a service worker, and data caches handled by DEITY Middleware (GraphQL).
 
-## Falcon Client
+## DEITY PWA Frontend
 
 Webpack generates unique chunk names during each build. These chunks are set to have a cache lifetime of 1 year.  This means the a users will get a new version of your code each time you deploy new changes (run the build script). See our [code splitting](/docs/platform/client/code-splitting) guide for more information.
 
@@ -39,6 +39,6 @@ import { ServiceWorkerRegistrar, ServiceWorker } from '@deity/falcon-service-wor
 </ServiceWorkerRegistrar>
 ```
 
-## Falcon Server
+## DEITY Middleware
 
-Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/v2019/platform/falcon-server/caching) docs.
+DEITY Middleware also adds a layer of caching for all it's requests. Read our [DEITY Middleware caching](/docs/v2019/platform/falcon-server/caching) docs.

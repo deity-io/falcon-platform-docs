@@ -64,7 +64,7 @@ From here you will get the following credentials to use later:
 - `ACCESS_TOKEN_SECRET`
 
 ### 4. Create your Falcon App.
-Install Falcon Platform using the `demo-v1` example and `create-falcon-app`
+Install DEITY Platform using the `demo-v1` example and `create-falcon-app`
 
 ### 5. Configure your Magento connection
 Add your Magento 2 details to your `server/config/` files. Below is an example of the config variables you'll need to add.
@@ -138,7 +138,7 @@ Go to Magento admin `Stores->Configuration`
 On Configuration page open `Services->Falcon`
 <img src="/img/docs/platform/magento2/magento-falcon-config.png" alt="Magento admin" width="600" style={{ marginBottom: 20 }}/>
 
-Enter your falcon domain to `Falcon frontend url`, and cache webhook url to `Url to flush cache on Falcon Server`.
+Enter your falcon domain to `Falcon frontend url`, and cache webhook url to `Url to flush cache on DEITY Middleware`.
 
 ### 7. Configure Deity Payment Gateway
 
@@ -161,4 +161,4 @@ Stores > Configuration > Advanced > Admin > Disable Frontend
 Flush cache after changing config.
 
 ### 9. Complete
-Complete, you should now have a fully working Magento 2 / Falcon Platform site
+Complete, you should now have a fully working Magento 2 / DEITY Platform site

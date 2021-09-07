@@ -1,6 +1,6 @@
 ---
 id: about
-title: Extensions in Falcon Server
+title: Extensions in DEITY Middleware
 sidebar_label: About
 enterprise_only: true
 ---
@@ -23,7 +23,7 @@ Besides providing schema for GraphQL server, extensions can also provide functio
 
 To do so, the extension must return `context` property which is an object or function that creates object. That object will be merged with default context values and context values returned from other extensions.
 
-This is ApolloServer's feature exposed by Falcon Server and you can read more about it [here](https://www.apollographql.com/docs/apollo-server/data/resolvers/#the-context-argument)
+This is ApolloServer's feature exposed by DEITY Middleware and you can read more about it [here](https://www.apollographql.com/docs/apollo-server/data/resolvers/#the-context-argument)
 
 Code snipped below shows the basic usage.
 

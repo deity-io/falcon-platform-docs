@@ -4,7 +4,7 @@ title: Technical Overview
 sidebar_label: Technical Overview
 ---
 
-## How does Falcon Platform Cloud work?
+## How does DEITY Platform Cloud work?
 
 Cloud uses Google web services to provide a scalable and geo appropriate hosting solution for your app.
 

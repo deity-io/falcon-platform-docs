@@ -10,12 +10,12 @@ const FaqCategories = [
     icon: "/img/bxs-info-square.svg",
   },
   {
-    name: "Falcon Client",
+    name: "DEITY PWA Frontend",
     url: "/docs/platform/support/faqs/client",
     icon: "/img/bx-mobile.svg",
   },
   {
-    name: "Falcon Server",
+    name: "DEITY Middleware",
     url: "/docs/platform/support/faqs/server",
     icon: "/img/bxs-server.svg",
   },

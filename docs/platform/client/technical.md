@@ -4,9 +4,9 @@ title: Technical Information
 sidebar_label: Technical Information
 ---
 
-Falcon Client is the frontend for your Falcon Platform App.
+DEITY PWA Frontend is the frontend for your DEITY Platform App.
 
-It's built using ReactJS and connects Falcon Server via GraphQl.
+It's built using ReactJS and connects DEITY Middleware via GraphQl.
 
 ## Core Technologies
 

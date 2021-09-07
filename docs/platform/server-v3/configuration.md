@@ -1,13 +1,13 @@
 ---
 id: configuration
-title: Configuration in Falcon Server
+title: Configuration in DEITY Middleware
 sidebar_label: Configuration
 enterprise_only: true
 ---
 
-Falcon Client and Falcon Server configs work in the same way. You can find the general description of the configuration options [here](../general-concepts/configuration).
+DEITY PWA Frontend and DEITY Middleware configs work in the same way. You can find the general description of the configuration options [here](../general-concepts/configuration).
 
-Once configuration is added to Falcon Server you can either:
+Once configuration is added to DEITY Middleware you can either:
 
 ### 1. load configuration via config package (not recommended)
 
@@ -18,7 +18,7 @@ To do that you just need to require 'config' package:
 ```js
 const config = require('config');
 
-// log entire configuration of Falcon Server
+// log entire configuration of DEITY Middleware
 console.log(config);
 ```
 
@@ -28,7 +28,7 @@ While this can be used it's not recommended as it causes dependencies between co
 
 ### 2. inject configuration with injectConfig decorator
 
-With `injectConfig` decorator you can inject configuration of entire Falcon Server without explicit call to `config` module. 
+With `injectConfig` decorator you can inject configuration of entire DEITY Middleware without explicit call to `config` module. 
 That method is better than direct usage of `config` module, but in most cases it's also not recommended as you get entire configuration, while you should be relying only on configuration specific for your module.
 
 The exception from that rule is that you'd like to know if e.g. debug mode is enabled, like in the example below:
@@ -40,7 +40,7 @@ const { injectConfig } = require('@deity/falcon-server-env');
 @injectable()
 export class MyCustomModule {
   constructor(@injectConfig() config) {
-    // config is the entire configuration of Falcon Server
+    // config is the entire configuration of DEITY Middleware
     console.log('Debug is enabled:', config.debug);
   }
 }

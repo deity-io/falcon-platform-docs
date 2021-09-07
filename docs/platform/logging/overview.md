@@ -4,7 +4,7 @@ title: Logging
 sidebar_label: Overview
 ---
 
-Falcon Platform uses `@deity/falcon-logger` for logging in Falcon packages, but can also be used for logging in your custom Node.js apps.
+DEITY Platform uses `@deity/falcon-logger` for logging in Falcon packages, but can also be used for logging in your custom Node.js apps.
 
 ## Installation
 
@@ -144,4 +144,3 @@ as it does not show a log level nor date time information in the output:
 ## Transports
 
 To get more information about Logger transports - please refer to [this page](http://getpino.io/#/docs/transports?id=known-transports).
-

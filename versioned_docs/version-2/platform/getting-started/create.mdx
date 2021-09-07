@@ -13,7 +13,7 @@ import Examples from './../../../../src/components/Examples';
 
 ## Create Falcon App
 
-To generate a new application based on Falcon Platform you can use our CLI tool, **create falcon app**.
+To generate a new application based on DEITY Platform you can use our CLI tool, **create falcon app**.
 
 :::note Using the new theme?
 By default the demo based on "demo-v2" assumes it's connected to a **BigCommerce** instance, which uses **Algolia** and **Stripe**. Without these credentials the application will not start (you'll see the errors in the console). The old theme will, by default, be connected to our demo **Magento 2** and **Wordpress** instances.
@@ -69,20 +69,20 @@ project-name/
 npx @deity/create-falcon-app --example demo-v2 <project-name>
 ```
 
-- **`--full`** To generate **Falcon Server** use the `--full` flag. You will only be able to deploy Falcon Server changes if you're on an Enterprise plan.
+- **`--full`** To generate **DEITY Middleware** use the `--full` flag. You will only be able to deploy DEITY Middleware changes if you're on an Enterprise plan.
 
 
 ```bash
 npx @deity/create-falcon-app --full <project-name>
 ```
 
-## Configuring Falcon Client
+## Configuring DEITY PWA Frontend
 
-:::note Running Falcon Server Locally?
-If you're an Enterprise customer and running Falcon Server locally you can skip this step and connect to Falcon Server using the default settings.
+:::note Running DEITY Middleware Locally?
+If you're an Enterprise customer and running DEITY Middleware locally you can skip this step and connect to DEITY Middleware using the default settings.
 :::
 
-Before you can start your app you'll need to configure Falcon Client to point to Falcon Server. 
+Before you can start your app you'll need to configure DEITY PWA Frontend to point to DEITY Middleware. 
 
 ### 1. Create a local.json file
 
@@ -103,7 +103,7 @@ Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` wi
 
 ### Sandbox / Production customers
 
-To get your app started you'll need to start (and keep running) **Falcon Client**.
+To get your app started you'll need to start (and keep running) **DEITY PWA Frontend**.
 
 In a terminal window go into the client directory (`cd client/`) and run the start command.
 
@@ -138,11 +138,11 @@ Once these have started, visit <a href="http://localhost:3000" target="_blank" r
 
 ### Enterprise customers
 
-If you're on an Enterprise plan and have access to **Falcon Server** you may also want to run this locally. 
+If you're on an Enterprise plan and have access to **DEITY Middleware** you may also want to run this locally. 
 
-By default **Falcon Server** runs on `http://localhost:4000` and uses `http://localhost:4000/graphql` for it's graphQl endpoint.
+By default **DEITY Middleware** runs on `http://localhost:4000` and uses `http://localhost:4000/graphql` for it's graphQl endpoint.
 
-As well as having **Falcon Client** running you'll need to open a new terminal window and run the start command in the `server` directory.
+As well as having **DEITY PWA Frontend** running you'll need to open a new terminal window and run the start command in the `server` directory.
 
 <Tabs
   defaultValue="npm"

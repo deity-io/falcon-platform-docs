@@ -52,13 +52,13 @@ Our app will need to have access to some areas of your store to work. You'll nee
 
 ### ii. Start your DEITY Falcon account setup
 
-Once you've agreed to allow our app the BigCommerce permissions it needs you be show a splash screen allowing you to [view a demo store**](#demo) so you can get to know Falcon Platform a little better. You'll also be giving the option to **'Get DEITY Falcon'**.  Click that to continue with your setup.
+Once you've agreed to allow our app the BigCommerce permissions it needs you be show a splash screen allowing you to [view a demo store**](#demo) so you can get to know DEITY Platform a little better. You'll also be giving the option to **'Get DEITY Falcon'**.  Click that to continue with your setup.
 
 The next steps will take you through creating an account with us.
 
 <img
   src="/img/docs/platform/bigcommerce/splash.png"
-  alt="Falcon Platform splash screen"
+  alt="DEITY Platform splash screen"
   width="500"
   style={{ marginBottom: "20px", display: "block" }}
 />
@@ -69,7 +69,7 @@ We offer various price plans, once you've chosen the plan that's right for you, 
 
 <img
   src="/img/docs/platform/bigcommerce/price-plan.png"
-  alt="Falcon Platform price plans"
+  alt="DEITY Platform price plans"
   width="200"
   style={{ marginBottom: "20px", display: "block" }}
 />
@@ -80,7 +80,7 @@ You'll now be given the option to add your personal details, we'll use these as 
 
 <img
   src="/img/docs/platform/bigcommerce/personal-details.png"
-  alt="Falcon Platform personal details"
+  alt="DEITY Platform personal details"
   width="200"
   style={{ marginBottom: "20px", display: "block" }}
 />
@@ -91,12 +91,12 @@ The final step of your account setup is adding your payment details.
 
 <img
   src="/img/docs/platform/bigcommerce/payment.png"
-  alt="Falcon Platform payment details"
+  alt="DEITY Platform payment details"
   width="200"
   style={{ marginBottom: "20px", display: "block" }}
 />
 
-If setup is successful a BigCommerce token will be generated and you'll be shown your BigCommerce / Falcon Platform dashboard.
+If setup is successful a BigCommerce token will be generated and you'll be shown your BigCommerce / DEITY Platform dashboard.
 
 <img
   src="/img/docs/platform/bigcommerce/token.png"
@@ -107,7 +107,7 @@ If setup is successful a BigCommerce token will be generated and you'll be shown
 
 ## 3. Your dashboard.
 
-You'll be able to manage your Falcon Platform account from within your BigCommerce admin panel.
+You'll be able to manage your DEITY Platform account from within your BigCommerce admin panel.
 
 <img
   src="/img/docs/platform/bigcommerce/app-menu.png"
@@ -135,17 +135,17 @@ If you've just set up your account it might take a few minutes before your site 
 
 Your site will be currently setup using our example app. 
 
-If you don't already have an Falcon Client app in a code repository you'll need to create one [link here].
+If you don't already have an DEITY PWA Frontend app in a code repository you'll need to create one [link here].
 
 You repository should have the `client` folder in its `root` directory.
 
 :::note Do you have an Enterprise account?
-If you have an Enterprise account your **Falcon Server** instance should also be in the same code repository. with `client` and `server` directories in the root.
+If you have an Enterprise account your **DEITY Middleware** instance should also be in the same code repository. with `client` and `server` directories in the root.
 :::
 
 ### i. Accessing our NPM packages
 
-To access our private packages you'll need to use your **NPM Token** and **NPM Username**, this can be found from the `Falcon Client` tab.
+To access our private packages you'll need to use your **NPM Token** and **NPM Username**, this can be found from the `DEITY PWA Frontend` tab.
 
 You can log into [deity.npm.io](https://npm.deity.io/) to view these pacakges.
 
@@ -164,15 +164,15 @@ Once you have access to our packages you'll be able to create your app using `np
 
 ### iii. Connect your app
 
-The last step is to connect your app so it's being used by your Falcon Cloud account. If you visit the the `Falcon Client` tab you'll see information about **Authorising** Cloud to have access to your repository and adding a **Webhook** so cloud can listen for changes (so your Cloud instance knows when you push code).
+The last step is to connect your app so it's being used by your Falcon Cloud account. If you visit the the `DEITY PWA Frontend` tab you'll see information about **Authorising** Cloud to have access to your repository and adding a **Webhook** so cloud can listen for changes (so your Cloud instance knows when you push code).
 
 You can see detailed docs for this step [here](/docs/platform/getting-started/repository).
 
 ## 5. Local development
 
-When developing your app locally you'll want to connect your Falcon Client app to Falcon Server, which in turn will connect to BigCommerce.
+When developing your app locally you'll want to connect your DEITY PWA Frontend app to DEITY Middleware, which in turn will connect to BigCommerce.
 
-This can be done by adding your Falcon Server credentials to your `client/config/local.json` file. You can find out more about configurations [here](/docs/platform/configuration/overview).
+This can be done by adding your DEITY Middleware credentials to your `client/config/local.json` file. You can find out more about configurations [here](/docs/platform/configuration/overview).
 
 Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` with your site URL.
 
@@ -185,7 +185,7 @@ Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` wi
 
 ## 6. Falcon Cloud + Deployments
 
-Falcon Cloud comes as part of Falcon Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/docs/platform/cloud/installation).  You'll need an **access token** to log into using DCloud. This can be found in the `Falcon Server` tab.
+Falcon Cloud comes as part of DEITY Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/docs/platform/cloud/installation).  You'll need an **access token** to log into using DCloud. This can be found in the `DEITY Middleware` tab.
 
 <img
   src="/img/docs/platform/bigcommerce/falcon-server.png"

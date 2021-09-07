@@ -29,19 +29,19 @@ module.exports = {
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
 - `moduleOverride` - (default: `{}`) array of module names to override, [see the details](./overrides)
 
-Falcon Client provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
+DEITY PWA Frontend provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
 
 
 ## Build process configuration
 
-Falcon Client comes with all necessary features and development tools turned on by default:
+DEITY PWA Frontend comes with all necessary features and development tools turned on by default:
 
 - Universal [HMR](https://webpack.js.org/concepts/hot-module-replacement/) - page auto-reload if you make edits (on both backend and frontend)
 - Latest JavaScript achieved via babel 7 compiler.
 - ESLint with [Prettier](https://github.com/prettier/prettier) - to keep your code base clean and consistent
 - Jest test runner setup with sensible defaults.
 
-However, you can still modify Falcon Client defaults
+However, you can still modify DEITY PWA Frontend defaults
 
 ## Examples
 

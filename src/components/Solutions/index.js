@@ -11,7 +11,7 @@ const PlatformSolutions = [
     img: "/img/docs/platform/bc-solution.jpg",
   },
   {
-    name: "I'm going to set up Falcon Platform on my own",
+    name: "I'm going to set up DEITY Platform on my own",
     description: "For Magento 2 and custom integrations",
     url: "/docs/platform/getting-started/prerequisites",
     img: "/img/docs/platform/deity-solution.jpg",

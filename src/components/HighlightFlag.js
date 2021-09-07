@@ -27,11 +27,11 @@ const HighlightFlag = ({ type, text }) => {
   switch (type) {
     case 'server':
       data.color = colors.server;
-      data.text = text ? text : 'Falcon Server';
+      data.text = text ? text : 'DEITY Middleware';
       break;
     case 'client':
       data.color = colors.client;
-      data.text = text ? text : 'Falcon Client';
+      data.text = text ? text : 'DEITY PWA Frontend';
       break;
     default:
       break;

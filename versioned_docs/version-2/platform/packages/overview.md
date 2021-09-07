@@ -4,7 +4,7 @@ title: Our Packages
 sidebar_label: Our Packages
 ---
 
-Falcon Platform Ships with various `@deity` packages.
+DEITY Platform Ships with various `@deity` packages.
 
 - [create-falcon-app](create-falcon-app)
 - [falcon-blog-data](falcon-blog-data)

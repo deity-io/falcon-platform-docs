@@ -4,9 +4,9 @@ title: 1. Prerequisites
 sidebar_label: 1. Prerequisites
 ---
 
-## Falcon Platform account
+## DEITY Platform account
 
-Before you start you'll need a Falcon Platform account.
+Before you start you'll need a DEITY Platform account.
 
 You can <a href="https://deity.io/pricing" target="_blank" rel="noreferrer noopener">Choose your plan</a> and get an account setup from our site.
 

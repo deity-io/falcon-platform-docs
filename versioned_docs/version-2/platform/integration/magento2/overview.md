@@ -14,12 +14,12 @@ sidebar_label: Overview
 
 ## Overview
 
-Falcon Platform provides the best front-end experiences for Magento 2 platform.
+DEITY Platform provides the best front-end experiences for Magento 2 platform.
 
 We support **magento >= 2.3**
 
 
-Falcon magento module is required to run with Falcon Platform.
+Falcon magento module is required to run with DEITY Platform.
 Magento module is based on core REST API of Magento platform.
 
 ## Supported Features

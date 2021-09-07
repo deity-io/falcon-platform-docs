@@ -1,17 +1,17 @@
 ---
 id: event-handlers
-title: Event Handlers in Falcon Server
+title: Event Handlers in DEITY Middleware
 sidebar_label: Event Handlers
 enterprise_only: true
 ---
 
-Falcon Server uses asynchronous events to notify about internal processes. With event handlers you are able to "hook" into particular place in order to modify Falcon Server's behavior or modify particular thing.
+DEITY Middleware uses asynchronous events to notify about internal processes. With event handlers you are able to "hook" into particular place in order to modify DEITY Middleware's behavior or modify particular thing.
 
 You can find available list of events [here](#available-events)
 
 ## Usage
 
-In order to handle event fired by Falcon Server you need to use `@eventHandler()` decorator and extend `EventHandlerBase` class which requires you to implement `execute` method. 
+In order to handle event fired by DEITY Middleware you need to use `@eventHandler()` decorator and extend `EventHandlerBase` class which requires you to implement `execute` method. 
 Then it needs to exported by [Falcon Module](./modules/about).
 
 The snipped below shows how to do that:
@@ -34,7 +34,7 @@ export class CustomErrorHandler extends EventHandlerBase {
 
 ## Firing custom events
 
-Besides events that Falcon Server emits you can also emit your own events. To do so, you need to inject `EventEmitter2` to your class and simply fire event as you wish.
+Besides events that DEITY Middleware emits you can also emit your own events. To do so, you need to inject `EventEmitter2` to your class and simply fire event as you wish.
 
 ```ts
 const { injectable } = require('inversify');
@@ -70,7 +70,7 @@ const { Events } = require('@deity/falcon-server-env');
 
 #### ERROR
 
-Fired when Falcon Server catches global error
+Fired when DEITY Middleware catches global error
 
 Parameters: 
 
@@ -80,7 +80,7 @@ Parameters:
 
 #### BEFORE_INITIALIZED
 
-Fired before initialization of the instance of Falcon Server (at the beginning of `FalconServer.initialize()` method). This event is fired before Falcon Server is configured with basic things so it can be used to execute some logic at the very beginning of Falcon Server lifetime.
+Fired before initialization of the instance of DEITY Middleware (at the beginning of `FalconServer.initialize()` method). This event is fired before DEITY Middleware is configured with basic things so it can be used to execute some logic at the very beginning of DEITY Middleware lifetime.
 
 Parameters: 
 
@@ -88,7 +88,7 @@ Parameters:
 
 #### AFTER_INITIALIZED
 
-Fired after initialization of the instance of Falcon Server (at the end of `FalconServer.initialize()` method). This event is fired after everything that Falcon Server uses is initialized so it can be used to access all Falcon Server's internals.
+Fired after initialization of the instance of DEITY Middleware (at the end of `FalconServer.initialize()` method). This event is fired after everything that DEITY Middleware uses is initialized so it can be used to access all DEITY Middleware's internals.
 
 Parameters: 
 

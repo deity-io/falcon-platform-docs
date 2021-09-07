@@ -1,6 +1,6 @@
 ---
 id: dynamic-routing
-title: Dynamic Routing in Falcon Server
+title: Dynamic Routing in DEITY Middleware
 sidebar_label: Dynamic Routing
 enterprise_only: true
 ---

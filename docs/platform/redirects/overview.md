@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 ## Overview
 
-Redirects can be added in 2 ways. Either in a flat file (you'll need Falcon Server access for this), or, they can come from your shops API package.
+Redirects can be added in 2 ways. Either in a flat file (you'll need DEITY Middleware access for this), or, they can come from your shops API package.
 
 - [Flat Redirects](#flat-redirects-enterprise-only)
 - [Shop API Redirects](#shop-api-redirects)

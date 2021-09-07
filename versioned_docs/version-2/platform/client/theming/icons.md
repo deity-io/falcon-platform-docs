@@ -4,7 +4,7 @@ title: Site Icons
 sidebar_label: Site Icons
 ---
 
-Falcon Client comes with an Icon component `@deity/falcon-ui`. This component expects you to have icons set in your theme.
+DEITY PWA Frontend comes with an Icon component `@deity/falcon-ui`. This component expects you to have icons set in your theme.
 
 **`client/src/styling/theme.js`**
 ```js

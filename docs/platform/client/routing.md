@@ -4,12 +4,12 @@ title: Routing
 sidebar_label: Routing
 ---
 
-_(todo) this guide requires review as it's based on Falcon Server v2_
+_(todo) this guide requires review as it's based on DEITY Middleware v2_
 ## Overview
 
 In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
 
-[Dynamic Routing](/docs/platform/server/dynamic-routes) relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/docs/platform/cookbook/integrations/contentful2).
+[Dynamic Routing](/docs/platform/server/dynamic-routes) relies on both DEITY PWA Frontend and DEITY Middleware. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/docs/platform/cookbook/integrations/contentful2).
 
 ---
 
@@ -93,7 +93,7 @@ In this case we would match on `type` and **not** `path`.
 </SwitchDynamicURL>
 ```
 
-The `type` is returned by a method in your API code (in Falcon Server).
+The `type` is returned by a method in your API code (in DEITY Middleware).
 
 For more details please checkout out our [dynamic routing docs](/docs/platform/server/dynamic-routes).
 

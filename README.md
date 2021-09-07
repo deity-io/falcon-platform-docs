@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the documentation for DEITY services, including DEITY cloud, Falcon Client and Falcon Server.
+This repository contains the documentation for DEITY services, including DEITY cloud, DEITY PWA Frontend and DEITY Middleware.
 
 
 ## How the docs work

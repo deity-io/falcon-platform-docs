@@ -6,7 +6,7 @@ sidebar_label: About
 
 ## Overview
 
-DPSG (Deity Payment Service Gateway) is a stand alone service the handles interactions between Falcon Platform and payment providers.
+DPSG (Deity Payment Service Gateway) is a stand alone service the handles interactions between DEITY Platform and payment providers.
 
 Along side handling payments, DPSG also acts as a way to manage the configuration of your payment methods and providers used by your Falcon App.
 

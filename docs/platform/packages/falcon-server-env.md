@@ -7,7 +7,7 @@ sidebar_label: '@deity/falcon-server-env'
 ## ApiDataSource
 
 `src/models/ApiDataSource` is a base class for REST API data sources that is
-being used by Falcon Server application.
+being used by DEITY Middleware application.
 
 ### `api.preInitialize`
 
@@ -70,8 +70,8 @@ so this `context.didReceiveResult` won't be triggered again.
 ## Extension
 
 `src/models/Extension` is a base class for any extension that is being used
-by Falcon Server Application. It adds a few helpful methods to provide
-a seamless integration with Falcon Server applications.
+by DEITY Middleware Application. It adds a few helpful methods to provide
+a seamless integration with DEITY Middleware applications.
 
 ### `extension.initialize`
 
@@ -88,7 +88,7 @@ will be merged with the rest of the extensions' configs (see example below).
 
 By default, this method will trigger `api.getFetchUrlPriority(url: string)` method (if it was
 defined in the assigned ApiDataSource instance) and pass the current URL to determine API's
-priority (for sort order) when Falcon Client fetches URL info from available extensions; if
+priority (for sort order) when DEITY PWA Frontend fetches URL info from available extensions; if
 such method was not defined - it will return `null`, meaning that this ApiDataSource does not
 support "Dynamic Routing" and should be skipped.
 

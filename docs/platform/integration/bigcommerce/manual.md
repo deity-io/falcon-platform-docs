@@ -11,7 +11,7 @@ import CodePackage from '@site/src/components/CodePackage';
 
 ## Getting Started
 
-You might want to manually configure your BigCommerce Integration if you're an **Enterprise customer** and are running **Falcon Server Locally**.
+You might want to manually configure your BigCommerce Integration if you're an **Enterprise customer** and are running **DEITY Middleware Locally**.
 
 If you're using our example app, `demo-v2` most of the heavy lifting will be done for you and you'll only need to add a few configurations.
 

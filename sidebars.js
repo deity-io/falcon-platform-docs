@@ -130,7 +130,7 @@ module.exports = {
       'platform/cookbook/about',
       {
         type: 'category',
-        label: 'Falcon Client',
+        label: 'DEITY PWA Frontend',
         items: [
           'platform/cookbook/client/change-logo',
           'platform/cookbook/client/icon',

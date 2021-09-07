@@ -30,7 +30,7 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "Falcon Client",
+      "label": "DEITY PWA Frontend",
       "items": [
         {
           "type": "doc",
@@ -69,7 +69,7 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "Falcon Server",
+      "label": "DEITY Middleware",
       "items": [
         {
           "type": "doc",

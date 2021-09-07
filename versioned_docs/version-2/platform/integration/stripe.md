@@ -52,7 +52,7 @@ Once you've created an account you should be able to find your API keys in the d
 
 You'll need your API keys later.
 
-### 2. Add your Stripe details to your Falcon Platform config
+### 2. Add your Stripe details to your DEITY Platform config
 
 If you're using our example app `demo-v2` all you need to do now is add your Stripe details to your server side config.
 

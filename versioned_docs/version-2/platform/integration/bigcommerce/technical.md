@@ -22,9 +22,9 @@ In order to avoid the requirement for your server to be PCI compliant, it is rec
 
 ### Order Webhooks
 
-We use the Falcon Server config `envName` to avoid webhook collision amongst apps connecting to the same BigCommerce Store.
+We use the DEITY Middleware config `envName` to avoid webhook collision amongst apps connecting to the same BigCommerce Store.
 
-For enterprise customers that are running their own instance of Falcon Server we highly recommend each app / developer chooses a unique name for their app and sets it in their `local.json` config file.
+For enterprise customers that are running their own instance of DEITY Middleware we highly recommend each app / developer chooses a unique name for their app and sets it in their `local.json` config file.
 
 ## Known issues
 

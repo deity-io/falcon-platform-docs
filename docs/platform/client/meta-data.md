@@ -8,7 +8,7 @@ sidebar_label: SEO / Meta Data
   <img src="/img/docs/platform/react-helmet.jpg" alt="React Helmet Logo" width="100" style={{ marginBottom: 20 }} />
 </a>
 
-Falcon Platform uses [React Helmet Async](https://www.npmjs.com/package/react-helmet-async) to manage meta data such as `page titles` and `meta descriptions`. React Helmet supports server side rendering making it perfect for Falcon Platform.
+DEITY Platform uses [React Helmet Async](https://www.npmjs.com/package/react-helmet-async) to manage meta data such as `page titles` and `meta descriptions`. React Helmet supports server side rendering making it perfect for DEITY Platform.
 
 - [React Helmet Docs](https://www.npmjs.com/package/react-helmet)
 - [React Helmet Async Docs](https://www.npmjs.com/package/react-helmet-async)

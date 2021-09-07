@@ -5,7 +5,7 @@ sidebar_label: Example Integrations
 enterprise_only: true
 ---
 
-We've created a series of example Integrations to help you understand how to integrate your services with Falcon Platform.
+We've created a series of example Integrations to help you understand how to integrate your services with DEITY Platform.
 
 **These are not production ready examples**
 

@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const PlanFeatures = {
   1: "Multi tenant",
-  2: "Access to Falcon Server",
+  2: "Access to DEITY Middleware",
   3: "SLA 99.99% / month",
   4: "Monitoring 24/7/365",
   5: "Custom SSL / domain",

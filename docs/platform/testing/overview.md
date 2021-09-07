@@ -4,4 +4,4 @@ title: Testing
 sidebar_label: Overview
 ---
 
-- [Falcon Client Testing](/docs/platform/client/testing)
+- [DEITY PWA Frontend Testing](/docs/platform/client/testing)

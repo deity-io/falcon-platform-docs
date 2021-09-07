@@ -4,7 +4,7 @@ title: About
 sidebar_label: About
 ---
 
-## What is Falcon Platform Cloud
+## What is DEITY Platform Cloud
 
 Cloud is an infrastructure that allows you to host your <a href="https://deity.io" target="_blank" rel="noreferrer noopener"> Falcon site</a>.
 
@@ -17,4 +17,4 @@ Built with internationalization in mind, Cloud supports multi-region based on ge
 
 ## DCloud CLI tool
 
-**DCloud** is our <a href="https://www.w3schools.com/whatis/whatis_cli.asp">CLI Tool</a> to help you make the most of Falcon Platform Cloud. Find out more [about DCloud](/docs/platform/cloud/dcloud).
+**DCloud** is our <a href="https://www.w3schools.com/whatis/whatis_cli.asp">CLI Tool</a> to help you make the most of DEITY Platform Cloud. Find out more [about DCloud](/docs/platform/cloud/dcloud).

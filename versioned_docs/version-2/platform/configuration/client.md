@@ -1,7 +1,7 @@
 ---
 id: client
-title: Falcon Client Configuration
-sidebar_label: Falcon Client
+title: DEITY PWA Frontend Configuration
+sidebar_label: DEITY PWA Frontend
 ---
 
 Configs are stored as an object in [Apollo State](/docs/platform/client/state).
