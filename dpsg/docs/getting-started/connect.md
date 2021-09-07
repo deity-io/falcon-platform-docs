@@ -7,7 +7,7 @@ description: How to connect DPSG to your platform app
 
 ## Connecting your Falcon App
 
-All the setup is done our side. All you need to do is configure your Falcon App to use DPSG and your good to go.
+All the setup is done on our side. All you need to do is configure your Falcon App to use DPSG and you're good to go.
 
 To connect your app to DPSG you'll just need to make a few simple configuration changes.
 

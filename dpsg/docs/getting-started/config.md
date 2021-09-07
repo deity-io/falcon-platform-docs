@@ -60,7 +60,7 @@ Run `dcloud payments:env:apply`, this will set the auth details for DPSG as envi
 
 Next you need to run `dcloud payments:provider:configure`.
 
-This weill take you through steps to enabling your required payment providers. In this step you will add API keys ans secrets needed for your provider.
+This will take you through steps to enabling your required payment providers. In this step you will add API keys and secrets needed for your provider.
 
 ### 4. Configure your payment methods
 

@@ -9,7 +9,7 @@ Using DPSG can be broken down into 3 main sections.
 
 ## 1. Configuring things within DPSG itself. 
 
-This involves creating an environment and enabling payment providers and paymemnt methods.
+This involves creating an environment and enabling payment providers and payment methods.
 
 This configuration can be done entirely using our `dcloud` CLI tool.
 
