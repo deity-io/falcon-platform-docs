@@ -7,6 +7,12 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.18 (2021-09-08)
+
+### Demo V2
+
+- Add `node-fetch` version `2.6.1` to resolutions to fix incompatibility issue.
+
 ## Falcon Platform 2.7.17 (2021-09-07)
 
 ### Demo V2
