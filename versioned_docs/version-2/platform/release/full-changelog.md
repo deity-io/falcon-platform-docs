@@ -7,6 +7,21 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.17 (2021-09-07)
+
+### Demo V2
+
+- Fix `mailto` address from config on the contact page
+- Add Cart item price fallback
+
+### Falcon BigCommerce API
+
+- Use product gallery sort order for BigCommerce integration
+
+### Falcon Client
+
+- Update css modules loading in webpack config
+
 ## Falcon Platform 2.7.16 (2021-08-05)
 
 ### Falcon Shop Data
