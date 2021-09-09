@@ -11,8 +11,10 @@ module.exports = {
       'docs/getting-started/usage',
     ],
     Features: [
-      'docs/features/surcharges',
+      'docs/features/currencies',
       'docs/features/locations',
+      'docs/features/surcharges',
+      'docs/features/minMaxAmounts',
       'docs/features/sort',
     ],
     Integrations: [
