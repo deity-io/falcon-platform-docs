@@ -1,22 +1,21 @@
 ---
-id: config
-title: Configuration
-sidebar_label: Configuration
-description: How to configure DPSG
+id: connect
+title: Connecting to your App
+sidebar_label: Connecting to your app
+description: How to connect DPSG to your platform app
 ---
 
 ## Connecting your Falcon App
 
-All the setup is done our side. All you need to do is configure your Falcon App to use DPSG and your good to go.
+All the setup is done on our side. All you need to do is configure your Falcon App to use DPSG and you're good to go.
 
 To connect your app to DPSG you'll just need to make a few simple configuration changes.
 
 :::note Get your DPSG credentials?
-DPSG is part of your subscription and your `user` and `token` should be provided to you by our team when you sign up. Please contact us if you don't have these.
+DPSG is part of your subscription and your `user` and `token` should be provided to you by our team when you sign up. You can get this information by running `dcloud env [env]`.
 :::
 
-
-## Configuring DPSG
+## Local Configuration
 
 In your server config you'll need to add a new payments module.
 
@@ -37,7 +36,7 @@ In your server config you'll need to add a new payments module.
 ```
 
 :::note Using localhost?
-Some payment providers don't like passing `http://localhost` as a redirect URL (`redirectBaseUrl`). We reccommend using a service like [ngrok](https://ngrok.com/) for to tunnel your falcon server app.
+Some payment providers don't like passing `http://localhost` as a redirect URL (`redirectBaseUrl`). We recommend using a service like [ngrok](https://ngrok.com/) for to tunnel your falcon server app.
 :::
 
 ### Config Explained
@@ -63,3 +62,26 @@ If you're adding a new module and need access to DPSG you'll need to make sure y
   }
 },
 ```
+
+## Remote Configuration
+
+Remote configuration should be done using env variables for any kind of sensitive data.
+
+This includes the `serviceUser` and `serviceToken`.
+
+**Default Environment variables names (config: env var name)**
+
+- `redirectBaseUrl` : `PAYMENTS_REDIRECT_BASE_URL`
+- `redirectUrl` : `PAYMENTS_REDIRECT_URL`
+- `serviceUser` : `PAYMENTS_SERVICE_USER`
+- `serviceToken` : `PAYMENTS_SERVICE_TOKEN`
+
+### Setting the variables on your environment
+
+`dcloud env:var:set [environment_name] [variable_name] [variable_value]`
+
+e.g.
+
+`dcloud env:var:set -s production PAYMENTS_SERVICE_TOKEN 1234`
+
+Notice the `-s` is used to indicate this is a secret (encrypted) value.

@@ -9,14 +9,12 @@ sidebar_label: Surcharges
 Surcharges can be configured on each payment method and allow you to charge a %, set fee or a mixture of both to customers who use that method.
 
 :::note Using BigCommerce?
-Unfortunately surcharges don't currently work with BigCommerce. We're looking out for changes their end so we can implement it.
+Unfortunately surcharges don't currently work with BigCommerce. We're looking out for changes on their end so we can implement it.
 :::
 
 ## How to configure surcharges
 
 All payment method config can be done via our `dcloud` cli tool.
-
-[DOCS COMING SOON]
 
 ### Configuration Options
 
@@ -55,4 +53,4 @@ Surcharges can be an array, allowing different config for different countries (b
 ]
 ```
 
-In the example above all countries will get 1% of their subtotal added as a surcharge except customers in the Netherlands. They will get charged 1.5% of ther subtotal + a flat fee or 2 euros.
+In the example above all countries will get 1% of their subtotal added as a surcharge except customers in the Netherlands. They will get charged 1.5% of the subtotal + a flat fee or 2 euros.

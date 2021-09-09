@@ -8,9 +8,6 @@ sidebar_label: How it works
 
 To manage your payments methods, providers, payments and orders you should use our `dcloud` cli tool.
 
-[DOCS COMING SOON]
-
-
 ## How DPSG works with your app
 
 Interacting with DPSG is all done via our `@deity/falcon-payment-service-module` package.
@@ -21,7 +18,7 @@ RestAPI endpoints and by watching for events in our RabbitMQ instance.
 
 
 :::note Want to integrate DPSG yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please checkout our [how to use guide](../getting-started/usage)
+If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please check out our [how to use guide](../getting-started/usage)
 :::
 
 ### Methods
@@ -44,7 +41,7 @@ This method is triggered, normally by the 'Place Order' button. It often results
 
 This method is used for order updates from the shop, e.g. refunds or shipments. The flow is as follows:
 
-Shop update (webhook) -> Falcon shop endpoint package -> Falcon shop API package -> Falcon Payment Service Client -> DPSG (message quue) -> Payment provider (rest API)
+Shop update (webhook) -> Falcon shop endpoint package -> Falcon shop API package -> Falcon Payment Service Client -> DPSG (message queue) -> Payment provider (rest API)
 
 ### Events
 
@@ -52,7 +49,7 @@ Shop update (webhook) -> Falcon shop endpoint package -> Falcon shop API package
 
 **`PaymentEvents.PAYMENT_STATUS_UPDATED`**
 
-The payload assocairted with this event is:
+The payload associated with this event is:
 
 ```
 {

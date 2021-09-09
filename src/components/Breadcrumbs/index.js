@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const getDocType = (path) => {
   const platformDocsPath = 'docs/platform';
-  const openSourceDocsPath = 'docs/2019';
+  const openSourceDocsPath = 'docs/v2019';
 
   if (path.includes(platformDocsPath)) {
     return {
@@ -18,7 +18,7 @@ const getDocType = (path) => {
     return {
       id: 2,
       title: 'Falcon 2019',
-      url: '/docs/2019/platform/getting-started/intro'
+      url: '/docs/v2019/platform/getting-started/intro'
     };
   }
 

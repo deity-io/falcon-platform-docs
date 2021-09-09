@@ -12,8 +12,6 @@ Each payment method can be enabled for only certain country codes (based on the 
 
 All payment method config can be done via our `dcloud` cli tool.
 
-[DOCS COMING SOON]
-
 ### Configuration Options
 
 Countries should be passed as an array to each payment method on your environment.  
