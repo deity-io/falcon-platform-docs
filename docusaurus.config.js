@@ -17,16 +17,22 @@ module.exports = {
       },
       items: [
         {
+          label: 'Platform',
+          href: '/docs/platform/overview/about',
+          position: 'right',
+          activeBasePath: '/docs/platform',
+        },
+        /* {
           type: 'docsVersionDropdown',
           position: 'right',
           dropdownActiveClassDisabled: true,
-        },
-        {
-          to: 'dpsg/docs/overview/about',
-          label: 'DPSG',
-          position: 'right',
-          activeBasePath: '/dpsg/docs',
-        },
+        }, */
+        // {
+        //   to: '/dpsg/docs/overview/about',
+        //   label: 'DPSG',
+        //   position: 'right',
+        //   activeBasePath: '/dpsg/docs',
+        // },
         {
           label: 'Falcon UI',
           href: 'https://falcon-ui.docs.deity.io/',
@@ -48,10 +54,10 @@ module.exports = {
               label: 'Falcon Cloud',
               to: '/docs/platform/cloud/about',
             },
-            {
-              label: 'DPSG',
-              to: '/dpsg/docs/overview/about',
-            },
+            // {
+            //   label: 'DPSG',
+            //   to: '/dpsg/docs/overview/about',
+            // },
             {
               label: 'Falcon UI',
               href: 'https://falcon-ui.docs.deity.io/',
@@ -207,14 +213,14 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/deity-io/falcon-platform-docs/edit/master',
-          lastVersion: 'current',
+          lastVersion: '2',
           versions: {
             current: {
               label: 'Platform (v3) [BETA]',
+              path: 'v3',
             },
             2: {
               label: 'Platform (v2)',
-              path: 'v2',
             },
             2019: {
               label: 'Platform (v2019)',
