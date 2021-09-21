@@ -12,7 +12,7 @@ All the setup is done on our side. All you need to do is configure your Falcon A
 To connect your app to DPSG you'll just need to make a few simple configuration changes.
 
 :::note Get your DPSG credentials?
-DPSG is part of your subscription and your `user` and `token` should be provided to you by our team when you sign up. You can get this information by running `dcloud env [env]`.
+DPSG is part of your subscription. You can get this information by running `dcloud payments:env:info`.
 :::
 
 ## Local Configuration
