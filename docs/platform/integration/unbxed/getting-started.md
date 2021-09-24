@@ -6,7 +6,7 @@ sidebar_label: Getting started
 
 ## Before your start
 
-You'll need to have the offical Unbxed Magento module installed.
+You'll need to have the offical Unbxd Magento module installed.
 
 [https://github.com/unbxd/Magento-2-Extension](https://github.com/unbxd/Magento-2-Extension)
 
