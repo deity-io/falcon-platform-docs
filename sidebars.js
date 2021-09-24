@@ -120,7 +120,7 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'Unbxed',
+        label: 'Unbxd',
         items: [
           'platform/integration/unbxed/overview',
           'platform/integration/unbxed/getting-started',
