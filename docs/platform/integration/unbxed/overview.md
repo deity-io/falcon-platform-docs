@@ -5,7 +5,7 @@ sidebar_label: Overview
 ---
 
 :::caution
-Unbxed is currently only supported with our Magento 2 shop backend.
+Unbxd is currently only supported with our Magento 2 shop backend.
 :::
 
 ## Overview
