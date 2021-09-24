@@ -122,8 +122,8 @@ module.exports = {
         type: 'category',
         label: 'Unbxed',
         items: [
-          'platform/integration/unbxed/overview',
-          'platform/integration/unbxed/getting-started',
+          'platform/integration/unbxd/overview',
+          'platform/integration/unbxd/getting-started',
         ],
       },
       'platform/integration/wordpress',
