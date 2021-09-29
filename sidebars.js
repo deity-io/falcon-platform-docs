@@ -118,6 +118,14 @@ module.exports = {
           'platform/integration/contentful/content-models',
         ],
       },
+      {
+        type: 'category',
+        label: 'Unbxd',
+        items: [
+          'platform/integration/unbxd/overview',
+          'platform/integration/unbxd/getting-started',
+        ],
+      },
       'platform/integration/wordpress',
     ],
     Upgrading: ['platform/upgrading/overview'],
