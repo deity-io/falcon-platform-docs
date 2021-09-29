@@ -10,7 +10,7 @@ Unbxd is currently only supported with our Magento 2 shop backend.
 
 ## Overview
 
-Falcon Platform provides support for search using [https://unbxd.com/](Unbxd).
+Falcon Platform provides support for search using [https://unbxd.com/](https://unbxd.com/).
 
 This module provides GraphQL resolvers for `@deity/search-extension package`.
 
