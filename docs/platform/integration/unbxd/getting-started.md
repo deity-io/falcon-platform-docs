@@ -4,28 +4,37 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-## Before your start
+## Overview
+
+You'll need to do the following things to get Unbxd working with your app.
+
+1. Add the Magento Module to your Magento instance
+2. Add the Unbxd package as a dependency of your server app
+3. Configure Unbxd in your sever app config
+4. Assign Unbxd as the datasource for the search extension
+
+## 1. Add the Magento Module
 
 You'll need to have the offical Unbxd Magento module installed.
 
 [https://github.com/unbxd/Magento-2-Extension](https://github.com/unbxd/Magento-2-Extension)
 
-## Our packages
+## 2. Add our package
 
 You'll need to add `@deity/falcon-unbxd-search-module` as a dependency in your project (inside the server app).
 
-## Configuration
+## 3. Configuration
 
 - `url` - The service URL provided by Unbxd
 - `overrideCategoryProductListResolver` - [COMING SOON] - This config will be used to determine if Unbxd will be used for category pages as well as search.
-- `sites` - The list of sites you have that need to use the search.
+- `sites` - The list of sites you have that need to use the search Each site should be an object containing site config (below).
 
 **Site Config**
 
 - `siteKey` - The site key found in the Unbxd dashboard
 - `apiKey` - The API key found in the Unbxd dashboard
 
-### Default Configuration
+#### Default Configuration
 
 By default Unbxd isn't enabled and no stores are configured.
 
@@ -43,7 +52,7 @@ By default Unbxd isn't enabled and no stores are configured.
 }
 ```
 
-### Store Data
+#### Store Data
 
 You should add configuration for each of your stores, with the **Magento** store code as the key. 
 
@@ -72,11 +81,11 @@ You should add configuration for each of your stores, with the **Magento** store
 }
 ```
 
-## Environment Variables
+### Environment Variables
 
 To use Unbxd on a cloud environment you'll have to use environment variables.
 
-### Default Variables
+#### Default Variables
 
 ```
 "modules": {
@@ -101,7 +110,7 @@ To use Unbxd on a cloud environment you'll have to use environment variables.
 - `UNBXD_CONFIG` - JSON String - defaults to `null`
 - `UNBXD_OVERRIDE_CATEGORY_PRODUCT_LIST_RESOLVER` - boolean - defaults to `false`
 
-### Adding Stores
+#### Adding Stores
 
 You will need to manually add each store to your `server/config/custom_environment_variables.json` file to be able to configure them remotely.
 
@@ -132,3 +141,20 @@ You can name these variables whatever you want be we advise the below convention
 :::note Keeping keys safe
 We advise you keep your API and Site keys out of your repo and add them to a `config/local.json` file for local development and save them as secrets remotely e.g. `dcloud env:var:set -s production UNBXD_SITEKEY_STORE1 keyvaluehere`.
 :::
+
+
+## 4. Assign Unbxd to your search extension
+
+In your `server/config/default.json` you'll want to assign `unbxd` as the data source for your search extension:
+
+```
+"extensions": {
+  ...
+  "search": {
+    "package": "@deity/falcon-search-extension",
+    "config": {
+      "module": "unbxd"
+    }
+  }
+}
+```
