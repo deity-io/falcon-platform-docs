@@ -127,6 +127,8 @@ You can name these variables whatever you want be we advise the below convention
     }
 }
 
+```
+
 :::note Keeping keys safe
 We advise you keep your API and Site keys out of your repo and add them to a `config/local.json` file for local development and save them as secrets remotely e.g. `dcloud env:var:set -s production UNBXD_SITEKEY_STORE1 keyvaluehere`.
 :::
