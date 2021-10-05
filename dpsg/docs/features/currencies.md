@@ -17,7 +17,7 @@ The intitial steps before selecting the currencies are:
 2. Select the configured payment provider
 3. Select the payment method
 4. Set the name of the custom payment method
-5. Select the countries for the payment method ([Location Specific Config](/docs/features/locations))
+5. Select the countries for the payment method ([Location Specific Config](/dpsg/docs/features/locations))
 
 Step 6 asks you to select the currencies for which this payment method should be enabled. Select `ANY` to enable it for all currencies, or select specific currencies by using the `arrow keys` and `space` to select/deselect.
 

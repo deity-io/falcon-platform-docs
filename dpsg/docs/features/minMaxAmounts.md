@@ -17,9 +17,9 @@ The intitial steps before selecting the currencies are:
 2. Select the configured payment provider
 3. Select the payment method
 4. Set the name of the custom payment method
-5. Select the countries for the payment method ([Location Specific Config](/docs/features/locations))
-6. Select the currencies for the payment method ([Currency Specific Config](/docs/features/currencies))
-7. Configure the surcharges ([Surcharges](/docs/features/surcharges))
+5. Select the countries for the payment method ([Location Specific Config](/dpsg/docs/features/locations))
+6. Select the currencies for the payment method ([Currency Specific Config](/dpsg/docs/features/currencies))
+7. Configure the surcharges ([Surcharges](/dpsg/docs/features/surcharges))
 
 Step 8 asks you whether you want to set min/max amount restrictions or not (configure by typing `y`). Next, select a currency from the list. You are then asked to specify the minimum amount, which can be skipped by hitting `Enter` or specified by filling in a number. The same should then be done for the maximum amount.
 After configuring one set of min/max amounts, you are presented with the option to do the same for other currencies as well.
