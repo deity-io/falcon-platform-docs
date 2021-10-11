@@ -10,7 +10,7 @@ sidebar_label: Payment Methods
 
 - Credit card (with and without 3D secure) : `card`
 - FPX : `fpx`
-- iDeal : `ideal`
+- iDEAL : `ideal`
 - Alipay : `alipay`
 - Bancontact : `bancontact`
 - Giropay : `giropay`

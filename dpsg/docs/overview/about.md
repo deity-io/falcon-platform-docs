@@ -16,4 +16,4 @@ DPSG is a fully managed and hosted service.
 
 ## API docs / Swagger
 
-You can visit our [Swagger instance](https://dpsg.dev.deity.cloud/) and test your endpoints at any time. 
+You can visit our [Swagger instance](https://dpsg.deity.cloud/) and test your endpoints at any time. 
