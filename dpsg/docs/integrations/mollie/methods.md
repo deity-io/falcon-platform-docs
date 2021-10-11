@@ -10,7 +10,7 @@ sidebar_label: Payment Methods
 
 - Credit card (with and without 3D secure) : `creditcard`
 - PayPal : `paypal`
-- iDeal : `ideal`
+- iDEAL : `ideal`
 - Klarna Pay Later : `klarnapaylater`
 - Bancontact : `bancontact`
 - Giropay : `giropay`

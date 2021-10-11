@@ -6,7 +6,7 @@ sidebar_label: Configuration
 
 ## Provider Config
 
-This can be configured using [this endpoint](https://dpsg.dev.deity.cloud/#/Management/EnvironmentPaymentProviderController_mollie_create)
+This can be configured using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_mollie_create)
 
 
 ```
