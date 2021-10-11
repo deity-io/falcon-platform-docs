@@ -54,7 +54,7 @@ From their you can set up `Standard Notification` webhook.
 ### Webhook Config
 
 **Transport**
-- URL: https://dpsg.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen (replacing `{organization}`, `{project}` and `{environment}` with your details).
+- URL: https://dpsg.`{region}`.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen (replacing `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe is will be omitted (https://dpsg.deity.cloud).
 - Active: `Yes`
 - SSL version: `TLSv1.2`
 
