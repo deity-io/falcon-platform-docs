@@ -39,6 +39,10 @@ This is used for receiving webhooks from Adyen. DPSG uses this when payments are
 
 You can get your HMAC key when configuring your webhook.
 
+:::note Allowed Origins
+Adyen requires you to set allowed origins so the frontend components can be rendered. You can see these when managing the API keys.  
+:::
+
 
 ## Setting up your payment methods
 
