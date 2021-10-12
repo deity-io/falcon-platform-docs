@@ -134,6 +134,7 @@ module.exports = {
     Deployment: ['platform/deployment/overview'],
     Logging: ['platform/logging/overview'],
     GeoIP: ['platform/geoip/overview'],
+    Logging: ['platform/app-store/overview'],
     Cookbook: [
       'platform/cookbook/about',
       {

@@ -409,11 +409,11 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "Native App",
+      "label": "App Store Publishing",
       "items": [
         {
           "type": "doc",
-          "id": "version-2/platform/native-app/overview"
+          "id": "version-2/platform/app-store/overview"
         }
       ]
     },
