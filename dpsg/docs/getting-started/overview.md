@@ -5,24 +5,23 @@ sidebar_label: Overview
 description: Getting started with DPSG
 ---
 
-Using DPSG can be broken down into 3 main sections.
+To make use of DPSG, it first needs to be configured and then connected to your Falcon app.
 
-## 1. Configuring things within DPSG itself. 
+### 1. Configuring DPSG 
 
-This involves creating an environment and enabling payment providers and payment methods.
-
+This involves creating an DPSG configuration and enabling payment providers and payment methods.
 This configuration can be done entirely using our `dcloud` CLI tool.
 
 [Find out how](config)
 
-## 2. Connecting your APP to your DPSG environment
+### 2. Connecting your Falcon app to DPSG
 
-To use DPSG in your app you need to connect to it. For this you just need to add a few config changes to your remote or local apps config.
+To use DPSG in your Falcon app you need to connect to it. For this you just need to add a few configuration changes to your remote or local application configuration.
 
 [Find out how](connect)
 
-## 3. Using DPSG within your app
+### 3. Using DPSG within your Falcon app
 
-Our demo apps are already setup to use DPSG so this section should only really be needed for custom integrations or projects with very bespoke functionality.
+Our demo applications are already setup to use DPSG. This section is only relevant for custom integrations or projects with bespoke functionality.
 
 [Find out how](usage)

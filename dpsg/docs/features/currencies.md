@@ -12,7 +12,7 @@ Each payment method can be enabled for only certain currencies. By default, a ne
 
 All payment method config can be done via our `dcloud` cli tool.
 When configuring a new payment method using `dcloud payments:method:configure`, a wizard is launched to guide you through the configuration process.
-The intitial steps before selecting the currencies are:
+The initial steps before selecting the currencies are:
 1. Select an environment
 2. Select the configured payment provider
 3. Select the payment method
@@ -35,6 +35,6 @@ We allow filtering of methods based on currencies. At the same time we also pass
 "currencies": [
     "EUR",
     "USD"
-  ],
+  ]
 ```
 In the example above the method is enabled for Euro and US Dollar only.

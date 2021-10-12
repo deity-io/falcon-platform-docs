@@ -1,26 +1,29 @@
 ---
 id: config
-title: Configuration
-sidebar_label: Configuration
+title: Configuring DPSG
+sidebar_label: Configuring DPSG
 description: How to configure DPSG
 ---
-## Setup
 
 ### Prerequisites
 
-These steps assume you have `dcloud` installed and are running the correct project (`dcloud project:current:set`)
+These steps assume you have `dcloud` installed and are running the correct project (`dcloud project:current:set`). To find out more about `dcloud`, please refer to the [documentation](/docs/platform/cloud/dcloud).
 
-### 1. Create your environment
+### 1. Create a DPSG configuration
 
-The first step is to create your payment environment in DPSG. This is not the same as your platform environment although naming them the same can be helpful.
+To get started, you first need to create a DPSG configuration.
+Run `dcloud payments:config:create` to launch the configuration wizard.
 
-Run `dcloud payments:env:create`.
+Once configured, you can request information about a configuration at any time, using the `dcloud payments:config:info` command.
 
-This will lead you through a few steps to creating your env.
+### 2. Configure the DPSG region
 
-### 2. Configure the DPSG region (Optional)
+By default, DPSG will be configured in the `eu` (Europe) region. If your Falcon project is using a different region, you need to use the command `dcloud payments:region:set`.
+After that, you have to run 
 
-Run `dcloud payments:region:set`, this will let you select one of our region for DPSG.
+:::info
+Please set the DPSG region to the same region 
+:::
 
 The default region for DPSG is `eu` (Europe).
 
@@ -44,42 +47,49 @@ Run `dcloud payments:method:configure`.
 
 This will take you through steps to configure your methods, including sorting and which countries your methods are enabled on.
 
+<br /><br />
 
-## Commands
+### Dcloud Commands Reference
+To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 
-Configuring DPSG can be done using our [`dcloud` CLI tool](/docs/platform/cloud/dcloud).
-
-We have several methods available for configuring DPSG.
-
-### `payments:provider:list:all`
-List all available payment providers
-
-### `payments:method:list:all`
-List all available payment methods of the required Provider
-
-### `payments:provider:list`
-List configured payment providers for the required environment
-
-### `payments:provider:configure`
-Configure Payment Provider for the required Environment
-
-### `payments:method:list`
-List configured payment providers for the required provider and environment
-
-### `payments:method:configure`
-Configure Payment Methods for the required Environment and Payment Provider
-
-### `payments:env:create`
+`payments:env:create`
 Create an entry for the existing DEITY Cloud environment or a test one for local development
 
-### `payments:env:info`
+`payments:env:info`
 Get Environment configuration for Payments
 
-### `payments:env:apply`
+`payments:env:apply`
 Send Payments Token to the environment. It will fetch the token by applying the required env vars
 
-### `payments:region`
+<br />
+
+`payments:region`
 Get the configured DPSG region.
 
-### `payments:region:set`
+`payments:region:set`
 Set the configured DPSG region.
+
+<br />
+
+`payments:provider:list:all`
+List all available payment providers
+
+<br />
+
+`payments:provider:list`
+List configured payment providers for the required environment
+
+`payments:provider:configure`
+Configure Payment Provider for the required Environment
+
+<br />
+
+`payments:method:list:all`
+List all available payment methods of the required Provider
+
+`payments:method:list`
+List configured payment providers for the required provider and environment
+
+`payments:method:configure`
+Configure Payment Methods for the required Environment and Payment Provider
+
