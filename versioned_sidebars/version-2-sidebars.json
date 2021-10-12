@@ -409,6 +409,17 @@
     {
       "collapsed": true,
       "type": "category",
+      "label": "Native App",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/native-app/overview"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
       "label": "Testing",
       "items": [
         {
