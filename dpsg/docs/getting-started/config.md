@@ -72,6 +72,12 @@ Configure Payment Methods for the required Environment and Payment Provider
 ### `payments:env:create`
 Create an entry for the existing DEITY Cloud environment or a test one for local development
 
+### `payments:env:update`
+Updates a configured payments environment
+
+### `payments:env:delete`
+Deletes a configured payments environment
+
 ### `payments:env:info`
 Get Environment configuration for Payments
 
