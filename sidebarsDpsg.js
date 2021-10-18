@@ -14,35 +14,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Integrations',
+      label: 'Payment Providers',
       items: [
-        {
-          type: 'category',
-          label: 'Adyen',
-          items: [
-            'docs/integrations/adyen/overview',
-            'docs/integrations/adyen/methods',
-            'docs/integrations/adyen/config',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Mollie',
-          items: [
-            'docs/integrations/mollie/overview',
-            'docs/integrations/mollie/methods',
-            'docs/integrations/mollie/config',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Stripe',
-          items: [
-            'docs/integrations/stripe/overview',
-            'docs/integrations/stripe/methods',
-            'docs/integrations/stripe/config',
-          ],
-        },
+        'docs/providers/adyen',
+        'docs/providers/mollie',
+        'docs/providers/stripe',
+        'docs/providers/humm',
       ],
     },
     {
@@ -64,17 +41,17 @@ module.exports = {
       ],
     },
     {
-      type: 'link',
-      label: 'API Reference',
-      href: 'https://dpsg.deity.cloud/',
-    },
-    {
       type: 'category',
       label: 'Release Notes',
       items: [
         'docs/release/full-changelog',
         'docs/release/1-0-0',
       ],
+    },
+    {
+      type: 'link',
+      label: 'API Reference',
+      href: 'https://dpsg.deity.cloud/',
     },
   ],
 };

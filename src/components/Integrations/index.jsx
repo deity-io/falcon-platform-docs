@@ -9,25 +9,25 @@ import styles from "./styles.module.css";
 const integrations = [
   {
     name: 'Adyen',
-    url: '/dpsg/docs/integrations/adyen/overview',
+    url: '/dpsg/docs/integrations/adyen',
     logo: <AdyenLogo />,
     isActive: true,
   },
   {
     name: 'Mollie',
-    url: '/dpsg/docs/integrations/mollie/overview',
+    url: '/dpsg/docs/integrations/mollie',
     logo: <MollieLogo />,
     isActive: true,
   },
   {
     name: 'stripe',
-    url: '/dpsg/docs/integrations/stripe/overview',
+    url: '/dpsg/docs/integrations/stripe',
     logo: <StripeLogo />,
     isActive: true,
   },
   {
     name: 'braintree',
-    url: '/dpsg/docs/dpsg/integrations/braintree/overview',
+    url: '/dpsg/docs/integrations/braintree',
     logo: <BraintreeLogo />,
     isActive: false,
   },

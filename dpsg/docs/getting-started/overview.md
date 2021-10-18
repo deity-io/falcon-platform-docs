@@ -9,7 +9,7 @@ To make use of DPSG, it first needs to be configured and then connected to your 
 
 ### 1. Configuring DPSG 
 
-This involves creating an DPSG configuration and enabling payment providers and payment methods.
+This involves creating an DPSG profile and enabling payment providers and payment methods.
 This configuration can be done entirely using our `dcloud` CLI tool.
 
 [Find out how](config)

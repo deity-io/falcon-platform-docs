@@ -7,31 +7,26 @@ description: How to configure DPSG
 
 ### Prerequisites
 
-These steps assume you have `dcloud` installed and are running the correct project (`dcloud project:current:set`). To find out more about `dcloud`, please refer to the [documentation](/docs/platform/cloud/dcloud).
+These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [documentation](/docs/platform/cloud/dcloud).
 
-### 1. Create a DPSG configuration
+### 1. Select your project
 
-To get started, you first need to create a DPSG configuration.
-Run `dcloud payments:config:create` to launch the configuration wizard.
+Run `dcloud project:current:set [organization] [project]` to select the project that you are working with. If the wizard detects that there are no DPSG profiles for the project environments, it will prompt you to automatically create them for you. If you choose to do that, step 2 is only necessary when you want to create a local/development profile.
 
-Once configured, you can request information about a configuration at any time, using the `dcloud payments:config:info` command.
+### 2. Create a DPSG profile
 
-### 2. Configure the DPSG region
+To get started, you first need to create a payments profile.
+Run `dcloud payments:profile:create` to launch the configuration wizard.
 
-By default, DPSG will be configured in the `eu` (Europe) region. If your Falcon project is using a different region, you need to use the command `dcloud payments:region:set`.
-After that, you have to run 
+For profiles that you want to link to your Falcon app, we advise to use the same name as the project environment, e.g. naming the DPSG profile `test` for the `test` project environment.
 
-:::info
-Please set the DPSG region to the same region 
-:::
+Once configured, you can request information about a profile at any time, using the `dcloud payments:profile:info` command.
 
-The default region for DPSG is `eu` (Europe).
+### 3. Connect the DPSG profile to your Falcon app
 
-Run `dcloud payments:region` to view your configured region.
+Run `dcloud payments:profile:apply`, this will set the authentication details for DPSG as environment variables for your Falcon app.
 
-### 3. Connect your DPSG env to your platform app
-
-Run `dcloud payments:env:apply`, this will set the auth details for DPSG as environment variables for your platform app.
+This step does not have to be performed for local profiles, only for profiles that you want to connect to your cloud instance.
 
 ### 4. Configure your payment providers
 
@@ -45,57 +40,46 @@ The final step is to enable payment methods.
 
 Run `dcloud payments:method:configure`. 
 
-This will take you through steps to configure your methods, including sorting and which countries your methods are enabled on.
+This will take you through steps to configure your methods, including the steps for our [configuration features](/dpsg/docs/features/currencies).
 
 <br /><br />
 
 ### Dcloud Commands Reference
 To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 
-`payments:env:create`
-Create an entry for the existing DEITY Cloud environment or a test one for local development
-
-`payments:env:info`
-Get Environment configuration for Payments
-
-### `payments:env:update`
-Updates a configured payments environment
-
-### `payments:env:delete`
-Deletes a configured payments environment
-
-`payments:env:apply`
-Send Payments Token to the environment. It will fetch the token by applying the required env vars
-
-<br />
-
-`payments:region`
-Get the configured DPSG region.
-
-`payments:region:set`
-Set the configured DPSG region.
-
-<br />
-
 `payments:provider:list:all`
 List all available payment providers
 
-<br />
+`payments:provider:configure`
+Configure payment provider for a selected profile
 
 `payments:provider:list`
-List configured payment providers for the required environment
-
-`payments:provider:configure`
-Configure Payment Provider for the required Environment
+List configured payment providers for a selected profile
 
 <br />
 
 `payments:method:list:all`
 List all available payment methods of the required Provider
 
-`payments:method:list`
-List configured payment providers for the required provider and environment
-
 `payments:method:configure`
-Configure Payment Methods for the required Environment and Payment Provider
+Configure payment methods for a selected and payment provider
 
+`payments:method:list`
+List configured payment providers for a selected profile
+
+<br />
+
+`payments:profile:create`
+Create an entry for the existing DEITY Cloud environment or a test one for local development
+
+`payments:profile:info`
+Information about the configured payments profiles
+
+`payments:profile:update`
+Updates a configured payments profile
+
+`payments:profile:delete`
+Deletes a selected payment profile
+
+`payments:profile:apply`
+Send Payments credentials to the DEITY Cloud Environment. It will set the token by applying the required env vars
