@@ -22,18 +22,18 @@ Need a method that Adyen supports adding to the list? Please contact us as it mi
 
 :::
 
-## Provider Configuration
+## Adyen Configuration
 
 The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
 
 
-```
+```json
 {
-  "merchantAccount": string
-  "apiKey": string, // Private
-  "clientKey: string, // Private
-  "hmacKey": string, // Private
-  "testMode": boolean
+  "merchantAccount": "string",
+  "apiKey": "string", // Private
+  "clientKey": "string", // Private
+  "hmacKey": "string", // Private
+  "testMode": "boolean"
 }
 ```
 

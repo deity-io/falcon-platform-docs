@@ -11,7 +11,7 @@ Our core modules (Magento 2, BigCommerce, Commerce Tools) all have pre built DPS
 
 This section explains how to add your own.
 
-Please read our [how it works guide](../overview/how) first.
+Please read our [how it works guide](/dpsg/docs/about) first.
 
 ### 1. Load Payment Service Client into your API package
 

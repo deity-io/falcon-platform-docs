@@ -40,7 +40,7 @@ The final step is to enable payment methods.
 
 Run `dcloud payments:method:configure`. 
 
-This will take you through steps to configure your methods, including the steps for our [configuration features](/dpsg/docs/features/currencies).
+This will take you through steps to configure your methods, including the steps for our [configuration features](/dpsg/docs/methods/features/currencies).
 
 <br /><br />
 

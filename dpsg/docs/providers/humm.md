@@ -14,16 +14,16 @@ Even though Humm only offers one payment method, DPSG still requires a configura
 
 Humm is an Australian payment provider and is only available for customers with a billing address in Australia. Therefore, Humm can only be configured on the Australian cluster of DPSG.
 
-## Provider Configuration
+## Humm Configuration
 
 The easiest way to configure Humm is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_humm_create)
 
-```
+```json
 {
   "merchantId": "string",
   "gatewayKey": "string",
   "shopCountry": "AU", // ISO-3166 country code
-  "shopName": string, // The name of your store
+  "shopName": "string" // The name of your store
 }
 ```
 

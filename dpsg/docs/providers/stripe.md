@@ -27,17 +27,17 @@ Need a method that Stripe supports adding to the list? Please contact us as it m
 
 :::
 
-## Provider Configuration
+## Stripe Configuration
 
 The easiest way to configure Stripe is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_stripe_create)
 
 
-```
+```json
 {
-  "publicKey": string, // Private
-  "secretKey": string, // Private
-  "endpointSecret": string, // Private
-  "testMode": boolean
+  "publicKey": "string", // Private
+  "secretKey": "string", // Private
+  "endpointSecret": "string", // Private
+  "testMode": "boolean"
 }
 ```
 

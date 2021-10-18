@@ -3,7 +3,7 @@ module.exports = {
     'docs/about',
     {
       type: 'category',
-      label: 'Get Started',
+      label: 'Getting Started',
       collapsed: false,
       items: [
         'docs/getting-started/overview',
@@ -24,13 +24,21 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Configuration Features',
+      label: 'Payment Methods',
       items: [
-        'docs/features/currencies',
-        'docs/features/locations',
-        'docs/features/surcharges',
-        'docs/features/minMaxAmounts',
-        'docs/features/sort',
+        'docs/methods/methods-overview',
+        {
+          type: 'category',
+          label: 'Configuration Features',
+          collapsed: false,
+          items: [
+            'docs/methods/features/currencies',
+            'docs/methods/features/locations',
+            'docs/methods/features/surcharges',
+            'docs/methods/features/minMaxAmounts',
+            'docs/methods/features/sort',
+          ],
+        },
       ],
     },
     {

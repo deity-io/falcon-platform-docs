@@ -24,7 +24,7 @@ Interacting with DPSG is done through our `@deity/falcon-payment-service-module`
 
 
 :::note Want to integrate DPSG yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please check out our [how to](../getting-started/usage) guide.
+If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please check out our [how to](/dpsg/docs/getting-started/usage) guide.
 :::
 
 ---
@@ -62,10 +62,10 @@ This method is used for order updates from the shop, e.g. refunds or shipments. 
 
 The payload associated with this event is:
 
-```
+```json
 {
-  orderId, // The shop order ID associated with the payment update
-  status, // payment status
-  payload: {} // This additional data is dependent on the payment provider, it often contains a payment ID
+  "orderId": "string", // The shop order ID associated with the payment update
+  "status": "string", // payment status
+  "payload": {} // This additional data is dependent on the payment provider, it often contains a payment ID
 };
 ```
