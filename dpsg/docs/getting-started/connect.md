@@ -29,7 +29,11 @@ In your server config you'll need to add a new payments module.
       "redirectBaseUrl": "",
       "redirectUrl": "/checkout/pending",
       "serviceUser": "",
-      "serviceToken": ""
+      "serviceToken": "",
+      "messageQueue": {
+        "host": "",
+        "protocol": ""
+      }
     }
   },
   ...
@@ -41,12 +45,21 @@ Some payment providers don't like passing `http://localhost` as a redirect URL (
 
 ### Config Explained
 
-(config : type : default : description)
+(config : type : default value : description)
 
 - `redirectBaseUrl` : string : "" : The base url to be redirected to after payments (usually your client app)
 - `redirectUrl` : string : "/checkout/pending" : The url to be redirected to after payments (usually your client app)
 - `serviceUser` : string : "" : The DPSG user name, in the following format "org:project:env" e.g. "deity:falcon:production"
 - `serviceToken` : string : "" : The DPSG token associated with the user above
+
+** Local Config **
+
+These config values are only needed when you're running your DEITY app locally.
+
+(config : type : default value : description)
+
+- `messageQueue.host` : string: "" : This is the host for the message queue. It should be 1 of 3 URLs depending on the region your app is running in: `rabbit.deity.cloud` (Europe), `rabbit.us.deity.cloud` (America), `rabbit.au.deity.cloud` (Australia)
+- `messageQueue.protocol` : string: "" : The protocol used by our message queue. This should be set to `amqp`.
 
 ### Need payments in a custom module?
 
