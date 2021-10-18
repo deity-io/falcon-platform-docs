@@ -6,7 +6,7 @@ sidebar_label: Configuration
 
 ## Provider Config
 
-This can be configured using [this endpoint](https://dpsg.dev.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
+This can be configured using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
 
 
 ```
@@ -39,6 +39,10 @@ This is used for receiving webhooks from Adyen. DPSG uses this when payments are
 
 You can get your HMAC key when configuring your webhook.
 
+:::note Allowed Origins
+Adyen requires you to set allowed origins so the frontend components can be rendered. You can see these when managing the API keys.  
+:::
+
 
 ## Setting up your payment methods
 
@@ -54,7 +58,7 @@ From their you can set up `Standard Notification` webhook.
 ### Webhook Config
 
 **Transport**
-- URL: https://dpsg.dev.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen (replacing `{organization}`, `{project}` and `{environment}` with your details).
+- URL: https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen (replacing `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted (https://dpsg.deity.cloud).
 - Active: `Yes`
 - SSL version: `TLSv1.2`
 

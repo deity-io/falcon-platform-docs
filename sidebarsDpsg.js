@@ -66,7 +66,7 @@ module.exports = {
     {
       type: 'link',
       label: 'API Reference',
-      href: 'https://dpsg.dev.deity.cloud/',
+      href: 'https://dpsg.deity.cloud/',
     },
     {
       type: 'category',

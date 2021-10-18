@@ -11,6 +11,7 @@ sidebar_label: Payment Methods
 - Credit card (with and without 3D secure) : `scheme`
 - PayPal : `paypal`
 - AfterPay : `afterpaytouch` (AUS and NZ only)
+- Zip : `Zip`
 
 
 :::note Missing a method?

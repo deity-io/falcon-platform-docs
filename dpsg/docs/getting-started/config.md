@@ -58,6 +58,12 @@ Create an entry for the existing DEITY Cloud environment or a test one for local
 `payments:env:info`
 Get Environment configuration for Payments
 
+### `payments:env:update`
+Updates a configured payments environment
+
+### `payments:env:delete`
+Deletes a configured payments environment
+
 `payments:env:apply`
 Send Payments Token to the environment. It will fetch the token by applying the required env vars
 
