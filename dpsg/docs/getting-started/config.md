@@ -47,30 +47,8 @@ This will take you through steps to configure your methods, including the steps 
 ### Dcloud Commands Reference
 To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 
-`payments:provider:list:all`
-List all available payment providers
-
-`payments:provider:configure`
-Configure payment provider for a selected profile
-
-`payments:provider:list`
-List configured payment providers for a selected profile
-
-<br />
-
-`payments:method:list:all`
-List all available payment methods of the required Provider
-
-`payments:method:configure`
-Configure payment methods for a selected and payment provider
-
-`payments:method:list`
-List configured payment providers for a selected profile
-
-<br />
-
 `payments:profile:create`
-Create an entry for the existing DEITY Cloud environment or a test one for local development
+Create an entry for the existing DEITY Cloud environment or a test profile for local development
 
 `payments:profile:info`
 Information about the configured payments profiles
@@ -83,3 +61,25 @@ Deletes a selected payment profile
 
 `payments:profile:apply`
 Send Payments credentials to the DEITY Cloud Environment. It will set the token by applying the required env vars
+
+<br />
+
+`payments:provider:list:all`
+List all available payment providers
+
+`payments:provider:configure`
+Configure payment provider for a selected payments profile
+
+`payments:provider:list`
+List configured payment providers for a selected payments profile
+
+<br />
+
+`payments:method:list:all`
+List all available payment methods of the required provider
+
+`payments:method:configure`
+Configure payment methods for a selected and payment provider
+
+`payments:method:list`
+List configured payment providers for a selected payments profile

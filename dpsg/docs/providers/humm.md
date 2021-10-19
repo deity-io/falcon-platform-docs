@@ -4,7 +4,7 @@ title: Humm
 sidebar_label: Humm
 ---
 
-:::note Don't forget
+:::note Please note
 
 Even though Humm only offers one payment method, DPSG still requires a configuration of both, Humm as a payment provider and as a payment method.
 
