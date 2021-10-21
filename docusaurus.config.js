@@ -22,12 +22,12 @@ module.exports = {
           position: 'right',
           activeBasePath: '/docs/platform',
         },
-        {
-          label: 'DPSG',
-          href: '/dpsg/docs/about',
-          position: 'right',
-          activeBasePath: '/docs/docs',
-        },
+        // {
+        //   label: 'DPSG',
+        //   href: '/dpsg/docs/about',
+        //   position: 'right',
+        //   activeBasePath: '/docs/docs',
+        // },
         /* {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -56,7 +56,7 @@ module.exports = {
             },
             // {
             //   label: 'DPSG',
-            //   to: '/dpsg/docs/overview/about',
+            //   to: '/dpsg/docs/about',
             // },
             {
               label: 'Falcon UI',

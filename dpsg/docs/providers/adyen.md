@@ -12,7 +12,7 @@ sidebar_label: Adyen
 - PayPal : `paypal`
 - AfterPay : `afterpaytouch` (AUS and NZ only)
 - Klarna : `klarna_account`
-- Zip : `Zip`
+- Zip : `zip`
 
 While these docs are updated frequently, make sure to also check for supported methods using `dcloud payments:method:list:all` to fetch all implemented methods.
 
