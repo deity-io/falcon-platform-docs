@@ -97,6 +97,7 @@ Through this function you are able to register all services (dependencies) into 
 
 - FalconModule extension class: `DataSource`, `EventHandler` or `EndpointManager`
 - custom written `class`, `function` or `const` which are used inside particular module and/or should be visible for FalconServer host application.
+- FalconServer host instances, like `fetch`, `Logger`, `HttpSession`, [see](./falcon-server-services) full list of them
 
 `servicesRegistry` method, through its argument, provide and set of method which should be used in order to manage all your module dependencies. We are using [inversify](https://inversify.io/) under the hood, however api which we are exposing is slights changed.
 
@@ -177,6 +178,8 @@ In order to bind [Data Source](./data-sources): you need to use `toDataSource` b
 registry.bind('FooDataSource').toDataSource(FooDataSource);
 ```
 
+Your Data Source class needs to extend `DataSource` abstract class located in `@deity/falcon-server-env` npm package.
+
 <Tabs>
 <TabItem value="TypeScript" default>
 
@@ -218,13 +221,15 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-#### Binding Rest Endpoint Handlers
+#### Binding Rest Endpoint Manager
 
-In order to bind [Rest Endpoint Handlers](./rest-endpoints) you need to use `toEndpointManager` binding syntax method:
+In order to bind [Rest Endpoint Manager](./rest-endpoints) you need to use `toEndpointManager` binding syntax method:
 
 ```ts
 registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
 ```
+
+Your Rest Endpoint Manager class needs to extend `EndpointManager` abstract class located in `@deity/falcon-server-env` npm package.
 
 <Tabs>
 <TabItem value="TypeScript" default>
@@ -269,21 +274,24 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 #### Binding Event Handlers
 
-In order to bind [Event Handlers](./event-handlers) you need to use `toEndpointManager` binding syntax method:
+In order to bind [Event Handlers](./event-handlers) you need to use `toEventHandler` binding syntax method:
 
 ```ts
-registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
+registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
 ```
+
+Your Event Handler class needs to extend `EventHandler` abstract class located in `@deity/falcon-server-env` npm package.
+
 
 <Tabs>
 <TabItem value="TypeScript" default>
 
 ```ts
 import { injectable } from 'inversify';
-import { FalconModule, FalconModuleRegistryProps, EndpointManager } from '@deity/falcon-server-env';
+import { FalconModule, FalconModuleRegistryProps, EventHandler } from '@deity/falcon-server-env';
 
 @injectable()
-class FooEventHandler extends EndpointManager {}
+class FooEventHandler extends EventHandler {}
 
 export class FooModule extends FalconModule {
   servicesRegistry(registry: FalconModuleRegistryProps) {
@@ -299,9 +307,9 @@ export class FooModule extends FalconModule {
 
 ```js
 const { injectable, decorate } = require('inversify');
-const { FalconModule, EndpointManager } = require('@deity/falcon-server-env');
+const { FalconModule, EventHandler } = require('@deity/falcon-server-env');
 
-class FooEventHandler extends EndpointManager {}
+class FooEventHandler extends EventHandler {}
 decorate(injectable(), FooEventHandler);
 
 module.exports.CustomModule = class CustomModule extends FalconModule {
