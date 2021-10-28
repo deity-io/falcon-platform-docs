@@ -378,6 +378,10 @@
           ]
         },
         {
+          "type": "doc",
+          "id": "version-2/platform/integration/commercetools"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Magento 2",
