@@ -87,7 +87,7 @@ Here is an list of all methods and poperies of FalconModule:
 
 - `servicesRegistry(registry: FalconModuleRegistryProps): void` - through this method you are able to register all dependencies which are used by module, to lear how to bind new or rebind existing one, learn more in [Services registry](#services-registry) section. To learn why you need this, see [Dependency Injection](#dependency-injection).
 
-- `gqlResolvers(): GqlResolversMap` - through this method you are able to define all GraphQL resolvers, to lear how to define new or override existing one [GraphQl resolvers](#graphql-resolvers-map) section.
+- `gqlResolvers(): GqlResolversMap` - through this method you are able to define all GraphQL resolvers, to lear how to define new or override existing one [GraphQL resolvers](#graphql-resolvers-map) section.
 
 - `mergeGqlResolvers(resolversMapA, resolversMapB): GqlResolversMap` - `protected` method which allows you to merge two GraphQL resolvers object maps into one.
 
@@ -339,7 +339,7 @@ TODO: prepare some good introduction of this topic:
 - https://stackoverflow.com/questions/6550700/inversion-of-control-vs-dependency-injection
 - https://medium.com/@mena.meseha/dependency-injection-complete-guide-14b5ee4e47eb
 
-## GraphQl resolvers map
+## GraphQL resolvers map
 
 Basically, the resolvers map is a tree of objects, where object keys are mapped to Queries and Mutations defined in GQL schema file, while values of that keys are functions (resolvers) which define a way how the value of specific filed should be calculated.
 
@@ -356,7 +356,7 @@ where:
 - `context` - provides resolver execution context, like http request context, http session, data sources map, [read more](#graphql-resolver-context)
 - `info` - provides graphQL specific metadata about executed resolver, [read more](https://graphql.org/graphql-js/type/#graphqlobjecttype)
 
-For more information about GraphQl resolver API please see [graphql.org](https://graphql.org/learn/execution/#root-fields-resolvers) or [apollo-server](https://www.apollographql.com/docs/apollo-server/data/resolvers/) documentation.
+For more information about GraphQL resolver API please see [graphql.org](https://graphql.org/learn/execution/#root-fields-resolvers) or [apollo-server](https://www.apollographql.com/docs/apollo-server/data/resolvers/) documentation.
 
 ### GraphQL resolver Context
 
