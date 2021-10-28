@@ -64,13 +64,15 @@ module.exports = {
         Modules: [
           'platform/server-v3/modules/about',
           'platform/server-v3/modules/module-api',
+          'platform/server-v3/modules/custom-module',
+          'platform/server-v3/modules/data-sources',
+          'platform/server-v3/modules/event-handlers',
+          'platform/server-v3/modules/rest-endpoints',
           'platform/server-v3/migration-guide',
         ],
       },
-      'platform/server-v3/data-sources',
-      'platform/server-v3/event-handlers',
-      'platform/server-v3/rest-endpoints',
       'platform/server-v3/dynamic-routing',
+      'platform/server-v3/extension-scopes',
     ],
     Cloud: [
       'platform/cloud/about',

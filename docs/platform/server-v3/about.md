@@ -18,6 +18,6 @@ The focus for Falcon Server 3 is to provide much better internal structure which
 
 In order to do so we have implemented inversion of control pattern based on [InversifyJS](https://github.com/inversify/InversifyJS). Thanks to this developers have much more control over the way how extensions are loaded, initialized and managed during request processing.
 
-Additionally, all the subsystems ([Event Handlers](./event-handlers.md), [Data Sources](./data-sources.md), [Rest Endpoints](./rest-endpoints.md)) of Falcon Server use now the same mechanism and can be registered in the same way.
+Additionally, all the subsystems ([Event Handlers](./modules/event-handlers.md), [Data Sources](./modules/data-sources.md), [Rest Endpoints](./modules/rest-endpoints.md)) of Falcon Server use now the same mechanism and can be registered in the same way.
 
 See [Modules](./modules/about.md) section for more information.

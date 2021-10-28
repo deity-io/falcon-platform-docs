@@ -171,7 +171,7 @@ Since Data Sources, Rest Endpoint Handlers,and Event Handlers are Falcon Middlew
 
 #### Binding Data Sources
 
-In order to bind [Data Source](../data-sources): you need to use `toDataSource` binding syntax method:
+In order to bind [Data Source](./data-sources): you need to use `toDataSource` binding syntax method:
 
 ```ts
 registry.bind('FooDataSource').toDataSource(FooDataSource);
@@ -220,7 +220,7 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 #### Binding Rest Endpoint Handlers
 
-In order to bind [Rest Endpoint Handlers](../rest-endpoints) you need to use `toEndpointManager` binding syntax method:
+In order to bind [Rest Endpoint Handlers](./rest-endpoints) you need to use `toEndpointManager` binding syntax method:
 
 ```ts
 registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
@@ -269,7 +269,7 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 #### Binding Event Handlers
 
-In order to bind [Event Handlers](../event-handlers) you need to use `toEndpointManager` binding syntax method:
+In order to bind [Event Handlers](./event-handlers) you need to use `toEndpointManager` binding syntax method:
 
 ```ts
 registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
@@ -386,7 +386,7 @@ where:
 
 #### Context DataSources map
 
-To read more about DataSources see [DataSources](../data-sources) section;
+To read more about DataSources see [DataSources](./data-sources) section;
 
 ## Example
 

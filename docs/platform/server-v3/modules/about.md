@@ -18,9 +18,9 @@ enterprise_only: true
 
 Falcon Module is a package that contains implementations of all the pieces required to achieve particular thing. Falcon Module needs to exports their content via named export, default export will be ignored. Falcon Server expects only known Module extension classes, anything else, which is outside of the predefined list will be ignored:
 
-- [Data Source](../data-sources) - Used by GraphQL resolvers to fetch the data from various services. By default, Falcon Module can contain only one implementation of it due to auto-discovery. However, by using our Dependency Injection framework, you can define more of them, please read more about that in [Falcon Module and Dependency Injection](#falcon_module_and_dependency_injection) section.
-- [Rest Endpoint Handler](../rest-endpoints) - REST webhook handler allows you to execute any action for incoming HTTP request. Module can contain any number of it.
-- [Event Handler](../event-handlers) - Handler for in-proc emitted events. Module can contain any number of it.
+- [Data Source](./data-sources) - Used by GraphQL resolvers to fetch the data from various services. By default, Falcon Module can contain only one implementation of it due to auto-discovery. However, by using our Dependency Injection framework, you can define more of them, please read more about that in [Falcon Module and Dependency Injection](#falcon_module_and_dependency_injection) section.
+- [Rest Endpoint Handler](./rest-endpoints) - REST webhook handler allows you to execute any action for incoming HTTP request. Module can contain any number of it.
+- [Event Handler](./event-handlers) - Handler for in-proc emitted events. Module can contain any number of it.
 
 However, Falcon Module allows you to compose code according to [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) principle, which is helpful with large code base, and makes unit-testing easier. We highly recommending this approach. The Falcon Module needs to export following:
 
@@ -108,9 +108,9 @@ and then Falcon Server on startup will try to load `src/custom-wordpress-module/
 
 [As mentioned earlier](#what-is-a-module-in-falcon) Falcon Server 3 modules can expose multiple things at once.
 
-The easiest way to extend Falcon Server with custom module is to extend the classes provided by Falcon Server and export these from a module. During startup Falcon Server will read everything from within that module and base on the base types of exported things it will register these as proper things in IOC container. Falcon Server accept only [Data Sources](../data-sources), [Rest Endpoint Handlers](../rest-endpoints) and [Event Handlers](../event-handlers), anything else will be ignored. But if your module exports [Falcon Module](./module-api) then only it will be loaded according to [Manual binding for module](#manual-binding-for-module)
+The easiest way to extend Falcon Server with custom module is to extend the classes provided by Falcon Server and export these from a module. During startup Falcon Server will read everything from within that module and base on the base types of exported things it will register these as proper things in IOC container. Falcon Server accept only [Data Sources](./data-sources), [Rest Endpoint Handlers](./rest-endpoints) and [Event Handlers](./event-handlers), anything else will be ignored. But if your module exports [Falcon Module](./module-api) then only it will be loaded according to [Manual binding for module](#manual-binding-for-module)
 
-See examples of [Data Sources](../data-sources), [Rest Endpoint Handlers](../rest-endpoints) and [Event Handlers](../event-handlers) for the details.
+See examples of [Data Sources](./data-sources), [Rest Endpoint Handlers](./rest-endpoints) and [Event Handlers](./event-handlers) for the details.
 
 ### Manual binding for module
 

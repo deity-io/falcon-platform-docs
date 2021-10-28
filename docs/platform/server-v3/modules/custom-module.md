@@ -181,4 +181,4 @@ here is an example of an the most basic way of defining new module
 </TabItem>
 </Tabs>
 
-See examples of [Data Sources](../data-sources), [Event Handlers](../event-handlers), and [Rest Endpoint Handlers](../rest-endpoints) for the details.
+See examples of [Data Sources](./data-sources), [Event Handlers](./event-handlers), and [Rest Endpoint Handlers](./rest-endpoints) for the details.
