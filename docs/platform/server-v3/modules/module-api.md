@@ -91,7 +91,7 @@ Here is an list of all methods and poperies of FalconModule:
 
 - `mergeGqlResolvers(resolversMapA, resolversMapB): GqlResolversMap` - `protected` method which allows you to merge two GraphQL resolvers object maps into one.
 
-## Services registry
+## `servicesRegistry`
 
 Through this function you are able to register all services (dependencies) into container registry. Exposed api allows you to control not only the way in which any particular service should be created, but also the lifetime of that instances. Service (dependency) stands for:
 
@@ -128,8 +128,8 @@ registry.bind('Foo').to(Foo);
 <TabItem value="TypeScript" default>
 
 ```ts
-import { FalconModule, FalconModuleRegistryProps } from '@deity/falcon-server-env';
 import { injectable } from 'inversify';
+import { FalconModule, FalconModuleRegistryProps } from '@deity/falcon-server-env';
 
 @injectable()
 class Foo {}
@@ -318,28 +318,9 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 ### Rebinding services
 
-TODO:
+_**TODO:**_
 
-That callback will be passed with `bind` function which allows for binding and scope control as [InversifyJS](https://github.com/inversify/InversifyJS/blob/master/wiki/scope.md) does plus exposes additional methods for registration of the following Falcon Server specific types:
-
-### Using Service Registry bindings
-
-TODO:
-
-### Dependency Injection
-
-To allow all above, Falcon Module introducing support of [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). It is possible due to usage of `inversify` under the hood as an Dependency Injection framework. If you are not not familiar with `inversify` nor Inversion of Control please look here
-
-TODO: prepare some good introduction of this topic:
-
-- https://indepth.dev/posts/1049/why-do-we-have-dependency-injection-in-web-development
-- https://viktor-kukurba.medium.com/dependency-injection-and-inversion-of-control-in-javascript-303e07e7f43f
-- https://bulldogjob.pl/articles/1099-od-kodu-spaghetti-do-kontenerow-ioc-w-javascript-i-typescript
-- https://blog.angular-university.io/angular-dependency-injection/
-- https://stackoverflow.com/questions/6550700/inversion-of-control-vs-dependency-injection
-- https://medium.com/@mena.meseha/dependency-injection-complete-guide-14b5ee4e47eb
-
-## GraphQL resolvers map
+## `gqlResolvers`
 
 Basically, the resolvers map is a tree of objects, where object keys are mapped to Queries and Mutations defined in GQL schema file, while values of that keys are functions (resolvers) which define a way how the value of specific filed should be calculated.
 
@@ -377,7 +358,7 @@ type GraphQLContext<TDataSources extends DataSourcesMap = DataSourcesMap> = {
 
 where:
 
-- `scope` - an object key-value map of Extension name and Extension scope id [see the details](#TODO:)
+- `scope` - an object key-value map of Extension name and Extension Scope Id [see the details](../extension-scopes)
 - `dataSources` - an object key-value map of DataSource name and its instance, [see the details](#context-datasources-map)
 - `cache` - give you direct access to cache.
 - `session` - http session cookie, which is an object key-value map of Extension name, and actual session value.
@@ -387,6 +368,27 @@ where:
 #### Context DataSources map
 
 To read more about DataSources see [DataSources](./data-sources) section;
+
+---
+
+## Using Service Registry bindings
+
+Falcon Module services registry is powerful tool when it comes into code organization. As described in introduction to [Falcon Module API](module-api) it lets you to extract any kind of dependency and also have access to dependencies defined via FalconServer itself.
+
+## Dependency Injection
+
+To allow all above, Falcon Module introducing support of [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). It is possible due to usage of `inversify` under the hood as an Dependency Injection framework. If you are not not familiar with `inversify` nor Inversion of Control please look here
+
+_**TODO: prepare some good introduction of this topic:**_
+
+- https://indepth.dev/posts/1049/why-do-we-have-dependency-injection-in-web-development
+- https://viktor-kukurba.medium.com/dependency-injection-and-inversion-of-control-in-javascript-303e07e7f43f
+- https://bulldogjob.pl/articles/1099-od-kodu-spaghetti-do-kontenerow-ioc-w-javascript-i-typescript
+- https://blog.angular-university.io/angular-dependency-injection/
+- https://stackoverflow.com/questions/6550700/inversion-of-control-vs-dependency-injection
+- https://medium.com/@mena.meseha/dependency-injection-complete-guide-14b5ee4e47eb
+
+<!--
 
 ## Example
 
@@ -429,4 +431,4 @@ module.exports = new FalconModule({
     // also you can bind anything that can be bound with InversifyJS and then inject it later in the code
   }
 });
-```
+``` -->
