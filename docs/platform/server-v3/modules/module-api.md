@@ -320,6 +320,60 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 _**TODO:**_
 
+### Using Service Registry bindings
+
+Falcon Module services registry is powerful tool when it comes into code organization. As described in introduction to [Falcon Module API](module-api) it lets you extract any kind of dependency and also have access to dependencies defined via FalconServer itself.
+
+In order to use any of registered dependency you need to resolve them via constructor argument injection using `@inject()` decorator.
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { injectable, inject } from 'inversify';
+import { FalconModule, FalconModuleRegistryProps, DataSource } from '@deity/falcon-server-env';
+
+@injectable()
+class FooMapper {
+  mapFoo(foo) {
+    return foo; // perform some mapping
+  }
+}
+
+@injectable()
+class FooDataSource extends DataSource {
+  constructor(@inject('fetch') protected fetch, @inject('FooMapper') protected mapper: FooMapper) {}
+
+  async getFooById(id: string) {
+    const response = await this.fetch(`https://foo.com/api/foo/${id}`);
+
+    return this.mapper.mapFoo(response);
+  }
+}
+
+export class FooModule extends FalconModule {
+  servicesRegistry(registry: FalconModuleRegistryProps) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooDataSource').toDataSource(FooDataSource);
+    registry.bind('FooMapper').to(FooMapper);
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+```
+
+</TabItem>
+</Tabs>
+
+To see more advanced examples please see [Custom Modules](./custom-module) section.
+
+To see full list of services provides by default via Falcon Scope please see [Falcon Server services](./falcon-server-services) section.
+
 ## `gqlResolvers`
 
 Basically, the resolvers map is a tree of objects, where object keys are mapped to Queries and Mutations defined in GQL schema file, while values of that keys are functions (resolvers) which define a way how the value of specific filed should be calculated.
@@ -371,13 +425,9 @@ To read more about DataSources see [DataSources](./data-sources) section;
 
 ---
 
-## Using Service Registry bindings
-
-Falcon Module services registry is powerful tool when it comes into code organization. As described in introduction to [Falcon Module API](module-api) it lets you to extract any kind of dependency and also have access to dependencies defined via FalconServer itself.
-
 ## Dependency Injection
 
-To allow all above, Falcon Module introducing support of [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). It is possible due to usage of `inversify` under the hood as an Dependency Injection framework. If you are not not familiar with `inversify` nor Inversion of Control please look here
+To allow all above, Falcon Module introducing support of [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). It is possible due to usage of `inversify` under the hood as an Dependency Injection framework. If you are not familiar with `inversify` nor Inversion of Control pattern, please look here: [TODO - good reference required](./TODO)
 
 _**TODO: prepare some good introduction of this topic:**_
 
