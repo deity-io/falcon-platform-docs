@@ -119,7 +119,7 @@ To lear more about Inversion of Control pattern and Dependency Injection works, 
 
 ### Binding services
 
-In order to bin new service, you need to use `bind` method:
+In order to bind new service, you need to use `bind` method:
 
 ```ts
 registry.bind('Foo').to(Foo);
@@ -282,7 +282,6 @@ registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
 
 Your Event Handler class needs to extend `EventHandler` abstract class located in `@deity/falcon-server-env` npm package.
 
-
 <Tabs>
 <TabItem value="TypeScript" default>
 
@@ -326,45 +325,28 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 ### Rebinding services
 
-_**TODO:**_
+In order to rebind new service, you need to use `rebind` method:
 
-### Using Service Registry bindings
-
-Falcon Module services registry is powerful tool when it comes into code organization. As described in introduction to [Falcon Module API](module-api) it lets you extract any kind of dependency and also have access to dependencies defined via FalconServer itself.
-
-In order to use any of registered dependency you need to resolve them via constructor argument injection using `@inject()` decorator.
+```ts
+registry.rebind('Foo').to(Foo);
+```
 
 <Tabs>
 <TabItem value="TypeScript" default>
 
 ```ts
-import { injectable, inject } from 'inversify';
-import { FalconModule, FalconModuleRegistryProps, DataSource } from '@deity/falcon-server-env';
+import { injectable } from 'inversify';
+import { FalconModuleRegistryProps } from '@deity/falcon-server-env';
+import { FooModule: FooModuleBase, Foo: FooBase } from 'foo-module'
 
 @injectable()
-class FooMapper {
-  mapFoo(foo) {
-    return foo; // perform some mapping
-  }
-}
+class Foo extends FooBase {}
 
-@injectable()
-class FooDataSource extends DataSource {
-  constructor(@inject('fetch') protected fetch, @inject('FooMapper') protected mapper: FooMapper) {}
-
-  async getFooById(id: string) {
-    const response = await this.fetch(`https://foo.com/api/foo/${id}`);
-
-    return this.mapper.mapFoo(response);
-  }
-}
-
-export class FooModule extends FalconModule {
+export class FooModule extends FooModuleBase {
   servicesRegistry(registry: FalconModuleRegistryProps) {
     super.servicesRegistry(registry);
 
-    registry.bind('FooDataSource').toDataSource(FooDataSource);
-    registry.bind('FooMapper').to(FooMapper);
+    registry.rebind('Foo').to(Foo);
   }
 }
 ```
@@ -373,14 +355,31 @@ export class FooModule extends FalconModule {
 <TabItem value="JavaScript">
 
 ```js
+const { injectable, decorate } = require('inversify');
+const { FalconModule } = require('@deity/falcon-server-env');
+const { FooModule: FooModuleBase, Foo: FooBase } = require('foo-module');
+
+class Foo extends FooBase {}
+decorate(injectable(), Foo);
+
+module.exports.FooModule = class FooModule extends FalconModuleBase {
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+
+    registry.rebind('Foo').to(Foo);
+  }
+};
 ```
 
 </TabItem>
 </Tabs>
 
-To see more advanced examples please see [Custom Modules](./custom-module) section.
+Binding syntax returned from `rebind` method is exactly the same as for `bind`, which means if you want to rebind e.g. Data Source implementation you should use corresponding to `bind` syntax:
 
-To see full list of services provides by default via Falcon Scope please see [Falcon Server services](./falcon-server-services) section.
+
+```ts
+ registry.rebind('FooDataSource').toDataSource(ExtendedDataSource);
+```
 
 ## `gqlResolvers`
 

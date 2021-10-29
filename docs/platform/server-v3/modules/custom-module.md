@@ -182,3 +182,85 @@ here is an example of an the most basic way of defining new module
 </Tabs>
 
 See examples of [Data Sources](./data-sources), [Event Handlers](./event-handlers), and [Rest Endpoint Handlers](./rest-endpoints) for the details.
+
+## Using Service Registry bindings
+
+Falcon Module services registry is powerful tool when it comes into code organization. As described in introduction to [Falcon Module API](module-api) it lets you extract any kind of dependency and also have access to dependencies defined via FalconServer itself.
+
+In order to use any of registered dependency you need to resolve them via constructor argument injection using `@inject()` decorator.
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { injectable, inject } from 'inversify';
+import { FalconModule, FalconModuleRegistryProps, DataSource } from '@deity/falcon-server-env';
+
+@injectable()
+class FooMapper {
+  mapFoo(foo) {
+    return foo; // perform some mapping
+  }
+}
+
+@injectable()
+class FooDataSource extends DataSource {
+  constructor(@inject('fetch') protected fetch, @inject('FooMapper') protected mapper: FooMapper) {}
+
+  async getFooById(id: string) {
+    const response = await this.fetch(`https://foo.com/api/foo/${id}`);
+
+    return this.mapper.mapFoo(response);
+  }
+}
+
+export class FooModule extends FalconModule {
+  servicesRegistry(registry: FalconModuleRegistryProps) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooDataSource').toDataSource(FooDataSource);
+    registry.bind('FooMapper').to(FooMapper);
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+ TODO:
+// const { injectable, decorate } = require('inversify');
+// const { FalconModule, DataSource } = require('@deity/falcon-server-env');
+
+// class FooDataSource extends DataSource {}
+// decorate(injectable(), FooDataSource);
+
+// module.exports.CustomModule = class CustomModule extends FalconModule {
+//   servicesRegistry(registry) {
+//     super.servicesRegistry(registry);
+
+//     registry.bind('FooDataSource').toDataSource(FooDataSource);
+//   }
+// };
+```
+
+</TabItem>
+</Tabs>
+
+To see more advanced examples please see [Custom Modules](./custom-module) section.
+
+To see full list of services provides by default via Falcon Scope please see [Falcon Server services](./falcon-server-services) section.
+
+### Cross module services access
+
+## Falcon Server injectable services
+
+### Fetch
+
+### Logger
+
+### Config
+
+### Container
+
+### Event Emitter
