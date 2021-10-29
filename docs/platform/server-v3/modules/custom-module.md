@@ -10,69 +10,307 @@ import TabItem from '@theme/TabItem';
 
 Most of the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
 
-Modules can be registered in 2 ways - with [auto-discovery mechanism](#module-auto-discovery) or [manually](#manual-binding-for-module).
+// TODO: Modules can be created in 2 ways - with [auto-discovery mechanism](#module-auto-discovery) or [manually](#manual-binding-for-module).
 
-## Manual binding for module
+## Creating new Module
 
-When you need to add a custom behavior to Falcon Server which is more complex or when you need to control lifetime of the instances of your modules you might want to implement the module in a manual way.
+To create the most basic (an empty) module it is enough to export implementation of `FalconModule` abstract class. Following module will be correctly loaded and registered in Falcon Server, even it does nothing.
 
-In that case you need to implement all the classes as usual and then use [Falcon Module](./module-api) to register these classes to be loaded and instantiated in a particular way.
-
-#### Creating new module with manual binding example
-
-<Tabs values={[ { label: 'TypeScript', value: 'ts' }, { label: 'JavaScript', value: 'js' } ]}>
-<TabItem value="ts">
+<Tabs>
+<TabItem value="TypeScript" default>
 
 ```ts
-import { injectable } from 'inversify';
-import { FalconModule, DataSource } from '@deity/falcon-server-env';
+import { FalconModule } from '@deity/falcon-server-env';
 
-@injectable()
-class ShopDataSource extends DataSource {
-  constructor() {
-    super('shop');
-  }
-
-  getProductById(id: Id){
-    console.log('Fetching project');
-
-    return {
-      id
-      name: `product ${id}`,
-    }
-  }
-}
-
-export class ShopModule extends FalconModule {
-  servicesRegistry(registry) {
-    super.servicesRegistry(registry);
-
-    bind('ShopDataSource').toDataSource(ShopDataSource);
-  }
-
-  gqlResolvers() {
-    return this.mergeGqlResolvers(super.gqlResolvers(), {
-      Query:{
-        product: (root, args, context, info) => {
-          return context.dataSources.shop.getProductById(args.id);
-        }
-      }
-    });
+export class CustomModule extends FalconModule<any> {
+  constructor(config: any) {
+    super(config);
   }
 }
 ```
 
 </TabItem>
-<TabItem value="js">
+<TabItem value="JavaScript">
 
 ```js
+const { FalconModule } = require('@deity/falcon-server-env');
 
+module.exports.CustomModule = class CustomModule extends FalconModule {
+  constructor(config) {
+    super(config);
+  }
+};
 ```
 
 </TabItem>
 </Tabs>
 
-#### Extending existing module with manual binding example
+However, as described in [about](./about#what-is-a-module-in-falcon), Falcon Module can provide implementation of various module extension points and define any custom services too. The following examples show how to register a particular one, but it is perfectly fine, to define any number of them, inside one Falcon Module. So feel free to mix them in order to provide consistent business feature implementation.
+
+### Adding GraphQL resolver
+
+Lets assume that you already have registered corresponding Falcon Extensions which defines following GraphQl schema:
+
+```graphql
+extend type Query {
+  fooList: FooList!
+}
+
+type FooList {
+  items: [Foo!]!
+}
+
+type Foo {
+  id: ID!
+  name: String!
+}
+```
+
+To add resolver implementation of `fooList` query, you need to define resolver implementation via `gqlResolvers` method:
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { FalconModule, GqlResolversMap } from '@deity/falcon-server-env';
+
+export class CustomModule extends FalconModule<{}> {
+  constructor(config: {}) {
+    super(config);
+  }
+
+  gqlResolvers(): GqlResolversMap {
+    const resolversMap: GqlResolversMap = {
+      Query: {
+        fooList: () => [
+          { id: 1, name: 'foo 1' },
+          { id: 2, name: 'foo 2' },
+          { id: 3, name: 'foo 3' }
+        ]
+      }
+    };
+
+    return this.mergeGqlResolvers(super.gqlResolvers(), resolversMap);
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { FalconModule } = require('@deity/falcon-server-env');
+
+module.exports.CustomModule = class CustomModule extends FalconModule {
+  constructor(config) {
+    super(config);
+  }
+
+  gqlResolvers() {
+    const resolversMap = {
+      Query: {
+        fooList: () => [
+          { id: 1, name: 'foo 1' },
+          { id: 2, name: 'foo 2' },
+          { id: 3, name: 'foo 3' }
+        ]
+      }
+    };
+
+    return this.mergeGqlResolvers(super.gqlResolvers(), resolversMap);
+  }
+};
+```
+
+</TabItem>
+</Tabs>
+
+#### Adding GraphQL Type resolver
+
+Very ofter there is an need to do a mapping of data returned from particular API to model defined via GraphQL schema. Resolvers map allows to define GraphQL Type resolver, which make possible to define mapping once for entire schema, no matter how many queries and/or mutations will return specific type, result of those will be mapped according to defined Type resolver.
+
+Lest say there is a need to capitalize `Foo.name`. To achieve that `Foo.name` GraphQL Type resolver should be added into `resolversMap`:
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+const resolversMap: GqlResolversMap = {
+  Query: {
+    fooList: () => [
+      { id: 1, name: 'foo 1' },
+      { id: 2, name: 'foo 2' },
+      { id: 3, name: 'foo 3' }
+    ]
+  },
+  Foo: {
+    name: root => toTitleCase(root.name)
+  }
+};
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const resolversMap = {
+  Query: {
+    fooList: () => [
+      { id: 1, name: 'foo 1' },
+      { id: 2, name: 'foo 2' },
+      { id: 3, name: 'foo 3' }
+    ]
+  },
+  Foo: {
+    name: root => toTitleCase(root.name)
+  }
+};
+```
+
+</TabItem>
+</Tabs>
+
+#### Using DataSource
+
+During development, amount of GraphQL resolvers, data manipulation mappers, business logic functions is growing relay fast. And there is a need to organize code base somehow in a better way. Here Data Sources appears, to read more about idea behind it go into [Data Sources](./data-sources) section. Following example shows them in action:
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { FalconModule, GqlResolversMap, GraphQLContext } from '@deity/falcon-server-env';
+import { FooDataSource } from './FooDataSource';
+
+export type CustomGraphQLContext = GraphQLContext<{ foo: FooDataSource }>;
+export class CustomModule extends FalconModule<{}> {
+  constructor(config: {}) {
+    super(config);
+  }
+
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooDataSource').toDataSource(FooDataSource);
+  }
+
+  gqlResolvers(): GqlResolversMap<CustomGraphQLContext> {
+    const resolversMap: GqlResolversMap<CustomGraphQLContext> = {
+      Query: {
+        fooList: (root, args, context) => context.dataSources.foo.getFooList()
+      },
+      Foo: {
+        name: root => toTitleCase(root.name)
+      }
+    };
+
+    return this.mergeGqlResolvers(super.gqlResolvers(), resolversMap);
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { FalconModule } = require('@deity/falcon-server-env');
+const { FooDataSource } = require './FooDataSource';
+
+module.exports.CustomModule = class CustomModule extends FalconModule {
+  constructor(config) {
+    super(config);
+  }
+
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooDataSource').toDataSource(FooDataSource);
+  }
+
+  gqlResolvers() {
+    const resolversMap = {
+      Query: {
+        fooList: (root, args, context) => context.dataSources.foo.getFooList()
+      },
+      Foo: {
+        name: root => toTitleCase(root.name)
+      }
+    };
+
+    return this.mergeGqlResolvers(super.gqlResolvers(), resolversMap);
+  }
+};
+```
+
+</TabItem>
+</Tabs>
+
+### Adding Module Extension Points
+
+Besides Data Sources, Falcon Module can have Event Handlers and Rest Endpoint Handlers. To find out how to implements them please see:
+
+- [Data Sources](./data-sources)
+- [Event Handlers](./event-handlers)
+- [Rest Endpoint Handlers](./rest-endpoints)
+
+Once you implement any of these listed above, in order to register them, you need to create binding in `servicesRegistry` method:
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { FalconModule, GqlResolversMap, GraphQLContext } from '@deity/falcon-server-env';
+import { FooDataSource } from './FooDataSource';
+import { FooRestEndpointHandler } from './FooRestEndpointHandler';
+import { AfterInitializationEventHandler } from './AfterInitializationEventHandler';
+
+export type CustomGraphQLContext = GraphQLContext<{ foo: FooDataSource }>;
+export class CustomModule extends FalconModule<{}> {
+  constructor(config: {}) {
+    super(config);
+  }
+
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooDataSource').toDataSource(FooDataSource);
+    registry.bind('FooRestEndpointHandler').toEndpointManager(FooRestEndpointHandler);
+    registry.bind('AfterInitializationEventHandler').toEventHandler(AfterInitializationEventHandler);
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { FalconModule, DataSource } = require('@deity/falcon-server-env');
+const { FooDataSource } = require('./FooDataSource);
+const { FooRestEndpointHandler } = require('./FooRestEndpointHandler');
+const { AfterInitializationEventHandler } = require('./AfterInitializationEventHandler');
+
+module.exports.CustomModule = class CustomModule extends FalconModule {
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooDataSource').toDataSource(FooDataSource);
+    registry.bind('FooRestEndpointHandler').toEndpointManager(FooRestEndpointHandler);
+    registry.bind('AfterInitializationEventHandler').toEventHandler(AfterInitializationEventHandler);
+  }
+};
+```
+
+</TabItem>
+</Tabs>
+
+### Implementing custom service
+
+(like mailer/payments)
+
+## Creating new Module with Extension Points auto-discovery
+
+## Extending Module
+
+### Extending existing module with manual binding example
 
 <Tabs defaultValue="ts" values={[ { label: 'TypeScript', value: 'ts' }, { label: 'JavaScript', value: 'js' } ]}>
 <TabItem value="ts">
@@ -154,34 +392,11 @@ export class CommerceToolsModule extends CommerceToolsModule {
 </TabItem>
 </Tabs>
 
-## Module auto-discovery
+### Module Extension Points auto-discovery
 
 [As mentioned earlier](#what-is-a-module-in-falcon) Falcon Server 3 modules can expose multiple things at once.
 
 The easiest way to extend Falcon Server with custom module is to extend the classes provided by Falcon Server and export these from a module. During startup Falcon Server will read everything from within that module and base on the types of exported things it will register these as proper things in IOC container.
-
-#### New module example
-
-here is an example of an the most basic way of defining new module
-
-<Tabs defaultValue="ts" values={[ { label: 'TypeScript', value: 'ts' }, { label: 'JavaScript', value: 'js' } ]}>
-<TabItem value="ts">
-
-```ts
-
-```
-
-</TabItem>
-<TabItem value="js">
-
-```js
-
-```
-
-</TabItem>
-</Tabs>
-
-See examples of [Data Sources](./data-sources), [Event Handlers](./event-handlers), and [Rest Endpoint Handlers](./rest-endpoints) for the details.
 
 ## Using Service Registry bindings
 

@@ -79,7 +79,7 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-Here is an list of all methods and poperies of FalconModule:
+Here is an list of all methods and poperies of `FalconModule` abstract class:
 
 - `constructor(config: TConfig)` - As you can see constructor of FalconModule accepts configuration object. It will be provided via Falcon Server when Module will be loaded. So you are able to configure your Module initialization.
 
@@ -180,47 +180,6 @@ registry.bind('FooDataSource').toDataSource(FooDataSource);
 
 Your Data Source class needs to extend `DataSource` abstract class located in `@deity/falcon-server-env` npm package.
 
-<Tabs>
-<TabItem value="TypeScript" default>
-
-```ts
-import { injectable } from 'inversify';
-import { FalconModule, FalconModuleRegistryProps, DataSource } from '@deity/falcon-server-env';
-
-@injectable()
-class FooDataSource extends DataSource {}
-
-export class FooModule extends FalconModule {
-  servicesRegistry(registry: FalconModuleRegistryProps) {
-    super.servicesRegistry(registry);
-
-    registry.bind('FooDataSource').toDataSource(FooDataSource);
-  }
-}
-```
-
-</TabItem>
-<TabItem value="JavaScript">
-
-```js
-const { injectable, decorate } = require('inversify');
-const { FalconModule, DataSource } = require('@deity/falcon-server-env');
-
-class FooDataSource extends DataSource {}
-decorate(injectable(), FooDataSource);
-
-module.exports.CustomModule = class CustomModule extends FalconModule {
-  servicesRegistry(registry) {
-    super.servicesRegistry(registry);
-
-    registry.bind('FooDataSource').toDataSource(FooDataSource);
-  }
-};
-```
-
-</TabItem>
-</Tabs>
-
 #### Binding Rest Endpoint Manager
 
 In order to bind [Rest Endpoint Manager](./rest-endpoints) you need to use `toEndpointManager` binding syntax method:
@@ -231,46 +190,6 @@ registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
 
 Your Rest Endpoint Manager class needs to extend `EndpointManager` abstract class located in `@deity/falcon-server-env` npm package.
 
-<Tabs>
-<TabItem value="TypeScript" default>
-
-```ts
-import { injectable } from 'inversify';
-import { FalconModule, FalconModuleRegistryProps, EndpointManager } from '@deity/falcon-server-env';
-
-@injectable()
-class FooEndpointManager extends EndpointManager {}
-
-export class FooModule extends FalconModule {
-  servicesRegistry(registry: FalconModuleRegistryProps) {
-    super.servicesRegistry(registry);
-
-    registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
-  }
-}
-```
-
-</TabItem>
-<TabItem value="JavaScript">
-
-```js
-const { injectable, decorate } = require('inversify');
-const { FalconModule, EndpointManager } = require('@deity/falcon-server-env');
-
-class FooEndpointManager extends DataSource {}
-decorate(injectable(), FooEndpointManager);
-
-module.exports.CustomModule = class CustomModule extends FalconModule {
-  servicesRegistry(registry) {
-    super.servicesRegistry(registry);
-
-    registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
-  }
-};
-```
-
-</TabItem>
-</Tabs>
 
 #### Binding Event Handlers
 
@@ -281,47 +200,6 @@ registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
 ```
 
 Your Event Handler class needs to extend `EventHandler` abstract class located in `@deity/falcon-server-env` npm package.
-
-<Tabs>
-<TabItem value="TypeScript" default>
-
-```ts
-import { injectable } from 'inversify';
-import { FalconModule, FalconModuleRegistryProps, EventHandler } from '@deity/falcon-server-env';
-
-@injectable()
-class FooEventHandler extends EventHandler {}
-
-export class FooModule extends FalconModule {
-  servicesRegistry(registry: FalconModuleRegistryProps) {
-    super.servicesRegistry(registry);
-
-    registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
-  }
-}
-```
-
-</TabItem>
-<TabItem value="JavaScript">
-
-```js
-const { injectable, decorate } = require('inversify');
-const { FalconModule, EventHandler } = require('@deity/falcon-server-env');
-
-class FooEventHandler extends EventHandler {}
-decorate(injectable(), FooEventHandler);
-
-module.exports.CustomModule = class CustomModule extends FalconModule {
-  servicesRegistry(registry) {
-    super.servicesRegistry(registry);
-
-    registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
-  }
-};
-```
-
-</TabItem>
-</Tabs>
 
 ### Rebinding services
 
@@ -374,7 +252,7 @@ module.exports.FooModule = class FooModule extends FalconModuleBase {
 </TabItem>
 </Tabs>
 
-Binding syntax returned from `rebind` method is exactly the same as for `bind`, which means if you want to rebind e.g. Data Source implementation you should use corresponding to `bind` syntax:
+Binding syntax returned from `rebind` method is exactly the same as for `bind`, which means if you want to rebind e.g. Data Source implementation you should use corresponding to `bind` method syntax:
 
 
 ```ts
