@@ -137,7 +137,7 @@ Since Data Sources, Rest Endpoint Handlers,and Event Handlers are Falcon Middlew
 
 #### Binding Data Sources
 
-In order to bind [Data Source](./data-sources): you need to use `toDataSource` binding syntax method:
+In order to bind [Data Source](./common-services/data-sources): you need to use `toDataSource` binding syntax method:
 
 ```ts
 registry.bind('FooDataSource').toDataSource(FooDataSource);
@@ -147,7 +147,7 @@ Your Data Source class needs to extend `DataSource` abstract class located in `@
 
 #### Binding Rest Endpoint Manager
 
-In order to bind [Rest Endpoint Manager](./rest-endpoints) you need to use `toEndpointManager` binding syntax method:
+In order to bind [Rest Endpoint Manager](./common-services/rest-endpoints) you need to use `toEndpointManager` binding syntax method:
 
 ```ts
 registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
@@ -157,7 +157,7 @@ Your Rest Endpoint Manager class needs to extend `EndpointManager` abstract clas
 
 #### Binding Event Handlers
 
-In order to bind [Event Handlers](./event-handlers) you need to use `toEventHandler` binding syntax method:
+In order to bind [Event Handlers](./common-services/event-handlers) you need to use `toEventHandler` binding syntax method:
 
 ```ts
 registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
@@ -269,7 +269,7 @@ where:
 
 #### Context DataSources map
 
-To read more about DataSources see [DataSources](./data-sources) section;
+To read more about DataSources see [DataSources](./common-services/data-sources) section;
 
 ---
 
@@ -335,9 +335,9 @@ module.exports = new FalconModule({
 
 With auto-discovery feature, you can just export classes which extends Falcon Common Services:
 
-- [Data Sources](./data-sources)
-- [Event Handlers](./event-handlers)
-- [Rest Endpoint Handlers](./rest-endpoints)
+- [Data Sources](./common-services/data-sources)
+- [Event Handlers](./common-services/event-handlers)
+- [Rest Endpoint Handlers](./common-services/rest-endpoints)
 
 Then Falcon Server will do the required services registration by himself during startup.
 

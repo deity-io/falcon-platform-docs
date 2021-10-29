@@ -65,9 +65,13 @@ module.exports = {
           'platform/server-v3/modules/about',
           'platform/server-v3/modules/module-api',
           'platform/server-v3/modules/custom-module',
-          'platform/server-v3/modules/data-sources',
-          'platform/server-v3/modules/event-handlers',
-          'platform/server-v3/modules/rest-endpoints',
+          {
+            'Module Common Services': [
+              'platform/server-v3/modules/common-services/data-sources',
+              'platform/server-v3/modules/common-services/event-handlers',
+              'platform/server-v3/modules/common-services/rest-endpoints',
+            ],
+          },
           'platform/server-v3/migration-guide',
         ],
       },

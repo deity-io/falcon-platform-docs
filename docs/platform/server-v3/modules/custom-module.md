@@ -170,7 +170,7 @@ const resolversMap = {
 
 #### Using DataSource
 
-During development, amount of GraphQL resolvers, data manipulation mappers, business logic functions is growing relay fast. And there is a need to organize code base somehow in a better way. Here Data Sources appears, to read more about idea behind it go into [Data Sources](./data-sources) section. Following example shows them in action:
+During development, amount of GraphQL resolvers, data manipulation mappers, business logic functions is growing relay fast. And there is a need to organize code base somehow in a better way. Here Data Sources appears, to read more about idea behind it go into [Data Sources](./common-services/data-sources) section. Following example shows them in action:
 
 <Tabs>
 <TabItem value="TypeScript" default>
@@ -246,9 +246,9 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 Besides Data Sources, Falcon Module can have Event Handlers and Rest Endpoint Handlers. To find out how to implements them please see:
 
-- [Data Sources](./data-sources)
-- [Event Handlers](./event-handlers)
-- [Rest Endpoint Handlers](./rest-endpoints)
+- [Data Sources](./common-services/data-sources)
+- [Event Handlers](./common-services/event-handlers)
+- [Rest Endpoint Handlers](./common-services/rest-endpoints)
 
 Once you implement any of these listed above, in order to register them, you need to create binding in `servicesRegistry` method:
 
@@ -364,9 +364,9 @@ Bare in mind, since custom services are not recognizable by Falcon Server, these
 
 Falcon Module common services auto-discovery feature, lets you just export classes which extends:
 
-- [Data Sources](./data-sources)
-- [Event Handlers](./event-handlers)
-- [Rest Endpoint Handlers](./rest-endpoints)
+- [Data Sources](./common-services/data-sources)
+- [Event Handlers](./common-services/event-handlers)
+- [Rest Endpoint Handlers](./common-services/rest-endpoints)
 
 Then Falcon Server during the startup will analyse exported by particular module class, and will do the required services registration by himself.
 
