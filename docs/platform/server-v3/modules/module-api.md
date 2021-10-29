@@ -9,10 +9,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 As mentioned [here](./about#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in Falcon Server.
-
-With auto-discovery feature you can just export classes that extend interfaces and classes delivered by Falcon and Falcon Server will bind these correctly during startup.
-
-However, auto-discovery doesn't cover all the possible things you can do in FalconServer, as you might want to:
+Its powerful api allows to:
 
 - manage large code base
 - makes your code base testable
@@ -22,62 +19,30 @@ However, auto-discovery doesn't cover all the possible things you can do in Falc
 - create DataSource for GraphQL that does not extend data sources provided by Falcon
 - and many more
 
-For that purpose you can use Falcon Module that exposes helpers that allows you to bind classes for particular features.
-
-To use Falcon Module features, your module main file needs to export class derived from `FalconModule` abstract class. Here is an empty Module definition:
-
-<Tabs>
-<TabItem value="TypeScript" default>
+To use all above Falcon Module features, your module main file needs to export class derived from `FalconModule` abstract class. To se how to create new Falcon Module see [custom module](./custom-module) section. Here is an Module abstract class definition:
 
 ```ts
-import { FalconModule } from '@deity/falcon-server-env';
+abstract class FalconModule<TModuleConfig> {
+  protected config: TModuleConfig;
 
-type CustomModuleConfig = {
-  //
-};
-
-export class CustomModule extends FalconModule<CustomModuleConfig> {
-  constructor(config: CustomModuleConfig) {
-    super(config);
+  constructor(config: TModuleConfig = {}) {
+    this.config = config;
   }
 
-  servicesRegistry(registry: FalconModuleRegistryProps) {
-    super.servicesRegistry(registry);
+  public servicesRegistry(registry: FalconModuleRegistryProps): void {}
+
+  public gqlResolvers<TGqlResolverContext>(): GqlResolversMap<TGqlResolverContext> {
+    return {};
   }
 
-  gqlResolvers() {
-    const resolversMap = {};
-
-    return this.mergeGqlResolvers(super.gqlResolvers(), resolversMap);
+  protected mergeGqlResolvers<TGraphQLContext>(
+    resolversMapA: GqlResolversMap<TGraphQLContext>,
+    resolversMapB: GqlResolversMap<TGraphQLContext>
+  ): GqlResolversMap<TGraphQLContext> {
+    return deepMerge(resolversMapA, resolversMapB);
   }
 }
 ```
-
-</TabItem>
-<TabItem value="JavaScript">
-
-```js
-const { FalconModule } = require('@deity/falcon-server-env');
-
-module.exports.CustomModule = class CustomModule extends FalconModule {
-  constructor(config) {
-    super(config);
-  }
-
-  servicesRegistry(registry) {
-    super.servicesRegistry(registry);
-  }
-
-  gqlResolvers() {
-    const resolversMap = {};
-
-    return this.mergeGqlResolvers(super.gqlResolvers(), resolversMap);
-  }
-};
-```
-
-</TabItem>
-</Tabs>
 
 Here is an list of all methods and poperies of `FalconModule` abstract class:
 
@@ -190,7 +155,6 @@ registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
 
 Your Rest Endpoint Manager class needs to extend `EndpointManager` abstract class located in `@deity/falcon-server-env` npm package.
 
-
 #### Binding Event Handlers
 
 In order to bind [Event Handlers](./event-handlers) you need to use `toEventHandler` binding syntax method:
@@ -254,9 +218,8 @@ module.exports.FooModule = class FooModule extends FalconModuleBase {
 
 Binding syntax returned from `rebind` method is exactly the same as for `bind`, which means if you want to rebind e.g. Data Source implementation you should use corresponding to `bind` method syntax:
 
-
 ```ts
- registry.rebind('FooDataSource').toDataSource(ExtendedDataSource);
+registry.rebind('FooDataSource').toDataSource(ExtendedDataSource);
 ```
 
 ## `gqlResolvers`
@@ -367,3 +330,15 @@ module.exports = new FalconModule({
   }
 });
 ``` -->
+
+## Module with common services auto-discovery
+
+With auto-discovery feature, you can just export classes which extends Falcon Common Services:
+
+- [Data Sources](./data-sources)
+- [Event Handlers](./event-handlers)
+- [Rest Endpoint Handlers](./rest-endpoints)
+
+Then Falcon Server will do the required services registration by himself during startup.
+
+However, as you may suspect, common services auto-discovery doesn't cover all the possible things you can do in FalconServer. This mechanism was especially created to implement basic scenarios, and also to make migration from Falcon Platform v2 into v3 easier. It will work until you do not want to create any custom service. To learn more how to create that kind of Falcon Module please see [custom module](./custom-module#creating-new-module-with-services-auto-discovery)

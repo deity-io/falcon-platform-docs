@@ -95,7 +95,7 @@ So let's assume that we want to add a Deity Falcon module that fetches the data 
         "configKey": "configValue"
       }
     }
-  },
+  }
 }
 ```
 
@@ -110,13 +110,16 @@ In case of using local module it would be:
         "configKey": "configValue"
       }
     }
-  },
+  }
 }
 ```
 
 and then Falcon Server on startup will try to load `src/custom-wordpress-module/index.js` file.
 
- <!-- TODO: decide if we want to describe module registration thorough extending FalconServer class (programmatic way) -->
+### Configure Module in programmatic way
+
+**TODO: decide if we want to describe it in official docs**
+
 ---
 
 ## Custom modules

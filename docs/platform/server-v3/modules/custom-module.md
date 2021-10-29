@@ -10,8 +10,6 @@ import TabItem from '@theme/TabItem';
 
 Most of the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
 
-// TODO: Modules can be created in 2 ways - with [auto-discovery mechanism](#module-auto-discovery) or [manually](#manual-binding-for-module).
-
 ## Creating new Module
 
 To create the most basic (an empty) module it is enough to export implementation of `FalconModule` abstract class. Following module will be correctly loaded and registered in Falcon Server, even it does nothing.
@@ -364,7 +362,43 @@ Bare in mind, since custom services are not recognizable by Falcon Server, these
 
 ## Creating new Module with services auto-discovery
 
-only common services auto-discovery is supported....
+Falcon Module common services auto-discovery feature, lets you just export classes which extends:
+
+- [Data Sources](./data-sources)
+- [Event Handlers](./event-handlers)
+- [Rest Endpoint Handlers](./rest-endpoints)
+
+Then Falcon Server during the startup will analyse exported by particular module class, and will do the required services registration by himself.
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { FooDataSource } from './FooDataSource';
+import { FooRestEndpointHandler } from './FooRestEndpointHandler';
+import { AfterInitializationEventHandler } from './AfterInitializationEventHandler';
+
+export { FooDataSource, FooRestEndpointHandler, AfterInitializationEventHandler };
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { FooDataSource } = require('./FooDataSource);
+const { FooRestEndpointHandler } = require('./FooRestEndpointHandler');
+const { AfterInitializationEventHandler } = require('./AfterInitializationEventHandler');
+
+module.exports = {
+  FooDataSource,
+  FooRestEndpointHandler,
+  AfterInitializationEventHandler,
+};
+
+```
+
+</TabItem>
+</Tabs>
 
 ## Extending Module
 
