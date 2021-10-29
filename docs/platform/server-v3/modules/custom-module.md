@@ -45,7 +45,7 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-However, as described in [about](./about#what-is-a-module-in-falcon), Falcon Module can provide implementation of various module extension points and define any custom services too. The following examples show how to register a particular one, but it is perfectly fine, to define any number of them, inside one Falcon Module. So feel free to mix them in order to provide consistent business feature implementation.
+However, as described in [about](./about#what-is-a-module-in-falcon), Falcon Module can provide implementation of various common services and define any custom services too. The following examples show how to register a particular one, but it is perfectly fine, to define any number of them, inside one Falcon Module. So feel free to mix them in order to provide consistent business feature implementation.
 
 ### Adding GraphQL resolver
 
@@ -244,7 +244,7 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-### Adding Module Extension Points
+### Adding Module common services
 
 Besides Data Sources, Falcon Module can have Event Handlers and Rest Endpoint Handlers. To find out how to implements them please see:
 
@@ -306,7 +306,9 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 
 (like mailer/payments)
 
-## Creating new Module with Extension Points auto-discovery
+## Creating new Module with services auto-discovery
+
+only common services auto-discovery is supported.... 
 
 ## Extending Module
 
@@ -392,7 +394,7 @@ export class CommerceToolsModule extends CommerceToolsModule {
 </TabItem>
 </Tabs>
 
-### Module Extension Points auto-discovery
+### Module common services auto-discovery
 
 [As mentioned earlier](#what-is-a-module-in-falcon) Falcon Server 3 modules can expose multiple things at once.
 
@@ -466,7 +468,7 @@ To see more advanced examples please see [Custom Modules](./custom-module) secti
 
 To see full list of services provides by default via Falcon Scope please see [Falcon Server services](./falcon-server-services) section.
 
-### Cross module services access
+### Cross Modules services access
 
 ## Falcon Server injectable services
 

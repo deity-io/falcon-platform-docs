@@ -168,7 +168,7 @@ module.exports.FooModule = class FooModule extends FalconModule {
 
 Above example will bind `'Foo'` to `Foo` class constructor, and the container will care about proper `Foo` class object creation. If you are interested in about more customization please look into [`inversify` documentation](https://github.com/inversify/InversifyJS/tree/master/wiki)
 
-Since Data Sources, Rest Endpoint Handlers,and Event Handlers are Falcon Middleware basic extension points, those require special treatment. You can not for example control those instances lifetime. Because of that, we introduced dedicated method to manage their registrations
+Since Data Sources, Rest Endpoint Handlers,and Event Handlers are Falcon Middleware common services, those require special treatment. You cannot for example control those instances lifetime. Because of that, we introduced dedicated method to manage their registrations
 
 #### Binding Data Sources
 
