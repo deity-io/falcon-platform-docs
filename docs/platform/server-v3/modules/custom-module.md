@@ -244,7 +244,7 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-### Adding Module common services
+### Adding Module Common Services
 
 Besides Data Sources, Falcon Module can have Event Handlers and Rest Endpoint Handlers. To find out how to implements them please see:
 
@@ -302,13 +302,69 @@ module.exports.CustomModule = class CustomModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-### Implementing custom service
+### Adding Module Custom Service
 
-(like mailer/payments)
+Falcon Module services registry allows to define any custom service, not only Data Sources, Rest Endpoint Handlers or Event Handlers. We use that feature inside `@deity/falcon-payment-service-module` in order to implement `PaymentServiceClient`. Following example shows how to do this
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { injectable } from 'inversify';
+import { FalconModule, FalconModuleRegistryProps } from '@deity/falcon-server-env';
+
+@injectable()
+export class FooClient {
+  getFooById(id: number) {
+    return { id };
+  }
+}
+
+export class CustomModule extends FalconModule<{}> {
+  servicesRegistry(registry: FalconModuleRegistryProps) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooClient').to(FooMapper);
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { injectable, decorate } = require('inversify');
+const { FalconModule } = require('@deity/falcon-server-env');
+
+class FooClient {
+  getFooById(id: number) {
+    return { id };
+  }
+}
+decorate(injectable(), FooClient);
+
+class CustomModule extends FalconModule {
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+
+    registry.bind('FooClient').to(FooMapper);
+  }
+}
+
+module.exports = {
+  CustomModule,
+  FooClient
+};
+```
+
+</TabItem>
+</Tabs>
+
+Bare in mind, since custom services are not recognizable by Falcon Server, these will not be used until at least one of the common services (Data Source, Rest Endpoint Handler or Event Handler) will use them.
 
 ## Creating new Module with services auto-discovery
 
-only common services auto-discovery is supported.... 
+only common services auto-discovery is supported....
 
 ## Extending Module
 
