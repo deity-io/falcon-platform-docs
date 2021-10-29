@@ -44,7 +44,6 @@ In Falcon Server you need only:
 - `@deity/falcon-X-extension` that provides GraphQL schema for shop features
 - `@deity/falcon-X-module` that provides implementation of all the required things in one package
 
-
 ## Module and extension relation
 
 Please keep in mind that extension packages are still needed, as extension provide GraphQL schema that will be exposed to GraphQL clients.
@@ -53,24 +52,43 @@ So now, the 2 things need to be provided:
 - extension which is an "interface" for a particular feature
 - module which is an "implementation" of that feature
 
-## Custom modules
+## Configuring module
 
-All the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
+In order to enable a module in Falcon Server you need to add its configuration into `config.json` file under `"modules"` section.
 
-Modules can be registered in 2 ways - with auto-discovery mechanism or manually.
+```json
+{
+  "modules": {
+    "my-module": {
+      "package": "<path>"
+    }
+  }
+}
+```
 
-### Adding module
+As you an see, Falcon Server expect a key-value map of modules, in most cases order does not matter, but there are exertion, e.g. search modules should be configured last.
 
-In order to enable a module in Falcon Server you need to first add it in the configuration file under `"modules"` section. We recommend adding it in `config/default.json` file so it will be available no matter what mode (development, production or custom) Falcon Server is running.
-If a module requires some credentials or secrets (sensitive configuration) then that configuration can be added in `config/local.json`. See configuration guide for more details.
+We recommend adding it in `config/default.json` file so it will be available no matter what mode (`development`, `production` or any custom) Falcon Server is running. If a module requires some credentials or secrets (sensitive configuration) then that configuration can be added in `config/local.json`. See configuration guide for more details.
+
+Module configuration can be described in following way:
+
+```ts
+type ModuleConfiguration = {
+  package: string;
+  enabled?: boolean;
+  config?: Record<string, any>;
+};
+```
+
+- `package: string` - path to Module entry point, tells Falcon Server where from the module should be loaded. It can be a npm package name (e.g. `@deity/falcon-magento2-module`), which of course needs to be installed, so added to `package.json` file it can be npm package name, or path relative to root of your server application to a local module placed inside application folder (e.g. `./src/my-module`).
+- `enabled?: boolean` - determines if module should be loaded, it is optional, default value is `true`
+- `config?: Record<string, any>` - configuration associated with module, this is a place for any module specific configuration, it is optional
 
 So let's assume that we want to add a Deity Falcon module that fetches the data from WordPress. Then you can use the following snippet in your `config/default.json` file:
 
 ```json
 {
-  ...
   "modules": {
-    ...
     "wordpress": {
       "package": "@deity/falcon-wordpress-module",
       "config": {
@@ -78,19 +96,14 @@ So let's assume that we want to add a Deity Falcon module that fetches the data 
       }
     }
   },
-  ...
 }
 ```
 
-The `package` field is required, as it tells Falcon Server where from the module should be loaded. It can be a npm package name (which of course needs to be installed, so added to `package.json` file) or path to a local module placed inside application folder.
-
-In case of local module it would be:
+In case of using local module it would be:
 
 ```json
 {
-  ...
   "modules": {
-    ...
     "wordpress": {
       "package": "src/custom-wordpress-module",
       "config": {
@@ -98,11 +111,19 @@ In case of local module it would be:
       }
     }
   },
-  ...
 }
 ```
 
 and then Falcon Server on startup will try to load `src/custom-wordpress-module/index.js` file.
+
+ <!-- TODO: decide if we want to describe module registration thorough extending FalconServer class (programmatic way) -->
+---
+
+## Custom modules
+
+All the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
+
+Modules can be registered in 2 ways - with auto-discovery mechanism or manually.
 
 ### Module auto-discovery
 
