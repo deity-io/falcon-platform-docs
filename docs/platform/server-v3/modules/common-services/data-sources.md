@@ -5,17 +5,23 @@ sidebar_label: Data Sources
 enterprise_only: true
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 [Apollo Server documentation](https://www.apollographql.com/docs/apollo-server/data/data-sources/) says:
 
 > Data sources are classes that Apollo Server can use to encapsulate fetching data from a particular source, such as a database or a REST API. These classes help handle caching, deduplication, and errors while resolving operations.
 
-Falcon Server Data Sources extends [Apollo Server Data Sources](https://www.apollographql.com/docs/apollo-server/data/data-sources/) this is why if you are not familiar with Data Sources concept we strongly recommend to learn that topic first.
+Falcon Server Data Sources extends [Apollo Server Data Sources](https://www.apollographql.com/docs/apollo-server/data/data-sources/) this is why if you are not familiar with DataSources concept we strongly recommend learning that topic first.
 
 In Falcon ecosystem Data Sources are used to fetch data from all the back-ends, e.g. if you have integration with BigCommerce then [BigCommerce Module](./modules/bigcommerce-module) exposes `FalconBigCommerceDataSource` which implements the communication layer between Falcon and BigCommerce. It contains authentication and authorization logic and does everything that's needed to fetch the required data.
 
 The same applies to all the integrations - there's always an integration-specific Data Source that realizes the communication.
 
-Falcon Server will threat particular service as Data Source until it extends [Apollo's abstract Data Source class](https://github.com/apollographql/apollo-server/blob/main/packages/apollo-datasource/src/index.ts). However, the Falcon Server expects that Data Source has an additional `name` property, so its API can be defined as follows
+Falcon Server will treat particular service as Data Source until it extends [Apollo's abstract Data Source class](https://github.com/apollographql/apollo-server/blob/main/packages/apollo-datasource/src/index.ts). However, the Falcon Server expects that concrete DataSource has an additional `name` property. This is why each DataSource registered in Falcon Server needs to:
+
+- extends [Apollo's abstract Data Source class](https://github.com/apollographql/apollo-server/blob/main/packages/apollo-datasource/src/index.ts)
+- implements Falcon Server `IDataSource` interface which is defined as follows
 
 ```ts
 import { DataSourceConfig } from 'apollo-datasource';
@@ -27,7 +33,7 @@ export interface IDataSource<TGqlResolverContext extends GraphQLContext = GraphQ
 }
 ```
 
-Full list of base `DataSource` classes:
+`@deity/falcon-server-env` package exports couple of base classes, which meets above conditions by default. You should extends them in order to implement your custom DataSource. But it is fair enough to use any other, found on npm registry, please bear in mind that those need to implement the `IDataSource` interface too. Full list of base `DataSource` classes:
 
 - [`DataSource`](#datasource)
 - [`FalconRESTDataSource`](#falconrestdatasource)
@@ -36,7 +42,7 @@ Full list of base `DataSource` classes:
 
 ## `DataSource`
 
-The very base class of Falcon Server
+The very base class of Falcon Server DataSource.
 
 ```ts
 import { DataSource as ApolloDataSource } from 'apollo-datasource';
@@ -74,6 +80,110 @@ _(todo)_ add more things here and links to the docs
 ## `GqlDataSource`
 
 Base Data Source class which realizes communication with any GraphQL based API.
+
+_(todo)_
+
+## Custom DataSource example
+
+As mentioned earlier, to create the custom DataSource you need to extends one from above abstract classes. An example implementation can look following:
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { injectable } from 'inversify';
+import { DataSource } from '@deity/falcon-server-env';
+
+@injectable()
+export class CustomDataSource extends DataSource {
+  constructor() {
+    super('custom');
+  }
+
+  getCustomData() {
+    return {};
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { injectable, decorate } = require('inversify');
+const { DataSource } = require('@deity/falcon-server-env');
+
+class CustomDataSource extends DataSource {
+  constructor() {
+    super('custom');
+  }
+
+  getCustomData() {
+    return {};
+  }
+}
+decorate(injectable(), CustomDataSource);
+
+module.exports = {
+  CustomDataSource
+};
+```
+
+</TabItem>
+</Tabs>
+
+In above example `CustomDataSource` has parameter-lees constructor - it does not uses any external dependency.
+
+To show how to inject any, please see following example, where we injected `fetch` (we highly recommended to use Falcon fetch [see why](need-url-here)) and next to it module configuration.
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { injectable, inject } from 'inversify';
+import { RESTDataSource, injectModuleConfig } from '@deity/falcon-server-env';
+
+@injectable()
+export class CustomDataSource extends RESTDataSource {
+  constructor(@inject('fetch') fetch, @injectModuleConfig('custom') config) {
+    super({ restDataSourceFetch: fetch, name: 'custom', config });
+  }
+
+  getCustomData() {
+    return this.get('http://custom.com');
+  }
+}
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { injectable, inject, decorate } = require('inversify');
+const { RESTDataSource } = require('@deity/falcon-server-env');
+
+class CustomDataSource extends RESTDataSource {
+  constructor(fetch, config) {
+    super({ restDataSourceFetch: fetch, name: 'custom', config });
+  }
+
+  getCustomData() {
+    return this.get('/data');
+  }
+}
+decorate(injectable(), CustomDataSource);
+decorate(inject('fetch'), CustomDataSource, 0);
+decorate(injectModuleConfig('custom'), CustomDataSource, 1);
+
+module.exports = {
+  CustomDataSource
+};
+```
+
+</TabItem>
+</Tabs>
+
+The dependency injection was demonstrated on `RESTDataSource`, but the same mechanism can be applied to each DataSource.
 
 ## DataSource methods to GraphQL resolvers auto-binding
 
