@@ -67,15 +67,47 @@ export abstract class DataSource extends ApolloDataSource implements IDataSource
 Base Data Source class which realizes communication with any REST based API.
 
 DEITY Falcon provides also its own Data Source abstract class `RESTDataSource`. That class extends [RESTDataSource class](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-datasource-rest) provided by Apollo.
-This Data Source is recommended to be used as base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
+This Data Source is recommended to be used as a base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
 
-This class provides also set of features that make implementation of custom data sources for Falcon Server easier:
+Constructor definitions looks as follow
 
-- pre-configured logger
-- access to cache
-- REST authorization hooks
+```ts
+constructor({ name, restDataSourceFetch, config }: RESTDataSourceConstructorParams)
+```
 
-_(todo)_ add more things here and links to the docs
+where `RESTDataSourceConstructorParams` is:
+
+- `name: string` - default name is taken from class constructor
+- `restDataSourceFetch: typeof fetch` - node fetch implementation
+- `config?: DataSourceConfiguration` - module configuration
+
+This class provides also a set of features that make implementation of custom data sources for Falcon Server easier.
+
+Typical properties:
+
+- `name: string` - data source name
+- `config: DataSourceConfiguration`
+- `perPage: number`
+- `logger: typeof Logger` - pre-configured logger
+- `restDataSourceFetch: typeof fetch`
+- `cache?: ICache` - gave access to cache
+
+Dedicated methods which cover typical HTTP verbs:
+
+- `get<TResult = any>(path: string, params?: URLSearchParamsInit, init?: ContextRequestInit): Promise<TResult>`
+- `post<TResult = any>(path: string, body?: any, init?: ContextRequestInit): Promise<TResult>`
+- `patch<TResult = any>(path: string, body?: any, init?: ContextRequestInit): Promise<TResult>`
+- `put<TResult = any>(path: string, body?: any, init?: ContextRequestInit): Promise<TResult>`
+- `delete<TResult = any>(path: string,params?: URLSearchParamsInit,init?: ContextRequestInit): Promise<TResult>`
+
+Others methods which allows you to implement advanced features e.g. authorize requests, dynamic routing, extension scopes:
+
+- `get fetchUrlPriority()`
+- `getFetchUrlPriority?(url: string): number` - should be implemented if DataSource wants to deliver content via dynamic URLs. It should return priority value for passed url.
+- `fetchUrl?( obj: null, params: FetchUrlParams, context: TContext, info: GraphQLResolveInfo ): Promise<FetchUrlResult | null>`
+- `getCacheContext?(context: TContext): Record<string, any>` - method to get a cache context object which should contain a distinguish data that must be taken into account while calculating the cache key for this specific DataSource. It could be a storeCode, selected locale etc.
+- `fetchBackendConfig?(obj: any, params: any, context: TContext, info: GraphQLResolveInfo): RemoteBackendConfig;`
+- `authorizeRequest?(req: ContextRequestOptions): Promise<void>` - Hook that is going to be executed for every REST request if authorization is required
 
 ## `GqlDataSource`
 
@@ -85,7 +117,7 @@ _(todo)_
 
 ## Custom DataSource example
 
-As mentioned earlier, to create the custom DataSource you need to extends one from above abstract classes. An example implementation can look following:
+As mentioned earlier, to create the custom DataSource you need to extend one from the above abstract classes. An example implementation can look following:
 
 <Tabs>
 <TabItem value="TypeScript" default>
