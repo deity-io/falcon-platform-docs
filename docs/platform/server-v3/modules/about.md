@@ -30,7 +30,7 @@ However, Falcon Module allows you to compose code according to [Inversion of Con
 
 In previous versions of Falcon Server (version 2), there was a distinct separation between extensions, API clients, rest endpoint handlers, and event handlers. Each of these needed to be implemented and loaded as a separate package. Falcon Server 3 changes that approach and introduces the concept of a module.
 
-So in comparison to Falcon Server 2, Falcon Module it's a container that groups all the above things as one package.
+So in comparison to version 2, version 3 modules are a container that groups all the above things into one package.
 
 In Falcon Server v2 it was necessary to add multiple packages to have full coverage of features. If we consider shop features that will be handled service X (Magento, BigCommerce, CommerceTools, etc) the following packages are required:
 
