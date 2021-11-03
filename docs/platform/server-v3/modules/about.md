@@ -22,17 +22,17 @@ Falcon Module is a package that contains implementations of all the pieces requi
 - [Rest Endpoint Handler](./common-services/rest-endpoints) - REST webhook handler allows you to execute any action for incoming HTTP request. Module can contain any number of it.
 - [Event Handler](./common-services/event-handlers) - Handler for in-proc emitted events. Module can contain any number of it.
 
-However, Falcon Module allows you to compose code according to [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) principle, which is helpful with large code base, and makes unit-testing easier. We highly recommending this approach. The Falcon Module needs to export following:
+However, Falcon Module allows you to compose code according to [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) principle, which is helpful with large code base, and makes unit-testing easier. We highly recommend this approach. The Falcon Module needs to export the following:
 
 - [Falcon Module](./module-api) - Structured representation of module definition. Falcon Module can contain only one implementation of it.
 
 ### Old vs new approach
 
-In previous version of Falcon Server (version 2) there was a distinct separation between extensions, API clients, rest endpoint handlers and event handlers. Each of these needed to be implemented and loaded as a separate package. Falcon Server 3 changes that approach and introduces concept of a module.
+In a previous version of Falcon Server (version 2) there was a distinct separation between extensions, API clients, rest endpoint handlers and event handlers. Each of these needed to be implemented and loaded as a separate package. Falcon Server 3 changes that approach and introduces concept of a module.
 
 So in comparison to Falcon Server 2, Falcon Module it's a container that groups all the above things as one package.
 
-In Falcon Server 2 it was necessary to add multiple packages to have full coverage of features. If we consider shop features that will be handled service X (Magento, BigCommerce, CommerceTools etc) the following packages ere required:
+In Falcon Server 2 it was necessary to add multiple packages to have full coverage of features. If we consider shop features that will be handled service X (Magento, BigCommerce, CommerceTools etc) the following packages are required:
 
 - `@deity/falcon-shop-extension` that provides GraphQL schema for shop features
 - `@deity/falcon-X-api` that provides resolvers and all the calls to service X (implements the shop features)
@@ -42,19 +42,19 @@ In Falcon Server 2 it was necessary to add multiple packages to have full covera
 In Falcon Server you need only:
 
 - `@deity/falcon-X-extension` that provides GraphQL schema for shop features
-- `@deity/falcon-X-module` that provides implementation of all the required things in one package
+- `@deity/falcon-X-module` that provides an implementation of all the required things in one package
 
 ## Module and extension relation
 
 Please keep in mind that extension packages are still needed, as extensions provide GraphQL schema that will be exposed to GraphQL clients.
-So now, the 2 things need to be provided:
+So now, the two things need to be provided:
 
 - extension which is an "interface" for a particular feature
 - module which is an "implementation" of that feature
 
 ## Configuring a module
 
-In order to enable a module in Falcon Server, you need to add its configuration into `config.json` file under the `"modules"` section.
+In order to enable a module in Falcon Server, you need to add its configuration into the `config.json` (normally `server/config/default.json`) file under the `"modules"` section.
 
 ```json
 {
