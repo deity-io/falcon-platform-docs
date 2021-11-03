@@ -68,7 +68,7 @@ In order to enable a module in Falcon Server, you need to add its configuration 
 
 As you can see, Falcon Server expects a key-value map of modules in most cases, the order does not matter. There are some exceptions to this e.g. search modules should be configured last.
 
-We recommend adding it in `config/default.json` file so it will be available no matter what mode (`development`, `production` or any custom) Falcon Server is running. If a module requires some credentials or secrets (sensitive configuration) then that configuration can be added in `config/local.json`. See configuration guide for more details.
+We recommend adding your base configuration in `server/config/default.json` file so it will be available no matter what mode (`development`, `production` or any custom) Falcon Server is running in. If a module requires some credentials that should be secret and not committed to your git repository then that configuration can be added in `server/config/local.json` for local development and as environment variables for remote apps. See the configuration guide for more details.
 
 Module configuration can be described in following way:
 
