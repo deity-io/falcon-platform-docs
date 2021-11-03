@@ -75,16 +75,16 @@ type FalconModuleRegistryProps = {
 };
 ```
 
-- `bind` - an function which allows you to add new service implementation into container registry for particular service identifier
-- `rebind` - an function which allows you to replace underlining service implementation in container registry for particular service identifier, if that one was already added into container registry.
-- `unbind` - an function which allows you to remove service implementation from container registry assigned to particular service identifier.
-- `isBound` - an function which allows you to determine if container registry contain already any service implementation for particular service identifier.
+- `bind` - a function which allows you to add new service implementation into the container registry for a particular service identifier
+- `rebind` - a function which allows you to replace underlining service implementation in container registry for a particular service identifier if that one was already added into container registry.
+- `unbind` - a function which allows you to remove service implementation from the container registry assigned to a particular service identifier.
+- `isBound` - a function which allows you to determine if the container registry contains already any service implementation for a particular service identifier.
 
-To lear more about Inversion of Control pattern and Dependency Injection works, please see [Dependency Injection](#dependency-injection)
+To learn more about Inversion of Control pattern and Dependency Injection works, please see [Dependency Injection](#dependency-injection)
 
 ### Binding services
 
-In order to bind new service, you need to use `bind` method:
+In order to bind a new service, you need to use `bind` method:
 
 ```ts
 registry.bind('Foo').to(Foo);
@@ -131,39 +131,45 @@ module.exports.FooModule = class FooModule extends FalconModule {
 </TabItem>
 </Tabs>
 
-Above example will bind `'Foo'` to `Foo` class constructor, and the container will care about proper `Foo` class object creation. If you are interested in about more customization please look into [`inversify` documentation](https://github.com/inversify/InversifyJS/tree/master/wiki)
+Above example will bind `'Foo'` to the `Foo` class constructor, and the container will care about proper `Foo` class object creation. If you are interested in more customization please look into [`inversify` documentation](https://github.com/inversify/InversifyJS/tree/master/wiki)
 
 Since Data Sources, Rest Endpoint Handlers,and Event Handlers are Falcon Middleware common services, those require special treatment. You cannot for example control those instances lifetime. Because of that, we introduced dedicated method to manage their registrations
 
 #### Binding Data Sources
 
-In order to bind [Data Source](./common-services/data-sources): you need to use `toDataSource` binding syntax method:
+In order to bind Data Source you need to use `toDataSource` or `toDataSourceDynamicValue` binding syntax methods.
 
 ```ts
 registry.bind('FooDataSource').toDataSource(FooDataSource);
+registry.bind('FooDataSource').toDataSourceDynamicValue(() => new FooDataSource('foo'));
 ```
 
-Your Data Source class needs to extend `DataSource` abstract class located in `@deity/falcon-server-env` npm package.
+- `toDataSource` - expect class constructor, is useful if DataSource has parameter-less constructor or all its arguments are marked via `@inject()` decorator - which means all of its arguments can be resolved dynamically via dependency container.
+- `toDataSourceDynamicValue` - expect an instance of the class so you need to pass a function which will create one, is useful if DataSource has arguments which cannot or you don't want to be resolved dynamically via dependency container.
+
+To learn more about DataSources in Falcon Server please [see](./common-services/data-sources)
 
 #### Binding Rest Endpoint Manager
 
-In order to bind [Rest Endpoint Manager](./common-services/rest-endpoints) you need to use `toEndpointManager` binding syntax method:
+In order to bind Rest Endpoint Manager you need to use `toEndpointManager` or `toEndpointManagerDynamicValue` binding syntax methods.
 
 ```ts
 registry.bind('FooEndpointManager').toEndpointManager(FooEndpointManager);
+registry.bind('FooEndpointManager').toEndpointManagerDynamicValue(() => new FooEndpointManager());
 ```
 
-Your Rest Endpoint Manager class needs to extend `EndpointManager` abstract class located in `@deity/falcon-server-env` npm package.
+To learn more about Rest Endpoint Managers in Falcon Server please [see](./common-services/rest-endpoints)
 
 #### Binding Event Handlers
 
-In order to bind [Event Handlers](./common-services/event-handlers) you need to use `toEventHandler` binding syntax method:
+In order to bind Event Handler you need to use `toEventHandler` or `toEventHandlerDynamicValue` binding syntax methods.
 
 ```ts
 registry.bind('FooEventHandler').toEventHandler(FooEventHandler);
+registry.bind('FooEventHandler').toEventHandlerDynamicValue(() => new FooEventHandler());
 ```
 
-Your Event Handler class needs to extend `EventHandler` abstract class located in `@deity/falcon-server-env` npm package.
+To learn more about Event Handlers in Falcon Server please [see](./common-services/event-handlers)
 
 ### Rebinding services
 
