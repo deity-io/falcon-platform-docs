@@ -19,7 +19,7 @@ enterprise_only: true
 Falcon Module is a package that contains implementations of all the pieces required to achieve a particular thing. Falcon Module needs to exports their content via named export, default export will be ignored. Falcon Server expects only known Module extension classes, anything else, which is outside of the predefined list will be ignored:
 
 - [Data Source](./common-services/data-sources) - Used by GraphQL resolvers to fetch the data from various services. By default, Falcon Module can contain only one implementation of it due to auto-discovery. However, by using our Dependency Injection framework, you can define more of them, please read more about that in [Falcon Module and Dependency Injection](#falcon_module_and_dependency_injection) section.
-- [Rest Endpoint Handler](./common-services/rest-endpoints) - REST webhook handler allows you to execute any action for incoming HTTP requests. A module can contain any number of it.
+- [Rest Endpoint Handler](./common-services/rest-endpoints) - REST webhook handler allows you to execute any action for incoming HTTP requests. A module can contain as many REST endpoint handlers as you want.
 - [Event Handler](./common-services/event-handlers) - Handler for in-proc emitted events. a module can contain any number of it.
 
 However, Falcon Module allows you to compose code according to [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) principle, which is helpful with a large codebase and makes unit-testing easier. We highly recommend this approach. The Falcon Module needs to export the following:
