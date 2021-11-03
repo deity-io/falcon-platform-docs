@@ -22,9 +22,9 @@ Falcon Module is a package that contains implementations of all the pieces requi
 - [Rest Endpoint Handler](./common-services/rest-endpoints) - REST webhook handler allows you to execute any action for incoming HTTP requests. A module can contain as many REST endpoint handlers as you want.
 - [Event Handler](./common-services/event-handlers) - Handler for in-proc emitted events. a module can contain any number of it.
 
-However, Falcon Module allows you to compose code according to [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) principle, which is helpful with a large codebase and makes unit-testing easier. We highly recommend this approach. The Falcon Module needs to export the following:
+However, Falcon Module allows you to compose code according to [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) principle, which is helpful with a large codebase and makes unit-testing easier. We highly recommend this approach. A Module needs to export the following:
 
-- [Falcon Module](./module-api) - Structured representation of module definition. Falcon Module can contain only one implementation of it.
+- [Falcon Module](./module-api) - This should be a structured representation of module definition. Only one can exist per module.
 
 ### Old vs new approach
 
