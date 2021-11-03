@@ -36,8 +36,8 @@ export interface IDataSource<TGqlResolverContext extends GraphQLContext = GraphQ
 `@deity/falcon-server-env` package exports couple of base classes, which meets above conditions by default. You should extends them in order to implement your custom DataSource. But it is fair enough to use any other, found on npm registry, please bear in mind that those need to implement the `IDataSource` interface too. Full list of base `DataSource` classes:
 
 - [`DataSource`](#datasource)
-- [`FalconRESTDataSource`](#falconrestdatasource)
-- `ApiDataSource` - deprecated, use `FalconRESTDataSource` instead
+- [`RESTDataSource`](#restdatasource)
+- `ApiDataSource` - deprecated, use `RESTDataSource` instead
 - [`GqlDataSource`](#gqldatasource)
 
 ## `DataSource`
@@ -62,11 +62,11 @@ export abstract class DataSource extends ApolloDataSource implements IDataSource
 
 - `name: string` - defines the name of a particular DataSource. Its value is used as a key on the GraphQL resolver context DataSources map.
 
-## `FalconRESTDataSource`
+## `RESTDataSource`
 
 Base Data Source class which realizes communication with any REST based API.
 
-DEITY Falcon provides also its own Data Source abstract class `FalconRESTDataSource`. That class extends [RESTDataSource class](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-datasource-rest) provided by Apollo.
+DEITY Falcon provides also its own Data Source abstract class `RESTDataSource`. That class extends [RESTDataSource class](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-datasource-rest) provided by Apollo.
 This Data Source is recommended to be used as base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
 
 This class provides also set of features that make implementation of custom data sources for Falcon Server easier:
