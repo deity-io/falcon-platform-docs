@@ -28,7 +28,7 @@ However, Falcon Module allows you to compose code according to [Inversion of Con
 
 ### Old vs new approach
 
-In previous version of Falcon Server (version 2) there was a distinct separation between extensions, api clients, rest endpoint handlers and event handlers. Each of these needed to be implemented and loaded as a separate package. Falcon Server 3 changes that approach and introduces concept of a module.
+In previous version of Falcon Server (version 2) there was a distinct separation between extensions, API clients, rest endpoint handlers and event handlers. Each of these needed to be implemented and loaded as a separate package. Falcon Server 3 changes that approach and introduces concept of a module.
 
 So in comparison to Falcon Server 2, Falcon Module it's a container that groups all the above things as one package.
 
@@ -46,15 +46,15 @@ In Falcon Server you need only:
 
 ## Module and extension relation
 
-Please keep in mind that extension packages are still needed, as extension provide GraphQL schema that will be exposed to GraphQL clients.
+Please keep in mind that extension packages are still needed, as extensions provide GraphQL schema that will be exposed to GraphQL clients.
 So now, the 2 things need to be provided:
 
 - extension which is an "interface" for a particular feature
 - module which is an "implementation" of that feature
 
-## Configuring module
+## Configuring a module
 
-In order to enable a module in Falcon Server you need to add its configuration into `config.json` file under `"modules"` section.
+In order to enable a module in Falcon Server, you need to add its configuration into `config.json` file under the `"modules"` section.
 
 ```json
 {
