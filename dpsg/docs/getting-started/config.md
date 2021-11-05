@@ -1,34 +1,39 @@
 ---
 id: config
-title: Configuration
-sidebar_label: Configuration
+title: Configuring DPSG
+sidebar_label: Configuring DPSG
 description: How to configure DPSG
 ---
-## Setup
 
 ### Prerequisites
 
-These steps assume you have `dcloud` installed and are running the correct project (`dcloud project:current:set`)
+These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [documentation](/docs/platform/cloud/dcloud). At the start of most DPSG commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct DPSG region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
 
-### 1. Create your environment
+### 1. Select your project
 
-The first step is to create your payment environment in DPSG. This is not the same as your platform environment although naming them the same can be helpful.
+Run `dcloud project:current:set [organization] [project]` to select the project that you are working with. In case you don't know the exact organization or project name, run `dcloud project:list` to get a list of all projects that you have access to.
 
-Run `dcloud payments:env:create`.
+### 2. Create a DPSG profile
 
-This will lead you through a few steps to creating your env.
+To get started, you first need to create a payments profile. A profile is a set of credentials and a configuration for payment providers and methods.
+A profile should be created for every cloud environment and every developer.
 
-### 2. Configure the DPSG region (Optional)
+:::info
+Every developer that works on the project locally should create their own profile. This is to ensure that all payment updates provided by RabbitMQ are delivered to the correct event consumer.
+:::
 
-Run `dcloud payments:region:set`, this will let you select one of our region for DPSG.
+To automatically create DPSG profiles for every cloud environment, you can use the `dcloud payments:profile:sync` command. For easy identification, the profiles' names will be identical to the cloud environment names.
 
-The default region for DPSG is `eu` (Europe).
+To create a profile manually, use the `dcloud payments:profile:create` command to launch the configuration wizard.
+Once configured, you can request information about a profile at any time, using the `dcloud payments:profile:info` command.
 
-Run `dcloud payments:region` to view your configured region.
+### 3. Connect the DPSG profile to your Falcon app
 
-### 3. Connect your DPSG env to your platform app
+Run `dcloud payments:profile:apply`, this will set the authentication details for DPSG as environment variables for your Falcon app.
 
-Run `dcloud payments:env:apply`, this will set the auth details for DPSG as environment variables for your platform app.
+:::info
+This step should only be performed for profiles that you want to connect to your cloud instance, not for local development profiles.
+:::
 
 ### 4. Configure your payment providers
 
@@ -42,50 +47,52 @@ The final step is to enable payment methods.
 
 Run `dcloud payments:method:configure`. 
 
-This will take you through steps to configure your methods, including sorting and which countries your methods are enabled on.
+This will take you through steps to configure your methods, including the steps for our [configuration features](/dpsg/docs/methods/features/currencies).
 
+<br /><br />
 
-## Commands
+### Dcloud Commands Reference
+To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 
-Configuring DPSG can be done using our [`dcloud` CLI tool](/docs/platform/cloud/dcloud).
+`payments:profile:sync`
+Automatically creates matching payments profiles for the project's environments
 
-We have several methods available for configuring DPSG.
-
-### `payments:provider:list:all`
-List all available payment providers
-
-### `payments:method:list:all`
-List all available payment methods of the required Provider
-
-### `payments:provider:list`
-List configured payment providers for the required environment
-
-### `payments:provider:configure`
-Configure Payment Provider for the required Environment
-
-### `payments:method:list`
-List configured payment providers for the required provider and environment
-
-### `payments:method:configure`
-Configure Payment Methods for the required Environment and Payment Provider
-
-### `payments:env:create`
+`payments:profile:create`
 Create an entry for the existing DEITY Cloud environment or a test one for local development
 
-### `payments:env:update`
-Updates a configured payments environment
+`payments:profile:info`
+Information about the configured payments profiles
 
-### `payments:env:delete`
-Deletes a configured payments environment
+`payments:profile:update`
+Updates a configured payments profile
 
-### `payments:env:info`
-Get Environment configuration for Payments
+`payments:profile:delete`
+Deletes a selected payment profile
 
-### `payments:env:apply`
-Send Payments Token to the environment. It will fetch the token by applying the required env vars
+`payments:profile:apply`
+Send Payments credentials to the DEITY Cloud Environment. It will set the token by applying the required env vars
 
-### `payments:region`
-Get the configured DPSG region.
+<br />
 
-### `payments:region:set`
-Set the configured DPSG region.
+`payments:provider:list:all`
+List all available payment providers
+
+`payments:provider:configure`
+Configure payment provider for a selected payments profile
+
+`payments:provider:list`
+List configured payment providers for a selected payments profile
+
+<br />
+
+`payments:method:list:all`
+List all available payment methods of the required provider
+
+`payments:method:configure`
+Configure payment methods for a selected and payment provider
+
+`payments:method:update`
+Update or dis-/enable a payment method for a selected payment provider
+
+`payments:method:list`
+List configured payment providers for a selected payments profile

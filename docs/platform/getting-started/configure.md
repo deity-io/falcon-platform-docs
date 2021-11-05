@@ -11,7 +11,7 @@ Each cloud environment can have a set of configuartion variables. These are used
 Depending on your integrations (Magento, BigCommerce, Stripe etc) you'll need to add different varaibles to your cloud environment.
 
 :::note Configuration documentation
-We highly recommend you read our [config docs](/docs/platform/configuration/overview) before doing this step.
+We highly recommend you read our [config docs](overview) before doing this step.
 :::
 
 ## Steps
