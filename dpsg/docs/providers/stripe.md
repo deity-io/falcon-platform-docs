@@ -34,9 +34,8 @@ The easiest way to configure Stripe is by using `dcloud` CLI and the `dcloud pay
 
 ```json
 {
-  "publicKey": "string", // Private
-  "secretKey": "string", // Private
-  "endpointSecret": "string", // Private
+  "publicKey": "string", // Secret
+  "secretKey": "string", // Secret
   "testMode": "boolean"
 }
 ```
@@ -54,16 +53,3 @@ The public key can be found in the `Developers` section under in the subsection 
 
 The secret key can be found in the `Developers` section under in the subsection `API keys`. It is labeled `Secret key` in the `Standard keys` section and 
 starts with `sk_`.
-
-### `endpointSecret`
-
-This is used for receiving webhooks from Stripe. DPSG uses this when payments are updated.
-
-You can get your client secret when configuring your webhook. To do this, navigate to the `Webhooks` subsection and use the `Add endpoint` button.
-
-Use the following settings to complete the configuration:
-
-- Endpoint URL: https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/stripe (replacing `{region}`, `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted and the base url will be (https://dpsg.deity.cloud).
-- Events: Select all `Payment Intent` events
-
-Once completed, the webhook secret will be displayed on the top right of the webhook detail page and starts with `we_`.
