@@ -1,11 +1,11 @@
 ---
 id: demo2
-title: Demo 2 History
+title: Demo 2 Dependencies
 sidebar_label: Demo 2
-description: History of the demo 1 package.json
+description: Dependencies for demo v2
 ---
 
-## 09/10/2021
+## Last Updated 09/10/2021
 
 ### Client
 

@@ -11,7 +11,7 @@ Versions marked with a number and date (e.g. Platform v2.1.1 (2020-05-08)) are a
 
 -
 
-## Demo Package.json History
+## Latest Demo Dependencies
 
 - [Demo 1 (Magento)](demo1)
 - [Demo 2 (BigCommerce)](demo2)
