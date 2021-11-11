@@ -29,7 +29,8 @@ In your server config you'll need to add a new payments module.
       "redirectBaseUrl": "",
       "redirectUrl": "/checkout/pending",
       "serviceUser": "",
-      "serviceToken": ""
+      "serviceToken": "",
+      "region": null
     }
   },
   ...
@@ -41,12 +42,14 @@ Some payment providers don't like passing `http://localhost` as a redirect URL (
 
 ### Config Explained
 
-(config : type : default : description)
+(config : type : default value : description)
 
 - `redirectBaseUrl` : string : "" : The base url to be redirected to after payments (usually your client app)
 - `redirectUrl` : string : "/checkout/pending" : The url to be redirected to after payments (usually your client app)
 - `serviceUser` : string : "" : The DPSG username, in the following format "org:project:env" e.g. "deity:falcon:production"
 - `serviceToken` : string : "" : The DPSG token associated with the user above
+- `region` : string : null : The region of the DPSG instance you wish to use. This defaults to `null` which connects to our European instance. Accepted values are `eu` (Europe), `us` (America) and `au` (Australia).
+
 
 ### Need payments in a custom module?
 
