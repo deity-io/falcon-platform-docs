@@ -5,13 +5,13 @@ sidebar_label: Demo 1
 description: Dependencies for demo v1
 ---
 
-## Last Updated 10/10/2021
-*17:00 CEST*
+## Last Updated 11/10/2021
+*15:00 CEST*
 
 ### Client
 
 ```
-  "dependencies": {
+ "dependencies": {
     "@adyen/adyen-web": "4.7.2",
     "@deity/falcon-logger": "^3.0.0-beta.4",
     "cross-env": "5.2.0",
@@ -36,7 +36,7 @@ description: Dependencies for demo v1
     "@deity/falcon-stripe-plugin": "^3.0.0-beta.4",
     "@deity/falcon-theme-editor": "^3.0.0-beta.4",
     "@deity/falcon-ui": "^2.7.5",
-    "@deity/falcon-ui-kit": "^3.0.0-beta.18",
+    "@deity/falcon-ui-kit": "^3.0.0-beta.19",
     "@graphql-tools/schema": "^7.1.5",
     "@loadable/component": "5.12.0",
     "config": "^2.0.1",
