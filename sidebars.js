@@ -193,6 +193,9 @@ module.exports = {
     'Release Notes': [
       'platform/release/full-changelog',
       'platform/release/3-0-0',
+      'platform/release/demo1',
+      'platform/release/demo2',
+      'platform/release/demo3',
     ],
     Support: [
       'platform/support/contact',

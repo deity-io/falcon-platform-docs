@@ -22,17 +22,17 @@ module.exports = {
           position: 'right',
           activeBasePath: '/docs/platform',
         },
+        // {
+        //   label: 'DPSG',
+        //   href: '/dpsg/docs/about',
+        //   position: 'right',
+        //   activeBasePath: '/docs/docs',
+        // },
         /* {
           type: 'docsVersionDropdown',
           position: 'right',
           dropdownActiveClassDisabled: true,
         }, */
-        // {
-        //   to: '/dpsg/docs/overview/about',
-        //   label: 'DPSG',
-        //   position: 'right',
-        //   activeBasePath: '/dpsg/docs',
-        // },
         {
           label: 'Falcon UI',
           href: 'https://falcon-ui.docs.deity.io/',
@@ -56,7 +56,7 @@ module.exports = {
             },
             // {
             //   label: 'DPSG',
-            //   to: '/dpsg/docs/overview/about',
+            //   to: '/dpsg/docs/about',
             // },
             {
               label: 'Falcon UI',
