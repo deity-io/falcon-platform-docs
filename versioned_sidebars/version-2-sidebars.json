@@ -80,6 +80,10 @@
           "id": "version-2/platform/client/webpack"
         },
         {
+          "type": "doc",
+          "id": "version-2/platform/client/menu-navbar"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Theming",
