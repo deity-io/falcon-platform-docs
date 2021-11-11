@@ -304,7 +304,7 @@ dcloud log:list
 ```
 
 **Options**
-- `--severity=<severity>` Choose the severiry of logs you wish to log (`info`, `warning` or `critical`)
+- `--severity=<severity>` Choose the severity of logs you wish to log (`info`, `warning`, `error` or `critical`)
 - `-l <limit>` Limit the results
 - `-p <page>` Which page of results to show
 
