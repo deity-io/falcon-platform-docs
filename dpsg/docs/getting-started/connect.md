@@ -61,7 +61,7 @@ These config values are only needed when you're running your DEITY app locally.
 (config : type : default value : description)
 
 - `messageQueue.host` : string: "" : This is the host for the message queue. It should be 1 of 3 URLs depending on the region your app is running in: `rabbit.deity.cloud` (Europe), `rabbit.us.deity.cloud` (America), `rabbit.au.deity.cloud` (Australia)
-- `messageQueue.protocol` : string: "" : The protocol used by our message queue. This should be set to `amqp`.
+- `messageQueue.protocol` : string: `"amqp"` : The protocol used by our message queue. When used locally - this needs to be set to `amqps`.
 
 ### Need payments in a custom module?
 
