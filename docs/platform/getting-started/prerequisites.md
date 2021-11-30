@@ -16,7 +16,7 @@ If you're using our **BigCommerce** integration you can set up and account throu
 
 ## Technical requirements
 
-- [NodeJS](https://nodejs.org) (>=12)
+- [NodeJS](https://nodejs.org) (>=14.17)
 - [Yarn](https://yarnpkg.com) (>=1.22)
 
 :::note Falcon Tests are ran against major Node versions - 12 and 14.
