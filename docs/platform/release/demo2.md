@@ -5,7 +5,7 @@ sidebar_label: Demo 2
 description: Dependencies for demo v2
 ---
 
-## Last Updated 30/11/2021
+## Last Updated 01/12/2021
 *18:00 CEST*
 
 ### Client
@@ -90,7 +90,7 @@ description: Dependencies for demo v2
     "@deity/falcon-server": "^3.0.0-beta.18",
     "@deity/falcon-server-env": "^3.0.0-beta.12",
     "@deity/falcon-shop-extension": "^3.0.0-beta.16",
-    "@deity/falcon-wordpress-module": "^1.0.0-beta.16",
+    "@deity/falcon-wordpress-module": "^1.0.0-beta.17",
     "config": "^2.0.1",
     "core-js": "3.6.5",
     "cross-env": "5.2.0",
