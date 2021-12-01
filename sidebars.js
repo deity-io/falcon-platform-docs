@@ -71,6 +71,7 @@ module.exports = {
       'platform/server-v3/event-handlers',
       'platform/server-v3/rest-endpoints',
       'platform/server-v3/dynamic-routing',
+      'platform/server-v3/mailer',
     ],
     Cloud: [
       'platform/cloud/about',
