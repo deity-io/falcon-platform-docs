@@ -45,7 +45,8 @@ To configure our mailer component add it to your `server` config as a component.
 
 ## Usage
 
-Out of the box we use the mailer packages `sendEmail` method to handle password reset requests.
+Out of the box we use the mailer packages `sendEmail` method to handle password reset requests when the integrated shop doesn't offer this functionality out of the box.
+For now this only includes **BigCommerce** and **commercetools** integrations.
 
 ### Loading the mailer component
 
