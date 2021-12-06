@@ -5,8 +5,8 @@ sidebar_label: Demo 1
 description: Dependencies for demo v1
 ---
 
-## Last Updated 02/12/2021
-*12:00 CEST*
+## Last Updated 04/12/2021
+*10:00 CEST*
 
 ### Client
 
@@ -22,10 +22,10 @@ description: Dependencies for demo v1
     "@deity/eslint-config-falcon": "^3.0.0-beta.3",
     "@deity/falcon-adyen-plugin": "^3.0.0-beta.10",
     "@deity/falcon-blog-data": "^3.0.0-beta.12",
-    "@deity/falcon-client": "^3.0.0-beta.29",
+    "@deity/falcon-client": "^3.0.0-beta.31",
     "@deity/falcon-data": "^3.0.0-beta.12",
     "@deity/falcon-errors": "^3.0.0-beta.7",
-    "@deity/falcon-front-kit": "^3.0.0-beta.23",
+    "@deity/falcon-front-kit": "^3.0.0-beta.25",
     "@deity/falcon-i18n": "^3.0.0-beta.6",
     "@deity/falcon-mollie-plugin": "^3.0.0-beta.6",
     "@deity/falcon-payment-plugin": "^3.0.0-beta.5",
@@ -36,7 +36,7 @@ description: Dependencies for demo v1
     "@deity/falcon-stripe-plugin": "^3.0.0-beta.6",
     "@deity/falcon-theme-editor": "^3.0.0-beta.5",
     "@deity/falcon-ui": "^2.7.5",
-    "@deity/falcon-ui-kit": "^3.0.0-beta.25",
+    "@deity/falcon-ui-kit": "^3.0.0-beta.27",
     "@graphql-tools/schema": "^7.1.5",
     "@loadable/component": "5.12.0",
     "config": "^2.0.1",
