@@ -5,8 +5,8 @@ sidebar_label: Demo 2
 description: Dependencies for demo v2
 ---
 
-## Last Updated 04/12/2021
-*10:00 CEST*
+## Last Updated 07/12/2021
+*16:00 CEST*
 
 ### Client
 
