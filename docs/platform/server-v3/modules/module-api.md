@@ -52,7 +52,7 @@ Here is an list of all methods and poperies of `FalconModule` abstract class:
 
 - `servicesRegistry(registry: FalconModuleRegistryProps): void` - through this method you are able to register all dependencies which are used by module, to learn how to bind new or rebind existing one, learn more in [Services registry](#services-registry) section. To learn why you need this, see [Dependency Injection](#dependency-injection).
 
-- `gqlResolvers(): GqlResolversMap` - through this method you are able to define all GraphQL resolvers, to lear how to define new or override existing one [GraphQL resolvers](#graphql-resolvers-map) section.
+- `gqlResolvers(): GqlResolversMap` - through this method you are able to define all GraphQL resolvers, to learn how to define new or override existing one [GraphQL resolvers](#graphql-resolvers-map) section.
 
 - `mergeGqlResolvers(resolversMapA, resolversMapB): GqlResolversMap` - `protected` method which allows you to merge two GraphQL resolvers object maps into one.
 
