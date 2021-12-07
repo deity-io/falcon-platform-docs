@@ -260,7 +260,8 @@ type GraphQLContext<TDataSources extends DataSourcesMap = DataSourcesMap> = {
   cache: ICache;
   session?: Record<string, any>;
   headers: Record<string, string>;
-  koa: KoaContext;
+  koa: KoaContext;;
+  container: IContainer;
 };
 ```
 
