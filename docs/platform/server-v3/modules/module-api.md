@@ -50,7 +50,7 @@ Here is an list of all methods and poperies of `FalconModule` abstract class:
 
 - `config: TConfig` - `protected` property which give yo an access to configuration extracted during module loading and injected via Module constructor.
 
-- `servicesRegistry(registry: FalconModuleRegistryProps): void` - through this method you are able to register all dependencies which are used by module, to lear how to bind new or rebind existing one, learn more in [Services registry](#services-registry) section. To learn why you need this, see [Dependency Injection](#dependency-injection).
+- `servicesRegistry(registry: FalconModuleRegistryProps): void` - through this method you are able to register all dependencies which are used by module, to learn how to bind new or rebind existing one, learn more in [Services registry](#services-registry) section. To learn why you need this, see [Dependency Injection](#dependency-injection).
 
 - `gqlResolvers(): GqlResolversMap` - through this method you are able to define all GraphQL resolvers, to lear how to define new or override existing one [GraphQL resolvers](#graphql-resolvers-map) section.
 
