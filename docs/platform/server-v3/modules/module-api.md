@@ -272,6 +272,7 @@ where:
 - `session` - http session cookie, which is an object key-value map of Extension name, and actual session value.
 - `headers`- request header object.
 - `koa` - a [koa](https://koajs.com/) Context which encapsulates node's `request` and `response` objects into a single object.
+- `container` - gives you access to IoC container.
 
 #### Context DataSources map
 
