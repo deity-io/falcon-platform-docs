@@ -60,7 +60,7 @@ export abstract class DataSource extends ApolloDataSource implements IDataSource
 }
 ```
 
-- `name: string` - defines the name of a particular DataSource. Its value is used as a key on the GraphQL resolver context DataSources map, and this is why it needs to be unique.
+- `name: string` - defines the name of a particular DataSource. This value is used as a key in GraphQL resolver context DataSources map and **have to be unique**.
 
 ## `RESTDataSource`
 
