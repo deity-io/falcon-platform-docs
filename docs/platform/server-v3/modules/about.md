@@ -80,7 +80,7 @@ type ModuleConfiguration = {
 };
 ```
 
-- `package: string` - path to Module entry point, tells Falcon Server wherefrom the module should be loaded. It can be an `npm` package name (e.g. `@deity/falcon-magento2-module`), which of course needs to be installed, so added to `package.json` file it can be `npm` package name or path relative to the root of your server application to a local module placed inside application folder (e.g. `./src/my-module`).
+- `package: string` - path to Module entry point, tells Falcon Server wherefrom the module should be loaded. It can be an `npm` package name (e.g. `@deity/falcon-magento2-module`), which of course needs to be installed, so added to `package.json` file or path relative to the root of your server application to a local module placed inside application folder (e.g. `./src/my-module`).
 - `enabled?: boolean` - determines if the module should be loaded, it is optional, the default value is `true`
 - `config?: Record<string, any>` - configuration associated with a module, this is a place for any module-specific configuration, it is optional
 
