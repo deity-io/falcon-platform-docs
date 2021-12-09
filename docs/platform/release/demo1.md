@@ -5,8 +5,8 @@ sidebar_label: Demo 1
 description: Dependencies for demo v1
 ---
 
-## Last Updated 07/12/2021
-*16:00 CEST*
+## Last Updated 09/12/2021
+*15:00 CEST*
 
 ### Client
 
@@ -70,13 +70,13 @@ description: Dependencies for demo v1
     "@deity/falcon-geo-ip-api": "^3.0.0-beta.12",
     "@deity/falcon-geo-location-extension": "^3.0.0-beta.6",
     "@deity/falcon-logger": "^3.0.0-beta.5",
-    "@deity/falcon-magento2-module": "^1.0.0-beta.40",
+    "@deity/falcon-magento2-module": "^1.0.0-beta.41",
     "@deity/falcon-payment-extension": "^1.0.0-beta.14",
     "@deity/falcon-payment-service-module": "^1.0.0-beta.28",
     "@deity/falcon-search-extension": "^3.0.0-beta.20",
     "@deity/falcon-server": "^3.0.0-beta.18",
     "@deity/falcon-shop-extension": "^3.0.0-beta.17",
-    "@deity/falcon-unbxd-search-module": "^1.0.0-beta.36",
+    "@deity/falcon-unbxd-search-module": "^1.0.0-beta.37",
     "@deity/falcon-wordpress-module": "^1.0.0-beta.18",
     "config": "^2.0.1",
     "core-js": "3.6.5",
