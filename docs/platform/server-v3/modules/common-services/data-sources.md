@@ -67,7 +67,7 @@ export abstract class DataSource extends ApolloDataSource implements IDataSource
 Base Data Source class which realizes communication with any REST based API.
 
 DEITY Falcon provides also its own Data Source abstract class `RESTDataSource`. That class extends [RESTDataSource class](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-datasource-rest) provided by Apollo.
-This Data Source is a  recommended base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
+This Data Source is a recommended base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
 
 Constructor definition looks as follow
 
@@ -215,7 +215,7 @@ module.exports = {
 </TabItem>
 </Tabs>
 
-The dependency injection was demonstrated on `RESTDataSource`, but the same mechanism can be applied to each DataSource.
+The dependency injection demonstrated on `RESTDataSource` example can be also applied to any DataSource.
 
 ## DataSource methods to GraphQL resolvers auto-binding
 
