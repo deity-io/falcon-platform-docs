@@ -51,7 +51,7 @@ You'll also need your stores frontend URL. This is simply the URL you visit to s
 
 #### GraphQL Token
 
-Your GraphQL Token has to be generated. Luckily BigCommerce has a request runner in their docs that allow you to generate a token then and there.
+Your GraphQL Token has to be generated. Luckily BigCommerce has a request runner in their docs that allow you to generate a token.
 
 - [BigCommerce Docs](https://developer.bigcommerce.com/api-docs/storefront/graphql/graphql-storefront-api-overview#authentication)
 - [BigCommerce Request Runner](https://developer.bigcommerce.com/api-docs/getting-started/making-requests#making-requests)
