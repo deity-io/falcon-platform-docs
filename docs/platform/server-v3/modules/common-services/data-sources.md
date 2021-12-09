@@ -20,6 +20,8 @@ The same applies to all the integrations - there's always an integration-specifi
 
 Falcon Server will treat particular service as Data Source until it extends [Apollo's abstract Data Source class](https://github.com/apollographql/apollo-server/blob/main/packages/apollo-datasource/src/index.ts). However, the Falcon Server expects that concrete DataSource has an additional `name` property. This is why each DataSource registered in Falcon Server needs to:
 
+Falcon Server will treat particular service as Data Source [Apollo's abstract Data Source class](https://github.com/apollographql/apollo-server/blob/main/packages/apollo-datasource/src/index.ts), but expects that new DataSource has an additional `name` property. This is why each DataSource registered in Falcon Server needs to:
+
 - extends [Apollo's abstract Data Source class](https://github.com/apollographql/apollo-server/blob/main/packages/apollo-datasource/src/index.ts)
 - implements Falcon Server `IDataSource` interface which is defined as follows
 
@@ -166,7 +168,7 @@ module.exports = {
 
 In above example `CustomDataSource` has parameter-lees constructor - it does not uses any external dependency.
 
-To show how to inject any, please see following example, where we injected `fetch` (we highly recommended to use Falcon fetch [see why](need-url-here)) and next to it module configuration.
+To show how to inject any, please see following example, where we injected `fetch` (we highly recommended to use Falcon fetch <!-- TODO: [see why](need-url-here) -->) and next to it module configuration.
 
 <Tabs>
 <TabItem value="TypeScript" default>
