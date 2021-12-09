@@ -46,7 +46,8 @@ In Falcon Server v3 you need only:
 
 ## Module and extension relation
 
-Please keep in mind that extension packages are still needed, as extensions provide GraphQL schema that will be exposed to GraphQL clients.
+Please keep in mind that extension packages are required because they provide GraphQL schema that will be exposed to GraphQL clients.
+
 So now, the two things need to be provided:
 
 - extension which is an "interface" for a particular feature
