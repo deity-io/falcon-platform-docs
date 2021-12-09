@@ -142,4 +142,4 @@ When you need to add a custom behavior to Falcon Server which is more complex or
 
 In that case you need to implement all the classes as usual and then use [Falcon Module](./module-api) to register these classes to be loaded and instantiated in a particular way.
 
-[Module auto-discovery](#module-auto-discovery) mechanism will not be executed, so you need to care about every registration by yourself.
+[Module auto-discovery](#module-auto-discovery) mechanism will not be executed, so you need to take care about every registration yourself.
