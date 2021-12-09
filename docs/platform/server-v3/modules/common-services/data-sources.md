@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 Falcon Server Data Sources extends [Apollo Server Data Sources](https://www.apollographql.com/docs/apollo-server/data/data-sources/) this is why if you are not familiar with DataSources concept we strongly recommend learning that topic first.
 
-In Falcon ecosystem Data Sources are used to fetch data from all the back-ends, e.g. if you have integration with BigCommerce then [BigCommerce Module](./modules/bigcommerce-module) exposes `FalconBigCommerceDataSource` which implements the communication layer between Falcon and BigCommerce. It contains authentication and authorization logic and does everything that's needed to fetch the required data.
+In Falcon ecosystem Data Sources are used to fetch data from all the back-ends, e.g. if you have integration with BigCommerce then [BigCommerce Module](../bigcommerce-module) exposes `FalconBigCommerceDataSource` which implements the communication layer between Falcon and BigCommerce. It contains authentication and authorization logic and does everything that's needed to fetch the required data.
 
 The same applies to all the integrations - there's always an integration-specific Data Source that realizes the communication.
 
