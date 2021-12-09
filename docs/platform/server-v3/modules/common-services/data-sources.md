@@ -69,7 +69,7 @@ Base Data Source class which realizes communication with any REST based API.
 DEITY Falcon provides also its own Data Source abstract class `RESTDataSource`. That class extends [RESTDataSource class](https://github.com/apollographql/apollo-server/tree/main/packages/apollo-datasource-rest) provided by Apollo.
 This Data Source is recommended to be used as a base class for data sources that work as resolvers (see [resolvers auto-binding](#resolvers-auto-binding) section above).
 
-Constructor definitions looks as follow
+Constructor definition looks as follow
 
 ```ts
 constructor({ name, restDataSourceFetch, config }: RESTDataSourceConstructorParams)
