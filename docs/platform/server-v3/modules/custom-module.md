@@ -556,7 +556,7 @@ export class FooModule extends FalconModule {
 
 To see more advanced examples please see [Custom Modules](./custom-module) section.
 
-<!-- TODO: To see full list of services providers by default via Falcon Scope please see [Falcon Server services](./falcon-server-services) section. -->
+To see full list of services provided by default via Falcon Server please see [Falcon Server services](./injectable-services) section.
 
 ### Cross Modules services access
 

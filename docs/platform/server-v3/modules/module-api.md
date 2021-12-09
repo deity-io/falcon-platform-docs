@@ -62,7 +62,7 @@ Through this function you are able to register all services (dependencies) into 
 
 - FalconModule extension class: `DataSource`, `EventHandler` or `EndpointManager`
 - custom written `class`, `function` or `const` which are used inside particular module and/or should be visible for FalconServer host application.
-- FalconServer host instances, like `fetch`, `Logger`, `HttpSession`, [see](./falcon-server-services) full list of them
+- FalconServer host instances, like `fetch`, `Logger`, `HttpSession`, [see](./injectable-services) full list of them
 
 `servicesRegistry` method, through its argument, provide and set of method which should be used in order to manage all your module dependencies. We are using [inversify](https://inversify.io/) under the hood, however api which we are exposing is slights changed.
 
@@ -283,7 +283,7 @@ To read more about DataSources see [DataSources](./common-services/data-sources)
 
 ## Dependency Injection
 
-To allow all above, Falcon Module introducing support of [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). It is possible due to usage of `inversify` under the hood as an Dependency Injection framework. If you are not familiar with `inversify` nor Inversion of Control pattern, please look here: [TODO - good reference required](./TODO)
+To allow all above, Falcon Module introducing support of [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control). It is possible due to usage of `inversify` under the hood as an Dependency Injection framework. If you are not familiar with `inversify` nor Inversion of Control pattern, please look here: (new section needed <!-- [TODO - good reference required](./TODO) --> )
 
 _**TODO: prepare some good introduction of this topic:**_
 
