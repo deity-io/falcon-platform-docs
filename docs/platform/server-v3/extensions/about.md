@@ -49,3 +49,4 @@ module.exports = () => ({
 Internally for example [Falcon GeoLocation Extension](./geolocation-extension) uses that mechanism to inject geo location data to each request's context.
 
 _(todo)_
+<!-- * configuration -  There are some exceptions to this e.g. search modules should be configured last. -->

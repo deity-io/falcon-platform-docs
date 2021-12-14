@@ -6,7 +6,7 @@ sidebar_label: Technical Information
 
 Falcon Client is the frontend for your Falcon Platform App.
 
-It's built using ReactJS and connects Falcon Server via GraphQl.
+It's built using ReactJS and connects Falcon Server via GraphQL.
 
 ## Core Technologies
 

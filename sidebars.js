@@ -64,14 +64,20 @@ module.exports = {
         Modules: [
           'platform/server-v3/modules/about',
           'platform/server-v3/modules/module-api',
+          'platform/server-v3/modules/custom-module',
+          {
+            'Module Common Services': [
+              'platform/server-v3/modules/common-services/data-sources',
+              'platform/server-v3/modules/common-services/event-handlers',
+              'platform/server-v3/modules/common-services/rest-endpoints',
+            ],
+          },
           'platform/server-v3/migration-guide',
         ],
       },
-      'platform/server-v3/data-sources',
-      'platform/server-v3/event-handlers',
-      'platform/server-v3/rest-endpoints',
       'platform/server-v3/dynamic-routing',
       'platform/server-v3/mailer',
+      'platform/server-v3/extension-scopes',
     ],
     Cloud: [
       'platform/cloud/about',
