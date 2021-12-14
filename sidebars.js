@@ -76,6 +76,7 @@ module.exports = {
         ],
       },
       'platform/server-v3/dynamic-routing',
+      'platform/server-v3/mailer',
       'platform/server-v3/extension-scopes',
     ],
     Cloud: [
