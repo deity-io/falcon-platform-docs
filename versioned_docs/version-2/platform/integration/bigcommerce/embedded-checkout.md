@@ -24,7 +24,7 @@ import { EmbeddedCheckout } from './components';
 ```
 
 :::note Check the component exists
-Out of the box you should have a `client/src/pages/shop/Checkout/components/EmbeddedCheckout.js` file. If not, please create a new app using `@deity/create-falcon-app` and grab it from there.
+Out of the box you should have a `client/src/pages/shop/Checkout/components/EmbeddedCheckout.js` file. If not, please create a new app using `@deity/create-falcon-app` and grab it from there. This is specific to demo-v2
 :::
 
 ### 2. Get the embedded checkout URL
