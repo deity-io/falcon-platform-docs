@@ -71,7 +71,6 @@ So it will end up something like this:
 return (
   <CartQuery>
     {({ data: { cart } }) => {
-      console.log('cart', cart);
       if (!cart || cart.itemsQty === 0 || cart.items.length === 0) {
         // try to restore the cart if you can
         if (!called) {
