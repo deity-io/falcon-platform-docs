@@ -99,4 +99,4 @@ The embedded checkout requires you to pass the correct channel ID in your BigCom
 
 The host for this channel must match your app.
 
-If you're developing locally it's advised to use a service like [ngrok](https://ngrok.com/) so you can run that app over `https`.
+If you're developing locally please follow the notes in the [BigCommerce docs](https://developer.bigcommerce.com/api-docs/storefronts/embedded-checkout/embedded-checkout-tutorial#how-can-i-work-with-embedded-checkout-locally).
