@@ -378,6 +378,10 @@
             {
               "type": "doc",
               "id": "version-2/platform/integration/bigcommerce/manual"
+            },
+            {
+              "type": "doc",
+              "id": "version-2/platform/integration/bigcommerce/embedded-checkout"
             }
           ]
         },
