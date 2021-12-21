@@ -24,7 +24,7 @@ import {
 } from '@deity/falcon-payment-extension';
 
 @injectable()
-export class YourDataSource extends FalconRESTDataSource {
+export class YourDataSource extends RESTDataSource {
 
   paymentServiceClient: PaymentServiceClient;
 
