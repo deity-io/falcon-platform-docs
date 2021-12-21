@@ -1,0 +1,31 @@
+.container {
+  display: inline-block;
+  padding: 0 1rem;
+  min-height: 1.0625rem;
+  line-height: 1.0625rem;
+  color: var(--ifm-badge-text-color);
+  font-size: 0.625rem;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.primary {
+  background-color: var(--ifm-badge-primary-color);
+}
+
+.secondary {
+  background-color: var(--ifm-badge-secondary-color);
+}
+
+.success {
+  background-color: var(--ifm-badge-success-color);
+}
+
+.warning {
+  background-color: var(--ifm-badge-warning-color);
+}
+
+.error {
+  background-color: var(--ifm-badge-error-color);
+}

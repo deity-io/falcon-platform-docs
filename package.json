@@ -8,17 +8,21 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "lint": "eslint"
+    "lint": "eslint . --ext [.ts,.tsx]"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.6",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.6",
-    "@docusaurus/preset-classic": "^2.0.0-beta.6",
+    "@docusaurus/core": "^2.0.0-beta.13",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.13",
+    "@docusaurus/preset-classic": "^2.0.0-beta.13",
+    "@docusaurus/theme-common": "^2.0.0-beta.13",
+    "@typescript-eslint/parser": "^5.8.0",
     "classnames": "^2.2.6",
+    "docusaurus-plugin-sass": "^0.2.1",
     "formik": "^2.1.4",
     "jsonp": "^0.2.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "sass": "^1.44.0"
   },
   "browserslist": {
     "production": [
@@ -33,11 +37,10 @@
     ]
   },
   "devDependencies": {
+    "@deity/eslint-config-falcon": "2.7.13",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.13",
+    "@tsconfig/docusaurus": "^1.0.4",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "typescript": "^4.5.2"
   }
 }

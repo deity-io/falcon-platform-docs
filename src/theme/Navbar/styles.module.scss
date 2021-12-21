@@ -1,0 +1,50 @@
+@use '../../css/variables' as v;
+
+/*
+Hide toggle in small viewports
+ */
+@media (max-width: 996px) {
+  .toggle {
+    display: none;
+  }
+}
+
+.navbar {
+  @include v.min-md {
+    background: linear-gradient(90deg, var(--ifm-color-background-grey) 18.75rem, white 0%);
+  }
+}
+
+.navbarHideable {
+  transition: transform var(--ifm-transition-fast) ease;
+}
+
+.navbarHidden {
+  transform: translate3d(0, calc(-100% - 2px), 0);
+}
+
+.navbarSidebarToggle {
+  margin-right: 1rem;
+}
+
+.button {
+  margin-left: 1.5rem;
+
+  &:last-child {
+    padding-right: 1rem;
+  }
+}
+
+.logoContainer {
+  display: none;
+  margin-right: 13rem;
+
+  @include v.min-md {
+    display: block;
+  }
+}
+
+.logoImage {
+  width: 6rem;
+  height: auto;
+}

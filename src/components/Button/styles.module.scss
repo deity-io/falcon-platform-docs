@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--ifm-color-primary);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    background-color: #6e65d7;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #5349cf;
+    outline: 1.5px solid #8c86df;
+  }
+
+  &.transparent {
+    background: none;
+    color: var(--ifm-color-body);
+
+    path {
+      fill: var(--ifm-color-primary);
+    }
+
+    &:hover {
+      background: rgba(248, 246, 242, 0.4);
+
+      path {
+        fill: var(--ifm-color-primary);
+      }
+    }
+
+    &:focus,
+    &:active {
+      background: rgba(96, 87, 211, 0.05);
+      outline: 1.5px solid #6057d3;
+    }
+  }
+
+  &.outlined {
+    background: none;
+    outline: 1.5px solid var(--ifm-color-primary);
+    color: var(--ifm-color-primary);
+
+    path {
+      fill: var(--ifm-color-primary);
+    }
+
+    &:hover {
+      color: #fff;
+      background: var(--ifm-color-primary);
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:focus,
+    &:active {
+      background: #473dcc;
+      outline: 1.5px solid #8c86df;
+    }
+  }
+}
+
+.startIcon,
+.endIcon {
+  path {
+    fill: #fff;
+  }
+}
+
+.startIcon {
+  margin-right: 0.8rem;
+}
+
+.endIcon {
+  margin-left: 0.8rem;
+}

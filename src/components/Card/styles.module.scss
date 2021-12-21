@@ -1,0 +1,20 @@
+.box {
+  display: block;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.link {
+  color: var(--ifm-color-dark);
+
+  &:hover {
+    color: var(--ifm-color-dark);
+    text-decoration: none;
+  }
+}
+
+.iconContainer {
+  height: 1.3rem;
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "include": ["declarations.d.ts", "src/", "pages/", "theme/"]
+}

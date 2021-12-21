@@ -1,0 +1,113 @@
+@use '../../css/variables' as v;
+
+.footer {
+  padding: 4rem 0 2rem;
+  background: var(--ifm-color-background-grey);
+
+  @include v.min-md {
+    padding: 4rem 0 2rem 18.75rem;
+  }
+}
+
+.container {
+  @include v.container;
+  margin: 0 auto;
+}
+
+.footerDark {
+  background: #fff;
+}
+
+.footerTitle {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 5rem;
+    border-bottom: 1px solid #6057d3;
+    padding-top: 0.2rem;
+  }
+}
+
+.footerItem {
+  min-height: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.footerLogo {
+  display: block;
+}
+
+.footerLink {
+  display: block;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  margin: 0;
+  color: #383838;
+
+  @include v.min-md {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+}
+
+.footerLogoLink {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.footerLogoLink:hover {
+  opacity: 1;
+}
+
+.cards {
+  @include v.container;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+
+  > div {
+    margin-bottom: 1rem;
+  }
+
+  @include v.min-sm {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4.2rem;
+
+    > div {
+      flex-basis: 12.5rem;
+      margin-right: 3rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding-top: 0.4rem;
+
+  @include v.min-sm {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+}
+
+.socials {
+  display: flex;
+  padding: 0 0.5rem;
+}
+
+.socialIcon {
+  margin-right: 0.6rem;
+}
