@@ -12,6 +12,7 @@ import type { LinkLikeNavbarItemProps } from '@theme/NavbarItem';
 import { NavLink } from '@theme/NavbarItem/DefaultNavbarItem';
 import NavbarItem from '@theme/NavbarItem';
 import styles from './styles.module.scss';
+import { versionMap } from './helper';
 
 const dropdownLinkActiveClass = 'dropdown__link--active';
 

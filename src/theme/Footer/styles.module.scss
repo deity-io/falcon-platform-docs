@@ -5,7 +5,11 @@
   background: var(--ifm-color-background-grey);
 
   @include v.min-md {
-    padding: 4rem 0 2rem 18.75rem;
+    padding: 4rem 0 2rem 0;
+  }
+
+  div[class^='box'] path {
+    fill: var(--ifm-footer-card-icon-color);
   }
 }
 
@@ -49,7 +53,7 @@
   font-size: 0.625rem;
   line-height: 0.75rem;
   margin: 0;
-  color: #383838;
+  color: var(--ifm-color-footer-link);
 
   @include v.min-md {
     font-size: 0.7rem;

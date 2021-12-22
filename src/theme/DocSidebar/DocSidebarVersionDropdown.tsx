@@ -1,10 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import React from 'react';
 import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
 import { useVersions, useLatestVersion, useActiveDocContext } from '@theme/hooks/useDocs';
@@ -12,7 +5,11 @@ import type { Props } from '@theme/NavbarItem/DocsVersionDropdownNavbarItem';
 import { useDocsPreferredVersion } from '@docusaurus/theme-common';
 import { translate } from '@docusaurus/Translate';
 import type { GlobalDataVersion } from '@docusaurus/plugin-content-docs';
+import classNames from 'classnames';
+import Badge from '../../components/Badge';
 import DropdownNavbarItem from './DocSidebarDropdownItem';
+import { versionMap, versionDateMap } from './helper';
+import styles from './styles.module.scss';
 
 const getVersionMainDoc = (version: GlobalDataVersion) => version.docs.find(doc => doc.id === version.mainDocId)!;
 
@@ -31,13 +28,18 @@ export default function DocsVersionDropdownNavbarItem({
   const { preferredVersion, savePreferredVersionName } = useDocsPreferredVersion(docsPluginId);
 
   function getItems() {
-    const versionLinks = versions.map(version => {
+    const versionLinks = versions.map((version, idx) => {
       // We try to link to the same doc, in another version
       // When not possible, fallback to the "main doc" of the version
       const versionDoc = activeDocContext?.alternateDocVersions[version.name] || getVersionMainDoc(version);
       return {
         isNavLink: true,
-        label: version.label,
+        label: (
+          <>
+            <span className={styles.version}>{versionMap[version.label]}</span>
+            {idx === 0 ? <Badge variant="success">latest</Badge> : versionDateMap[version.label]}
+          </>
+        ),
         to: versionDoc.path,
         isActive: () => version === activeDocContext?.activeVersion,
         onClick: () => {
@@ -55,13 +57,18 @@ export default function DocsVersionDropdownNavbarItem({
 
   // Mobile dropdown is handled a bit differently
   const dropdownLabel =
-    mobile && items
-      ? translate({
-          id: 'theme.navbar.mobileVersionsDropdown.label',
-          message: 'Versions',
-          description: 'The label for the navbar versions dropdown on mobile view'
-        })
-      : dropdownVersion.label;
+    mobile && items ? (
+      translate({
+        id: 'theme.navbar.mobileVersionsDropdown.label',
+        message: 'Versions',
+        description: 'The label for the navbar versions dropdown on mobile view'
+      })
+    ) : (
+      <>
+        <span className={classNames(styles.version, styles.versionActive)}>{versionMap[dropdownVersion.label]}</span>
+        {versionDateMap[dropdownVersion.label]}
+      </>
+    );
   const dropdownTo = mobile && items ? undefined : getVersionMainDoc(dropdownVersion).path;
 
   // We don't want to render a version dropdown with 0 or 1 item

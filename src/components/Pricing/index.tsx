@@ -57,15 +57,15 @@ const EnvironmentLayout = ({ environments }) => {
 
   const items = (
     <ul className={styles.environmentsList}>
-      {Object.keys(PlanEnvironments).map(key => {
-        if (environments.includes(parseInt(key))) {
-          return (
+      {Object.keys(PlanEnvironments).map(key => (
+        <>
+          {environments.includes(parseInt(key, 10)) ? (
             <li key={key} className={styles.environmentsItem}>
               {PlanEnvironments[key]}
             </li>
-          );
-        }
-      })}
+          ) : null}
+        </>
+      ))}
     </ul>
   );
 
@@ -144,13 +144,13 @@ const PlanFeatureLayout = ({ hasFeature, featureKey }) => {
       </div>
     );
   }
-  if (specialFeatures.includes(parseInt(featureKey))) return <>N/A</>;
+  if (specialFeatures.includes(parseInt(featureKey, 10))) return <>N/A</>;
 
   return <>&nbsp;</>;
 };
 
 const planHasFeature = (plan, featureKey) => {
-  return plan.features.includes(parseInt(featureKey));
+  return plan.features.includes(parseInt(featureKey, 10));
 };
 
 const PlanTable = ({ monthly, activePlan, showPrice }) => (
@@ -261,33 +261,35 @@ type PricingType = {
 };
 
 const Pricing: FC<PricingType> = ({ showPrice }) => {
-  if (PricePlans.length) {
-    const popularPlan = getPopularPlan();
-    const [monthly, setMonthly] = useState(false);
-    const [activePlan, setActivePlan] = useState(popularPlan.name);
-    return (
-      <>
-        <header>
-          {showPrice && <PaymentPeriodSwitcher monthly={monthly} setMonthly={setMonthly} />}
-          <PlanTabsLayout activePlan={activePlan} setActivePlan={setActivePlan} />
-        </header>
-        <section className={styles.plans}>
-          <PlanTable monthly={monthly} activePlan={activePlan} showPrice={showPrice} />
-          {showPrice && (
-            <div className={styles.plansAdditional}>
-              <p>
-                ** Autoscaling may increase the cost listed. Please{' '}
-                <Link href="https://deity.io/contact">contact us for more information</Link>
-              </p>
-            </div>
-          )}
-        </section>
-      </>
-    );
-  }
+  const popularPlan = getPopularPlan();
+  const [monthly, setMonthly] = useState(false);
+  const [activePlan, setActivePlan] = useState(popularPlan.name);
 
-  // No Plans
-  return <p>There are no plans currently available.</p>;
+  return (
+    <>
+      {PricePlans.length ? (
+        <>
+          <header>
+            {showPrice && <PaymentPeriodSwitcher monthly={monthly} setMonthly={setMonthly} />}
+            <PlanTabsLayout activePlan={activePlan} setActivePlan={setActivePlan} />
+          </header>
+          <section className={styles.plans}>
+            <PlanTable monthly={monthly} activePlan={activePlan} showPrice={showPrice} />
+            {showPrice && (
+              <div className={styles.plansAdditional}>
+                <p>
+                  ** Autoscaling may increase the cost listed. Please{' '}
+                  <Link href="https://deity.io/contact">contact us for more information</Link>
+                </p>
+              </div>
+            )}
+          </section>
+        </>
+      ) : (
+        <p>There are no plans currently available.</p>
+      )}
+    </>
+  );
 };
 
 export default Pricing;

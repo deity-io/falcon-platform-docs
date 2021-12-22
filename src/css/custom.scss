@@ -36,9 +36,15 @@
   --ifm-tooltip-color: #383838;
   --ifm-color-secondary-contrast-background: rgba(96, 87, 211, 0.1);
   --ifm-sidebar-width: 18.75rem;
+  --ifm-color-background-navbar: #fff;
   --ifm-navbar-shadow: none;
   --ifm-accordion-small-color: #5e5e5e;
   --ifm-accordion-small-color-hover: #6057d3;
+  --ifm-color-footer-link: var(--ifm-color-body);
+  --ifm-card-background-color: #fff;
+  --ifm-card-icon-color: var(--ifm-color-primary);
+  --ifm-card-link-color: var(--ifm-color-body);
+  --ifm-footer-card-icon-color: var(--ifm-color-body);
 }
 
 html[data-theme='dark'] {
@@ -59,6 +65,13 @@ html[data-theme='dark'] {
   --ifm-color-dark: #383838;
   --ifm-top-separator-color: #262828;
   --ifm-sidebar-menu-link-color: #aac957;
+  --ifm-color-background-grey: #383838;
+  --ifm-color-footer-link: #aac957;
+  --ifm-card-background-color: rgba(0, 0, 0, 0.2);
+  --ifm-card-icon-color: #fff;
+  --ifm-card-link-color: #fff;
+  --ifm-color-background-navbar: #1a1720;
+  --ifm-footer-card-icon-color: #fff;
 }
 
 html {
@@ -210,5 +223,6 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
 }
 
 .menu {
+  min-height: calc(100vh - 32.7rem);
   background-color: var(--ifm-color-background-grey);
 }

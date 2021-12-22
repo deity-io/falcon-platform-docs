@@ -2,6 +2,5 @@ node_modules/
 build/
 .docusaurus/
 prettier.config.js
-src/components/Pricing/index.tsx
 src/components/Intercom/Chat.tsx
 src/theme/DocSidebarItem/DocSidebarItemCategory.tsx

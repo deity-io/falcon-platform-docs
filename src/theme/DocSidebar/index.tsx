@@ -14,9 +14,8 @@ import IconArrow from '@theme/IconArrow';
 import { translate } from '@docusaurus/Translate';
 import { DocSidebarItems } from '@theme/DocSidebarItem';
 import type { Props } from '@theme/DocSidebar';
-import { iconMap } from '../DocSidebarItem/helper';
-import VersionDropdown from './DocSidebarVersionDropdown';
 import styles from './styles.module.scss';
+import DocSidebarTopElements from './DocSidebarTopElements';
 
 function useShowAnnouncementBar() {
   const { isActive } = useAnnouncementBar();
@@ -84,39 +83,7 @@ function DocSidebarDesktop({
         })}
       >
         <ul className={classNames(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>
-          {showVersionDropdown && (
-            <>
-              <li>
-                <a
-                  href="/"
-                  className={classNames(
-                    'menuLink_src-theme-DocSidebarItem-styles-module menuLinkSublist_src-theme-DocSidebarItem-styles-module',
-                    styles.backLink
-                  )}
-                >
-                  {iconMap['All docs']}
-                  All docs
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={classNames(
-                    'menuLink_src-theme-DocSidebarItem-styles-module menuLinkSublist_src-theme-DocSidebarItem-styles-module',
-                    styles.playground
-                  )}
-                >
-                  GraphQL Playground
-                  {iconMap['GraphQL Playground']}
-                </a>
-              </li>
-              <li>
-                <div className={styles.versionDropdownContainer}>
-                  <VersionDropdown items={[]} dropdownItemsAfter={[]} dropdownItemsBefore={[]} />
-                </div>
-              </li>
-            </>
-          )}
+          <DocSidebarTopElements enabled={showVersionDropdown} />
           <DocSidebarItems items={sidebar} activePath={path} level={1} />
         </ul>
       </nav>
@@ -128,6 +95,7 @@ function DocSidebarDesktop({
 // eslint-disable-next-line react/function-component-definition
 const DocSidebarMobileSecondaryMenu: MobileSecondaryMenuComponent<Props> = ({ toggleSidebar, sidebar, path }) => (
   <ul className={classNames(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>
+    <DocSidebarTopElements enabled />
     <DocSidebarItems
       items={sidebar}
       activePath={path}
