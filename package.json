@@ -8,7 +8,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "lint": "eslint . --ext [.ts,.tsx]"
+    "lint": "eslint --config .eslintrc.json --ext=ts,tsx --fix .",
+    "git:commit": "npm run lint"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.13",

@@ -45,6 +45,12 @@
   --ifm-card-icon-color: var(--ifm-color-primary);
   --ifm-card-link-color: var(--ifm-color-body);
   --ifm-footer-card-icon-color: var(--ifm-color-body);
+  --ifm-navbar-padding-vertical: 0.5rem;
+  --ifm-navbar-padding-horizontal: 1.5rem;
+  --ifm-navbar-height: 4.5rem;
+  --ifm-font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+  --ifm-tooltip-width: 8px;
+  --ifm-tooltip-height: 3px;
 }
 
 html[data-theme='dark'] {
@@ -75,7 +81,7 @@ html[data-theme='dark'] {
 }
 
 html {
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+  font-family: var(--ifm-font-family);
 }
 
 .navbar__brand {
@@ -225,4 +231,43 @@ button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
 .menu {
   min-height: calc(100vh - 32.7rem);
   background-color: var(--ifm-color-background-grey);
+}
+
+.markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--ifm-font-family);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.625rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.3);
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
 }

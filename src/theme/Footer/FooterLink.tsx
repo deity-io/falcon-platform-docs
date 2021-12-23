@@ -14,6 +14,7 @@ const FooterLink: FC<FooterLinkType> = ({ to, href, label, ...props }) => {
 
   return (
     <Link
+      key={label}
       className={styles.footerLink}
       {...(href
         ? {

@@ -1,11 +1,14 @@
 import React, { FC, useState } from 'react';
+import classNames from 'classnames';
 import styles from './styles.module.scss';
 
 type TooltipType = {
-  content: string;
+  content?: string;
+  open?: boolean;
+  position?: 'top' | 'right' | 'bottom' | 'left';
 };
 
-const Tooltip: FC<TooltipType> = ({ content, children }) => {
+const Tooltip: FC<TooltipType> = ({ content, children, open = false, position = 'top' }) => {
   const [style, setStyle] = useState({ display: 'none' });
 
   return content ? (
@@ -19,7 +22,7 @@ const Tooltip: FC<TooltipType> = ({ content, children }) => {
       }}
     >
       {children}
-      <div className={styles.tooltip} style={style}>
+      <div className={classNames(styles.tooltip, styles[position])} style={open === true ? null : style}>
         {content}
       </div>
     </div>

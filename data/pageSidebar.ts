@@ -39,29 +39,30 @@ export const sidebarLinks: PropSidebarItem[] = [
   },
   {
     collapsed: true,
+    collapsible: false,
     type: 'category',
     label: 'Products',
     className: styles.productsCategory,
     items: [
       {
-        type: 'doc',
+        type: 'link',
         label: 'Storefront',
-        id: '#'
+        href: '#storefront'
       },
       {
-        type: 'doc',
+        type: 'link',
         label: 'Service Composer',
-        id: '#'
+        href: '#serviceComposer'
       },
       {
-        type: 'doc',
+        type: 'link',
         label: 'Payments',
-        id: '#'
+        href: '#payments'
       },
       {
-        type: 'doc',
+        type: 'link',
         label: 'Data Integrator',
-        id: '#'
+        href: '#dataIntegrator'
       }
     ]
   }

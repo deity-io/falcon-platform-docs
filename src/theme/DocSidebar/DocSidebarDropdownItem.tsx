@@ -78,8 +78,9 @@ function DropdownNavbarItemDesktop({ items, position, className, ...props }: Des
         {props.children ?? props.label}
       </NavLink>
       <ul ref={dropdownMenuRef} className={classNames(styles.dropdownMenu, 'dropdown__menu')}>
-        {items.map(childItemProps => (
+        {items.map((childItemProps, i) => (
           <NavbarItem
+            key={childItemProps.id}
             isDropdownItem
             onKeyDown={e => {
               if (i === items.length - 1 && e.key === 'Tab') {
@@ -93,7 +94,6 @@ function DropdownNavbarItemDesktop({ items, position, className, ...props }: Des
             }}
             activeClassName={dropdownLinkActiveClass}
             {...childItemProps}
-            key={childItemProps.itemID}
           />
         ))}
       </ul>

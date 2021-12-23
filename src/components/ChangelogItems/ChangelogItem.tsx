@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import Badge, { BadgeType } from '../Badge';
+import Tooltip from '../Tooltip';
+import { tooltipBadgeMap } from './helper';
 import styles from './styles.module.scss';
 import { ChangelogItemType } from './types';
 
@@ -15,7 +17,9 @@ const badgeVariantMap: {
 const ChangelogItem: FC<ChangelogItemType> = ({ type, text }) => (
   <div className={styles.itemContainer}>
     <div className={styles.itemBadge}>
-      <Badge variant={badgeVariantMap[type]}>{type}</Badge>
+      <Tooltip content={tooltipBadgeMap[type]}>
+        <Badge variant={badgeVariantMap[type]}>{type}</Badge>
+      </Tooltip>
     </div>
     <div className={styles.itemText}>{text}</div>
   </div>

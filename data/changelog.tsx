@@ -27,18 +27,15 @@ export const changelogItems: ChangelogItemsType['items'] = [
         data: [
           {
             type: 'feature',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           },
           {
             type: 'bugfix',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           },
           {
             type: 'improvement',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           }
         ]
       },
@@ -48,18 +45,15 @@ export const changelogItems: ChangelogItemsType['items'] = [
         data: [
           {
             type: 'hotfix',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           },
           {
             type: 'bugfix',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           },
           {
             type: 'improvement',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           }
         ]
       }
@@ -73,18 +67,15 @@ export const changelogItems: ChangelogItemsType['items'] = [
         data: [
           {
             type: 'feature',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           },
           {
             type: 'bugfix',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           },
           {
             type: 'improvement',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           }
         ]
       }
@@ -98,8 +89,7 @@ export const changelogItems: ChangelogItemsType['items'] = [
         data: [
           {
             type: 'improvement',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           }
         ]
       },
@@ -108,8 +98,7 @@ export const changelogItems: ChangelogItemsType['items'] = [
         data: [
           {
             type: 'bugfix',
-            text:
-              'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
+            text: 'Partiendo vix altera virtute euismod ut ad an has vis ei aliquid verterem omnium an ei omnium. Ex alterum feugait ei luptatum alia voluptatum putent ne te porro natum commune.'
           }
         ]
       }

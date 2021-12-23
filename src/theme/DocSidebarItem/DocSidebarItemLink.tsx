@@ -22,6 +22,7 @@ const DocSidebarItemLink = ({
         ThemeClassNames.docs.docSidebarItemLink,
         ThemeClassNames.docs.docSidebarItemLinkLevel(level),
         styles.menuListItem,
+        'lol',
         className
       )}
       key={label}

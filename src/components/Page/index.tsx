@@ -6,7 +6,14 @@ import styles from './styles.module.scss';
 const Page: FC = ({ children }) => (
   <div className={styles.pageContainer}>
     <aside className={styles.sidebar}>
-      <Sidebar path="" showVersionDropdown={false} sidebar={sidebarLinks} onCollapse={() => {}} isHidden={false} />
+      <Sidebar
+        key="pageSidebar"
+        path={window.location.pathname}
+        showVersionDropdown={false}
+        sidebar={sidebarLinks}
+        onCollapse={() => {}}
+        isHidden={false}
+      />
     </aside>
     <div className={styles.content}>{children}</div>
   </div>

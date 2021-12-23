@@ -5,9 +5,10 @@
 
 .tooltip {
   position: absolute;
-  left: 0;
   bottom: calc(100% + 0.25rem);
+  min-width: 6rem;
   max-width: 9.9375rem;
+  min-height: 1.1rem;
   background-color: var(--ifm-tooltip-color);
   padding: 0.25rem;
   border-radius: 4px;
@@ -20,13 +21,61 @@
   &:after {
     content: '';
     position: absolute;
-    left: 0.9rem;
-    top: 100%;
     display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
+  }
+}
+
+.top {
+  bottom: calc(100% + var(--ifm-tooltip-height));
+  left: 0;
+
+  &:after {
+    left: 0.9rem;
+    top: 100%;
     border-width: 3px 4px 0 4px;
     border-color: var(--ifm-tooltip-color) transparent transparent transparent;
+  }
+}
+
+.bottom {
+  top: calc(100% + var(--ifm-tooltip-height));
+  left: 0;
+
+  &:after {
+    left: 0.9rem;
+    bottom: 100%;
+    border-width: 0 3px 4px 4px;
+    border-color: transparent transparent var(--ifm-tooltip-color) transparent;
+  }
+}
+
+.right {
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + var(--ifm-tooltip-width));
+
+  &:after {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 3px 4px 3px 0;
+    border-color: transparent var(--ifm-tooltip-color) transparent transparent;
+  }
+}
+
+.left {
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(100% + var(--ifm-tooltip-width));
+
+  &:after {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 4px 0 3px 4px;
+    border-color: transparent transparent transparent var(--ifm-tooltip-color);
   }
 }

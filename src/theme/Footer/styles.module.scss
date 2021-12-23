@@ -1,7 +1,7 @@
 @use '../../css/variables' as v;
 
 .footer {
-  padding: 4rem 0 2rem;
+  padding: 2rem 0 2rem;
   background: var(--ifm-color-background-grey);
 
   @include v.min-md {

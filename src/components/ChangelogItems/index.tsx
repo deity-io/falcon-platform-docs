@@ -5,7 +5,6 @@ import ChangelogItem from './ChangelogItem';
 import ChangelogAccordion from './ChangelogAccordion';
 import ChangelogSubtitle from './ChangelogSubtitle';
 import ChangelogTitle from './ChangelogTitle';
-import { handleCopyUrl } from './helper';
 
 const ChangelogItems: FC<ChangelogItemsType> = ({ items }) => (
   <>
@@ -14,8 +13,8 @@ const ChangelogItems: FC<ChangelogItemsType> = ({ items }) => (
       const id = `release-${date}`;
 
       return (
-        <div role="presentation" className={styles.container} id={id} onClick={() => handleCopyUrl(id)}>
-          <ChangelogTitle idx={idx}>
+        <div key={id} id={id} className={styles.container}>
+          <ChangelogTitle idx={idx} id={id}>
             {item.title ? item.title : 'Release'} {date}
           </ChangelogTitle>
           {item.changes.map(change => (

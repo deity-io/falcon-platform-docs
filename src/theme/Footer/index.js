@@ -49,7 +49,7 @@ const Footer = () => {
         {links && links.length > 0 && (
           <div className="row footer__links">
             {links.map(linkItem => (
-              <div key={linkItem.label} className="col footer__col">
+              <div key={linkItem.title} className="col footer__col">
                 {linkItem.title != null ? <h4 className={styles.footerTitle}>{linkItem.title}</h4> : null}
                 {linkItem.items != null && Array.isArray(linkItem.items) && linkItem.items.length > 0 ? (
                   <ul className="footer__items">
@@ -57,7 +57,7 @@ const Footer = () => {
                       item.html ? (
                         <li key={item.label} className={styles.footerItem} />
                       ) : (
-                        <li key={item.href || item.to} className={styles.footerItem}>
+                        <li key={item.label || item.to} className={styles.footerItem}>
                           <FooterLink {...item} />
                         </li>
                       )

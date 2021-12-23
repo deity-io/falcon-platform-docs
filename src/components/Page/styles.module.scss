@@ -4,43 +4,6 @@
   width: 100%;
   display: flex;
 
-  .sidebar {
-    > div {
-      padding-top: 0;
-    }
-
-    nav {
-      padding-top: 5rem;
-    }
-
-    ul li a {
-      font-size: 1rem;
-      line-height: 1rem;
-      font-weight: normal;
-      font-weight: bold;
-      padding: 0.5rem 0 0.5rem 2.1rem;
-
-      svg {
-        display: none;
-      }
-    }
-
-    ul li ul {
-      padding: 0.1rem 0 0 2rem;
-
-      li {
-        padding: 0.1rem 0;
-      }
-
-      a {
-        font-size: 0.8rem;
-        line-height: 1rem;
-        font-weight: normal;
-        padding: 0;
-      }
-    }
-  }
-
   .content {
     margin: 0 auto;
 
@@ -61,6 +24,49 @@
 
   @include v.min-md {
     display: block;
+  }
+}
+
+.sidebar {
+  display: none;
+
+  @include v.min-md {
+    display: block;
+  }
+
+  > div {
+    padding-top: 0;
+  }
+
+  nav {
+    padding-top: 5rem;
+  }
+
+  ul li a {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+    font-weight: bold;
+    padding: 0.5rem 0 0.5rem 2.8rem;
+
+    svg {
+      display: none;
+    }
+  }
+
+  ul li ul {
+    padding: 0.1rem 0 0 2.8rem;
+
+    li {
+      padding: 0;
+    }
+
+    a {
+      font-size: 0.8rem;
+      line-height: 1rem;
+      font-weight: normal;
+      padding: 0;
+    }
   }
 }
 

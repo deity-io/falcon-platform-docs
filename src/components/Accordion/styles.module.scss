@@ -79,6 +79,10 @@
   }
 
   .question__open {
+    & .arrowSmall path {
+      fill: var(--ifm-accordion-small-color-hover);
+    }
+
     &.question {
       color: var(--ifm-accordion-small-color-hover);
     }
