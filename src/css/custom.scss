@@ -26,7 +26,10 @@
   --ifm-table-border-color-highlight: #dcdcfc;
   --ifm-color-dark: #383838;
   --ifm-top-separator-color: #f6f6f6;
+  --ifm-sidebar-width: 18.75rem;
   --ifm-sidebar-menu-link-color: #383838;
+  --ifm-sidebar-menu-link-active-color: var(--ifm-color-primary);
+  --ifm-sidebar-menu-link-hover-color: var(--ifm-color-primary);
   --ifm-badge-text-color: #fff;
   --ifm-badge-primary-color: #6057d3;
   --ifm-badge-secondary-color: #9b51e0;
@@ -35,7 +38,6 @@
   --ifm-badge-error-color: #eb5757;
   --ifm-tooltip-color: #383838;
   --ifm-color-secondary-contrast-background: rgba(96, 87, 211, 0.1);
-  --ifm-sidebar-width: 18.75rem;
   --ifm-color-background-navbar: #fff;
   --ifm-navbar-shadow: none;
   --ifm-accordion-small-color: #5e5e5e;
@@ -79,6 +81,8 @@ html[data-theme='dark'] {
   --ifm-card-link-color: #fff;
   --ifm-color-background-navbar: #1a1720;
   --ifm-footer-card-icon-color: #fff;
+  --ifm-sidebar-menu-link-active-color: #fff;
+  --ifm-sidebar-menu-link-hover-color: #fff;
 }
 
 html {

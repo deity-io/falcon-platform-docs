@@ -14,7 +14,7 @@ const ChangelogTitle: FC<Props> = ({ children, idx, id }) => {
   const [isCopyUrlClicked, setCopyUrlClicked] = useState(false);
   const handleCopyUrl = (idEl: string) => {
     setCopyUrlClicked(true);
-    navigator.clipboard.writeText(`${window.location.href}#${idEl}`);
+    navigator.clipboard.writeText(`${typeof window !== 'undefined' && window.location.href}#${idEl}`);
   };
 
   return (
