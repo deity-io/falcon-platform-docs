@@ -60,5 +60,8 @@
 
 .linkIcon {
   margin-left: 0.4375rem;
-  fill: var(--ifm-link-color);
+
+  path {
+    fill: var(--ifm-product-link-icon-color);
+  }
 }

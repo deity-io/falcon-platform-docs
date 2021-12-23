@@ -1,9 +1,9 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import ChangelogIcon from '@site/static/icons/changelog.svg';
 import CheckListIcon from '@site/static/icons/checklist.svg';
 import SlackIcon from '@site/static/icons/slack.svg';
+import classNames from 'classnames';
 import Card from '../../components/Card';
 import { Chat } from '../../components/Intercom';
 import styles from './styles.module.scss';
@@ -18,7 +18,6 @@ const Footer = () => {
   const { themeConfig = {} } = siteConfig;
   const { footer } = themeConfig;
   const { copyright, links = [], logo = {} } = footer || {};
-  const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
     return null;
@@ -49,7 +48,7 @@ const Footer = () => {
         {links && links.length > 0 && (
           <div className="row footer__links">
             {links.map(linkItem => (
-              <div key={linkItem.title} className="col footer__col">
+              <div key={linkItem.title} className={classNames(styles.footerColumn, 'col', 'footer__col')}>
                 {linkItem.title != null ? <h4 className={styles.footerTitle}>{linkItem.title}</h4> : null}
                 {linkItem.items != null && Array.isArray(linkItem.items) && linkItem.items.length > 0 ? (
                   <ul className="footer__items">
@@ -68,7 +67,7 @@ const Footer = () => {
             ))}
             <div className="col footer__col">
               <FooterCopyright copyrightText={copyright} />
-              <FooterLogo url={logoUrl} alt={logo.alt} />
+              <FooterLogo alt={logo.alt} />
               <FooterSocials />
             </div>
           </div>

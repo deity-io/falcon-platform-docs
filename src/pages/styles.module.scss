@@ -60,7 +60,11 @@
     > div {
       flex-basis: 15rem;
       max-width: 15rem;
-      margin: 0 -1.9rem 0 0;
+      margin: 0 1.9rem 0 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

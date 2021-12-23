@@ -1,0 +1,23 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 64" width="162" height="64">
+	<title>deity-docs-logo-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #a0cc3f } 
+		.s1 { fill: #ffffff } 
+		.t2 { font-size: 12px;fill: #a0cc3f;font-weight: bold;font-family: "' Avenir Next" } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" fill-rule="evenodd" class="s0" d="m31.71 0l7.5 4.33v12.44l-7.44-4.23l-16.91 9.77v19.55l16.9 9.77l16.91-9.77l0-32.06l10.74 6.2v32l-27.71 16l-27.71-16v-32l27.71-16zm0.18 23.64l7.34 4.21v8.43l-7.33 4.21l-7.34-4.21v-8.43l7.33-4.21h0z" />
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" fill-rule="evenodd" class="s1" d="m78.88 14.87c6.61-0.03 10.59 4.21 10.59 9.97c0 5.82-4.34 10.03-10.59 10.03h-8.88v-19.97l8.88-0.03zm-4.04 4.47v11.06h4.04c3.36 0 5.7-2.21 5.7-5.56c0-3.59-2.27-5.5-5.7-5.5h-4.04zm17.36-4.47h15.38v4.47h-10.53v3.44h8.79v4.18h-8.79v3.44h10.53v4.47h-15.38v-20zm23.76 0v20h-4.84v-20h4.84zm22.05 0v4.47h-7.11v15.53h-4.9v-15.53h-7.11v-4.47h19.12zm24 0l-8.62 12.44v7.56h-4.87v-7.56l-8.56-12.44h5.58l5.46 8.18l5.37-8.18h5.64z" />
+			</g>
+			<g id="Layer">
+				<text id="DOCS" style="transform: matrix(1.367,0,0,1.367,68.801,48.817)" >
+					<tspan x="0" y="0" class="t2">DOCS
+</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>
