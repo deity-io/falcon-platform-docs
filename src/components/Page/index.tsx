@@ -8,7 +8,7 @@ const Page: FC = ({ children }) => (
     <aside className={styles.sidebar}>
       <Sidebar
         key="pageSidebar"
-        path={window.location.pathname}
+        path={typeof window !== 'undefined' && window.location.pathname}
         showVersionDropdown={false}
         sidebar={sidebarLinks}
         onCollapse={() => {}}
