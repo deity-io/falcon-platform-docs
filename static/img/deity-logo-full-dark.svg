@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 28" width="69" height="28">
+	<title>deity-logo-full-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #a0cc3f } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m12.7 0.35l3.24 1.87v5.37l-3.22-1.83l-7.31 4.22v8.45l7.3 4.22l7.31-4.22l0-13.85l4.64 2.68v13.83l-11.97 6.91l-11.97-6.91v-13.83l11.97-6.91zm0.08 10.21l3.17 1.82v3.64l-3.17 1.82l-3.17-1.82v-3.64l3.17-1.82h0z" />
+	<path id="Layer" fill-rule="evenodd" class="s1" d="m33.09 9.85c2.86-0.01 4.58 1.82 4.58 4.31c0 2.52-1.87 4.33-4.58 4.33h-3.84v-8.63l3.84-0.01zm-1.75 1.93v4.78h1.75c1.45 0 2.46-0.95 2.46-2.4c0-1.55-0.98-2.38-2.46-2.38h-1.75zm7.5-1.93h6.64v1.93h-4.55v1.49h3.8v1.8h-3.8v1.49h4.55v1.93h-6.64v-8.64zm10.27 0v8.64h-2.09v-8.64h2.09zm9.53 0v1.93h-3.07v6.71h-2.12v-6.71h-3.07v-1.93h8.26zm10.37 0l-3.72 5.38v3.27h-2.1v-3.27l-3.7-5.38h2.41l2.36 3.53l2.32-3.53h2.44z" />
+</svg>
