@@ -53,6 +53,14 @@
   }
 }
 
-.marginBottom0 {
-  margin-bottom: 0;
+.title1,
+.title2,
+.title3,
+.title4,
+.title1Description,
+.title3Description,
+.title4Description {
+  &.marginBottom0 {
+    margin-bottom: 0;
+  }
 }

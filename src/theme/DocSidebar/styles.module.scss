@@ -107,18 +107,6 @@
   width: 24px;
 }
 
-.backLink {
-  margin: 1rem 0 1.7rem;
-
-  @include v.min-md {
-    margin: 1rem 0 3.4rem;
-  }
-
-  svg {
-    width: 0.5rem;
-  }
-}
-
 .versionDropdownContainer {
   margin: 0.5rem 0 3.25rem;
   padding-left: 2rem;
@@ -161,8 +149,34 @@
   }
 }
 
+.menuLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 0.5rem 0 0.5rem 2.1rem;
+  color: var(--ifm-sidebar-menu-link-color);
+}
+
+.backLink {
+  margin: 1rem 0 1.7rem;
+
+  @include v.min-md {
+    margin: 1rem 0 3.4rem;
+  }
+
+  svg {
+    width: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+
 .playground {
   svg {
+    width: 0.9rem;
+    height: 0.9rem;
     margin-left: 0.8rem;
   }
 }
