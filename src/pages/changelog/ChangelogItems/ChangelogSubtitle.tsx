@@ -1,8 +1,17 @@
 import React, { FC } from 'react';
 import Badge from '../../../components/Badge';
 import Typography from '../../../components/Typography';
+import { ChangelogUpdatedPackageType } from './ChangelogAccordion';
+import { ChangelogItemType } from './ChangelogItem';
 import styles from './styles.module.scss';
-import { ChangelogItemsChange } from './types';
+
+export type ChangelogItemsChange = {
+  id: string;
+  title: string;
+  breaking?: boolean;
+  updatedPackages?: ChangelogUpdatedPackageType[];
+  data?: ChangelogItemType[];
+};
 
 type Props = {
   data: ChangelogItemsChange;
@@ -13,7 +22,7 @@ const ChangelogSubtitle: FC<Props> = ({ children, data }) => (
     <Typography variant="title4" gutterBottom={false}>
       {children}
     </Typography>
-    {data.breaking === true && (
+    {data && data.breaking === true && (
       <div className={styles.changeTitleBadge}>
         <Badge variant="warning">breaking</Badge>
       </div>

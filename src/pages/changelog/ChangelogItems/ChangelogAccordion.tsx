@@ -2,7 +2,12 @@ import React, { FC } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 import Accordion from '../../../components/Accordion';
 import styles from './styles.module.scss';
-import { ChangelogUpdatedPackageType } from './types';
+
+export type ChangelogUpdatedPackageType = {
+  id: string;
+  title: string;
+  code: string;
+};
 
 type ChangelogAccordionType = {
   items?: ChangelogUpdatedPackageType[];

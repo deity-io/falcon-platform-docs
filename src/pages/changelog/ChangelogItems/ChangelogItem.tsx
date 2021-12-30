@@ -1,9 +1,13 @@
 import React, { FC } from 'react';
 import Badge, { BadgeType } from '../../../components/Badge';
 import Tooltip from '../../../components/Tooltip';
-import { tooltipBadgeMap } from './helper';
 import styles from './styles.module.scss';
-import { ChangelogItemType } from './types';
+
+export type ChangelogItemType = {
+  id: string;
+  type: 'feature' | 'bugfix' | 'hotfix' | 'improvement';
+  text: string;
+};
 
 const badgeVariantMap: {
   [key in ChangelogItemType['type']]: BadgeType['variant'];
@@ -12,6 +16,15 @@ const badgeVariantMap: {
   bugfix: 'error',
   hotfix: 'warning',
   improvement: 'secondary'
+};
+
+const tooltipBadgeMap: {
+  [key in ChangelogItemType['type']]: string;
+} = {
+  feature: 'lorem feature ipsum',
+  bugfix: 'lorem bugfix ipsum',
+  hotfix: 'lorem bugfix ipsum',
+  improvement: 'lorem improvement ipsum'
 };
 
 const ChangelogItem: FC<ChangelogItemType> = ({ type, text }) => (
