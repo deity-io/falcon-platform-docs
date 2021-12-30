@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import { useCallback, useState, useEffect } from 'react';
 import { useMobileSecondaryMenuRenderer, usePrevious } from '@docusaurus/theme-common';
 
@@ -7,12 +14,13 @@ function useSecondaryMenu({ sidebarShown, toggleSidebar }: NavbarMobileSidebarPr
   });
   const previousContent = usePrevious(content);
 
-  const [shown, setShown] = useState<boolean>(() => {
-    // /!\ content is set with useEffect,
-    // so it's not available on mount anyway
-    // "return !!content" => always returns false
-    return false;
-  });
+  const [shown, setShown] = useState<boolean>(
+    () =>
+      // /!\ content is set with useEffect,
+      // so it's not available on mount anyway
+      // "return !!content" => always returns false
+      false
+  );
 
   // When content is become available for the first time (set in useEffect)
   // we set this content to be shown!

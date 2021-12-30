@@ -1,0 +1,18 @@
+.checkbox {
+  display: flex;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--ifm-color-body);
+  padding: 0 0 0 0.75rem;
+  cursor: pointer;
+  user-select: none;
+
+  &.small {
+    font-size: 0.625rem;
+    color: #8e8e8e;
+  }
+}

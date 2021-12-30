@@ -37,9 +37,7 @@ const Solution = ({ solution }) => {
 };
 
 const Solutions = () => {
-  const solutions = PlatformSolutions.map(solution => {
-    return <Solution key={solution.name} solution={solution} />;
-  });
+  const solutions = PlatformSolutions.map(solution => <Solution key={solution.name} solution={solution} />);
 
   return <section className={styles.solutions}>{solutions}</section>;
 };

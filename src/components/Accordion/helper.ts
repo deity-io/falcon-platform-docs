@@ -3,8 +3,8 @@
  * @param {string} string
  * @returns {string}
  */
-export const slugify = string => {
-  return string
+export const slugify = string =>
+  string
     .toString()
     .toLowerCase()
     .substring(0, 30) // We dont want it to be too long
@@ -13,4 +13,3 @@ export const slugify = string => {
     .replace(/--+/g, '-') // Replace multiple - with single -
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, '');
-};

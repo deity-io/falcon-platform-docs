@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import Badge, { BadgeType } from '../Badge';
-import Tooltip from '../Tooltip';
+import Badge, { BadgeType } from '../../../components/Badge';
+import Tooltip from '../../../components/Tooltip';
 import { tooltipBadgeMap } from './helper';
 import styles from './styles.module.scss';
 import { ChangelogItemType } from './types';

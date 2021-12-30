@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import CodeBlock from '@theme/CodeBlock';
-import Accordion from '../Accordion';
+import Accordion from '../../../components/Accordion';
 import styles from './styles.module.scss';
 import { ChangelogUpdatedPackageType } from './types';
 
@@ -13,7 +13,7 @@ const ChangelogAccordion: FC<ChangelogAccordionType> = ({ items }) => (
     <Accordion open={false} title="Updated packages" variant="small">
       {items &&
         items.map(item => (
-          <div className={styles.accordionContent}>
+          <div key={item.id} className={styles.accordionContent}>
             <div className={styles.accordionContentTitle}>{item.title}</div>
             <CodeBlock>{item.code}</CodeBlock>
           </div>

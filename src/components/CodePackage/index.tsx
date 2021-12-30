@@ -15,14 +15,12 @@ const icon = (
   </svg>
 );
 
-const CodePackage = ({ name }) => {
-  return (
-    <div className={styles.codePackage}>
-      {icon}
-      <span>package:</span>
-      <span className={styles.packageName}>{name}</span>
-    </div>
-  );
-};
+const CodePackage = ({ name }) => (
+  <div className={styles.codePackage}>
+    {icon}
+    <span>package:</span>
+    <span className={styles.packageName}>{name}</span>
+  </div>
+);
 
 export default CodePackage;

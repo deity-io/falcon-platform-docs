@@ -13,16 +13,18 @@ const ChangelogItems: FC<ChangelogItemsType> = ({ items }) => (
       const id = `release-${date}`;
 
       return (
-        <div key={id} id={id} className={styles.container}>
+        <div key={item.id} id={id} className={styles.container}>
           <ChangelogTitle idx={idx} id={id}>
             {item.title ? item.title : 'Release'} {date}
           </ChangelogTitle>
           {item.changes.map(change => (
-            <div className={styles.changeContainer}>
+            <div key={change.id} className={styles.changeContainer}>
               <ChangelogSubtitle data={change}>{change.title}</ChangelogSubtitle>
               {change.updatedPackages && <ChangelogAccordion items={change.updatedPackages} />}
               {change.data &&
-                change.data.map(changeItem => <ChangelogItem type={changeItem.type} text={changeItem.text} />)}
+                change.data.map(changeItem => (
+                  <ChangelogItem key={changeItem.id} id={changeItem.id} type={changeItem.type} text={changeItem.text} />
+                ))}
             </div>
           ))}
         </div>

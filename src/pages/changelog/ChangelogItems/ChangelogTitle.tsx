@@ -1,8 +1,8 @@
 import React, { FC, useState } from 'react';
-import Badge from '../Badge';
-import Typography from '../Typography';
-import LinkIcon from '../../../static/icons/link.svg';
-import Tooltip from '../Tooltip';
+import LinkIcon from '@site/static/icons/link.svg';
+import Badge from '../../../components/Badge';
+import Typography from '../../../components/Typography';
+import Tooltip from '../../../components/Tooltip';
 import styles from './styles.module.scss';
 
 type Props = {
@@ -14,7 +14,7 @@ const ChangelogTitle: FC<Props> = ({ children, idx, id }) => {
   const [isCopyUrlClicked, setCopyUrlClicked] = useState(false);
   const handleCopyUrl = (idEl: string) => {
     setCopyUrlClicked(true);
-    navigator.clipboard.writeText(`${typeof window !== 'undefined' && window.location.href}#${idEl}`);
+    navigator.clipboard.writeText(`${typeof window !== 'undefined' && window.location.host}/changelog#${idEl}`);
   };
 
   return (

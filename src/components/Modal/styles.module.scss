@@ -1,0 +1,34 @@
+@use '../../css/variables' as v;
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: #fff;
+  z-index: 801;
+  color: var(--ifm-color-body);
+
+  @include v.min-sm {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 30rem;
+    min-height: 10rem;
+    border-radius: 1rem;
+  }
+}
+
+.modal {
+  position: relative;
+  padding: 1rem 1.5rem;
+
+  .close {
+    position: absolute;
+    top: 1.75rem;
+    right: 2.6875rem;
+    cursor: pointer;
+    user-select: none;
+  }
+}

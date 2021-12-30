@@ -82,14 +82,12 @@ const ComparisonFeatures: FC = () => (
   </>
 );
 
-const ComparisonTable = () => {
-  return (
-    <table>
-      <tbody>
-        <ComparisonFeatures />
-      </tbody>
-    </table>
-  );
-};
+const ComparisonTable = () => (
+  <table>
+    <tbody>
+      <ComparisonFeatures />
+    </tbody>
+  </table>
+);
 
 export default ComparisonTable;

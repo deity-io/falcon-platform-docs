@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import React, { useState, useRef, useEffect } from 'react';
 import classNames from 'classnames';
 import {
@@ -80,7 +87,8 @@ function DropdownNavbarItemDesktop({ items, position, className, ...props }: Des
       <ul ref={dropdownMenuRef} className={classNames(styles.dropdownMenu, 'dropdown__menu')}>
         {items.map((childItemProps, i) => (
           <NavbarItem
-            key={childItemProps.id}
+            // eslint-disable-next-line react/no-array-index-key
+            key={i} // this element comes from orignal classic-theme and index is stable
             isDropdownItem
             onKeyDown={e => {
               if (i === items.length - 1 && e.key === 'Tab') {

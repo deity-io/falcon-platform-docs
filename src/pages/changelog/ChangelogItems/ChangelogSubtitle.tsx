@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import Badge from '../Badge';
-import Typography from '../Typography';
+import Badge from '../../../components/Badge';
+import Typography from '../../../components/Typography';
 import styles from './styles.module.scss';
 import { ChangelogItemsChange } from './types';
 

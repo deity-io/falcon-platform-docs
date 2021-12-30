@@ -61,9 +61,7 @@ const Example = ({ example }) => {
 const Examples = () => {
   const exampleCount = ExampleProjects.length;
   if (exampleCount) {
-    const examples = ExampleProjects.map(example => {
-      return <Example key={example.shortName} example={example} />;
-    });
+    const examples = ExampleProjects.map(example => <Example key={example.shortName} example={example} />);
 
     return (
       <>

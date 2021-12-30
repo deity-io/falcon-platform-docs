@@ -1,6 +1,10 @@
 .container {
   text-align: left;
-  margin-bottom: 4rem;
+  padding-top: 4.5rem;
+
+  &:last-child {
+    padding-bottom: 6rem;
+  }
 }
 
 .title {
@@ -26,8 +30,8 @@
 }
 
 .linkIcon {
-  width: 1.1rem;
-  height: 1.2rem;
+  width: 1.035rem;
+  height: 1.035rem;
   cursor: pointer;
 }
 
@@ -84,4 +88,8 @@
 
 .changeContainer {
   margin-bottom: 2.875rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

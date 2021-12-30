@@ -8,15 +8,25 @@ type ButtonType = {
   startIcon?: JSX.Element;
   endIcon?: JSX.Element;
   href: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 };
 
-const Button: FC<ButtonType> = ({ children, variant = 'contained', color = 'primary', startIcon, endIcon, href }) => (
+const Button: FC<ButtonType> = ({
+  children,
+  variant = 'contained',
+  color = 'primary',
+  startIcon,
+  endIcon,
+  href,
+  onClick
+}) => (
   <a
     className={classNames(styles.container, {
       [styles[variant]]: variant,
       [styles[color]]: color
     })}
     href={href}
+    onClick={onClick}
   >
     {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
     {children}

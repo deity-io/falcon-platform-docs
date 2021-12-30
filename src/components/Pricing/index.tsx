@@ -149,9 +149,7 @@ const PlanFeatureLayout = ({ hasFeature, featureKey }) => {
   return <>&nbsp;</>;
 };
 
-const planHasFeature = (plan, featureKey) => {
-  return plan.features.includes(parseInt(featureKey, 10));
-};
+const planHasFeature = (plan, featureKey) => plan.features.includes(parseInt(featureKey, 10));
 
 const PlanTable = ({ monthly, activePlan, showPrice }) => (
   <table className={styles.table}>
