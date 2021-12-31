@@ -1,0 +1,278 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-body: #383838;
+  --ifm-color-primary: #6057d3;
+  --ifm-color-purple: #545df6;
+  --ifm-color-background-grey: #f5f5f5;
+  --ifm-hero-text-color: #ffffff;
+  --ifm-button-background-color: #6057d3;
+  --ifm-button-border-color: #6057d3;
+  --ifm-button-padding-vertical: 1rem;
+  --ifm-background-secondary: whitesmoke;
+  --ifm-font-size-sm: 0.8rem;
+  --ifm-font-size-xs: 0.6rem;
+  --ifm-table-background: white;
+  --ifm-table-border-color: whitesmoke;
+  --ifm-table-background-highlight: #ebecfb;
+  --ifm-table-border-color-highlight: #dcdcfc;
+  --ifm-color-dark: #383838;
+  --ifm-top-separator-color: #f6f6f6;
+  --ifm-sidebar-width: 18.75rem;
+  --ifm-sidebar-menu-link-color: #383838;
+  --ifm-sidebar-menu-link-active-color: var(--ifm-color-primary);
+  --ifm-sidebar-menu-link-hover-color: var(--ifm-color-primary);
+  --ifm-badge-text-color: #fff;
+  --ifm-badge-primary-color: #6057d3;
+  --ifm-badge-secondary-color: #9b51e0;
+  --ifm-badge-success-color: #a0cc3f;
+  --ifm-badge-warning-color: #f2994a;
+  --ifm-badge-error-color: #eb5757;
+  --ifm-tooltip-color: #383838;
+  --ifm-color-secondary-contrast-background: rgba(96, 87, 211, 0.1);
+  --ifm-color-background-navbar: #fff;
+  --ifm-navbar-shadow: none;
+  --ifm-accordion-small-color: #5e5e5e;
+  --ifm-accordion-small-color-hover: #6057d3;
+  --ifm-color-footer-link: var(--ifm-color-body);
+  --ifm-card-background-color: #fff;
+  --ifm-card-icon-color: var(--ifm-color-primary);
+  --ifm-card-link-color: var(--ifm-color-body);
+  --ifm-footer-card-icon-color: var(--ifm-color-body);
+  --ifm-navbar-padding-vertical: 0.5rem;
+  --ifm-navbar-padding-horizontal: 1.5rem;
+  --ifm-navbar-height: 4.5rem;
+  --ifm-font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+  --ifm-tooltip-width: 8px;
+  --ifm-tooltip-height: 3px;
+  --ifm-product-link-icon-color: var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: #262828;
+  --ifm-background-secondary: #262828;
+  --ifm-color-purple: #7f86f4;
+  --ra-color-note: #262828;
+  --ifm-background-color: #1a1720;
+  --ra-color-text-dark: #000000;
+  --ifm-color-primary: #aac957;
+  --ra-admonition-icon-color: #262828;
+  --ifm-button-color: #ffffff;
+  --ifm-text-color: #ffffff;
+  --ifm-table-background: #1a1720;
+  --ifm-table-border-color: var(--ifm-color-emphasis-200);
+  --ifm-table-background-highlight: #2d2459;
+  --ifm-table-border-color-highlight: #524691;
+  --ifm-color-dark: #383838;
+  --ifm-top-separator-color: #262828;
+  --ifm-sidebar-menu-link-color: #aac957;
+  --ifm-color-background-grey: #383838;
+  --ifm-color-footer-link: #aac957;
+  --ifm-card-background-color: rgba(0, 0, 0, 0.2);
+  --ifm-card-icon-color: #fff;
+  --ifm-card-link-color: #fff;
+  --ifm-color-background-navbar: #1a1720;
+  --ifm-footer-card-icon-color: #fff;
+  --ifm-sidebar-menu-link-active-color: #fff;
+  --ifm-sidebar-menu-link-hover-color: #fff;
+}
+
+html {
+  font-family: var(--ifm-font-family);
+}
+
+.navbar__brand {
+  background: red;
+  width: 20px;
+  height: 20px;
+}
+
+.footer.footer--dark {
+  --ifm-footer-background-color: #262828;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--ifm-color-primary);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .pricePlan--highlight {
+  background: #2b3077;
+}
+
+.codeBlock {
+  border-radius: var(--ifm-pre-border-radius);
+  float: left;
+  min-width: 100%;
+  padding: var(--ifm-pre-padding);
+  font-family: var(--ifm-font-family-monospace);
+  color: rgb(191, 199, 213);
+  background-color: rgb(41, 45, 62);
+  font-size: var(--ifm-code-font-size);
+  line-height: var(--ifm-pre-line-height);
+}
+
+.codeBlock a {
+  color: inherit;
+}
+
+button.copyButton_node_modules-\@docusaurus-theme-classic-src-theme-CodeBlock- {
+  color: white;
+}
+
+/* -- Header --*/
+
+.navbar__title {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 996px) {
+  .navbar .navbar__items {
+    flex: 25%;
+  }
+  .navbar .navbar__items.navbar__items--right {
+    flex: 50%;
+  }
+
+  .navbar__link {
+    font-size: 0.9rem;
+  }
+
+  .navbar__title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 996px) {
+  .navbar__search-input {
+    width: 6rem;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar__items--right {
+    padding-right: 2rem;
+  }
+}
+
+/* -- Footer -- */
+
+.footer__item {
+  margin-bottom: 0.5rem;
+}
+
+/* -- Home -- */
+
+.hero {
+  padding: 0;
+}
+
+@media screen and (min-width: 996px) {
+  .hero {
+    padding: 4rem 0;
+  }
+}
+
+.hero.hero--theme {
+  background-image: linear-gradient(195deg, rgb(16, 9, 46) 20%, rgb(77, 64, 146));
+  background-color: rgb(45, 36, 89);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero .container {
+  z-index: 2;
+  position: relative;
+}
+
+.menu--responsive .menu__button {
+  bottom: 1rem;
+  left: 1rem;
+  right: auto;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
+.admonition {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.menu {
+  min-height: calc(100vh - 32.7rem);
+  background-color: var(--ifm-color-background-grey);
+}
+
+.markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--ifm-font-family);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.625rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid rgba(56, 56, 56, 0.3);
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+}

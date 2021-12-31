@@ -1,0 +1,26 @@
+.breadcrumbs {
+  margin: 0 0 1rem 0;
+}
+
+.breadcrumb {
+  color: var(--ifm-menu-color);
+  text-decoration: none;
+}
+
+.breadcrumb:hover {
+  color: var(--ifm-menu-color);
+  text-decoration: underline;
+}
+
+.deprecation {
+  border: 1px solid #a30000;
+  padding: 1rem;
+  color: #a30000;
+  background: #fdedf2;
+  margin: 0 0 1rem 0;
+}
+
+.deprecationLink {
+  color: #a30000;
+  text-decoration: underline;
+}

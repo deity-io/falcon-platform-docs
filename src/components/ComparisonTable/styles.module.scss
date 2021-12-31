@@ -1,0 +1,29 @@
+/* Hidden for users but still accessible */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.feature {
+  max-width: 300px;
+}
+
+.value {
+  text-align: center;
+}
+
+.name {
+  margin: 0 0 5px;
+}
+
+.note {
+  margin: 0;
+  color: var(--ifm-menu-color);
+  font-size: 0.8rem;
+}

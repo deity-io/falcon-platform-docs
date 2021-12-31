@@ -1,0 +1,192 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@use '../../css/variables' as v;
+
+:root {
+  --collapse-button-bg-color-dark: #2e333a;
+}
+
+@media (min-width: 997px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    padding-top: var(--ifm-navbar-height);
+    width: var(--doc-sidebar-width);
+    transition: opacity 50ms ease;
+  }
+
+  .sidebarWithHideableNavbar {
+    padding-top: 0;
+  }
+
+  .sidebarHidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .sidebarLogo {
+    display: flex !important;
+    align-items: center;
+    margin: 0 var(--ifm-navbar-padding-horizontal);
+    min-height: var(--ifm-navbar-height);
+    max-height: var(--ifm-navbar-height);
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .sidebarLogo img {
+    margin-right: 0.5rem;
+    height: 2rem;
+  }
+
+  .menu {
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+
+  .menuWithAnnouncementBar {
+    margin-bottom: var(--docusaurus-announcement-bar-height);
+  }
+
+  .collapseSidebarButton {
+    display: block !important;
+    background-color: var(--ifm-button-background-color);
+    height: 40px;
+    position: sticky;
+    bottom: 0;
+    border-radius: 0;
+    border: 1px solid var(--ifm-toc-border-color);
+  }
+
+  .collapseSidebarButtonIcon {
+    transform: rotate(180deg);
+    margin-top: 4px;
+  }
+  html[dir='rtl'] .collapseSidebarButtonIcon {
+    transform: rotate(0);
+  }
+
+  html[data-theme='dark'] .collapseSidebarButton {
+    background-color: var(--collapse-button-bg-color-dark);
+  }
+
+  html[data-theme='dark'] .collapseSidebarButton:hover,
+  html[data-theme='dark'] .collapseSidebarButton:focus {
+    background-color: var(--ifm-color-emphasis-200);
+  }
+}
+
+.sidebarLogo,
+.collapseSidebarButton {
+  display: none;
+}
+
+.sidebarMenuIcon {
+  vertical-align: middle;
+}
+
+.sidebarMenuCloseIcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  font-size: 1.5rem;
+  font-weight: var(--ifm-font-weight-bold);
+  line-height: 0.9;
+  width: 24px;
+}
+
+.versionDropdownContainer {
+  margin: 0.5rem 0 3.25rem;
+  padding-left: 2rem;
+
+  @include v.min-md {
+    margin: 0.5rem 0 6.5rem;
+  }
+}
+
+.versionDropdown {
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  padding: 0.1rem 2rem 0.1rem 0.9rem;
+  width: 12.5rem;
+  line-height: 1.4rem;
+  height: 2rem;
+
+  a {
+    font-size: 0.625rem;
+
+    &.dropdownLink:after {
+      display: none;
+    }
+
+    &.dropdownLink:before {
+      content: '';
+      position: absolute;
+      right: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.5rem;
+      height: 0.4rem;
+      background: url(../../../static/icons/arrow-dropdown.svg);
+    }
+  }
+
+  & .dropdownMenu {
+    width: 100%;
+  }
+}
+
+.menuLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  padding: 0.5rem 0 0.5rem 2.1rem;
+  color: var(--ifm-sidebar-menu-link-color);
+}
+
+.backLink {
+  margin: 1rem 0 1.7rem;
+
+  @include v.min-md {
+    margin: 1rem 0 3.4rem;
+  }
+
+  svg {
+    width: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+
+.playground {
+  svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-left: 0.8rem;
+  }
+}
+
+.version {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-right: 2.375rem;
+
+  &.versionActive {
+    color: var(--ifm-color-primary);
+  }
+}

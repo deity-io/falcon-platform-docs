@@ -1,0 +1,66 @@
+@use '../../css/variables' as v;
+
+.title1 {
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.title1Description {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.1px;
+}
+
+.title2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.7rem;
+  letter-spacing: 0.5px;
+}
+
+.title3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.title3Description {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.title4 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.title4Description {
+  font-size: 0.625rem;
+  line-height: 1.125em;
+  margin-bottom: 0.5rem;
+
+  @include v.min-md {
+    font-size: 0.7rem;
+  }
+}
+
+.title1,
+.title2,
+.title3,
+.title4,
+.title1Description,
+.title3Description,
+.title4Description {
+  &.marginBottom0 {
+    margin-bottom: 0;
+  }
+}

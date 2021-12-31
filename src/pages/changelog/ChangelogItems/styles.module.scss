@@ -1,0 +1,95 @@
+.container {
+  text-align: left;
+  padding-top: 4.5rem;
+
+  &:last-child {
+    padding-bottom: 6rem;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid rgba(56, 56, 56, 0.3);
+  margin-bottom: 0.625rem;
+  height: 2.1rem;
+
+  &:hover {
+    & .copyIcon {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+
+      path {
+        fill: var(--ifm-color-primary);
+      }
+    }
+  }
+}
+
+.linkIcon {
+  width: 1.035rem;
+  height: 1.035rem;
+  cursor: pointer;
+}
+
+.copyIconContainer {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.itemContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.625rem;
+
+  .itemBadge {
+    width: 8.125rem;
+  }
+
+  .itemText {
+    width: calc(100% - 8.125rem);
+    font-size: 0.75rem;
+    line-height: 0.895rem;
+
+    ul {
+      padding: 0.25rem 0 0.25rem 1rem;
+    }
+  }
+}
+
+.accordionContainer {
+  margin-bottom: 1rem;
+}
+
+.accordionContentTitle {
+  margin-bottom: 0.25rem;
+}
+
+.copyIcon {
+  display: none;
+}
+
+.changeTitleContainer {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.changeTitleBadge {
+  margin-left: 1rem;
+}
+
+.changeContainer {
+  margin-bottom: 2.875rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

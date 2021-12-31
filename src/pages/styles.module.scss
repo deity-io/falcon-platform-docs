@@ -1,0 +1,93 @@
+@use './../css/variables.scss' as v;
+
+.container {
+  @include v.container;
+  margin: 0 auto;
+}
+
+.heroBannerContainer {
+  @include v.container;
+  margin: 0 auto;
+
+  @include v.min-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.heroBanner {
+  padding: 4rem 1rem 2.2rem;
+  text-align: center;
+  position: relative;
+}
+
+.heroImage {
+  display: block;
+  width: 22rem;
+  height: auto;
+  margin: 1rem auto 0;
+
+  @include v.min-sm {
+    position: relative;
+    left: 30px;
+    top: -4px;
+    width: 27.3rem;
+    margin: auto;
+  }
+}
+
+.heroBannerText {
+  text-align: left;
+
+  @include v.min-sm {
+    flex-basis: 40rem;
+  }
+}
+
+.cards {
+  @include v.container;
+  margin: 1.5rem auto 1.4rem;
+
+  > div {
+    margin: 0 0 1.5rem;
+  }
+
+  @include v.min-sm {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      flex-basis: 15rem;
+      max-width: 15rem;
+      margin: 0 1.9rem 0 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.products {
+  @include v.container;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+
+  @include v.min-sm {
+    padding: 0 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.topSeparator {
+  border-top: 2px solid var(--ifm-top-separator-color);
+  padding-top: 1.6rem;
+}
+
+.changelogTopButtons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}

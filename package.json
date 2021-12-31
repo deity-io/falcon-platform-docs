@@ -8,17 +8,32 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "lint": "eslint"
+    "lint": "eslint --config .eslintrc.json --ext=ts,tsx --fix ."
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --config .eslintrc.json . --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.9",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.9",
-    "@docusaurus/preset-classic": "^2.0.0-beta.9",
+    "@docusaurus/core": "^2.0.0-beta.14",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.14",
+    "@docusaurus/preset-classic": "^2.0.0-beta.14",
+    "@docusaurus/theme-common": "^2.0.0-beta.14",
+    "@typescript-eslint/parser": "^5.8.0",
     "classnames": "^2.2.6",
+    "docusaurus-plugin-sass": "^0.2.1",
     "formik": "^2.1.4",
     "jsonp": "^0.2.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "sass": "^1.44.0"
   },
   "browserslist": {
     "production": [
@@ -33,12 +48,22 @@
     ]
   },
   "devDependencies": {
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.14",
+    "@tsconfig/docusaurus": "^1.0.4",
+    "@typescript-eslint/eslint-plugin": "4.23.0",
+    "babel-eslint": "10.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "2.4.1"
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "30.7.9",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.4",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "prettier": "2.1.2",
+    "typescript": "^4.5.2"
   }
 }

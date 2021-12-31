@@ -1,171 +1,120 @@
 const path = require('path');
 
 module.exports = {
-  title: 'DEITY',
-  tagline: 'Documentation',
+  title: 'Welcome to our Docs',
+  tagline: "Here you'll find guides, resources, and references to build with Deity.",
   url: 'https://deity.io',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'DEITY', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
   themeConfig: {
-    navbar: {
-      title: 'Deity Documentation',
-      logo: {
-        alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg',
-      },
-      items: [
-        {
-          label: 'Platform',
-          href: '/docs/platform/overview/about',
-          position: 'right',
-          activeBasePath: '/docs/platform',
-        },
-        // {
-        //   label: 'DPSG',
-        //   href: '/dpsg/docs/about',
-        //   position: 'right',
-        //   activeBasePath: '/docs/docs',
-        // },
-        /* {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownActiveClassDisabled: true,
-        }, */
-        {
-          label: 'Falcon UI',
-          href: 'https://falcon-ui.docs.deity.io/',
-          position: 'right',
-        },
-      ],
-    },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Our documentation',
+          title: 'General',
           items: [
             {
-              label: 'Platform',
-              to: '/docs/platform/overview/about',
+              label: 'Home',
+              to: '/'
             },
             {
-              label: 'Falcon Cloud',
-              to: '/docs/platform/cloud/about',
+              label: 'Demo',
+              to: '/demo'
             },
-            // {
-            //   label: 'DPSG',
-            //   to: '/dpsg/docs/about',
-            // },
             {
-              label: 'Falcon UI',
-              href: 'https://falcon-ui.docs.deity.io/',
+              label: 'Key concepts',
+              href: '/key-concepts'
             },
-          ],
+            {
+              label: 'Getting Started',
+              href: '/docs/platform/getting-started/overview'
+            },
+            {
+              label: 'Account',
+              href: '/account'
+            },
+            {
+              label: 'Changelog',
+              href: '/changelog'
+            },
+            {
+              label: 'Support',
+              href: '/docs/platform/support/contact'
+            }
+          ]
         },
         {
-          title: 'Our Integrations',
+          title: 'Products',
           items: [
             {
-              label: 'Algolia',
-              to: '/docs/platform/integration/algolia',
+              label: 'Storefront',
+              to: '#'
             },
             {
-              label: 'BigCommerce',
-              to: '/docs/platform/integration/bigcommerce/overview',
+              label: 'Service Composer',
+              to: '#'
             },
             {
-              label: 'Magento 2',
-              to: '/docs/platform/integration/magento2/overview',
+              label: 'Payments',
+              to: '/docs/platform/payments/overview'
             },
             {
-              label: 'Stripe',
-              to: '/docs/platform/integration/stripe',
-            },
-            {
-              label: 'Mollie',
-              to: '/docs/platform/integration/mollie',
-            },
-            {
-              label: 'Wordpress',
-              to: '/docs/platform/integration/wordpress',
-            },
-          ],
+              label: 'Data Integrator',
+              to: '#'
+            }
+          ]
         },
         {
-          title: 'Community & Help',
+          title: 'Deity',
           items: [
             {
-              label: 'Community Chat',
-              href: 'http://slack.deity.io/',
+              label: 'Deity.io',
+              href: 'https://deity.io/'
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/deity_commerce',
-            },
-            {
-              label: 'Instagram',
-              href: 'https://instagram.com/deity_commerce',
-            },
-            {
-              label: 'YouTube',
-              href: 'https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ',
-            },
-            {
-              label: 'Contact Us',
-              href: 'https://deity.io/contact',
-            },
-          ],
-        },
-        {
-          title: 'Useful Links',
-          items: [
-            {
-              label: 'Marketing Site',
-              href: 'https://deity.io/',
-            },
-            {
-              label: 'Status',
-              href: 'https://status.deity.io/',
+              label: 'About us',
+              href: '#'
             },
             {
               label: 'Blog',
-              href: 'https://medium.com/deity-io',
+              href: 'https://medium.com/deity-io'
             },
             {
-              label: 'Privacy Policy',
-              href: 'https://deity.io/privacy-policy',
-            },
-          ],
-        },
+              label: 'Contact',
+              href: 'https://deity.io/contact'
+            }
+          ]
+        }
       ],
       logo: {
         alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg',
+        src: 'img/deity-logo-full.svg'
       },
-      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`,
+      copyright: `Copyright ${new Date().getFullYear()}`
     },
     image: 'img/deity-logo.svg',
 
     algolia: {
       apiKey: 'c8c5e2d6a2a32b13b59182d8a0827945',
       indexName: 'deity',
-      algoliaOptions: {},
+      algoliaOptions: {}
     },
     mailchimp: {
-      submitUrl: 'https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d',
+      submitUrl: 'https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d'
     },
     intercom: {
-      appId: 'z91ewqiv',
-    },
+      appId: 'z91ewqiv'
+    }
   },
   plugins: [
+    ['docusaurus-plugin-sass', {}],
     [
       path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
       {
-        containerId: 'GTM-N4NQJGX',
-      },
+        containerId: 'GTM-N4NQJGX'
+      }
     ],
     [
       '@docusaurus/plugin-pwa',
@@ -176,25 +125,25 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/logo-512.png',
+            href: '/img/logo-512.png'
           },
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.json',
+            href: '/manifest.json'
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: '#26642c',
+            content: '#26642c'
           },
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: '/img/logo-192.png',
-          },
-        ],
-      },
+            href: '/img/logo-192.png'
+          }
+        ]
+      }
     ],
     [
       '@docusaurus/plugin-content-docs',
@@ -202,9 +151,9 @@ module.exports = {
         id: 'dpsg',
         path: 'dpsg',
         routeBasePath: 'dpsg',
-        sidebarPath: require.resolve('./sidebarsDpsg.js'),
-      },
-    ],
+        sidebarPath: require.resolve('./sidebarsDpsg.js')
+      }
+    ]
   ],
   presets: [
     [
@@ -217,21 +166,21 @@ module.exports = {
           versions: {
             current: {
               label: 'Platform (v3) [BETA]',
-              path: 'next',
+              path: 'next'
             },
             2: {
-              label: 'Platform (v2)',
+              label: 'Platform (v2)'
             },
             2019: {
               label: 'Platform (v2019)',
-              path: 'v2019',
-            },
-          },
+              path: 'v2019'
+            }
+          }
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+          customCss: [require.resolve('./src/css/custom.scss')]
+        }
+      }
+    ]
+  ]
 };

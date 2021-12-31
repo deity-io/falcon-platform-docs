@@ -1,0 +1,67 @@
+@use '../../css/variables' as v;
+
+.box {
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-size: 12px;
+  line-height: 15px;
+
+  @include v.min-sm {
+    width: 50%;
+    margin-bottom: 1.2rem;
+    padding-right: 0.6rem;
+
+    &:nth-child(even) {
+      padding-left: 2.4rem;
+      padding-right: 0;
+    }
+  }
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-basis: 3rem;
+  height: 3rem;
+  border-radius: 4px;
+  margin-right: 1.2rem;
+  background: var(--ifm-color-dark);
+  color: #fff;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin: 0 0 0.5rem;
+}
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > a {
+    flex: 50%;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.linkIcon {
+  margin-left: 0.4375rem;
+
+  path {
+    fill: var(--ifm-product-link-icon-color);
+  }
+}

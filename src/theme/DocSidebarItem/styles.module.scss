@@ -1,0 +1,103 @@
+@use './../../css/variables.scss' as v;
+
+.menuLink {
+  color: var(--ifm-sidebar-menu-link-color);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: normal;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 2.1rem;
+
+  &:hover {
+    background: none;
+    text-decoration: none;
+    color: var(--ifm-sidebar-menu-link-hover-color);
+  }
+
+  &.menuLinkSublist {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+    font-weight: bold;
+    padding: 0.5rem 0 0.5rem 2.1rem;
+  }
+
+  & svg {
+    width: 1rem;
+    height: auto;
+    margin-right: 0.75rem;
+    margin-left: -1.34rem;
+
+    path {
+      fill: currentColor;
+    }
+  }
+
+  span {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.menuLinkActive {
+  color: var(--ifm-sidebar-menu-link-active-color);
+}
+
+.menuList {
+  list-style-type: none;
+  padding-left: 2.5rem;
+  padding-bottom: 0.25rem;
+
+  ul {
+    padding: 0.15rem 0 0.25rem 1.5rem;
+  }
+
+  .menuListItemCollapsible {
+    margin: 0;
+
+    .menuLink {
+      padding: 0;
+    }
+  }
+
+  .menuLink {
+    font-weight: normal;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    padding: 0.1rem 0;
+
+    @include v.min-md {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      padding: 0.15rem 0;
+    }
+  }
+}
+
+.menuListItem {
+  line-height: 1.25rem;
+}
+
+.menuListItemCollapsible {
+  margin: 0;
+}
+
+@media (min-width: 997px) {
+  .menuLinkText {
+    cursor: initial;
+  }
+  .menuLinkText:hover {
+    background: none;
+  }
+
+  .menuLinkText.hasHref {
+    cursor: pointer;
+  }
+}
