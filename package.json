@@ -10,6 +10,12 @@
     "serve": "docusaurus serve",
     "lint": "eslint --config .eslintrc.json --ext=ts,tsx --fix ."
   },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --config .eslintrc.json . --fix",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

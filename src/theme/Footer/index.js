@@ -49,6 +49,7 @@ const Footer = () => {
           title="Support"
           description="Get connected to our Slack community or get in touch with us directly"
           icon={<SlackIcon />}
+          href="/docs/platform/support/contact"
         />
       </section>
       <div className={styles.container}>

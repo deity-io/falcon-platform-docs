@@ -14,6 +14,7 @@ import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import { useActivePlugin } from '@theme/hooks/useDocs';
 import NavbarItem from '@theme/NavbarItem';
 import IconMenu from '@theme/IconMenu';
+import RightArrowIcon from '@site/static/icons/arrow-right.svg';
 import Button from '../../components/Button';
 import styles from './styles.module.scss';
 import Logo from './NavbarLogo';
@@ -74,7 +75,7 @@ const Navbar: FC = () => {
             <Toggle className={styles.toggle} checked={colorModeToggle.isDarkTheme} onChange={colorModeToggle.toggle} />
           )}
           <div className={styles.button}>
-            <Button href="#" variant="contained">
+            <Button href="#" variant="contained" endIcon={<RightArrowIcon />}>
               Cloud Console
             </Button>
           </div>

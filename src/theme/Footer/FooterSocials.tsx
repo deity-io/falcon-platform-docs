@@ -10,12 +10,16 @@ import FooterSocialIcon from './FooterSocialIcon';
 
 const FooterSocials: FC = () => (
   <div className={styles.socials}>
-    <FooterSocialIcon icon={<TwitterIcon />} url="#" />
-    <FooterSocialIcon icon={<YoutubeIcon />} url="#" />
-    <FooterSocialIcon icon={<InstagramIcon />} url="#" />
-    <FooterSocialIcon icon={<GithubIcon />} url="#" />
-    <FooterSocialIcon icon={<FacebookIcon />} url="#" />
-    <FooterSocialIcon icon={<LinkedinIcon />} url="#" />
+    <FooterSocialIcon title="Twitter" icon={<TwitterIcon />} url="https://twitter.com/deity_commerce" />
+    <FooterSocialIcon
+      title="YouTube"
+      icon={<YoutubeIcon />}
+      url="https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ"
+    />
+    <FooterSocialIcon title="Instagram" icon={<InstagramIcon />} url="https://instagram.com/deity_commerce" />
+    <FooterSocialIcon title="Github" icon={<GithubIcon />} url="#" />
+    <FooterSocialIcon title="Facebook" icon={<FacebookIcon />} url="#" />
+    <FooterSocialIcon title="LinkedIn" icon={<LinkedinIcon />} url="https://www.linkedin.com/company/deity-bv" />
   </div>
 );
 

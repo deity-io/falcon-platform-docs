@@ -21,27 +21,27 @@ module.exports = {
             },
             {
               label: 'Demo',
-              to: '/'
+              to: '/demo'
             },
             {
               label: 'Key concepts',
-              href: '/'
+              href: '/key-concepts'
             },
             {
               label: 'Getting Started',
-              href: '/'
+              href: '/docs/platform/getting-started/overview'
             },
             {
               label: 'Account',
-              href: '/'
+              href: '/account'
             },
             {
               label: 'Changelog',
-              href: '/'
+              href: '/changelog'
             },
             {
               label: 'Support',
-              href: '/'
+              href: '/docs/platform/support/contact'
             }
           ]
         },
@@ -50,19 +50,19 @@ module.exports = {
           items: [
             {
               label: 'Storefront',
-              to: '/'
+              to: '#'
             },
             {
               label: 'Service Composer',
-              to: '/'
+              to: '#'
             },
             {
               label: 'Payments',
-              to: '/'
+              to: '/docs/platform/payments/overview'
             },
             {
               label: 'Data Integrator',
-              to: '/'
+              to: '#'
             }
           ]
         },
@@ -71,15 +71,15 @@ module.exports = {
           items: [
             {
               label: 'Deity.io',
-              href: '/'
+              href: 'https://deity.io/'
             },
             {
               label: 'About us',
-              href: '/'
+              href: '#'
             },
             {
               label: 'Blog',
-              href: '/'
+              href: 'https://medium.com/deity-io'
             },
             {
               label: 'Contact',

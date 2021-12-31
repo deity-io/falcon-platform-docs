@@ -40,7 +40,7 @@ const Home = () => {
               title="Key concepts"
               description="Understand the key concepts of the Deity Platform to make the most of it."
               icon={<KeyIcon />}
-              href="#"
+              href="key-concepts"
             />
             <Card
               title="Getting started"

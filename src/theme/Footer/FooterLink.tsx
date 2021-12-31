@@ -9,6 +9,10 @@ type FooterLinkType = {
   label: string;
 };
 
+const iconMap = {
+  'Deity.io': <ExternalIcon />
+};
+
 const FooterLink: FC<FooterLinkType> = ({ to, href, label, ...props }) => {
   const toUrl = useBaseUrl(to);
 
@@ -27,7 +31,7 @@ const FooterLink: FC<FooterLinkType> = ({ to, href, label, ...props }) => {
           })}
       {...props}
     >
-      {label}
+      {label} {iconMap[label]}
     </Link>
   );
 };

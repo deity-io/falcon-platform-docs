@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background-color: var(--ifm-color-primary);
   border-radius: 4px;
   color: #fff;
@@ -75,6 +75,14 @@
 
 .startIcon,
 .endIcon {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 0.5rem;
+    height: auto;
+  }
+
   path {
     fill: #fff;
   }
