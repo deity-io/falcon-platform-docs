@@ -1,6 +1,7 @@
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import React, { FC } from 'react';
+import ExternalIcon from '@site/static/icons/external.svg';
 import styles from './styles.module.scss';
 
 type FooterLinkType = {
