@@ -5,7 +5,7 @@ sidebar_label: Demo 3
 description: Dependencies for demo v3
 ---
 
-## Last Updated 23/12/2021
+## Last Updated 11/01/2022
 *17:00 CEST*
 
 ### Client
@@ -21,22 +21,22 @@ description: Dependencies for demo v3
     "@apollo/client": "3.5.6",
     "@deity/eslint-config-falcon": "^3.0.0-beta.3",
     "@deity/falcon-adyen-plugin": "^3.0.0-beta.10",
-    "@deity/falcon-blog-data": "^3.0.0-beta.14",
-    "@deity/falcon-client": "^3.0.0-beta.34",
-    "@deity/falcon-data": "^3.0.0-beta.14",
+    "@deity/falcon-blog-data": "^3.0.0-beta.15",
+    "@deity/falcon-client": "^3.0.0-beta.35",
+    "@deity/falcon-data": "^3.0.0-beta.15",
     "@deity/falcon-errors": "^3.0.0-beta.9",
-    "@deity/falcon-front-kit": "^3.0.0-beta.27",
+    "@deity/falcon-front-kit": "^3.0.0-beta.28",
     "@deity/falcon-i18n": "^3.0.0-beta.6",
     "@deity/falcon-mollie-plugin": "^3.0.0-beta.6",
     "@deity/falcon-payment-plugin": "^3.0.0-beta.5",
     "@deity/falcon-paypal-plugin": "^3.0.0-beta.8",
     "@deity/falcon-scripts": "^3.0.0-beta.5",
     "@deity/falcon-service-worker": "^3.0.0-beta.5",
-    "@deity/falcon-shop-data": "^3.0.0-beta.21",
-    "@deity/falcon-stripe-plugin": "^3.0.0-beta.6",
+    "@deity/falcon-shop-data": "^3.0.0-beta.22",
+    "@deity/falcon-stripe-plugin": "^3.0.0-beta.7",
     "@deity/falcon-theme-editor": "^3.0.0-beta.5",
     "@deity/falcon-ui": "^2.7.5",
-    "@deity/falcon-ui-kit": "^3.0.0-beta.29",
+    "@deity/falcon-ui-kit": "^3.0.0-beta.30",
     "@graphql-tools/schema": "^7.1.5",
     "@loadable/component": "5.12.0",
     "@testing-library/dom": "^8.11.1",
@@ -74,10 +74,10 @@ description: Dependencies for demo v3
 
 ```
   "dependencies": {
-    "@deity/falcon-blog-extension": "^3.0.0-beta.14",
-    "@deity/falcon-cms-extension": "^3.0.0-beta.13",
-    "@deity/falcon-commercetools-module": "^1.0.0-beta.36",
-    "@deity/falcon-contentful-module": "^1.0.0-beta.21",
+    "@deity/falcon-blog-extension": "^3.0.0-beta.15",
+    "@deity/falcon-cms-extension": "^3.0.0-beta.14",
+    "@deity/falcon-commercetools-module": "^1.0.0-beta.38",
+    "@deity/falcon-contentful-module": "^1.0.0-beta.22",
     "@deity/falcon-file-redirect-api": "^3.0.0-beta.15",
     "@deity/falcon-geo-ip-api": "^3.0.0-beta.14",
     "@deity/falcon-geo-location-extension": "^3.0.0-beta.6",
@@ -86,10 +86,10 @@ description: Dependencies for demo v3
     "@deity/falcon-payment-extension": "^1.0.0-beta.14",
     "@deity/falcon-payment-service-module": "^1.0.0-beta.30",
     "@deity/falcon-scripts": "^3.0.0-beta.5",
-    "@deity/falcon-search-extension": "^3.0.0-beta.22",
-    "@deity/falcon-server": "^3.0.0-beta.20",
+    "@deity/falcon-search-extension": "^3.0.0-beta.24",
+    "@deity/falcon-server": "^3.0.0-beta.21",
     "@deity/falcon-server-env": "^3.0.0-beta.14",
-    "@deity/falcon-shop-extension": "^3.0.0-beta.19",
+    "@deity/falcon-shop-extension": "^3.0.0-beta.20",
     "config": "^2.0.1",
     "core-js": "3.6.5",
     "cross-env": "5.2.0",
@@ -99,5 +99,5 @@ description: Dependencies for demo v3
     "@deity/eslint-config-falcon": "^3.0.0-beta.3",
     "eslint": "^7.32.0",
     "nodemon": "^1.19.1"
-  },
+  }
 ```
