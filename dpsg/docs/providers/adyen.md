@@ -82,4 +82,3 @@ From their you can set up a `Standard Notification` webhook with the following c
 :::note Test your webhook
 You should be able to test this and get a 200 ok response from within the Adyen dashboard.
 :::
-xxx
