@@ -70,7 +70,8 @@ From their you can set up a `Standard Notification` webhook with the following c
 - URL: https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen (replacing `{region}`, `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted and the base url will be (https://dpsg.deity.cloud).
 - Active: `Yes`
 - SSL version: `TLSv1.2`
-- In order to DPSG receives all necessary data via webhook, enable all Additional Settings in Configure webhook settings.
+- On Adyen page navigate to Developers > Webhooks > Edit webhook, make sure to select all "Additional Settings".
+- On Adyen page navigate to Developers > Additional data, make sure to enable all "Toggle all fields".
 
 **Additional Settings**
 
@@ -81,3 +82,4 @@ From their you can set up a `Standard Notification` webhook with the following c
 :::note Test your webhook
 You should be able to test this and get a 200 ok response from within the Adyen dashboard.
 :::
+xxx
