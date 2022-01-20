@@ -71,7 +71,7 @@ From their you can set up a `Standard Notification` webhook with the following c
 - Active: `Yes`
 - SSL version: `TLSv1.2`
 - On Adyen page navigate to Developers > Webhooks > Edit webhook, make sure to select all "Additional Settings".
-- On Adyen page navigate to Developers > Additional data, make sure to enable all "Toggle all fields".
+- On Adyen page navigate to Developers > Additional data, make sure to enable "Toggle all fields".
 
 **Additional Settings**
 
