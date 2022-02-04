@@ -106,6 +106,7 @@ module.exports = {
         label: 'CommerceTools',
         items: [
           'platform/integration/commercetools/overview',
+          'platform/integration/commercetools/payments'
         ],
       },
       {
