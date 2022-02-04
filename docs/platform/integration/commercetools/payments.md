@@ -141,6 +141,13 @@ Set the request body to `JSON` and add the following object:
     },
     {
       "type": { "name": "String" },
+      "name": "email",
+      "label": { "en": "PayPal Email Address" },
+      "required": false,
+      "inputHint": "SingleLine"
+    },
+    {
+      "type": { "name": "String" },
       "name": "voucherNumber",
       "label": { "en": "Voucher Number" },
       "required": false,
