@@ -51,3 +51,30 @@ Set the request body to `JSON` and add the following object:
 This will create a new subscription that will trigger cache invalidation for given Category or Product.
 #### Note.
 Product update will be triggered only when product is published. Publishing the product would also invalidate category cache, so product should show up on the listing page.
+
+### 2. Create service access key.
+Please checkout the [official Google Cloud dic](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
+On how to create service account keys.
+Using `Editor role` for your access level is recommended. However you can fine tune permissions if you like. If application will not be able to access resource you will see 
+```
+Error: User not authorized to perform this action
+``` 
+in the console on server startup.
+
+### 3. Connecting to pubsub from you local.
+To connect you local environment to pubsub just put your service access file into `server/config` folder. And rename it to `pubsub_service_account.json`.
+Server will read the credentials from `server/config/pubsub_service_account.json` on startup.
+
+### 4. Connecting to pubsub from Deity Cloud.
+We strongly discourage commiting your service access files to GIT and using it for connection from cloud environment.
+Instead you can use the following command to base64 encode content of the file and set it using our cloud cli tool to environment variable
+```
+dcloud env:var:set -s test COMMERCETOOLS_SA_DATA "$(base64 -i ./pubsub_service_account.json)";
+```
+
+To make sure new variable name is applied to container - run 
+```
+dcloud env:var:apply test
+```
+
+In the above command we used `test` as environment code. Those could be also `stage`, `production.`
