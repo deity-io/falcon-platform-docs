@@ -5,9 +5,9 @@ sidebar_label: Demo 3
 description: Dependencies for demo v3
 ---
 
-## Last Updated 04/02/2022
+## Last Updated 07/02/2022
 
-_16:00 CEST_
+_11:00 CEST_
 
 ### Client
 
@@ -78,7 +78,7 @@ _16:00 CEST_
 "dependencies": {
   "@deity/falcon-blog-extension": "^3.0.0-beta.19",
   "@deity/falcon-cms-extension": "^3.0.0-beta.18",
-  "@deity/falcon-commercetools-module": "^1.0.0-beta.43",
+  "@deity/falcon-commercetools-module": "^1.0.0-beta.44",
   "@deity/falcon-contentful-module": "^1.0.0-beta.26",
   "@deity/falcon-file-redirect-api": "^3.0.0-beta.19",
   "@deity/falcon-geo-ip-api": "^3.0.0-beta.18",
