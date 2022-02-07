@@ -52,7 +52,12 @@ Replace values below with values applicable for your store.
         "url": "https://api.australia-southeast1.gcp.commercetools.com",
         "authUrl": "https://auth.australia-southeast1.gcp.commercetools.com",
         "clientId": "XXXXXXXXXXXXXXXXXXXXXXXX",
-        "secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        "secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "pubsub": {
+          "projectId": "google-cloud-project-id",
+          "subscriptionName": "topic-id",
+          "pullIntervalInSeconds": 10
+        }
       }
     }
   }
@@ -68,3 +73,4 @@ The following environment variables are mapped directly to the configuration opt
 - `COMMERCETOOLS_AUTH_URL`
 - `COMMERCETOOLS_CLIENT_ID`
 - `COMMERCETOOLS_SECRET`
+- `COMMERCETOOLS_SA_DATA` - Google cloud Service Access file content

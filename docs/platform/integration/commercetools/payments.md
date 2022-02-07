@@ -18,41 +18,9 @@ Please follow the steps below.
 
 ## Installation
 
-Installation custom types in CommerceTools requires us to run an API request.
-
-We recommend using [Postman](https://www.postman.com/) to do this.
-
-### 1. Create an API key
-
-In your CommerceTools dashboard you'll need to create a new API key that has permissions to `manage_types`. Save these credentials for a later step.
-
-:::note Create a new key
-We recommend creating a new key for this action so you can't reduce the permissions needed for your main API key used by the Deity application.
-:::
-
-### 2. Download sample Postman collections
-
-CommerceTools have a handy repository containing `JSON` collection files you can import directly into Postman.
-
-[https://github.com/commercetools/commercetools-postman-collection/tree/master/api](https://github.com/commercetools/commercetools-postman-collection/tree/master/api)
-
-Please download and import these.
-
-### 3. Add your credentials
-
-The collections from step 1 required you to add some credentials as Postman variables. These variables are from **step 1**:
-
-- `auth_url`
-- `client_id`
-- `client_secret`
-- `project_key`
-- `host`
-
-### 4. Authorize your requests
-
-If you completed **step 2** you should be able to run the request `Authorization -> Obtain access token`. This will create an access token and save it as a Postman variable for later requests.
-
-### 5. Install the payment types
+To create a new susbcription on CommerceTools side we recommend using [Postman](https://www.postman.com/).
+Please follow [Postman configution manual](postman) before proceeding further.
+### Install the payment types
 
 The final step is to run the request `Project -> Types -> Create Type` (`{{host}}/{{project-key}}/types`).
 
