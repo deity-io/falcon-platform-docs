@@ -106,7 +106,9 @@ module.exports = {
         label: 'CommerceTools',
         items: [
           'platform/integration/commercetools/overview',
-          'platform/integration/commercetools/payments'
+          'platform/integration/commercetools/postman',
+          'platform/integration/commercetools/cache-invalidation',
+          'platform/integration/commercetools/payments',
         ],
       },
       {
