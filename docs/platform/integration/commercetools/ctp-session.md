@@ -10,9 +10,10 @@ sidebar_label: ctpSession
 - CtpSession is not available trough event handlers
 
 ## Session class
-The `customerToken` and `costumerId` will be set whenever a customer has authenticated. When guest customers open an cart we will create an anonymous `customerToken` and store this in session. To check if a customer is guest account, check for the existance of the customerId.
+The `customerToken` and `costumerId` will be set whenever a customer has authenticated. When an unauthenticated customer (guest) opens a cart we will create an anonymous `customerToken` and store it in session. In this case the customerId will remain empty.
 
-When guest accounts signin in the carts (and possible previous made orders) will be merged with the customer account.
+When a anonymous token is present in session during customer signin the active anonymous cart will get merged with the customer cart. Any orders placed by this anonymous customer will also be transfered to the signed in customers account.
+
 
 ```typescript
 type CtpSession = {
@@ -43,12 +44,13 @@ const { token, customerId, cartId, lastOrderId } = this.ctpSession;
 Mutating the session can be done trough both a set of regular as `setter` methods on the session class.
 
 ```typescript
-// Use methods to set guarded values
-this.ctpSession.signin(customerToken, customerId);
-this.ctpSession.hasValidToken(); // return boolean for valid customer/guest token
+// We use 
+this.ctpSession.signin(customerToken, customerId); // customerId is protected and can only be set trough the signin method
+this.ctpSession.hasValidToken(); // return boolean based on check if expirationTime is before now
 this.ctpSession.clear(); // Clear full session
 
-// Directly assigning values
+// Assigning session value
+this.ctpSession.token = token;
 this.ctpSession.cartId = cartId;
 this.ctpSession.lastOrderId = orderId;
 ```

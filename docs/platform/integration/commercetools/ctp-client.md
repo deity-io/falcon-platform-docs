@@ -5,13 +5,16 @@ sidebar_label: ctpClient
 enterprise_only: true
 ---
 
-- The `ctpClient` provides us the service to make [authenticated](https://docs.commercetools.com/api/authorization) requests to commercetools.
-We communicate with commercetools trough the [typescript SDK](https://commercetools.github.io/nodejs/sdk/) provided by commercetools.
+// TODO
+- [ ] ctpIntroduction
+- [ ] Authentication methods
+- [x] Customer apiRoot
+- [x] Integration apiRoot
 
 If you need to access `ctpClient` in a new class, don't forget to [bind your service](../../server-v3/modules/module-api#binding-services).
 
 ## ApiRoot
-You can make use of the by commercetools provided TypeScript SDK trough the `apiRoot`. Our `ctpClient` provides two async methods to grab a pre configured `apiRoot` where all required project configuration, authorization and session refreshing is handled.
+You can make use of the by commercetools provided [TypeScript SDK](https://commercetools.github.io/nodejs/sdk) trough the `apiRoot`. Our `ctpClient` provides two async methods to grab a pre configured `apiRoot` where all required project configuration, authorization and session refreshing is handled.
 
 With the `integrationApiRoot` requests in name of the [commercetools project](https://docs.commercetools.com/merchant-center/projects) to commercetools could be made. Use this `apiRoot` for all requests where a signed in user is not required. To make requests in name of the customer the `customerApiRoot` can be used.
 
