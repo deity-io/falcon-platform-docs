@@ -103,10 +103,14 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'CommerceTools',
+        label: 'commercetools',
         items: [
           'platform/integration/commercetools/overview',
-          'platform/integration/commercetools/payments'
+          'platform/integration/commercetools/getting-started',
+          'platform/integration/commercetools/features',
+          'platform/integration/commercetools/ctp-session',
+          'platform/integration/commercetools/ctp-client',
+          'platform/integration/commercetools/payments',
         ],
       },
       {
