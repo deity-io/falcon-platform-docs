@@ -21,7 +21,7 @@ To make requests in name of the customer, use `customerApiRoot`.
 #### Authorization
 Requests made to Commercetools API are authenticated through auth middlewares. In our `ctpClient` the [createAuthMiddlewareWithExistingToken](https://commercetools.github.io/nodejs/sdk/api/sdkMiddlewareAuth.html#createauthmiddlewarewithexistingtokenauthorization-options) middleware is used, where a `Bearer` token is set to the request header.
 
-When using our preconfigured `apiRoot` you don't need to worry about authorization or customer session management.  Where `integrationApiRoot` creates an authentication token based on your [configured](/docs/next/platform/integration/commercetools/configuration/falcon-server) `cliendId` and `clientSecret`, the `customerApiRoot` accesses the [`ctpSession`](./ctp-session) to get the customer token from session.
+When using our preconfigured `apiRoot` you don't need to worry about authorization or customer session management.  Where `integrationApiRoot` creates an authentication token based on your [configured](/docs/next/platform/integration/commercetools/configuration/getting-started) `cliendId` and `clientSecret`, the `customerApiRoot` accesses the [`ctpSession`](./ctp-session) to get the customer token from session.
 
 #### Authorization Token
 When you don't need a full `apiRoot`, but you want access to integration or customer tokens, you can directly request them through the `ctpClient`:
