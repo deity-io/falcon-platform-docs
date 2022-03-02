@@ -53,7 +53,7 @@ class ExampleIntegrationDatasource {
     constructor(@inject('CtpClient') protected ctpClient: CtpClient) {}
 
     async findById(id: string): Promise<CtpCategory> {
-        const integrationApiRoot = createApiBuilderFromCtpClient(await this.ctpClient.getIntegrationClient(), this.config.url);
+        const integrationApiRoot = createApiBuilderFromCtpClient(await this.ctpClient.integration(), this.config.url);
         const { body: category } = await integrationApiRoot
             .withProjectKey({ projectKey: this.config.projectKey })
             .categories()
