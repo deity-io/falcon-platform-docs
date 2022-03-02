@@ -1,20 +1,24 @@
 ---
 id: ctp-session
-title: commercetools ctpSession
-sidebar_label: ctpSession
+title: Commercetools Session
+sidebar_label: Session (ctpSession)
 ---
 
-- ctpSession is a guard of the httpSession and only available in methods resolving GraphQL endpoints. Not available in webhooks & events.
-- ctpSession provides function and setter methods to manupilate session
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-commercetools-module" />
+
+- `ctpSession` is a guard of the `httpSession` and only available in methods resolving GraphQL endpoints. Not available in webhooks & events.
+- `ctpSession` provides functions and setter methods to manipulate the session
 
 ### Authentication
 
-The `customerToken` and `costumerId` will be set whenever a customer has authenticated. When an unauthenticated customer (guest) opens a cart we will create an anonymous `customerToken` and store it in session. In this case the customerId will remain empty.
+The `customerToken` and `customerId` will be set whenever a customer is authenticated. When an unauthenticated customer (guest) opens a cart we will create an anonymous `customerToken` and store it in session. In this case the customerId will remain empty.
 
-When a anonymous token is present in session during customer signin the active anonymous cart will get merged with the customer cart. Any orders placed by this anonymous customer will also be transfered to the signed in customers account.
+When an anonymous token is present in the session during the customer sign in process, the active anonymous cart will get merged with the customer cart. Any orders placed by this anonymous customer will also be transferred to the signed in customers account.
 
 :::caution
-Only use the `ctpSession` on places with access to GraphQL context. Webhooks and event handlers have no reliable access to httpSession. Therefor on those locations no customer authenticated requests should or could be made.
+Only use the `ctpSession` in places with access to GraphQL context. Webhooks and event handlers have no reliable access to httpSession. Therefore, in these locations no requests that require customer authentication should be made.
 :::
 
 ### Format

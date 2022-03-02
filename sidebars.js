@@ -103,14 +103,27 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'commercetools',
+        label: 'Commercetools',
         items: [
           'platform/integration/commercetools/overview',
-          'platform/integration/commercetools/getting-started',
+          'platform/integration/commercetools/resources',
           'platform/integration/commercetools/features',
-          'platform/integration/commercetools/ctp-session',
-          'platform/integration/commercetools/ctp-client',
-          'platform/integration/commercetools/payments',
+          {
+            type: 'category',
+            label: 'Configuration',
+            items: [
+              'platform/integration/commercetools/configuration/falcon-server',
+              'platform/integration/commercetools/configuration/payments',
+            ],
+          },
+          {
+            type: 'category',
+            label: 'Working with the integration',
+            items: [
+              'platform/integration/commercetools/working-with-the-integration/ctp-session',
+              'platform/integration/commercetools/working-with-the-integration/ctp-client',
+            ],
+          },
         ],
       },
       {
