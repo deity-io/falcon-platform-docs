@@ -8,12 +8,14 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-commercetools-module" />
 
-- `ctpSession` is a guard of the `httpSession` and only available in methods resolving GraphQL endpoints. Not available in webhooks & events.
-- `ctpSession` provides functions and setter methods to manipulate the session
+### Introduction
+The Commercetools Session `ctpSession` is a guard of the `httpSession` and only available in methods resolving GraphQL endpoints. It is not available in webhooks and events.
+
+The `ctpSession` provides functions and setter methods for you to manipulate a session.
 
 ### Authentication
 
-The `customerToken` and `customerId` will be set whenever a customer is authenticated. When an unauthenticated customer (guest) opens a cart we will create an anonymous `customerToken` and store it in session. In this case the customerId will remain empty.
+The `customerToken` and `customerId` will be set whenever a customer is authenticated. When an unauthenticated customer (guest) opens a cart we will create an anonymous `customerToken` and store it in the session. In this case, the customerId will remain empty.
 
 When an anonymous token is present in the session during the customer sign in process, the active anonymous cart will get merged with the customer cart. Any orders placed by this anonymous customer will also be transferred to the signed in customers account.
 
@@ -40,15 +42,14 @@ export type CtpAuthToken = {
 };
 ```
 
-## Reading session
-1. Inject ctpSession to class
-2. access ctpSession from class methods
+### Reading/Getting a session
+To interact with the `ctpSession` object, it needs to be injected into a class first and then accessing it from the class methods.
 
 ```typescript
 const { token, customerId, cartId, lastOrderId } = this.ctpSession;
 ```
 
-## Mutating session
+### Mutating a session
 Mutating the session can be done trough both a set of regular as `setter` methods on the session class.
 
 ```typescript
@@ -62,6 +63,3 @@ this.ctpSession.token = token;
 this.ctpSession.cartId = cartId;
 this.ctpSession.lastOrderId = orderId;
 ```
-
-## Extending session
-// TODO

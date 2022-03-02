@@ -8,26 +8,23 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-commercetools-module" />
 
-// TODO
-- [ ] ctpIntroduction
-- [ ] Authentication methods
-- [x] Customer apiRoot
-- [x] Integration apiRoot
+### Introduction
+The Commercetools Client `ctpClient` allows you to connect to the SDK in the name of user or integration. The [Commercetools Session `ctpSession`](./ctp-session) is used for authentication.
 
-If you need to access `ctpClient` in a new class, don't forget to [bind your service](/docs/next/platform/server-v3/modules/module-api#binding-services).
-
-## ApiRoot
-You can make use of the by Commercetools [TypeScript SDK](https://commercetools.github.io/nodejs/sdk) through the `apiRoot`. Our `ctpClient` provides two async methods to grab a pre-configured `apiRoot` where all required project configuration, authorization and session refreshing is handled.
-
-With the `integrationApiRoot` requests in name of the [Commercetools project](https://docs.commercetools.com/merchant-center/projects) to commercetools could be made. Use this `apiRoot` for all requests where a signed-in user is not required. To make requests in name of the customer the `customerApiRoot` can be used.
+### API root
+You can make use of the by Commercetools [TypeScript SDK](https://commercetools.github.io/nodejs/sdk) through the `apiRoot`. Our `ctpClient` provides two async methods to fetch a pre-configured `apiRoot`, in which all required project configuration, authorization and session refreshing are handled:
+- **`integrationApiRoot()`**
+To make requests in the name of the [commercetools project](https://docs.commercetools.com/merchant-center/projects), use the `integrationApiRoot`. This is for all requests where a signed-in user is not required.
+- **`customerApiRoot()`**
+To make requests in name of the customer, use `customerApiRoot`.
 
 #### Authorization
 Requests made to Commercetools API are authenticated through auth middlewares. In our `ctpClient` the [createAuthMiddlewareWithExistingToken](https://commercetools.github.io/nodejs/sdk/api/sdkMiddlewareAuth.html#createauthmiddlewarewithexistingtokenauthorization-options) middleware is used, where a `Bearer` token is set to the request header.
 
-When using our preconfigured apiRoot you don't need to worry about authorization or customer session management.  Where `integrationApiRoot` creates an authentication token based on your [configured](/docs/next/platform/integration/commercetools/configuration/falcon-server) `cliendId` and `clientSecret`, the `customerApiRoot` accesses the [ctpSession](./ctp-session) to get the customer token from session.
+When using our preconfigured `apiRoot` you don't need to worry about authorization or customer session management.  Where `integrationApiRoot` creates an authentication token based on your [configured](/docs/next/platform/integration/commercetools/configuration/falcon-server) `cliendId` and `clientSecret`, the `customerApiRoot` accesses the [`ctpSession`](./ctp-session) to get the customer token from session.
 
 #### Authorization Token
-When you don't need a full apiRoot, but you do want access to integration or customer tokens you can also directly request them through the `ctpClient`.
+When you don't need a full `apiRoot`, but you want access to integration or customer tokens, you can directly request them through the `ctpClient`:
 
 ```typescript
 const integrationToken = await this.ctpClient.getIntegrationToken();
@@ -38,10 +35,10 @@ Although you can also access the customerToken directly from the `ctpSession`, w
 :::
 
 
-### Integration apiRoot
+### Integration API root
 
 #### Scopes
-Our integration client only works correctly if the correct scopes has been assigned to it. Make sure you check the following when generating your accessToken in the Commercetools dashboard;
+Our integration client only works correctly if the correct scopes has been assigned to it. Make sure you check the following when generating your accessToken in the Commercetools dashboard:
 - `view_project_settings`
 - `view_categories`
 - `view_published_products`
@@ -51,7 +48,7 @@ Our integration client only works correctly if the correct scopes has been assig
 - `manage_customers`
 - `view_customers`
 
-#### Example
+#### Example for fetching and using the integration API root
 ```ts
 @injectable()
 class ExampleIntegrationDatasource {
@@ -69,11 +66,11 @@ class ExampleIntegrationDatasource {
     }
 }
 ```
-## Customer apiRoot
+## Customer API root
 When using `this.ctpClient.customerApiRoot()` you don't need to worry about refreshing sessions. Our `ctpClient` will refresh the `CtpAuthToken` when needed and store fresh token in our [session](./ctp-session).
 
 #### Scopes
-When a customer authenticates through our middleware, the following set of scopes will be requested;
+When a customer authenticates through our middleware, the following set of scopes will be requested:
 - `view_stores`
 - `view_orders`
 - `view_payments`
@@ -85,7 +82,7 @@ When a customer authenticates through our middleware, the following set of scope
 - `manage_my_payments`
 - `manage_my_shopping_lists`
 
-#### Example
+#### Example for fetching and using the customer API root
 A cart belongs to a customer, whether this is a signed in customer or a guest filling his cart, we will interact with the API in the same way through the `customerApiRoot`.
 
 ```ts

@@ -112,16 +112,17 @@ module.exports = {
             type: 'category',
             label: 'Configuration',
             items: [
-              'platform/integration/commercetools/configuration/falcon-server',
+              'platform/integration/commercetools/configuration/getting-started',
               'platform/integration/commercetools/configuration/payments',
             ],
           },
           {
             type: 'category',
-            label: 'Working with the integration',
+            label: 'Extending',
             items: [
-              'platform/integration/commercetools/working-with-the-integration/ctp-session',
-              'platform/integration/commercetools/working-with-the-integration/ctp-client',
+              'platform/integration/commercetools/extending/getting-started',
+              'platform/integration/commercetools/extending/ctp-session',
+              'platform/integration/commercetools/extending/ctp-client',
             ],
           },
         ],
