@@ -12,16 +12,14 @@ import CodePackage from '@site/src/components/CodePackage';
 The Commercetools Client `ctpClient` allows you to connect to the SDK in the name of user or integration. The [Commercetools Session `ctpSession`](./ctp-session) is used for authentication.
 
 ### API root
-You can make use of the by Commercetools [TypeScript SDK](https://commercetools.github.io/nodejs/sdk) through the `apiRoot`. Our `ctpClient` provides two async methods to fetch a pre-configured `apiRoot`, in which all required project configuration, authorization and session refreshing are handled:
-- **`integrationApiRoot()`**
-To make requests in the name of the [commercetools project](https://docs.commercetools.com/merchant-center/projects), use the `integrationApiRoot`. This is for all requests where a signed-in user is not required.
-- **`customerApiRoot()`**
-To make requests in name of the customer, use `customerApiRoot`.
+You can make use of the by Commercetools [TypeScript SDK](https://commercetools.github.io/nodejs/sdk) through the `apiRoot`. Our `ctpClient` provides two methods to fetch a pre-configured client that can be use to create the `apiRoot` in which all required authorization and session refreshing are handled:
+- **`getIntegrationClient()`**
+To make requests in the name of the [commercetools project](https://docs.commercetools.com/merchant-center/projects), use the `getCustomerClient`. This is for all requests where a signed-in user is not required.
+- **`getCustomerClient()`**
+To make requests in name of the customer, use the `customerApiRoot`.
 
 #### Authorization
 Requests made to Commercetools API are authenticated through auth middlewares. In our `ctpClient` the [createAuthMiddlewareWithExistingToken](https://commercetools.github.io/nodejs/sdk/api/sdkMiddlewareAuth.html#createauthmiddlewarewithexistingtokenauthorization-options) middleware is used, where a `Bearer` token is set to the request header.
-
-When using our preconfigured `apiRoot` you don't need to worry about authorization or customer session management.  Where `integrationApiRoot` creates an authentication token based on your [configured](/docs/next/platform/integration/commercetools/configuration/getting-started) `cliendId` and `clientSecret`, the `customerApiRoot` accesses the [`ctpSession`](./ctp-session) to get the customer token from session.
 
 #### Authorization Token
 When you don't need a full `apiRoot`, but you want access to integration or customer tokens, you can directly request them through the `ctpClient`:
@@ -55,8 +53,9 @@ class ExampleIntegrationDatasource {
     constructor(@inject('CtpClient') protected ctpClient: CtpClient) {}
 
     async findById(id: string): Promise<CtpCategory> {
-        const integrationApiRoot = await this.ctpClient.integrationApiRoot();
+        const integrationApiRoot = createApiBuilderFromCtpClient(await this.ctpClient.getIntegrationClient(), this.config.url);
         const { body: category } = await integrationApiRoot
+            .withProjectKey({ projectKey: this.config.projectKey })
             .categories()
             .withId({ ID: id })
             .get()
@@ -67,7 +66,7 @@ class ExampleIntegrationDatasource {
 }
 ```
 ## Customer API root
-When using `this.ctpClient.customerApiRoot()` you don't need to worry about refreshing sessions. Our `ctpClient` will refresh the `CtpAuthToken` when needed and store fresh token in our [session](./ctp-session).
+When using `this.ctpClient.getCustomerClient()` you don't need to worry about refreshing sessions. Our `ctpClient` will refresh the `CtpAuthToken` when needed and store fresh token in our [session](./ctp-session).
 
 #### Scopes
 When a customer authenticates through our middleware, the following set of scopes will be requested:
@@ -91,8 +90,9 @@ class ExampleCustomerDatasource {
     constructor(@inject('CtpClient') protected ctpClient: CtpClient) {}
 
     async myCart() {
-        const customerApiRoot = await this.ctpClient.customerApiRoot();
+        const customerApiRoot = createApiBuilderFromCtpClient(await this.ctpClient.getCustomerClient(), this.config.url);
         const { body: cart } = await customerApiRoot
+            .withProjectKey({ projectKey: this.config.projectKey })
             .me()
             .activeCart()
             .get()
