@@ -1,18 +1,21 @@
 ---
-id: overview
-title: CommerceTools Integration
-sidebar_label: Overview
+id: getting-started
+title: Middleware Configuration
+sidebar_label: Getting Started
 ---
 
 import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-commercetools-module" />
 
-## Installation
+## Prerequisite
 
-Using our example project, `demo-v3` you will have CommerceTools support without having to do any custom dev.
+Before you get started you'll need a Commercetools store and have access to the admin panel.
 
-But if you used another demo you can just install `@deity/falcon-commercetools-module` (add it also to `server/package.json`) and enable it in configuration file (`server/config/default.json`) and assign to shop extension:
+## Configuring Falcon Middleware
+Using our example project, `demo-v3` you will have Commercetools support without having to do any custom development.
+
+If you're using another demo, you can just install `@deity/falcon-commercetools-module` (add it to `server/package.json`) and enable it in configuration file (`server/config/default.json`) and assign to shop extension:
 
 ```json
   "modules": {
@@ -60,7 +63,8 @@ Replace values below with values applicable for your store.
 
 ### Environment Variables
 
-The following environment variables are mapped directly to the configuration option so it's recommended to use these when setting up production deployment (and of course these can be used in development mode)
+The following environment variables are mapped directly to the configuration option, so it's recommended to use these when setting up production deployment (and of course these can be used in development mode).
+To set these variables in deployed environments, you can make use of the `dcloud env:var:set` command in our CLI tool.
 
 - `COMMERCETOOLS_REGION`
 - `COMMERCETOOLS_PROJECT_KEY`
