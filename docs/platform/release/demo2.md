@@ -5,9 +5,9 @@ sidebar_label: Demo 2
 description: Dependencies for demo v2
 ---
 
-## Last Updated 01/03/2022
+## Last Updated 03/03/2022
 
-_22:30 CEST_
+_10:30 CEST_
 
 ### Client
 
@@ -77,9 +77,7 @@ _22:30 CEST_
   "@deity/falcon-algolia-search-module": "^1.0.0-beta.28",
   "@deity/falcon-bigcommerce-module": "^1.0.0-beta.40",
   "@deity/falcon-blog-extension": "^3.0.0-beta.21",
-  "@deity/falcon-file-redirect-api": "^3.0.0-beta.22",
-  "@deity/falcon-geo-ip-api": "^3.0.0-beta.21",
-  "@deity/falcon-geo-location-extension": "^3.0.0-beta.12",
+  "@deity/falcon-file-redirect-module": "^1.0.0-beta.0",
   "@deity/falcon-logger": "^3.0.0-beta.13",
   "@deity/falcon-mailer": "^3.0.0-beta.11",
   "@deity/falcon-payment-extension": "^1.0.0-beta.20",

@@ -5,9 +5,9 @@ sidebar_label: Demo 1
 description: Dependencies for demo v1
 ---
 
-## Last Updated 01/03/2022
+## Last Updated 03/03/2022
 
-_22:30 CEST_
+_10:30 CEST_
 
 ### Client
 
@@ -19,7 +19,7 @@ _22:30 CEST_
   "lodash-es": "^4.17.21"
 },
 "devDependencies": {
- "@apollo/client": "3.5.8",
+  "@apollo/client": "3.5.8",
   "@deity/eslint-config-falcon": "^3.0.0-beta.8",
   "@deity/falcon-adyen-plugin": "^3.0.0-beta.16",
   "@deity/falcon-blog-data": "^3.0.0-beta.21",
@@ -65,9 +65,7 @@ _22:30 CEST_
 ```
 "dependencies": {
   "@deity/falcon-blog-extension": "^3.0.0-beta.21",
-  "@deity/falcon-file-redirect-api": "^3.0.0-beta.22",
-  "@deity/falcon-geo-ip-api": "^3.0.0-beta.21",
-  "@deity/falcon-geo-location-extension": "^3.0.0-beta.12",
+  "@deity/falcon-file-redirect-module": "^1.0.0-beta.0",
   "@deity/falcon-logger": "^3.0.0-beta.13",
   "@deity/falcon-magento2-module": "^1.0.0-beta.51",
   "@deity/falcon-payment-extension": "^1.0.0-beta.20",
