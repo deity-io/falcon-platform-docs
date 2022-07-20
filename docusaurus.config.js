@@ -13,14 +13,14 @@ module.exports = {
       title: 'Deity Documentation',
       logo: {
         alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg',
+        src: 'img/deity-logo.svg'
       },
       items: [
         {
           label: 'Platform',
           href: '/docs/platform/overview/about',
           position: 'right',
-          activeBasePath: '/docs/platform',
+          activeBasePath: '/docs/platform'
         },
         // {
         //   label: 'DPSG',
@@ -36,9 +36,9 @@ module.exports = {
         {
           label: 'Falcon UI',
           href: 'https://falcon-ui.docs.deity.io/',
-          position: 'right',
-        },
-      ],
+          position: 'right'
+        }
+      ]
     },
     footer: {
       style: 'dark',
@@ -48,11 +48,11 @@ module.exports = {
           items: [
             {
               label: 'Platform',
-              to: '/docs/platform/overview/about',
+              to: '/docs/platform/overview/about'
             },
             {
               label: 'Falcon Cloud',
-              to: '/docs/platform/cloud/about',
+              to: '/docs/platform/cloud/about'
             },
             // {
             //   label: 'DPSG',
@@ -60,112 +60,113 @@ module.exports = {
             // },
             {
               label: 'Falcon UI',
-              href: 'https://falcon-ui.docs.deity.io/',
-            },
-          ],
+              href: 'https://falcon-ui.docs.deity.io/'
+            }
+          ]
         },
         {
           title: 'Our Integrations',
           items: [
             {
               label: 'Algolia',
-              to: '/docs/platform/integration/algolia',
+              to: '/docs/platform/integration/algolia'
             },
             {
               label: 'BigCommerce',
-              to: '/docs/platform/integration/bigcommerce/overview',
+              to: '/docs/platform/integration/bigcommerce/overview'
             },
             {
               label: 'Magento 2',
-              to: '/docs/platform/integration/magento2/overview',
+              to: '/docs/platform/integration/magento2/overview'
             },
             {
               label: 'Stripe',
-              to: '/docs/platform/integration/stripe',
+              to: '/docs/platform/integration/stripe'
             },
             {
               label: 'Mollie',
-              to: '/docs/platform/integration/mollie',
+              to: '/docs/platform/integration/mollie'
             },
             {
               label: 'Wordpress',
-              to: '/docs/platform/integration/wordpress',
-            },
-          ],
+              to: '/docs/platform/integration/wordpress'
+            }
+          ]
         },
         {
           title: 'Community & Help',
           items: [
             {
               label: 'Community Chat',
-              href: 'http://slack.deity.io/',
+              href: 'http://slack.deity.io/'
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/deity_commerce',
+              href: 'https://twitter.com/deity_commerce'
             },
             {
               label: 'Instagram',
-              href: 'https://instagram.com/deity_commerce',
+              href: 'https://instagram.com/deity_commerce'
             },
             {
               label: 'YouTube',
-              href: 'https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ',
+              href: 'https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ'
             },
             {
               label: 'Contact Us',
-              href: 'https://deity.io/contact',
-            },
-          ],
+              href: 'https://deity.io/contact'
+            }
+          ]
         },
         {
           title: 'Useful Links',
           items: [
             {
               label: 'Marketing Site',
-              href: 'https://deity.io/',
+              href: 'https://deity.io/'
             },
             {
               label: 'Status',
-              href: 'https://status.deity.io/',
+              href: 'https://status.deity.io/'
             },
             {
               label: 'Blog',
-              href: 'https://medium.com/deity-io',
+              href: 'https://medium.com/deity-io'
             },
             {
               label: 'Privacy Policy',
-              href: 'https://deity.io/privacy-policy',
-            },
-          ],
-        },
+              href: 'https://deity.io/privacy-policy'
+            }
+          ]
+        }
       ],
       logo: {
         alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg',
+        src: 'img/deity-logo.svg'
       },
-      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`,
+      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`
     },
     image: 'img/deity-logo.svg',
 
     algolia: {
+      appId: '3SVVV93FRW',
       apiKey: 'c8c5e2d6a2a32b13b59182d8a0827945',
       indexName: 'deity',
-      algoliaOptions: {},
+      algoliaOptions: {}
     },
     mailchimp: {
-      submitUrl: 'https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d',
+      submitUrl: 'https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d'
     },
     intercom: {
-      appId: 'z91ewqiv',
-    },
+      appId: 'z91ewqiv'
+    }
   },
   plugins: [
     [
       path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
       {
-        containerId: 'GTM-N4NQJGX',
-      },
+        containerId: 'GTM-N4NQJGX'
+      }
     ],
     [
       '@docusaurus/plugin-pwa',
@@ -176,25 +177,25 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/img/logo-512.png',
+            href: '/img/logo-512.png'
           },
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.json',
+            href: '/manifest.json'
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: '#26642c',
+            content: '#26642c'
           },
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: '/img/logo-192.png',
-          },
-        ],
-      },
+            href: '/img/logo-192.png'
+          }
+        ]
+      }
     ],
     [
       '@docusaurus/plugin-content-docs',
@@ -202,9 +203,9 @@ module.exports = {
         id: 'dpsg',
         path: 'dpsg',
         routeBasePath: 'dpsg',
-        sidebarPath: require.resolve('./sidebarsDpsg.js'),
-      },
-    ],
+        sidebarPath: require.resolve('./sidebarsDpsg.js')
+      }
+    ]
   ],
   presets: [
     [
@@ -217,21 +218,21 @@ module.exports = {
           versions: {
             current: {
               label: 'Platform (v3) [BETA]',
-              path: 'next',
+              path: 'next'
             },
             2: {
-              label: 'Platform (v2)',
+              label: 'Platform (v2)'
             },
             2019: {
               label: 'Platform (v2019)',
-              path: 'v2019',
-            },
-          },
+              path: 'v2019'
+            }
+          }
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      }
+    ]
+  ]
 };
