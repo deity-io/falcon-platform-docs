@@ -8,13 +8,10 @@ module.exports = {
       'platform/getting-started/npm',
       'platform/getting-started/create',
       'platform/getting-started/configure',
-      'platform/getting-started/repository',
+      'platform/getting-started/repository'
     ],
 
-    'General concepts': [
-      'platform/general-concepts/configuration',
-      'platform/general-concepts/dynamic-routing',
-    ],
+    'General concepts': ['platform/general-concepts/configuration', 'platform/general-concepts/dynamic-routing'],
 
     'Client App': [
       'platform/client/about',
@@ -32,8 +29,8 @@ module.exports = {
           'platform/client/theming/components',
           'platform/client/theming/fonts',
           'platform/client/theming/icons',
-          'platform/client/theming/css-sass',
-        ],
+          'platform/client/theming/css-sass'
+        ]
       },
       'platform/client/overrides',
       'platform/client/routing',
@@ -44,7 +41,7 @@ module.exports = {
       'platform/client/code-splitting',
       'platform/client/testing',
       'platform/client/static-files',
-      'platform/client/browser-support',
+      'platform/client/browser-support'
     ],
 
     Middleware: [
@@ -57,8 +54,8 @@ module.exports = {
           'platform/server-v3/extensions/shop-extension',
           'platform/server-v3/extensions/blog-extension',
           'platform/server-v3/extensions/search-extension',
-          'platform/server-v3/extensions/geolocation-extension',
-        ],
+          'platform/server-v3/extensions/geolocation-extension'
+        ]
       },
       {
         Modules: [
@@ -69,15 +66,15 @@ module.exports = {
             'Module Common Services': [
               'platform/server-v3/modules/common-services/data-sources',
               'platform/server-v3/modules/common-services/event-handlers',
-              'platform/server-v3/modules/common-services/rest-endpoints',
-            ],
+              'platform/server-v3/modules/common-services/rest-endpoints'
+            ]
           },
-          'platform/server-v3/migration-guide',
-        ],
+          'platform/server-v3/migration-guide'
+        ]
       },
       'platform/server-v3/dynamic-routing',
       'platform/server-v3/mailer',
-      'platform/server-v3/extension-scopes',
+      'platform/server-v3/extension-scopes'
     ],
     Cloud: [
       'platform/cloud/about',
@@ -85,7 +82,42 @@ module.exports = {
       'platform/cloud/prerequisites',
       'platform/cloud/account',
       'platform/cloud/installation',
-      'platform/cloud/dcloud',
+      'platform/cloud/dcloud'
+    ],
+    Payments: [
+      'platform/payments/overview',
+      {
+        type: 'category',
+        label: 'Payment Service',
+        items: [
+          'platform/payments/dpsg/overview',
+          'platform/payments/dpsg/config',
+          'platform/payments/dpsg/setup',
+          'platform/payments/dpsg/events'
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Flows',
+        items: [
+          'platform/payments/flow/overview',
+          'platform/payments/flow/payment',
+          'platform/payments/flow/store',
+          'platform/payments/flow/web',
+          'platform/payments/flow/refunds'
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Integration Guide',
+        items: [
+          'platform/payments/integration/overview',
+          'platform/payments/integration/payment-list',
+          'platform/payments/integration/stored-payment-list',
+          'platform/payments/integration/create-payment',
+          'platform/payments/integration/store-payment'
+        ]
+      }
     ],
     Integrations: [
       'platform/integration/examples',
@@ -98,8 +130,8 @@ module.exports = {
           'platform/integration/bigcommerce/getting-started',
           'platform/integration/bigcommerce/features',
           'platform/integration/bigcommerce/technical',
-          'platform/integration/bigcommerce/manual',
-        ],
+          'platform/integration/bigcommerce/manual'
+        ]
       },
       {
         type: 'category',
@@ -113,8 +145,8 @@ module.exports = {
             label: 'Configuration',
             items: [
               'platform/integration/commercetools/configuration/getting-started',
-              'platform/integration/commercetools/configuration/payments',
-            ],
+              'platform/integration/commercetools/configuration/payments'
+            ]
           },
           {
             type: 'category',
@@ -122,18 +154,15 @@ module.exports = {
             items: [
               'platform/integration/commercetools/extending/getting-started',
               'platform/integration/commercetools/extending/ctp-session',
-              'platform/integration/commercetools/extending/ctp-client',
-            ],
-          },
-        ],
+              'platform/integration/commercetools/extending/ctp-client'
+            ]
+          }
+        ]
       },
       {
         type: 'category',
         label: 'Magento 2',
-        items: [
-          'platform/integration/magento2/overview',
-          'platform/integration/magento2/getting-started',
-        ],
+        items: ['platform/integration/magento2/overview', 'platform/integration/magento2/getting-started']
       },
       {
         type: 'category',
@@ -141,18 +170,15 @@ module.exports = {
         items: [
           'platform/integration/contentful/overview',
           'platform/integration/contentful/getting-started',
-          'platform/integration/contentful/content-models',
-        ],
+          'platform/integration/contentful/content-models'
+        ]
       },
       {
         type: 'category',
         label: 'Unbxd',
-        items: [
-          'platform/integration/unbxd/overview',
-          'platform/integration/unbxd/getting-started',
-        ],
+        items: ['platform/integration/unbxd/overview', 'platform/integration/unbxd/getting-started']
       },
-      'platform/integration/wordpress',
+      'platform/integration/wordpress'
     ],
     Upgrading: ['platform/upgrading/overview'],
     Caching: ['platform/cache/overview'],
@@ -173,17 +199,14 @@ module.exports = {
           'platform/cookbook/client/scss-global',
           'platform/cookbook/client/post-css-support',
           'platform/cookbook/client/analytics',
-          'platform/cookbook/client/testing',
-        ],
+          'platform/cookbook/client/testing'
+        ]
       },
       {
         type: 'category',
         label: 'Integrations',
-        items: [
-          'platform/cookbook/integrations/jsonplaceholder',
-          'platform/cookbook/integrations/braintree',
-        ],
-      },
+        items: ['platform/cookbook/integrations/jsonplaceholder', 'platform/cookbook/integrations/braintree']
+      }
     ],
     'Video Guides': ['platform/guides/client'],
     Packages: [
@@ -214,14 +237,14 @@ module.exports = {
       'platform/packages/falcon-ui-kit',
       'platform/packages/falcon-ui',
       'platform/packages/falcon-wordpress-api',
-      'platform/packages/normal-module-override-webpack-plugin',
+      'platform/packages/normal-module-override-webpack-plugin'
     ],
     'Release Notes': [
       'platform/release/full-changelog',
       'platform/release/3-0-0',
       'platform/release/demo1',
       'platform/release/demo2',
-      'platform/release/demo3',
+      'platform/release/demo3'
     ],
     Support: [
       'platform/support/contact',
@@ -235,9 +258,9 @@ module.exports = {
           'platform/support/faqs/server',
           'platform/support/faqs/cloud',
           'platform/support/faqs/config',
-          'platform/support/faqs/misc',
-        ],
-      },
-    ],
-  },
+          'platform/support/faqs/misc'
+        ]
+      }
+    ]
+  }
 };
