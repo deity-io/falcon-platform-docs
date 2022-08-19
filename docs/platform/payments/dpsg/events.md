@@ -4,12 +4,13 @@ title: Events / Webhooks
 sidebar_label: Events / Webhooks
 ---
 
-## env
+Our payment service emits events to a message queue that Deity platform subscribes to.
 
-## provider
+This is all handled by our `@deity/falcon-dpsg-module` package.
 
-## method
+When messages are consumes this package emits events that are picked up by other parts of the app. You can also watch for these events and create your own action.
 
-## filters
+## Events
 
-## users
+- `PaymentEvents.PAYMENT_STATUS_UPDATED` when a payment is updated, currently used for refunds
+- `Events.ERROR` when a payment error occurs it's sent to our normal error event.

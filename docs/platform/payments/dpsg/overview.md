@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Overview
-sidebar_label: Overview
+sidebar_label: Overview / Glossary
 ---
 
 Our payment service is available to all Deity platform users. It acts as a middleman between payment providers and Falcon server.
