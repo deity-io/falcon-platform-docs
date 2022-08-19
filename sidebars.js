@@ -91,8 +91,8 @@ module.exports = {
         label: 'Payment Service',
         items: [
           'platform/payments/dpsg/overview',
-          'platform/payments/dpsg/config',
           'platform/payments/dpsg/setup',
+          'platform/payments/dpsg/config',
           'platform/payments/dpsg/events'
         ]
       },

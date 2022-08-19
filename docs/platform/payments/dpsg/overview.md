@@ -24,9 +24,9 @@ When referring to a method we are talking about a specific payment method e.g cr
 
 A stored method is a payment method that is stored / vaulted and connected to a customer. We map shop customers (by ID) against payment provider customers (by ID).
 
-### Environment
+### Payment Profile
 
-Our payment service allows for multiple environments specific to each customer. The environment should be unique to each Deity Platform instance (including local instances). Each environment can have it's own configuration including payment providers, methods &amp; filters.
+Our payment service allows for multiple environments specific to each customer, these are called profiles. Each profile should be unique to each Deity Platform instance (including local instances). Each profile can have it's own configuration including payment providers, methods &amp; filters.
 
 ### Filter
 
@@ -35,3 +35,7 @@ Payment providers and methods can be filtered by country, currency &amp; cart to
 ### Event / Messages
 
 Our payment service uses both API (Rest) endpoints and messages for various parts of the payment flow. Deity platform subscribes to these messages and handles them appropriately. These messages occur for things such as payment updates from refunds. [LINK TO MORE INFO]
+
+### Region
+
+Our payment service has instances in the US, EU or AU for optimum performance. This can be chosen when you create a profile.
