@@ -112,6 +112,7 @@ module.exports = {
         label: 'Integration Guide',
         items: [
           'platform/payments/integration/overview',
+          'platform/payments/integration/ui-components',
           'platform/payments/integration/payment-list',
           'platform/payments/integration/stored-payment-list',
           'platform/payments/integration/create-payment',
