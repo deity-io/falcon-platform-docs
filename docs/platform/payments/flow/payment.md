@@ -12,8 +12,8 @@ The diagrams below show the base flow for how a payment works in our demo app.
 
 ## Redirect status returned
 
-<img src="/img/docs/platform/payments/flow/Payment Flow (redirect).jpg" alt="Payment Flow" style={{ marginBottom: 20 }} />
+<img src="/img/docs/platform/payments/flow/Payment Flow (redirect).jpg" alt="Payment Flow (redirected)" style={{ marginBottom: 20 }} />
 
 ## Incomplete status returned
 
-<img src="/img/docs/platform/payments/flow/Payment Flow (incomplete).jpg" alt="Payment Flow" style={{ marginBottom: 20 }} />
+<img src="/img/docs/platform/payments/flow/Payment Flow (incomplete).jpg" alt="Payment Flow (incomplete)" style={{ marginBottom: 20 }} />
