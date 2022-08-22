@@ -103,7 +103,6 @@ module.exports = {
           'platform/payments/flow/overview',
           'platform/payments/flow/payment',
           'platform/payments/flow/store',
-          'platform/payments/flow/web',
           'platform/payments/flow/refunds'
         ]
       },
