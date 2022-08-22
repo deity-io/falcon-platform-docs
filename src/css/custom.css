@@ -6,12 +6,12 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #26642C;
+  --ifm-color-primary: #134146;
   --ifm-color-purple: #545df6;
   --ifm-footer-background-color: #262828;
   --ifm-hero-text-color: #ffffff;
-  --ifm-button-background-color: #26642C;
-  --ifm-button-border-color: #26642C;
+  --ifm-button-background-color: #134146;
+  --ifm-button-border-color: #134146;
   --ifm-button-padding-vertical: 1rem;
   --ifm-background-secondary: whitesmoke;
   --ifm-font-size-sm: .8rem;
@@ -29,7 +29,7 @@ html[data-theme="dark"] {
     --ra-color-note: #262828;
     --ifm-background-color: #1a1720;
     --ra-color-text-dark: #000000;
-    --ifm-color-primary: #aac957;
+    --ifm-color-primary: #C4FD7F;
     --ra-admonition-icon-color: #262828;
     --ifm-button-color: #ffffff;
     --ifm-text-color: #ffffff;
