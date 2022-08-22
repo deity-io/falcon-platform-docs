@@ -20,7 +20,7 @@ import { PaymentMethodListQuery } from '@deity/falcon-payment-data';
       currency,
       total,
       country,
-      webPayments: supportedWebPayments
+      webPayments: supportedWebPayments // See below
     }
   }}
 >
@@ -30,6 +30,28 @@ import { PaymentMethodListQuery } from '@deity/falcon-payment-data';
 
 `paymentMethodList` contains `items` which is a list of available payment methods based on the filters passed and your payment profile.
 
-:::note webPayments
-This will be explained in a later section
-:::
+### Web Payments (Apple & Google Pay)
+
+If you plan on using web payments we recommend you wrap your payment list query in our provider.
+
+As checks for web payment support are based on the OS and browser this has to happen client side.
+
+This provider will pass an array of supported methods.
+
+```jsx
+import { WebPayment, WebPaymentProvider } from '@deity/falcon-payment-ui';
+...
+<WebPaymentProvider currency={currency}>
+  <WebPayment>
+    {webPayment => {
+      if (webPayment.loading) {
+        return <Loader />;
+      }
+
+      const { supportedWebPayments } = webPayment;
+      ...
+      // List query here
+    }}
+  </WebPayment>
+</WebPaymentProvider>
+```
