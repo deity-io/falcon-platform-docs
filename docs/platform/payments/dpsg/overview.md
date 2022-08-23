@@ -39,3 +39,21 @@ Our payment service uses both API (Rest) endpoints and messages for various part
 ### Region
 
 Our payment service has instances in the US, EU or AU for optimum performance. This can be chosen when you create a profile.
+
+## Payment Service Swagger
+
+Our payment service exposes a public swagger so you can use for testing and documentation. Make sure you visit the instance you will be using and your payment profile is set up on.
+
+- **EU (Default)**: [https://dpsg.deity.cloud/](https://dpsg.deity.cloud/)
+- **US**: [https://dpsg.us.deity.cloud/](https://dpsg.us.deity.cloud/)
+- **AU**: [https://dpsg.au.deity.cloud/](https://dpsg.au.deity.cloud/)
+
+### Swagger Authorization
+
+To use the public swagger you'll need your payment profile credentials.
+
+You will need to use `token` based authorization.
+
+Your token will be `[SERVICE_USER]:[SERVICE_TOKEN]`. It will look something like this:
+
+`project:environment:profile:123456`
