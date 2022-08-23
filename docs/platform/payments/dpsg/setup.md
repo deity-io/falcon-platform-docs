@@ -4,7 +4,7 @@ title: Setup
 sidebar_label: Setup
 ---
 
-Our payment service should be set up using `dcloud` [LINK TO DCLOUD].
+Our payment service should be set up using [dcloud](/docs/next/platform/cloud/dcloud).
 
 Please make sure your `dcloud` is up to date before configuration.
 
