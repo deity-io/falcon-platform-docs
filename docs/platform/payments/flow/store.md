@@ -10,4 +10,8 @@ Our payment service creates a mapping between shop and payment provider customer
 
 ## Payment Flow
 
+<img src="/img/docs/platform/payments/flow/store-flow-payment.jpg" alt="Store payment method flow during payment" style={{ marginBottom: 20 }} />
+
 ## Account Flow
+
+<img src="/img/docs/platform/payments/flow/store-flow.jpg" alt="Store payment method flow in account" style={{ marginBottom: 20 }} />
