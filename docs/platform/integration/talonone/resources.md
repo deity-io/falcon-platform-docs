@@ -1,19 +1,17 @@
 ---
-id: datamappers-overview
-title: Data Mappers
-sidebar_label: Overview
+id: resources
+title: Resources
+sidebar_label: Resources
 ---
 
 import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-talonone-module" />
 
-- Introduction
+## Installation
+
+- TalonOneClient
   - What
   - Why?
   - How
   - Extending
-- AddressMapper
-- CouponMapper
-- DiscountRuleMapper
-- ReferralMapper

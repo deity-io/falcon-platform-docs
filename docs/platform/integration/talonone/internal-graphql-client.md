@@ -1,19 +1,17 @@
 ---
-id: datamappers-overview
-title: Data Mappers
-sidebar_label: Overview
+id: internal-graphql-client
+title: Internal GraphQl Client
+sidebar_label: Internal GraphQl Client
 ---
 
 import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-talonone-module" />
 
-- Introduction
+## Installation
+
+- TalonOneInternalGraphQLClient
   - What
   - Why?
   - How
   - Extending
-- AddressMapper
-- CouponMapper
-- DiscountRuleMapper
-- ReferralMapper
