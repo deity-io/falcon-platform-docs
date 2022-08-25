@@ -295,6 +295,38 @@ N/A
 
 ---
 
+## Log List
+
+List log including error, warnings and info
+
+```bash
+dcloud log:list
+```
+
+**Options**
+- `--severity=<severity>` Choose the severity of logs you wish to log (`info`, `warning`, `error` or `critical`)
+- `-l <limit>` Limit the results
+- `-p <page>` Which page of results to show
+
+**Example: Get the second page of critical logs**
+
+`dcloud log:list --severity=critical -p 2`
+
+---
+
+## Log Watch
+
+Watch the logs for an environment
+
+```bash
+dcloud log:watch
+```
+
+**Options**
+N/A
+
+---
+
 ## Who am I
 
 Get the current logged in user
