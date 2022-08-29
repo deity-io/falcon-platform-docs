@@ -39,7 +39,7 @@ export class ReferralMapper extends FalconReferralMapper {
 ```
 
 :::note Rebind ReferralMapper
-When extending or overwriting existing modules we need to rebind the new instance, otherwise Falcon Platform will continue to use the shipped `ReferralMapper` instead of our custom implementation. For more info on rebinding please check our [Binding services docs](/docs/platform/server-v3/modules/module-api.md)
+When extending or overwriting existing modules we need to rebind the new instance, otherwise Falcon Platform will continue to use the shipped `ReferralMapper` instead of our custom implementation. For more info on rebinding please check our [Binding services docs](/platform/server-v3/modules/module-api)
 :::
 
 ### Available Mappers
