@@ -18,8 +18,9 @@ We have covered all features essential for cart promotions, product promotions, 
 - Synchronize Talon.One `CustomerSession` promotion effects with shop cart
 - `Open`/`close`/`cancel` Talon.One `CustomerSession` based on shop cart/order status mutations
 
-**Promotion validation**
+**Promotions**
 
+- Map effect TalonOne effect `gifted_item` to
 - Validate applied promotions while making `placeOrder` mutation
 
 **Coupons/referrals**

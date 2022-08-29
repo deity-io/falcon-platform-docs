@@ -131,20 +131,13 @@ module.exports = {
           'platform/integration/talonone/overview',
           'platform/integration/talonone/resources',
           'platform/integration/talonone/features',
+          'platform/integration/talonone/concepts',
           'platform/integration/talonone/configuration',
           'platform/integration/talonone/client',
           'platform/integration/talonone/datasource',
           'platform/integration/talonone/internal-graphql-client',
-          {
-            type: 'category',
-            label: 'Data Mappers',
-            items: ['platform/integration/talonone/data-mappers/datamappers-overview']
-          },
-          {
-            type: 'category',
-            label: 'Event handlers',
-            items: ['platform/integration/talonone/event-handlers/event-handlers-overview']
-          }
+          'platform/integration/talonone/data-mappers',
+          'platform/integration/talonone/event-handlers'
         ]
       },
       {

@@ -10,8 +10,12 @@ import CodePackage from '@site/src/components/CodePackage';
 
 ## Introduction
 
-[Talon.One](https://talon.one/) is a flexible, scalable and API-first all-in-one promotion engine.
+Talon.One is a flexible, scalable and API-first all-in-one promotion engine.
 
-- Before you get started, we recommend reading the [developer resources of Talon.One](/docs/next/platform/integration/talonone/resources) to understand the core concepts.
+- [Talon.One website](https://talon.one/)
 
-Once familiar with Talon.One, start the integration by [configuring your Falcon Middleware](/docs/next/platform/integration/talonone/configuration).
+Before you get started, we recommend reading the [developer resources of Talon.One](/docs/next/platform/integration/talonone/resources) to understand the core concepts of Talon.One.
+
+Once familiar with Talon.One, we recommend reading the [Integration Concepts](/docs/next/platform/integration/talonone/concepts) to understand how the Falcon Platform and Talon.One are working together.
+
+Once familiar with Talon.One and the integration concepts, start the integration by [configuring your Falcon Middleware](/docs/next/platform/integration/talonone/configuration).
