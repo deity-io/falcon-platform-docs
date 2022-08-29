@@ -131,7 +131,6 @@ module.exports = {
           'platform/integration/talonone/overview',
           'platform/integration/talonone/resources',
           'platform/integration/talonone/features',
-          'platform/integration/talonone/concepts',
           'platform/integration/talonone/configuration',
           {
             type: 'category',

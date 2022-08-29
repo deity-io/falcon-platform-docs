@@ -10,9 +10,7 @@ import CodePackage from '@site/src/components/CodePackage';
 
 ## Installation
 
-Using our example project, `demo-v3` you will have talonone support without having to do any custom dev.
-
-But if you used another demo you can just install `@deity/falcon-talonone-module` (add it also to `server/package.json`) and enable it in configuration file (`server/config/default.json`) and assign to shop extension:
+You can install `@deity/falcon-talonone-module` (add it also to `server/package.json`) and enable it in configuration file (`server/config/default.json`) and assign to promotion extension:
 
 ```json
   "modules": {
@@ -20,12 +18,11 @@ But if you used another demo you can just install `@deity/falcon-talonone-module
     "talonone": {
       "module": "@deity/falcon-talonone-module",
       "config": {
-        "region": "",
-        "projectKey": "",
-        "url": "",
-        "authUrl": "",
-        "clientId": "",
-        "secret": ""
+        "apiKeyPrefix": "ApiKey-v1",
+        "apiKeyVersion": "api_key_v1",
+        "apiKey": "TALONONE_API_KEY",
+        "basePath": "TALONONE_BASE_PATH",
+        "referralCodeCampaignId": "TALONONE_REFERRAL_CODE_CAMPAIGN_ID"
       }
     }
   },
@@ -47,7 +44,7 @@ Replace values below with values applicable for your store.
   "modules": {
     "talonone": {
       "config": {
-        "region": "",
+        "referralCodeCampaignId": 1,
       }
     }
   }
@@ -57,15 +54,6 @@ Replace values below with values applicable for your store.
 
 The following environment variables are mapped directly to the configuration option so it's recommended to use these when setting up production deployment (and of course these can be used in development mode)
 
-- `TALONONE_REGION`
-- `TALONONE_PROJECT_KEY`
-- `TALONONE_URL`
-- `TALONONE_AUTH_URL`
-- `TALONONE_CLIENT_ID`
-- `TALONONE_SECRET`
-
-- TalonOneClient
-  - What
-  - Why?
-  - How
-  - Extending
+- `TALONONE_API_KEY`
+- `TALONONE_BASE_PATH`
+- `TALONONE_REFERRAL_CODE_CAMPAIGN_ID`
