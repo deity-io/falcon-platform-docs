@@ -1,7 +1,7 @@
 ---
 id: data-mappers
 title: Talon.One DataMappers
-sidebar_label: DataMappers
+sidebar_label: Data Mappers
 ---
 
 import CodePackage from '@site/src/components/CodePackage';

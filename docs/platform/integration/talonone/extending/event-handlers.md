@@ -1,7 +1,7 @@
 ---
 id: event-handlers
 title: Talon.One EventHandlers
-sidebar_label: EventHandlers
+sidebar_label: Event Handlers
 ---
 
 import CodePackage from '@site/src/components/CodePackage';

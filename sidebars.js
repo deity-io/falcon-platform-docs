@@ -140,7 +140,8 @@ module.exports = {
               'platform/integration/talonone/extending/client',
               'platform/integration/talonone/extending/datasource',
               'platform/integration/talonone/extending/data-mappers',
-              'platform/integration/talonone/extending/event-handlers'
+              'platform/integration/talonone/extending/event-handlers',
+              'platform/integration/talonone/extending/track-events'
             ]
           }
         ]
