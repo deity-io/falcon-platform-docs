@@ -27,3 +27,8 @@ We have covered all features essential for cart promotions, product promotions, 
 
 - Apply/remove coupon codes from Talon.One CustomerSession
 - Apply/remove/generate referral codes from Talon.One CustomerSession
+
+**Custom Events**
+
+- Track Profile Events
+- Track Session Events
