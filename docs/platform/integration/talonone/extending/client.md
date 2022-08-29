@@ -8,7 +8,7 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-talonone-module" />
 
-## A preconfigured Talon.One SDK ready to go
+##
 
 The `TalonOneClient` is a wrapper around the Talon.One SDK where the correct project configuration is injected. It is mainly used by the `TalonOneDataSource` to make request. The `TalonOneClient` will return untouched data, straight from the Talon One API.
 

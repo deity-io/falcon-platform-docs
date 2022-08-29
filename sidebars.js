@@ -133,11 +133,17 @@ module.exports = {
           'platform/integration/talonone/features',
           'platform/integration/talonone/concepts',
           'platform/integration/talonone/configuration',
-          'platform/integration/talonone/client',
-          'platform/integration/talonone/datasource',
-          'platform/integration/talonone/internal-graphql-client',
-          'platform/integration/talonone/data-mappers',
-          'platform/integration/talonone/event-handlers'
+          {
+            type: 'category',
+            label: 'Extending',
+            items: [
+              'platform/integration/talonone/extending/module',
+              'platform/integration/talonone/extending/client',
+              'platform/integration/talonone/extending/datasource',
+              'platform/integration/talonone/extending/data-mappers',
+              'platform/integration/talonone/extending/event-handlers'
+            ]
+          }
         ]
       },
       {

@@ -8,7 +8,7 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-talonone-module" />
 
-#
+##
 
 For our Falcon Platform module `@deity/falcon-talonone-module` to be able to syncronize customer and session data with Talon.One we needs to 'hook' into some data flows. Where we can we do this in a non-blocking way, preventing the user from waiting unnecicerly long for a request to finish. However, in some cases non-blocking syncronizations are simply not viable. For example, all cart syncronizations need to be done in a blocking way, since Talon.One will give us an updated set of promotional effects after each cart update. In Falcon Plaform we need to wait for this effects and apply them to the cart in the shop backend.
 

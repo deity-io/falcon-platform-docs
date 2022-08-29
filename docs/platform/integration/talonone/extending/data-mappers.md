@@ -8,7 +8,7 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-talonone-module" />
 
-#
+##
 
 Since the Falcon Middleware serves as an agnostic layer, incomming data from Talon.One API needs to be transformed in a format that is understood by `deity/falcon-promotion-extension` (and vice versa). A set of mapper classes are available to unify this process. Those mappers can be extended and partly overwritten.
 
