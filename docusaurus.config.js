@@ -150,7 +150,8 @@ module.exports = {
     image: 'img/deity-logo.svg',
 
     algolia: {
-      apiKey: 'c8c5e2d6a2a32b13b59182d8a0827945',
+      appId: 'BPQ949H0LU',
+      apiKey: '3e60ad703b9aa8f07904844cceb1a018',
       indexName: 'deity',
       algoliaOptions: {}
     },
