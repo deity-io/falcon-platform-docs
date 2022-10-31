@@ -149,7 +149,6 @@ module.exports = {
     image: 'img/deity-logo.svg',
 
     algolia: {
-      // https://github.com/facebook/docusaurus/blob/4fad1ce0cd7bf72e07856f72eb5c88e3f153438d/packages/docusaurus-theme-search-algolia/src/validateThemeConfig.ts#L14-L16
       appId: 'BPQ949H0LU',
       apiKey: '3e60ad703b9aa8f07904844cceb1a018',
       indexName: 'deity',
