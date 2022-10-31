@@ -11,14 +11,15 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.15",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.15",
-    "@docusaurus/preset-classic": "^2.0.0-beta.15",
-    "classnames": "^2.2.6",
-    "formik": "^2.1.4",
+    "@algolia/client-search": "4.14.1",
+    "@docusaurus/core": "^2.2.0",
+    "@docusaurus/plugin-pwa": "^2.2.0",
+    "@docusaurus/preset-classic": "^2.2.0",
+    "classnames": "^2.3.2",
+    "formik": "^2.2.9",
     "jsonp": "^0.2.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "browserslist": {
     "production": [
@@ -33,12 +34,12 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "2.4.1"
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "2.7.1"
   }
 }
