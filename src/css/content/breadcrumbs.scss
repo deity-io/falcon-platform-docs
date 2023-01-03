@@ -1,0 +1,19 @@
+.breadcrumbs {
+  margin-top: 2.25rem;
+  margin-bottom: 5.625rem;
+
+  &__link {
+    &--active {
+      color: var(--ifm-breadcrumbs-color-active);
+    }
+  }
+
+  &__item {
+    font-size: var(--ifm-breadcrumbs-font-size);
+    color: var(--ifm-breadcrumbs-color);
+
+    .breadcrumbs__link {
+      background: none;
+    }
+  }
+}

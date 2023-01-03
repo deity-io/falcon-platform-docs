@@ -1,0 +1,56 @@
+.navbar {
+  &__search-input {
+    width: 6rem;
+    padding-left: 32px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 26px;
+    }
+  }
+
+  @include large {
+    .DocSearch-Button {
+      width: 216px;
+      border-radius: 6px;
+    }
+
+    &__brand {
+      margin-right: auto;
+    }
+
+    &__item:last-child {
+      margin-right: auto;
+    }
+
+    &__link {
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+
+    &__items {
+      flex: 100;
+    }
+
+    &__items.navbar__items--right {
+      flex: auto;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+}
+
+.dropdown > .navbar__link:after {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border: 0;
+  background: url(#{$icons-path}/chevron-down.svg);
+  transform: none;
+  top: 2px;
+  margin-left: 6px;
+}

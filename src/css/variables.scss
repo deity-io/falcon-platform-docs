@@ -1,0 +1,63 @@
+:root {
+  --ifm-font-family-base: 'Deity Sans Text', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+    sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --ifm-color-primary: #26642c;
+  --ifm-color-secondary: #0c6d62;
+  --ifm-color-purple: #545df6;
+  --ifm-color-white: #fff;
+  --ifm-footer-background-color: #ffffffa8;
+  --ifm-hero-text-color: #ffffff;
+  --ifm-button-background-color: #26642c;
+  --ifm-button-border-color: #26642c;
+  --ifm-button-padding-vertical: 1rem;
+  --ifm-background-secondary: whitesmoke;
+  --ifm-font-size-sm: 0.8rem;
+  --ifm-font-size-xs: 0.6rem;
+  --ifm-table-background: white;
+  --ifm-table-border-color: whitesmoke;
+  --ifm-table-background-highlight: #ebecfb;
+  --ifm-table-border-color-highlight: #dcdcfc;
+  --ifm-navbar-link-color: #1f2321;
+
+  /* Typography */
+  --ifm-h1-font-size: 1.75rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1.0625rem;
+  --ifm-p-color: #6a716e;
+
+  /* Side Menu */
+  --ifm-menu-color: #1f2321;
+  --ifm-menu-font-size: 0.875rem;
+
+  /* Table of contents */
+  --ifm-toc-link-color: #6a716e;
+  --ifm-toc-link-color-active: #000a07ed;
+
+  /* Breadcrumbs */
+  --ifm-breadcrumbs-font-size: 0.875rem;
+  --ifm-breadcrumbs-color: #000f0975;
+  --ifm-breadcrumbs-color-active: --ifm-color-secondary;
+}
+
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: #262828;
+  --ifm-background-secondary: #262828;
+  --ifm-color-purple: #7f86f4;
+  --ra-color-note: #262828;
+  --ifm-background-color: #1a1720;
+  --ra-color-text-dark: #000000;
+  --ifm-color-primary: #aac957;
+  --ra-admonition-icon-color: #262828;
+  --ifm-button-color: #ffffff;
+  --ifm-text-color: #ffffff;
+  --ifm-table-background: #1a1720;
+  --ifm-table-border-color: var(--ifm-color-emphasis-200);
+  --ifm-table-background-highlight: #2d2459;
+  --ifm-table-border-color-highlight: #524691;
+  --ifm-navbar-link-color: #fff;
+}
+
+$img-path: '../../static/img';
+$icons-path: '../../static/img/icons';

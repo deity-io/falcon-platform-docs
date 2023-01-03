@@ -1,0 +1,11 @@
+@mixin large {
+  @media (min-width: 996px) {
+    @content;
+  }
+}
+
+@mixin dark-mode {
+  html[data-theme='dark'] {
+    @content;
+  }
+}

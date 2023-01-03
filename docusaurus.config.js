@@ -10,33 +10,61 @@ module.exports = {
   projectName: 'falcon-platform-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Deity Documentation',
       logo: {
-        alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg'
+        alt: 'Deity Documentation',
+        src: 'img/deity-logo-docs.svg',
+        srcDark: 'img/deity-logo-docs-dark.svg'
       },
       items: [
         {
           label: 'Platform',
-          href: '/docs/platform/overview/about',
-          position: 'right',
-          activeBasePath: '/docs/platform'
+          items: [
+            {
+              label: 'Deity Platform',
+              to: '/docs/platform/overview/about',
+              activeBasePath: '/docs/platform/overview/'
+            },
+            {
+              label: 'Composer',
+              to: '#'
+            },
+            {
+              label: 'Storefront',
+              to: '#'
+            },
+            {
+              label: 'Orchestrator',
+              to: '#'
+            },
+            {
+              label: 'Cloud Console',
+              to: '#'
+            },
+            {
+              label: 'Payments',
+              to: '/docs/platform/payments/overview',
+              activeBasePath: '/docs/platform/payments'
+            },
+            {
+              label: 'Integrations',
+              to: '/docs/platform/integration/examples',
+              activeBasePath: '/docs/platform/integration'
+            }
+          ]
         },
-        // {
-        //   label: 'DPSG',
-        //   href: '/dpsg/docs/about',
-        //   position: 'right',
-        //   activeBasePath: '/docs/docs',
-        // },
-        /* {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownActiveClassDisabled: true,
-        }, */
         {
-          label: 'Falcon UI',
-          href: 'https://falcon-ui.docs.deity.io/',
-          position: 'right'
+          label: 'Support',
+          to: '/docs/platform/support/contact',
+          activeBasePath: '/docs/platform/support'
+        },
+        {
+          label: 'Changelog',
+          to: '/docs/platform/release/full-changelog',
+          activeBasePath: '/docs/platform/release'
+        },
+        {
+          label: 'Launch Console',
+          href: 'https://console.deity.io'
         }
       ]
     },
@@ -162,6 +190,7 @@ module.exports = {
     }
   },
   plugins: [
+    ['docusaurus-plugin-sass', {}],
     [
       path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
       {
@@ -230,7 +259,7 @@ module.exports = {
           }
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css')
+          customCss: require.resolve('./src/css/main.scss')
         }
       }
     ]

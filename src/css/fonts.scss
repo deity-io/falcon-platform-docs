@@ -1,0 +1,25 @@
+$font-path: '../../static/fonts';
+
+@font-face {
+  font-family: 'Deity Sans Text';
+  src: url('#{$font-path}/deitysans300-webfont.woff2') format('woff2'),
+    url('#{$font-path}/deitysans300-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Deity Sans Text';
+  src: url('#{$font-path}/deitysans400-webfont.woff2') format('woff2'),
+    url('#{$font-path}/deitysans400-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Deity Sans Text';
+  src: url('#{$font-path}/deitysans500-webfont.woff2') format('woff2'),
+    url('#{$font-path}/deitysans500-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

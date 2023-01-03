@@ -1,0 +1,59 @@
+.table-of-contents {
+  &:before {
+    @include large {
+      content: 'CONTENT';
+      font-weight: bold;
+      color: var(--ifm-color-secondary);
+    }
+  }
+
+  &__link {
+    color: var(--ifm-toc-link-color);
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    padding: 0.5rem;
+
+    &--active {
+      color: var(--ifm-toc-link-color-active);
+
+      &:before {
+        @include large {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -0.5625rem;
+          width: 1px;
+          height: 100%;
+          background: var(--ifm-toc-link-color-active);
+        }
+      }
+    }
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+
+    ul li a:before {
+      left: -1.0625rem;
+    }
+  }
+}
+
+@include dark-mode {
+  .table-of-contents {
+    &__link {
+      color: var(--ifm-color-white);
+
+      &--active {
+        color: var(--ifm-color-secondary);
+
+        &:before {
+          @include large {
+            background: var(--ifm-color-white);
+          }
+        }
+      }
+    }
+  }
+}
