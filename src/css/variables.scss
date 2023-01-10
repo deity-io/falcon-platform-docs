@@ -2,8 +2,8 @@
   --ifm-font-family-base: 'Deity Sans Text', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
     sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
-  --ifm-color-primary: #26642c;
-  --ifm-color-secondary: #0c6d62;
+  --ifm-color-primary: #0c6d62;
+  --ifm-color-secondary: #1a1e1c;
   --ifm-color-purple: #545df6;
   --ifm-color-white: #fff;
   --ifm-footer-background-color: #ffffffa8;
@@ -18,7 +18,11 @@
   --ifm-table-border-color: whitesmoke;
   --ifm-table-background-highlight: #ebecfb;
   --ifm-table-border-color-highlight: #dcdcfc;
+
+  /* Header */
   --ifm-navbar-link-color: #1f2321;
+  --ifm-menu-color-background-active: rgba(0, 56, 37, 0.05);
+  --ifm-navbar-link-background-hover: rgba(2, 192, 151, 0.095);
 
   /* Typography */
   --ifm-h1-font-size: 1.75rem;
@@ -29,7 +33,7 @@
 
   /* Side Menu */
   --ifm-menu-color: #1f2321;
-  --ifm-menu-font-size: 0.875rem;
+  --ifm-menu-font-size: 0.9375rem;
 
   /* Table of contents */
   --ifm-toc-link-color: #6a716e;
@@ -39,6 +43,13 @@
   --ifm-breadcrumbs-font-size: 0.875rem;
   --ifm-breadcrumbs-color: #000f0975;
   --ifm-breadcrumbs-color-active: --ifm-color-secondary;
+  --ifm-breadcrumb-spacing: 0;
+
+  /* Dropdown */
+  --ifm-dropdown-hover-background-color: #e7f9f5;
+
+  /* Menu */
+  --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
 }
 
 html[data-theme='dark'] {

@@ -3,6 +3,7 @@
   margin-bottom: 5.625rem;
 
   &__link {
+    color: var(--ifm-breadcrumbs-color);
     &--active {
       color: var(--ifm-breadcrumbs-color-active);
     }
@@ -10,10 +11,15 @@
 
   &__item {
     font-size: var(--ifm-breadcrumbs-font-size);
-    color: var(--ifm-breadcrumbs-color);
 
     .breadcrumbs__link {
       background: none;
     }
+  }
+}
+
+@include dark-mode {
+  .breadcrumbs__link {
+    color: #fff;
   }
 }

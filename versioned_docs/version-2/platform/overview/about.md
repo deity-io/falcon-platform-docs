@@ -2,6 +2,7 @@
 id: about
 title: What is Falcon Platform?
 sidebar_label: About
+displayed_sidebar: platform
 ---
 
 ## More than just a PWA theme

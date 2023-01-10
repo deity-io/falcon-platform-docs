@@ -2,8 +2,9 @@
   &:before {
     @include large {
       content: 'CONTENT';
-      font-weight: bold;
-      color: var(--ifm-color-secondary);
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: var(--ifm-color-primary);
     }
   }
 
@@ -46,7 +47,7 @@
       color: var(--ifm-color-white);
 
       &--active {
-        color: var(--ifm-color-secondary);
+        color: var(--ifm-color-primary);
 
         &:before {
           @include large {

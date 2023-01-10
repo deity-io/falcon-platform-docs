@@ -72,65 +72,74 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Our documentation',
+          title: 'Platform',
           items: [
             {
-              label: 'Platform',
+              label: 'Overview',
               to: '/docs/platform/overview/about'
             },
             {
-              label: 'Falcon Cloud',
-              to: '/docs/platform/cloud/about'
+              label: 'Composer',
+              to: '#'
             },
-            // {
-            //   label: 'DPSG',
-            //   to: '/dpsg/docs/about',
-            // },
             {
-              label: 'Falcon UI',
-              href: 'https://falcon-ui.docs.deity.io/'
+              label: 'Storefront',
+              to: '#'
+            },
+            {
+              label: 'Cloud',
+              to: '#'
+            },
+            {
+              label: 'Payments',
+              to: '#'
             }
           ]
         },
         {
-          title: 'Our Integrations',
+          title: 'Developers',
           items: [
             {
-              label: 'Algolia',
-              to: '/docs/platform/integration/algolia'
+              label: 'Changelog',
+              to: '#'
             },
             {
-              label: 'BigCommerce',
-              to: '/docs/platform/integration/bigcommerce/overview'
+              label: 'System status',
+              to: '#'
             },
             {
-              label: 'Magento 2',
-              to: '/docs/platform/integration/magento2/overview'
-            },
-            {
-              label: 'Stripe',
-              to: '/docs/platform/integration/stripe'
-            },
-            {
-              label: 'Mollie',
-              to: '/docs/platform/integration/mollie'
-            },
-            {
-              label: 'Wordpress',
-              to: '/docs/platform/integration/wordpress'
+              label: 'Support',
+              to: '#'
             }
           ]
         },
         {
-          title: 'Community & Help',
+          title: 'Resources',
           items: [
             {
-              label: 'Community Chat',
-              href: 'http://slack.deity.io/'
+              label: 'Website',
+              href: 'https://deity.io/'
             },
+            {
+              label: 'Blog',
+              href: 'https://medium.com/deity-io'
+            },
+            {
+              label: 'Case studies',
+              href: '#'
+            }
+          ]
+        },
+        {
+          title: 'Connect',
+          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/deity_commerce'
+            },
+            {
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/company/deity-bv/'
             },
             {
               label: 'Instagram',
@@ -139,31 +148,6 @@ module.exports = {
             {
               label: 'YouTube',
               href: 'https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ'
-            },
-            {
-              label: 'Contact Us',
-              href: 'https://deity.io/contact'
-            }
-          ]
-        },
-        {
-          title: 'Useful Links',
-          items: [
-            {
-              label: 'Marketing Site',
-              href: 'https://deity.io/'
-            },
-            {
-              label: 'Status',
-              href: 'https://status.deity.io/'
-            },
-            {
-              label: 'Blog',
-              href: 'https://medium.com/deity-io'
-            },
-            {
-              label: 'Privacy Policy',
-              href: 'https://deity.io/privacy-policy'
             }
           ]
         }
@@ -172,7 +156,7 @@ module.exports = {
         alt: 'DEITY Logo',
         src: 'img/deity-logo.svg'
       },
-      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`
+      copyright: `COPYRIGHT © 2018–${new Date().getFullYear()} DEITY B.V. ALL RIGHTS RESERVED.`
     },
     image: 'img/deity-logo.svg',
 
@@ -242,6 +226,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarCollapsible: false,
           editUrl: 'https://github.com/deity-io/falcon-platform-docs/edit/master',
           lastVersion: '2',
           versions: {

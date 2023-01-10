@@ -1,4 +1,55 @@
 {
+  "platform": [
+    {
+      "type": "category",
+      "label": "Platform",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/overview/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/overview/plans"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/prerequisites"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/dcloud"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/npm"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/create"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/configure"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/repository"
+        }
+      ]
+    }
+  ],
   "version-2/falconPlatformSidebar": [
     {
       "collapsed": true,
