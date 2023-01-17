@@ -1,5 +1,25 @@
 .menu {
-  background: var(--ifm-color-white);
+  background: var(--ifm-menu-background-color);
+
+  .doc-icon a:before {
+    content: '';
+    width: 11px;
+    height: 13px;
+    margin-right: 8.5px;
+    background: url(#{$icons-path}/doc.svg);
+  }
+
+  .gray-link {
+    a {
+      display: flex;
+      justify-content: space-between;
+      color: #6a716e;
+    }
+
+    svg {
+      color: #000;
+    }
+  }
 
   &__list {
     .menu__list {

@@ -1,0 +1,42 @@
+#__docusaurus {
+  background: no-repeat top left url(#{$img-path}/glow.png);
+}
+
+.flex {
+  @include large {
+    display: flex;
+  }
+
+  > div {
+    flex: 1;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.pt80 {
+  padding-top: 80px;
+}
+
+.right-big-card {
+  background-color: #e7f9f5;
+}
+
+.home-search {
+  display: inline-block;
+  margin: 0 auto 100px;
+}

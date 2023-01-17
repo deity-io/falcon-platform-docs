@@ -1,4 +1,100 @@
 {
+  "home": [
+    {
+      "type": "category",
+      "label": "Platform",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/app-store/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/key-concepts"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/getting-started"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Products",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/composer",
+          "className": "doc-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/storefront",
+          "className": "doc-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/payments",
+          "className": "doc-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/console",
+          "className": "doc-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/storefront-ui",
+          "className": "doc-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/orchestrator",
+          "className": "doc-icon"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/resources/tutorials"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/resources/faq"
+        },
+        {
+          "type": "html",
+          "value": "<hr/>"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/full-changelog",
+          "className": "gray-link"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/support/contact",
+          "className": "gray-link"
+        },
+        {
+          "type": "link",
+          "label": "Launch Console",
+          "href": "https://console.deity.io",
+          "className": "gray-link"
+        },
+        {
+          "type": "link",
+          "label": "Deity.com",
+          "href": "https://www.deity.com/",
+          "className": "gray-link"
+        }
+      ]
+    }
+  ],
   "platform": [
     {
       "type": "category",

@@ -5,6 +5,7 @@ h4 {
   letter-spacing: -0.01em;
   line-height: 1.3em;
   font-weight: 500;
+  font-family: var(--ifm-font-family-headline);
   font-style: normal;
 }
 
@@ -12,6 +13,20 @@ h4 {
   h1:first-child {
     --ifm-h1-font-size: 2.3125rem;
     margin-top: 1rem;
+  }
+
+  .headline {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    background: radial-gradient(34.52% 167.24% at 43.06% 84.91%, #0c6d62 0%, #111c18 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .headline2 {
+    font-size: 37px;
+    line-height: 44.4px;
   }
 
   & > h1 {
@@ -30,5 +45,16 @@ h4 {
     font-size: 1.0625rem;
     color: var(--ifm-p-color);
     line-height: 1.75rem;
+  }
+}
+
+@include dark-mode {
+  .headline,
+  .headline2 {
+    color: #fff;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #fff;
+    background-clip: none;
   }
 }

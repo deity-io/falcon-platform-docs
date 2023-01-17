@@ -1,0 +1,59 @@
+@import '@site/src/css/mixins';
+
+.container {
+  border: 1px solid rgba(2, 44, 15, 0.08);
+  box-shadow: 0px 4px 14px rgba(0, 130, 158, 0.02), 0px 4px 12px rgba(15, 40, 69, 0.04);
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 4px;
+
+  > h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 18.2px;
+    margin-bottom: 0;
+  }
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+
+  > div {
+    padding-left: 1rem;
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.padding {
+  padding: 1.25rem;
+}
+
+.content {
+  padding: 48px;
+
+  p {
+    font-size: 19px;
+    line-height: 32px;
+  }
+}
+
+@include dark-mode {
+  .container {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #000;
+    }
+  }
+}

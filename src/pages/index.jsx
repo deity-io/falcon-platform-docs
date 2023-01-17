@@ -1,12 +1,6 @@
 import React from 'react';
-import Layout from '@theme/Layout';
+import { Redirect } from '@docusaurus/router';
 
-function Home() {
-  return (
-    <Layout title="Documentation for DEITY Falcon" description="DEITY Falcon Platform documentation and user guides">
-      <main>home content</main>
-    </Layout>
-  );
+export default function Home() {
+  return <Redirect to="/docs" />;
 }
-
-export default Home;

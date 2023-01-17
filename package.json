@@ -3,12 +3,24 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "start": "docusaurus start",
     "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "lint": "eslint",
     "serve": "docusaurus serve",
-    "lint": "eslint"
+    "start": "docusaurus start",
+    "swizzle": "docusaurus swizzle"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "@algolia/client-search": "4.14.1",
@@ -23,18 +35,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.57.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.2.0",

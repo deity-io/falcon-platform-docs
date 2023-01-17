@@ -2,6 +2,9 @@
   --ifm-font-family-base: 'Deity Sans Text', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
     sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
+  --ifm-font-family-headline: 'Deity Sans Display', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
   --ifm-color-primary: #0c6d62;
   --ifm-color-secondary: #1a1e1c;
   --ifm-color-purple: #545df6;
@@ -32,6 +35,7 @@
   --ifm-p-color: #6a716e;
 
   /* Side Menu */
+  --ifm-menu-background-color: rgba(255, 255, 255, 0.75);
   --ifm-menu-color: #1f2321;
   --ifm-menu-font-size: 0.9375rem;
 
@@ -50,6 +54,7 @@
 
   /* Menu */
   --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
+  --ifm-hr-background-color: #dfe4e2;
 }
 
 html[data-theme='dark'] {

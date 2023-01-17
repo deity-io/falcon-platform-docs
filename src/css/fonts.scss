@@ -23,3 +23,11 @@ $font-path: '../../static/fonts';
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Deity Sans Display';
+  src: url('#{$font-path}/deitysansdisplay500-webfont.woff2') format('woff2'),
+    url('#{$font-path}/deitysansdisplay500-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
