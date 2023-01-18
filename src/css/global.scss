@@ -40,3 +40,7 @@
   display: inline-block;
   margin: 0 auto 100px;
 }
+
+hr {
+  margin: var(--ifm-hr-margin-vertical) var(--ifm-hr-margin-horizontal);
+}

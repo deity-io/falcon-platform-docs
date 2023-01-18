@@ -12,6 +12,7 @@ import { useSidebarBreadcrumbs, useHomePageRoute } from '@docusaurus/theme-commo
 import Link from '@docusaurus/Link';
 import { translate } from '@docusaurus/Translate';
 import HomeBreadcrumbItem from '@theme/DocBreadcrumbs/Items/Home';
+import { useLocation } from 'react-router-dom';
 
 import styles from './styles.module.css';
 
@@ -79,8 +80,9 @@ function BreadcrumbsItem({
 export default function DocBreadcrumbs(): JSX.Element | null {
   const breadcrumbs = useSidebarBreadcrumbs();
   const homePageRoute = useHomePageRoute();
+  const { pathname } = useLocation();
 
-  if (!breadcrumbs || homePageRoute.path === '/') {
+  if (!breadcrumbs || pathname === '/' || pathname === '/docs') {
     return null;
   }
 

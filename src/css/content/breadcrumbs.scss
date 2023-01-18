@@ -1,9 +1,21 @@
 .breadcrumbs {
-  margin-top: 2.25rem;
+  margin-top: 0.95rem;
   margin-bottom: 5.625rem;
 
+  .breadcrumbHomeIcon_src-theme-DocBreadcrumbs-Items-Home-styles-module {
+    top: 4px;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__homeLink {
+    padding-left: 5px;
+  }
+
   &__link {
+    font-size: 0.875rem;
     color: var(--ifm-breadcrumbs-color);
+
     &--active {
       color: var(--ifm-breadcrumbs-color-active);
     }
@@ -11,6 +23,10 @@
 
   &__item {
     font-size: var(--ifm-breadcrumbs-font-size);
+
+    &:not(:last-child):after {
+      width: 8px;
+    }
 
     .breadcrumbs__link {
       background: none;

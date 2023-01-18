@@ -9,13 +9,15 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import { ThemeClassNames } from '@docusaurus/theme-common';
-import { useDocsVersion, useHomePageRoute } from '@docusaurus/theme-common/internal';
+import { useDocsVersion } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocVersionBadge';
+import { useLocation } from 'react-router-dom';
 
 export default function DocVersionBadge({ className }: Props): JSX.Element | null {
-  const { path } = useHomePageRoute();
   const versionMetadata = useDocsVersion();
-  if (versionMetadata.badge && path !== '/') {
+  const { pathname } = useLocation();
+
+  if (versionMetadata.badge && pathname !== '/docs') {
     return (
       <span className={clsx(className, ThemeClassNames.docs.docVersionBadge, 'badge badge--secondary')}>
         <Translate id="theme.docs.versionBadge.label" values={{ versionLabel: versionMetadata.label }}>

@@ -55,6 +55,16 @@
   /* Menu */
   --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
   --ifm-hr-background-color: #dfe4e2;
+  --ifm-hr-margin-horizontal: 4px;
+
+  /* Alert */
+  --ifm-alert-background-color: rgba(0, 56, 37, 0.05);
+  --ifm-alert-border-width: 1px;
+  --ifm-alert-border-color: rgba(0, 56, 37, 0.05);
+  --ifm-alert-border-radius: 9px;
+  --ifm-alert-padding-vertical: 14px;
+  --ifm-alert-padding-horizontal: 16px;
+  --ifm-alert-border-left-width: 1px;
 }
 
 html[data-theme='dark'] {

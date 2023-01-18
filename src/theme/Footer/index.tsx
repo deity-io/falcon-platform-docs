@@ -12,7 +12,6 @@ import FooterLinks from '@theme/Footer/Links';
 import FooterLogo from '@theme/Footer/Logo';
 import FooterCopyright from '@theme/Footer/Copyright';
 import FooterLayout from '@theme/Footer/Layout';
-import { Chat } from '../../components/Intercom';
 
 function Footer(): JSX.Element | null {
   const { footer } = useThemeConfig();
@@ -29,7 +28,6 @@ function Footer(): JSX.Element | null {
         logo={logo && <FooterLogo logo={logo} />}
         copyright={copyright && <FooterCopyright copyright={copyright} />}
       />
-      <Chat />
     </>
   );
 }

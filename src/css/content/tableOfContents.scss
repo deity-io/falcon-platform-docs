@@ -1,12 +1,6 @@
 .table-of-contents {
-  &:before {
-    @include large {
-      content: 'CONTENT';
-      font-size: 0.6875rem;
-      font-weight: 500;
-      color: var(--ifm-color-primary);
-    }
-  }
+  padding: 0 0 0 3px;
+  margin-top: 8px;
 
   &__link {
     color: var(--ifm-toc-link-color);
@@ -22,7 +16,7 @@
           content: '';
           position: absolute;
           top: 0;
-          left: -0.5625rem;
+          left: -4px;
           width: 1px;
           height: 100%;
           background: var(--ifm-toc-link-color-active);
@@ -36,7 +30,20 @@
     margin: 0;
 
     ul li a:before {
-      left: -1.0625rem;
+      left: -12px;
+    }
+  }
+}
+
+.theme-doc-toc-desktop {
+  &:before {
+    @include large {
+      content: 'CONTENT';
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      color: var(--ifm-color-primary);
+      padding-left: 4px;
     }
   }
 }

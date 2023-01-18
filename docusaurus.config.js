@@ -227,7 +227,6 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,
-          editUrl: 'https://github.com/deity-io/falcon-platform-docs/edit/master',
           lastVersion: '2',
           versions: {
             current: {
