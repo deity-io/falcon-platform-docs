@@ -1,4 +1,8 @@
 .breadcrumbs {
+  --ifm-breadcrumbs-font-size: 0.875rem;
+  --ifm-breadcrumbs-color: #000f0975;
+  --ifm-breadcrumbs-color-active: --ifm-color-secondary;
+  --ifm-breadcrumb-spacing: 0;
   margin-top: 0.95rem;
   margin-bottom: 5.625rem;
 

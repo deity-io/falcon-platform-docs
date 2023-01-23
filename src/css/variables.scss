@@ -39,32 +39,8 @@
   --ifm-menu-color: #1f2321;
   --ifm-menu-font-size: 0.9375rem;
 
-  /* Table of contents */
-  --ifm-toc-link-color: #6a716e;
-  --ifm-toc-link-color-active: #000a07ed;
-
-  /* Breadcrumbs */
-  --ifm-breadcrumbs-font-size: 0.875rem;
-  --ifm-breadcrumbs-color: #000f0975;
-  --ifm-breadcrumbs-color-active: --ifm-color-secondary;
-  --ifm-breadcrumb-spacing: 0;
-
   /* Dropdown */
   --ifm-dropdown-hover-background-color: #e7f9f5;
-
-  /* Menu */
-  --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
-  --ifm-hr-background-color: #dfe4e2;
-  --ifm-hr-margin-horizontal: 4px;
-
-  /* Alert */
-  --ifm-alert-background-color: rgba(0, 56, 37, 0.05);
-  --ifm-alert-border-width: 1px;
-  --ifm-alert-border-color: rgba(0, 56, 37, 0.05);
-  --ifm-alert-border-radius: 9px;
-  --ifm-alert-padding-vertical: 14px;
-  --ifm-alert-padding-horizontal: 16px;
-  --ifm-alert-border-left-width: 1px;
 }
 
 html[data-theme='dark'] {

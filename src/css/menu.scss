@@ -1,4 +1,7 @@
 .menu {
+  --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
+  --ifm-hr-background-color: #dfe4e2;
+  --ifm-hr-margin-horizontal: 4px;
   background: var(--ifm-menu-background-color);
 
   .doc-icon a:before {
