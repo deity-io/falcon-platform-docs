@@ -64,14 +64,16 @@
 }
 
 .DocSearch {
-  &-Modal {
+  .DocSearch-Modal {
     --docsearch-modal-background: #fff;
     --docsearch-modal-shadow: box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(13, 54, 60, 0.05), 0px 16px 32px rgba(30, 96, 111, 0.1);
     border-radius: 12px;
-  }
 
-  &-SearchBar {
-    margin-bottom: 12px;
+    .DocSearch-SearchBar {
+      padding: 0.5rem;
+      border-bottom: 1px solid rgba(2, 44, 15, 0.08);;
+      margin-bottom: 0.5rem;
+    }
   }
 
   &-Hits {
@@ -80,8 +82,11 @@
       --docsearch-highlight-color: none;
       --docsearch-hit-active-color: var(--ifm-color-primary);
       a {
-        padding-left: 10px;
+        padding-left: 0.5rem;
         font-size: 0.9375rem;
+      }
+
+      &-title {
         color: var(--ifm-color-secondary);
       }
 
@@ -92,6 +97,16 @@
         font-weight: 500;
         letter-spacing: 0.03em;
         padding: 12px 6px
+      }
+
+      &-icon {
+        width: 15px;
+        height: 18px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+        }
       }
 
       &-Container {
@@ -110,11 +125,16 @@
 
   &-Input {
     font-size: 17px;
+    font-weight: 400;
   }
 
   .DocSearch-MagnifierLabel,
   .DocSearch-Reset {
     color: #6a716e;
+    svg {
+      height: 17px;
+      width: 17px;
+    }
   }
 
   &-Footer {
@@ -128,7 +148,7 @@
       --docsearch-key-shadow: none;
       width: auto;
       border-radius: 4px;
-      border: 1px solid rgba(1, 30, 17, 0.24);
+      border: 1px solid rgba(2, 44, 15, 0.08);
       padding: 0 3px;
     }
   }
