@@ -67,7 +67,10 @@
   .DocSearch-Modal {
     --docsearch-modal-background: #fff;
     --docsearch-modal-shadow: box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(13, 54, 60, 0.05), 0px 16px 32px rgba(30, 96, 111, 0.1);
-    border-radius: 12px;
+
+    @include large {
+      border-radius: 12px;
+    }
 
     .DocSearch-SearchBar {
       padding: 0.5rem;
@@ -77,7 +80,7 @@
   }
 
   &-Hits {
-    .DocSearch-Hit {
+    .DocSearch-Hit { 
       --docsearch-hit-shadow: none;
       --docsearch-highlight-color: none;
       --docsearch-hit-active-color: var(--ifm-color-primary);

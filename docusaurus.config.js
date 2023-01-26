@@ -30,7 +30,7 @@ module.exports = {
             },
             {
               label: 'Storefront',
-              to: '#'
+              to: '/docs/platform/products/storefront'
             },
             {
               label: 'Orchestrator',
@@ -84,7 +84,7 @@ module.exports = {
             },
             {
               label: 'Storefront',
-              to: '#'
+              to: '/docs/platform/products/storefront'
             },
             {
               label: 'Cloud',

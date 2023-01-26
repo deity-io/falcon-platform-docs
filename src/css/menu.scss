@@ -1,5 +1,6 @@
 .menu {
-  --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
+  --ifm-menu-color-background-hover: none;
+  --ifm-menu-color-background-active: rgba(2, 192, 151, 0.095);
   --ifm-hr-background-color: #dfe4e2;
   --ifm-hr-margin-horizontal: 4px;
   background: var(--ifm-menu-background-color);
@@ -64,6 +65,10 @@
 
   .menu__link--active:not(.menu__link--sublist) {
     color: var(--ifm-color-secondary);
+  }
+
+  .menu__link--active:not(.menu__link--sublist) {
+    color: var(--ifm-color-primary);
   }
 
   &__list-item-collapsible .menu__link {

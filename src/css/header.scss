@@ -1,4 +1,5 @@
 .navbar {
+  --ifm-dropdown-hover-background-color: none;
   border-bottom: 1px solid rgba(0, 56, 37, 0.05);
   box-shadow: 0px 0px 12px rgba(0, 101, 133, 0.05);
 
@@ -23,6 +24,10 @@
         border-radius: 10px;
         color: inherit;
       }
+
+      &__link--active {
+        background-color: rgba(2, 192, 151, 0.095);
+      }
     }
 
     &__brand {
@@ -37,6 +42,7 @@
       font-size: 0.9rem;
       font-weight: 400;
       letter-spacing: -0.01em;
+
       &:hover {
         background: var(--ifm-navbar-link-background-hover);
         border-radius: 10px;

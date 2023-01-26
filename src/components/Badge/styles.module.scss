@@ -1,0 +1,30 @@
+.tag {
+  display: inline-block;
+  margin: 0 0.5rem;
+  height: 20px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  &.purple {
+    background: rgba(46, 2, 242, 0.09);
+    color: #6e56cf;
+  }
+
+  &.green {
+    background: rgba(1, 167, 54, 0.13);
+    color: #30a46c;
+  }
+
+  &.rounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 40px;
+  }
+}

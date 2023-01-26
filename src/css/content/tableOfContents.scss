@@ -10,6 +10,34 @@
     line-height: 1rem;
     padding: 0.5rem;
 
+    > [variant] {
+      display: inline-block;
+      margin-left: 0.5rem;
+      height: 20px;
+      padding: 2px 4px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    > [rounded] {
+      min-width: 20px;
+      margin: 0 0.5rem 0 0;
+      border-radius: 40px;
+      text-align: center;
+    }
+
+    > [variant='purple'] {
+      background: rgba(46, 2, 242, 0.09);
+      color: #6e56cf;
+    }
+
+    > [variant='green'] {
+      background: rgba(1, 167, 54, 0.13);
+      color: #30a46c;
+    }
+
     &--active {
       color: var(--ifm-toc-link-color-active);
 
