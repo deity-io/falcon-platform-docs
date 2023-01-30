@@ -13,7 +13,8 @@ module.exports = {
       title: 'Deity Documentation',
       logo: {
         alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg'
+        src: 'img/deity-logo.svg',
+        srcDark: 'img/deity-logo-darkmode.svg'
       },
       items: [
         {
@@ -142,7 +143,7 @@ module.exports = {
       ],
       logo: {
         alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg'
+        src: 'img/deity-logo-darkmode.svg'
       },
       copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`
     },

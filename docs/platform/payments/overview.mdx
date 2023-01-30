@@ -2,27 +2,26 @@
 id: overview
 title: Overview
 sidebar_label: Overview
-enterprise_only: true
 ---
 
-Payments can be handled in 2 ways, either via your shop or using our payments package, [`@deity/falcon-payments`](falcon-payments/overview).
+Deity payments are processed through our payment service.
 
-We **highly recommend** using [`@deity/falcon-payments`](falcon-payments/overview) as this will provide the most flexibility,
-ensure your server doesn't need to be PCI-compliant (all payments are handled on the client-side) and we are continuously adding
-support for new payment providers.
+This handles interactions between different payment providers so you don't have to.
 
-### Payment using your shop
+## Features
 
-Payment methods can be retrieved from your shop backend. Falcon can simply display a UI and pass order details to the backend via Falcon Server. These are processed using your shops backend and NOT by Falcon.
+- Multiple payment providers
+- Country, currency and cart total based method / provider filtering
+- Web payments (Apple & Google Pay).
+- Stored payment methods / wallet
+- Refunds (full & partial)
 
-### Payments using Falcon Payments (Recommended)
+## PSPs
 
-Falcon Payments package acts as a middleware and handles all payment processing via APIs directly communicating with payment providers. This then sends payment statuses to your shops API via webhooks.
-[Learn more about `@deity/falcon-payments`](falcon-payments/overview)
+Our list of supported payment providers is always growing. We currently support:
 
-
-#### Falcon Payments integrations
-
-import PaymentProviders from '@site/src/components/PaymentProviders';
-
-<PaymentProviders />
+- Adyen
+- Mollie
+- HUMM
+- Stripe
+- WPay
