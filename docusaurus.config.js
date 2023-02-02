@@ -8,6 +8,12 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'DEITY', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
+  scripts: [
+    {
+      src: 'https://app.happyreact.com/widget/reactions.js',
+      defer: true
+    }
+  ],
   themeConfig: {
     navbar: {
       logo: {
@@ -231,6 +237,9 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        googleTagManager: {
+          trackingID: 'G-V9XS75TE6K'
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,

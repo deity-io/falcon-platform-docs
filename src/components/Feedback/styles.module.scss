@@ -1,0 +1,50 @@
+.feedback {
+  background: #e7f9f5;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+
+  .title {
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    color: var(--ifm-color-primary);
+  }
+
+  .container {
+    & > div {
+      display: flex;
+      flex-direction: initial;
+      min-height: 0;
+
+      li button {
+        padding: 0;
+        font-size: 1px;
+      }
+
+      li:first-child span:first-child:before {
+        content: '👎';
+        font-size: 24px;
+      }
+
+      li:last-child span:first-child:before {
+        content: '👍';
+        font-size: 24px;
+      }
+    }
+  }
+
+  .reaction {
+    font-size: 1.6rem;
+
+    span:last-child {
+      display: none;
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+}
