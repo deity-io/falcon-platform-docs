@@ -55,7 +55,7 @@ export default function DocPaginator(props: Props) {
           />
         )}
       </nav>
-      <Feedback resource={window.location.pathname} />
+      <Feedback resource={pathname} />
     </>
   );
 }
