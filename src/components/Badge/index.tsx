@@ -10,7 +10,7 @@ type Props = {
 
 const Badge = ({ children, variant = 'default', rounded }: Props) => {
   if (variant === 'default') {
-    return <span className="badge badge--secondary mb20">{children}</span>;
+    return <span className={styles.badge}>{children}</span>;
   }
 
   return (

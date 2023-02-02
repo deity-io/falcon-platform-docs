@@ -22,31 +22,38 @@ module.exports = {
             {
               label: 'Deity Platform',
               to: '/docs/platform/overview/about',
+              icon: '/img/icons/doc.svg',
               activeBasePath: '/docs/platform/overview/'
             },
             {
               label: 'Composer',
+              icon: '/img/icons/doc.svg',
               to: '#'
             },
             {
               label: 'Storefront',
+              icon: '/img/icons/doc.svg',
               to: '/docs/platform/products/storefront'
             },
             {
               label: 'Orchestrator',
+              icon: '/img/icons/doc.svg',
               to: '#'
             },
             {
               label: 'Cloud Console',
+              icon: '/img/icons/doc.svg',
               to: '#'
             },
             {
               label: 'Payments',
+              icon: '/img/icons/doc.svg',
               to: '/docs/platform/payments/overview',
               activeBasePath: '/docs/platform/payments'
             },
             {
               label: 'Integrations',
+              icon: '/img/icons/doc.svg',
               to: '/docs/platform/integration/examples',
               activeBasePath: '/docs/platform/integration'
             }

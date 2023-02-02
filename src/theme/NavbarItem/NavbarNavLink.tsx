@@ -10,8 +10,9 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import { isRegexpStringMatch } from '@docusaurus/theme-common';
-import IconExternalLink from '@theme/Icon/ExternalLink';
+import IconArrowTopRight from '../../components/Icon/ArrowTopRight';
 import type { Props } from '@theme/NavbarItem/NavbarNavLink';
+import styles from './styles.module.scss';
 
 export default function NavbarNavLink({
   activeBasePath,
@@ -19,11 +20,14 @@ export default function NavbarNavLink({
   to,
   href,
   label,
+  icon,
   html,
   isDropdownLink,
   prependBaseUrlToHref,
   ...props
-}: Props): JSX.Element {
+}: Props & {
+  icon?: string;
+}): JSX.Element {
   // TODO all this seems hacky
   // {to: 'version'} should probably be forbidden, in favor of {to: '/version'}
   const toUrl = useBaseUrl(to);
@@ -37,8 +41,9 @@ export default function NavbarNavLink({
     : {
         children: (
           <>
+            {isDropdownLink && icon && <img className={styles.icon} alt="" src={icon} />}
             {label}
-            {isExternalLink && <IconExternalLink {...(isDropdownLink && { width: 12, height: 12 })} />}
+            {isExternalLink && <IconArrowTopRight {...(isDropdownLink && { width: 12, height: 12 })} />}
           </>
         )
       };

@@ -1,3 +1,5 @@
+@import '../../css/mixins';
+
 .tag {
   display: inline-block;
   margin: 0 0.5rem;
@@ -26,5 +28,24 @@
     height: 24px;
     text-align: center;
     border-radius: 40px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  color: #0c6d62;
+  border: 2px solid #0c6d62;
+  padding: 4px 8px;
+  background: none;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  @include large {
+    padding: 4px 8px;
   }
 }

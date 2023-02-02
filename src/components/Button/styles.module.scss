@@ -1,0 +1,138 @@
+@import url('../../css/variables.scss');
+
+.button {
+  border-radius: 6px;
+  border: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.small {
+    padding: 8px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  &.medium {
+    padding: 8px 12px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &.large {
+    padding: 16px 24px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &.primary {
+    &.contained {
+      background: var(--ifm-color-primary);
+      border: 1px solid rgba(2, 44, 15, 0.08);
+      color: #fff;
+
+      &:hover {
+        background: #067a6f;
+        border: 1px solid rgba(2, 44, 15, 0.08);
+      }
+
+      &:active:focus {
+        background: rgba(0, 153, 128, 0.314);
+        border: 1px solid rgba(0, 153, 128, 0.314);
+        color: var(--ifm-color-primary);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 2px #12a594;
+      }
+
+      &:disabled {
+        background: rgba(2, 44, 15, 0.08);
+        color: rgba(1, 30, 17, 0.24);
+      }
+    }
+
+    &.outlined {
+      border: 1px solid rgba(0, 153, 128, 0.314);
+      background: #fff;
+      color: var(--ifm-color-secondary);
+
+      &:hover {
+        background: rgba(2, 177, 142, 0.15);
+        color: var(--ifm-color-primary);
+      }
+
+      &:active:focus {
+        background: rgba(0, 153, 128, 0.314);
+        border: 1px solid rgba(0, 153, 128, 0.314);
+      }
+
+      &:focus {
+        background: #fbfdfc;
+        box-shadow: 0 0 0 2px #12a594;
+        color: var(--ifm-color-primary);
+      }
+
+      &:disabled {
+        background: rgba(2, 44, 15, 0.08);
+        color: rgba(1, 30, 17, 0.24);
+      }
+    }
+  }
+
+  &.secondary {
+    &.contained {
+      background: var(--ifm-color-secondary);
+      border: 1px solid rgba(2, 44, 15, 0.08);
+      color: #fff;
+
+      &:active:focus {
+        color: rgba(240, 255, 248, 0.6);
+      }
+
+      &:focus {
+        color: #fff;
+        box-shadow: 0 0 0 2px #d6dbd9;
+      }
+
+      &:disabled {
+        background: rgba(2, 44, 15, 0.08);
+        color: rgba(1, 30, 17, 0.24);
+      }
+    }
+
+    &.outlined {
+      border: 1px solid rgba(1, 40, 24, 0.13);
+      background: #fff;
+      color: var(--ifm-color-secondary);
+
+      &:hover {
+        background: #fff;
+        border: 1px solid rgba(0, 15, 9, 0.46);
+      }
+
+      &:active:focus {
+        background: rgba(1, 40, 24, 0.13);
+        border: 1px solid rgba(1, 40, 24, 0.13);
+      }
+
+      &:focus {
+        border: 1px solid #1a1e1c;
+        background: #fff;
+        box-shadow: 0 0 0 2px #d6dbd9;
+      }
+
+      &:disabled {
+        background: rgba(2, 44, 15, 0.08);
+        color: rgba(1, 30, 17, 0.24);
+      }
+    }
+  }
+}

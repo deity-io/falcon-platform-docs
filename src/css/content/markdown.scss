@@ -24,7 +24,7 @@
     margin: 0;
     list-style-type: none;
 
-    li {
+    li:not([role='tab']) {
       display: flex;
       align-items: center;
       color: #6a716e;
@@ -54,6 +54,18 @@
           background: no-repeat center url(#{$icons-path}/bullet.svg);
         }
       }
+    }
+  }
+}
+
+@include dark-mode {
+  .markdown {
+    & > p {
+      color: #fff;
+    }
+
+    hr {
+      background: #fff;
     }
   }
 }

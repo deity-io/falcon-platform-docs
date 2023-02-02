@@ -1,16 +1,8 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-import React from 'react';
-import type { Props } from '@theme/Icon/ArrowTopRight';
+import React, { ComponentProps } from 'react';
 
 import styles from './styles.module.css';
 
-export default function IconArrowTopRight({ width = 15, height = 15 }: Props): JSX.Element {
+export default function IconArrowTopRight({ width = 15, height = 15 }: ComponentProps<'svg'>): JSX.Element {
   return (
     <svg width={width} height={height} aria-hidden="true" viewBox="0 0 15 15" className={styles.iconArrowTopRight}>
       <path

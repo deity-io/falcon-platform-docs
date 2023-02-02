@@ -156,3 +156,19 @@
     }
   }
 }
+
+@include dark-mode {
+  .DocSearch {
+    &-Hit a {
+      background: none;
+    }
+
+    &-Footer {
+      background: #fff;
+    }
+  }
+
+  .navbar .DocSearch-Button .DocSearch-Button-Placeholder {
+    color: #6a716e;
+  }
+}
