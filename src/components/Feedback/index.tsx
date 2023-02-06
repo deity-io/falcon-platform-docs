@@ -40,6 +40,7 @@ export default function Feedback({ resource }: Props) {
             grid: styles.grid,
             cell: styles.cell,
             reaction: styles.reaction,
+            loader: styles.loader,
             footer: styles.footer
           })}
         />

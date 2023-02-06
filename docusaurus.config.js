@@ -15,6 +15,10 @@ module.exports = {
     }
   ],
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/nightOwl')
+    },
     navbar: {
       logo: {
         alt: 'Deity Documentation',
@@ -34,7 +38,7 @@ module.exports = {
             {
               label: 'Composer',
               icon: '/img/icons/doc.svg',
-              to: '#'
+              to: '/docs/platform/products/composer'
             },
             {
               label: 'Storefront',
@@ -44,7 +48,7 @@ module.exports = {
             {
               label: 'Orchestrator',
               icon: '/img/icons/doc.svg',
-              to: '#'
+              to: '/docs/platform/products/orchestrator'
             },
             {
               label: 'Cloud Console',
@@ -235,7 +239,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         googleTagManager: {
-          trackingID: 'G-V9XS75TE6K'
+          containerId: 'G-V9XS75TE6K'
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),

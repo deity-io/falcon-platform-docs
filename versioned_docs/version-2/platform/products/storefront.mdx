@@ -6,7 +6,11 @@ sidebar_label: Storefront
 
 import Badge from '@site/src/components/Badge';
 import Button from '@site/src/components/Button';
+import { TabsContainer } from '@site/src/components/TabsContainer';
 import { Card } from '@site/src/components/Card';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
 
 <h1 className="headline">
   Use Deity’s PWA toolkit to implement any customer experience, without affecting your backend.
@@ -77,3 +81,23 @@ Falcon Server is the middleware layer between the front-end (Falcon Client) and 
 <Button target="_blank" href="#">
   Button
 </Button>
+
+## Code
+
+<TabsContainer title="Code snippet with tabs">
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock language="bash">npm start</CodeBlock>
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock language="bash">yarn start</CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>

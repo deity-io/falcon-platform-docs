@@ -1,0 +1,22 @@
+.markdown {
+  .theme-code-block {
+    box-shadow: none;
+    border: 1px solid rgba(2, 44, 15, 0.08);
+    border-radius: 6px;
+  }
+
+  pre code {
+    background-color: #fff;
+  }
+}
+
+@include dark-mode {
+  .theme-code-block {
+    box-shadow: none;
+    border: inherit;
+  }
+
+  pre code {
+    background-color: inherit;
+  }
+}

@@ -45,6 +45,11 @@
   /* Tabs */
   --ifm-tabs-padding-vertical: 8px;
   --ifm-tabs-padding-horizontal: 12px;
+
+  /* Code */
+  --ifm-pre-background: #fff;
+  --ifm-code-border-radius: 6px;
+  --docusaurus-highlighted-code-line-bg: rgb(72, 77, 91);
 }
 
 html[data-theme='dark'] {
