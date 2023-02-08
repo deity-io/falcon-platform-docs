@@ -17,6 +17,7 @@ Let's create the file `client/src/styling/icons.js`.
 It should look like this:
 
 **`client/src/styling/icons.js`**
+
 ```js
 import React from 'react';
 import ArrowBack from 'boxicons/svg/regular/bx-arrow-back.svg';
@@ -33,39 +34,36 @@ export const icons = {
 };
 
 ```
+
 You'll notice in this example that one of the icons is imported from <a href="https://boxicons.com/" target="_blank" rel="noopener noreferrer">Boxicons</a>.
 
 If you're not using the new theme and want to use Boxicons you can do so by adding it as a dependency using `yarn` or `npm` .
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
 
-<Tabs
-  defaultValue="npm"
-  values={[
-    { label: 'NPM', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', }
-  ]
-}>
-<TabItem value="npm">
-
-```bash
-npm install boxicons --save
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```bash
-yarn add boxicons --save
-```
-
-</TabItem>
-</Tabs>
+<TabsContainer>
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock language="bash">npm install boxicons --save</CodeBlock>
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock language="bash">yarn add boxicons --save</CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>
 
 We now need to pass the `icons` to our theme. In your `theme.js` file you can pass it to the object in `createTheme`. It can be that icons is already defined, in that case you want to simply replace it.
 
 **`client/src/styling/theme.js`**
+
 ```js
 ...
 import { icons } from './icons';
@@ -76,6 +74,7 @@ export const yourThemeName = createTheme({
 ```
 
 ## 2. Import your icon
+
 First you need to get the SVG you want to add.
 
 Here's one you can use...
@@ -95,6 +94,7 @@ Here's one you can use...
 Add your svg file to your assets directory (`client/src/img/opensource/new-icon.svg`) and import it in the icon component (`client/src/styling/icons.js`).
 
 **`client/src/styling/icons.js`**
+
 ```js
 ...
 import NewIcon from '../img/opensource/new-icon.svg';
@@ -106,7 +106,6 @@ export const icons = {
 };
 
 ```
-
 
 <details>
 <summary>Using a component as an icon</summary>
@@ -131,6 +130,7 @@ export const icons = {
 The last step is actually using your icon. Open up the component you want to add it to, import it and let it know which icon to display.
 
 **`client/src/components/YourComponent.js`**
+
 ```js
 ...
 import { Box, Icon } from '@deity/falcon-ui';
@@ -143,11 +143,13 @@ const YourComponent = () => (
 );
 
 ```
+
 `src` should be the key defined in your `client/src/styling/icons.js` file.
 
 `<Icon>` is themeable so you can pass css like any other component.
 
 **`client/src/components/YourComponent.js`**
+
 ```js
 ...
 const YourComponent = () => (
@@ -159,4 +161,5 @@ const YourComponent = () => (
 ```
 
 ## 4. Done
+
 That's it, you've added a new icon.

@@ -9,48 +9,46 @@ Getting started with an existing payment provider is simple. If you want to do t
 
 ## 1. Add the packages you need
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
 
-<Tabs
-  defaultValue="npm"
-  values={[
-    { label: 'NPM', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', }
-  ]
-}>
-<TabItem value="npm">
-
-
-**Don't include the providers you're not using**
-
-```bash
+<TabsContainer title="Don't include the providers you're not using">
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock
+        language="bash"
+        children={`
 npm install @deity/falcon-payments
 npm install @deity/falcon-payments-env
 npm install @deity/falcon-payments-endpoints
 npm install @deity/falcon-payments-stripe
 npm install @deity/falcon-payments-mollie
 npm install @deity/falcon-payments-plain
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-
-**Don't include the providers you're not using**
-
-```bash
+      `.trim()}
+      />
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock
+        language="bash"
+        children={`
 yarn add @deity/falcon-payments
 yarn add @deity/falcon-payments-env
 yarn add @deity/falcon-payments-endpoints
 yarn add @deity/falcon-payments-stripe
 yarn add @deity/falcon-payments-mollie
 yarn add @deity/falcon-payments-plain
-```
-
-</TabItem>
-</Tabs>
-
+      `.trim()}
+      />
+    </TabItem>
+  </Tabs>
+</TabsContainer>
 
 ## 2. Create a payment provider account
 

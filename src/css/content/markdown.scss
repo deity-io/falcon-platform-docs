@@ -43,8 +43,6 @@
     list-style-type: none;
 
     li:not([role='tab']) {
-      display: flex;
-      align-items: center;
       color: #6a716e;
 
       &:before {
