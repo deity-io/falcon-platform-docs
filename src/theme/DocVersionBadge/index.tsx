@@ -17,7 +17,7 @@ export default function DocVersionBadge({ className }: Props): JSX.Element | nul
   const versionMetadata = useDocsVersion();
   const { pathname } = useLocation();
 
-  if (versionMetadata.badge && pathname !== '/docs') {
+  if (versionMetadata.badge && pathname !== '/' && pathname !== '/docs') {
     return (
       <span className={clsx(className, ThemeClassNames.docs.docVersionBadge, 'badge badge--secondary')}>
         <Translate id="theme.docs.versionBadge.label" values={{ versionLabel: versionMetadata.label }}>

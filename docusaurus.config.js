@@ -31,53 +31,53 @@ module.exports = {
           items: [
             {
               label: 'Deity Platform',
-              to: '/docs/platform/overview/about',
-              icon: '/img/icons/doc.svg',
-              activeBasePath: '/docs/platform/overview/'
+              to: '/platform/overview/about',
+              icon: 'doc',
+              activeBasePath: '/platform/overview/'
             },
             {
               label: 'Composer',
-              icon: '/img/icons/doc.svg',
-              to: '/docs/platform/products/composer'
+              icon: 'doc',
+              to: '/platform/products/composer'
             },
             {
               label: 'Storefront',
-              icon: '/img/icons/doc.svg',
-              to: '/docs/platform/products/storefront'
+              icon: 'doc',
+              to: '/platform/products/storefront'
             },
             {
               label: 'Orchestrator',
-              icon: '/img/icons/doc.svg',
-              to: '/docs/platform/products/orchestrator'
+              icon: 'doc',
+              to: '/platform/products/orchestrator'
             },
             {
               label: 'Cloud Console',
-              icon: '/img/icons/doc.svg',
+              icon: 'doc',
               to: '#'
             },
             {
               label: 'Payments',
-              icon: '/img/icons/doc.svg',
-              to: '/docs/platform/payments/overview',
-              activeBasePath: '/docs/platform/payments'
+              icon: 'doc',
+              to: '/platform/payments/overview',
+              activeBasePath: '/platform/payments'
             },
             {
               label: 'Integrations',
-              icon: '/img/icons/doc.svg',
-              to: '/docs/platform/integration/examples',
-              activeBasePath: '/docs/platform/integration'
+              icon: 'doc',
+              to: '/platform/integration/examples',
+              activeBasePath: '/platform/integration'
             }
           ]
         },
         {
           label: 'Support',
-          to: '/docs/platform/support/contact',
-          activeBasePath: '/docs/platform/support'
+          to: '/platform/support/contact',
+          activeBasePath: '/platform/support'
         },
         {
           label: 'Changelog',
-          to: '/docs/platform/release/full-changelog',
-          activeBasePath: '/docs/platform/release'
+          to: '/platform/release/full-changelog',
+          activeBasePath: '/platform/release'
         },
         {
           label: 'Launch Console',
@@ -93,7 +93,7 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: '/docs/platform/overview/about'
+              to: '/platform/overview/about'
             },
             {
               label: 'Composer',
@@ -101,7 +101,7 @@ module.exports = {
             },
             {
               label: 'Storefront',
-              to: '/docs/platform/products/storefront'
+              to: '/platform/products/storefront'
             },
             {
               label: 'Cloud',
@@ -242,6 +242,7 @@ module.exports = {
           containerId: 'G-V9XS75TE6K'
         },
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,
           lastVersion: '2',

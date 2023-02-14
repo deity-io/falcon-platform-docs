@@ -4,6 +4,12 @@
   }
 }
 
+@mixin medium {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
 @mixin dark-mode {
   html[data-theme='dark'] {
     @content;

@@ -78,6 +78,22 @@
   }
 }
 
+.theme-doc-toc-mobile {
+  .clean-btn {
+    color: rgba(0, 15, 9, 0.46);
+    height: 44px;
+    padding: 12px 20px;
+
+    &:after {
+      color: #000;
+      width: 8px;
+      height: 8px;
+      background: var(--ifm-menu-link-sublist-icon) 50% 50% / 1rem 1rem no-repeat;
+      filter: none;
+    }
+  }
+}
+
 @include dark-mode {
   .table-of-contents {
     &__link {
@@ -93,5 +109,11 @@
         }
       }
     }
+  }
+
+  .clean-btn {
+    background: var(--ifm-navbar-background-color);
+    border-radius: 6px;
+    color: #fff;
   }
 }

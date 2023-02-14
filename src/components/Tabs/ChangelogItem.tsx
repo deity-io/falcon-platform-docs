@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import Check from '/static/img/icons/check.svg';
+import Check from '@site/static/img/icons/check.svg';
 import clsx from 'clsx';
 
 type Props = {

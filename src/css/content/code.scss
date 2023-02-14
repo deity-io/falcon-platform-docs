@@ -3,6 +3,11 @@
     box-shadow: none;
     border: 1px solid rgba(2, 44, 15, 0.08);
     border-radius: 6px;
+
+    .clean-btn {
+      border: 0;
+      background: none;
+    }
   }
 
   pre code {

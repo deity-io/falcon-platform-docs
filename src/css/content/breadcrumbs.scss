@@ -3,8 +3,15 @@
   --ifm-breadcrumbs-color: #000f0975;
   --ifm-breadcrumbs-color-active: --ifm-color-secondary;
   --ifm-breadcrumb-spacing: 0;
-  margin-top: 0.95rem;
-  margin-bottom: 5.625rem;
+  margin-top: 0.2rem;
+  margin-bottom: 2.175rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(2, 44, 15, 0.08);
+
+  @include large {
+    margin-top: 0.95rem;
+    border-bottom: 0;
+  }
 
   .breadcrumbHomeIcon_src-theme-DocBreadcrumbs-Items-Home-styles-module {
     top: 4px;

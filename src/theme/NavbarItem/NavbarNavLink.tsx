@@ -10,9 +10,13 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import { isRegexpStringMatch } from '@docusaurus/theme-common';
-import IconArrowTopRight from '../../components/Icon/ArrowTopRight';
+import ArrowTopRightIcon from '../../components/Icon/ArrowTopRight';
 import type { Props } from '@theme/NavbarItem/NavbarNavLink';
-import styles from './styles.module.scss';
+import DocIcon from '../../components/Icon/Doc';
+
+const iconMap = {
+  doc: <DocIcon />
+};
 
 export default function NavbarNavLink({
   activeBasePath,
@@ -41,9 +45,9 @@ export default function NavbarNavLink({
     : {
         children: (
           <>
-            {isDropdownLink && icon && <img className={styles.icon} alt="" src={icon} />}
+            {isDropdownLink && icon && iconMap[icon]}
             {label}
-            {isExternalLink && <IconArrowTopRight {...(isDropdownLink && { width: 12, height: 12 })} />}
+            {isExternalLink && <ArrowTopRightIcon {...(isDropdownLink && { width: 12, height: 12 })} />}
           </>
         )
       };

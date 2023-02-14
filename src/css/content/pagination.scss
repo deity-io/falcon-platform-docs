@@ -1,3 +1,5 @@
+@import '../../css/mixins';
+
 .pagination-nav {
   border-top: 1px solid rgba(0, 56, 37, 0.05);
 
@@ -18,5 +20,13 @@
     line-height: 1.75rem;
     font-weight: 400;
     color: var(--ifm-color-primary);
+  }
+}
+
+@include dark-mode {
+  .pagination-nav {
+    &__sublabel {
+      color: #fff;
+    }
   }
 }

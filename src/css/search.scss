@@ -27,9 +27,17 @@
 .navbar {
   .DocSearch-Button {
     border-radius: 6px;
-    border: 1px solid rgba(1, 30, 17, 0.24);
 
-    @include large {
+    svg {
+      color: rgba(0, 10, 7, 0.93);
+
+      @include medium {
+        color: #6A716E;
+      }
+    }
+
+    @include medium {
+      border: 1px solid rgba(1, 30, 17, 0.24);
       width: 216px;
     }
 
@@ -168,7 +176,15 @@
     }
   }
 
+  .navbar .DocSearch-Button svg {
+    color: #fff;
+  }
+
   .navbar .DocSearch-Button .DocSearch-Button-Placeholder {
-    color: #6a716e;
+    color: #fff;
+  }
+
+  .DocSearch-Button-Placeholder {
+    color: #fff;
   }
 }

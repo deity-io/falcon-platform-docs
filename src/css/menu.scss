@@ -5,12 +5,14 @@
   --ifm-hr-margin-horizontal: 4px;
   background: var(--ifm-menu-background-color);
 
-  .doc-icon a:before {
-    content: '';
-    width: 11px;
-    height: 13px;
-    margin-right: 8.5px;
-    background: url(#{$icons-path}/doc.svg);
+  .soon a:after {
+    display: block;
+    content: 'Soon!';
+    color: rgba(0, 15, 9, 0.46);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5em;
+    margin-left: auto;
   }
 
   .gray-link {
@@ -50,14 +52,6 @@
     }
   }
 
-  &__link {
-    font-size: var(--ifm-menu-font-size);
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -0.01em;
-    border-radius: 4px;
-  }
-
   &__link:hover,
   &__caret:hover {
     color: var(--ifm-color-primary);
@@ -88,14 +82,69 @@
       line-height: 1rem;
     }
   }
+
+  &__link {
+    font-size: var(--ifm-menu-font-size);
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+
+    &--disabled {
+      color: rgba(0, 15, 9, 0.46);
+
+      &:hover {
+        color: rgba(0, 15, 9, 0.46);
+      }
+    }
+
+    @include large {
+      line-height: 20px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
 }
 
 @include dark-mode {
   .menu {
     background: inherit;
 
+    .soon a:after {
+      color: #d7dcda;
+    }
+
+    .gray-link svg {
+      color: #fff;
+    }
+
     &__link {
       color: var(--ifm-color-white);
+
+      &:hover {
+        color: var(--ifm-link-color);
+
+        svg {
+          color: inherit;
+        }
+      }
+
+      &--active:not(.menu__link--sublist) {
+        svg {
+          color: var(--ifm-link-color);
+        }
+      }
+
+      &--disabled {
+        color: #d7dcda;
+
+        svg,
+        &:hover {
+          color: #d7dcda;
+        }
+      }
     }
   }
 }

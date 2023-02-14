@@ -1,5 +1,9 @@
 .footer {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
+
+  @include large {
+    padding-top: 5rem;
+  }
 
   &.footer--dark {
     --ifm-footer-background-color: #1a1e1c;
@@ -77,19 +81,35 @@
   }
 
   &__bottom {
-    display: flex;
-    justify-content: space-between;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(240, 255, 248, 0.6);
-    margin-top: 5.4rem;
+    margin-top: 0;
+    text-align: center;
+
+    @include large {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5.4rem;
+      text-align: initial;
+    }
 
     &__links {
       list-style-type: none;
       display: flex;
+      justify-content: center;
       margin: 0;
+      padding: 0;
+
+      @include large {
+        justify-content: initial;
+      }
 
       li {
         margin-left: 3rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
 
       a {

@@ -17,6 +17,33 @@
     }
   }
 
+  &__brand {
+    margin-left: auto;
+    margin-right: auto;
+    @include large {
+      margin-left: initial;
+      margin-right: 1rem;
+    }
+  }
+
+  &__logo {
+    margin-right: 0;
+    @include medium {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__toggle {
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
   @include large {
     .dropdown {
       &:hover {
@@ -27,6 +54,10 @@
 
       &__link--active {
         background-color: rgba(2, 192, 151, 0.095);
+      }
+
+      .navbar__link:hover {
+        background: none;
       }
     }
 
@@ -73,7 +104,18 @@
   margin-left: 6px;
 }
 
-.dropdown__link:hover,
-.dropdown__link--active {
-  color: var(--ifm-color-primary);
+.dropdown__link {
+  display: flex;
+  align-items: center;
+
+  &--active,
+  &:hover {
+    color: var(--ifm-color-primary);
+  }
+}
+
+@include dark-mode {
+  .dropdown > .navbar__link:after {
+    filter: invert(1);
+  }
 }

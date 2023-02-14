@@ -76,12 +76,18 @@
 
 @include dark-mode {
   .markdown {
-    & > p {
+    & > p,
+    .date {
       color: #fff;
     }
 
     hr {
       background: #fff;
+    }
+
+    code {
+      background-color: #011627;
+      color: #fff;
     }
   }
 }

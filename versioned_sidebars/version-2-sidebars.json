@@ -25,32 +25,46 @@
         {
           "type": "doc",
           "id": "version-2/platform/products/composer",
-          "className": "doc-icon"
+          "customProps": {
+            "icon": "doc"
+          }
         },
         {
           "type": "doc",
           "id": "version-2/platform/products/storefront",
-          "className": "doc-icon"
+          "customProps": {
+            "icon": "doc"
+          }
         },
         {
           "type": "doc",
           "id": "version-2/platform/products/payments",
-          "className": "doc-icon"
+          "customProps": {
+            "icon": "doc"
+          }
         },
         {
           "type": "doc",
           "id": "version-2/platform/products/console",
-          "className": "doc-icon"
+          "customProps": {
+            "icon": "doc"
+          }
         },
         {
           "type": "doc",
           "id": "version-2/platform/products/storefront-ui",
-          "className": "doc-icon"
+          "customProps": {
+            "icon": "doc"
+          }
         },
         {
           "type": "doc",
           "id": "version-2/platform/products/orchestrator",
-          "className": "doc-icon"
+          "className": "soon",
+          "customProps": {
+            "icon": "doc",
+            "disabled": true
+          }
         }
       ]
     },
