@@ -10,8 +10,7 @@ In this tutorial we will implement a **basic** integration with <a href="https:/
 
 We will create a **Todo list** based on the data from <a href="https://jsonplaceholder.typicode.com/todos" target="_blank" rel="noopener noreferrer">here</a>.
 
-For detailed information about integrating with new APIs please [read these docs](/docs/v2019/platform/falcon-server/customizing-extension-api).
-
+For detailed information about integrating with new APIs please [read these docs](/v2019/platform/falcon-server/customizing-extension-api).
 
 ## Overview
 
@@ -33,11 +32,11 @@ Notice the naming convention `[package]-[datasource]-api`.
 In this file we create our `fetch` requests to the API.
 
 **`server/src/falcon-jsonplaceholder-api/index.js`**
+
 ```js
 const { ApiDataSource } = require('@deity/falcon-server-env');
 
 module.exports = class JsonPlaceholderApi extends ApiDataSource {
-
   async todoList(_, { pagination }) {
     const query = {};
 
@@ -50,7 +49,7 @@ module.exports = class JsonPlaceholderApi extends ApiDataSource {
 
     return {
       items: todos
-    }
+    };
   }
 
   async todo(_, { id }) {
@@ -78,6 +77,7 @@ Again, notice the naming convention. `[package]-[data_type]-extension`. Unlike t
 The `index.js` file can look like this:
 
 **`server/src/falcon-todos-extension/index.js`**
+
 ```js
 module.exports = () => ({});
 ```
@@ -87,6 +87,7 @@ At this point we don't need to do anything custom here. Provided our queries are
 Your `schema.graphql` file should look like this:
 
 **`server/src/falcon-todos-extension/schema.graphql`**
+
 ```js
 extend type Query {
   todoList(pagination: PaginationInput): TodoList! @cache(ttl: 15)
@@ -106,29 +107,31 @@ type Todo {
 }
 ```
 
-In this file we are defining what each query should accept and return. 
+In this file we are defining what each query should accept and return.
 
 **The magic part...** notice the name of our 2 queries, they are named `todoList` and `todo`.
 Now go back and look at `server/src/falcon-jsonplaceholder-api/index.js`.
-You will notice that the methods share the same name, if you keep the name the same these methods will be bound automatically.  
+You will notice that the methods share the same name, if you keep the name the same these methods will be bound automatically.
 
-### Pagination 
+### Pagination
 
 We are passing `PaginationInput` to our `todoList` query but not defining it. This is already defined in `@deity/falcon-data/src/Pagination/Pagination.ts`.
 
 It contains to bits of information `perPage` and `page`.
 
 **`@deity/falcon-data/src/Pagination/Pagination.ts`**
+
 ```js
 export type PaginationInput = {
-  perPage: number;
-  page: number;
+  perPage: number,
+  page: number
 };
 ```
 
 We map these to query parameters in `server/src/falcon-jsonplaceholder-api/index.js`.
 
 **`server/src/falcon-jsonplaceholder-api/index.js`**
+
 ```js
 if (pagination) {
   query._limit = pagination.perPage;
@@ -139,7 +142,6 @@ return this.get('todos', query);
 
 The end result is `https://jsonplaceholder.typicode.com/todos?_limit=[perPage]&_start=[page]`
 
-
 ## 3. Include your extension and API
 
 Now we've added our files we need to make sure `falcon-server` is using them and they are mapped together.
@@ -147,6 +149,7 @@ Now we've added our files we need to make sure `falcon-server` is using them and
 This is done in your `server/config/default.json` file.
 
 **`server/config/default.json`**
+
 ```json
 {
   ...
@@ -171,6 +174,7 @@ This is done in your `server/config/default.json` file.
   }
 }
 ```
+
 In this file we define our API (`jsonplaceholder`) and pass this to our extensions config `"api": "jsonplaceholder"`.
 
 Within the API config we've also defined `host` and `protocol`. These are used automatically by the `get` functions in `server/src/falcon-jsonplaceholder-api/index.js`.
@@ -182,12 +186,12 @@ You should be all set to test your extension now.
 If you've got `falcon-server` running and it's on port `4000` (this is the default port) then you can test your queries here. If you get results returned then you're in business.
 
 <iframe
-     src="https://codesandbox.io/embed/falcon-platform-graphql-hvw13?fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style={{width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden'}}
-     title="falcon-platform-graphQL"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
+  src="https://codesandbox.io/embed/falcon-platform-graphql-hvw13?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+  style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+  title="falcon-platform-graphQL"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
 
 ## 5. Accessing your data in Falcon Client.
 
@@ -208,6 +212,7 @@ Because we aren't adding our code to `NPM` packages we are going to add the code
 Our `index.js` file will just be used to export our components.
 
 **`client/src/components/Todo/index.js`**
+
 ```js
 export * from './TodoListQuery';
 export * from './TodoItemQuery';
@@ -216,6 +221,7 @@ export * from './TodoItemQuery';
 We now need to create a `Query` component for each data type, `TodoItem` and `TodoList`.
 
 **`client/src/components/Todo/TodoItemQuery.js`**
+
 ```js
 import gql from 'graphql-tag';
 import { Query } from '@deity/falcon-data';
@@ -235,6 +241,7 @@ export class TodoItemQuery extends Query {
   };
 }
 ```
+
 In this file we define our GraphQL query and pass it to our component that extends `import { Query } from '@deity/falcon-data'`.
 
 We are just grabbing `title` and `completed` but if you want the `id` or `userId` defined in our `server/src/falcon-todos-extension/schema.graphql` you can.
@@ -242,6 +249,7 @@ We are just grabbing `title` and `completed` but if you want the `id` or `userId
 Our `TodoListQuery` looks very similar:
 
 **`client/src/components/Todo/TodoListQuery.js`**
+
 ```js
 import gql from 'graphql-tag';
 import { Query } from '@deity/falcon-data';
@@ -268,7 +276,7 @@ export class TodoListQuery extends Query {
 
 Let's use our data in some components...
 
-<img src="/img/docs/platform/todolist.png" alt="todo list component" width="300" style={{margin: '20px 0'}}/>
+<img src="/img/docs/platform/todolist.png" alt="todo list component" width="300" style={{ margin: '20px 0' }} />
 
 For this we need to create 2 more components.
 
@@ -284,6 +292,7 @@ For this we need to create 2 more components.
 We also need to export them from our `index.js` file.
 
 **`client/src/components/Todo/index.js`**
+
 ```js
 ...
 export * from './TodoList';
@@ -293,6 +302,7 @@ export * from './TodoItem';
 ### Todo Item Component
 
 **`client/src/components/Todo/TodoItem.js`**
+
 ```js
 import React from 'react';
 import { TodoItemQuery } from './TodoItemQuery';
@@ -314,7 +324,7 @@ export const TodoItem = ({ todoId }) => {
 };
 ```
 
-There is a few things going on here. We import our `TodoItemQuery` component. 
+There is a few things going on here. We import our `TodoItemQuery` component.
 
 This accepts a `variables` prop. This is an object of variables that are passed to our query. In this case, the ID of our todo.
 
@@ -323,6 +333,7 @@ Each query returns `data`, this returns the response from our query...in our cas
 ### Todo List Component
 
 **`client/src/components/Todo/TodoList.js`**
+
 ```js
 import React from 'react';
 import { TodoListQuery } from './TodoListQuery';
@@ -364,6 +375,7 @@ We've done all the hard work, we now just need to use our components somewhere i
 To access our component in an standardized way we will first export it to the component root.
 
 **`client/src/components/index.js`**
+
 ```
 ...
 export * from './Todo';
@@ -371,8 +383,8 @@ export * from './Todo';
 
 Now that it is available from the components directory I'm going to add them to the homepage.
 
-
 **`client/src/pages/home/Home.js`**
+
 ```js
 ...
 import {

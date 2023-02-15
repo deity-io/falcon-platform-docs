@@ -6,7 +6,7 @@ sidebar_label: '@deity/create-falcon-app'
 
 This CLI tool helps you to create your application based on DEITY Falcon with just one command.
 
-[More information and usage examples](/docs/platform/getting-started/create)
+[More information and usage examples](/platform/getting-started/create)
 
 ## Usage
 

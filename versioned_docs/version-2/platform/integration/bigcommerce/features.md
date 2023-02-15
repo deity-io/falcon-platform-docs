@@ -14,28 +14,33 @@ We are actively developing our BigCommerce integration and will be adding suppor
 - Category tree from admin
 
 **Product Types**
+
 - Simple Products
 - Configurable Products
 - Gift Cards
 
 **Product Page Features**
+
 - Image Gallery
 - Related Products (partial support)
 - Recently Viewed Products (partial support)
 
 **Pricing**
+
 - Tax Calculation
 - Tiered Pricing (partial support)
 - Special / Sale prices
 
 **Category/Product List**
+
 - Sort Orders
 - Add to cart
 - Filtering (partial support)
 
 **Search**
+
 - Product search
-- Search aggregations/facets (when used with our [Algolia Extension](/docs/platform/integration/algolia))
+- Search aggregations/facets (when used with our [Algolia Extension](/platform/integration/algolia))
 - Search sort order
 
 **Customer Area**
@@ -70,7 +75,7 @@ We are actively developing our BigCommerce integration and will be adding suppor
 - Site Maps (frontend specific)
 - 301 redirects
 
-***Multi-store/Language**
+**\*Multi-store/Language**
 
 - Multi-currency (partial support)
 - Multi-language (partial support)

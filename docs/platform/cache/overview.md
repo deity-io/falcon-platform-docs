@@ -10,13 +10,14 @@ Caching occurs in a few different forms with Falcon Platform. You have asset cac
 
 ## Falcon Client
 
-Webpack generates unique chunk names during each build. These chunks are set to have a cache lifetime of 1 year.  This means the a users will get a new version of your code each time you deploy new changes (run the build script). See our [code splitting](/docs/platform/client/code-splitting) guide for more information.
+Webpack generates unique chunk names during each build. These chunks are set to have a cache lifetime of 1 year. This means the a users will get a new version of your code each time you deploy new changes (run the build script). See our [code splitting](/platform/client/code-splitting) guide for more information.
 
 Our service worker will cache these static assets in local storage.
 
 We have 2 components to help with this and to prevent that users are getting served stale content. These are imported from our `@deity/falcon-service-worker` package. They will show users a message to fetch new content if changes are detected.
 
 **`client/src/App.js`**
+
 ```js
 import { ServiceWorkerRegistrar, ServiceWorker } from '@deity/falcon-service-worker';
 
@@ -41,4 +42,4 @@ import { ServiceWorkerRegistrar, ServiceWorker } from '@deity/falcon-service-wor
 
 ## Falcon Server
 
-Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/v2019/platform/falcon-server/caching) docs.
+Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/v2019/platform/falcon-server/caching) docs.

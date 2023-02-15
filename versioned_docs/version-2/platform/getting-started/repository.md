@@ -4,7 +4,7 @@ title: 6. Code repository
 sidebar_label: 6. Code repository
 ---
 
-The last step is to deploy your changes. For that our cloud platform will need access to your code repository.  We use an **SSH key** for access and **web hooks** to allow us to watch for code changes.
+The last step is to deploy your changes. For that our cloud platform will need access to your code repository. We use an **SSH key** for access and **web hooks** to allow us to watch for code changes.
 
 We currently support <a href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub</a>, <a href="https://bitbucket.org/" target="_blank" rel="noreferrer noopener">BitBucket</a> or <a href="https://about.gitlab.com/" target="_blank" rel="noreferrer noopener">GitLab</a>.
 
@@ -21,6 +21,7 @@ dcloud repo -i
 ```
 
 ---
+
 ### GitHub
 
 #### Adding an SSH Key
@@ -38,6 +39,7 @@ dcloud repo -i
 ![GitHub WebHook](/img/docs/cloud/github-webhook.png)
 
 ---
+
 ### Bitbucket
 
 #### Adding an SSH Key
@@ -52,6 +54,7 @@ dcloud repo -i
 Coming soon
 
 ---
+
 ### GitLab
 
 #### Adding an SSH Key
@@ -70,7 +73,7 @@ Coming soon
 
 That's everything done. You're now ready to start using Deity Cloud. View the full list of `dcloud` [commands](../cloud/dcloud).
 
-Next step, [deploy](/docs/platform/deployment/overview) your code.
+Next step, [deploy](/platform/deployment/overview) your code.
 
 ---
 
@@ -100,4 +103,4 @@ To deploy a build you can run the command
 dcloud deployment:run [buildId] [environmentName]
 ```
 
-[More details can be found here](/docs/platform/cloud/dcloud#deploy)
+[More details can be found here](/platform/cloud/dcloud#deploy)

@@ -10,14 +10,20 @@ import Categories from '@site/src/components/Faqs/Categories';
 import Accordion from '@site/src/components/Accordion';
 
 <Accordion title="Can I use NextJS">
-  Unfortunately, Falcon-Client (the frontend app) cannot be used together with NextJs.  NextJs uses its own template/routing system, which is incompatible with ours.  Falcon-Server (data/graphql server app) could be used as a middleware between Spree backend and your frontend. It could be even used to provide data for your NextJs frontend (depending on how you want to organize your whole setup).
+  Unfortunately, Falcon-Client (the frontend app) cannot be used together with NextJs. NextJs uses its own
+  template/routing system, which is incompatible with ours. Falcon-Server (data/graphql server app) could be used as a
+  middleware between Spree backend and your frontend. It could be even used to provide data for your NextJs frontend
+  (depending on how you want to organize your whole setup).
 </Accordion>
 <Accordion title="How can I access configuration values?">
-  This works differently for Falcon Client and Falcon Server. Configuration information can be found <Link to="/docs/platform/configuration/overview">here</Link>.
+  This works differently for Falcon Client and Falcon Server. Configuration information can be found{' '}
+  <Link to="/platform/configuration/overview">here</Link>.
 </Accordion>
 <Accordion title="Offline support doesn't seem to be working...">
-  Our service worker, that provides offline support is only used in production mode. If you're running your app in development `yarn start` rather than `yarn start:prod` offline mode won't work. 
+  Our service worker, that provides offline support is only used in production mode. If you're running your app in
+  development `yarn start` rather than `yarn start:prod` offline mode won't work.
 </Accordion>
 
 ### Check out our other FAQs
+
 <Categories />

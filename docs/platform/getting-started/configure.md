@@ -18,13 +18,13 @@ We highly recommend you read our [config docs](overview) before doing this step.
 
 ### 1. Log into your environment
 
-Hopefully you're still logged in from [the 'Install Dcloud' step](/docs/platform/getting-started/dcloud#login-to-your-cloud-env). If not, follow the steps there.
+Hopefully you're still logged in from [the 'Install Dcloud' step](/platform/getting-started/dcloud#login-to-your-cloud-env). If not, follow the steps there.
 
 ### 2. What variables need setting?
 
 This depends on your integrations.
 
-Each one of our integrations has it's own variables and documentaion that can be found in the 'Integrations' section. For example, our [Magento 2 docs](/docs/platform/integration/magento2/getting-started#5-configure-your-magento-connection).
+Each one of our integrations has it's own variables and documentaion that can be found in the 'Integrations' section. For example, our [Magento 2 docs](/platform/integration/magento2/getting-started#5-configure-your-magento-connection).
 
 :::note client vs server variables
 Your environment variables are universal, meaning they are accessible by both your client and server apps and you don't need to set them in a different way.
@@ -37,7 +37,7 @@ Once you've worked out which variables need setting you can set them using dclou
 You can then set environment variables using the following command:
 
 ```bash
-dcloud env:var:set <env> <name> [value] 
+dcloud env:var:set <env> <name> [value]
 ```
 
 **example**
@@ -67,6 +67,6 @@ Running a deployment will restart your app and will also apply new changes to en
 
 ### 5. Test your changes
 
-Unless you're running Falcon Server locally (Enterprise plans only), now is a great time to test your changes.  By connecting your local client app to your remote server app (via the GraphQL URL [explained here](/docs/platform/getting-started/create#2-add-your-details)) you should be able to see any config changes you've made.
+Unless you're running Falcon Server locally (Enterprise plans only), now is a great time to test your changes. By connecting your local client app to your remote server app (via the GraphQL URL [explained here](/platform/getting-started/create#2-add-your-details)) you should be able to see any config changes you've made.
 
 We recommend changing your shop integration variables so you can see your own products and categories locally.

@@ -4,4 +4,4 @@ title: Testing
 sidebar_label: Overview
 ---
 
-- [Falcon Client Testing](/docs/platform/client/testing)
+- [Falcon Client Testing](/platform/client/testing)

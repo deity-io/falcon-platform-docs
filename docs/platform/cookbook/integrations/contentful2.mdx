@@ -7,7 +7,7 @@ enterprise_only: true
 ---
 
 <a href="https://www.contentful.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Contentful site">
-  <img src="/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{margin: '0 0 40px'}}/>
+  <img src="/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{ margin: '0 0 40px' }} />
 </a>
 
 In this tutorials we will look at **dynamic routing** using the `extension` from [part 1](contentful).
@@ -21,7 +21,9 @@ Using the `course` data from [part 1](contentful) we will make routes like `http
 At the moment we have a `courses` query that allows us to access all of the `courses`. We now want to create a `course` query so we can get a specific `course`.
 
 ### i. Add to your API
+
 **`server/src/falcon-contentful-api/index.js`**
+
 ```js
 ...
 async course(_, { id }) {
@@ -41,6 +43,7 @@ async course(_, { id }) {
 We will also need to add this query to our GraphQL schema.
 
 **`server/src/falcon-content-extension/schema.graphql`**
+
 ```js
 extend type Query {
   courses: Courses! @cache(ttl: 15)
@@ -55,15 +58,13 @@ You should now be able to test your GraphQL. Make sure `falcon-server` is runnin
 
 Also remember to replace `YOUR_CONTENT_ID` with your course ID.
 
-
 <iframe
-     src="https://codesandbox.io/embed/falcon-platform-graphql-contentful-part2-qsdwy?fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style={{width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden'}}
-     title="falcon-platform-graphQL-contentful"
-     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
-     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-   ></iframe>
-
+  src="https://codesandbox.io/embed/falcon-platform-graphql-contentful-part2-qsdwy?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+  style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+  title="falcon-platform-graphQL-contentful"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
 
 ## 2. Create your content query and component
 
@@ -87,6 +88,7 @@ As before we want to add a content component and a query component.
 ### i. CourseQuery.js
 
 **`client/src/components/Course/CourseQuery.js`**
+
 ```js
 import gql from 'graphql-tag';
 import { Query } from '@deity/falcon-data';
@@ -115,9 +117,10 @@ At the moment we are only querying the title and description. If you want more d
 
 At the moment we just rendering the title, description and changing the page title.
 
-Notice we are using `<Helmet>` to change the page title. To learn more about this read how [falcon manages meta data via helmet](/docs/platform/client/meta-data).
+Notice we are using `<Helmet>` to change the page title. To learn more about this read how [falcon manages meta data via helmet](/platform/client/meta-data).
 
 **`client/src/components/Course/Course.js`**
+
 ```js
 import React from 'react';
 import { PageLayout } from '@deity/falcon-ui-kit';
@@ -130,21 +133,19 @@ const Course = ({ match: { params } }) => {
     <PageLayout>
       <CourseQuery variables={{ id }}>
         {({ data: { course } }) => {
-
-          const { fields: { title, description } } = course;
+          const {
+            fields: { title, description }
+          } = course;
           return (
             <React.Fragment>
-
               <Helmet>
                 <title>{title}</title>
               </Helmet>
 
               <h1>{title}</h1>
               <p>{description}</p>
-
             </React.Fragment>
-          )
-
+          );
         }}
       </CourseQuery>
     </PageLayout>
@@ -152,19 +153,18 @@ const Course = ({ match: { params } }) => {
 };
 
 export default Course;
-
 ```
 
 ## 3. Return URL data from our API
 
-`<SwitchDynamicURL>` is used for routing in Falcon Platform, it's worth looking at routing details [here](/docs/platform/client/routing).
+`<SwitchDynamicURL>` is used for routing in Falcon Platform, it's worth looking at routing details [here](/platform/client/routing).
 
 All APIs that are registered in our `server/config/default.json` and contain **both** the below methods will be checked.
 
 - `fetchUrl`
 - `getFetchUrlPriority`
 
-`getFetchUrlPriority` is used to set priority of your API. You might want to alter the priority if you're worried about URLs clashing. This is covered in our [docs](/docs/platform/client/routing).
+`getFetchUrlPriority` is used to set priority of your API. You might want to alter the priority if you're worried about URLs clashing. This is covered in our [docs](/platform/client/routing).
 
 **`server/src/falcon-contentful-api/index.js`**
 
@@ -217,6 +217,7 @@ module.exports = class ContentfulApi extends ApiDataSource {
 There is quite a bit going on here.
 
 ### i. getFetchUrlPriority
+
 We are just returning the default priority set in `ApiDataSource`.
 
 If you wanted to change this you could follow a similar pattern to the example below. This returns a low priority for all urls except 'hello'.
@@ -266,7 +267,7 @@ return {
   id: sys.id,
   path: fields.slug,
   type: 'content-course'
-}
+};
 ```
 
 **If your URLs don't match remember to return null**
@@ -275,9 +276,10 @@ return {
 
 Now we need to check for our type, `content-course`.
 
-In our example apps the routing is handled in `client/src/App.js`. 
+In our example apps the routing is handled in `client/src/App.js`.
 
 **`client/src/App.js`**
+
 ```js
 ...
 import { SwitchDynamicURL } from '@deity/falcon-front-kit';
@@ -295,4 +297,5 @@ You will see here we pass the prop `type` to our `<Route>`. This will return the
 **n.b. If your'e using `loadable` your component needs to be the default export**
 
 ## 5. Finished
+
 That's it. There is a lot covered in this short tutorial and it's highly recommended to read up on routing in more details.

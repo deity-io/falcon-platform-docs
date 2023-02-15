@@ -39,10 +39,10 @@ dcloud login:token [token]
 ```
 
 You'll be asked to go to [https://app.deity.cloud/sign-in/authorization-token](https://app.deity.cloud/sign-in/authorization-token) in order to generate the token for your account (you'll have to sign in with your account to access it).
- 
+
 Once the token is generated you can copy it from the browser and paste into CLI.
 
-:::note 
+:::note
 If you've not yet created an account please contact our support.
 :::
 
@@ -56,11 +56,11 @@ dcloud whoami
 
 You'll need to have a Falcon app in a code repository ready to deploy.
 
-To do this please follow [these steps](/docs/platform/getting-started/overview).
+To do this please follow [these steps](/platform/getting-started/overview).
 
 ### Link your code repository
 
-If you've followed the [instructions above](/docs/platform/getting-started/repository) you'll have added a webhook to your repo. This will automatically link it to your `dcloud` account.  **n.b. You'll need to push at least one commit before the repo is linked.**
+If you've followed the [instructions above](/platform/getting-started/repository) you'll have added a webhook to your repo. This will automatically link it to your `dcloud` account. **n.b. You'll need to push at least one commit before the repo is linked.**
 
 To check this run the following command:
 
@@ -70,7 +70,7 @@ dcloud repo:list -i
 
 ## 4. Configure your app
 
-Depending on the setup you are running you'll need to set various **environement variables**. These include **BigCommerce**, **Algolia** and **Stripe**  credentials.  To learn more about configuration please read [these docs](/docs/platform/configuration/overview).
+Depending on the setup you are running you'll need to set various **environement variables**. These include **BigCommerce**, **Algolia** and **Stripe** credentials. To learn more about configuration please read [these docs](/platform/configuration/overview).
 
 To set variables using dcloud use the following command:
 
@@ -80,11 +80,11 @@ dcloud env:var:set <env> <name> [value]
 
 Each integration will have a different set of required environment variables. These can be found listed with their individual integration guides:
 
-- [Algolia](/docs/platform/integration/algolia#deity-cloud-environment-variables)
-- [BigCommerce](/docs/platform/integration/bigcommerce/manual#deity-cloud-environment-variables)
-- [Magento 2](/docs/platform/integration/magento2/getting-started#deity-cloud-environment-variables)
-- [Stripe](/docs/platform/integration/stripe#deity-cloud-environment-variables)
-- [Wordpress](/docs/platform/integration/wordpress#deity-cloud-environment-variables)
+- [Algolia](/platform/integration/algolia#deity-cloud-environment-variables)
+- [BigCommerce](/platform/integration/bigcommerce/manual#deity-cloud-environment-variables)
+- [Magento 2](/platform/integration/magento2/getting-started#deity-cloud-environment-variables)
+- [Stripe](/platform/integration/stripe#deity-cloud-environment-variables)
+- [Wordpress](/platform/integration/wordpress#deity-cloud-environment-variables)
 
 Alongside 3rd party integrations there are a few other core configurations you might want to set:
 
@@ -108,10 +108,9 @@ If you want to use Tag Manager you'll have to set your container ID.
 
 - `GTM_CODE`: gtm container ID e.g. `GTM-12345`
 
-
-
 ### Example - BigCommerce
-[This document](/docs/platform/integration/bigcommerce/manual) explains BigCommerce configuration in more details.
+
+[This document](/platform/integration/bigcommerce/manual) explains BigCommerce configuration in more details.
 
 There are quite a few confirations you'll need to add. Adding them might look something like the command below:
 
@@ -119,19 +118,22 @@ There are quite a few confirations you'll need to add. Adding them might look so
 dcloud env:var:set production BIGCOMMERCE_ACCESS_TOKEN [YOUR_ACCESS_TOKEN]
 ```
 
-
 ## 5. Deploy your code
 
 ### Find your build ID
+
 Each commit pushed to your repo is created as a build. To check these you can run the command `dcloud build:list`. Take note of the build ID for the build you want to deploy.
 
 ### Choose your environment
+
 Depending on your price plan you may have multiple environments (testing, production etc). To check your environments run `dcloud env:list`. Take note of the name of the environment you want to deploy to.
 
 ### Deploy your build
+
 To deploy your build run the command `dcloud deployment:run [buildId] [environmentName]` replacing `buildId` and `environmentName` with the values above. You deployment should be very quick as the build is already created.
 
 ---
 
 ## Watch our 'how to' video.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CSrkxZgtY6w?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

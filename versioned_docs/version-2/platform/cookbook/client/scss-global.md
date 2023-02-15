@@ -4,7 +4,7 @@ title: Loading a global scss file
 sidebar_label: Loading a global scss file
 ---
 
-If you are using `scss` and want to load a global file to all your other `scss` files it's possible by extending the [webpack config](/docs/platform/client/webpack).
+If you are using `scss` and want to load a global file to all your other `scss` files it's possible by extending the [webpack config](/platform/client/webpack).
 
 This can be done in `client/falcon-client.build.config.js`.
 
@@ -31,7 +31,7 @@ modify: (cfg, { target }) => {
   }
   ....
 
-  ```
+```
 
-  **Path Aliases**
-  The `src` path is aliased to the correct location meaning it's possible to import the file like so `src/global.scss` (it's not a relative path).
+**Path Aliases**
+The `src` path is aliased to the correct location meaning it's possible to import the file like so `src/global.scss` (it's not a relative path).

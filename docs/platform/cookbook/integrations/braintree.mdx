@@ -6,12 +6,16 @@ description: DEITY Platform Braintree Payments integration
 enterprise_only: true
 ---
 
-<a href="https://www.braintreepayments.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Braintree site">
+<a
+  href="https://www.braintreepayments.com/"
+  rel="noreferrer noopener"
+  target="_blank"
+  aria-label="visit the Braintree site"
+>
   <img src="/img/docs/platform/braintree.svg" alt="Braintree Logo" width="200" />
 </a>
 
 import HighlightFlag from '@site/src/components/HighlightFlag';
-
 
 ## Overview
 
@@ -20,7 +24,6 @@ In this tutorial we will look at integrating with Braintree using their **hosted
 We will be focusing solely on Card Payments in the checkout.
 
 In this example all files will be created directly into our codebase. For the sake of reusability it's advised you create your own `npm` packages and import them.
-
 
 ## How it works
 
@@ -38,13 +41,13 @@ In this example all files will be created directly into our codebase. For the sa
 
 6. <HighlightFlag text="Braintree" /> Payment handled
 
-6. <HighlightFlag type="server" /> Payment status returned
-
+7. <HighlightFlag type="server" /> Payment status returned
 
 ### File Flow
-This is an example of the data flow from a file perspective (using `demo-v2`):
-<img src="/img/docs/platform/payment-flow.jpg" alt="Payment flow diagram" />
 
+This is an example of the data flow from a file perspective (using `demo-v2`):
+
+<img src="/img/docs/platform/payment-flow.jpg" alt="Payment flow diagram" />
 
 ## Useful Packages
 
@@ -60,22 +63,25 @@ This is an example of the data flow from a file perspective (using `demo-v2`):
 ## Creating your integration
 
 ### 1. Create your Braintree account.
+
 We are going to be using a Sandbox account for this but you could just as easily create a live account.
 
 #### i. Register
+
 [Register](https://www.braintreepayments.com/gb/sandbox) or [Login](https://sandbox.braintreegateway.com/login) if you already have an account.
 
 #### ii. Generate your keys
 
 <img src="/img/docs/platform/braintree-admin.png" alt="Braintree Admin" width="200" />
 
-From the admin click on the API section. Here you'll want to create an `API key` & a `Tokenization Key`.  You'll need these a little later.
+From the admin click on the API section. Here you'll want to create an `API key` & a `Tokenization Key`. You'll need these a little later.
 
 ### 2. Add your payment provider
 
 Create your provider `server/src/falcon-braintree-payments/providers/braintree.js`
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 module.exports = class BraintreePayment {
   constructor(code, config) {
@@ -83,12 +89,12 @@ module.exports = class BraintreePayment {
     this.code = code;
   }
 };
-
 ```
 
 We then include this in our config file. We also pass some basic config (nothing with sensitive data e.g. API keys).
 
 **`server/config/default.json`**
+
 ```json
 {
   "components": {
@@ -109,14 +115,14 @@ We then include this in our config file. We also pass some basic config (nothing
     }
   }
 }
-
 ```
 
 ### 3. Pass your API details to the provider
 
-To get this up and running we will do this in our `server/config/local.json`. For production config you should read [these docs](/docs/platform/client/configuration).
+To get this up and running we will do this in our `server/config/local.json`. For production config you should read [these docs](/platform/client/configuration).
 
 **`server/config/local.json`**
+
 ```json
 {
   "components": {
@@ -140,19 +146,19 @@ To get this up and running we will do this in our `server/config/local.json`. Fo
 
 You will now have access to all of these details in your provider. They will be passed as `config`.
 
-
 ### 4. Passing config data to the frontend (Falcon Client)
 
 Each payment provider should include 2 methods. `initialize` when the provider is initialized and `validate` when the payment is submitted.
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 module.exports = class BraintreePayment {
   ...
   async initialize(payload) {
     ...
   }
-  async validate(payload) {  
+  async validate(payload) {
     ...
   }
 };
@@ -161,6 +167,7 @@ module.exports = class BraintreePayment {
 We can use the `initialize` method to pass data from the provider to our Falcon Client components.
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 module.exports = class BraintreePayment {
   constructor(code, config) {
@@ -178,7 +185,7 @@ module.exports = class BraintreePayment {
         tokenizationKey: this.tokenizationKey,
         total: payload.total
       }
-    }
+    };
   }
 };
 ```
@@ -222,6 +229,7 @@ yarn add react-braintree-fields
 We now need to create a frontend component for our payment method and a plugin to handle the data.
 
 **`client/src/pages/shop/Checkout/components/payments/Braintree.js`**
+
 ```js
 import React, { useState } from 'react';
 import { HostedField } from 'react-braintree-fields';
@@ -259,21 +267,14 @@ const Payment = ({ children, ...props }) => {
 // This is rendered in the payment method component
 Payment.UI = () => (
   <>
-    <HostedField
-      type="number"
-      prefill="4111 1111 1111 1111"
-    />
+    <HostedField type="number" prefill="4111 1111 1111 1111" />
     <HostedField type="expirationMonth" />
     <HostedField type="expirationYear" />
-    <HostedField
-      type="cvv"
-      placeholder="CVV"
-    />
+    <HostedField type="cvv" placeholder="CVV" />
   </>
-)
+);
 
 export default Payment;
-
 ```
 
 **n.b.** The `<HostedField>` components should have associated labels.
@@ -283,12 +284,12 @@ It's worth reading the package docs to see how the `<Braintree>` component works
 This returns a function, which when run returns a payment token (`nonce`) from Braintree. We need this to process transactions.
 
 **`client/src/plugin/Braintree.js`**
+
 ```js
 import React, { useState } from 'react';
 import { Braintree } from 'react-braintree-fields';
 
 export const BraintreePlugin = props => {
-
   const { children, config } = props;
   const [tokenize, setTokenizeFunc] = useState();
 
@@ -299,9 +300,9 @@ export const BraintreePlugin = props => {
       return {
         total: config.total,
         nonce: payload.nonce
-      }
+      };
     });
-  }
+  };
 
   return (
     <>
@@ -314,7 +315,6 @@ export const BraintreePlugin = props => {
     </>
   );
 };
-
 ```
 
 ### 7. Include your component as a payment method
@@ -327,6 +327,7 @@ In the `demo-v2` example project the payment methods are mapped to components in
 In these files methods added to your config (`server/config/default.json` -> payment/providers) are mapped to frontend components. We need to add Braintree to that mapping.
 
 **`client/src/pages/shop/Checkout/components/PaymentMethodPicker.js`**
+
 ```js
 ...
 import { SimplePayment } from '@deity/falcon-payment-plugin';
@@ -342,6 +343,7 @@ const paymentCodeToPluginMap = {
 ```
 
 **`client/src/pages/shop/Checkout/sections/PlaceOrderSection.js`**
+
 ```js
 const paymentCodeToPluginMap = {
   braintree: `Braintree`
@@ -392,6 +394,7 @@ yarn add graphql-request
 #### ii. Connecting to the Braintree GraphQL client
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 const { GraphQLClient } = require('graphql-request');
 
@@ -418,14 +421,14 @@ module.exports = class BraintreePayment {
     });
   }
 };
-
 ```
 
 #### iii. Test your connection
 
-We can test the connection using the [`ping`](https://graphql.braintreepayments.com/reference/#Query--ping) query Braintree provide.  To test this I've called the `ping` method in the `initialize` step. This way we should get a console log (in the terminal window running falcon server) when initializing the payment method on the frontend (visit the checkout and select Braintree).
+We can test the connection using the [`ping`](https://graphql.braintreepayments.com/reference/#Query--ping) query Braintree provide. To test this I've called the `ping` method in the `initialize` step. This way we should get a console log (in the terminal window running falcon server) when initializing the payment method on the frontend (visit the checkout and select Braintree).
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 module.exports = class BraintreePayment {
   ...
@@ -453,6 +456,7 @@ module.exports = class BraintreePayment {
 We can now create the transaction in our `validate` method in the provider.
 
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 async validate(payload) {
   const { nonce, total } = payload;
@@ -486,7 +490,7 @@ async validate(payload) {
 
 ### 8. Finished
 
-That's it, our code will take care of the rest and send you to the success page or display your error.  It's worth noting we've not added much error handling, styling or testing that you will need to use this on a production environment.
+That's it, our code will take care of the rest and send you to the success page or display your error. It's worth noting we've not added much error handling, styling or testing that you will need to use this on a production environment.
 
 ---
 
@@ -494,8 +498,8 @@ That's it, our code will take care of the rest and send you to the success page 
 
 **This code is not production ready, please only use it as an example**
 
-
 **`server/src/falcon-braintree-payments/providers/braintree.js`**
+
 ```js
 const { GraphQLClient } = require('graphql-request');
 
@@ -547,13 +551,13 @@ module.exports = class BraintreePayment {
     const { nonce, total } = payload;
 
     const transactionData = {
-      "input": {
-        "paymentMethodId": nonce,
-        "transaction": {
-          "amount": parseFloat(total).toFixed(2)
+      input: {
+        paymentMethodId: nonce,
+        transaction: {
+          amount: parseFloat(total).toFixed(2)
         }
       }
-    }
+    };
     const createPaymentQuery = `
       mutation ChargePaymentMethod($input: ChargePaymentMethodInput!) {
         chargePaymentMethod(input: $input) {
@@ -572,45 +576,39 @@ module.exports = class BraintreePayment {
     }
   }
 };
-
 ```
 
 **`client/src/plugin/Braintree.js`**
+
 ```js
 import React, { useState } from 'react';
 import { Braintree } from 'react-braintree-fields';
 
 export const BraintreePlugin = props => {
-
   const { children, config } = props;
   const [tokenize, setTokenizeFunc] = useState();
   const payFn = async () => {
-
     // @todo add error handling
     return tokenize().then(payload => {
       return {
         total: config.total,
         nonce: payload.nonce
-      }
+      };
     });
-  }
-
+  };
 
   return (
     <>
-      <Braintree
-        authorization={config.tokenizationKey}
-        getTokenRef={ref => setTokenizeFunc(() => ref)}
-      >
+      <Braintree authorization={config.tokenizationKey} getTokenRef={ref => setTokenizeFunc(() => ref)}>
         {children(payFn)}
       </Braintree>
     </>
   );
 };
-
 ```
 
 **`client/src/pages/shop/Checkout/components/payments/Braintree.js`**
+
 ```js
 import React, { useState } from 'react';
 import { HostedField } from 'react-braintree-fields';
@@ -646,19 +644,12 @@ const Payment = ({ children, ...props }) => {
 };
 Payment.UI = () => (
   <>
-    <HostedField
-      type="number"
-      prefill="4111 1111 1111 1111"
-    />
+    <HostedField type="number" prefill="4111 1111 1111 1111" />
     <HostedField type="expirationMonth" />
     <HostedField type="expirationYear" />
-    <HostedField
-      type="cvv"
-      placeholder="CVV"
-    />
+    <HostedField type="cvv" placeholder="CVV" />
   </>
-)
+);
 
 export default Payment;
-
 ```

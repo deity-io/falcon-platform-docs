@@ -4,14 +4,14 @@ import styles from './styles.module.css';
 
 const PaymentProviderData = [
   {
-    name: "Mollie Payments",
-    url: "/docs/platform/integration/mollie",
-    img: "/img/docs/platform/deity-paymemt-mollie.jpg",
+    name: 'Mollie Payments',
+    url: '/platform/integration/mollie',
+    img: '/img/docs/platform/deity-paymemt-mollie.jpg'
   },
   {
-    name: "Stripe Payments",
-    url: "/docs/platform/integration/stripe",
-    img: "/img/docs/platform/deity-paymemt-stripe.jpg",
+    name: 'Stripe Payments',
+    url: '/platform/integration/stripe',
+    img: '/img/docs/platform/deity-paymemt-stripe.jpg'
   }
 ];
 
@@ -31,18 +31,12 @@ const PaymentProvider = ({ provider }) => {
       </div>
     </article>
   );
-}
+};
 
 const PaymentProviders = () => {
-  const providers = PaymentProviderData.map(provider => (
-    <PaymentProvider provider={provider} key={provider.name} />
-  ));
+  const providers = PaymentProviderData.map(provider => <PaymentProvider provider={provider} key={provider.name} />);
 
-  return (
-    <section className={styles.providers}>
-      {providers}
-    </section>
-  );
+  return <section className={styles.providers}>{providers}</section>;
 };
 
 export default PaymentProviders;
