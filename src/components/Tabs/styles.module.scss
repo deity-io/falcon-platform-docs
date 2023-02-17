@@ -1,3 +1,5 @@
+@import '../../css/mixins';
+
 .root {
   position: relative;
   background: #f8faf9;
@@ -17,6 +19,10 @@
     & + div {
       margin-top: 0 !important;
     }
+  }
+
+  li[role='tab'] {
+    border: 2px solid transparent;
   }
 
   div[role='tabpanel'] {
@@ -107,5 +113,38 @@
   &.breaking {
     border-color: #f76808;
     color: #f76808;
+  }
+}
+
+@include dark-mode {
+  .root {
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+
+    li[role='tab'] {
+      background: rgba(1, 167, 54, 0.13);
+      color: #fff;
+      border: 2px solid transparent;
+
+      &[aria-selected='true'] {
+        color: var(--ifm-color-primary);
+        border: 2px solid var(--ifm-color-primary);
+      }
+    }
+
+    .title {
+      color: #fff;
+    }
+
+    .header {
+      background: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+    }
+
+    .item {
+      background: var(--ifm-darkmode-bg);
+      color: #fff;
+    }
   }
 }

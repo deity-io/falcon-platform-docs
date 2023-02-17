@@ -1,6 +1,5 @@
 #__docusaurus .DocSearch-Button {
   --docsearch-text-color: #6a716e;
-  --docsearch-muted-color: rgba(0, 15, 9, 0.46);
   --docsearch-searchbox-background: none;
   --docsearch-key-gradient: none;
   --docsearch-key-shadow: none;
@@ -166,6 +165,18 @@
 }
 
 @include dark-mode {
+  #__docusaurus .navbar {
+    .DocSearch-Button {
+      border-color: rgba(255,255,255,0.6);
+
+      &-Keys,
+      &-Key {
+        border-color: rgba(255,255,255,0.6);
+        color: rgba(255,255,255,0.5)
+      }
+    }
+  }
+
   .DocSearch {
     &-Hit a {
       background: none;
@@ -176,14 +187,8 @@
     }
   }
 
-  .navbar .DocSearch-Button svg {
-    color: #fff;
-  }
-
-  .navbar .DocSearch-Button .DocSearch-Button-Placeholder {
-    color: #fff;
-  }
-
+  .navbar .DocSearch-Button svg,
+  .navbar .DocSearch-Button .DocSearch-Button-Placeholder,
   .DocSearch-Button-Placeholder {
     color: #fff;
   }

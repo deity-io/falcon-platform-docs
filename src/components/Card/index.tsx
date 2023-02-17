@@ -10,7 +10,7 @@ type Props = {
 
 const Card = ({ children, isPadding = true, variant = 'vertical' }: Props) => (
   <div
-    className={clsx(styles.container, {
+    className={clsx(styles.root, {
       [styles.padding]: isPadding,
       [styles.horizontal]: variant === 'horizontal'
     })}

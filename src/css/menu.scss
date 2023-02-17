@@ -123,7 +123,7 @@
     &__link {
       color: var(--ifm-color-white);
 
-      &:hover {
+      &[href]:hover {
         color: var(--ifm-link-color);
 
         svg {

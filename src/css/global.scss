@@ -41,6 +41,17 @@
   margin: 0 auto 100px;
 }
 
+.logo-content {
+  color: #1a1e1c;
+  margin-bottom: 24px;
+}
+
 hr {
   margin: var(--ifm-hr-margin-vertical) var(--ifm-hr-margin-horizontal);
+}
+
+@include dark-mode {
+  .logo-content {
+    color: #fff;
+  }
 }
