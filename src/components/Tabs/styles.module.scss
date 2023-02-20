@@ -73,7 +73,7 @@
     border: 0;
     letter-spacing: -0.01em;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -110,6 +110,7 @@
 }
 
 .icon {
+  flex-basis: 24px;
   margin-right: 8px;
 }
 
@@ -122,6 +123,7 @@
   font-size: 12px;
   line-height: 16px;
   padding: 2px 6px;
+  margin-left: 4px;
 
   &.deprecated {
     border-color: #c2c9c6;

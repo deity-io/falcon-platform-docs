@@ -89,5 +89,9 @@
       background-color: #011627;
       color: #fff;
     }
+
+    .hash-link:before {
+      filter: invert(1);
+    }
   }
 }

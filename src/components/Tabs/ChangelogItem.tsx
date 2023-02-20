@@ -36,7 +36,9 @@ function ChangelogItem({ children, variant, description }: Props): JSX.Element {
     <div className={styles.item}>
       <div className={styles.header}>
         <div className={styles.content}>
-          <Check className={styles.icon} />
+          <div className={styles.icon}>
+            <Check />
+          </div>
           {children}
         </div>
         <div
