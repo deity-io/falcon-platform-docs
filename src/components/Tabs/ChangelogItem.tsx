@@ -32,8 +32,6 @@ function ChangelogItem({ children, variant, description }: Props): JSX.Element {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(isOverflowed);
-
   return (
     <div className={styles.item}>
       <div className={styles.header}>
