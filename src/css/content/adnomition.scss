@@ -1,0 +1,67 @@
+.theme-admonition {
+  --ifm-alert-border-width: 0;
+  --ifm-alert-border-radius: 9px;
+  --ifm-alert-padding-vertical: 14px;
+  --ifm-alert-padding-horizontal: 16px;
+  --ifm-alert-border-left-width: 0;
+  box-shadow: none;
+
+  p {
+    font-size: 13px;
+    line-height: 18.2px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &-note {
+    color: #6e56cf;
+    background: rgba(46, 2, 242, 0.09);
+
+    p,
+    a {
+      color: #6e56cf;
+    }
+  }
+
+  &-info {
+    color: #0091ff;
+    background: rgba(0, 128, 255, 0.12);
+
+    p,
+    a {
+      color: #0091ff;
+    }
+  }
+
+  &-caution {
+    color: #946800;
+    background: rgba(255, 230, 0, 0.27);
+
+    p,
+    a {
+      color: #946800;
+    }
+  }
+
+  &-danger {
+    color: #e5484d;
+    background: rgba(255, 0, 0, 0.1);
+
+    p,
+    a {
+      color: #e5484d;
+    }
+  }
+
+  &-tip {
+    color: rgba(0, 10, 6, 0.58);
+    background: rgba(0, 56, 37, 0.05);
+
+    p,
+    a {
+      color: rgba(0, 10, 6, 0.58);
+    }
+  }
+}
