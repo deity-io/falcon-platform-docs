@@ -32,6 +32,7 @@
         {
           "type": "doc",
           "id": "version-2/platform/products/storefront",
+          "className": "new",
           "customProps": {
             "icon": "doc"
           }

@@ -36,22 +36,22 @@ import LogoImg from '/img/logo.svg';
 </Card>
 
 <div className="flex mb100">
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/rings.svg" />
     <h4>Overview</h4>
     <p>Learn what Deity Platform is and how it works.</p>
   </Card>
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/lightning.svg" />
     <h4>Getting started</h4>
     <p>Jump right in and get started with Deity Platform.</p>
   </Card>
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/info.svg" />
     <h4>Key concepts</h4>
     <p>Learn the basics behind Deity Platform.</p>
   </Card>
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/lightbulb.svg" />
     <h4>Tutorials</h4>
     <p>Learn by doing by following practical tutorials.</p>
@@ -61,22 +61,22 @@ import LogoImg from '/img/logo.svg';
 <Badge>Products</Badge>
 <h1 className="mb20 headline2">Headline</h1>
 <div className="flex mb100">
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/ticker.svg" />
     <h4>Composer</h4>
     <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
   </Card>
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/data.svg" />
     <h4>Storefront</h4>
     <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
   </Card>
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/coins.svg" />
     <h4>Payments</h4>
     <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
   </Card>
-  <Card>
+  <Card to="/#">
     <img src="/img/icons/switch.svg" />
     <h4>Console</h4>
     <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
@@ -86,20 +86,20 @@ import LogoImg from '/img/logo.svg';
 <Badge>Guides</Badge>
 <h1 className="mb20 headline2">Learn the basics</h1>
 <div className="flex">
-  <Card variant="horizontal">
+  <Card variant="horizontal" to="#">
     <img src="/img/icons/ticker.svg" />
     <div>
-      <h4>Working with extensions</h4>
+      <h5>Working with extensions</h5>
       <p>
         Eu condimentum orci tristique felis sit est proin ipsum magna. Eget vestibulum et adipiscing in ornare tellus
         libero cras at aliquam.
       </p>
     </div>
   </Card>
-  <Card variant="horizontal">
+  <Card variant="horizontal" to="#">
     <img src="/img/icons/ticker.svg" />
     <div>
-      <h4>Register a custom module</h4>
+      <h5>Register a custom module</h5>
       <p>
         Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
         risus.
@@ -108,20 +108,20 @@ import LogoImg from '/img/logo.svg';
   </Card>
 </div>
 <div className="flex">
-  <Card variant="horizontal">
+  <Card variant="horizontal" to="#">
     <img src="/img/icons/coins.svg" />
     <div>
-      <h4>Setup a local development profile</h4>
+      <h5>Setup a local development profile</h5>
       <p>
         Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
         risus.
       </p>
     </div>
   </Card>
-  <Card variant="horizontal">
+  <Card variant="horizontal" to="#">
     <img src="/img/icons/data.svg" />
     <div>
-      <h4>Overriding components</h4>
+      <h5>Overriding components</h5>
       <p>
         Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
         risus.
@@ -130,20 +130,20 @@ import LogoImg from '/img/logo.svg';
   </Card>
 </div>
 <div className="flex mb100">
-  <Card variant="horizontal">
+  <Card variant="horizontal" to="#">
     <img src="/img/icons/switch.svg" />
     <div>
-      <h4>Deploying a build to a remote environment</h4>
+      <h5>Deploying a build to a remote environment</h5>
       <p>
         Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
         risus.
       </p>
     </div>
   </Card>
-  <Card variant="horizontal">
+  <Card variant="horizontal" to="#">
     <img src="/img/icons/switch.svg" />
     <div>
-      <h4>Set a custom environment variable</h4>
+      <h5>Set a custom environment variable</h5>
       <p>
         Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
         risus.
@@ -157,24 +157,30 @@ import LogoImg from '/img/logo.svg';
   Unlock the full potential of your e-commerce business with our powerful integrations.{' '}
 </h1>
 <div className="flex">
-  <Card>
-    <img src="/img/icons/adyen.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/adyen.svg" />
+    </div>
     <h4>Adyen</h4>
     <p>
       End-to-end payments, data, and financial management in one solution. Meet the financial technology platform that
       helps you realize your ambitions faster.
     </p>
   </Card>
-  <Card>
-    <img src="/img/icons/algolia.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/algolia.svg" />
+    </div>
     <h4>Algolia</h4>
     <p>
       Algolia is the leader in globally scalable, secure, digital experiences that are ultrafast and reliable.
       globe-home-page. Fast & flexible.
     </p>
   </Card>
-  <Card>
-    <img src="/img/icons/bigcommerce.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/bigcommerce.svg" />
+    </div>
     <h4>Bigcommerce</h4>
     <p>
       Learn how BigCommerce powers your business with enterprise ecommerce capabilities—with lower cost and complexity.
@@ -182,52 +188,70 @@ import LogoImg from '/img/logo.svg';
   </Card>
 </div>
 <div className="flex">
-  <Card>
-    <img src="/img/icons/contentful.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/contentful.svg" />
+    </div>
     <h4>Contentful</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
-  <Card>
-    <img src="/img/icons/commercetools.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/commercetools.svg" />
+    </div>
     <h4>Commercetools</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
-  <Card>
-    <img src="/img/icons/magento.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/magento.svg" />
+    </div>
     <h4>Magento</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
 </div>
 <div className="flex">
-  <Card>
-    <img src="/img/icons/mollie.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/mollie.svg" />
+    </div>
     <h4>Mollie</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
-  <Card>
-    <img src="/img/icons/unbxd.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/unbxd.svg" />
+    </div>
     <h4>Unbxd</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
-  <Card>
-    <img src="/img/icons/humm.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/humm.svg" />
+    </div>
     <h4>Humm</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
 </div>
 <div className="flex mb100">
-  <Card>
-    <img src="/img/icons/stripe.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/stripe.svg" />
+    </div>
     <h4>Stripe</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
-  <Card>
-    <img src="/img/icons/talonone.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/talonone.svg" />
+    </div>
     <h4>TalonOne</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>
-  <Card>
-    <img src="/img/icons/wordpress.svg" />
+  <Card to="/#">
+    <div className="round-icon">
+      <img src="/img/icons/wordpress.svg" />
+    </div>
     <h4>Wordpress</h4>
     <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
   </Card>

@@ -35,7 +35,7 @@ function useShowAnnouncementBar() {
 export default function DocSidebarDesktopContent({ path, sidebar, className }: Props): JSX.Element {
   const showAnnouncementBar = useShowAnnouncementBar();
   const { pathname } = useLocation();
-  const { goBack } = useHistory();
+  const { push } = useHistory();
 
   return (
     <nav
@@ -52,7 +52,7 @@ export default function DocSidebarDesktopContent({ path, sidebar, className }: P
       )}
     >
       {pathname !== '/' && (
-        <div className={styles.goBack} onClick={goBack}>
+        <div className={styles.goBack} onClick={() => push('/')}>
           <ArrowLeft className={styles.goBackIcon} />
           <span>Go back</span>
         </div>

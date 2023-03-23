@@ -8,7 +8,7 @@
   margin: 4px;
 
   > h4 {
-    margin-top: 1.5rem;
+    margin-top: 1.1rem;
     margin-bottom: 0.5rem;
   }
 
@@ -22,12 +22,22 @@
 .horizontal {
   display: flex;
   align-items: center;
+  padding: 1rem;
+
+  &.padding {
+    padding: 1rem;
+  }
 
   > div {
     padding-left: 1rem;
 
-    h4 {
-      margin-bottom: 0;
+    h5 {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      color: rgba(0, 15, 9, 0.46);
     }
   }
 }
@@ -43,6 +53,10 @@
     font-size: 19px;
     line-height: 32px;
   }
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 @include dark-mode {

@@ -3,6 +3,43 @@
   border-bottom: 1px solid rgba(0, 56, 37, 0.05);
   box-shadow: 0px 0px 12px rgba(0, 101, 133, 0.05);
 
+  .dropdown__menu {
+    width: 240px;
+
+    hr {
+      background-color: rgba(2, 44, 15, 0.08);
+      margin: 0.2rem 0;
+    }
+
+    .disabled {
+      color: rgba(0, 15, 9, 0.46);
+    }
+
+    .soon:after {
+      content: 'soon!';
+      padding: 2px 4px;
+      color: #6e56cf;
+      background: rgba(46, 2, 242, 0.09);
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      margin-left: auto;
+    }
+
+    .number:after {
+      content: '15'; // todo change to custom prop
+      padding: 2px 4px;
+      color: #12a594;
+      background: rgba(2, 177, 142, 0.15);
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      margin-left: auto;
+    }
+  }
+
   &__search-input {
     width: 6rem;
     padding-left: 32px;
@@ -50,10 +87,6 @@
         background: var(--ifm-navbar-link-background-hover);
         border-radius: 10px;
         color: inherit;
-      }
-
-      &__link--active {
-        background-color: rgba(2, 192, 151, 0.095);
       }
 
       .navbar__link:hover {
@@ -107,6 +140,9 @@
 .dropdown__link {
   display: flex;
   align-items: center;
+  padding: 0.43rem 0.5rem;
+  font-size: 15px;
+  font-weight: 400;
 
   &--active,
   &:hover {

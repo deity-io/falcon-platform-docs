@@ -46,26 +46,32 @@ module.exports = {
               to: '/platform/products/storefront'
             },
             {
-              label: 'Orchestrator',
-              icon: 'doc',
-              to: '/platform/products/orchestrator'
-            },
-            {
-              label: 'Cloud Console',
-              icon: 'doc',
-              to: '#'
-            },
-            {
               label: 'Payments',
               icon: 'doc',
               to: '/platform/payments/overview',
               activeBasePath: '/platform/payments'
             },
             {
+              label: 'Console',
+              icon: 'doc',
+              to: '#'
+            },
+            {
+              type: 'html',
+              value: '<hr/>'
+            },
+            {
               label: 'Integrations',
               icon: 'doc',
               to: '/platform/integration/examples',
-              activeBasePath: '/platform/integration'
+              activeBasePath: '/platform/integration',
+              className: 'number'
+            },
+            {
+              label: 'Orchestrator',
+              icon: 'doc',
+              to: '/platform/products/orchestrator',
+              className: 'soon disabled'
             }
           ]
         },
