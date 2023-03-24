@@ -1,5 +1,5 @@
 #__docusaurus {
-  background: no-repeat top left url(#{$img-path}/glow.png);
+  background: #fbfdfc no-repeat top left url(#{$img-path}/glow.png);
 }
 
 .flex {
@@ -50,10 +50,10 @@ hr {
   margin: var(--ifm-hr-margin-vertical) var(--ifm-hr-margin-horizontal);
 }
 
-@include dark-mode {
-  .logo-content {
-    color: #fff;
-  }
+.hr {
+  height: 1px;
+  background: rgba(1, 40, 24, 0.13);
+  margin: 63px 0 25px;
 }
 
 .round-icon {
@@ -62,4 +62,20 @@ hr {
   border-radius: 1rem;
   overflow: hidden;
   margin: 0;
+}
+
+.container {
+  @include xl {
+    padding: 0;
+  }
+}
+
+@include dark-mode {
+  .logo-content {
+    color: #fff;
+  }
+
+  #__docusaurus {
+    background: no-repeat top left url(#{$img-path}/glow.png);
+  }
 }

@@ -10,34 +10,6 @@
       background-color: rgba(2, 44, 15, 0.08);
       margin: 0.2rem 0;
     }
-
-    .disabled {
-      color: rgba(0, 15, 9, 0.46);
-    }
-
-    .soon:after {
-      content: 'soon!';
-      padding: 2px 4px;
-      color: #6e56cf;
-      background: rgba(46, 2, 242, 0.09);
-      border-radius: 6px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      margin-left: auto;
-    }
-
-    .number:after {
-      content: '15'; // todo change to custom prop
-      padding: 2px 4px;
-      color: #12a594;
-      background: rgba(2, 177, 142, 0.15);
-      border-radius: 6px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      margin-left: auto;
-    }
   }
 
   &__search-input {
@@ -85,7 +57,7 @@
     .dropdown {
       &:hover {
         background: var(--ifm-navbar-link-background-hover);
-        border-radius: 10px;
+        border-radius: 20px;
         color: inherit;
       }
 
@@ -110,7 +82,7 @@
 
       &:hover {
         background: var(--ifm-navbar-link-background-hover);
-        border-radius: 10px;
+        border-radius: 20px;
         color: inherit;
       }
     }
@@ -153,5 +125,23 @@
 @include dark-mode {
   .dropdown > .navbar__link:after {
     filter: invert(1);
+  }
+
+  .dropdown {
+    &:hover {
+      --ifm-navbar-link-background-hover: none;
+    }
+  }
+
+  span[class^='disabled'] {
+    color: var(--ifm-dropdown-link-color);
+  }
+
+  .navbar {
+    &__link {
+      &:hover {
+        --ifm-navbar-link-background-hover: none;
+      }
+    }
   }
 }

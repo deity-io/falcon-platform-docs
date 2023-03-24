@@ -1,7 +1,7 @@
 ---
 id: server
 title: Falcon Server
-sidebar_label: Falcon Server
+sidebar_label: Composer
 enterprise_only: true
 ---
 

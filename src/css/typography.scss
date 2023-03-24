@@ -4,7 +4,7 @@ h3,
 h4 {
   display: flex;
   align-items: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   line-height: 1.3em;
   font-weight: 500;
   font-family: var(--ifm-font-family-headline);
@@ -19,6 +19,7 @@ h4 {
   h1:first-child {
     --ifm-h1-font-size: 2.3125rem;
     margin-top: 1rem;
+    margin-bottom: 0.8rem;
   }
 
   .headline {
@@ -35,23 +36,16 @@ h4 {
     line-height: 44.4px;
   }
 
-  // .headline,
-  // .headline2 {
-  //   max-width: 800px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-
   & > h1 {
-    --ifm-h2-font-size: 1.75rem;
+    --ifm-h2-font-size: 28px;
   }
 
   & > h2 {
-    --ifm-h2-font-size: 1.5rem;
+    --ifm-h2-font-size: 26px;
   }
 
   & > h3 {
-    --ifm-h2-font-size: 1.25rem;
+    --ifm-h2-font-size: 20px;
   }
 
   p {

@@ -13,6 +13,8 @@ import { isRegexpStringMatch } from '@docusaurus/theme-common';
 import ArrowTopRightIcon from '../../components/Icon/ArrowTopRight';
 import type { Props } from '@theme/NavbarItem/NavbarNavLink';
 import DocIcon from '../../components/Icon/Doc';
+import styles from './styles.module.css';
+import clsx from 'clsx';
 
 const iconMap = {
   doc: <DocIcon />
@@ -28,9 +30,15 @@ export default function NavbarNavLink({
   html,
   isDropdownLink,
   prependBaseUrlToHref,
+  customProps,
   ...props
 }: Props & {
   icon?: string;
+  customProps?: {
+    count?: number;
+    label?: string;
+    disabled?: boolean;
+  };
 }): JSX.Element {
   // TODO all this seems hacky
   // {to: 'version'} should probably be forbidden, in favor of {to: '/version'}
@@ -46,8 +54,25 @@ export default function NavbarNavLink({
         children: (
           <>
             {isDropdownLink && icon && iconMap[icon]}
-            {label}
+            <span
+              className={clsx({
+                [styles.disabled]: customProps?.disabled
+              })}
+            >
+              {label}
+            </span>
             {isExternalLink && <ArrowTopRightIcon {...(isDropdownLink && { width: 12, height: 12 })} />}
+            {customProps?.count && <span className={styles.count}>{customProps.count}</span>}
+            {customProps?.label && (
+              <span
+                className={clsx({
+                  [styles.label]: !customProps.disabled && customProps.label,
+                  [styles.soon]: customProps.disabled && customProps.label
+                })}
+              >
+                {customProps.label}
+              </span>
+            )}
           </>
         )
       };
@@ -58,7 +83,7 @@ export default function NavbarNavLink({
 
   return (
     <Link
-      to={toUrl}
+      to={customProps?.disabled ? undefined : toUrl}
       isNavLink
       {...((activeBasePath || activeBaseRegex) && {
         isActive: (_match, location) =>

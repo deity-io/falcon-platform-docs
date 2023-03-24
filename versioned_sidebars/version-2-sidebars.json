@@ -24,7 +24,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-2/platform/products/composer",
+          "id": "version-2/platform/server",
           "customProps": {
             "icon": "doc"
           }
@@ -32,14 +32,15 @@
         {
           "type": "doc",
           "id": "version-2/platform/products/storefront",
-          "className": "new",
           "customProps": {
-            "icon": "doc"
+            "icon": "doc",
+            "label": "new"
           }
         },
         {
-          "type": "doc",
-          "id": "version-2/platform/products/payments",
+          "type": "link",
+          "label": "Payments",
+          "href": "/dpsg/docs/getting-started/overview",
           "customProps": {
             "icon": "doc"
           }
@@ -61,10 +62,10 @@
         {
           "type": "doc",
           "id": "version-2/platform/products/orchestrator",
-          "className": "soon",
           "customProps": {
             "icon": "doc",
-            "disabled": true
+            "disabled": true,
+            "label": "soon!"
           }
         }
       ]

@@ -15,7 +15,6 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import type { Props } from '@theme/DocSidebarItem/Link';
 import { iconMap } from '../helper';
-
 import styles from './styles.module.css';
 
 export default function DocSidebarItemLink({
@@ -25,7 +24,13 @@ export default function DocSidebarItemLink({
   level,
   index,
   ...props
-}: Props): JSX.Element {
+}: Props & {
+  customProps?: {
+    label?: string;
+    count?: number;
+    disabled?: boolean;
+  };
+}): JSX.Element {
   const { href, label, className, customProps, autoAddBaseUrl } = item;
   const isActive = isActiveSidebarItem(item, activePath);
   const isInternalLink = isInternalUrl(href);
@@ -42,7 +47,7 @@ export default function DocSidebarItemLink({
       <Link
         className={clsx('menu__link', !isInternalLink && styles.menuExternalLink, {
           'menu__link--active': isActive,
-          'menu__link--disabled': customProps?.disabled
+          [styles.disabled]: customProps?.disabled
         })}
         autoAddBaseUrl={autoAddBaseUrl}
         aria-current={isActive ? 'page' : undefined}
@@ -55,6 +60,17 @@ export default function DocSidebarItemLink({
         {customProps?.icon && <div className={styles.icon}>{iconMap[customProps.icon]}</div>}
         {label}
         {!isInternalLink && <IconExternalLink />}
+        {customProps?.count && <span className={styles.count}>{customProps.count}</span>}
+        {customProps?.label && (
+          <span
+            className={clsx({
+              [styles.label]: !customProps.disabled && customProps.label,
+              [styles.soon]: customProps.disabled && customProps.label
+            })}
+          >
+            {customProps.label}
+          </span>
+        )}
       </Link>
     </li>
   );

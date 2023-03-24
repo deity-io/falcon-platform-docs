@@ -21,17 +21,20 @@
   --ifm-table-border-color: whitesmoke;
   --ifm-table-background-highlight: #ebecfb;
   --ifm-table-border-color-highlight: #dcdcfc;
+  --ifm-container-width-xl: 1072px;
+  --ifm-container-width: 1040px;
 
   /* Header */
   --ifm-navbar-link-color: #1f2321;
   --ifm-menu-color-background-active: rgba(0, 56, 37, 0.05);
-  --ifm-navbar-link-background-hover: rgba(2, 192, 151, 0.095);
+  --ifm-navbar-link-background-hover: #f3f5f4;
 
   /* Typography */
-  --ifm-h1-font-size: 1.75rem;
-  --ifm-h2-font-size: 1.5rem;
-  --ifm-h3-font-size: 1.25rem;
-  --ifm-h4-font-size: 1.0625rem;
+  --ifm-h1-font-size: 28px;
+  --ifm-h2-font-size: 26px;
+  --ifm-h3-font-size: 20px;
+  --ifm-h4-font-size: 17px;
+  --ifm-h5-font-size: 14px;
   --ifm-p-color: #6a716e;
 
   /* Side Menu */

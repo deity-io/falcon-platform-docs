@@ -43,13 +43,16 @@ module.exports = {
             {
               label: 'Storefront',
               icon: 'doc',
-              to: '/platform/products/storefront'
+              to: '/platform/products/storefront',
+              customProps: {
+                label: 'new'
+              }
             },
             {
               label: 'Payments',
               icon: 'doc',
-              to: '/platform/payments/overview',
-              activeBasePath: '/platform/payments'
+              to: '/dpsg/docs/getting-started/overview',
+              activeBasePath: '/dpsg/docs/'
             },
             {
               label: 'Console',
@@ -65,13 +68,18 @@ module.exports = {
               icon: 'doc',
               to: '/platform/integration/examples',
               activeBasePath: '/platform/integration',
-              className: 'number'
+              customProps: {
+                count: 13
+              }
             },
             {
               label: 'Orchestrator',
               icon: 'doc',
               to: '/platform/products/orchestrator',
-              className: 'soon disabled'
+              customProps: {
+                label: 'soon!',
+                disabled: true
+              }
             }
           ]
         },

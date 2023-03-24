@@ -5,30 +5,6 @@
   --ifm-hr-margin-horizontal: 4px;
   background: var(--ifm-menu-background-color);
 
-  .soon a:after {
-    display: block;
-    content: 'Soon!';
-    color: rgba(0, 15, 9, 0.46);
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 1.5em;
-    margin-left: auto;
-  }
-
-  .new a:after {
-    display: block;
-    content: 'New';
-    height: 20px;
-    margin-left: 4px;
-    padding: 2px 4px;
-    background: rgba(46, 2, 242, 0.09);
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    color: #6e56cf;
-  }
-
   .gray-link {
     a {
       display: flex;
@@ -125,10 +101,6 @@
 @include dark-mode {
   .menu {
     background: inherit;
-
-    .soon a:after {
-      color: #d7dcda;
-    }
 
     .gray-link svg {
       color: #fff;
