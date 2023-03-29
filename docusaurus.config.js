@@ -38,7 +38,7 @@ module.exports = {
             {
               label: 'Composer',
               icon: 'doc',
-              to: '/platform/products/composer'
+              to: '/platform/server'
             },
             {
               label: 'Storefront',
