@@ -39,6 +39,12 @@
 .home-search {
   display: inline-block;
   margin: 0 auto 100px;
+
+  &-description {
+    font-size: 13px;
+    color: rgba(1, 30, 17, 0.24);
+    padding-top: 1rem;
+  }
 }
 
 .logo-content {
