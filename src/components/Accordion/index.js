@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classnames from 'classnames';
+import clsx from 'clsx';
 
 import styles from './styles.module.scss';
 
@@ -31,7 +31,7 @@ function Accordion({ title, open = false, children }) {
         aria-expanded={isOpen}
         aria-controls={`answer-${slug}`}
         id={`question-${slug}`}
-        className={classnames(styles.question, isOpen ? styles.question__open : null)}
+        className={clsx(styles.question, isOpen ? styles.question__open : null)}
       >
         {title}
       </button>
@@ -40,7 +40,7 @@ function Accordion({ title, open = false, children }) {
         aria-hidden={!isOpen}
         aria-labelledby={`question-${slug}`}
         id={`answer-${slug}`}
-        className={classnames(styles.answer, !isOpen ? styles.answer__closed : null)}
+        className={clsx(styles.answer, !isOpen ? styles.answer__closed : null)}
       >
         {children}
       </div>
