@@ -48,6 +48,14 @@ h4 {
     --ifm-h2-font-size: 20px;
   }
 
+  & > h4 {
+    --ifm-h2-font-size: 17px;
+  }
+
+  & > h5 {
+    --ifm-h2-font-size: 14px;
+  }
+
   p {
     font-size: 1.0625rem;
     color: var(--ifm-p-color);
