@@ -1,7 +1,7 @@
 ---
 id: wordpress-module
-title: Falcon WordPress Module
-sidebar_label: Falcon WordPress Module
+title: WordPress Module
+sidebar_label: WordPress Module
 enterprise_only: true
 ---
 

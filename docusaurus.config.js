@@ -38,12 +38,12 @@ module.exports = {
             {
               label: 'Composer',
               icon: 'doc',
-              to: '/products/composer'
+              to: '/composer'
             },
             {
               label: 'Storefront',
               icon: 'doc',
-              to: '/products/storefront',
+              to: '/storefront',
               customProps: {
                 label: 'new'
               }
@@ -262,7 +262,7 @@ module.exports = {
           lastVersion: '3',
           versions: {
             3: {
-              label: 'Platform (v3) [BETA]'
+              label: 'Platform (v3)'
             },
             2: {
               label: 'Platform (v2)',

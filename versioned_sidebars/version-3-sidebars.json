@@ -24,6 +24,7 @@
       "items": [
         {
           "type": "doc",
+          "label": "Composer",
           "id": "version-3/composer",
           "customProps": {
             "icon": "doc"
@@ -31,14 +32,15 @@
         },
         {
           "type": "doc",
+          "label": "Storefront",
           "id": "version-3/storefront",
           "customProps": {
-            "icon": "doc",
-            "label": "new"
+            "icon": "doc"
           }
         },
         {
           "type": "doc",
+          "label": "Payments",
           "id": "version-3/payments",
           "customProps": {
             "icon": "doc"
@@ -46,20 +48,16 @@
         },
         {
           "type": "doc",
+          "label": "Console",
           "id": "version-3/console",
           "customProps": {
-            "icon": "doc"
+            "icon": "doc",
+            "label": "new"
           }
         },
         {
           "type": "doc",
-          "id": "version-3/storefront-ui",
-          "customProps": {
-            "icon": "doc"
-          }
-        },
-        {
-          "type": "doc",
+          "label": "Orchestrator",
           "id": "version-3/orchestrator",
           "customProps": {
             "icon": "doc",
@@ -167,7 +165,6 @@
   ],
   "composer": [
     {
-      "collapsed": true,
       "type": "category",
       "label": "Composer",
       "items": [
@@ -184,35 +181,367 @@
     },
     {
       "type": "category",
+      "collapsible": true,
+      "collapsed": false,
       "label": "Getting Started",
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/overview"
+          "id": "version-3/composer/getting-started"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/prerequisites"
+          "id": "version-3/composer/configuration"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": false,
+      "label": "Extensions",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/composer/extensions/about"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/dcloud"
+          "id": "version-3/composer/extensions/shop-extension"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/npm"
+          "id": "version-3/composer/extensions/search-extension"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/create"
+          "id": "version-3/composer/extensions/blog-extension"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/configure"
+          "id": "version-3/composer/extensions/geolocation-extension"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": false,
+      "label": "Common Services",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/common-services/data-sources"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/repository"
+          "id": "version-3/composer/modules/common-services/event-handlers"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/common-services/rest-endpoints"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
+      "label": "Modules",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/module-api"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/bigcommerce-module"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/magento2-module"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/algolia-search-module"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/contentful-module"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/wordpress-module"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/custom-module"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/modules/injectable-services"
+        }
+      ]
+    }
+  ],
+  "storefront": [
+    {
+      "type": "category",
+      "label": "Storefront",
+      "collapsible": false,
+      "items": [
+        {
+          "type": "doc",
+          "label": "Overview",
+          "id": "version-3/storefront"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/key-concepts"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/technical"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/getting-started"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/files"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/configuration"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/webpack"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Building Experiences",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/menu-navbar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/overrides"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/routing"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/meta-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/schema-json"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/browser-support"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Creating Themes",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/theming/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/theming/css-mapping"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/theming/components"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/theming/fonts"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/theming/icons"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/theming/css-sass"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Advanced Features",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/data"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/state"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/translations"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/code-splitting"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/testing"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/static-files"
+        }
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "type": "category",
+      "label": "Payments",
+      "collapsible": false,
+      "items": [
+        {
+          "type": "doc",
+          "label": "Overview",
+          "id": "version-3/payments"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/about"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/config"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/connect"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/usage"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Payment Providers",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/payments/providers/stripe"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/providers/adyen"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/providers/mollie"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/providers/humm"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Payment Methods",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/payments/methods/methods-overview"
+        },
+        {
+           "type": "category",
+           "label": "Configuration",
+           "items": [
+            {
+              "type": "doc",
+              "id": "version-3/payments/methods/features/currencies"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/payments/methods/features/locations"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/payments/methods/features/surcharges"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/payments/methods/features/minMaxAmounts"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/payments/methods/features/sort"
+            }
+          ]
+         }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Upgrading",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/payments/upgrading/overview"
         }
       ]
     }
