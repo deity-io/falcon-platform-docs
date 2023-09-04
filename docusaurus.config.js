@@ -38,12 +38,12 @@ module.exports = {
             {
               label: 'Composer',
               icon: 'doc',
-              to: '/platform/server'
+              to: '/products/composer'
             },
             {
               label: 'Storefront',
               icon: 'doc',
-              to: '/platform/products/storefront',
+              to: '/products/storefront',
               customProps: {
                 label: 'new'
               }
@@ -75,7 +75,7 @@ module.exports = {
             {
               label: 'Orchestrator',
               icon: 'doc',
-              to: '/platform/products/orchestrator',
+              to: '/products/orchestrator',
               customProps: {
                 label: 'soon!',
                 disabled: true
@@ -259,14 +259,14 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,
-          lastVersion: '2',
+          lastVersion: '3',
           versions: {
-            current: {
-              label: 'Platform (v3) [BETA]',
-              path: 'next'
+            3: {
+              label: 'Platform (v3) [BETA]'
             },
             2: {
-              label: 'Platform (v2)'
+              label: 'Platform (v2)',
+              path: 'v2'
             },
             2019: {
               label: 'Platform (v2019)',

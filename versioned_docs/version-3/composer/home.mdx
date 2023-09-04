@@ -1,0 +1,109 @@
+---
+id: home
+title: Composer
+sidebar_label: Composer
+---
+
+import Badge from '@site/src/components/Badge';
+import { TabsContainer, Tabs, TabItem, ChangelogItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
+
+# Deity Composer
+
+<p className="desc">Learn about the latest and previous releases of Deity Composer.</p>
+
+<div className="hr" />
+<div className="date">November 20th, 2022</div>
+
+## Deity Composer v2.41 <Badge variant="green">Stable</Badge>
+
+<TabsContainer packageName="@deity/deity-composer">
+  <Tabs
+    variant="secondary"
+    defaultValue="updates"
+    values={[
+      { label: 'Updates', value: 'updates' },
+      { label: 'Packages', value: 'packages' }
+    ]}
+  >
+    <TabItem value="updates">
+      <ChangelogItem variant="breaking">Fixed several critical bugs that caused the app to crash</ChangelogItem>
+      <ChangelogItem variant="hotfix">Improved security by implementing two-factor authentication</ChangelogItem>
+      <ChangelogItem
+        variant="feature"
+        description="Non facere doloremque est laudantium Quis Ut illo ut consequatur iste et dolor nesciunt et perspiciatis aperiam sit explicabo vitae! Complete overhaul of the app's design and user experience
+Added new feature Z, which allows users to do XYZ
+Improved security by implementing two-factor authentication
+Fixed several critical bugs that caused the app to crash"
+      >
+        Updated user interface for a more modern look
+      </ChangelogItem>
+      <ChangelogItem variant="feature" description="Non facere doloremque est laudantium Quis Ut illo ut consequatur">
+        Added ability to customize the app's interface
+      </ChangelogItem>
+      <ChangelogItem variant="improvement">Improved performance and reduced loading times</ChangelogItem>
+      <ChangelogItem variant="improvement">Improved performance of feature Y</ChangelogItem>
+      <ChangelogItem variant="bugfix">Added a method for getting the current branch.</ChangelogItem>
+      <ChangelogItem variant="bugfix">Fixed bug that caused login issues for some users</ChangelogItem>
+      <ChangelogItem variant="bugfix">Fixed several minor bugs and improved overall stability of the app</ChangelogItem>
+      <ChangelogItem variant="deprecated">changed the version number</ChangelogItem>
+    </TabItem>
+    <TabItem value="packages">
+      <CodeBlock language="json">
+        {`"devDependencies": {
+    "@deity/falcon-mollie-plugin": "3.0.0-beta.4",  // up from "3.0.0-beta.3"
+    "@deity/falcon-payment-plugin": "3.0.0-beta.4", // up from "3.0.0-beta.3"
+    "@deity/falcon-paypal-plugin": "3.0.0-beta.7",  // up from "3.0.0-beta.6"
+    "@deity/falcon-mollie-plugin": "3.0.0-beta.4",  // up from "3.0.0-beta.3"
+    "@deity/falcon-payment-plugin": "3.0.0-beta.4", // up from "3.0.0-beta.3"
+    "@deity/falcon-paypal-plugin": "3.0.0-beta.7",  // up from "3.0.0-beta.6"
+    "@deity/falcon-mollie-plugin": "3.0.0-beta.4",  // up from "3.0.0-beta.3"
+    "@deity/falcon-payment-plugin": "3.0.0-beta.4", // up from "3.0.0-beta.3"
+    "@deity/falcon-paypal-plugin": "3.0.0-beta.7",  // up from "3.0.0-beta.6"
+}`}
+      </CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>
+<hr />
+<div className="date">November 19th, 2021</div>
+
+## Deity Composer v2.40 <Badge variant="green">Stable</Badge>
+
+<p className="desc">
+  This release brings all kinds of exciting new features, quality of life and performance improvements plus a lot of
+  bugfixes. Read our blog for a more detailed rundown.
+</p>
+
+<TabsContainer packageName="@deity/deity-composer">
+  <Tabs
+    variant="secondary"
+    defaultValue="updates"
+    values={[
+      { label: 'Updates', value: 'updates' },
+      { label: 'Packages', value: 'packages' }
+    ]}
+  >
+    <TabItem value="updates">
+      <ChangelogItem variant="bugfix">Added a method for getting the current branch.</ChangelogItem>
+      <ChangelogItem variant="bugfix">Fixed bug that caused login issues for some users</ChangelogItem>
+      <ChangelogItem variant="bugfix">Fixed several minor bugs and improved overall stability of the app</ChangelogItem>
+      <ChangelogItem variant="deprecated">changed the version number</ChangelogItem>
+    </TabItem>
+    <TabItem value="packages">
+      <CodeBlock language="json">
+        {`"devDependencies": {
+    "@deity/falcon-mollie-plugin": "3.0.0-beta.4",  // up from "3.0.0-beta.3"
+    "@deity/falcon-payment-plugin": "3.0.0-beta.4", // up from "3.0.0-beta.3"
+    "@deity/falcon-paypal-plugin": "3.0.0-beta.7",  // up from "3.0.0-beta.6"
+    "@deity/falcon-mollie-plugin": "3.0.0-beta.4",  // up from "3.0.0-beta.3"
+    "@deity/falcon-payment-plugin": "3.0.0-beta.4", // up from "3.0.0-beta.3"
+    "@deity/falcon-paypal-plugin": "3.0.0-beta.7",  // up from "3.0.0-beta.6"
+    "@deity/falcon-mollie-plugin": "3.0.0-beta.4",  // up from "3.0.0-beta.3"
+    "@deity/falcon-payment-plugin": "3.0.0-beta.4", // up from "3.0.0-beta.3"
+    "@deity/falcon-paypal-plugin": "3.0.0-beta.7",  // up from "3.0.0-beta.6"
+}`}
+      </CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>

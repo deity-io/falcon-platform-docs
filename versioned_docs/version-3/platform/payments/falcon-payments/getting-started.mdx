@@ -1,0 +1,107 @@
+---
+id: getting-started
+title: Getting Started with Falcon Payments
+sidebar_label: Getting Started
+enterprise_only: true
+---
+
+Getting started with an existing payment provider is simple. If you want to do this manually you can do this using `npm` or `yarn` from your `server` directory. If you're using our **BigCommerce** integration this can be done through the **BigCommerce** admin.
+
+## 1. Add the packages you need
+
+import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
+
+<TabsContainer title="Don't include the providers you're not using">
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock
+        language="bash"
+        children={`
+npm install @deity/falcon-payments
+npm install @deity/falcon-payments-env
+npm install @deity/falcon-payments-endpoints
+npm install @deity/falcon-payments-stripe
+npm install @deity/falcon-payments-mollie
+npm install @deity/falcon-payments-plain
+      `.trim()}
+      />
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock
+        language="bash"
+        children={`
+yarn add @deity/falcon-payments
+yarn add @deity/falcon-payments-env
+yarn add @deity/falcon-payments-endpoints
+yarn add @deity/falcon-payments-stripe
+yarn add @deity/falcon-payments-mollie
+yarn add @deity/falcon-payments-plain
+      `.trim()}
+      />
+    </TabItem>
+  </Tabs>
+</TabsContainer>
+
+## 2. Create a payment provider account
+
+Each payment provider will require different credentials to get started. Normally an `api key` and an `api secret`. You'll need these to get started.
+
+## 3. Configure your payment components
+
+In your Falcon Server configuration files you can configure both your endpoints (for Webhooks) and your payment components.
+
+```json
+{
+  "components": {
+    "payments": {
+      "package": "@deity/falcon-payments",
+      "config": {
+        "webhookBaseUrl": "https://myBackEndUrl.com",
+        "webhookUrl": "/falcon-payments/webhook",
+        "redirectBaseUrl": "https://myAwesomeWebsite.com",
+        "redirectUrl": "/checkout/pending",
+        "skipSurcharges": false,
+        "providers": {
+          "stripe": {
+            "enabled": true,
+            "package": "@deity/falcon-payments-stripe",
+            "config": {
+              ... // API credentials go here
+            }
+          },
+          "mollie": {
+            "enabled": true,
+            "package": "@deity/falcon-payments-mollie",
+            "config": {
+              ... // API credentials go here
+            }
+          }
+        }
+      }
+    }
+  },
+  "endpoints": {
+    "payments": {
+      "package": "@deity/falcon-payments-endpoints",
+      "config": {
+        "protocol": "https",
+        "host": "https",
+        "url": "/falcon-payments/webhook",
+        "paymentsComponent": "payments" // This indicates we are using the payments compoent, that in turn is using @deity/falcon-payments
+      }
+    }
+  }
+}
+```
+
+## 4. Integrate with your client side app
+
+The final step is to add your method UI components to Falcon Client and start processing payments. The best place to start is using one of our examples apps, or reading our [integration guide](integration).
