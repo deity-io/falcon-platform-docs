@@ -14,7 +14,8 @@
         },
         {
           "type": "doc",
-          "id": "version-3/platform/overview/getting-started"
+          "label": "Getting Started",
+          "id": "version-3/platform/getting-started/overview"
         }
       ]
     },
@@ -120,10 +121,6 @@
         {
           "type": "doc",
           "id": "version-3/platform/overview/key-concepts"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/overview/getting-started"
         }
       ]
     },
@@ -187,11 +184,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/composer/getting-started"
+          "id": "version-3/composer/getting-started/installation"
         },
         {
           "type": "doc",
-          "id": "version-3/composer/configuration"
+          "id": "version-3/composer/getting-started/cli-commands"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/getting-started/configuration"
         }
       ]
     },
@@ -317,19 +318,23 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/storefront/getting-started"
+          "id": "version-3/storefront/getting-started/installation"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/files"
+          "id": "version-3/storefront/getting-started/cli-commands"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/configuration"
+          "id": "version-3/storefront/getting-started/files"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/webpack"
+          "id": "version-3/storefront/getting-started/configuration"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/webpack"
         }
       ]
     },
@@ -455,7 +460,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/payments/getting-started/overview"
+          "id": "version-3/payments/getting-started/installation"
         },
         {
           "type": "doc",
@@ -544,6 +549,25 @@
           "id": "version-3/payments/upgrading/overview"
         }
       ]
+    },
+    {
+      "type": "category",
+      "label": "Release Notes",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/payments/release/full-changelog"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/release/1-0-0"
+        }
+      ],
+    },
+    {
+      "type": "link",
+      "label": "API Reference",
+      "href": "https://dpsg.deity.cloud/",
     }
   ],
   "version-3/falconPlatformSidebar": [
@@ -562,41 +586,7 @@
         }
       ]
     },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Getting Started",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/prerequisites"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/dcloud"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/npm"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/create"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/configure"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/repository"
-        }
-      ]
-    },
+    
     {
       "collapsed": true,
       "type": "category",

@@ -1,7 +1,7 @@
 ---
-id: overview
+id: installation
 title: Getting Started
-sidebar_label: Introduction
+sidebar_label: Installation
 description: Getting started with DPSG
 ---
 
