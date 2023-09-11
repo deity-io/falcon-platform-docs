@@ -562,12 +562,12 @@
           "type": "doc",
           "id": "version-3/payments/release/1-0-0"
         }
-      ],
+      ]
     },
     {
       "type": "link",
       "label": "API Reference",
-      "href": "https://dpsg.deity.cloud/",
+      "href": "https://dpsg.deity.cloud/"
     }
   ],
   "version-3/falconPlatformSidebar": [
