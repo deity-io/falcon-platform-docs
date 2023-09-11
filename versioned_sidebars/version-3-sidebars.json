@@ -56,6 +56,16 @@
             "label": "new"
           }
         },
+        
+        {
+          "type": "doc",
+          "label": "Integrations",
+          "id": "version-3/integrations",
+          "customProps": {
+            "icon": "doc",
+            "count": 13
+          }
+        },
         {
           "type": "doc",
           "label": "Orchestrator",
@@ -86,6 +96,7 @@
         },
         {
           "type": "doc",
+          "label": "Changelog",
           "id": "version-3/platform/release/full-changelog",
           "className": "gray-link"
         },
@@ -156,6 +167,162 @@
         {
           "type": "doc",
           "id": "version-3/platform/getting-started/repository"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/getting-started/deployment"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/platform/resources/tutorials"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/resources/faq"
+        },
+        {
+          "type": "html",
+          "value": "<hr/>"
+        },
+        {
+          "type": "doc",
+          "label": "Release Notes",
+          "id": "version-3/platform/release/full-changelog",
+          "className": "gray-link"
+        },
+        {
+          "type": "category",
+          "label": "Releases",
+          "collapsible": true,
+          "collapsed": true,
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-18"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-17"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-16"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-15"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-14"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-13"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-12"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-11"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-10"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-9"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-8"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-7"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-6"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-5"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-4"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-3"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-1"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-5"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-4"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-5-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-8"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-6"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-3-1"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-3-0"
+            }
+          ]
         }
       ]
     }
@@ -199,7 +366,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "collapsed": false,
+      "collapsed": true,
       "label": "Extensions",
       "items": [
         {
@@ -227,7 +394,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "collapsed": false,
+      "collapsed": true,
       "label": "Common Services",
       "items": [
         {
@@ -285,6 +452,42 @@
         {
           "type": "doc",
           "id": "version-3/composer/modules/injectable-services"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
+      "label": "Integrations",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/examples"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/algolia"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/bigcommerce/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/magento2/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/stripe"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/mollie"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/integration/wordpress"
         }
       ]
     }
@@ -551,13 +754,21 @@
       ]
     },
     {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
+      "type": "doc",
+      "label": "Changelog",
+      "id": "version-3/payments/release/full-changelog",
+      "className": "gray-link"
+    },
+    {
       "type": "category",
-      "label": "Release Notes",
+      "label": "Releases",
+      "collapsible": true,
+      "collapsed": true,
       "items": [
-        {
-          "type": "doc",
-          "id": "version-3/payments/release/full-changelog"
-        },
         {
           "type": "doc",
           "id": "version-3/payments/release/1-0-0"
@@ -565,9 +776,122 @@
       ]
     },
     {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
       "type": "link",
       "label": "API Reference",
-      "href": "https://dpsg.deity.cloud/"
+      "href": "https://dpsg.deity.cloud/",
+      "className": "gray-link"
+    }
+  ],
+  "integrations": [
+    {
+      "type": "category",
+      "label": "Integrations",
+      "items": [
+        {
+          "type": "doc",
+          "label": "Overview",
+          "id": "version-3/integrations"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/examples"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Shop Platforms",
+      "collapsible": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/integrations/magento2"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/commercetools"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/bigcommerce"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/shopware",
+          "customProps": {
+            "disabled": true,
+            "label": "soon!"
+          }
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Search",
+      "collapsible": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/integrations/algolia"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/unbxd"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Payments",
+      "collapsible": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/integrations/mollie"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/stripe"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/adyen"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/humm"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Promotions",
+      "collapsible": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/integrations/talonone"
+        }
+      ]
+    },       
+    {
+      "type": "category",
+      "label": "CMS",
+      "collapsible": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/integrations/contentful"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/wordpress"
+        }
+      ]
     }
   ],
   "version-3/falconPlatformSidebar": [
@@ -1169,137 +1493,6 @@
         {
           "type": "doc",
           "id": "version-3/platform/packages/normal-module-override-webpack-plugin"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Release Notes",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/full-changelog"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-18"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-17"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-16"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-15"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-14"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-13"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-12"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-11"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-10"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-9"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-8"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-7"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-6"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-5"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-4"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-3"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-1"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-5"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-4"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-5-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-8"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-6"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-3-1"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-3-0"
         }
       ]
     },

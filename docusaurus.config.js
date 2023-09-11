@@ -43,21 +43,21 @@ module.exports = {
             {
               label: 'Storefront',
               icon: 'doc',
-              to: '/storefront',
-              customProps: {
-                label: 'new'
-              }
+              to: '/storefront'
+              
             },
             {
               label: 'Payments',
               icon: 'doc',
-              to: '/dpsg/docs/getting-started/overview',
-              activeBasePath: '/dpsg/docs/'
+              to: '/payments'
             },
             {
               label: 'Console',
               icon: 'doc',
-              to: '#'
+              to: '/console',
+              customProps: {
+                label: 'new'
+              }
             },
             {
               type: 'html',
@@ -66,8 +66,7 @@ module.exports = {
             {
               label: 'Integrations',
               icon: 'doc',
-              to: '/platform/integration/examples',
-              activeBasePath: '/platform/integration',
+              to: '/integrations',
               customProps: {
                 count: 13
               }
@@ -75,7 +74,7 @@ module.exports = {
             {
               label: 'Orchestrator',
               icon: 'doc',
-              to: '/products/orchestrator',
+              to: '/orchestrator',
               customProps: {
                 label: 'soon!',
                 disabled: true
@@ -111,19 +110,19 @@ module.exports = {
             },
             {
               label: 'Composer',
-              to: '#'
+              to: '/composer'
             },
             {
               label: 'Storefront',
-              to: '/platform/products/storefront'
-            },
-            {
-              label: 'Cloud',
-              to: '#'
+              to: '/storefront'
             },
             {
               label: 'Payments',
-              to: '#'
+              to: '/payments'
+            },
+            {
+              label: 'Console',
+              to: '/console'
             }
           ]
         },
