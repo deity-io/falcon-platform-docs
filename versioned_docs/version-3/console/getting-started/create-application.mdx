@@ -1,0 +1,41 @@
+---
+id: create-application
+title: Create Deity Application
+sidebar_label: 2. Create Application
+---
+
+Now that you have access to our packages, let’s create a Deity template application. You can choose from three of our templates:
+
+<code>demo-v1 : template with preconfigured Magento 2 store and a WordPress blog</code><br/><br/>
+
+<code>demo-v2 : template based on a BigCommerce store and Algolia search engine</code><br/><br/>
+
+<code>demo-v3 : template based on a Commercetools store and Contentful blog</code><br/><br/>
+
+You can generate one of these template apps by running the following command in your terminal
+
+
+```bash
+npx @deity/create-falcon-app --full <demo version> <project-name> 
+```
+
+A new project will be created into the directory <code>&lt;project-name&gt;</code>. The file structure is straightforward:
+
+```bash
+project-name/
+	|-client
+	|-server
+```
+
+You can run the project on your local machine. Note that you will need to run both apps separately as follows:
+
+
+```bash
+cd client
+yarn start
+```
+
+```bash
+cd server
+yarn start
+```

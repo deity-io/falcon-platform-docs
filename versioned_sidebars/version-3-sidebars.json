@@ -367,6 +367,34 @@
       "type": "category",
       "collapsible": true,
       "collapsed": true,
+      "label": "Core",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/dynamic-routing"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/extending-falcon-server"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/extension-scopes"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/mailer"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/geoip"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
       "label": "Extensions",
       "items": [
         {
@@ -488,6 +516,34 @@
         {
           "type": "doc",
           "id": "version-3/composer/integration/wordpress"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
+      "label": "Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/composer/resources/tutorials"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/resources/faq"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/resources/migration-guide"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/resources/packages"
         }
       ]
     }
@@ -634,6 +690,67 @@
         {
           "type": "doc",
           "id": "version-3/storefront/static-files"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/caching"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
+      "label": "Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/tutorials"
+        },
+        
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/faq"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
+      "label": "Cookbook",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/change-logo"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/analytics"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/themeable-component"
+        },
+         {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/scss-global"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/post-css-support"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/cookbook/testing"
         }
       ]
     }
@@ -833,6 +950,7 @@
       "type": "category",
       "label": "Search",
       "collapsible": true,
+      "collapsed": true,
       "items": [
         {
           "type": "doc",
@@ -848,6 +966,7 @@
       "type": "category",
       "label": "Payments",
       "collapsible": true,
+      "collapsed": true,
       "items": [
         {
           "type": "doc",
@@ -871,6 +990,7 @@
       "type": "category",
       "label": "Promotions",
       "collapsible": true,
+      "collapsed": true,
       "items": [
         {
           "type": "doc",
@@ -882,6 +1002,7 @@
       "type": "category",
       "label": "CMS",
       "collapsible": true,
+      "collapsed": true,
       "items": [
         {
           "type": "doc",
@@ -892,8 +1013,98 @@
           "id": "version-3/integrations/wordpress"
         }
       ]
+    },
+    {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "collapsed": true,
+      "label": "Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/integrations/resources/tutorials"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/resources/faq"
+        }
+      ]
     }
   ],
+  "console": [
+  {
+    "type": "category",
+    "label": "Console",
+    "collapsible": false,
+    "items": [
+      {
+        "type": "doc",
+        "label": "Overview",
+        "id": "version-3/console"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/key-concepts"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Getting Started",
+    "collapsible": true,
+    "collapsed": false,
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/getting-started/sign-up"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/getting-started/deity-project"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/getting-started/access-packages"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/getting-started/create-application"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/getting-started/link-repository"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Deity Cloud",
+    "collapsible": true,
+    "collapsed": true,
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/cloud/about"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/cloud/prerequisites"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/cloud/installation"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/cloud/technical"
+      }
+    ]
+  }
+],
   "version-3/falconPlatformSidebar": [
     {
       "collapsed": true,
