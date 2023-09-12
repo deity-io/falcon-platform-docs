@@ -1,0 +1,51 @@
+---
+id: codebase
+title: Codebase
+sidebar_label: Codebase
+---
+If you’ve followed the Getting Started instructions, you’ve successfully set-up your Deity project and connected it to your Git repository.
+
+## npm
+Follow the instructions to configure npm access on your local machine. 
+
+### Access Deity’s npm packages
+Navigate to Settings > Codebase to find your npm token. In order to access the Deity packages, you will connect to the private npm registry using this token. We recommend adding your token to a user config, it can however be added in your projects root.
+
+You'll need to either create or edit a .npmrc file. The user config can be found in your users root directory ~/.npmrc. If you don't have one, you can create one:
+
+```bash
+nano ~/.npmrc
+```
+
+Add the npm token to your `.npmrc` file, for example:
+
+
+```bash
+@deity:registry=https://npm.deity.io
+//npm.deity.io/:_authToken=<YOUR_TOKEN>
+```
+
+You can test whether it is configured correctly by running the following command, which will output the list of available version of our demo app creation.
+
+
+```bash
+npm view @deity/create-falcon-app
+```
+
+
+### Git repository
+Once you’ve created a new Deity project on your local machine, you can push this to your repository of choice. We currently support GitHub, GitLab and Bitbucket.
+
+If you’ve already set up a webhook in your Git repository provider and pushed your code to your repository, it will have triggered the detection of your repository. You’ll see it listed after that. For example
+
+git@github.com:deity-io/deity-falcon-cloud-example-app.git
+
+Setting up for the first time
+To link your repository to the Deity platform and enable automatic build creation, you’ll need to configure read access on the repository, and a webhook to notify Deity of push events.
+
+Copy the SSH key, and add it as a read-only deploy key to your repository.
+
+Next up, you’ll want to copy the webhook URL. Add it to your repository, set the content type to application/json and select the git push event to trigger the webhook.
+
+You can test if the configuration was successful by pushing your code to the repository. You should see your repository name appear in the console, as well as a new build.
+

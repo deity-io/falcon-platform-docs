@@ -3,23 +3,51 @@ id: create-application
 title: Create Deity Application
 sidebar_label: 2. Create Application
 ---
+import { Card, CardContent } from '@site/src/components/Card';
+import Badge from '@site/src/components/Badge';
 
 Now that you have access to our packages, let’s create a Deity template application. You can choose from three of our templates:
+<div class="mb20">
+ <Card variant="horizontal" to="/#">
+ 	<img src="/img/icons/magento.svg" className="round-icon" />&nbsp;+&nbsp;
+ 	<img src="/img/icons/wordpress.svg" className="round-icon" />
+    <div>
+      <h5>demo-v1</h5>
+      <p>
+       Template with preconfigured Magento 2 store and a WordPress blog.
+      </p>
+    </div>
+ </Card>
+ <Card variant="horizontal" to="/#">
+    <img src="/img/icons/bigcommerce.svg" className="round-icon" />&nbsp;+&nbsp;
+    <img src="/img/icons/algolia.svg" className="round-icon" />
+    <div>
+      <h5>demo-v2</h5>
+      <p>
+       Template based on a BigCommerce store and Algolia search engine.
+      </p>
+    </div>
+ </Card>
+ <Card variant="horizontal" to="/#">
+ 	<img src="/img/icons/commercetools.svg" className="round-icon" />&nbsp;+&nbsp;
+    <img src="/img/icons/contentful.svg" className="round-icon" />
+    <div>
+      <h5>demo-v3</h5>
+      <p>
+       Template based on a Commercetools store and Contentful blog.
+      </p>
+    </div>
+    
+ </Card>
+</div>
 
-<code>demo-v1 : template with preconfigured Magento 2 store and a WordPress blog</code><br/><br/>
-
-<code>demo-v2 : template based on a BigCommerce store and Algolia search engine</code><br/><br/>
-
-<code>demo-v3 : template based on a Commercetools store and Contentful blog</code><br/><br/>
-
-You can generate one of these template apps by running the following command in your terminal
-
+You can generate one of these template apps by running the following command in your terminal:
 
 ```bash
 npx @deity/create-falcon-app --full <demo version> <project-name> 
 ```
 
-A new project will be created into the directory <code>&lt;project-name&gt;</code>. The file structure is straightforward:
+A new project will be created into the directory `<project-name>`. The file structure is straightforward:
 
 ```bash
 project-name/

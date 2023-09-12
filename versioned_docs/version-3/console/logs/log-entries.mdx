@@ -1,0 +1,41 @@
+---
+id: log-entries
+title: Log Explorer
+sidebar_label: Log Explorer
+---
+The log explorer enables you to scrutinize and interrogate the logs produced by your remote Composer and Storefront applications. The logs displayed are relevant to the environment you have chosen, which you can switch using the dropdown menu in the top navigation. Please bear in mind that only the logs emanating from remote environments are visible in your console; logs from local applications executed on your machine will not appear here. For local development, you can utilize our CLI tool to inspect logs.
+
+### Log entries
+Each log entry can be expanded to show detailed information. For most entries, you will find the following types of basic information per entry:
+
+severity: indicates the severity classification of the entry. Default severity values - from lowest to highest - are trace, info, debug, warning, error and critical.
+
+app: indicates from which application the log entry was produced — either falcon-server or falcon-client.
+
+name: indicates the module which produced the log. For composer logs, this is typically the name of the platform module
+
+durationMs: the amount of milliseconds it took to resolve an outgoing request
+
+msg: the log message
+
+timestamp: the timestamp of the log in GMT+2
+
+Additional log fields may be available depending on the type of entry, e.g. a cache entry may show more information.
+
+### Searching logs
+You can use the search and filtering options to narrow down the listed entries. You can:
+
+Do a full-text search, which will search through the entire log entry payload. Searches are executed on an exact-match basis.
+
+Filter on source module. Your input is matched exactly against the module name field. For example, use this to filter on logs produced by your BigCommerce module.
+
+Select the start date, which is the minimum timestamp of the log entry, based on a GMT+2 timezone. Only log entries created on or after the selected date and time will be displayed.
+
+Select the end date, which is the maximum timestamp of the log entry, based on a GMT+2 timezone. Only log entries created on or before the selected date and time will be displayed.
+
+Filter on the severity level. You can select a single severity level to filter on.
+
+### Log settings
+You may want to collect logs differently per environment. Common use cases are to collect the most detailed level of logs on your test environment, while on your production environment you only want to log warnings and higher.
+
+You can control these settings in your logs panel. Click the cogwheel and select the minimum log level you want the currently selected environment to produce. For example, if you select Error, only error and critical level logs will be produced.

@@ -1,0 +1,45 @@
+---
+id: domains
+title: Domains
+sidebar_label: Domains
+---
+You can manage create and assign custom domains to your remote environments, so that you can link your own domain to the Deity application. Please note that you must bring your own domain from any given registry such as GoDaddy, Cloudflare, domain.com or something similar, you can not buy them from Deity.
+
+### Steps to follow
+The steps to set a custom domain for one of your custom environment is as follows:
+
+1. Create a domain
+
+2. Verify ownership of the domain
+
+3. Configure the SSL certificate
+
+4. Assign the domain to an environment
+
+### Create a domain
+You can create as many domains as required by clicking the Add new domain button. You will be promped to enter the domain name. In case you want to setup a subdomain, you should enter it as such. Paths, however, must not be entered. All domains are prefixed with https://. A few examples:
+
+acmecorp.com —> valid
+
+www.acmecorp.com —> valid
+
+shop.acmecorp.com —> valid
+
+https://acmecorp.com —> invalid
+
+acmecorp.com/shop —> invalid
+
+You can now create the domain, after which it’ll be in pending ownership verification status.
+
+### Verify ownership of the domain
+The next step is to validate ownership of your domain. We require you to add a txt record to your DNS manager. If you can, set the TTL of the record as low as possible, so that validation occurs quickly.
+
+Once it’s propagated, you can check the validation status by clicking Validate DNS configuration in your console. If successful, the status of the domain will now display pending validation.
+
+### Configure SSL
+You can then carry on by adding another txt record to your DNS registry, this time to configure the SSL certificate. Once added, click the validate button to check for if your records have propagated. If successful, your domain status will now be configured and ready to be assigned to an environment!
+
+### Assign your domain to an environment
+Once your domain is configured, you can assign it to any one of your available environments. Once you have selected an environment, you will see the cname record. This is the last record you will need to add to your DNS registry. Once you have done so, please allow up to 24 hours for DNS propagation to take effect. Usually, this process completes in a few minutes.
+
+

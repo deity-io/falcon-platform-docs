@@ -6,11 +6,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/overview/about"
+          "id": "version-3/platform/about"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/overview/key-concepts"
+          "id": "version-3/platform/key-concepts"
         },
         {
           "type": "doc",
@@ -127,11 +127,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/overview/about"
+          "id": "version-3/platform/about"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/overview/key-concepts"
+          "id": "version-3/platform/key-concepts"
         }
       ]
     },
@@ -768,7 +768,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3/payments/about"
+          "id": "version-3/payments/key-concepts"
         }
       ]
     },
@@ -1082,7 +1082,148 @@
   },
   {
     "type": "category",
-    "label": "Deity Cloud",
+    "label": "Organization",
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "doc", "id": "version-3/console/organization"
+    },
+    "items": [ 
+      {
+        "type": "doc",
+        "id": "version-3/console/organization/projects"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/organization/billing-details"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/organization/invoices"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/organization/users"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Settings",
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "doc", "id": "version-3/console/settings"
+    },   
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/settings/environments"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/settings/codebase"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Composer",
+    "collapsible": true,
+    "collapsed": true,  
+    "link": {
+        "type": "doc", "id": "version-3/console/composer"
+    },     
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/composer/integrations"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/composer/variables"
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Payments",
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "doc", "id": "version-3/console/payments"
+    },       
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/payments/profiles"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/payments/providers"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/payments/payment-methods"
+      }   
+    ]
+  },
+  {
+    "type": "category",
+    "label": "Storefront",
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "doc", "id": "version-3/console/storefront"
+    },       
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/storefront/domains"
+      }
+    ]
+  },    
+  {
+    "type": "category",
+    "label": "Builds & Deployments",
+    "collapsible": true,
+    "collapsed": true, 
+    "link": {
+        "type": "doc", "id": "version-3/console/builds-deployments"
+    },
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/builds-deployments/builds"
+      },
+      {
+        "type": "doc",
+        "id": "version-3/console/builds-deployments/deployments"
+      }
+    ]
+  },  
+  {
+    "type": "category",
+    "label": "Logs",
+    "collapsible": true,
+    "collapsed": true,  
+    "link": {
+        "type": "doc", "id": "version-3/console/logs"
+    },     
+    "items": [
+      {
+        "type": "doc",
+        "id": "version-3/console/logs/log-entries"
+      }
+    ]
+  },         
+  {
+    "type": "html",
+    "value": "<hr/>"
+  },
+  {
+    "type": "category",
+    "label": "Resources",
     "collapsible": true,
     "collapsed": true,
     "items": [
