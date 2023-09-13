@@ -1,5 +1,5 @@
 ---
-id: overview
+id: redirects
 title: Redirects
 sidebar_label: Redirects
 ---

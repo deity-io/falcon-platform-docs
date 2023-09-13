@@ -13,6 +13,7 @@ import SearchBar from '@theme/SearchBar';
 import { Card, CardContent } from '@site/src/components/Card';
 import Badge from '@site/src/components/Badge';
 import LogoImg from '/img/logo.svg';
+import Button from '@site/src/components/Button';
 
 <div className="text-center pt80">
   <Badge>Help center</Badge>
@@ -27,12 +28,25 @@ import LogoImg from '/img/logo.svg';
   <div className="flex">
     <CardContent>
       <LogoImg className="logo-content" />
-      <p>
-        Deity is the endlessly flexible commerce platform providing the utmost customer centric approach to any
-        fast-growing and forward thinking ecommerce merchant.
-      </p>
+      <div className="mb20">
+        <p >
+          Deity is the endlessly flexible commerce platform providing the utmost customer centric approach to any
+          fast-growing and forward thinking ecommerce merchant.
+        </p>
+      </div>  
+      
+     <Button variant="contained" size="medium" href="/#">
+        Learn more
+     </Button>
+    <Button variant="outline" size="medium" href="/#">
+        Schedule a demo
+     </Button>
     </CardContent>
-    <div className="right-big-card" />
+    <div className="right-big-card">
+      <CardContent >
+        <img src="img/composable-commerce.svg"/>
+      </CardContent>
+    </div>
   </div>
 </Card>
 
@@ -60,27 +74,27 @@ import LogoImg from '/img/logo.svg';
 </div>
 
 <Badge>Products</Badge>
-<h1 className="mb20 headline2">Headline</h1>
+<h1 className="mb20 headline2">Pick your topic</h1>
 <div className="flex mb100">
   <Card to="/#">
     <img src="/img/icons/ticker.svg" />
     <h4>Composer</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+    <p>Compose the best of breed digital experiences.</p>
   </Card>
   <Card to="/#">
     <img src="/img/icons/data.svg" />
     <h4>Storefront</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+    <p>Create unified web and app experiences.</p>
   </Card>
   <Card to="/#">
     <img src="/img/icons/coins.svg" />
     <h4>Payments</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+    <p>Integrate multiple payment service providers to use any payment method.</p>
   </Card>
   <Card to="/#">
     <img src="/img/icons/switch.svg" />
     <h4>Console</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+    <p>Manage your subscriptions, users, deployments, integrations and more with our web-based application.</p>
   </Card>
 </div>
 
@@ -153,107 +167,8 @@ import LogoImg from '/img/logo.svg';
   </Card>
 </div>
 
-<Badge>Integrations</Badge>
-<h1 className="mb20 headline2">
-  Unlock the full potential of your e-commerce business with our powerful integrations.{' '}
-</h1>
-<div className="flex">
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/adyen.svg" />
-    </div>
-    <h4>Adyen</h4>
-    <p>
-      End-to-end payments, data, and financial management in one solution. Meet the financial technology platform that
-      helps you realize your ambitions faster.
-    </p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/algolia.svg" />
-    </div>
-    <h4>Algolia</h4>
-    <p>
-      Algolia is the leader in globally scalable, secure, digital experiences that are ultrafast and reliable.
-      globe-home-page. Fast & flexible.
-    </p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/bigcommerce.svg" />
-    </div>
-    <h4>Bigcommerce</h4>
-    <p>
-      Learn how BigCommerce powers your business with enterprise ecommerce capabilities—with lower cost and complexity.
-    </p>
-  </Card>
-</div>
-<div className="flex">
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/contentful.svg" />
-    </div>
-    <h4>Contentful</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/commercetools.svg" />
-    </div>
-    <h4>Commercetools</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/magento.svg" />
-    </div>
-    <h4>Magento</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-</div>
-<div className="flex">
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/mollie.svg" />
-    </div>
-    <h4>Mollie</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/unbxd.svg" />
-    </div>
-    <h4>Unbxd</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/humm.svg" />
-    </div>
-    <h4>Humm</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-</div>
-<div className="flex mb100">
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/stripe.svg" />
-    </div>
-    <h4>Stripe</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/talonone.svg" />
-    </div>
-    <h4>TalonOne</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-  <Card to="/#">
-    <div className="round-icon">
-      <img src="/img/icons/wordpress.svg" />
-    </div>
-    <h4>Wordpress</h4>
-    <p>In augue sagittis, ac ullamcorper neque morbi. Sit purus aliquam.</p>
-  </Card>
-</div>
+import IntegrationContent from "./integrations.mdx"
+
+<IntegrationContent />
+
+

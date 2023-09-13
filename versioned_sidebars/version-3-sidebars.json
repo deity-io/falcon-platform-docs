@@ -6,7 +6,8 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/about"
+          "label": "Overview",
+          "id": "version-3/platform"
         },
         {
           "type": "doc",
@@ -28,7 +29,7 @@
           "label": "Composer",
           "id": "version-3/composer",
           "customProps": {
-            "icon": "doc"
+            "icon": "composer"
           }
         },
         {
@@ -36,7 +37,7 @@
           "label": "Storefront",
           "id": "version-3/storefront",
           "customProps": {
-            "icon": "doc"
+            "icon": "storefront"
           }
         },
         {
@@ -44,25 +45,24 @@
           "label": "Payments",
           "id": "version-3/payments",
           "customProps": {
-            "icon": "doc"
+            "icon": "payments"
           }
         },
         {
           "type": "doc",
-          "label": "Console",
+          "label": "Cloud Console",
           "id": "version-3/console",
           "customProps": {
-            "icon": "doc",
+            "icon": "console",
             "label": "new"
           }
         },
-        
         {
           "type": "doc",
           "label": "Integrations",
           "id": "version-3/integrations",
           "customProps": {
-            "icon": "doc",
+            "icon": "integrations",
             "count": 13
           }
         },
@@ -71,7 +71,7 @@
           "label": "Orchestrator",
           "id": "version-3/orchestrator",
           "customProps": {
-            "icon": "doc",
+            "icon": "orchestrator",
             "disabled": true,
             "label": "soon!"
           }
@@ -84,11 +84,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/resources/tutorials"
+          "id": "version-3/storefront/resources/app-store"
+        },        
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/tutorials"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/resources/faq"
+          "id": "version-3/platform/support/faqs"
         },
         {
           "type": "html",
@@ -97,7 +101,7 @@
         {
           "type": "doc",
           "label": "Changelog",
-          "id": "version-3/platform/release/full-changelog",
+          "id": "version-3/platform/changelog",
           "className": "gray-link"
         },
         {
@@ -124,19 +128,28 @@
     {
       "type": "category",
       "label": "Platform",
+      "className": "icon platform",
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/about"
+          "label": "Overview",
+          "id": "version-3/platform"
         },
         {
           "type": "doc",
           "id": "version-3/platform/key-concepts"
+        },
+        {
+          "type": "doc",
+          "label": "Cloud Console",
+          "id": "version-3/console"
         }
       ]
     },
     {
-      "collapsed": true,
+      "collapsed": false,
+      "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/platform/getting-started"},
       "type": "category",
       "label": "Getting Started",
       "items": [
@@ -177,19 +190,35 @@
     {
       "type": "category",
       "label": "Resources",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {"type": "generated-index", "slug": "/platform/resources"},
       "items": [
         {
           "type": "doc",
-          "id": "version-3/platform/resources/tutorials"
+          "id": "version-3/platform/resources/redirects"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/resources/faq"
+          "id": "version-3/platform/resources/packages"
         },
         {
-          "type": "html",
-          "value": "<hr/>"
+          "type": "doc",
+          "id": "version-3/platform/support/tutorials"
         },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Releases",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {"type": "generated-index", "slug": "/platform/releases"},
+      "items": [
         {
           "type": "doc",
           "label": "Release Notes",
@@ -197,132 +226,124 @@
           "className": "gray-link"
         },
         {
-          "type": "category",
-          "label": "Releases",
-          "collapsible": true,
-          "collapsed": true,
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-18"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-17"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-16"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-15"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-14"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-13"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-12"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-11"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-10"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-9"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-8"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-7"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-6"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-5"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-4"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-3"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-2"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-1"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-7-0"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-6-5"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-6-4"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-6-2"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-6-0"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-5-0"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-4-8"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-4-6"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-4-2"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-4-0"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-3-1"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/release/2-3-0"
-            }
-          ]
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-18"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-17"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-16"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-15"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-14"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-13"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-12"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-11"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-10"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-9"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-8"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-7"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-6"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-5"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-4"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-3"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-2"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-1"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-7-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-6-5"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-6-4"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-6-2"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-6-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-5-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-4-8"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-4-6"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-4-2"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-4-0"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-3-1"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/release/2-3-0"
         }
       ]
     }
@@ -331,6 +352,7 @@
     {
       "type": "category",
       "label": "Composer",
+      "className": "icon composer",
       "items": [
         {
           "type": "doc",
@@ -346,6 +368,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/getting-started"},
       "collapsed": false,
       "label": "Getting Started",
       "items": [
@@ -366,6 +389,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/core"},
       "collapsed": true,
       "label": "Core",
       "items": [
@@ -394,6 +418,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/extensions"},
       "collapsed": true,
       "label": "Extensions",
       "items": [
@@ -422,6 +447,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/common-services"},
       "collapsed": true,
       "label": "Common Services",
       "items": [
@@ -442,6 +468,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/modules"},
       "collapsed": true,
       "label": "Modules",
       "items": [
@@ -486,6 +513,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/integrations"},
       "collapsed": true,
       "label": "Integrations",
       "items": [
@@ -526,17 +554,11 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/composer/resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
-        {
-          "type": "doc",
-          "id": "version-3/composer/resources/tutorials"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/resources/faq"
-        },
+        
         {
           "type": "doc",
           "id": "version-3/composer/resources/migration-guide"
@@ -544,6 +566,14 @@
         {
           "type": "doc",
           "id": "version-3/composer/resources/packages"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/resources/tutorials"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/resources/faq"
         }
       ]
     }
@@ -553,6 +583,7 @@
       "type": "category",
       "label": "Storefront",
       "collapsible": false,
+      "className": "icon storefront",
       "items": [
         {
           "type": "doc",
@@ -573,6 +604,7 @@
       "type": "category",
       "label": "Getting Started",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/getting-started"},
       "collapsed": false,
       "items": [
         {
@@ -601,6 +633,7 @@
       "type": "category",
       "label": "Building Experiences",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/building-experiences"},
       "collapsed": true,
       "items": [
         {
@@ -633,6 +666,7 @@
       "type": "category",
       "label": "Creating Themes",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/theming"},
       "collapsed": true,
       "items": [
         {
@@ -665,6 +699,7 @@
       "type": "category",
       "label": "Advanced Features",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/advanced"},
       "collapsed": true,
       "items": [
         {
@@ -704,9 +739,16 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
+
+        {
+          "type": "doc",
+          "id": "version-3/storefront/resources/app-store"
+        },
+   
         {
           "type": "doc",
           "id": "version-3/storefront/resources/tutorials"
@@ -721,36 +763,37 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/cookbook"},
       "collapsed": true,
       "label": "Cookbook",
       "items": [
         {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/change-logo"
+          "id": "version-3/storefront/cookbook/change-logo"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/analytics"
+          "id": "version-3/storefront/cookbook/analytics"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/icon"
+          "id": "version-3/storefront/cookbook/icon"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/themeable-component"
+          "id": "version-3/storefront/cookbook/themeable-component"
         },
          {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/scss-global"
+          "id": "version-3/storefront/cookbook/scss-global"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/post-css-support"
+          "id": "version-3/storefront/cookbook/post-css-support"
         },
         {
           "type": "doc",
-          "id": "version-3/storefront/resources/cookbook/testing"
+          "id": "version-3/storefront/cookbook/testing"
         }
       ]
     }
@@ -760,6 +803,7 @@
       "type": "category",
       "label": "Payments",
       "collapsible": false,
+      "className": "icon payments",
       "items": [
         {
           "type": "doc",
@@ -776,6 +820,7 @@
       "type": "category",
       "label": "Getting Started",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/payments/getting-started"},
       "collapsed": false,
       "items": [
         {
@@ -800,6 +845,7 @@
       "type": "category",
       "label": "Payment Providers",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/payments/providers"},
       "collapsed": true,
       "items": [
         {
@@ -824,6 +870,7 @@
       "type": "category",
       "label": "Payment Methods",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/payments/methods"},
       "collapsed": true,
       "items": [
         {
@@ -862,6 +909,7 @@
       "type": "category",
       "label": "Upgrading",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/payments/upgrading"},
       "collapsed": true,
       "items": [
         {
@@ -874,21 +922,22 @@
       "type": "html",
       "value": "<hr/>"
     },
-    {
-      "type": "doc",
-      "label": "Changelog",
-      "id": "version-3/payments/release/full-changelog",
-      "className": "gray-link"
-    },
+    
     {
       "type": "category",
       "label": "Releases",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/payments/releases"},      
       "collapsed": true,
       "items": [
         {
           "type": "doc",
-          "id": "version-3/payments/release/1-0-0"
+          "label": "Full Changelog",
+          "id": "version-3/payments/releases/full-changelog"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/releases/1-0-0"
         }
       ]
     },
@@ -907,6 +956,8 @@
     {
       "type": "category",
       "label": "Integrations",
+      "collapsible": false,      
+      "className": "icon integrations",
       "items": [
         {
           "type": "doc",
@@ -923,6 +974,7 @@
       "type": "category",
       "label": "Shop Platforms",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/integrations/shop-platforms"},
       "items": [
         {
           "type": "doc",
@@ -950,6 +1002,7 @@
       "type": "category",
       "label": "Search",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/integrations/search"},      
       "collapsed": true,
       "items": [
         {
@@ -966,6 +1019,7 @@
       "type": "category",
       "label": "Payments",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/integrations/payments"},        
       "collapsed": true,
       "items": [
         {
@@ -990,6 +1044,7 @@
       "type": "category",
       "label": "Promotions",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/integrations/promotions"},         
       "collapsed": true,
       "items": [
         {
@@ -1002,6 +1057,7 @@
       "type": "category",
       "label": "CMS",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/integrations/cms"},       
       "collapsed": true,
       "items": [
         {
@@ -1021,6 +1077,7 @@
     {
       "type": "category",
       "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/integrations/resources"},         
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -1036,216 +1093,289 @@
     }
   ],
   "console": [
-  {
-    "type": "category",
-    "label": "Console",
-    "collapsible": false,
-    "items": [
-      {
-        "type": "doc",
-        "label": "Overview",
-        "id": "version-3/console"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/key-concepts"
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Getting Started",
-    "collapsible": true,
-    "collapsed": false,
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/getting-started/sign-up"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/getting-started/deity-project"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/getting-started/access-packages"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/getting-started/create-application"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/getting-started/link-repository"
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Organization",
-    "collapsible": true,
-    "collapsed": true,
-    "link": {
-        "type": "doc", "id": "version-3/console/organization"
+    {
+      "type": "category",
+      "label": "Cloud Console",
+      "collapsible": false,
+      "className": "icon console",
+      "items": [
+        {
+          "type": "doc",
+          "label": "Overview",
+          "id": "version-3/console"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/key-concepts"
+        }
+      ]
     },
-    "items": [ 
-      {
-        "type": "doc",
-        "id": "version-3/console/organization/projects"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/organization/billing-details"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/organization/invoices"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/organization/users"
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Settings",
-    "collapsible": true,
-    "collapsed": true,
-    "link": {
-        "type": "doc", "id": "version-3/console/settings"
-    },   
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/settings/environments"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/settings/codebase"
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Composer",
-    "collapsible": true,
-    "collapsed": true,  
-    "link": {
-        "type": "doc", "id": "version-3/console/composer"
-    },     
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/composer/integrations"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/composer/variables"
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Payments",
-    "collapsible": true,
-    "collapsed": true,
-    "link": {
-        "type": "doc", "id": "version-3/console/payments"
-    },       
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/payments/profiles"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/payments/providers"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/payments/payment-methods"
-      }   
-    ]
-  },
-  {
-    "type": "category",
-    "label": "Storefront",
-    "collapsible": true,
-    "collapsed": true,
-    "link": {
-        "type": "doc", "id": "version-3/console/storefront"
-    },       
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/storefront/domains"
-      }
-    ]
-  },    
-  {
-    "type": "category",
-    "label": "Builds & Deployments",
-    "collapsible": true,
-    "collapsed": true, 
-    "link": {
-        "type": "doc", "id": "version-3/console/builds-deployments"
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/getting-started/sign-up"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/getting-started/deity-project"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/getting-started/access-packages"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/getting-started/create-application"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/getting-started/link-repository"
+        }
+      ]
     },
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/builds-deployments/builds"
+    {
+      "type": "category",
+      "label": "Organization",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+          "type": "doc", "id": "version-3/console/organization"
       },
-      {
-        "type": "doc",
-        "id": "version-3/console/builds-deployments/deployments"
-      }
-    ]
-  },  
-  {
-    "type": "category",
-    "label": "Logs",
-    "collapsible": true,
-    "collapsed": true,  
-    "link": {
-        "type": "doc", "id": "version-3/console/logs"
-    },     
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/logs/log-entries"
-      }
-    ]
-  },         
-  {
-    "type": "html",
-    "value": "<hr/>"
-  },
-  {
-    "type": "category",
-    "label": "Resources",
-    "collapsible": true,
-    "collapsed": true,
-    "items": [
-      {
-        "type": "doc",
-        "id": "version-3/console/cloud/about"
+      "items": [ 
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/projects"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/billing-details"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/invoices"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/users"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Settings",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+          "type": "doc", "id": "version-3/console/settings"
+      },   
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/settings/environments"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/settings/codebase"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Composer",
+      "collapsible": true,
+      "collapsed": true,  
+      "link": {
+          "type": "doc", "id": "version-3/console/composer"
+      },     
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/composer/integrations"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/composer/variables"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Payments",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+          "type": "doc", "id": "version-3/console/payments"
+      },       
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/payments/profiles"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/payments/providers"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/payments/payment-methods"
+        }   
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Storefront",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+          "type": "doc", "id": "version-3/console/storefront"
+      },       
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/storefront/domains"
+        }
+      ]
+    },    
+    {
+      "type": "category",
+      "label": "Builds & Deployments",
+      "collapsible": true,
+      "collapsed": true, 
+      "link": {
+          "type": "doc", "id": "version-3/console/builds-deployments"
       },
-      {
-        "type": "doc",
-        "id": "version-3/console/cloud/prerequisites"
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/builds-deployments/builds"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/builds-deployments/deployments"
+        }
+      ]
+    },  
+    {
+      "type": "category",
+      "label": "Logs",
+      "collapsible": true,
+      "collapsed": true,  
+      "link": {
+          "type": "doc", "id": "version-3/console/logs"
+      },     
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/logs/log-entries"
+        }
+      ]
+    },         
+    {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
+      "type": "category",
+      "label": "Deity Cloud",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {"type": "generated-index", "slug": "/console/cloud"},
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/console/cloud/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/cloud/dcloud"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/cloud/prerequisites"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/cloud/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/cloud/technical"
+        }
+      ]
+    }
+  ],
+  "support": [
+    {
+      "type": "category",
+      "label": "Support",
+      "className": "icon resources",
+      "items": [
+         
+          {
+            "type": "doc",
+            "id": "version-3/platform/support/contact"
+
+          }
+        ]
+     },
+    {
+      "type": "category",
+      "label": "Tutorials",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {"type": "doc",  "id": "version-3/platform/support/tutorials"},
+      "items": [ 
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/guides/client"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/guides/cloud"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "F.A.Q.",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+          "type": "doc", "id": "version-3/platform/support/faqs"
       },
-      {
-        "type": "doc",
-        "id": "version-3/console/cloud/installation"
-      },
-      {
-        "type": "doc",
-        "id": "version-3/console/cloud/technical"
-      }
-    ]
-  }
-],
+      "items": [ 
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs/general"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs/client"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs/server"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs/cloud"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs/config"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/platform/support/faqs/misc"
+        }
+      ]
+    }  
+  ],
   "version-3/falconPlatformSidebar": [
     {
       "collapsed": true,
@@ -1630,17 +1760,6 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "App Store Publishing",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/app-store/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
       "label": "Testing",
       "items": [
         {
@@ -1845,52 +1964,6 @@
         {
           "type": "doc",
           "id": "version-3/platform/packages/normal-module-override-webpack-plugin"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Support",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/support/contact"
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "FAQs",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs/general"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs/client"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs/server"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs/cloud"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs/config"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/faqs/misc"
-            }
-          ]
         }
       ]
     }

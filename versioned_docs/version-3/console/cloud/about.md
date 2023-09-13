@@ -1,7 +1,7 @@
 ---
 id: about
-title: About
-sidebar_label: About
+title: Deity Cloud
+sidebar_label: Deity Cloud
 ---
 
 ## What is Falcon Platform Cloud

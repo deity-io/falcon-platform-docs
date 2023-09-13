@@ -36,17 +36,68 @@
         letter-spacing: -0.02em;
         line-height: 1.3em;
         border-bottom: 1px solid rgba(0, 56, 37, 0.05);
-        margin: 0 4px 15px;
+        margin: 0 0px 15px;
         padding-bottom: 14px;
+        color: var(--ifm-menu-color);
       }
     }
+    .theme-doc-sidebar-item-category.icon .menu__list-item-collapsible {
+      .menu__link {
+        background: no-repeat 12px 4px !important;
+        padding-left: 42px;
+      }
+    }
+    .theme-doc-sidebar-item-category.platform .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/platform.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.composer .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/composer.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.storefront .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/storefront.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.payments .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/payments.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.console .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/console.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.integrations .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/integrations.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.orchestrator .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/orchestrator.svg") !important;
+      }
+    }
+    .theme-doc-sidebar-item-category.resources .menu__list-item-collapsible {
+      .menu__link {
+        background-image: url("../../static/img/icons/resources.svg") !important;
+      }
+    }
+
+
   }
 
   &__link:hover,
   &__caret:hover {
     color: var(--ifm-color-primary);
   }
-
+  .menu__caret:before {
+    background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
+  }
   .menu__link--active:not(.menu__link--sublist) {
     color: var(--ifm-color-secondary);
   }

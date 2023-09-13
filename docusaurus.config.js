@@ -31,7 +31,7 @@ module.exports = {
           items: [
             {
               label: 'Deity Platform',
-              to: '/platform/overview/about',
+              to: '/platform',
               icon: 'doc',
               activeBasePath: '/platform/overview/'
             },

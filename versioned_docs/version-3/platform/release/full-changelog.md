@@ -1,7 +1,7 @@
 ---
 id: full-changelog
 title: Falcon Changelog
-sidebar_label: 'Changelog'
+sidebar_label: 'Full Changelog'
 description: Falcon platform all versions and their release notes
 ---
 

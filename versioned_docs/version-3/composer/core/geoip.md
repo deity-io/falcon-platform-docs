@@ -1,7 +1,7 @@
 ---
 id: geoip
 title: GeoIP
-sidebar_label: Overview
+sidebar_label: GeoIP
 ---
 
 ## Overview

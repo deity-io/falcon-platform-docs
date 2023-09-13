@@ -10,7 +10,7 @@ type Props = {
   to: string;
 };
 
-const Card = ({ children, isPadding = true, variant = 'vertical', to }: Props) => {
+const Card = ({ children, isPadding = true, variant = 'vertical', to, className}: Props) => {
   const history = useHistory();
 
   return (
