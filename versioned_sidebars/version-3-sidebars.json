@@ -88,7 +88,13 @@
         },        
         {
           "type": "doc",
+          "label": "Tutorials",
           "id": "version-3/platform/support/tutorials"
+        },
+        {
+          "type": "doc",
+          "label": "Video Guides",
+          "id": "version-3/platform/support/guides"
         },
         {
           "type": "doc",
@@ -204,6 +210,7 @@
         },
         {
           "type": "doc",
+          "label": "Tutorials",
           "id": "version-3/platform/support/tutorials"
         },
         {
@@ -569,11 +576,13 @@
         },
         {
           "type": "doc",
-          "id": "version-3/composer/resources/tutorials"
+          "label": "Tutorials",
+          "id": "version-3/platform/support/tutorials"
         },
         {
           "type": "doc",
-          "id": "version-3/composer/resources/faq"
+          "label": "F.A.Q.",
+          "id": "version-3/platform/support/faqs"
         }
       ]
     }
@@ -743,57 +752,51 @@
       "collapsed": true,
       "label": "Resources",
       "items": [
-
         {
           "type": "doc",
           "id": "version-3/storefront/resources/app-store"
         },
-   
         {
-          "type": "doc",
-          "id": "version-3/storefront/resources/tutorials"
+          "type": "category",
+          "collapsible": true,
+          "link": {"type": "doc", "id": "version-3/storefront/resources/tutorials"},
+          "collapsed": true,
+          "label": "Tutorials",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/change-logo"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/analytics"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/icon"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/themeable-component"
+            },
+             {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/scss-global"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/post-css-support"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/storefront/resources/tutorials/testing"
+            }
+          ]
         },
-        
-        {
+       {
           "type": "doc",
-          "id": "version-3/storefront/resources/faq"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/cookbook"},
-      "collapsed": true,
-      "label": "Cookbook",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/change-logo"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/analytics"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/icon"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/themeable-component"
-        },
-         {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/scss-global"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/post-css-support"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/cookbook/testing"
+          "label": "F.A.Q.",
+          "id": "version-3/platform/support/faqs/storefront"
         }
       ]
     }
@@ -963,10 +966,6 @@
           "type": "doc",
           "label": "Overview",
           "id": "version-3/integrations"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/integrations/examples"
         }
       ]
     },
@@ -1083,7 +1082,8 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/integrations/resources/tutorials"
+          "label": "Tutorials",
+          "id": "version-3/platform/support/tutorials/integrations"
         },
         {
           "type": "doc",
@@ -1315,7 +1315,6 @@
       "label": "Support",
       "className": "icon resources",
       "items": [
-         
           {
             "type": "doc",
             "id": "version-3/platform/support/contact"
@@ -1325,10 +1324,10 @@
      },
     {
       "type": "category",
-      "label": "Tutorials",
+      "label": "Video Guides",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "doc",  "id": "version-3/platform/support/tutorials"},
+      "link": {"type": "doc",  "id": "version-3/platform/support/guides"},
       "items": [ 
         {
           "type": "doc",
@@ -1337,6 +1336,66 @@
         {
           "type": "doc",
           "id": "version-3/platform/support/guides/cloud"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "collapsible": true,
+      "link": {"type": "doc", "id": "version-3/platform/support/tutorials"},
+      "collapsed": true,
+      "label": "Tutorials",
+      "items": [
+          {
+          "type": "category",
+          "collapsible": true,
+          "link": {"type": "doc", "id": "version-3/platform/support/tutorials/storefront"},
+          "collapsed": true,
+          "label": "Storefront",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/change-logo"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/analytics"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/icon"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/themeable-component"
+            },
+             {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/scss-global"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/post-css-support"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/tutorials/storefront/testing"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "collapsible": true,
+          "link": {"type": "doc", "id": "version-3/platform/support/tutorials/integrations"},
+          "collapsed": true,
+          "label": "Integrations",
+          "items": [
+            {
+              "type": "doc",
+              "label": "Tutorials",
+              "id": "version-3/platform/support/tutorials/integrations/examples"
+            }
+          ]
         }
       ]
     },
@@ -1351,26 +1410,27 @@
       "items": [ 
         {
           "type": "doc",
+          "label": "General Questions",
           "id": "version-3/platform/support/faqs/general"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/support/faqs/client"
+          "label": "Storefront",
+          "id": "version-3/platform/support/faqs/storefront"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/support/faqs/server"
-        },
-        {
-          "type": "doc",
+          "label": "Cloud Console",
           "id": "version-3/platform/support/faqs/cloud"
         },
         {
           "type": "doc",
+          "label": "Integrations",
           "id": "version-3/platform/support/faqs/config"
         },
         {
           "type": "doc",
+          "label": "Troubleshooting",
           "id": "version-3/platform/support/faqs/misc"
         }
       ]
