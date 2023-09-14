@@ -195,11 +195,33 @@
     },
     {
       "type": "category",
+      "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/platform/integrations"},
+      "collapsed": true,
+      "label": "Integrations",
+      "items": [
+        {
+          "type": "doc",
+          "label": "All Integrations",
+          "id": "version-3/platform/integrations"
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "value": "<hr/>"
+    },
+    {
+      "type": "category",
       "label": "Resources",
       "collapsible": true,
       "collapsed": true,
       "link": {"type": "generated-index", "slug": "/platform/resources"},
       "items": [
+        {
+          "type": "doc",
+          "id": "version-3/platform/resources/upgrading"
+        },
         {
           "type": "doc",
           "id": "version-3/platform/resources/redirects"
@@ -402,7 +424,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/composer/core/dynamic-routing"
+          "id": "version-3/composer/core/dynamic-routes"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/event-hooks"
         },
         {
           "type": "doc",
@@ -526,31 +552,8 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/composer/integration/examples"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/integration/algolia"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/integration/bigcommerce/overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/integration/magento2/overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/integration/stripe"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/integration/mollie"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/integration/wordpress"
+          "label": "All Integrations",
+          "id": "version-3/composer/integrations"
         }
       ]
     },
@@ -565,19 +568,10 @@
       "collapsed": true,
       "label": "Resources",
       "items": [
-        
-        {
-          "type": "doc",
-          "id": "version-3/composer/resources/migration-guide"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/resources/packages"
-        },
         {
           "type": "doc",
           "label": "Tutorials",
-          "id": "version-3/platform/support/tutorials"
+          "id": "version-3/composer/resources/tutorials"
         },
         {
           "type": "doc",
@@ -1081,9 +1075,29 @@
       "label": "Resources",
       "items": [
         {
-          "type": "doc",
+          "type": "category",
           "label": "Tutorials",
-          "id": "version-3/platform/support/tutorials/integrations"
+          "collapsible": true,
+           "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/resources/tutorials"},
+          "items": [
+              {
+                "type": "doc",
+                "id": "version-3/integrations/resources/tutorials/jsonplaceholder"
+              },
+              {
+                "type": "doc",
+                "id": "version-3/integrations/resources/tutorials/contentful"
+              },
+              {
+                "type": "doc",
+                "id": "version-3/integrations/resources/tutorials/contentful2"
+              },
+              {
+                "type": "doc",
+                "id": "version-3/integrations/resources/tutorials/braintree"
+              }
+            ]
         },
         {
           "type": "doc",
@@ -1315,717 +1329,154 @@
       "label": "Support",
       "className": "icon resources",
       "items": [
-          {
-            "type": "doc",
-            "id": "version-3/platform/support/contact"
-
-          }
-        ]
-     },
-    {
-      "type": "category",
-      "label": "Video Guides",
-      "collapsible": true,
-      "collapsed": true,
-      "link": {"type": "doc",  "id": "version-3/platform/support/guides"},
-      "items": [ 
         {
-          "type": "doc",
-          "id": "version-3/platform/support/guides/client"
+          "type": "category",
+          "label": "Video Guides",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc",  "id": "version-3/platform/support/guides"},
+          "items": [ 
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/guides/client"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/support/guides/cloud"
+            }
+          ]
         },
         {
-          "type": "doc",
-          "id": "version-3/platform/support/guides/cloud"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "collapsible": true,
-      "link": {"type": "doc", "id": "version-3/platform/support/tutorials"},
-      "collapsed": true,
-      "label": "Tutorials",
-      "items": [
-          {
           "type": "category",
           "collapsible": true,
-          "link": {"type": "doc", "id": "version-3/platform/support/tutorials/storefront"},
+          "link": {"type": "doc", "id": "version-3/platform/support/tutorials"},
           "collapsed": true,
-          "label": "Storefront",
+          "label": "Tutorials",
           "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/change-logo"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/analytics"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/icon"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/themeable-component"
-            },
              {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/scss-global"
+              "type": "category",
+              "collapsible": true,
+              "link": {"type": "doc", "id": "version-3/platform/support/storefront/tutorials"},
+              "collapsed": true,
+              "label": "Storefront",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/change-logo"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/analytics"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/icon"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/themeable-component"
+                },
+                 {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/scss-global"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/post-css-support"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/platform/support/storefront/tutorials/testing"
+                }
+              ]
             },
             {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/post-css-support"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/support/tutorials/storefront/testing"
+              "type": "category",
+              "collapsible": true,
+              "link": {"type": "doc", "id": "version-3/platform/support/integrations/tutorials"},         
+              "collapsed": true,
+              "label": "Integrations",
+              "items": [
+                  {
+                    "type": "doc",
+                    "id": "version-3/platform/support/integrations/tutorials/jsonplaceholder"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-3/platform/support/integrations/tutorials/contentful"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-3/platform/support/integrations/tutorials/contentful2"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "version-3/platform/support/integrations/tutorials/braintree"
+                  }
+              ]
             }
           ]
         },
         {
           "type": "category",
+          "label": "F.A.Q.",
           "collapsible": true,
-          "link": {"type": "doc", "id": "version-3/platform/support/tutorials/integrations"},
           "collapsed": true,
-          "label": "Integrations",
-          "items": [
+          "link": {
+              "type": "doc", "id": "version-3/platform/support/faqs"
+          },
+          "items": [ 
             {
               "type": "doc",
-              "label": "Tutorials",
-              "id": "version-3/platform/support/tutorials/integrations/examples"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "F.A.Q.",
-      "collapsible": true,
-      "collapsed": true,
-      "link": {
-          "type": "doc", "id": "version-3/platform/support/faqs"
-      },
-      "items": [ 
-        {
-          "type": "doc",
-          "label": "General Questions",
-          "id": "version-3/platform/support/faqs/general"
-        },
-        {
-          "type": "doc",
-          "label": "Storefront",
-          "id": "version-3/platform/support/faqs/storefront"
-        },
-        {
-          "type": "doc",
-          "label": "Cloud Console",
-          "id": "version-3/platform/support/faqs/cloud"
-        },
-        {
-          "type": "doc",
-          "label": "Integrations",
-          "id": "version-3/platform/support/faqs/config"
-        },
-        {
-          "type": "doc",
-          "label": "Troubleshooting",
-          "id": "version-3/platform/support/faqs/misc"
-        }
-      ]
-    }  
-  ],
-  "version-3/falconPlatformSidebar": [
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Overview",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/overview/about"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/overview/plans"
-        }
-      ]
-    },
-    
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Falcon Client",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/about"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/technical"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/files"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/getting-started"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/configuration"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/webpack"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/menu-navbar"
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "Theming",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/client/theming/overview"
+              "label": "General Questions",
+              "id": "version-3/platform/support/faqs/general"
             },
             {
               "type": "doc",
-              "id": "version-3/platform/client/theming/css-mapping"
+              "label": "Storefront",
+              "id": "version-3/platform/support/faqs/storefront"
             },
             {
               "type": "doc",
-              "id": "version-3/platform/client/theming/components"
+              "label": "Cloud Console",
+              "id": "version-3/platform/support/faqs/cloud"
             },
             {
               "type": "doc",
-              "id": "version-3/platform/client/theming/fonts"
+              "label": "Integrations",
+              "id": "version-3/platform/support/faqs/config"
             },
             {
               "type": "doc",
-              "id": "version-3/platform/client/theming/icons"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/client/theming/css-sass"
+              "label": "Troubleshooting",
+              "id": "version-3/platform/support/faqs/misc"
             }
           ]
         },
         {
-          "type": "doc",
-          "id": "version-3/platform/client/overrides"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/routing"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/meta-data"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/schema-json"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/data"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/state"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/translations"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/code-splitting"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/testing"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/static-files"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/client/browser-support"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Falcon Server",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/server"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/server/dynamic-routes"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/server/event-hooks"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Falcon Cloud",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/cloud/about"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/cloud/technical"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/cloud/prerequisites"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/cloud/account"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/cloud/installation"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/cloud/dcloud"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Configuration",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/configuration/overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/configuration/client"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/configuration/server"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Upgrading",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/upgrading/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Caching",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/cache/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Redirects",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/redirects/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Deployment",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/deployment/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Logging",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/logging/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "GeoIP",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/geoip/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Payments",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/payments/overview"
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "Falcon Payments",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/overview"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/packages"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/provider"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/webhooks"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/features"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/getting-started"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/payments/falcon-payments/integration"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Integrations",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/integration/examples"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/integration/algolia"
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "BigCommerce",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/bigcommerce/overview"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/bigcommerce/getting-started"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/bigcommerce/features"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/bigcommerce/technical"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/bigcommerce/manual"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/bigcommerce/embedded-checkout"
-            }
-          ]
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "Magento 2",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/magento2/overview"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/integration/magento2/getting-started"
-            }
-          ]
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/integration/stripe"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/integration/mollie"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/integration/wordpress"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Testing",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/testing/overview"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Cookbook",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/cookbook/about"
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "Falcon Client",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/change-logo"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/icon"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/themeable-component"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/scss-global"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/post-css-support"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/analytics"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/client/testing"
-            }
-          ]
-        },
-        {
-          "collapsed": true,
-          "type": "category",
-          "label": "Integrations",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/integrations/jsonplaceholder"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/integrations/contentful"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/integrations/contentful2"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/platform/cookbook/integrations/braintree"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Video Guides",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/guides/client"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Packages",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/babel-preset-falcon-client"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/create-falcon-app"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/eslint-config-falcon"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-adyen-plugin"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-blog-data"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-blog-extension"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-client"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-data"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-errors"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-front-kit"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-i18n-webpack-plugin"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-i18n"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-logger"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-magento2-api"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-payment-plugin"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-paypal-plugin"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-scripts"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-server-env"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-server"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-service-worker"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-shop-data"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-shop-extension"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-theme-editor"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-ui-kit"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-ui"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/falcon-wordpress-api"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/packages/normal-module-override-webpack-plugin"
-        }
+            "type": "html",
+            "value": "<hr/>"
+          },
+           {
+            "type": "doc",
+            "id": "version-3/platform/support/contact",
+            "className": "gray-link"
+          },
+          {
+            "type": "link",
+            "label": "Launch Console",
+            "href": "https://console.deity.io",
+            "className": "gray-link"
+          },
+          {
+            "type": "link",
+            "label": "Deity.com",
+            "href": "https://www.deity.com/",
+            "className": "gray-link"
+          }
+
       ]
     }
+     
   ]
 }

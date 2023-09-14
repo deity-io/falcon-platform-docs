@@ -82,7 +82,7 @@ hr {
     color: #fff;
   }
 
-  #__docusaurus {
-    background: no-repeat top left url(#{$img-path}/glow.png);
+  #__docusaurus  {
+    background: var(--ifm-background-secondary);
   }
 }

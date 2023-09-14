@@ -1,8 +1,5 @@
 .menu {
-  --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
-  --ifm-menu-color-background-active: rgba(2, 192, 151, 0.095);
-  --ifm-hr-background-color: #dfe4e2;
-  --ifm-hr-margin-horizontal: 4px;
+
   background: var(--ifm-menu-background-color);
 
   .gray-link {
@@ -16,8 +13,12 @@
       color: #000;
     }
   }
-
+  .goBack_src-theme-DocSidebar-Desktop-Content-styles-module {
+     padding-top:0.7rem;
+     padding-bottom:0;
+  }
   &__list {
+    padding-top:0.7rem;
     .menu__list {
       padding: 0 0 20px ;
         .theme-doc-sidebar-item-category-level-2 {
@@ -27,7 +28,7 @@
             letter-spacing: -0.02em;
             line-height: 1.3em;
             font-weight: 400;
-            color: var(--ifm-menu-color);
+            color: var(--ifm-text-color);
             }
           .menu__list {
             padding-left: 16px;
@@ -49,7 +50,7 @@
    
    
     // the first title in the sidebar is bigger and sticky to the top
-    .theme-doc-sidebar-item-category-level-1:first-child .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
       .menu__link {
         font-size: 17px;
         text-transform: none;
@@ -58,51 +59,51 @@
         border-bottom: 1px solid rgba(0, 56, 37, 0.05);
         margin: 0 0px 15px;
         padding-bottom: 14px;
-        color: var(--ifm-menu-color);
+        color: var(--ifm-text-color);
       }
     }
-    .theme-doc-sidebar-item-category-level-1.icon .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
       .menu__link {
         background: no-repeat 12px 4px !important;
         padding-left: 42px;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.platform .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.platform>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/platform.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.composer .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.composer>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/composer.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.storefront .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.storefront>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/storefront.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.payments .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.payments>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/payments.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.console .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.console>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/console.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.integrations .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.integrations>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/integrations.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.orchestrator .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.orchestrator>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/orchestrator.svg") !important;
       }
     }
-    .theme-doc-sidebar-item-category-level-1.resources .menu__list-item-collapsible {
+    .theme-doc-sidebar-item-category-level-1.resources>.menu__list-item-collapsible {
       .menu__link {
         background-image: url("../../static/img/icons/resources.svg") !important;
       }
@@ -170,9 +171,19 @@
       color: #fff;
     }
 
+    &__list {
+    .menu__list {
+      .theme-doc-sidebar-item-category-level-2 {
+          div > a {
+           
+          }
+        }
+      }
+    }  
     &__link {
-      color: var(--ifm-color-white);
-
+      &:not(.menu__link--sublist),  {
+        color: var(--ifm-color-menu);
+      }
       &[href]:hover {
         color: var(--ifm-link-color);
 
@@ -195,6 +206,14 @@
           color: #d7dcda;
         }
       }
+    }
+    .theme-doc-sidebar-item-category-level-1:not(.icon) > .menu__list-item-collapsible {
+      .menu__link {
+        color: var(--ifm-color-primary);
+      }
+    }
+    .goBack_src-theme-DocSidebar-Desktop-Content-styles-module {
+      color: var(--ifm-color-primary);
     }
   }
 }

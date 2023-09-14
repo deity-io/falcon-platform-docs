@@ -13,15 +13,15 @@ https://jsonplaceholder.typicode.com/ offers free and open APIs for testing.
 
 We've created a guide showing how to integrate with this and use it's data on the frontend.
 
-- [Basic Integration](../cookbook/integrations/jsonplaceholder)
+- [Basic Integration](tutorials/jsonplaceholder)
 
 ### Contentful
 https://www.contentful.com/ is an enterprise, API first CMS.
 
 We've created a guide showing how to integrate with this and use it's data on the frontend.
 
-- [Basic Integration](../cookbook/integrations/contentful)
-- [Routing](../cookbook/integrations/contentful2)
+- [Basic Integration](tutorials/contentful)
+- [Routing](tutorials/contentful2)
 
 ### Braintree
 
@@ -29,4 +29,4 @@ https://braintreepayments.com/ is a modern payment service provider.
 
 We've created a guide showing how to integrate with it.
 
-- [Credit Card](../cookbook/integrations/braintree)
+- [Credit Card](tutorials/braintree)
