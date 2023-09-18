@@ -36,7 +36,7 @@
     &.contained {
       background: var(--ifm-color-primary);
       border: 1px solid rgba(2, 44, 15, 0.08);
-      color: #fff;
+      color: var(--ifm-button-color);
 
       &:hover {
         background: #067a6f;

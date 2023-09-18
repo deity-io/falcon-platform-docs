@@ -60,7 +60,7 @@
 
 @include dark-mode {
   .feedback {
-    background: none;
-    border: 2px solid #e7f9f5;
+    background: var(--ifm-darkmode-bg);
+    
   }
 }

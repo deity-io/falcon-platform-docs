@@ -30,30 +30,29 @@ module.exports = {
           label: 'Platform',
           items: [
             {
-              label: 'Deity Platform',
-              to: '/platform',
-              icon: 'doc',
-              activeBasePath: '/platform/overview/'
+              label: 'Platform Overview',
+              icon: 'platform',
+              to: '/platform'
             },
             {
               label: 'Composer',
-              icon: 'doc',
+              icon: 'composer',
               to: '/composer'
             },
             {
               label: 'Storefront',
-              icon: 'doc',
+              icon: 'storefront',
               to: '/storefront'
               
             },
             {
               label: 'Payments',
-              icon: 'doc',
+              icon: 'payments',
               to: '/payments'
             },
             {
               label: 'Console',
-              icon: 'doc',
+              icon: 'console',
               to: '/console',
               customProps: {
                 label: 'new'
@@ -65,7 +64,7 @@ module.exports = {
             },
             {
               label: 'Integrations',
-              icon: 'doc',
+              icon: 'integrations',
               to: '/integrations',
               customProps: {
                 count: 13
@@ -73,7 +72,7 @@ module.exports = {
             },
             {
               label: 'Orchestrator',
-              icon: 'doc',
+              icon: 'orchestrator',
               to: '/orchestrator',
               customProps: {
                 label: 'soon!',

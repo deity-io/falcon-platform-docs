@@ -16,52 +16,57 @@
   }
 
   &-note {
-    color: #6e56cf;
-    background: rgba(46, 2, 242, 0.09);
+    color: var(--ifm-adnomition-note);
+    background: var(--ifm-adnomition-note-background);
 
     p,
     a {
-      color: #6e56cf;
+      color: var(--ifm-adnomition-note);
+      opacity: 0.75;
     }
   }
 
   &-info {
-    color: #0091ff;
-    background: rgba(0, 128, 255, 0.12);
+    color: var(--ifm-adnomition-info);
+    background: var(--ifm-adnomition-info-background);
 
     p,
     a {
-      color: #0091ff;
+      color: var(--ifm-adnomition-info);
+      opacity: 0.75;
     }
   }
 
   &-caution {
-    color: #946800;
-    background: rgba(255, 230, 0, 0.27);
+    color: var(--ifm-adnomition-caution);
+    background: var(--ifm-adnomition-caution-background);
 
     p,
     a {
-      color: #946800;
+      color: var(--ifm-adnomition-caution);
+      opacity: 0.75;
     }
   }
 
-  &-danger {
-    color: #e5484d;
-    background: rgba(255, 0, 0, 0.1);
+  &-danger, &-warning {
+    color: var(--ifm-adnomition-danger);
+    background: var(--ifm-adnomition-danger-background);
 
     p,
     a {
-      color: #e5484d;
+      color: var(--ifm-adnomition-danger);
+      opacity: 0.75;
     }
   }
 
   &-tip {
-    color: rgba(0, 10, 6, 0.58);
-    background: rgba(0, 56, 37, 0.05);
+    color:  var(--ifm-adnomition-tip);
+    background: var(--ifm-adnomition-tip-background);
 
     p,
     a {
-      color: rgba(0, 10, 6, 0.58);
+      color: var(--ifm-adnomition-tip);
+      opacity: 0.75;
     }
   }
 }

@@ -34,11 +34,11 @@
             padding-left: 16px;
             }
           .menu__list-item-collapsible--active .menu__link--active {
-            color: var(--ifm-color-primary);
+            color: var(--ifm-menu-color-active);
           }  
         }
         .menu__link--active:not(.menu__link--sublist) {
-          color: var(--ifm-color-primary);
+          color: var(--ifm-menu-color-active);
         }
     }
     .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
@@ -59,7 +59,7 @@
         border-bottom: 1px solid rgba(0, 56, 37, 0.05);
         margin: 0 0px 15px;
         padding-bottom: 14px;
-        color: var(--ifm-text-color);
+        color: var(--ifm-menu-color);
       }
     }
     .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
@@ -164,28 +164,30 @@
 }
 
 @include dark-mode {
+   svg {filter:brightness(1.5)};
+
+   .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
+    .menu__link {
+    filter:brightness(1.75);
+    }
+  }
+
   .menu {
     background: inherit;
+   
 
     .gray-link svg {
       color: #fff;
     }
-
-    &__list {
-    .menu__list {
-      .theme-doc-sidebar-item-category-level-2 {
-          div > a {
-           
-          }
-        }
-      }
-    }  
     &__link {
+      
+
+
       &:not(.menu__link--sublist),  {
-        color: var(--ifm-color-menu);
+        color: var(--ifm-menu-color);
       }
       &[href]:hover {
-        color: var(--ifm-link-color);
+        color: var(--ifm-menu-color-active);
 
         svg {
           color: inherit;
@@ -199,13 +201,16 @@
       }
 
       &--disabled {
-        color: #d7dcda;
+        color: var(--ifm-menu-color-active);
 
         svg,
         &:hover {
-          color: #d7dcda;
+          color: var(--ifm-menu-color);
         }
       }
+    }
+    .disabled_src-theme-DocSidebarItem-Link-styles-module, .soon_src-theme-DocSidebarItem-Link-styles-module  {
+      color: var(--ifm-menu-color-adisabled);
     }
     .theme-doc-sidebar-item-category-level-1:not(.icon) > .menu__list-item-collapsible {
       .menu__link {
@@ -215,5 +220,6 @@
     .goBack_src-theme-DocSidebar-Desktop-Content-styles-module {
       color: var(--ifm-color-primary);
     }
+    
   }
 }

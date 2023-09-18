@@ -120,6 +120,9 @@
   &:hover {
     color: var(--ifm-color-primary);
   }
+  svg {
+    margin-right:8px;
+  }
 }
 
 @include dark-mode {

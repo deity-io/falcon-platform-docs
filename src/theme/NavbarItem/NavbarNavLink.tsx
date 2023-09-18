@@ -12,13 +12,10 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import { isRegexpStringMatch } from '@docusaurus/theme-common';
 import ArrowTopRightIcon from '../../components/Icon/ArrowTopRight';
 import type { Props } from '@theme/NavbarItem/NavbarNavLink';
-import DocIcon from '../../components/Icon/Doc';
+import { iconMap } from '@theme/DocSidebarItem/helper';
 import styles from './styles.module.css';
 import clsx from 'clsx';
 
-const iconMap = {
-  doc: <DocIcon />
-};
 
 export default function NavbarNavLink({
   activeBasePath,
