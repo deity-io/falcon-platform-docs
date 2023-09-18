@@ -60,7 +60,7 @@
 
 @include dark-mode {
   .feedback {
-    background: var(--ifm-darkmode-bg);
+    background: rgba(var(--ifm-button-background-color), 0.2);
     
   }
 }

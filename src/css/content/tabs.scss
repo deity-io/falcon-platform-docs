@@ -6,8 +6,8 @@
     border-bottom-width: 2px;
 
     &:hover {
-      --ifm-hover-overlay: rgba(2, 44, 15, 0.08);
-      color: var(--ifm-color-secondary);
+      --ifm-hover-overlay: var(--ifm-menu-color-background-hover);
+      color: var(--ifm-color-primary);
     }
   }
 }

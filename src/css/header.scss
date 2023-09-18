@@ -5,7 +5,7 @@
 
   .dropdown__menu {
     width: 240px;
-
+    box-shadow: var(--ifm-global-shadow-tl);
     hr {
       background-color: rgba(2, 44, 15, 0.08);
       margin: 0.2rem 0;
@@ -26,12 +26,12 @@
     }
   }
 
-  &__brand {
+  div.navbar__inner > div:not(.navbar-sidebar) &__brand {
     margin-left: auto;
     margin-right: auto;
     @include large {
       margin-left: initial;
-      margin-right: 1rem;
+      /*margin-right: 1rem;*/
     }
   }
 
@@ -136,8 +136,8 @@
     }
   }
 
-  span[class^='disabled'] {
-    color: var(--ifm-dropdown-link-color);
+  span[class^='disabled'], span[class^='soon'] {
+    color: var(--ifm-menu-color-adisabled);
   }
 
   .navbar {

@@ -22,7 +22,10 @@
     p,
     a {
       color: var(--ifm-adnomition-note);
-      opacity: 0.75;
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-note)
     }
   }
 
@@ -33,7 +36,10 @@
     p,
     a {
       color: var(--ifm-adnomition-info);
-      opacity: 0.75;
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-info)
     }
   }
 
@@ -44,7 +50,10 @@
     p,
     a {
       color: var(--ifm-adnomition-caution);
-      opacity: 0.75;
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-caution)
     }
   }
 
@@ -55,7 +64,10 @@
     p,
     a {
       color: var(--ifm-adnomition-danger);
-      opacity: 0.75;
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-danger)
     }
   }
 
@@ -66,7 +78,10 @@
     p,
     a {
       color: var(--ifm-adnomition-tip);
-      opacity: 0.75;
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-tip)
     }
   }
 }

@@ -11,7 +11,7 @@
   }
 
   pre code {
-    background-color: #fff;
+    background-color: var(--ifm-code-background);
     -webkit-text-size-adjust: 100%;
   }
 }
@@ -23,6 +23,6 @@
   }
 
   pre code {
-    background-color: inherit;
+    background-color: var(--ifm-code-background);
   }
 }

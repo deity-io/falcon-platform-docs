@@ -35,6 +35,10 @@
 .right-big-card {
   background-color: #1A1E1C;
   border-radius: 0 12px 12px 0;
+  padding:48px;
+}
+.right-big-card > div {
+  padding:0px;
 }
 
 .home-search {
@@ -76,13 +80,21 @@ hr {
     padding: 0;
   }
 }
+div.markdown :nth-last-child(1 of div[class^="accordion"]) {
+  padding-bottom:20px;
+}
 
 @include dark-mode {
   .logo-content {
     color: #fff;
   }
-
+  .card:not(:hover) {
+    border-color:var(--ifm-card-background-color);
+  }
+  .brighten img { 
+      filter:brightness(1.75);
+  }
   #__docusaurus  {
-    background: var(--ifm-background-secondary);
+    background: var(--ifm-background-primary);
   }
 }

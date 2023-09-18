@@ -28,13 +28,13 @@
       }
 
       p {
-        color: rgba(230, 255, 242, 0.4);
+        color: var(--ifm-footer-color);
         font-size: 13px;
         line-height: 18.2px;
       }
 
       a {
-        color: rgba(240, 255, 248, 0.6);
+        color: var(--ifm-footer-link-color);
         font-size: 14px;
         text-decoration: underline;
       }
@@ -79,7 +79,7 @@
 
   &__bottom {
     padding-top: 1.5rem;
-    border-top: 1px solid rgba(240, 255, 248, 0.6);
+    border-top: 1px solid var(--ifm-darkmode-bg);
     margin-top: 0;
     text-align: center;
 

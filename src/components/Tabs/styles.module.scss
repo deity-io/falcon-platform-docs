@@ -85,7 +85,7 @@
     padding: 4px 60px 0 32px;
     font-size: 13px;
     line-height: 18.2px;
-    color: rgba(1, 30, 17, 0.24);
+    color: var(--ifm-p-color);
 
     a {
       text-decoration: underline;
@@ -100,7 +100,7 @@
 
   .toggleButton {
     display: inline-block;
-    color: rgba(0, 10, 6, 0.58);
+    color: var(--ifm-p-color);
     font-size: 14px;
     line-height: 1.5em;
     text-decoration-line: underline;
@@ -169,9 +169,7 @@
       }
     }
 
-    .title,
-    .description,
-    .toggleButton {
+    .title, {
       color: #fff;
     }
 

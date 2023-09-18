@@ -20,7 +20,7 @@ const Faqs = () => {
         </div>
       </section>
       <section className={styles.section}>
-        <h3 className={styles.section__title}>What's your question about?</h3>
+        <h3 className={styles.section__title}>What is your question about?</h3>
         <Categories />
       </section>
       <section>

@@ -29,13 +29,13 @@
     }
 
     > [variant='purple'] {
-      background: rgba(46, 2, 242, 0.09);
-      color: #6e56cf;
+      background: var(--ifm-adnomition-note-background);
+      color: var(--ifm-color-purple);
     }
 
     > [variant='green'] {
       background: rgba(1, 167, 54, 0.13);
-      color: #30a46c;
+      color: var(--ifm-color-primary);
     }
 
     &--active {
@@ -80,7 +80,7 @@
 
 .theme-doc-toc-mobile {
   .clean-btn {
-    color: rgba(0, 15, 9, 0.46);
+    color: var(--ifm-p-color );
     height: 44px;
     padding: 12px 20px;
 

@@ -164,11 +164,11 @@
 }
 
 @include dark-mode {
-   svg {filter:brightness(1.5)};
+  .menu  div:not([class*="goBack"]) svg,.dropdown__menu svg {filter:brightness(1.5)};
 
    .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
     .menu__link {
-    filter:brightness(1.75);
+    filter:brightness(2);
     }
   }
 
@@ -176,12 +176,13 @@
     background: inherit;
    
 
-    .gray-link svg {
-      color: #fff;
+    .gray-link { 
+      a, a svg {
+      color: var(--ifm-p-color);
+      filter: brightness(1);
+      }
     }
     &__link {
-      
-
 
       &:not(.menu__link--sublist),  {
         color: var(--ifm-menu-color);
@@ -209,7 +210,7 @@
         }
       }
     }
-    .disabled_src-theme-DocSidebarItem-Link-styles-module, .soon_src-theme-DocSidebarItem-Link-styles-module  {
+    a[class*="disabled"], span[class^="soon"] {
       color: var(--ifm-menu-color-adisabled);
     }
     .theme-doc-sidebar-item-category-level-1:not(.icon) > .menu__list-item-collapsible {

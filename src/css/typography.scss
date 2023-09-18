@@ -37,29 +37,29 @@ h4 {
   }
 
   & > h1 {
-    --ifm-h2-font-size: 28px;
+    --ifm-h1-font-size: 34px;
   }
 
   & > h2 {
-    --ifm-h2-font-size: 26px;
+    --ifm-h2-font-size: 28px;
   }
 
   & > h3 {
-    --ifm-h2-font-size: 20px;
+    --ifm-h3-font-size: 24px;
   }
 
   & > h4 {
-    --ifm-h2-font-size: 17px;
+    --ifm-h4-font-size: 20px;
   }
 
   & > h5 {
-    --ifm-h2-font-size: 14px;
+    --ifm-h5-font-size: 17px;
   }
 
   p {
     font-size: 1.0625rem;
     color: var(--ifm-p-color);
-    line-height: 1.75rem;
+    line-height: 1.5rem;
   }
 }
 
