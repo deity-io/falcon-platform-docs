@@ -5,9 +5,9 @@
   border-radius: 12px;
   padding: 32px;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 5rem;
   min-height: 132px;
-
+  margin-bottom: 5rem;
   .title {
     text-align: center;
     display: block;
@@ -60,7 +60,7 @@
 
 @include dark-mode {
   .feedback {
-    background: rgba(var(--ifm-button-background-color), 0.2);
+    background: var(--ifm-background-secondary);
     
   }
 }

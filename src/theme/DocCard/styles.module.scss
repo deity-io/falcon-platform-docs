@@ -4,6 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+ @import '../../css/mixins';
 
 .cardContainer {
   --ifm-link-color: var(--ifm-color-emphasis-800);
@@ -17,6 +18,14 @@
 
   transition: all var(--ifm-transition-fast) ease;
   transition-property: border, box-shadow;
+  padding:1.25rem;
+
+ 
+   img {
+      display:inline-block;
+      width: 56px;
+    }
+
 }
 
 .cardContainer:hover {
@@ -29,12 +38,28 @@
 }
 
 .cardTitle {
-  line-height: 1.3em;
-    font-weight: 500;
+  
     font-family: var(--ifm-font-family-headline);
-    font-size: var(--ifm-h3-font-size);
+    font-size: var(--ifm-h4-font-size);
+
+        margin-top: 1.1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 .cardDescription {
   color: var(--ifm-p-color);
+  font-size: 13px;
+    line-height: 18.2px;
+    margin-bottom: 0px;
+}
+
+@include dark-mode {
+  .cardContainer {
+
+    img {
+    filter: invert(1);
+    }
+  }
+
 }

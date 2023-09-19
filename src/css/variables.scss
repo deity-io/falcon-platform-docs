@@ -16,6 +16,7 @@
   --ifm-button-border-color: var(--ifm-color-primary);
   --ifm-button-padding-vertical: 1rem;
   --ifm-background-secondary: #fff;
+  --ifm-background-primary: #FBFDFC;
   --ifm-font-size-sm: 0.8rem;
   --ifm-font-size-xs: 0.6rem;
   --ifm-table-background: white;
@@ -27,6 +28,8 @@
   --ifm-hr-background-color: #dfe4e2;
   --ifm-hr-margin-horizontal: 4px;
   --ifm-code-background: #fff;
+  --docsearch-searchbox-background: var(--ifm-background-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-background-secondary);
   --ifm-global-radius: 12px;
   --ifm-card-border-radius: var(--ifm-global-radius);
   --ifm-global-shadow-lw: 0px 4px 14px rgba(0, 130, 158, 0.02), 0px 4px 12px rgba(15, 40, 69, 0.04);
@@ -37,11 +40,12 @@
   --ifm-adnomition-info: #3E63DD;
   --ifm-adnomition-info-background: #8DA4EF20; 
   --ifm-adnomition-caution: #946800;
-  --ifm-adnomition-caution-background: #FFCCA720; 
+  --ifm-adnomition-caution-background: #FFCCA728; 
   --ifm-adnomition-danger: #832126;
-  --ifm-adnomition-danger-background: #F9C6C620;
+  --ifm-adnomition-danger-background: #F9C6C630;
   --ifm-adnomition-tip: #6A716E;
-  --ifm-adnomition-tip-background: #C2C9C620;
+  --ifm-adnomition-tip-background: #C2C9C630;
+  --ifm-dropdown-background-color: var(--ifm-navbar-background-color);
 
   .footer--dark {
     --ifm-footer-background-color: rgb(21, 23, 22);
@@ -59,7 +63,7 @@
   --ifm-h2-font-size: 26px;
   --ifm-h3-font-size: 20px;
   --ifm-h4-font-size: 17px;
-  --ifm-h5-font-size: 14px;
+  --ifm-h5-font-size: 15px;
   --ifm-p-color: #6a716e;
 
   /* Side Menu */
@@ -117,15 +121,17 @@ html[data-theme='dark'] {
   --ifm-hr-background-color: #4B534F;
   --ifm-link-color: var(--ifm-color-primary);
   --ifm-breadcrumbs-color: var(--ifm-p-color);
-  --ifm-code-background: var(--ifm-darkmode-bg);
+  --ifm-code-background: var(--ifm-background-color);
+  --docsearch-searchbox-background: var(--ifm-background-primary);  
+  --docsearch-searchbox-focus-background: var(--ifm-darkmode-bg);
   --ifm-adnomition-note: #EDE9FE;
-  --ifm-adnomition-note-background: #5746AF60; 
+  --ifm-adnomition-note-background: #5746AF50; 
   --ifm-adnomition-info: #C6D4F9;
-  --ifm-adnomition-info-background: #3E63DD60; 
+  --ifm-adnomition-info-background: #3E63DD48; 
   --ifm-adnomition-caution: #FFDCC3;
   --ifm-adnomition-caution-background: #EB5A0040; 
   --ifm-adnomition-danger: #F9C6C6;
-  --ifm-adnomition-danger-background: #CD2B3160;
+  --ifm-adnomition-danger-background: #CD2B3150;
   --ifm-adnomition-tip: #C2C9C6;
   --ifm-adnomition-tip-background: #C2C9C630;
 

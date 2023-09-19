@@ -1,10 +1,10 @@
 #__docusaurus .DocSearch-Button {
-  --docsearch-text-color: #6a716e;
-  --docsearch-searchbox-background: none;
+  --docsearch-text-color: var(--ifm-p-color);
+ 
   --docsearch-key-gradient: none;
   --docsearch-key-shadow: none;
   --docsearch-muted-color: rgba(1, 30, 17, 0.24);
-  --docsearch-searchbox-focus-background: none;
+
   --docsearch-searchbox-shadow: none;
 
   &-Keys {
@@ -55,13 +55,14 @@
 .markdown {
   .DocSearch-Button {
     height: 48px;
-    box-shadow: 0px 2px 16px rgba(30, 116, 111, 0.16), 0px 11px 32px -1px rgba(0, 194, 255, 0.05);
+    box-shadow: var(  --ifm-global-shadow-md);
     border-radius: 200px;
     padding: 10px 20px;
     width: 300px;
-
+    border: 1px solid rgba(1, 30, 17, 0.1);
     &:hover {
-      box-shadow: 0px 2px 16px rgba(30, 116, 111, 0.16), 0px 11px 32px -1px rgba(0, 194, 255, 0.05);
+      box-shadow: var(--ifm-global-shadow-lw);
+      border-color: none;
     }
 
     @include large {
@@ -166,27 +167,37 @@
 }
 
 @include dark-mode {
-  #__docusaurus .navbar {
-    .DocSearch-Button {
-      border-color: var(--ifm-hr-background-color);
+  
 
-      &-Keys,
-      &-Key {
+  #__docusaurus {
+    .DocSearch-Button {
+      --docsearch-muted-color: rgba(255,255,255, 0.5);
+       border: 1px solid var(--ifm-hr-background-color);
+
+       &-Keys,
+        &-Key {
+          border-color: var(--ifm-hr-background-color);
+          color: var(--ifm-hr-background-color);
+        }
+       
+    }
+    .navbar {
+      .DocSearch-Button {
         border-color: var(--ifm-hr-background-color);
-        color: var(--ifm-hr-background-color);
+
+        
       }
     }
-  }
-  .markdown .DocSearch-Button {
-    border: 1px solid var(--ifm-hr-background-color);
-  }
+
+  }  
+  
   .DocSearch {
     &-Hit a {
       background: none;
     }
 
     &-Input {
-      --docsearch-text-color: var(--ifm-color-secondary);
+      
     }
 
     &-Footer {
@@ -194,9 +205,9 @@
     }
   }
 
-  .navbar .DocSearch-Button svg,
+
   .navbar .DocSearch-Button .DocSearch-Button-Placeholder,
   .DocSearch-Button-Placeholder {
-    color: #fff;
+    
   }
 }

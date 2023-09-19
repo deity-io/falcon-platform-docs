@@ -81,7 +81,7 @@ hr {
   }
 }
 div.markdown :nth-last-child(1 of div[class^="accordion"]) {
-  padding-bottom:20px;
+  margin-bottom:4rem;
 }
 
 @include dark-mode {

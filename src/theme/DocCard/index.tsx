@@ -16,7 +16,7 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import {translate} from '@docusaurus/Translate';
 import type {Props} from '@theme/DocCard';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 import type {
   PropSidebarItemCategory,
   PropSidebarItemLink,
@@ -32,7 +32,7 @@ function CardContainer({
   return (
     <Link
       href={href}
-      className={clsx('card padding--lg', styles.cardContainer)}>
+      className={clsx('card ', styles.cardContainer)}>
       {children}
     </Link>
   );
@@ -51,8 +51,9 @@ function CardLayout({
 }): JSX.Element {
   return (
     <CardContainer href={href}>
+      <img src={icon}/> 
       <h2 className={clsx('text--truncate', styles.cardTitle)} title={title}>
-        {icon} {title}
+        {title}
       </h2>
       {description && (
         <p
@@ -99,7 +100,7 @@ function CardCategory({
 }
 
 function CardLink({item}: {item: PropSidebarItemLink}): JSX.Element {
-  const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
+  const icon = isInternalUrl(item.href) ? '/img/icons/page.svg' : '/img/icons/link.svg';
   const doc = useDocById(item.docId ?? undefined);
   return (
     <CardLayout
