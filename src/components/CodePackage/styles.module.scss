@@ -1,11 +1,13 @@
 .codePackage {
-  border-radius: var(--ifm-global-radius);
-  background-color: var(--ifm-color-secondary);
+  border-radius: var(--ifm-code-border-radius);
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
-  border: 1px solid #bbb;
-  color: var(--ifm-text-color);
+  
+  color: var(--ifm-menu-color-adisabled);
+  margin-bottom: 2rem;
+  border: 1px solid rgba(2, 44, 15, 0.08);
 }
 
 .codePackage svg,
@@ -19,6 +21,13 @@
 
 .packageName {
   margin-left: 0.6rem;
-  font-weight: bold;
+  font-weight: normal;
   font-family: var(--ifm-font-family-monospace);
+   color: var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] {
+.codePackage {
+  background-color: var(--ifm-code-background);
+  }
 }

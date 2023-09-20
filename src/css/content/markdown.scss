@@ -13,6 +13,12 @@
       background: no-repeat center url(#{$icons-path}/link.svg);
     }
   }
+  > h1{
+ 
+  }
+  > h2 {
+  --ifm-h2-font-size: 26px;
+  }
 
   .date {
     font-weight: 400;
@@ -39,7 +45,7 @@
 
   ul {
     padding: 0.5rem;
-    margin: 0;
+    /*margin: 0;*/
     list-style-type: none;
 
     li:not([role='tab']) {
@@ -79,13 +85,6 @@
     & > p,
     .date {
       /*color: #fff;*/
-    }
-
-    
-
-    pre code {
-      background-color: var(--);
-      color: #fff;
     }
 
     .hash-link:before {

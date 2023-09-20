@@ -1,3 +1,9 @@
+code {
+  
+  border: 0px solid rgba(2, 44, 15, 0.08);
+  color: var(--ifm-menu-color);
+}
+
 .markdown {
   .theme-code-block {
     box-shadow: none;
@@ -11,7 +17,7 @@
   }
 
   pre code {
-    background-color: var(--ifm-code-background);
+    background-color: var(--ifm-background-primary);
     -webkit-text-size-adjust: 100%;
   }
 }
@@ -23,6 +29,6 @@
   }
 
   pre code {
-    background-color: var(--ifm-code-background);
+    background-color: var(--ifm-background-secondary);
   }
 }

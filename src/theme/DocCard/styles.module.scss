@@ -29,8 +29,12 @@
 }
 
 .cardContainer:hover {
- 
   box-shadow: var(--ifm-global-shadow-md);
+
+  h2,
+  p {
+    color: var(--ifm-color-primary);
+  }
 }
 
 .cardContainer *:last-child {

@@ -39,6 +39,19 @@
     
   }
 }
+.soon {
+  position:relative;
+  h4, p, div {
+    filter:saturate(0) opacity(0.5);
+  } 
+  &:before {
+      content: 'Soon!';
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      color: var(--ifm-menu-color-adisabled);
+    }
+}
 
 .padding {
   padding: 1.25rem;
@@ -55,6 +68,14 @@
 
 .clickable {
   cursor: pointer;
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
+  &:hover {
+      box-shadow: var(--ifm-global-shadow-md);
+      h4, p {
+        color: var(--ifm-color-primary)
+      }
+  }
 }
 
 @include dark-mode {

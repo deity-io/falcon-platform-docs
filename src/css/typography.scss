@@ -18,7 +18,7 @@ h5 {
 
 .markdown {
   h1:first-child {
-    --ifm-h1-font-size: 2.3125rem;
+   --ifm-h1-font-size: 2.3125rem;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
   }
@@ -40,9 +40,9 @@ h5 {
   
 
   p {
-    font-size: 1.0625rem;
+   
     color: var(--ifm-p-color);
-    line-height: 1.5rem;
+    line-height: 1.75rem;
   }
 }
 

@@ -161,6 +161,9 @@
       }
     }
   }
+  [class*="disabled"], span[class^="soon"] {
+      color: var(--ifm-menu-color-adisabled) !important;
+  }
 }
 
 @include dark-mode {
@@ -210,9 +213,7 @@
         }
       }
     }
-    a[class*="disabled"], span[class^="soon"] {
-      color: var(--ifm-menu-color-adisabled);
-    }
+
     .theme-doc-sidebar-item-category-level-1:not(.icon) > .menu__list-item-collapsible {
       .menu__link {
         color: var(--ifm-color-primary);

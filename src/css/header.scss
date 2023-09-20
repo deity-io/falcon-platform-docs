@@ -118,11 +118,18 @@
 
   &--active,
   &:hover {
-    color: var(--ifm-color-primary);
+    color: var(--ifm-menu-color-active);
+    background: var(--ifm-navbar-link-background-hover);
   }
   svg {
     margin-right:8px;
   }
+ span[class^='disabled'], span[class^='soon'] {
+    color: var(--ifm-menu-color-adisabled);
+
+    
+  }
+
 }
 
 @include dark-mode {
@@ -132,13 +139,10 @@
 
   .dropdown {
     &:hover {
-      --ifm-navbar-link-background-hover: none;
+      
     }
   }
 
-  span[class^='disabled'], span[class^='soon'] {
-    color: var(--ifm-menu-color-adisabled);
-  }
 
   .navbar {
     &__link {

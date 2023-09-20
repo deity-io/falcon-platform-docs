@@ -28,15 +28,13 @@
     border-radius: 6px;
 
     svg {
-      color: rgba(0, 10, 7, 0.93);
+      color: var(--ifm-p-color);
 
-      @include medium {
-        color: #6A716E;
-      }
+      
     }
 
     @include medium {
-      border: 1px solid rgba(1, 30, 17, 0.24);
+      border: 1px solid var(--ifm-hr-background-color);
       width: 216px;
     }
 
@@ -172,7 +170,7 @@
   #__docusaurus {
     .DocSearch-Button {
       --docsearch-muted-color: rgba(255,255,255, 0.5);
-       border: 1px solid var(--ifm-hr-background-color);
+       
 
        &-Keys,
         &-Key {

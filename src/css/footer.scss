@@ -50,8 +50,12 @@
     list-style-type: none;
 
     a {
-      text-decoration: underline;
+      
       font-size: 0.875rem;
+      &:hover {
+        color: #fff;
+        text-decoration:none;
+      }
     }
   }
 

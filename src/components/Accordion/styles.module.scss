@@ -40,7 +40,7 @@
 
     .answer {
       color: var(--ifm-p-color);
-     border-top: 1px solid rgba(2, 44, 15, 0.08);
+      border-top: 1px solid rgba(2, 44, 15, 0.08);
       padding: 1.5rem 2rem 1.5rem 64px;
 
       &__closed {
@@ -58,5 +58,9 @@ html[data-theme='dark'] {
         filter: invert(1);
         }
     }
+    .answer {
+      
+      border-top: 1px solid var(--ifm-background-primary);
+      }
   }
 }

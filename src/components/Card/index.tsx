@@ -8,9 +8,10 @@ type Props = {
   isPadding: boolean;
   variant?: 'horizontal' | 'vertical';
   to: string;
+  status?: 'soon' | 'active';
 };
 
-const Card = ({ children, isPadding = true, variant = 'vertical', to, className}: Props) => {
+const Card = ({ children, isPadding = true, variant = 'vertical', to, status = 'active', className}: Props) => {
   const history = useHistory();
 
   return (
@@ -19,6 +20,7 @@ const Card = ({ children, isPadding = true, variant = 'vertical', to, className}
       className={clsx(styles.root, {
         [styles.padding]: isPadding,
         [styles.horizontal]: variant === 'horizontal',
+        [styles.soon]: status === 'soon',
         [styles.clickable]: !!to
       })}
     >

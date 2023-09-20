@@ -5,6 +5,8 @@
   --ifm-font-family-headline: 'Deity Sans Display', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
     Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-monospace: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+     
   --ifm-color-primary: #0c6d62;
   --ifm-color-secondary: #1a1e1c;
   --ifm-color-purple: #545df6;
@@ -15,10 +17,12 @@
   --ifm-button-background-color: 12, 109, 98;
   --ifm-button-border-color: var(--ifm-color-primary);
   --ifm-button-padding-vertical: 1rem;
+  --ifm-background-color: #f3f5f4;
   --ifm-background-secondary: #fff;
   --ifm-background-primary: #FBFDFC;
   --ifm-font-size-sm: 0.8rem;
   --ifm-font-size-xs: 0.6rem;
+  --ifm-code-font-size: 0.85em; /* Using em because sometimes these are used in the headings as well*/
   --ifm-table-background: white;
   --ifm-table-border-color: whitesmoke;
   --ifm-table-background-highlight: #ebecfb;
@@ -27,9 +31,11 @@
   --ifm-container-width: 1040px;
   --ifm-hr-background-color: #dfe4e2;
   --ifm-hr-margin-horizontal: 4px;
-  --ifm-code-background: #fff;
+  --ifm-menu-color-adisabled: #99A39F;
+
   --docsearch-searchbox-background: var(--ifm-background-secondary);
   --docsearch-searchbox-focus-background: var(--ifm-background-secondary);
+  --ifm-code-background:#f1f4f3;  
   --ifm-global-radius: 12px;
   --ifm-card-border-radius: var(--ifm-global-radius);
   --ifm-global-shadow-lw: 0px 4px 14px rgba(0, 130, 158, 0.02), 0px 4px 12px rgba(15, 40, 69, 0.04);
@@ -56,15 +62,18 @@
   /* Header */
   --ifm-navbar-link-color: #1f2321;
   --ifm-menu-color-background-active: rgba(0, 56, 37, 0.05);
-  --ifm-navbar-link-background-hover: #f3f5f4;
+  --ifm-navbar-link-background-hover: var(--ifm-menu-color-background-active);
 
   /* Typography */
-  --ifm-h1-font-size: 28px;
+  --ifm-h1-font-size: 2.3125rem;
   --ifm-h2-font-size: 26px;
   --ifm-h3-font-size: 20px;
   --ifm-h4-font-size: 17px;
   --ifm-h5-font-size: 15px;
   --ifm-p-color: #6a716e;
+  --ifm-code-padding-horizontal: 5px;
+  --ifm-code-padding-vertical: 3px;
+  --ifm-button-font-weight: 500;
 
   /* Side Menu */
   --doc-sidebar-width: 240px;
@@ -99,6 +108,7 @@ html[data-theme='dark'] {
   --ifm-navbar-background-color: var(--ifm-darkmode-bg);
   --ifm-background-secondary: var(--ifm-darkmode-bg);
   --ifm-background-primary: rgb(21, 23, 22);
+
   --ifm-color-purple: #AA99EC;
   --ra-color-note: var(--ifm-darkmode-bg);
   --ifm-background-color: #1A1E1C;
@@ -118,11 +128,12 @@ html[data-theme='dark'] {
   --ifm-table-background-highlight: #2d2459;
   --ifm-table-border-color-highlight: #524691;
   --ifm-navbar-link-color: #fff;
+  --ifm-navbar-link-background-hover: var(--ifm-background-color);
   --ifm-hr-background-color: #4B534F;
   --ifm-link-color: var(--ifm-color-primary);
   --ifm-breadcrumbs-color: var(--ifm-p-color);
-  --ifm-code-background: var(--ifm-background-color);
-  --docsearch-searchbox-background: var(--ifm-background-primary);  
+  --ifm-code-background: var(--ifm-background-secondary);
+  --docsearch-searchbox-background: var(--ifm-navbar-background-color);  
   --docsearch-searchbox-focus-background: var(--ifm-darkmode-bg);
   --ifm-adnomition-note: #EDE9FE;
   --ifm-adnomition-note-background: #5746AF50; 

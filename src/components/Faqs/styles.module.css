@@ -52,6 +52,10 @@
   text-decoration: none;
   box-shadow: var(--ifm-global-shadow-md);
   color:var(--ifm-color-primary);
+  
+  .category__name {
+    color:var(--ifm-color-primary);
+  }
 }
 
 .category__name {
