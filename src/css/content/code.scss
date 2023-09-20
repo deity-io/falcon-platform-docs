@@ -7,7 +7,7 @@ code {
 .markdown {
   .theme-code-block {
     box-shadow: none;
-    border: 1px solid rgba(2, 44, 15, 0.08);
+    border: 1px solid var(--ifm-color-info-dark);
     border-radius: 6px;
 
     .clean-btn {
@@ -17,7 +17,7 @@ code {
   }
 
   pre code {
-    background-color: var(--ifm-background-primary);
+    background-color: var(--ifm-background-secondary);
     -webkit-text-size-adjust: 100%;
   }
 }

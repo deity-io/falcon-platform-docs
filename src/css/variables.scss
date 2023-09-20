@@ -41,6 +41,10 @@
   --ifm-global-shadow-lw: 0px 4px 14px rgba(0, 130, 158, 0.02), 0px 4px 12px rgba(15, 40, 69, 0.04);
   --ifm-global-shadow-md: 0 12px 48px 0 rgba(0, 0, 0, 0.1), rgba(15, 255, 187, 0.2) 0px 1px 20px -0.214286px;
   --ifm-global-shadow-tl: 0 12px 48px 0 rgba(0, 0, 0, 0.1), rgba(15, 255, 187, 0.2) 0px 1px 20px -0.214286px;
+
+
+
+
   --ifm-adnomition-note: #6E56CF;
   --ifm-adnomition-note-background: #F1F0FC; 
   --ifm-adnomition-info: #3E63DD;
@@ -51,6 +55,10 @@
   --ifm-adnomition-danger-background: #F9C6C630;
   --ifm-adnomition-tip: #6A716E;
   --ifm-adnomition-tip-background: #C2C9C630;
+  
+  --ifm-color-info-contrast-background: var(--ifm-background-secondary);
+  --ifm-color-info-dark: #E6E9E8;
+
   --ifm-dropdown-background-color: var(--ifm-navbar-background-color);
 
   .footer--dark {
@@ -146,6 +154,8 @@ html[data-theme='dark'] {
   --ifm-adnomition-tip: #C2C9C6;
   --ifm-adnomition-tip-background: #C2C9C630;
 
+  --ifm-color-info-contrast-background: var(--ifm-background-color);
+  --ifm-color-info-dark: var(--ifm-background-secondary);
 
     /* Side Menu */
   --doc-sidebar-width: 240px;

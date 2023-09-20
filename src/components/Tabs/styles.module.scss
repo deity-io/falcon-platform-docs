@@ -4,7 +4,7 @@
   position: relative;
   background: #f8faf9;
   border-radius: 6px;
-  border: 1px solid rgba(2, 44, 15, 0.08);
+  border: 1px solid var(--ifm-color-info-dark);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -31,8 +31,8 @@
 
   .header {
     min-height: 49px;
-    background: #fbfdfc;
-    border-bottom: 1px solid rgba(2, 44, 15, 0.08);
+    background: var(--ifm-background-primary);
+    border-bottom: 1px solid var(--ifm-color-info-dark);
     padding: 8px 12px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -47,9 +47,11 @@
     .packageName {
       display: inline-block;
       border-radius: 6px;
-      background: rgba(0, 56, 37, 0.05);
+      background: var(--ifm-background-color);
       padding: 4px 8px;
-      color: rgba(0, 10, 6, 0.58);
+      color: var(--ifm-p-color);
+          font-family: var(--ifm-font-family-monospace);
+    font-size: var(--ifm-code-font-size);
     }
 
     & + div {
@@ -155,7 +157,7 @@
 
 @include dark-mode {
   .root {
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--ifm-background-color);
     color: #fff;
 
     li[role='tab'] {
@@ -177,6 +179,11 @@
     .header {
       background: transparent;
       color: #fff;
+      .packageName {
+          
+          background: var(--ifm-background-secondary);
+          
+        }
     }
 
     .item {

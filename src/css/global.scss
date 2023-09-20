@@ -60,7 +60,14 @@
 hr {
   margin: var(--ifm-hr-margin-vertical) var(--ifm-hr-margin-horizontal);
 }
-
+details > summary {
+  &:before {
+    border-left-color:var(--ifm-p-color) !important;
+    }
+  font-family: var(--ifm-font-family-headline);
+    font-size: var(--ifm-h4-font-size);
+   
+}
 .hr {
   height: 1px;
   background: rgba(1, 40, 24, 0.13);
@@ -97,4 +104,5 @@ div.markdown :nth-last-child(1 of div[class^="accordion"]) {
   #__docusaurus  {
     background: var(--ifm-background-primary);
   }
+  
 }
