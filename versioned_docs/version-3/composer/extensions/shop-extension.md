@@ -6,6 +6,9 @@ enterprise_only: true
 ---
 
 import CodePackage from '@site/src/components/CodePackage';
+import Badge from '@site/src/components/Badge';
+
+<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
 <CodePackage name="@deity/falcon-shop-extension" /> 
 
@@ -19,9 +22,9 @@ This extension provides basic features for a webshop implementation:
 
 ## Available integrations
 
-- [BigCommerce module](../../integration/bigcommerce/overview)
-- [CommerceTools module](../../integration/commercetools/overview)
-- [Magento2 module](../../integration/magento2/overview)
+- [BigCommerce module](../integration/bigcommerce/overview)
+- [CommerceTools module](../integration/commercetools)
+- [Magento2 module](../integration/magento2/overview)
 
 ## Usage
 

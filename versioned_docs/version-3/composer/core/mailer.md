@@ -3,6 +3,9 @@ id: mailer
 title: Mail Component
 sidebar_label: Mail Component
 ---
+import Badge from '@site/src/components/Badge';
+
+<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
 ## Overview 
 

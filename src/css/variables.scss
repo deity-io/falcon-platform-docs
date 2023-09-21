@@ -14,7 +14,7 @@
   --ifm-footer-background-color: #ffffffa8;
   --ifm-hero-text-color: #ffffff;
   --ifm-button-color: #ffffff;
-  --ifm-button-background-color: 12, 109, 98;
+  --ifm-button-background-color: rgb(12, 109, 98);
   --ifm-button-border-color: var(--ifm-color-primary);
   --ifm-button-padding-vertical: 1rem;
   --ifm-background-color: #f3f5f4;
@@ -125,7 +125,7 @@ html[data-theme='dark'] {
   --ifm-color-secondary: #C5FD81;
   --ra-admonition-icon-color: #2DFE4E2;
   --ifm-button-color: #1A1E1C;
-  --ifm-button-background-color: 141, 206, 195;
+  --ifm-button-background-color: rgb(141, 206, 195);
   --ifm-button-border-color: var(--ifm-color-primary);
   --ifm-card-background-color: var(--ifm-darkmode-bg);
   --ifm-text-color: #DFE4E2;

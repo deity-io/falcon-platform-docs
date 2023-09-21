@@ -81,7 +81,7 @@ function CardCategory({
   return (
     <CardLayout
       href={href}
-      icon="🗃️"
+      icon="/img/icons/pages.svg"
       title={item.label}
       description={
         item.description ??

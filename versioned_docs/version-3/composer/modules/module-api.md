@@ -8,6 +8,10 @@ enterprise_only: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import Badge from '@site/src/components/Badge';
+
+<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+
 As mentioned [here](./about#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in Falcon Server.
 Its powerful api allows to:
 

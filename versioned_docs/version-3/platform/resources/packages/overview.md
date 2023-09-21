@@ -1,7 +1,7 @@
 ---
 id: overview
-title: Our Packages
-sidebar_label: Our Packages
+title: Packages
+sidebar_label: Packages
 ---
 
 Falcon Platform Ships with various `@deity` packages.

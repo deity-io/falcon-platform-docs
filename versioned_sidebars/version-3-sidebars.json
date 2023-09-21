@@ -144,11 +144,6 @@
         {
           "type": "doc",
           "id": "version-3/platform/key-concepts"
-        },
-        {
-          "type": "doc",
-          "label": "Cloud Console",
-          "id": "version-3/console"
         }
       ]
     },
@@ -220,6 +215,11 @@
       "items": [
         {
           "type": "doc",
+          "label": "Cloud Console",
+          "id": "version-3/platform/configuration"
+        },
+        {
+          "type": "doc",
           "id": "version-3/platform/resources/upgrading"
         },
         {
@@ -227,8 +227,121 @@
           "id": "version-3/platform/resources/redirects"
         },
         {
-          "type": "doc",
-          "id": "version-3/platform/resources/packages"
+          "type": "category",
+          "link":{"type":"doc", "id": "version-3/platform/resources/packages/overview"},
+          "collapsible": true,
+          "collapsed": true,   
+          "label": "Packages",       
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/babel-preset-falcon-client"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/create-falcon-app"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/eslint-config-falcon"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-adyen-plugin"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-blog-data"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-blog-extension"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-client"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-data"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-errors"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-front-kit"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-i18n-webpack-plugin"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-i18n"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-logger"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-magento2-api"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-payment-plugin"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-paypal-plugin"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-scripts"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-server-env"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-server"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-service-worker"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-shop-data"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-shop-extension"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-theme-editor"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-ui-kit"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-ui"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/falcon-wordpress-api"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/resources/packages/normal-module-override-webpack-plugin"
+            }
+          ]
         },
         {
           "type": "doc",
@@ -634,39 +747,6 @@
     },
     {
       "type": "category",
-      "label": "Building Experiences",
-      "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/building-experiences"},
-      "collapsed": true,
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-3/storefront/menu-navbar"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/overrides"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/routing"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/meta-data"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/schema-json"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/browser-support"
-        }
-      ]
-    },
-    {
-      "type": "category",
       "label": "Creating Themes",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/storefront/theming"},
@@ -695,6 +775,39 @@
         {
           "type": "doc",
           "id": "version-3/storefront/theming/css-sass"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Building Experiences",
+      "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/building-experiences"},
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/storefront/menu-navbar"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/overrides"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/routing"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/meta-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/schema-json"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/browser-support"
         }
       ]
     },
@@ -860,6 +973,10 @@
         {
           "type": "doc",
           "id": "version-3/payments/providers/humm"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/providers/wpay"
         }
       ]
     },
@@ -1030,6 +1147,10 @@
         {
           "type": "doc",
           "id": "version-3/integrations/humm"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/integrations/wpay"
         }
       ]
     },
@@ -1092,10 +1213,6 @@
               {
                 "type": "doc",
                 "id": "version-3/integrations/resources/tutorials/contentful2"
-              },
-              {
-                "type": "doc",
-                "id": "version-3/integrations/resources/tutorials/braintree"
               }
             ]
         },

@@ -1,17 +1,20 @@
 ---
 id: about
 title: Extensions in Falcon Server
-sidebar_label: About
+sidebar_label: Introduction
 enterprise_only: true
 ---
+import Badge from '@site/src/components/Badge';
+
+<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
 Falcon-Server provides its own base GraphQL Schema, that defines data types, queries
 and mutations, so every Extension could use its types and extend them.
 
 Currently, DEITY provides the following list of officially supported extensions:
 
-- [Shop Extension](./blog-extension)
-- [Blog Extension](./shop-extension)
+- [Shop Extension](./shop-extension)
+- [Blog Extension](./blog-extension)
 - [Search Extension](./search-extension)
 - [GeoLocation Extension](./geolocation-extension)
 

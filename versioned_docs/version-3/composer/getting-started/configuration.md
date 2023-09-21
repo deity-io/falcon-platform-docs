@@ -4,6 +4,9 @@ title: Configuration in Falcon Server
 sidebar_label: Configuration
 enterprise_only: true
 ---
+import Badge from '@site/src/components/Badge';
+
+<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
 Falcon Client and Falcon Server configs work in the same way. You can find the general description of the configuration options [here](../general-concepts/configuration).
 

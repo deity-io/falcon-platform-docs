@@ -31,7 +31,7 @@ client/<br />
     <a href="#swjs">sw.js</a>
 </div>
 
----
+
 
 ### build
 The build directory contains the built assets for your site. This should not be committed to your git repo.

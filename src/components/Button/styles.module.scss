@@ -34,18 +34,18 @@
 
   &.primary {
     &.contained {
-      background: rgba(var(--ifm-button-background-color), 1);
+      background: var(--ifm-button-background-color);
       border: 1px solid rgba(2, 44, 15, 0.08);
       color: var(--ifm-button-color);
 
       &:hover {
-        background: rgba(var(--ifm-button-background-color), 0.8);
+        background: var(--ifm-button-background-color);
         border: 1px solid rgba(2, 44, 15, 0.08);
       }
 
       &:active:focus {
-        background: rgba(var(--ifm-button-background-color), 0.314);
-        border: 1px solid rgba(var(--ifm-button-background-color), 0.314);
+        background: var(--ifm-button-background-color);
+        border: 1px solid var(--ifm-button-background-color);
         color: var(--ifm-color-primary);
       }
 

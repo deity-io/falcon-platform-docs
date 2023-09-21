@@ -35,7 +35,9 @@ h5 {
   .headline2 {
     font-size: 37px;
     line-height: 44.4px;
+    margin-top: 0;
   }
+
 
   
 
@@ -43,6 +45,10 @@ h5 {
    
     color: var(--ifm-p-color);
     line-height: 1.75rem;
+  }
+  h3 {
+    align-items: flex-start;
+  justify-content: space-between;
   }
 }
 

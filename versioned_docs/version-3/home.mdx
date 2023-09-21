@@ -34,10 +34,10 @@ import Button from '@site/src/components/Button';
           fast-growing and forward thinking ecommerce merchant.
         </p>
       </div>  
-       <Button variant="contained" size="medium" href="/#">
+       <Button variant="contained" size="medium" href="/platform">
           Learn more
        </Button>
-      <Button variant="outline" size="medium" href="/#">
+      <Button variant="outline" size="medium" href="https://www.deity.com/contact" target="_blank">
           Schedule a demo
        </Button>
     </CardContent>
@@ -50,22 +50,22 @@ import Button from '@site/src/components/Button';
 </Card>
 
 <div className="flex mb100 brighten">
-  <Card to="/#">
+  <Card to="/platform">
     <img src="/img/icons/rings.svg" />
     <h4>Overview</h4>
     <p>Learn what Deity Platform is and how it works.</p>
   </Card>
-  <Card to="/#">
-    <img src="/img/icons/lightning.svg" />
-    <h4>Getting started</h4>
-    <p>Jump right in and get started with Deity Platform.</p>
-  </Card>
-  <Card to="/#">
+  <Card to="/platform/key-concepts">
     <img src="/img/icons/info.svg" />
     <h4>Key concepts</h4>
     <p>Learn the basics behind Deity Platform.</p>
   </Card>
-  <Card to="/#">
+  <Card to="/platform/getting-started/overview">
+    <img src="/img/icons/lightning.svg" />
+    <h4>Getting started</h4>
+    <p>Jump right in and get started with Deity Platform.</p>
+  </Card>  
+  <Card to="/platform/support/tutorials">
     <img src="/img/icons/lightbulb.svg" />
     <h4>Tutorials</h4>
     <p>Learn by doing by following practical tutorials.</p>
@@ -73,32 +73,32 @@ import Button from '@site/src/components/Button';
 </div>
 
 <Badge>Products</Badge>
-<h1 className="mb20 headline2">Pick your topic</h1>
+<h2 className="mb20 headline2">Pick your topic</h2>
 <div className="flex mb100 brighten">
-  <Card to="/#">
+  <Card to="/composer">
     <img src="/img/icons/ticker.svg" />
     <h4>Composer</h4>
-    <p>Compose the best of breed digital experiences.</p>
+    <p>Compose outstanding digital experiences to achieve transactional excellence.</p>
   </Card>
-  <Card to="/#">
+  <Card to="/storefront">
     <img src="/img/icons/data.svg" />
     <h4>Storefront</h4>
-    <p>Create unified web and app experiences.</p>
+    <p>Focus on customer experience to exceed expectations.</p>
   </Card>
-  <Card to="/#">
+  <Card to="/payments">
     <img src="/img/icons/coins.svg" />
     <h4>Payments</h4>
     <p>Integrate multiple payment service providers to use any payment method.</p>
   </Card>
-  <Card to="/#">
+  <Card to="/console">
     <img src="/img/icons/switch.svg" />
-    <h4>Console</h4>
+    <h4>Cloud Console</h4>
     <p>Manage your subscriptions, users, deployments, integrations and more with our web-based application.</p>
   </Card>
 </div>
 
 <Badge>Guides</Badge>
-<h1 className="mb20 headline2">Learn the basics</h1>
+<h2 className="mb20 headline2">Learn the basics</h2>
 <div className="flex brighten">
   <Card variant="horizontal" to="#">
     <img src="/img/icons/ticker.svg" />
@@ -165,6 +165,8 @@ import Button from '@site/src/components/Button';
     </div>
   </Card>
 </div>
+
+<h2 class="mb20 headline2">Integrations</h2>
 
 import IntegrationContent from "./integrations.mdx"
 

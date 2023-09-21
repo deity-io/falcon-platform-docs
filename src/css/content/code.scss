@@ -5,10 +5,10 @@ code {
 }
 
 .markdown {
-  .theme-code-block {
+  .theme-code-block, .codeBlock {
     box-shadow: none;
     border: 1px solid var(--ifm-color-info-dark);
-    border-radius: 6px;
+    border-radius: var(--ifm-pre-border-radius);
 
     .clean-btn {
       border: 0;
@@ -19,6 +19,12 @@ code {
   pre code {
     background-color: var(--ifm-background-secondary);
     -webkit-text-size-adjust: 100%;
+  }
+  .codeBlock {
+    background-color: var(--ifm-background-secondary);
+    font-size: var(--ifm-code-font-size);
+    padding: var(--ifm-pre-padding);
+    font-family: var(--ifm-font-family-monospace);
   }
 }
 

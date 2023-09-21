@@ -53,13 +53,13 @@
 .markdown {
   .DocSearch-Button {
     height: 48px;
-    box-shadow: var(  --ifm-global-shadow-md);
+    box-shadow: var(--ifm-global-shadow-lw);
     border-radius: 200px;
     padding: 10px 20px;
     width: 300px;
     border: 1px solid rgba(1, 30, 17, 0.1);
     &:hover {
-      box-shadow: var(--ifm-global-shadow-lw);
+      box-shadow: var(--ifm-global-shadow-md);
       border-color: none;
     }
 
@@ -69,7 +69,9 @@
     }
   }
 }
-
+.home-search-description {
+  display:none;/*hide for now*/
+}
 .DocSearch {
   .DocSearch-Modal {
     --docsearch-modal-background: #fff;

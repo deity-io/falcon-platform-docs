@@ -1,122 +1,170 @@
 ---
 id: storefront
 title: Storefront
+hide_title: true
 ---
 
+import { Card, CardContent } from '@site/src/components/Card';
 import Badge from '@site/src/components/Badge';
+import LogoImg from '/img/logo.svg';
 import Button from '@site/src/components/Button';
-import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
-import { Card } from '@site/src/components/Card';
-import CodeBlock from '@theme/CodeBlock';
 
-<h1>
-  Use Deity’s PWA toolkit to implement any customer experience, without affecting your backend.
-</h1>
-<h3>
-  One codebase for both native and web apps. This doesn’t just mean developmental efficiency, but also a unified
-  customer experience to boost your sales.
-</h3>
 
-<hr />
+<h1 className="headline mb20">Focus on customer experience to exceed expectations</h1>
+<p className="desc pb20">Deity commerce platform comes with highly engaging PWA and native storefronts to deliver excellent experiences your customers expect.</p>
 
-Falcon Server is the middleware layer between the front-end (Falcon Client) and the back-end services providing data, including BigCommerce, but simultaneously this could also be Wordpress, Algolia, Stripe or any other your business requires.
+<hr/>
 
-## Payments <Badge variant="green">4</Badge>
-
-<div className="flex mb100 brighten">
-  <Card to="/#">
-    <img src="/img/icons/rings.svg" />
-    <h4>Overview</h4>
-    <p>Learn what Deity Platform is and how it works.</p>
-  </Card>
-  <Card to="/#">
-    <img src="/img/icons/lightning.svg" />
-    <h4>Getting started</h4>
-    <p>Jump right in and get started with Deity Platform.</p>
-  </Card>
-  <Card to="/#">
+## Start Right Away
+<div className="flex mb80 brighten">
+  <Card to="/storefront/key-concepts">
     <img src="/img/icons/info.svg" />
     <h4>Key concepts</h4>
-    <p>Learn the basics behind Deity Platform.</p>
+    <p>Storefront serves as your PWA theme and more.</p>
   </Card>
-  <Card to="/#">
+  <Card to="/storefront/getting-started">
+    <img src="/img/icons/lightning.svg" />
+    <h4>Getting started</h4>
+    <p>Storefront is included in the Deity Platform.</p>
+  </Card>
+  <Card to="/platform/support/tutorials">
     <img src="/img/icons/lightbulb.svg" />
     <h4>Tutorials</h4>
     <p>Learn by doing by following practical tutorials.</p>
   </Card>
 </div>
 
-<hr />
 
-<Badge>Products</Badge>
-<h1 className="mb20 headline2">Headline</h1>
-<div className="flex mb100 brighten">
-  <Card to="/#">
-    <img src="/img/icons/ticker.svg" />
-    <h4>Composer</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
-  </Card>
-  <Card to="/#">
+
+## Learn the Basics
+<h3 className="mt0">Creating themes <Button variant="outline" size="medium" href="/storefront/building-experiences">View all →</Button></h3>
+
+<div className="flex brighten">
+  <Card variant="horizontal" to="/storefront/theming/overview">
     <img src="/img/icons/data.svg" />
-    <h4>Storefront</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+    <div>
+      <h5>Introduction</h5>
+      <p>
+        
+      </p>
+    </div>
   </Card>
-  <Card to="/#">
-    <img src="/img/icons/coins.svg" />
-    <h4>Payments</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+  <Card variant="horizontal" to="/storefront/theming/css-mapping">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>CSS Mapping</h5>
+      <p>
+        
+      </p>
+    </div>
   </Card>
-  <Card to="/#">
-    <img src="/img/icons/switch.svg" />
-    <h4>Console</h4>
-    <p>Leo ipsum maecenas luctus placerat purus nascetur et cras.</p>
+</div>
+<div className="flex brighten mb80">
+  <Card variant="horizontal" to="/storefront/theming/components">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Themed Components</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/storefront/theming/fonts">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Custom Fonts</h5>
+      <p>
+        
+      </p>
+    </div>
   </Card>
 </div>
 
-## Buttons
+<h3 className="mt0">Building experiences <Button variant="outline" size="medium" href="/storefront/theming">View all →</Button></h3>
 
-<Button target="_blank" href="#">
-  Button
-</Button>
+<div className="flex brighten">
+  <Card variant="horizontal" to="/storefront/menu-navbar">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Menu Navbar</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/storefront/overrides">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Overriding Components</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten mb100">
+  <Card variant="horizontal" to="/storefront/routing">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Routing</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/storefront/meta-data">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Meta Data</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+</div>
 
-## Code
+## Advanced Features
+<div className="negative-view-all"><Button variant="outline" size="medium" href="/storefront/advanced">View all →</Button></div>
 
-<TabsContainer title="Code snippet with tabs">
-  <Tabs
-    variant="secondary"
-    defaultValue="npm"
-    values={[
-      { label: 'NPM', value: 'npm' },
-      { label: 'Yarn', value: 'yarn' }
-    ]}
-  >
-    <TabItem value="npm">
-      <CodeBlock language="bash">npm start</CodeBlock>
-    </TabItem>
-    <TabItem value="yarn">
-      <CodeBlock language="bash">yarn start</CodeBlock>
-    </TabItem>
-  </Tabs>
-</TabsContainer>
+<div className="flex brighten">
+  <Card variant="horizontal" to="/storefront/data">
+    <img src="/img/icons/coins.svg" />
+    <div>
+      <h5>Data Management</h5>
+      <p>
+        This page covers how to query and update data.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/storefront/state">
+    <img src="/img/icons/data.svg" />
+    <div>
+      <h5>Local State Management</h5>
+      <p>
+        This page covers how to manage your local (client-side) state.
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex mb100 brighten">
+  <Card variant="horizontal" to="/storefront/translations">
+    <img src="/img/icons/switch.svg" />
+    <div>
+      <h5>Internationalization & Translations</h5>
+      <p>
+        Internationalization is based on i18next.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/storefront/code-splitting">
+    <img src="/img/icons/switch.svg" />
+    <div>
+      <h5>Code Splitting</h5>
+      <p>
+        This feature splits your code into various bundles which are loaded on demand.
+      </p>
+    </div>
+  </Card>
+</div>
 
-## Adnomition
 
-:::note Title
-Leo ipsum maecenas luctus placerat purus nascetur et cras.
-:::
-
-:::info info Title
-Leo ipsum maecenas luctus placerat purus nascetur et cras.
-:::
-
-:::caution caution Title
-Leo ipsum maecenas luctus placerat purus nascetur et cras.
-:::
-
-:::danger Title
-Leo ipsum maecenas luctus placerat purus nascetur et cras.
-:::
-
-:::tip Title
-Leo ipsum maecenas luctus placerat purus nascetur et cras.
-:::

@@ -8,6 +8,11 @@ enterprise_only: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import Badge from '@site/src/components/Badge';
+
+<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+
+
 [Apollo Server documentation](https://www.apollographql.com/docs/apollo-server/data/data-sources/) says:
 
 > Data sources are classes that Apollo Server can use to encapsulate fetching data from a particular source, such as a database or a REST API. These classes help handle caching, deduplication, and errors while resolving operations.

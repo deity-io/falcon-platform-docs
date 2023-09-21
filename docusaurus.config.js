@@ -51,7 +51,7 @@ module.exports = {
               to: '/payments'
             },
             {
-              label: 'Console',
+              label: 'Cloud Console',
               icon: 'console',
               to: '/console',
               customProps: {
@@ -260,7 +260,7 @@ module.exports = {
           lastVersion: '3',
           versions: {
             3: {
-              label: 'Platform (v3)'
+              label: 'V3 - BUT V2 DOCS'
             },
             2: {
               label: 'Platform (v2)',
