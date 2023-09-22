@@ -24,7 +24,7 @@
         width: 24px;
         height: 24px;
         border-radius:16px;
-        background: rgba(var(--ifm-button-background-color),0.1) url(/static/img/icons/plus.svg) no-repeat center;
+        background: var(--ifm-background-color) url(/static/img/icons/plus.svg) no-repeat center;
         content: '';
         margin-right: 20px;
         margin-left: 20px;
@@ -33,7 +33,7 @@
       &__open {
         margin-bottom: 0;
         &:before {
-          background: rgba(var(--ifm-button-background-color),0.1) url(/static/img/icons/minus.svg) no-repeat center;
+          background: var(--ifm-background-color) url(/static/img/icons/minus.svg) no-repeat center;
         }
       }
     }

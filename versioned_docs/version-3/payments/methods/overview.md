@@ -1,7 +1,7 @@
 ---
-id: methods-overview
+id: overview
 title: Payment Methods Overview
-sidebar_label: Overview
+sidebar_label: Payment Methods
 ---
 
 Every payment provider has a specific set of payment methods that it supports. The available methods are listed in the respective `Payment Providers` documentation page. Some payment methods are available for more than one payment provider, which allows you to choose the provider that better fits your needs.

@@ -5,6 +5,10 @@ sidebar_label: Installation
 description: Getting started with DPSG
 ---
 
+:::info Requires Falcon v3.0.0 or higher
+If you want to use DPSG in your Falcon app, make sure to use Falcon version >= 3.0.0. Version 2 is not supported.
+:::
+
 To make use of DPSG, it first needs to be configured and then connected to your Falcon app.
 
 ### 1. Configuring DPSG 

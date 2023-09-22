@@ -982,14 +982,14 @@
     },
     {
       "type": "category",
-      "label": "Payment Methods",
+      "label": "Payment Features",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/payments/methods"},
       "collapsed": true,
       "items": [
         {
           "type": "doc",
-          "id": "version-3/payments/methods/methods-overview"
+          "id": "version-3/payments/methods/overview"
         },
         {
            "type": "category",
@@ -1009,7 +1009,7 @@
             },
             {
               "type": "doc",
-              "id": "version-3/payments/methods/features/minMaxAmounts"
+              "id": "version-3/payments/methods/features/min-max-amounts"
             },
             {
               "type": "doc",
@@ -1552,6 +1552,11 @@
               "type": "doc",
               "label": "Storefront",
               "id": "version-3/platform/support/faqs/storefront"
+            },
+            {
+              "type": "doc",
+              "label": "Storefront",
+              "id": "version-3/platform/support/faqs/server"
             },
             {
               "type": "doc",

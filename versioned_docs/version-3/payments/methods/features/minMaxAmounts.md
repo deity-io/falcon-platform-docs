@@ -1,7 +1,7 @@
 ---
-id: minMaxAmounts
-title: Min/Max Amounts
-sidebar_label: Min/Max Amounts
+id: min-max-amounts
+title: Min / Max Amounts
+sidebar_label: Min / Max Amounts
 ---
 
 ## Overview
