@@ -277,5 +277,6 @@ module.exports = {
         }
       }
     ]
-  ]
+  ],
+  onBrokenLinks: 'warn'
 };
