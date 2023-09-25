@@ -26,12 +26,12 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
   <Card to="/payments/key-concepts">
     <img src="/img/icons/info.svg" />
     <h4>Key concepts</h4>
-    <p>Learn the basics behind Deity Platform.</p>
+    <p>Learn the basics behind Deity Payment Service Gateway.</p>
   </Card>
   <Card to="/payments/getting-started">
     <img src="/img/icons/lightning.svg" />
     <h4>Getting started</h4>
-    <p>Jump right in and get started with Deity Platform.</p>
+    <p>Jump right in and get started with Deity Payment Service Gateway.</p>
   </Card>
   <Card to="/platform/support/tutorials">
     <img src="/img/icons/lightbulb.svg" />
@@ -45,7 +45,7 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
 ## Payment Options
 <h3 className="mt0">Payment Providers <Button variant="outline" size="medium" href="/payments/providers">View all →</Button></h3>
 
-<div className="flex brighten">
+<div className="flex ">
   <Card variant="horizontal" to="/payments/providers/stripe">
    	<img src="/img/icons/stripe.svg" className="round-icon" />
 	<div>
@@ -65,7 +65,7 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
     </div>
   </Card>
 </div>
-<div className="flex brighten mb60">
+<div className="flex  mb60">
   <Card variant="horizontal" to="/payments/providers/mollie">
     <img src="/img/icons/mollie.svg" className="round-icon" />
     <div>
@@ -90,7 +90,7 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
 
 <div className="flex brighten">
   <Card variant="horizontal" to="/payments/methods/overview">
-    <img src="/img/icons/coins.svg" />
+    <img src="/img/icons/creditcard.svg" />
     <div>
       <h5>Payment Methods</h5>
       <p>
@@ -99,7 +99,7 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
     </div>
   </Card>
   <Card variant="horizontal" to="/payments/methods/features/currencies">
-    <img src="/img/icons/coins.svg" />
+    <img src="/img/icons/dollar.svg" />
     <div>
       <h5>Currencies</h5>
       <p>
@@ -110,7 +110,7 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
 </div>
 <div className="flex brighten">
   <Card variant="horizontal" to="/payments/methods/features/locations">
-    <img src="/img/icons/coins.svg" />
+    <img src="/img/icons/globe.svg" />
     <div>
       <h5>Localization</h5>
       <p>
@@ -119,7 +119,7 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
     </div>
   </Card>
   <Card variant="horizontal" to="/payments/methods/features/surcharges">
-    <img src="/img/icons/coins.svg" />
+    <img src="/img/icons/surcharges.svg" />
     <div>
       <h5>Surcharges</h5>
       <p>
@@ -130,16 +130,16 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
 </div>
 <div className="flex brighten mb100">
   <Card variant="horizontal" to="/payments/methods/features/min-max-amounts">
-    <img src="/img/icons/coins.svg" />
+    <img src="/img/icons/sliders.svg" />
     <div>
-      <h5>Localization</h5>
+      <h5>Min / Max Amount</h5>
       <p>
         
       </p>
     </div>
   </Card>
   <Card variant="horizontal" to="/payments/methods/features/sort">
-    <img src="/img/icons/coins.svg" />
+    <img src="/img/icons/sort.svg" />
     <div>
       <h5>Sort Order</h5>
       <p>
@@ -152,25 +152,20 @@ Next to handling the full payment flow, DPSG is also a way to manage the configu
 
 ## API Reference
 
-<Card isPadding={false}>
-  <div className="flex">
-    <CardContent>
-      
-      <div className="mb20">
-      	<img src="/img/icons/coins.svg" className="mb20"/>
-        <p>
-          To view all the available endpoints and schemas, please visit our dedicated Payments API documentation.
-        </p>
-      </div>  
-       <Button variant="contained" size="medium" href="/platform">
+
+<div className="flex mb100">
+  <Card >
+    <img src="/img/icons/swagger.svg"/>
+    <h4>Rest Endpoints</h4>
+    <p className="mb20">To view all the available endpoints and schemas, please visit our dedicated Payments API documentation.</p>
+    <Button variant="contained" size="medium" href="https://dpsg.deity.cloud/" target="_blank">
           Go to API reference
           <svg width="15" height="15" aria-hidden="true" viewBox="0 0 15 15" class="iconExternalLink_src-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"></path></svg>
        </Button>
      
-    </CardContent>
-    
-  </div>
-</Card>
+  </Card>
+
+</div>
 
 
 

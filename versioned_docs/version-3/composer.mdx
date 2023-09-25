@@ -23,12 +23,12 @@ import Button from '@site/src/components/Button';
   <Card to="/composer/key-concepts">
     <img src="/img/icons/info.svg" />
     <h4>Key concepts</h4>
-    <p>Learn the basics behind Deity Platform.</p>
+    <p>Learn the basics behind Deity Composer.</p>
   </Card>
   <Card to="/composer/getting-started">
     <img src="/img/icons/lightning.svg" />
     <h4>Getting started</h4>
-    <p>Jump right in and get started with Deity Platform.</p>
+    <p>Jump right in and get started with Deity Composer.</p>
   </Card>
   <Card to="/platform/support/tutorials">
     <img src="/img/icons/lightbulb.svg" />
@@ -44,7 +44,7 @@ import Button from '@site/src/components/Button';
 
 <div className="flex brighten">
   <Card variant="horizontal" to="/composer/core/dynamic-routes">
-    <img src="/img/icons/ticker.svg" />
+    <img src="/img/icons/compass.svg" />
     <div>
       <h5>Dynamic Route Resolver</h5>
       <p>
@@ -53,7 +53,7 @@ import Button from '@site/src/components/Button';
     </div>
   </Card>
   <Card variant="horizontal" to="/composer/core/event-hooks">
-    <img src="/img/icons/ticker.svg" />
+    <img src="/img/icons/flowarrow.svg" />
     <div>
       <h5>Event Hooks</h5>
       <p>
@@ -63,8 +63,8 @@ import Button from '@site/src/components/Button';
   </Card>
 </div>
 <div className="flex brighten mb60">
-  <Card variant="horizontal" to="/composer/core/extending-falcon-server">
-    <img src="/img/icons/ticker.svg" />
+  <Card variant="horizontal" to="/composer/core/extending-composer">
+    <img src="/img/icons/extending.svg" />
     <div>
       <h5>Extending Composer</h5>
       <p>
@@ -73,7 +73,7 @@ import Button from '@site/src/components/Button';
     </div>
   </Card>
   <Card variant="horizontal" to="/composer/core/extension-scopes">
-    <img src="/img/icons/ticker.svg" />
+    <img src="/img/icons/extensionscope.svg" />
     <div>
       <h5>Extension Scopes</h5>
       <p>
@@ -86,17 +86,9 @@ import Button from '@site/src/components/Button';
 <h3 className="mt0">Extensions <Button variant="outline" size="medium" href="/composer/extensions">View all →</Button></h3>
 
 <div className="flex brighten">
-  <Card variant="horizontal" to="/composer/extensions/about">
-    <img src="/img/icons/ticker.svg" />
-    <div>
-      <h5>Introduction</h5>
-      <p>
-        
-      </p>
-    </div>
-  </Card>
+
   <Card variant="horizontal" to="/composer/extensions/shop-extension">
-    <img src="/img/icons/ticker.svg" />
+    <img src="/img/icons/shoppingcart.svg" />
     <div>
       <h5>Shop Extension</h5>
       <p>
@@ -104,10 +96,8 @@ import Button from '@site/src/components/Button';
       </p>
     </div>
   </Card>
-</div>
-<div className="flex brighten mb100">
   <Card variant="horizontal" to="/composer/extensions/search-extension">
-    <img src="/img/icons/ticker.svg" />
+    <img src="/img/icons/magnifyingglass.svg" />
     <div>
       <h5>Search Extension</h5>
       <p>
@@ -115,8 +105,11 @@ import Button from '@site/src/components/Button';
       </p>
     </div>
   </Card>
+</div>
+<div className="flex brighten mb100">
+  
   <Card variant="horizontal" to="/composer/extensions/blog-extension">
-    <img src="/img/icons/ticker.svg" />
+    <img src="/img/icons/textaa.svg" />
     <div>
       <h5>Blog Extension</h5>
       <p>
@@ -124,6 +117,15 @@ import Button from '@site/src/components/Button';
       </p>
     </div>
   </Card>
+  <Card variant="horizontal" to="/composer/extensions/geolocation-extension">
+    <img src="/img/icons/mappin.svg" />
+    <div>
+      <h5>Geo Location Extension</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>  
 </div>
 
 
@@ -134,7 +136,7 @@ import Button from '@site/src/components/Button';
 
 <div className="flex brighten mb60">
   <Card to="/composer/modules/common-services/data-sources">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/database.svg" />
    
       <h4>Data Sources</h4>
       <p>
@@ -143,7 +145,7 @@ import Button from '@site/src/components/Button';
     
   </Card>
   <Card to="/composer/modules/common-services/event-handlers">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/path.svg" />
   
       <h4>Event Handlers</h4>
       <p>
@@ -152,7 +154,7 @@ import Button from '@site/src/components/Button';
    
   </Card>
   <Card to="/composer/modules/common-services/rest-endpoints">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/restapi.svg" />
    
       <h4>REST Endpoints</h4>
       <p>
@@ -166,7 +168,7 @@ import Button from '@site/src/components/Button';
 
 <div className="flex brighten">
   <Card variant="horizontal" to="/composer/modules/about">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/diamondsfour.svg" />
     <div>
       <h5>Introduction</h5>
       <p>
@@ -175,7 +177,7 @@ import Button from '@site/src/components/Button';
     </div>
   </Card>
   <Card variant="horizontal" to="/composer/modules/module-api">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/diamond.svg" />
     <div>
       <h5>Falcon Module API</h5>
       <p>
@@ -184,9 +186,9 @@ import Button from '@site/src/components/Button';
     </div>
   </Card>
 </div>
-<div className="flex brighten mb100">
+<div className="flex brighten">
   <Card variant="horizontal" to="/composer/modules/bigcommerce-module">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/modulebc.svg" />
     <div>
       <h5>BigCommerce</h5>
       <p>
@@ -195,9 +197,29 @@ import Button from '@site/src/components/Button';
     </div>
   </Card>
   <Card variant="horizontal" to="/composer/modules/magento2-module">
-    <img src="/img/icons/data.svg" />
+    <img src="/img/icons/moduleadobe.svg" />
     <div>
       <h5>Adobe Commerce CE</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten mb100">
+  <Card variant="horizontal" to="/composer/modules/algolia-search-module">
+    <img src="/img/icons/modulealgolia.svg" />
+    <div>
+      <h5>Algolia</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/composer/modules/contentful-module">
+    <img src="/img/icons/modulecontentful.svg" />
+    <div>
+      <h5>Contentful</h5>
       <p>
         
       </p>

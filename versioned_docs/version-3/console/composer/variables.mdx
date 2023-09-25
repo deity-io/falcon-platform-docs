@@ -5,13 +5,13 @@ sidebar_label: Variables
 ---
 You can define and manage any custom variable on each environment. Common use cases for custom variables are:
 
-storing an API key for one of your custom-built integrations
+- Storing an API key for one of your custom-built integrations
 
-storing the ID of a product category for which you’ve built a piece of custom logic
+- Storing the ID of a product category for which you’ve built a piece of custom logic
 
-storing the name of an additional search index which the frontend can query
+- Storing the name of an additional search index which the frontend can query
 
-You can add as many variables as you’d like. Click Add variable to add one or more variables, enter the name and value and click the lock icon if you want to encrypt the value.
+You can add as many variables as you’d like. Click **Add variable** to add one or more variables, enter the name and value and click the lock icon if you want to encrypt the value.
 
 Any changes to your variables, whether its editing, adding or removing will not take effect until you Save and apply the variables. Once you apply your changes, the variables are pushed to your environment and will be effective within a minute.
 
@@ -19,6 +19,6 @@ Any changes to your variables, whether its editing, adding or removing will not 
 
 You can duplicate all your custom variables from the currently selected environment to any other target environment.
 
-<aside> 💡 Note: if your target environment already has a variable with the same name as in the source environment, the value will not be overridden.
-
-</aside>
+:::caution Good to know
+If your target environment already has a variable with the same name as in the source environment, the value will not be overridden.
+:::

@@ -8,12 +8,18 @@ By default you can use three environments per project. If you need more environm
 ### Build & Deploy
 Each environment can be used to deploy your created Deity apps to. So every time you push changes to your Git repository, Deity Cloud will receive a signal from your Git provider and starts building the Deity app. When the build is successfully completed, you can select it to deploy it to one of your environments. 
 
+[Read more about builds & deployments →](../builds-deployments)
+
 ### Domains
-Every environment uses an internal Deity Cloud URL, something along the line of
+Every environment uses an internal Deity Cloud URL, something along the line of:
 
+```bash
 https://21d9d456-1eab-243f-82de-3afcd99b661f-acceptance.eu.prd.c.deity.cloud
+```
 
-You can always access the internal URL for review and development purposes. Additionally, you can set multiple custom domains per environment. For instance, you want to use https://brandname.webshopname.com to point to one of the environments. You can set this in the Storefront > Domains section.
+You can always access the internal URL for review and development purposes. Additionally, you can set multiple custom domains per environment. For instance, you want to use `https://brandname.webshopname.com` to point to one of the environments.
+
+You can set this in the [Storefront → Domains](../storefront/domains) section.
 
 
 
