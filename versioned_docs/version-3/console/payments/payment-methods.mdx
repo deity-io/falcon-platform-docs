@@ -3,6 +3,9 @@ id: payment-methods
 title: Payment Methods
 sidebar_label: Payment Methods
 ---
+
+import Badge from '@site/src/components/Badge';
+
 Each payment provider has one or more supported payment methods. These are the actual payment instruments your customers pay with in your checkout, such as credit cards, PayPal or Klarna, to name a few. You can configure what methods to display in your checkout, set business rules for them and define sort orders. With these tools, you can build a personalized checkout experience for all your sh
 
 ### Basic
@@ -10,22 +13,22 @@ Similar to a provider, you can toggle the method to be enabled or not. Furthermo
 
 Each method can have 1 out of 3 possible states:
 
-enabled: method has been configured and is enabled and will be listed in your checkout according to configured rules
+- <Badge variant="console">enabled</Badge> Method has been configured and is enabled and will be listed in your checkout according to configured rules
 
-disabled: method has been configured and is disabled, it will not be listed in your checkout, no matter the configured rules
+- <Badge variant="console">disabled</Badge> Method has been configured and is disabled, it will not be listed in your checkout, no matter the configured rules
 
-not configured: method has not been configured and will not be listed in your checkout
+- <Badge variant="console">not configured</Badge> Method has not been configured and will not be listed in your checkout
 
 ### Localisation
 You can define which countries and currencies should be allowed for this method. Both fields are multi-select. By default, the ANY option is set for each method, which means the method will be displayed no matter the country or currency of the shopper. Note that a shopper’s checkout session must match both the country and currency to ensure the method is listed.
 
 Let’s say you’ve configured Mollie iDEAL to be shown for Dutch customers shopping in Euro. A few examples:
 
-Shopper comes from The Netherlands, selected EUR as currency: iDEAL will be listed
+- Shopper comes from The Netherlands, selected EUR as currency: iDEAL will be listed
 
-Shopper comes from The Netherlands, selected GBP as currency: iDEAL will not be listed
+- Shopper comes from The Netherlands, selected GBP as currency: iDEAL will not be listed
 
-Shopper comes from Belgium, selected EUR as currency: iDEAL will not be listed
+- Shopper comes from Belgium, selected EUR as currency: iDEAL will not be listed
 
 Any configuration set on the payment provider level will limit the options you have to localize its methods.
 

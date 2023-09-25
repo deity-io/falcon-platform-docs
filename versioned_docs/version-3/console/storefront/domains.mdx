@@ -3,6 +3,9 @@ id: domains
 title: Domains
 sidebar_label: Domains
 ---
+
+import Badge from '@site/src/components/Badge';
+
 You can manage create and assign custom domains to your remote environments, so that you can link your own domain to the Deity application. Please note that you must bring your own domain from any given registry such as GoDaddy, Cloudflare, domain.com or something similar, you can not buy them from Deity.
 
 ### Steps to follow
@@ -17,17 +20,19 @@ The steps to set a custom domain for one of your custom environment is as follow
 4. Assign the domain to an environment
 
 ### Create a domain
-You can create as many domains as required by clicking the Add new domain button. You will be promped to enter the domain name. In case you want to setup a subdomain, you should enter it as such. Paths, however, must not be entered. All domains are prefixed with https://. A few examples:
+You can create as many domains as required by clicking the Add new domain button. You will be promped to enter the domain name. In case you want to setup a subdomain, you should enter it as such. Paths, however, must not be entered. All domains are prefixed with `https://`. 
 
-- acmecorp.com —> valid
+A few examples:
 
-- www.acmecorp.com —> valid
+- `acmecorp.com` <Badge variant="green">Valid</Badge>
 
-- shop.acmecorp.com —> valid
+- `www.acmecorp.com` <Badge variant="green">Valid</Badge>
 
-- https://acmecorp.com —> invalid
+- `shop.acmecorp.com`  <Badge variant="green">Valid</Badge>
 
-- acmecorp.com/shop —> invalid
+- `https://acmecorp.com` <Badge variant="red">Invalid</Badge>
+
+- `acmecorp.com/shop` <Badge variant="red">Invalid</Badge>
 
 You can now create the domain, after which it’ll be in pending ownership verification status.
 

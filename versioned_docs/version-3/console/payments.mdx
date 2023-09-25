@@ -3,9 +3,37 @@ id: payments
 title: Payments
 sidebar_label: Payments
 ---
+
+import Badge from '@site/src/components/Badge';
+import { Card, CardContent } from '@site/src/components/Card';
+
+
 The Deity platform comes with access to our payment gateway out of the box. You can configure one or more payment service providers and select which methods you want to use. The Deity payment gateway is highly configurable, allowing you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value. Your composer application has an integration with the payment gateway out of the box, and is compatible with all the supported ecommerce platforms.
 
 The payment gateway has several components, most notably the Integration API and Message Queue. Your Composer application interfaces with both of these components. Broadly speaking, you consume the integration API to make new payments, list payment methods or receive webhook events. The message queue in turn receives updates - and notifies your Composer application - from the various payment service providers, such as payment status changes.
 
 [ image schema ]
 
+:::info Note
+The following links are available in your Deity Cloud Console depending on your assigned user role.
+:::
+
+
+### Please select a topic
+<div className="flex mb80 brighten">
+  <Card to="/console/payments/profiles">
+    <img src="/img/icons/userlist.svg" />
+    <h4>Profiles</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/payments/providers">
+    <img src="/img/icons/money.svg" />
+    <h4>Providers</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/payments/payment-methods">
+    <img src="/img/icons/paymentmethod.svg" />
+    <h4>Payment Methods</h4>
+    <p></p>
+  </Card>
+</div>

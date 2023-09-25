@@ -19,6 +19,10 @@
     background: rgba(1, 167, 54, 0.13);
     color: var(--ifm-color-primary);
   }
+  &.red {
+    background: var(--ifm-adnomition-danger-background);
+    color: var(--ifm-adnomition-danger);
+  }  
   &.console {
     background: var(--ifm-adnomition-info-background);
     color: var(--ifm-adnomition-info);

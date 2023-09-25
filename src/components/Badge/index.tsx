@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './styles.module.scss';
 
 type Props = {
-  variant: 'default' | 'green' | 'purple' | 'console';
+  variant: 'default' | 'green' | 'purple' | 'console' | 'red';
   children: React.ReactNode;
   rounded: boolean;
 };
