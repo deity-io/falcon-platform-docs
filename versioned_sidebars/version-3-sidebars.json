@@ -191,7 +191,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/platform/integrations"},
+      "link": {"type": "doc", "id": "version-3/platform/integrations"},
       "collapsed": true,
       "label": "Integrations",
       "items": [
@@ -656,7 +656,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/integrations"},
+      "link": {"type": "doc", "id": "version-3/composer/integrations"},
       "collapsed": true,
       "label": "Integrations",
       "items": [

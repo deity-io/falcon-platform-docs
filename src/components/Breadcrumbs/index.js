@@ -12,7 +12,7 @@ const getDocType = (path) => {
     return {
       id: 1,
       title: 'Falcon Platform',
-      url: '/docs/platform/overview/about'
+      url: '/docs/platform/overview'
     };
   } else if (path.includes(openSourceDocsPath)) {
     return {
