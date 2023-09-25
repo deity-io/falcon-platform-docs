@@ -19,7 +19,14 @@
     background: rgba(1, 167, 54, 0.13);
     color: var(--ifm-color-primary);
   }
-
+  &.console {
+    background: var(--ifm-adnomition-info-background);
+    color: var(--ifm-adnomition-info);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin:0;
+    padding: 2px 8px;
+  }
   &.rounded {
     display: flex;
     align-items: center;

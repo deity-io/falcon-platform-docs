@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
 
   &:hover {
@@ -41,6 +41,7 @@
       &:hover {
         background: var(--ifm-button-background-color);
         border: 1px solid rgba(2, 44, 15, 0.08);
+        filter: brightness(1.1);
       }
 
       &:active:focus {
@@ -60,13 +61,14 @@
     }
 
     &.outlined {
-      border: 1px solid rgba(0, 153, 128, 0.314);
-      background: #fff;
-      color: var(--ifm-color-secondary);
+      border: 1px solid var(--ifm-color-primary);
+      
+      color: var(--ifm-color-primary);
 
       &:hover {
         background: rgba(2, 177, 142, 0.15);
         color: var(--ifm-color-primary);
+        filter: brightness(1.1);
       }
 
       &:active:focus {

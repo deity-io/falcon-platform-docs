@@ -3,16 +3,38 @@ id: organization
 title: Organization
 sidebar_label: Organization
 ---
+
+import Badge from '@site/src/components/Badge';
+import { Card, CardContent } from '@site/src/components/Card';
+
 Your organization is the billing entity which holds all your projects and users. You can manage your contact details, invite and manage your users, add or delete billing methods and download your invoices.
 
-The organization landing page shows all available projects for the selected organization.
+The organization landing page shows all available projects for the selected organization. You can visit the following organization topics.
 
-You can visit the following organization topics, which are available depending on your assigned user role.
+:::info Note
+The following links are available in your Deity Cloud Console depending on your assigned user role.
+:::
 
-Projects
-
-Billing details
-
-Invoices
-
-Users
+### Please select a topic
+<div className="flex mb80 brighten">
+  <Card to="/console/organization/projects">
+    <img src="/img/icons/folders.svg" />
+    <h4>Projects</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/organization/billing-details">
+    <img src="/img/icons/billing.svg" />
+    <h4>Billing details</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/organization/invoices">
+    <img src="/img/icons/receipt.svg" />
+    <h4>Invoices</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/organization/users">
+    <img src="/img/icons/users.svg" />
+    <h4>Users</h4>
+    <p></p>
+  </Card>
+</div>

@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   title: 'DEITY',
   tagline: 'Documentation',
-  url: 'https://deity.io',
+  url: 'https://deity.com',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'DEITY', // Usually your GitHub org/user name.
@@ -93,7 +93,7 @@ module.exports = {
         },
         {
           label: 'Launch Console',
-          href: 'https://console.deity.io'
+          href: 'https://console.deity.cloud'
         }
       ]
     },
@@ -147,7 +147,7 @@ module.exports = {
           items: [
             {
               label: 'Website',
-              href: 'https://deity.io/'
+              href: 'https://deity.com/'
             },
             {
               label: 'Blog',

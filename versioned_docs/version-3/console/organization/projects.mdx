@@ -3,9 +3,17 @@ id: projects
 title: Projects
 sidebar_label: Projects
 ---
-Your projects are provisioned by Deity. You can see the name of your project, the amount of available environments and which region your environments are housed in.
 
-Depending on the user role you’re assigned to, you can request a new project for your organization.
+import Badge from '@site/src/components/Badge';
+import { Card, CardContent } from '@site/src/components/Card';
+import Button from '@site/src/components/Button';
+
+
+Your projects are provisioned by Deity. In the overview you can see the list of your projects, the amount of available environments and which region your environments are housed in.
+
+:::info Note
+Depending on the user role you’re assigned to, you can request a new project or environment for your organization.
+:::
 
 ### New project
 Fill in the new project name, the contact email that we can use to contact for further provisioning and the platform version you’re planning to use for your new project.
@@ -13,4 +21,24 @@ Fill in the new project name, the contact email that we can use to contact for f
 ### Additional environments
 You can request additional environments, for example an extra development environment to suit your workflow, via the home screen of your project.
 
-The project region is applicable to all environments. Available options at this moment are Europe (EU-W4), United States (US-C1) or Australia (AU-SE1). You can request a migration of your project region via our customer support.
+The project region is applicable to all environments. Available options at this moment are `Europe (EU-W4)`, `United States (US-C1)` or `Australia (AU-SE1)`. You can request a migration of your project region via our customer support.
+
+
+---
+
+
+### Project settings
+In the settings page you can set your project name and review the project key and the region your project is running. If you want to change the region, you can contact our Sales Team. 
+
+<div className="flex mb80 brighten">
+  <Card to="/console/settings/environments">
+    <img src="/img/icons/cloud.svg" />
+    <h4>Environments</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/settings/codebase">
+    <img src="/img/icons/gitfork.svg" />
+    <h4>Codebase</h4>
+    <p></p>
+  </Card>
+</div>

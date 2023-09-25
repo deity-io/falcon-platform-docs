@@ -6,10 +6,12 @@ sidebar_label: 3. Link Repository
 
 Now that you’ve created a new Deity template app on your local machine, you can push this to your repository of choice. We currently support GitHub, GitLab and Bitbucket.
 
-To link your repository to the Deity platform and enable automatic build creation, you’ll need to configure read access on the repository, and a webhook to notify Deity of push events.
+## Setting up for the first time
 
-Navigate to the <b>Git repository</b> page of your codebase settings in the console. Copy the SSH key, and add it as a read-only deploy key to your repository.
+To link your repository to the Deity platform and enable automatic build creation, you’ll need to configure read access on the repository, and a webhook to notify Deity about Git push events.
 
-Next up, you’ll want to copy the webhook URL. Add it to your repository, set the content type to `application/json` and select the <code>git push</code> event to trigger the webhook.
+1. Navigate to the **Git repository** page of your codebase settings in the console. Copy the SSH key, and add it as a read-only deploy key to your repository.
 
-You can test if the configuration was successful by pushing your code to the repository. You should see your repository name appear in the console, as well as a new build.
+2. Next up, you’ll want to copy the webhook URL. Add it to your repository, set the content type to `application/json` and select the <code>git push</code> event to trigger the webhook.
+
+3. You can test if the configuration was successful by pushing your code to the repository. You should see your repository name appear in the console, as well as a new build.

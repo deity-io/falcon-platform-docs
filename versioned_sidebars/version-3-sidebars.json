@@ -545,7 +545,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3/composer/core/extending-falcon-server"
+          "id": "version-3/composer/core/extending-composer"
         },
         {
           "type": "doc",
@@ -568,10 +568,7 @@
       "collapsed": true,
       "label": "Extensions",
       "items": [
-        {
-          "type": "doc",
-          "id": "version-3/composer/extensions/about"
-        },
+       
         {
           "type": "doc",
           "id": "version-3/composer/extensions/shop-extension"
@@ -1298,7 +1295,7 @@
     },
     {
       "type": "category",
-      "label": "Settings",
+      "label": "Project Settings",
       "collapsible": true,
       "collapsed": true,
       "link": {
