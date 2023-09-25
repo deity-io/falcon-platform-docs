@@ -258,6 +258,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,
           lastVersion: '3',
+          onlyIncludeVersions: ['3'],
           versions: {
             3: {
               label: 'V3 - BUT V2 DOCS'
