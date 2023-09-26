@@ -16,7 +16,7 @@
         {
           "type": "doc",
           "label": "Getting Started",
-          "id": "version-3/platform/getting-started/overview"
+          "id": "version-3/platform/getting-started"
         }
       ]
     },
@@ -150,41 +150,31 @@
     {
       "collapsed": false,
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/platform/getting-started"},
+      "link": {"type": "doc", "id": "version-3/platform/getting-started"},
       "type": "category",
       "label": "Getting Started",
       "items": [
+        
         {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/overview"
+          "type": "link",
+          "label": "Sign up",
+          "href": "https://console.deity.cloud/signup"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/prerequisites"
+          "id": "version-3/platform/getting-started/new-project"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/dcloud"
+          "id": "version-3/platform/getting-started/access-packages"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/npm"
+          "id": "version-3/platform/getting-started/create-application"
         },
         {
           "type": "doc",
-          "id": "version-3/platform/getting-started/create"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/configure"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/repository"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/getting-started/deployment"
+          "id": "version-3/platform/getting-started/link-repository"
         }
       ]
     },
@@ -1250,7 +1240,7 @@
         },
         {
           "type": "doc",
-          "id": "version-3/console/getting-started/deity-project"
+          "id": "version-3/console/getting-started/new-project"
         },
         {
           "type": "doc",

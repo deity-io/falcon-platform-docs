@@ -32,7 +32,9 @@
   --ifm-hr-background-color: #dfe4e2;
   --ifm-hr-margin-horizontal: 4px;
   --ifm-menu-color-adisabled: #99A39F;
+  --ifm-link-color: var(--ifm-color-primary);//make them slightly lighter 
 
+ 
   --docsearch-searchbox-background: var(--ifm-background-secondary);
   --docsearch-searchbox-focus-background: var(--ifm-background-secondary);
   --ifm-code-background:#f1f4f3;  
