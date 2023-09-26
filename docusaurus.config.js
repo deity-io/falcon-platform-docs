@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   title: 'Deity',
   tagline: 'Documentation',
-  url: 'https://deity.com/docs',
-  baseUrl: '/',
+  url: 'https://deity.com',
+  baseUrl: '/docs/',
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
