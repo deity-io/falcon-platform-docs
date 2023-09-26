@@ -16,7 +16,7 @@ href="https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/"
 target="\_blank"
 rel="noopener noreferrer"
 title="Download our BigCommerce App"> <img
-src="/img/docs/platform/bigcommerce/app.jpg"
+src="/docs/img/docs/platform/bigcommerce/app.jpg"
 alt="BigCommerce app"
 width="200"
 style={{ marginBottom: "20px", display: "block" }}
@@ -32,7 +32,7 @@ Once you've added our app you can configure it. From the BigCommerce admin panel
 Once you're viewing the app click **install**.
 
 <img
-src="/img/docs/platform/bigcommerce/setup-app.png"
+src="/docs/img/docs/platform/bigcommerce/setup-app.png"
 alt="BigCommerce app setup"
 width="400"
 style={{ marginBottom: "20px", display: "block" }}
@@ -41,7 +41,7 @@ style={{ marginBottom: "20px", display: "block" }}
 ### i. Permissions
 
 <img
-src="/img/docs/platform/bigcommerce/permissions.png"
+src="/docs/img/docs/platform/bigcommerce/permissions.png"
 alt="BigCommerce permissions screen"
 width="300"
 style={{ marginBottom: "20px", display: "block" }}
@@ -56,7 +56,7 @@ Once you've agreed to allow our app the BigCommerce permissions it needs you be 
 The next steps will take you through creating an account with us.
 
 <img
-src="/img/docs/platform/bigcommerce/splash.png"
+src="/docs/img/docs/platform/bigcommerce/splash.png"
 alt="Falcon Platform splash screen"
 width="500"
 style={{ marginBottom: "20px", display: "block" }}
@@ -67,7 +67,7 @@ style={{ marginBottom: "20px", display: "block" }}
 We offer various price plans, once you've chosen the plan that's right for you, you can continue to add your company / personal details.
 
 <img
-src="/img/docs/platform/bigcommerce/price-plan.png"
+src="/docs/img/docs/platform/bigcommerce/price-plan.png"
 alt="Falcon Platform price plans"
 width="200"
 style={{ marginBottom: "20px", display: "block" }}
@@ -78,7 +78,7 @@ style={{ marginBottom: "20px", display: "block" }}
 You'll now be given the option to add your personal details, we'll use these as part of your invoice.
 
 <img
-src="/img/docs/platform/bigcommerce/personal-details.png"
+src="/docs/img/docs/platform/bigcommerce/personal-details.png"
 alt="Falcon Platform personal details"
 width="200"
 style={{ marginBottom: "20px", display: "block" }}
@@ -89,7 +89,7 @@ style={{ marginBottom: "20px", display: "block" }}
 The final step of your account setup is adding your payment details.
 
 <img
-src="/img/docs/platform/bigcommerce/payment.png"
+src="/docs/img/docs/platform/bigcommerce/payment.png"
 alt="Falcon Platform payment details"
 width="200"
 style={{ marginBottom: "20px", display: "block" }}
@@ -98,7 +98,7 @@ style={{ marginBottom: "20px", display: "block" }}
 If setup is successful a BigCommerce token will be generated and you'll be shown your BigCommerce / Falcon Platform dashboard.
 
 <img
-src="/img/docs/platform/bigcommerce/token.png"
+src="/docs/img/docs/platform/bigcommerce/token.png"
 alt="BigCommerce Token Generation"
 width="200"
 style={{ marginBottom: "20px", display: "block" }}
@@ -109,7 +109,7 @@ style={{ marginBottom: "20px", display: "block" }}
 You'll be able to manage your Falcon Platform account from within your BigCommerce admin panel.
 
 <img
-src="/img/docs/platform/bigcommerce/app-menu.png"
+src="/docs/img/docs/platform/bigcommerce/app-menu.png"
 alt="BigCommerce admin panel"
 width="200"
 style={{ marginBottom: "20px", display: "block" }}
@@ -120,7 +120,7 @@ From here you'll be able to change personal detail, subscription and payment inf
 When you load up your dashboard you'll see a link to your new Falcon PWA store.
 
 <img
-src="/img/docs/platform/bigcommerce/store-url.png"
+src="/docs/img/docs/platform/bigcommerce/store-url.png"
 alt="BigCommerce admin panel"
 width="500"
 style={{ marginBottom: "20px", display: "block" }}
@@ -151,7 +151,7 @@ You can log into [deity.npm.io](https://npm.deity.io/) to view these pacakges.
 To have access to the packages for local development you can follow [these steps](/platform/getting-started/npm/).
 
 <img
-src="/img/docs/platform/bigcommerce/npm-token.png"
+src="/docs/img/docs/platform/bigcommerce/npm-token.png"
 alt="BigCommerce admin panel - NPM token"
 width="300"
 style={{ marginBottom: "20px", display: "block" }}
@@ -186,7 +186,7 @@ Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` wi
 Falcon Cloud comes as part of Falcon Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/platform/cloud/installation). You'll need an **access token** to log into using DCloud. This can be found in the `Falcon Server` tab.
 
 <img
-src="/img/docs/platform/bigcommerce/falcon-server.png"
+src="/docs/img/docs/platform/bigcommerce/falcon-server.png"
 alt="BigCommerce admin panel - falcon server tab"
 width="500"
 style={{ marginBottom: "20px", display: "block" }}

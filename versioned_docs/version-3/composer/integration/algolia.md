@@ -7,7 +7,7 @@ sidebar_label: Algolia
 ---
 
 <a href="https://www.algolia.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Algolia site">
-  <img src="/img/docs/platform/algolia-logo.svg" alt="Algolia Logo" width="200"/>
+  <img src="/docs/img/docs/platform/algolia-logo.svg" alt="Algolia Logo" width="200"/>
 </a>
 
 ---
@@ -48,11 +48,11 @@ You'll need an API attached to your shop extension so Algolia has a source for p
 
 Before you start you'll need to create an <a href="https://www.algolia.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Algolia site">Algolia</a> account.
 
-<img src="/img/docs/platform/algolia-admin-2.png" alt="Algolia admin" width="300" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/algolia-admin-2.png" alt="Algolia admin" width="300" style={{ marginBottom: 20 }}/>
 
 Once you've created an account you should be able to get your **API keys**.
 
-<img src="/img/docs/platform/algolia-admin-1.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/algolia-admin-1.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
 
 ### 2. Add your config to Falcon Server
 
@@ -140,7 +140,7 @@ This should be added to your env variables or your local.json. They can all be f
 
 You'll need the **admin API key**
 
-<img src="/img/docs/platform/algolia-admin-key.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/algolia-admin-key.png" alt="Algolia admin" width="400" style={{ marginBottom: 20 }}/>
 
 You should also configure your search extension to use Algolia. This can be done in any of your config files or by setting an environment variable:
 
@@ -224,7 +224,7 @@ To run your initial index you just need to use the `autoReindex` flag in your co
 
 Now you just need to start your app (Falcon Server) and all the products will be indexed. 
 
-<img src="/img/docs/platform/algolia-import.png" alt="Algolia import" width="300" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/algolia-import.png" alt="Algolia import" width="300" style={{ marginBottom: 20 }}/>
 
 **n.b.** If you want to run a fresh reindex of all your products we advise going into the Algolia admin and emptying your indexes there first.
 

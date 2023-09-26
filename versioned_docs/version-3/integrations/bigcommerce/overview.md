@@ -8,7 +8,7 @@ description: Our BigCommerce integration provides everything you need to get you
 ---
 
 <a href="https://www.bigcommerce.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the BigCommerce site">
-  <img src="/img/docs/platform/bigcommerce-logo.svg" alt="BigCommerce Logo" width="200"/>
+  <img src="/docs/img/docs/platform/bigcommerce-logo.svg" alt="BigCommerce Logo" width="200"/>
 </a>
 
 ---
@@ -22,7 +22,7 @@ href="https://www.bigcommerce.com/deity"
 rel="noreferrer noopener"
 target="\_blank"
 aria-label="visit the BigCommerce site"
-style={{ marginBottom: "20px", display: "block" }}><img src="/img/docs/platform/bigcommerce/partner-header.jpg" alt="BigCommerce and Falcon Platform Graphic" width="500"/>> </a>
+style={{ marginBottom: "20px", display: "block" }}><img src="/docs/img/docs/platform/bigcommerce/partner-header.jpg" alt="BigCommerce and Falcon Platform Graphic" width="500"/>> </a>
 
 - [Get started](/platform/integration/bigcommerce/getting-started)
 - [Feature List](/platform/integration/bigcommerce/features)

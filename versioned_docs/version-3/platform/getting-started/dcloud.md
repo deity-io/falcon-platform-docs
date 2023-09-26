@@ -38,9 +38,9 @@ Running the login command will take you through logging in step by step.
 
 It will open a browser window which will ask you to confirm the code in the CLI window.
 
-<img src="/img/docs/cloud/dcloud-confirm.png" alt="Dcloud Confirm" width="600" style={{ display: 'block', marginBottom: 20 }}/>
+<img src="/docs/img/docs/cloud/dcloud-confirm.png" alt="Dcloud Confirm" width="600" style={{ display: 'block', marginBottom: 20 }}/>
 
-<img src="/img/docs/cloud/dcloud-confirm-2.png" alt="Dcloud Confirm" width="300" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/cloud/dcloud-confirm-2.png" alt="Dcloud Confirm" width="300" style={{ marginBottom: 20 }}/>
 
 After this you'll be redirected to login. You can use the credentials provided to you by our team when creating an account.
 
