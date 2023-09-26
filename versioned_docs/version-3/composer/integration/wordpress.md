@@ -7,7 +7,7 @@ sidebar_label: Wordpress
 ---
 
 <a href="https://wordpress.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wordpress site">
-  <img src="/img/docs/platform/wordpress-logo.svg" alt="Wordpress Logo" width="200"/>
+  <img src="/docs/img/docs/platform/wordpress-logo.svg" alt="Wordpress Logo" width="200"/>
 </a>
 
 ---
@@ -18,7 +18,7 @@ Our Wordpress integration comes with both our examples apps, `demo-v1` and `demo
 
 It works using our Wordpress Plugin to extend and add API endpoints.
 
-<img src="/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
+<img src="/docs/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
 
 ## Supported Features
 
@@ -41,7 +41,7 @@ You must have a wordpress instance up and running.
 
 Now you must install our Wordpress Plugin. If you download the code into your `plugins` directory you should then be able to **activate** it in the admin.
 
-<img src="/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
+<img src="/docs/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
 
 If it's working you should see our handy 'Clean API cache' button in your admin panel.
 

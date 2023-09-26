@@ -49,10 +49,10 @@ bin/magento cache:flush
 
 From the admin (system->integrations) you can create a new integration.
 
-<img src="/img/docs/platform/magento2-admin.png" alt="Magento admin" width="300" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/magento2-admin.png" alt="Magento admin" width="300" style={{ marginBottom: 20 }}/>
 
 From here you will get the following credentials to use later:
-<img src="/img/docs/platform/magento2/integration-details.png" alt="Integration details" width="300" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/magento2/integration-details.png" alt="Integration details" width="300" style={{ marginBottom: 20 }}/>
 
 - `CONSUMER_KEY`
 - `CONSUMER_SECRET`
@@ -109,7 +109,7 @@ If you're using `demo-v1` this will be set up to use our demo Magento 2 instance
 When your falcon instance is up and running its important to update magento with falcon instance data
 Go to Magento admin `Stores->Configuration`
 On Configuration page open `Services->Falcon`
-<img src="/img/docs/platform/magento2/magento-falcon-config.png" alt="Magento admin" width="600" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/magento2/magento-falcon-config.png" alt="Magento admin" width="600" style={{ marginBottom: 20 }}/>
 
 Enter your falcon domain to `Falcon frontend url`, and cache webhook url to `Url to flush cache on Falcon Server`.
 
@@ -117,7 +117,7 @@ Enter your falcon domain to `Falcon frontend url`, and cache webhook url to `Url
 
 To configure Deity Payment Gateway go to Magento admin `Stores->Configuration` and select `Sales -> Payment Methods` section
 
-<img src="/img/docs/platform/magento2/deity_payments.png" alt="Magento admin" width="600" style={{ marginBottom: 20 }}/>
+<img src="/docs/img/docs/platform/magento2/deity_payments.png" alt="Magento admin" width="600" style={{ marginBottom: 20 }}/>
 
 If your shop does not support offline payments (like Cash on Delivery) you can disable `Deity Offline Payments` on this page.
 

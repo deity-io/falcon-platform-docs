@@ -7,7 +7,7 @@ sidebar_label: Magento 2
 ---
 
 <a href="https://magento.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Magento site">
-  <img src="/img/docs/platform/magento-logo.svg" alt="Magento Logo" width="200"/>
+  <img src="/docs/img/docs/platform/magento-logo.svg" alt="Magento Logo" width="200"/>
 </a>
 
 ---

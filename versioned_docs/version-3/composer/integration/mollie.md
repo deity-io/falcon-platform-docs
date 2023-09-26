@@ -7,7 +7,7 @@ sidebar_label: Mollie Payments
 ---
 
 <a href="https://www.mollie.com" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site">
-  <img src="/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" width="200"/>
+  <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" width="200"/>
 </a>
 
 ---
@@ -57,7 +57,7 @@ You can register for an account [here](https://www.mollie.com/dashboard/signup?l
 
 Once you've created an account you should be able to find your API keys and profile ID in the developers section.
 
-<img src="/img/docs/platform/mollie-account-1.png" alt="Mollie Account Api keys" width="800" style={{marginBottom: 20}}/>
+<img src="/docs/img/docs/platform/mollie-account-1.png" alt="Mollie Account Api keys" width="800" style={{marginBottom: 20}}/>
 
 You'll need your API keys later.
 
