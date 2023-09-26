@@ -712,16 +712,42 @@
       ]
     },
     {
+      "collapsed": false,
+      "collapsible": true,
+      "link": {"type": "doc", "id": "version-3/storefront/getting-started"},
       "type": "category",
       "label": "Getting Started",
-      "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/getting-started"},
-      "collapsed": false,
       "items": [
         {
-          "type": "doc",
-          "id": "version-3/storefront/getting-started/installation"
+          "type": "link",
+          "label": "Sign up",
+          "href": "https://console.deity.cloud/signup"
         },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/new-project"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/access-packages"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/create-application"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/link-repository"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Building an App",
+      "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/storefront/building-an-app"},
+      "collapsed": true,
+      "items": [
         {
           "type": "doc",
           "id": "version-3/storefront/getting-started/cli-commands"
