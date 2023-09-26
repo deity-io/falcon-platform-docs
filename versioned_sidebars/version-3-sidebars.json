@@ -16,7 +16,7 @@
         {
           "type": "doc",
           "label": "Getting Started",
-          "id": "version-3/platform/getting-started"
+          "id": "version-3/platform/getting-started/overview"
         }
       ]
     },
@@ -150,7 +150,7 @@
     {
       "collapsed": false,
       "collapsible": true,
-      "link": {"type": "doc", "id": "version-3/platform/getting-started"},
+      "link": {"type": "doc", "id": "version-3/platform/getting-started/overview"},
       "type": "category",
       "label": "Getting Started",
       "items": [
@@ -499,7 +499,7 @@
     {
       "collapsed": false,
       "collapsible": true,
-      "link": {"type": "doc", "id": "version-3/composer/getting-started"},
+      "link": {"type": "doc", "id": "version-3/composer/getting-started/overview"},
       "type": "category",
       "label": "Getting Started",
       "items": [
@@ -714,7 +714,7 @@
     {
       "collapsed": false,
       "collapsible": true,
-      "link": {"type": "doc", "id": "version-3/storefront/getting-started"},
+      "link": {"type": "doc", "id": "version-3/storefront/getting-started/overview"},
       "type": "category",
       "label": "Getting Started",
       "items": [

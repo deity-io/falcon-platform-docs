@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   title: 'Deity',
   tagline: 'Documentation',
-  url: 'https://deity.com/docs',
+  url: 'https://docs.deity.com', //gives error on deity.com/docs, even though we want that for SEO purpose
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
