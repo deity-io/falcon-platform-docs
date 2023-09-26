@@ -38,7 +38,7 @@
 
   }
   a {
-    background: var(--ifm-menu-color-background-hover);
+    background: none;/*var(--ifm-menu-color-background-hover);*/
     padding:2px;
     &:hover {
     }

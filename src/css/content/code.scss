@@ -1,7 +1,7 @@
 code {
   
   border: 0px solid rgba(2, 44, 15, 0.08);
-  color: var(--ifm-menu-color);
+  color: #AE1955; /*var(--ifm-menu-color)*/
 }
 
 .markdown {
@@ -33,7 +33,9 @@ code {
     box-shadow: none;
     border: inherit;
   }
-
+  code {
+    color: #E58FB1; /*var(--ifm-menu-color)*/
+  }
   pre code {
     background-color: var(--ifm-background-secondary);
   }
