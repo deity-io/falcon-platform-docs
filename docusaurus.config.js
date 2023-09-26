@@ -105,7 +105,7 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: '/platform/overview/about'
+              to: '/platform/overview'
             },
             {
               label: 'Composer',
@@ -253,14 +253,6 @@ module.exports = {
           versions: {
             3: {
               label: 'V3 - BUT V2 DOCS'
-            },
-            2: {
-              label: 'Platform (v2)',
-              path: 'v2'
-            },
-            2019: {
-              label: 'Platform (v2019)',
-              path: 'v2019'
             }
           }
         },
