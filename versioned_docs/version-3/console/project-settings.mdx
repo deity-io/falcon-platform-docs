@@ -1,14 +1,13 @@
 ---
-id: settings
-title: Project Settings
-sidebar_label: Project Settings
+id: project-settings
+title: Projects
+sidebar_label: Projects
 ---
 
 import Badge from '@site/src/components/Badge';
 import { Card, CardContent } from '@site/src/components/Card';
 
-In the settings page you can set your project name and review the project key and the region your project is running. If you want to change the region, you can contact our Sales Team. 
-
+Your projects are provisioned by Deity. In the overview you can see the list of your projects, the amount of available environments and which region your environments are housed in.
 
 :::info Note
 The following links are available in your Deity Cloud Console depending on your assigned user role.
@@ -16,12 +15,17 @@ The following links are available in your Deity Cloud Console depending on your 
 
 ### Please select a topic
 <div className="flex mb80 brighten">
-  <Card to="/console/settings/environments">
+  <Card to="/console/project-settings/overview">
+    <img src="/img/icons/folders.svg" />
+    <h4>Overview</h4>
+    <p></p>
+  </Card>
+  <Card to="/console/project-settings/environments">
     <img src="/img/icons/cloud.svg" />
     <h4>Environments</h4>
     <p></p>
   </Card>
-  <Card to="/console/settings/codebase">
+  <Card to="/console/project-settings/codebase">
     <img src="/img/icons/gitfork.svg" />
     <h4>Codebase</h4>
     <p></p>

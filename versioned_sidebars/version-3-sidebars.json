@@ -1266,49 +1266,27 @@
         }
       ]
     },
+    
     {
       "type": "category",
-      "label": "Organization",
+      "label": "Projects",
       "collapsible": true,
       "collapsed": true,
       "link": {
-          "type": "doc", "id": "version-3/console/organization"
-      },
-      "items": [ 
-        {
-          "type": "doc",
-          "id": "version-3/console/organization/projects"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/console/organization/billing-details"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/console/organization/invoices"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/console/organization/users"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Project Settings",
-      "collapsible": true,
-      "collapsed": true,
-      "link": {
-          "type": "doc", "id": "version-3/console/settings"
+          "type": "doc", "id": "version-3/console/project-settings"
       },   
       "items": [
         {
           "type": "doc",
-          "id": "version-3/console/settings/environments"
+          "id": "version-3/console/project-settings/overview"
         },
         {
           "type": "doc",
-          "id": "version-3/console/settings/codebase"
+          "id": "version-3/console/project-settings/environments"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/project-settings/codebase"
         }
       ]
     },
@@ -1400,6 +1378,33 @@
         {
           "type": "doc",
           "id": "version-3/console/logs/log-entries"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Organization",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+          "type": "doc", "id": "version-3/console/organization"
+      },
+      "items": [ 
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/projects"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/billing-details"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/invoices"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/console/organization/users"
         }
       ]
     },         
