@@ -49,9 +49,9 @@ style={{ marginBottom: "20px", display: "block" }}
 
 Our app will need to have access to some areas of your store to work. You'll need to agree to this to continue.
 
-### ii. Start your DEITY Falcon account setup
+### ii. Start your Deity Falcon account setup
 
-Once you've agreed to allow our app the BigCommerce permissions it needs you be show a splash screen allowing you to [view a demo store\*\*](#demo) so you can get to know Falcon Platform a little better. You'll also be giving the option to **'Get DEITY Falcon'**. Click that to continue with your setup.
+Once you've agreed to allow our app the BigCommerce permissions it needs you be show a splash screen allowing you to [view a demo store\*\*](#demo) so you can get to know Falcon Platform a little better. You'll also be giving the option to **'Get Deity Falcon'**. Click that to continue with your setup.
 
 The next steps will take you through creating an account with us.
 

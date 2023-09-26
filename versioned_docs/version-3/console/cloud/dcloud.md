@@ -258,7 +258,7 @@ N/A
 This is deprecated, please use <a href="#login-with-token">Login with Token</a> to log in.  Existing users will be promted to migrate to using a token for logging in.
 :::
 
-Logs into DEITY Falcon Cloud using credentials. If credentials aren't passed you will be prompted to add them.
+Logs into Deity Falcon Cloud using credentials. If credentials aren't passed you will be prompted to add them.
 
 ```bash
 dcloud login [email] [password]
@@ -271,7 +271,7 @@ N/A
 
 ## Login with token
 
-Logs into DEITY Falcon Cloud using a token. If a token isn't passed you will be prompted to add one.
+Logs into Deity Falcon Cloud using a token. If a token isn't passed you will be prompted to add one.
 
 ```bash
 dcloud login:token [token]

@@ -29,7 +29,7 @@ const DeprecationNotice = () => (
   <div className={styles.deprecation}>
     Falcon 2019 is now deprecated. If you have an existing Falcon 2019 project we are still commited to support you.
     Please{' '}
-    <Link className={styles.deprecationLink} to="https://deity.io/contact">
+    <Link className={styles.deprecationLink} to="https://deity.com/contact">
       get in touch
     </Link>{' '}
     for more information.

@@ -11,7 +11,7 @@ import Badge from '@site/src/components/Badge';
 Falcon-Server provides its own base GraphQL Schema, that defines data types, queries
 and mutations, so every Extension could use its types and extend them.
 
-Currently, DEITY provides the following list of officially supported extensions:
+Currently, Deity provides the following list of officially supported extensions:
 
 - [Shop Extension](./shop-extension)
 - [Blog Extension](./blog-extension)

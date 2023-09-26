@@ -59,7 +59,7 @@ To configure and manage DPSG using `dcloud`, we have several commands available 
 Automatically creates matching payments profiles for the project's environments
 
 `payments:profile:create`
-Create an entry for the existing DEITY Cloud environment or a test one for local development
+Create an entry for the existing Deity Cloud environment or a test one for local development
 
 `payments:profile:info`
 Information about the configured payments profiles
@@ -71,7 +71,7 @@ Updates a configured payments profile
 Deletes a selected payment profile
 
 `payments:profile:apply`
-Send Payments credentials to the DEITY Cloud Environment. It will set the token by applying the required env vars
+Send Payments credentials to the Deity Cloud Environment. It will set the token by applying the required env vars
 
 <br />
 

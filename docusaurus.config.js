@@ -1,12 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  title: 'DEITY',
+  title: 'Deity',
   tagline: 'Documentation',
-  url: 'https://deity.com',
+  url: 'https://deity.com/docs',
   baseUrl: '/',
   favicon: 'img/favicon.png',
-  organizationName: 'DEITY', // Usually your GitHub org/user name.
+  organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
   scripts: [
     {
@@ -182,7 +182,7 @@ module.exports = {
         }
       ],
       logo: {
-        alt: 'DEITY Logo',
+        alt: 'Deity Logo',
         src: 'img/deity-logo.svg'
       },
       copyright: `COPYRIGHT © 2018–${new Date().getFullYear()} DEITY B.V. ALL RIGHTS RESERVED.`

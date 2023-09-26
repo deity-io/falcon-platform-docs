@@ -8,7 +8,7 @@ sidebar_label: 1. Prerequisites
 
 Before you start you'll need a Falcon Platform account.
 
-You can <a href="https://deity.io/pricing" target="_blank" rel="noreferrer noopener">Choose your plan</a> and get an account setup from our site.
+You can <a href="https://deity.com/pricing" target="_blank" rel="noreferrer noopener">Choose your plan</a> and get an account setup from our site.
 
 :::note BigCommerce Users
 If you're using our **BigCommerce** integration you can set up and account through our app. [View the BigCommerce integration docs here.](/platform/integration/bigcommerce/getting-started)

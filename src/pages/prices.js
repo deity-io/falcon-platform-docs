@@ -9,7 +9,7 @@ function Prices() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout title="Falcon Platform Prices" description="Price list for DEITY Falcon Platform plans.">
+    <Layout title="Falcon Platform Prices" description="Price list for Deity Platform plans.">
       <header
         className={clsx('hero hero--theme', styles.heroBanner)}
         style={{

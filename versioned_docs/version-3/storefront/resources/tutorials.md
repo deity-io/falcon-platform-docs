@@ -1,7 +1,7 @@
 ---
 id: tutorials
 title: Storefront Tutorials
-description: DEITY Platform Cookbook, examples of every day tasks you might need to do when building your app
+description: Deity Platform Cookbook, examples of every day tasks you might need to do when building your app
 ---
 
 Our Cookbook is a collection of 'recipes' for you to reference and use in your own projects.
@@ -12,5 +12,5 @@ These 'recipes' vary from simple theming processes like [changing the logo](clie
 
 
 :::note Something missing?
-Please [contact us](https://deity.io/contact) if you want to see a specific recipe or task added to our Cookbook.
+Please [contact us](https://deity.com/contact) if you want to see a specific recipe or task added to our Cookbook.
 :::

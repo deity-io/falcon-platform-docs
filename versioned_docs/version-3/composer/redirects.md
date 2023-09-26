@@ -67,7 +67,7 @@ Each time you use the string `(.*)$` it is passed as a variable in numberical or
 @\/product-1(\?.*)?$  /product-2$1
 ```
 
-In this example everything after `product-1` is saved as `$1` and passed to the end of the destination.  e.g. `https://deity.io/product-1?id=1&project=2` => `https://deity.io/product-2?id=1&project=2`
+In this example everything after `product-1` is saved as `$1` and passed to the end of the destination.  e.g. `https://deity.com/product-1?id=1&project=2` => `https://deity.com/product-2?id=1&project=2`
 
 **example 2**
 
@@ -75,7 +75,7 @@ In this example everything after `product-1` is saved as `$1` and passed to the 
 @^(.*)\/product-1(.*)$  $1/product-2$2
 ```
 
-In this example everything before `product-1` is set to `$1` and everything after is set to `$2`. e.g. `https://deity.io/products/product-1?id=1&project=2` => `https://deity.io/products/product-2?id=1&project=2`
+In this example everything before `product-1` is set to `$1` and everything after is set to `$2`. e.g. `https://deity.com/products/product-1?id=1&project=2` => `https://deity.com/products/product-2?id=1&project=2`
 
 
 ## Shop API redirects

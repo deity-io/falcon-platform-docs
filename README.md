@@ -1,8 +1,8 @@
-# DEITY Documentation
+# Deity Documentation
 
 ## Overview
 
-This repository contains the documentation for DEITY services, including DEITY cloud, Falcon Client and Falcon Server.
+This repository contains the documentation for Deity services, including Deity cloud, Falcon Client and Falcon Server.
 
 
 ## How the docs work
