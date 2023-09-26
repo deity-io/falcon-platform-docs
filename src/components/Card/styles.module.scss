@@ -34,11 +34,10 @@
     h5 {
       margin-top: 0.25rem;
       margin-bottom: 0.25rem;
-    }
-
-    
+    }    
   }
 }
+
 .soon {
   position:relative;
   h4, p, div {
@@ -75,6 +74,19 @@
       h4, p {
         color: var(--ifm-color-primary)
       }
+  }
+}
+
+.open {
+  border:0px;
+  background:none;
+  padding-left: 0px;
+  padding-right: 40px;
+  box-shadow: none;
+  margin: 0px;
+  p {
+    font-size: 14px;
+    line-height: 1.5rem;
   }
 }
 

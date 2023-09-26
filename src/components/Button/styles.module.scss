@@ -33,6 +33,7 @@
   }
 
   &.primary {
+    background:none;
     &.contained {
       background: var(--ifm-button-background-color);
       border: 1px solid rgba(2, 44, 15, 0.08);

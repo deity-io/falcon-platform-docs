@@ -8,9 +8,8 @@ import Badge from '@site/src/components/Badge';
 
 <Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
-## Overview
-
-:::note If you have existing project based on Falcon Platform v2.x please see our [migration guide](./migration-guide.md)
+:::note Composer version 3
+If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](../platform/support/contact)
 :::
 
 _(todo: This page needs more general, high level information about Falcon Server)_

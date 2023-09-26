@@ -235,15 +235,6 @@ module.exports = {
           }
         ]
       }
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'dpsg',
-        path: 'dpsg',
-        routeBasePath: 'dpsg',
-        sidebarPath: require.resolve('./sidebarsDpsg.js')
-      }
     ]
   ],
   presets: [

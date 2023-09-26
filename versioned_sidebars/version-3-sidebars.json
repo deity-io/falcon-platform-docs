@@ -154,7 +154,6 @@
       "type": "category",
       "label": "Getting Started",
       "items": [
-        
         {
           "type": "link",
           "label": "Sign up",
@@ -498,23 +497,32 @@
       ]
     },
     {
-      "type": "category",
-      "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/getting-started"},
       "collapsed": false,
+      "collapsible": true,
+      "link": {"type": "doc", "id": "version-3/composer/getting-started"},
+      "type": "category",
       "label": "Getting Started",
       "items": [
         {
-          "type": "doc",
-          "id": "version-3/composer/getting-started/installation"
+          "type": "link",
+          "label": "Sign up",
+          "href": "https://console.deity.cloud/signup"
         },
         {
           "type": "doc",
-          "id": "version-3/composer/getting-started/cli-commands"
+          "id": "version-3/composer/getting-started/new-project"
         },
         {
           "type": "doc",
-          "id": "version-3/composer/getting-started/configuration"
+          "id": "version-3/composer/getting-started/access-packages"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/getting-started/create-application"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/getting-started/link-repository"
         }
       ]
     },
