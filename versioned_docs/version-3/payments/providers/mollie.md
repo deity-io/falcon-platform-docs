@@ -34,7 +34,7 @@ Need a method that Mollie supports adding to the list? Please contact us as it m
 
 ## Mollie Configuration
 
-The easiest way to configure Mollie is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_mollie_create)
+The easiest way to configure Mollie is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_mollie_create)
 
 
 ```json
@@ -45,4 +45,4 @@ The easiest way to configure Mollie is by using `dcloud` CLI and the `dcloud pay
 }
 ```
 
-To get your profile ID &amp; API key you must have a [Mollie](https://www.mollie.com/dashboard/) account.  Please ensure `testMode` is set to true when using test credentials.
+To get your profile ID &amp; API key you must have a [Mollie →](https://www.mollie.com/dashboard/) account.  Please ensure `testMode` is set to true when using test credentials.

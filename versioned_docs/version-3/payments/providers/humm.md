@@ -16,7 +16,7 @@ Humm is an Australian payment provider and is only available for customers with 
 
 ## Humm Configuration
 
-The easiest way to configure Humm is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_humm_create)
+The easiest way to configure Humm is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_humm_create)
 
 ```json
 {
@@ -28,4 +28,4 @@ The easiest way to configure Humm is by using `dcloud` CLI and the `dcloud payme
 ```
 
 
-The merchant ID and gateway key can to be requested using [this form](https://docs.shophumm.com.au/request_api.html). Once the request is approved, the `merchantId` and `gatewayKey` will be provided to you by Humm.
+The merchant ID and gateway key can to be requested using [this form →](https://docs.shophumm.com.au/request_api.html). Once the request is approved, the `merchantId` and `gatewayKey` will be provided to you by Humm.

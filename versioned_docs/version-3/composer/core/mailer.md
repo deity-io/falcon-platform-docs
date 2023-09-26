@@ -7,9 +7,7 @@ import Badge from '@site/src/components/Badge';
 
 <Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
-## Overview 
-
-Out of the box our middleware allows emails to be sent easily using our `@deity/falcon-mailer` package. Under the hood this uses [Node Mailer](https://nodemailer.com/about/).
+Out of the box Deity Composer allows emails to be sent easily using our `@deity/falcon-mailer` package. Under the hood this uses [Node Mailer →](https://nodemailer.com/about/).
 
 ## Configuration
 
@@ -20,7 +18,7 @@ Depending on the service you're using your **smtp** config might vary. Please re
 To configure our mailer component add it to your `server` config as a component. This config might vary depending on your setup.
 
 **`server/config/default.json`**
-```
+```json
 "components": {
     "mailer": {
       "package": "@deity/falcon-mailer",
@@ -41,7 +39,7 @@ To configure our mailer component add it to your `server` config as a component.
 }
 ```
 
-- `MAILER_SERVICE` - this is the service you'd like to use. See a list of [supported values here](https://nodemailer.com/smtp/well-known/).
+- `MAILER_SERVICE` - this is the service you'd like to use. See a list of [supported values here →](https://nodemailer.com/smtp/well-known/).
 - `MAILER_USER` - the username for the service above
 - `MAILER_PASSWORD` - the password for the service above
 - `MAILER_FROM_ADDRESS` - the from address, e.g `Falcon Shop <deity.falcon.mailer@gmail.io>`
@@ -55,8 +53,8 @@ For now this only includes **BigCommerce** and **commercetools** integrations.
 
 You can easily inject the mailer component into your data source package by injecting it into the classes constructor.
 
-**`server/src/your-custom-module/index.ts**
-```
+**`server/src/your-custom-module/index.ts`**
+```ts
 import { injectable, inject, optional } from 'inversify';
 ...
 @injectable()
@@ -75,7 +73,7 @@ export class YourCustomDataSource extends FalconRESTDataSource {
 
 Once injected you can easily use the `sendEmail` method.
 
-```
+```ts
 this.mailer.sendEmail(
   [TO_EMAIL],
   [SUBJECT],

@@ -6,8 +6,10 @@ enterprise_only: true
 ---
 
 import CodePackage from '@site/src/components/CodePackage';
-
 import Badge from '@site/src/components/Badge';
+
+import { Card, CardContent } from '@site/src/components/Card';
+import LogoImg from '/img/logo.svg';
 
 <Badge variant="green">NEW V3 DOC</Badge><br/><br/>
 
@@ -23,9 +25,23 @@ This extension provides basic features for blog implementation:
 
 ## Available integrations
 
-List of modules (integrations) that can be used with this extension:
-- [Contentful module](../modules/contentful-module)
-- [WordPress module](../modules/wordpress-module)
+<div className="flex">
+  <Card to="/docs/integrations/contentful">
+    <div className="round-icon">
+      <img src="/docs/img/icons/contentful.svg" />
+    </div>
+    <h4>Contentful</h4>
+    <p>Build captivating experiences that stand out with the intelligent composable content platform.</p>
+  </Card>
+  <Card to="/docs/integrations/wordpress">
+    <div className="round-icon">
+      <img src="/docs/img/icons/wordpress.svg" />
+    </div>
+    <h4>Wordpress</h4>
+    <p>Build and grow your website with the best way to WordPress. </p>
+  </Card>
+</div>
+
 
 ## Usage
 

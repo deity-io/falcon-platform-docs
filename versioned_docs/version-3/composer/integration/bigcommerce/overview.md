@@ -22,9 +22,9 @@ href="https://www.bigcommerce.com/deity"
 rel="noreferrer noopener"
 target="\_blank"
 aria-label="visit the BigCommerce site"
-style={{ marginBottom: "20px", display: "block" }}><img src="/docs/img/docs/platform/bigcommerce/partner-header.jpg" alt="BigCommerce and Falcon Platform Graphic" width="500"/>> </a>
+style={{ marginBottom: "20px", display: "block" }}><img src="/docs/img/docs/platform/bigcommerce/partner-header.jpg" alt="BigCommerce and Falcon Platform Graphic" width="500"/> </a>
 
-- [Get started](/platform/integration/bigcommerce/getting-started)
-- [Feature List](/platform/integration/bigcommerce/features)
+- [Get started](/docs/composer/integration/bigcommerce/getting-started)
+- [Feature List](/docs/composer/integration/bigcommerce/features)
 - [BigCommerce demo app](https://demo.deity.io/)
-- [BigCommerce partner page](https://www.bigcommerce.com/deity/)
+- [BigCommerce partner page](https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/)

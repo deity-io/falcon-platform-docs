@@ -13,10 +13,10 @@ and mutations, so every Extension could use its types and extend them.
 
 Currently, Deity provides the following list of officially supported extensions:
 
-- [Shop Extension](./shop-extension)
-- [Blog Extension](./blog-extension)
-- [Search Extension](./search-extension)
-- [GeoLocation Extension](./geolocation-extension)
+- [Shop Extension](/docs/composer/extensions/shop-extension)
+- [Blog Extension](/docs/composer/extensions/blog-extension)
+- [Search Extension](/docs/composer/extensions/search-extension)
+- [GeoLocation Extension](/docs/composer/extensions/geolocation-extension)
 
 Each of these can of course be extended with custom features that are specific for particular implementation.
 
@@ -49,7 +49,7 @@ module.exports = () => ({
 
 ```
 
-Internally for example [Falcon GeoLocation Extension](./geolocation-extension) uses that mechanism to inject geo location data to each request's context.
+Internally for example [GeoLocation Extension](/docs/composer/extensions/geolocation-extension) uses that mechanism to inject geo location data to each request's context.
 
 _(todo)_
 <!-- * configuration -  There are some exceptions to this e.g. search modules should be configured last. -->

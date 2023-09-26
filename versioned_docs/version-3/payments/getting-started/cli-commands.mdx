@@ -1,0 +1,107 @@
+---
+id: cli-commands
+title: CLI Commands
+sidebar_label: CLI Commands
+---
+
+From the `server` directory you can run the following commands (in your terminal):
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+### Start
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm start
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn start
+```
+
+</TabItem>
+</Tabs>
+
+This will run Falcon Server in development mode.
+
+**Options**
+- `--inspect=[host:port]` - To debug the node server. This will start the node server and enable the inspector agent. The =[host:port] is optional and defaults to `=127.0.0.1:9229`. <a href="https://nodejs.org/en/docs/guides/debugging-getting-started/" target="_blank" rel="noopener noreferrer">See the Node.js debugging guide for more information</a>.
+- `--inspect-brk=[host:port]` - This is the same as --inspect, but will also break before user code starts. (to give a debugger time to attach before early code runs).
+
+**Useful Variants**
+- `start:dbg` - An alias for `--inspect`
+- `start:dbg-brk` - An alias for `--inspect-brk`
+
+### Build
+
+Builds the app for production, and outputs to the `./build` folder.
+
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm build:prod
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn build:prod
+```
+
+</TabItem>
+</Tabs>
+
+### Size
+
+Runs an interactive zoomable treemap of output files to visualize their size. Report will be automatically open in default browser at `http://localhost:8888`.
+<Tabs
+  defaultValue="npm"
+  values={[
+    { label: 'NPM', value: 'npm', },
+    { label: 'Yarn', value: 'yarn', }
+  ]
+}>
+<TabItem value="npm">
+
+```bash
+npm size
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn size
+```
+
+</TabItem>
+</Tabs>
+
+### Restart
+
+If your application is running, and you need to manually restart your server, you do not need to completely kill and rebundle your application. Instead you can just type `rs` and press enter in terminal.
+
+```bash
+rs
+```

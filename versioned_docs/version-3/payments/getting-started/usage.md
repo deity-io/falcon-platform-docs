@@ -5,13 +5,12 @@ sidebar_label: Using DPSG
 description: How to use DPSG
 ---
 
-## Overview
 
-Our core modules (Magento 2, BigCommerce, Commerce Tools) all have pre built DPSG integrations. 
+Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built DPSG integrations. 
 
-This section explains how to add your own.
+This section explains how to add your own. If you're new to DPSG, please read our [Key concepts guide →](/docs/payments/key-concepts)
 
-Please read our [how it works guide](/dpsg/docs/about) first.
+
 
 ### 1. Load Payment Service Client into your API package
 
@@ -38,7 +37,7 @@ export class YourDataSource extends RESTDataSource {
 
 ```
 
-### 2. Use `PaymentServiceClient` in your API package
+### 2. Use Payment Service Client in your API package
 
 You can then call `PaymentServiceClient` methods in your class like so:
 

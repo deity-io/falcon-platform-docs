@@ -32,7 +32,8 @@ export class CustomErrorHandler extends EventHandlerBase {
 }
 ```
 
-:::warning Due to nature of Data Sources which are instantiated per each request we don't advise to watch for events from Data Source because each request will create instance of event handler.
+:::caution 
+Due to nature of Data Sources which are instantiated per each request we don't advise to watch for events from Data Source because each request will create instance of event handler.
 :::
 
 ## Firing custom events

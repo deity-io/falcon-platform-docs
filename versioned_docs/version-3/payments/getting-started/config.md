@@ -7,7 +7,7 @@ description: How to configure DPSG
 
 ### Prerequisites
 
-These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [documentation](/platform/cloud/dcloud). At the start of most DPSG commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct DPSG region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
+These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [dcloud documentation](/console/cloud/dcloud). At the start of most DPSG commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct DPSG region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
 
 ### 1. Select your project
 
@@ -47,13 +47,15 @@ The final step is to enable payment methods.
 
 Run `dcloud payments:method:configure`.
 
-This will take you through steps to configure your methods, including the steps for our [configuration features](/dpsg/docs/methods/features/currencies).
+This will take you through steps to configure your methods, including the steps for our [configuration features →](/payments/methods/overview).
 
-<br /><br />
+<hr/>
 
 ### Dcloud Commands Reference
 
 To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
+
+#### Profile
 
 `payments:profile:sync`
 Automatically creates matching payments profiles for the project's environments
@@ -73,7 +75,7 @@ Deletes a selected payment profile
 `payments:profile:apply`
 Send Payments credentials to the Deity Cloud Environment. It will set the token by applying the required env vars
 
-<br />
+#### Provider
 
 `payments:provider:list:all`
 List all available payment providers
@@ -84,7 +86,7 @@ Configure payment provider for a selected payments profile
 `payments:provider:list`
 List configured payment providers for a selected payments profile
 
-<br />
+#### Method
 
 `payments:method:list:all`
 List all available payment methods of the required provider

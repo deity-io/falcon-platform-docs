@@ -9,9 +9,8 @@ Every payment provider has a specific set of payment methods that it supports. T
 
 ## Payment Method Configuration
 
-The easiest way to configure a payment method is by using `dcloud` CLI and the `dcloud payments:method:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Payment%20Method/EnvironmentPaymentMethodController_add).
+The easiest way to configure a payment method is by using `dcloud` CLI and the `dcloud payments:method:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Payment%20Method/EnvironmentPaymentMethodController_add).
 
-The configuration allows you to enable a payment method and configure it to your need using our [configuration features](/dpsg/docs/methods/features/currencies).
 
 ```json
 {

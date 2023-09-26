@@ -704,10 +704,6 @@
         {
           "type": "doc",
           "id": "version-3/storefront/key-concepts"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/storefront/technical"
         }
       ]
     },
@@ -948,11 +944,41 @@
       ]
     },
     {
+      "collapsed": false,
+      "collapsible": true,
+      "link": {"type": "doc", "id": "version-3/payments/getting-started/overview"},
       "type": "category",
       "label": "Getting Started",
+      "items": [
+        {
+          "type": "link",
+          "label": "Sign up",
+          "href": "https://console.deity.cloud/signup"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/new-project"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/access-packages"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/create-application"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/getting-started/link-repository"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Configuration",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/getting-started"},
-      "collapsed": false,
+      "link": {"type": "generated-index", "slug": "/payments/getting-started/configuration"},
+      "collapsed": true,
       "items": [
         {
           "type": "doc",

@@ -5,7 +5,7 @@ sidebar_label: Connecting to your app
 description: How to connect DPSG to your Falcon app
 ---
 
-## Connecting your Falcon App
+
 
 All the setup is done on our side. All you need to do is configure your Falcon App to use DPSG and you're good to go.
 

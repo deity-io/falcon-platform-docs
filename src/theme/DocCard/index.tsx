@@ -81,7 +81,7 @@ function CardCategory({
   return (
     <CardLayout
       href={href}
-      icon="/img/icons/pages.svg"
+      icon="/docs/img/icons/pages.svg"
       title={item.label}
       description={
         item.description ??
@@ -100,7 +100,7 @@ function CardCategory({
 }
 
 function CardLink({item}: {item: PropSidebarItemLink}): JSX.Element {
-  const icon = isInternalUrl(item.href) ? '/img/icons/page.svg' : '/img/icons/link.svg';
+  const icon = isInternalUrl(item.href) ? '/docs/img/icons/page.svg' : '/docs/img/icons/link.svg';
   const doc = useDocById(item.docId ?? undefined);
   return (
     <CardLayout

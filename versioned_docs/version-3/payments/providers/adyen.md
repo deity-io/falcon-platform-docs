@@ -24,7 +24,7 @@ Need a method that Adyen supports adding to the list? Please contact us as it mi
 
 ## Adyen Configuration
 
-The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
+The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
 
 
 ```json
@@ -41,17 +41,17 @@ To get your client, HMAC &amp; API keys you must have a [Adyen](https://www.adye
 
 ### `merchantAccount`
 
-You can get this from your Adyen account under `Account -> Merchant Accounts`
+You can get this from your Adyen account under **Account → Merchant Accounts**
 
 
 ### `apiKey`
 
-You can get this from your Adyen account under `Developer -> API Credentials` then select `ws`.
+You can get this from your Adyen account under **Developer → API Credentials** then select `ws`.
 
 
 ### `clientKey`
 
-You can get this from your Adyen account under `Developer -> API Credentials` then select `ws`.
+You can get this from your Adyen account under **Developer → API Credentials** then select `ws`.
 
 
 ### `hmacKey`
@@ -67,7 +67,7 @@ You can get your HMAC key when configuring your webhook. To do this, log into yo
 From their you can set up a `Standard Notification` webhook with the following configuration:
 
 **Transport**
-- URL: https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen (replacing `{region}`, `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted and the base url will be (https://dpsg.deity.cloud).
+- URL: `https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen` (replacing `{region}`, `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted and the base url will be (https://dpsg.deity.cloud).
 - Active: `Yes`
 - SSL version: `TLSv1.2`
 - On Adyen page navigate to Developers > Webhooks > Edit webhook, make sure to select all "Additional Settings".
