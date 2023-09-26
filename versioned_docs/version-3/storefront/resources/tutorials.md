@@ -12,5 +12,5 @@ These 'recipes' vary from simple theming processes like [changing the logo](clie
 
 
 :::note Something missing?
-Please [contact us](https://deity.io/contact) if you want to see a specific recipe or task added to our Cookbook.
+Please [contact us](https://deity.com/contact) if you want to see a specific recipe or task added to our Cookbook.
 :::

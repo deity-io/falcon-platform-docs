@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   title: 'DEITY',
   tagline: 'Documentation',
-  url: 'https://deity.com',
+  url: 'https://docs.deity.com',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'DEITY', // Usually your GitHub org/user name.

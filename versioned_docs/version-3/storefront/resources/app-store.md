@@ -10,7 +10,7 @@ It has been said that it is not possible to publish PWA's into the Apple App Sto
 
 We've published our demo PWA theme as a native app to the App Store. If you want to take a look yourself, feel free to check it out [here](https://apps.apple.com/app/deity-storefront/id1585832328).
 
-If you are interested in publishing your project to the App Store, please [reach out to us](https://deity.io/contact)
+If you are interested in publishing your project to the App Store, please [reach out to us](https://deity.com/contact)
 
 
 ## Features

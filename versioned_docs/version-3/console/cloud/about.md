@@ -6,7 +6,7 @@ sidebar_label: Deity Cloud
 
 ## What is Falcon Platform Cloud
 
-Cloud is an infrastructure that allows you to host your <a href="https://deity.io" target="_blank" rel="noreferrer noopener"> Falcon site</a>.
+Cloud is an infrastructure that allows you to host your <a href="https://deity.com" target="_blank" rel="noreferrer noopener"> Falcon site</a>.
 
 Cloud will scale automatically depending on your needs and traffic, meaning your site is always **blazing fast**.
 

@@ -275,7 +275,7 @@ function Pricing({ showPrice }) {
             <div className={styles.plansAdditional}>
               <p>
                 ** Autoscaling may increase the cost listed. Please{' '}
-                <Link href="https://deity.io/contact">contact us for more information</Link>
+                <Link href="https://deity.com/contact">contact us for more information</Link>
               </p>
             </div>
           )}

@@ -37,7 +37,7 @@ import logo from 'src/assets/logo.png';
 <OrganizationSchema
   logo={logo}
   name="DEITY"
-  url="https://deity.io"
+  url="https://deity.com"
   sameAs={[
     'https://twitter.com/DEITY_pwa',
     'https://www.linkedin.com/company/deity-bv/',
