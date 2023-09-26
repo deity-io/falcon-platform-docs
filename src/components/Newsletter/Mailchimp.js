@@ -51,7 +51,7 @@ function Mailchimp({ action }) {
 
   return (
     <Formik
-      initialValues={{ email: '', referrer: 'docs.deity.io' }}
+      initialValues={{ email: '', referrer: 'deity.com' }}
       validate={values => {
         const errors = {};
         if (!values.email) {
