@@ -881,6 +881,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-3/storefront/resources/technical"
+        },    
+        {
+          "type": "doc",
           "id": "version-3/storefront/resources/app-store"
         },
         {

@@ -15,12 +15,23 @@
     }
   }
   > h1{
- 
+    /* keep docusaurus setting */
   }
   > h2 {
-  /*--ifm-h2-font-size: 26px;*/
+    /* keep docusaurus setting */
   }
-
+  > h3 {
+    /* keep docusaurus setting */
+  }
+  > h4 {
+    font-size: var(--ifm-h3-font-size);
+  }
+  > h5 {
+    font-size: var(--ifm-h4-font-size);
+  }
+  > h6 {
+    font-size: var(--ifm-h5-font-size);
+  }
   .date {
     font-weight: 400;
     font-size: 13px;
