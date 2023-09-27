@@ -1,7 +1,7 @@
 ---
 id: overrides
-title: Overriding Components
-sidebar_label: Overriding Components
+title: Overriding components
+sidebar_label: Overriding components
 ---
 
 :::note Only override what you need

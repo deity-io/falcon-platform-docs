@@ -1,10 +1,10 @@
 ---
 id: fonts
-title: Custom Fonts
-sidebar_label: Custom Fonts
+title: Custom fonts
+sidebar_label: Custom fonts
 ---
 
-## Loading Fonts
+## Loading fonts
 
 ### Local fonts
 
@@ -12,7 +12,7 @@ If you are hosting a font yourself you'll need to add the font files to your `cl
 
 You'll also need a css file in the same directory that loads the fonts using `@font-face`.
 
-**File Structure**
+**File structure**
 ```
 |- client
   |- src
@@ -41,7 +41,7 @@ After that you'll need to load this css file globally in your `client/src/App.js
 import './assets/fontName/fontName.css';
 ```
 
-### Google Fonts
+### Google fonts
 
 If you're using a hosted font, such as a Google font we recommend importing it in a css file.
 
@@ -60,7 +60,7 @@ import './assets/fontName/fontName.css';
 ```
 
 
-## Using Fonts
+## Using fonts
 
 You may want your font to be used globally or as a theme variable to be used on a component specific basis.
 
@@ -79,7 +79,7 @@ export const globalCss = {
 };
 ```
 
-### Theme Variables
+### Theme variables
 
 If you want to use the font as a variable you can simply add it to `client/src/styling/theme.js`.
 

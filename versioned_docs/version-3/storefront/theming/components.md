@@ -1,7 +1,7 @@
 ---
 id: components
-title: Themed Components
-sidebar_label: Themed Components
+title: Themed components
+sidebar_label: Themed components
 ---
 
 `@deity/falcon-ui` UI components such as `Box`, `Text` etc are all built as themeable components.

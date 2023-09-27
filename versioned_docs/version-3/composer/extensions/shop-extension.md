@@ -29,7 +29,7 @@ This extension provides basic features for a webshop implementation:
 <div className="flex">
   <Card to="/docs/integrations/magento2">
     <div className="round-icon">
-      <img src="/docs/img/icons/magento.svg" />
+      <img src="/docs/img/icons/adobe.svg" />
     </div>
     <h4>Adobe Commerce CE</h4>
     <p>The experience makes all the difference. Grow with Adobe Commerce CE.</p>

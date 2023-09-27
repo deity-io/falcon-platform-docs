@@ -1,7 +1,7 @@
 ---
 id: event-handlers
-title: Event Handlers in Falcon Server
-sidebar_label: Event Handlers
+title: Event handlers in Falcon Server
+sidebar_label: Event handlers
 enterprise_only: true
 ---
 import Badge from '@site/src/components/Badge';

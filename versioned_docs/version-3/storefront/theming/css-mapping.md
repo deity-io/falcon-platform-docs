@@ -1,7 +1,7 @@
 ---
 id: css-mapping
-title: CSS Mapping
-sidebar_label: CSS Mapping
+title: CSS mapping
+sidebar_label: CSS mapping
 ---
 
 `@deity/falcon-ui` uses a mapping function to define 2 things:
@@ -9,7 +9,7 @@ sidebar_label: CSS Mapping
 - CSS property shortcuts, 'responsive props'
 - Which key from the theme object is used for each CSS property.
 
-## CSS Shortcuts / Responsive Props
+## CSS shortcuts / responsive props
 
 To keep your code slim `@deity/falcon-ui` maps certain component props to css properties.
 
@@ -21,7 +21,7 @@ To keep your code slim `@deity/falcon-ui` maps certain component props to css pr
 
 In the above example `m` relates to **margin**.
 
-### Assigning a blank object to a CSS Shortcut / Responsive Prop
+### Assigning a blank object to a CSS shortcut / responsive prop
 
 ```js
 display: {},

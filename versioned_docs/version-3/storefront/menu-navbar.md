@@ -1,7 +1,7 @@
 ---
 id: menu-navbar
-title: Menu Navbar with depth
-sidebar_label: Menu Navbar
+title: Menu navbar with depth
+sidebar_label: Menu navbar
 ---
 
 By default the MenuNavbar renders up to 3 layers of navigation levels items who could be styled trough overriding styles.

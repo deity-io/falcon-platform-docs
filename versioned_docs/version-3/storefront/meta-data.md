@@ -1,7 +1,7 @@
 ---
 id: meta-data
-title: SEO / Meta Data
-sidebar_label: SEO / Meta Data
+title: SEO / meta data
+sidebar_label: SEO / meta data
 ---
 
 <a href="https://www.npmjs.com/package/react-helmet-async" rel="noreferrer noopener" target="_blank" aria-label="visit the React Helmet package">
@@ -13,7 +13,7 @@ Falcon Platform uses [React Helmet Async](https://www.npmjs.com/package/react-he
 - [React Helmet Docs](https://www.npmjs.com/package/react-helmet)
 - [React Helmet Async Docs](https://www.npmjs.com/package/react-helmet-async)
 
-## Example Code
+## Example code
 
 **`client/src/App.js`**
 ```js

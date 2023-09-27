@@ -1,7 +1,7 @@
 ---
 id: css-sass
-title: CSS / Sass support
-sidebar_label: CSS / Sass support
+title: CSS / sass support
+sidebar_label: CSS / sass support
 ---
 
 To add your styles using a `css` or `scss` file simply import it.
@@ -28,8 +28,8 @@ import './styles.scss';
 
 ### Global SCSS files
 
-Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](/platform/cookbook/client/scss-global).
+Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](/docs/platform/support/storefront/tutorials/scss-global).
 
 ### POST CSS
 
-Want to use Post CSS files for you variables, mixins and function? [Check out our cookbook](/platform/cookbook/client/post-css-support).
+Want to use Post CSS files for you variables, mixins and function? [Check out our cookbook](/docs/platform/support/storefront/tutorials/post-css-support).

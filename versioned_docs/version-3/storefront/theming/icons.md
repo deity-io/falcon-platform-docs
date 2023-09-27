@@ -1,7 +1,7 @@
 ---
 id: icons
-title: Site Icons
-sidebar_label: Site Icons
+title: Site icons
+sidebar_label: Site icons
 ---
 
 Falcon Client comes with an Icon component `@deity/falcon-ui`. This component expects you to have icons set in your theme.

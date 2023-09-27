@@ -4,7 +4,7 @@ title: File structure
 sidebar_label: File structure
 ---
 
-## Key Files and Folders
+## Key files and folders
 
 This is **not** a **complete list** of files and folders. Just the **key files** you'll need to know about to get started.
 

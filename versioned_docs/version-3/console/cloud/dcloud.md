@@ -4,7 +4,7 @@ title: CLI Reference
 sidebar_label: CLI Reference
 ---
 
-## Build List
+## Build list
 
 List your current builds.
 
@@ -24,7 +24,7 @@ dcloud build:list -l 30
 
 ---
 
-## Build Info
+## Build info
 
 Get information on a build.
 
@@ -44,7 +44,7 @@ dcloud build 20 -w
 
 ---
 
-## Deployment List
+## Deployment list
 List your deployments
 
 ```bash
@@ -63,7 +63,7 @@ dcloud deployment:list -l 30 -p 2
 
 ---
 
-## Deployment Info
+## Deployment info
 
 Get information on a deployment.
 
@@ -102,7 +102,7 @@ dcloud deployment:run 20 development
 
 ---
 
-## Environments List
+## Environments list
 
 List all available environments
 
@@ -115,7 +115,7 @@ N/A
 
 ---
 
-## Environment Info
+## Environment info
 
 Get info on a specific environment
 
@@ -128,7 +128,7 @@ N/A
 
 ---
 
-## Environment Deployments
+## Environment deployments
 
 Get deployments for an environment
 
@@ -142,7 +142,7 @@ dcloud env:deployments <env>
 
 ---
 
-## Environment Variable
+## Environment variable
 
 Set a variable on an environment
 
@@ -161,7 +161,7 @@ dcloud env:var:set -s test API_KEY 12345
 
 ---
 
-## Environment Set Domain
+## Environment set domain
 
 Set the domain for an environment
 
@@ -174,7 +174,7 @@ N/A
 
 ---
 
-## Environment Variables Apply
+## Environment variables apply
 
 Apply environment variable changes without redeploying your app.
 
@@ -187,7 +187,7 @@ N/A
 
 ---
 
-## Repositories List
+## Repositories list
 
 Get a list of your current/active repositories
 
@@ -200,7 +200,7 @@ dcloud repo
 
 ---
 
-## Project Info
+## Project info
 
 Get your project information
 
@@ -213,7 +213,7 @@ N/A
 
 ---
 
-## Projects List
+## Projects list
 
 Get a list of your projects
 
@@ -226,7 +226,7 @@ N/A
 
 ---
 
-## Project Current
+## Project current
 
 Get the current project
 
@@ -239,7 +239,7 @@ N/A
 
 ---
 
-## Project Set Current
+## Project set current
 
 Set a project as current
 
@@ -295,7 +295,7 @@ N/A
 
 ---
 
-## Log List
+## Log list
 
 List log including error, warnings and info
 
@@ -314,7 +314,7 @@ dcloud log:list
 
 ---
 
-## Log Watch
+## Log watch
 
 Watch the logs for an environment
 

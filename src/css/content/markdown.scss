@@ -1,4 +1,5 @@
 .markdown {
+  &:before {display:none; /*No idea what this :before element does*/}
   .hash-link {
     position: relative;
 

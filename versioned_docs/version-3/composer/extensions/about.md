@@ -1,6 +1,6 @@
 ---
 id: about
-title: Extensions in Falcon Server
+title: Extensions
 sidebar_label: Introduction
 enterprise_only: true
 ---
@@ -49,7 +49,7 @@ module.exports = () => ({
 
 ```
 
-Internally for example [Falcon GeoLocation Extension](./geolocation-extension) uses that mechanism to inject geo location data to each request's context.
+Internally for example [GeoLocation Extension](./geolocation-extension) uses that mechanism to inject geo location data to each request's context.
 
 _(todo)_
 <!-- * configuration -  There are some exceptions to this e.g. search modules should be configured last. -->

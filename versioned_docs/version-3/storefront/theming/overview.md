@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Theming Overview
+title: Theming overview
 sidebar_label: Overview
 ---
 
@@ -24,7 +24,7 @@ Out of the box Falcon Platform also supports [**css** and **scss**](./css-sass).
 If you're new to writing CSS in ReactJs, it's worth reading <a href="https://www.w3schools.com/react/react_css.asp" target="_blank" rel="noopener noreferrer">these docs</a>.
 :::
 
-## Global Styles
+## Global styles
 
 Global styles can be passed to the `ThemeProvider` as a prop.
 
@@ -59,7 +59,7 @@ By default the `ThemeProvider` component is included in `client/src/App.js`. The
 </ThemeProvider>
 ```
 
-## Creating a Theme
+## Creating a theme
 
 The `ThemeProvider` expects a `prop`, `theme`. This is where we define out global / theme variables.
 
@@ -117,7 +117,7 @@ You will also notice some props are shortcuts for the css property, e.g. `m="xxl
 
 [Find out more about css mapping and shortcuts](./css-mapping)
 
-### Responsive Styling
+### Responsive styling
 
 If you want a property to change based on window width based media queries you can pass it an object. Each object key refers to a breakpoint (these can be defined in your `theme.js` if you don't want to keep the core ones `@deity/falcon-ui/src/theme/theme.ts`). These breakpoints create mobile first css (`@media and (max-width: <breakpoint>`).
 
@@ -144,7 +144,7 @@ breakpoints: {
 }
 ```
 
-### Adding complex css
+### Adding complex CSS
 
 If you want to add more complex css, for instance styling child selectors, pseudo elements or state changes you can do this in the `css` prop.
 

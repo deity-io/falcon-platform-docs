@@ -1,7 +1,7 @@
 ---
 id: wordpress-module
-title: WordPress Module
-sidebar_label: WordPress Module
+title: WordPress module
+sidebar_label: WordPress module
 enterprise_only: true
 ---
 

@@ -6,20 +6,11 @@ sidebar_label: Configuration
 
 Falcon Client configuration can be found in the `client/config` directory.
 
-For more details see our [configuration docs](/platform/configuration/overview) and our [client config docs](/platform/configuration/client).
-
-
----
-id: client
-title: Falcon Client Configuration
-sidebar_label: Falcon Client
----
-
-Configs are stored as an object in [Apollo State](/platform/client/state).
+Configs are stored as an object in [Apollo State](/docs/storefront/state).
 
 `config` has **no schema** meaning you can add anything you like.
 
-## Google Analytics Example
+## Google Analytics example
 
 This example shows how to retrieve and use these configs in your components.
 

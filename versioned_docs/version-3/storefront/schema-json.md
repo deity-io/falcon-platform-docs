@@ -1,7 +1,7 @@
 ---
 id: schema-json
-title: Schema Markup / Rich Results
-sidebar_label: Schema Markup / Rich Results
+title: Schema markup / rich results
+sidebar_label: Schema markup / rich results
 ---
 
 ## Overview
@@ -22,7 +22,7 @@ For full schema markup docs please see [schema.org](https://schema.org/docs/gs.h
 - Blog list
 
 
-### Organisation Schema
+### Organisation schema
 
 [Full docs](https://schema.org/Organization)
 
@@ -55,7 +55,7 @@ The props expected are:
 - `url` - Organisation URL (probably your sites URL)
 - `sameAs` - Array or organisation URLs (normally social network links)
 
-### Product Schema
+### Product schema
 
 [Full docs](https://schema.org/Product)
 
@@ -80,13 +80,13 @@ import { ProductSchema } from '@deity/falcon-ui-kit';
 <ProductSchema product={product} />
 ```
 
-### Product List Schema
+### Product list schema
 
 [Full docs](https://schema.org/Product)
 
 The product list uses the product schema but is imported into our `ProductCard` component.
 
-### Blog Post Schema
+### Blog post schema
 
 [Full docs](https://schema.org/Blog)
 
@@ -113,7 +113,7 @@ import { FormattedDate, Image, BlogPostSchema } from '@deity/falcon-ui-kit';
 <BlogPostSchema blog={blogSchemaInfo} />
 ```
 
-### Blog List Schema
+### Blog list schema
 
 [Full docs](https://schema.org/Blog)
 

@@ -1,7 +1,7 @@
 ---
 id: extension-scopes
-title: Extension Scopes in Falcon Server
-sidebar_label: Extension Scopes
+title: Extension scopes in Falcon Server
+sidebar_label: Extension scopes
 enterprise_only: true
 ---
 import Badge from '@site/src/components/Badge';

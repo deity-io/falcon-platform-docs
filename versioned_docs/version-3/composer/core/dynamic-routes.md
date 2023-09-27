@@ -1,7 +1,7 @@
 ---
 id: dynamic-routes
-title: Dynamic Route Resolver
-sidebar_label: Dynamic Route Resolver
+title: Dynamic route resolver
+sidebar_label: Dynamic route resolver
 enterprise_only: true
 ---
 

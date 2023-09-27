@@ -8,7 +8,7 @@ sidebar_label: Routing
 
 In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
 
-[Dynamic Routing](/platform/server/dynamic-routes) relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/platform/cookbook/integrations/contentful2).
+[Dynamic Routing](/platform/server/dynamic-routes) relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/docs/platform/support/integrations/tutorials/contentful).
 
 ---
 
@@ -97,7 +97,7 @@ In this case we would match on `type` and **not** `path`.
 
 The `type` is returned by a method in your API code (in Falcon Server).
 
-For more details please checkout out our [dynamic routing docs](/platform/server/dynamic-routes).
+For more details please checkout out our [dynamic routing docs](/docs/composer/core/dynamic-routes).
 
 **n.b.** If `path` prop is passed the `type` will be ignored.
 

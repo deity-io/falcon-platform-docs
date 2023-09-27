@@ -1,7 +1,7 @@
 ---
 id: data-sources
-title: Data Sources in Falcon Server
-sidebar_label: Data Sources
+title: Data sources in Falcon Server
+sidebar_label: Data sources
 enterprise_only: true
 ---
 

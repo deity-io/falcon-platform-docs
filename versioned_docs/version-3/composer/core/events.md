@@ -1,7 +1,7 @@
 ---
 id: event-hooks
-title: Event Hooks
-sidebar_label: Event Hooks
+title: Event hooks
+sidebar_label: Event hooks
 enterprise_only: true
 ---
 
@@ -11,7 +11,7 @@ Falcon Server emits several event hooks that can be used to add your own custom 
 
 We use [this package](https://www.npmjs.com/package/eventemitter2) as a base for our events.
 
-## Available Events
+## Available events
 
 ```ts
 export enum Events {

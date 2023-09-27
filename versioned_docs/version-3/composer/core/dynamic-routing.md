@@ -1,7 +1,7 @@
 ---
 id: dynamic-routing
-title: Dynamic Routing in Falcon Server
-sidebar_label: Dynamic Routing
+title: Dynamic routing in Falcon Server
+sidebar_label: Dynamic routing
 enterprise_only: true
 ---
 import Badge from '@site/src/components/Badge';

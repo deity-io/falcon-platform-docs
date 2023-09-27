@@ -1,7 +1,7 @@
 ---
 id: browser-support
-title: Browser Support
-sidebar_label: Browser Support
+title: Browser support
+sidebar_label: Browser support
 ---
 
 <img src="/docs/img/browsers.svg" alt="Browser Logos" width="400" style={{ marginBottom: 20 }} />

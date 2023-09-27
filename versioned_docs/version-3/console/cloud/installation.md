@@ -18,7 +18,7 @@ Before doing anything you'll need to install our CLI tool on your local machine.
 
 This can be done using **npm**.
 
-```javascript
+```bash
 npm i -g dcloud
 ```
 
@@ -34,7 +34,7 @@ The next step is to log into [your cloud account](account).
 
 From your terminal window run the login command.
 
-```javascript
+```bash
 dcloud login:token [token]
 ```
 
@@ -48,7 +48,7 @@ If you've not yet created an account please contact our support.
 
 To check you're logged in correctly run `whoami`
 
-```javascript
+```bash
 dcloud whoami
 ```
 

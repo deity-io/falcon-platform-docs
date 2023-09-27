@@ -501,7 +501,7 @@
       "collapsible": true,
       "link": {"type": "doc", "id": "version-3/composer/getting-started/overview"},
       "type": "category",
-      "label": "Getting Started",
+      "label": "Getting started",
       "items": [
         {
           "type": "link",
@@ -562,11 +562,14 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/extensions"},
+      "link": {"type": "generated-index", "slug": "composer/extensions"},
       "collapsed": true,
       "label": "Extensions",
       "items": [
-       
+        {
+          "type": "doc",
+          "id": "version-3/composer/extensions/about"
+        },
         {
           "type": "doc",
           "id": "version-3/composer/extensions/shop-extension"
@@ -590,7 +593,7 @@
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/composer/common-services"},
       "collapsed": true,
-      "label": "Common Services",
+      "label": "Common services",
       "items": [
         {
           "type": "doc",
@@ -712,7 +715,7 @@
       "collapsible": true,
       "link": {"type": "doc", "id": "version-3/storefront/getting-started/overview"},
       "type": "category",
-      "label": "Getting Started",
+      "label": "Getting started",
       "items": [
         {
           "type": "link",
@@ -739,7 +742,7 @@
     },
     {
       "type": "category",
-      "label": "Building an App",
+      "label": "Building an app",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/storefront/building-an-app"},
       "collapsed": true,
@@ -764,7 +767,7 @@
     },
     {
       "type": "category",
-      "label": "Creating Themes",
+      "label": "Creating themes",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/storefront/theming"},
       "collapsed": true,
@@ -797,7 +800,7 @@
     },
     {
       "type": "category",
-      "label": "Building Experiences",
+      "label": "Building experiences",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/storefront/building-experiences"},
       "collapsed": true,
@@ -830,7 +833,7 @@
     },
     {
       "type": "category",
-      "label": "Advanced Features",
+      "label": "Advanced features",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/storefront/advanced"},
       "collapsed": true,
@@ -948,7 +951,7 @@
       "collapsible": true,
       "link": {"type": "doc", "id": "version-3/payments/getting-started/overview"},
       "type": "category",
-      "label": "Getting Started",
+      "label": "Getting started",
       "items": [
         {
           "type": "link",
@@ -1000,7 +1003,7 @@
     },
     {
       "type": "category",
-      "label": "Payment Providers",
+      "label": "Payment providers",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/payments/providers"},
       "collapsed": true,
@@ -1029,7 +1032,7 @@
     },
     {
       "type": "category",
-      "label": "Payment Features",
+      "label": "Payment features",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/payments/methods"},
       "collapsed": true,
@@ -1129,7 +1132,7 @@
     },
     {
       "type": "category",
-      "label": "Shop Platforms",
+      "label": "Shop platforms",
       "collapsible": true,
       "link": {"type": "generated-index", "slug": "/integrations/shop-platforms"},
       "items": [
@@ -1290,7 +1293,7 @@
     },
     {
       "type": "category",
-      "label": "Getting Started",
+      "label": "Getting started",
       "collapsible": true,
       "collapsed": false,
       "items": [
@@ -1399,7 +1402,7 @@
     },    
     {
       "type": "category",
-      "label": "Builds & Deployments",
+      "label": "Builds & deployments",
       "collapsible": true,
       "collapsed": true, 
       "link": {
@@ -1467,27 +1470,12 @@
       "label": "Deity Cloud",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/console/cloud"},
+      "link": {"type": "doc", "id": "version-3/console/cloud/about"},
       "items": [
-        {
-          "type": "doc",
-          "id": "version-3/console/cloud/about"
-        },
+        
         {
           "type": "doc",
           "id": "version-3/console/cloud/dcloud"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/console/cloud/prerequisites"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/console/cloud/installation"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/console/cloud/technical"
         }
       ]
     }

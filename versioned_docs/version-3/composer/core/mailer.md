@@ -1,7 +1,7 @@
 ---
 id: mailer
-title: Mail Component
-sidebar_label: Mail Component
+title: Mail component
+sidebar_label: Mail component
 ---
 import Badge from '@site/src/components/Badge';
 
