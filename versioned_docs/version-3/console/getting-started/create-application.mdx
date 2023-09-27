@@ -5,13 +5,14 @@ sidebar_label: 2. Create Application
 ---
 import { Card, CardContent } from '@site/src/components/Card';
 import Badge from '@site/src/components/Badge';
+import Button from '@site/src/components/Button';
 
 Now that you have access to our packages, let’s create a Deity template application. You can choose from three of our templates.
 
 ## Choose demo template
 
 <div class="mb20">
- <Card variant="horizontal" to="/docs/">
+ <Card variant="horizontal" to="">
  	<img src="/docs/img/icons/magento.svg" className="round-icon" />&nbsp;+&nbsp;
  	<img src="/docs/img/icons/wordpress.svg" className="round-icon" />
     <div>
@@ -20,8 +21,13 @@ Now that you have access to our packages, let’s create a Deity template applic
        Template with preconfigured Magento 2 store and a WordPress blog.
       </p>
     </div>
+    
+    <Button variant="outlined" size="small" href="https://v3demo1.deity.io/#" target="_blank">
+        View demo →
+     </Button>
+    
  </Card>
- <Card variant="horizontal" to="/docs/">
+ <Card variant="horizontal" to="">
     <img src="/docs/img/icons/bigcommerce.svg" className="round-icon" />&nbsp;+&nbsp;
     <img src="/docs/img/icons/algolia.svg" className="round-icon" />
     <div>
@@ -30,8 +36,13 @@ Now that you have access to our packages, let’s create a Deity template applic
        Template based on a BigCommerce store and Algolia search engine.
       </p>
     </div>
+    
+    <Button variant="outlined" size="small" href="https://v3demo2.deity.io/" target="_blank">
+        View demo →
+     </Button>
+
  </Card>
- <Card variant="horizontal" to="/docs/">
+ <Card variant="horizontal" to="">
  	<img src="/docs/img/icons/commercetools.svg" className="round-icon" />&nbsp;+&nbsp;
     <img src="/docs/img/icons/contentful.svg" className="round-icon" />
     <div>
@@ -41,6 +52,10 @@ Now that you have access to our packages, let’s create a Deity template applic
       </p>
     </div>
     
+    <Button variant="outlined" size="small" href="https://v3demo3.deity.io/" target="_blank">
+        View demo →
+     </Button>
+ 
  </Card>
 </div>
 
