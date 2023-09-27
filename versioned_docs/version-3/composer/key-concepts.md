@@ -1,7 +1,7 @@
 ---
 id: key-concepts
-title: Key Concepts
-sidebar_label: Key Concepts
+title: Key concepts
+sidebar_label: Key concepts
 enterprise_only: true
 ---
 import Badge from '@site/src/components/Badge';
