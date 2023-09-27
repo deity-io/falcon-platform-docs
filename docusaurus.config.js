@@ -88,8 +88,8 @@ module.exports = {
         },
         {
           label: 'Changelog',
-          to: '/platform/release/full-changelog',
-          activeBasePath: '/platform/release'
+          to: '/platform/changelog',
+          activeBasePath: '/platform'
         },
         {
           label: 'Launch Console',
@@ -105,7 +105,7 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: '/platform/overview'
+              to: '/platform/'
             },
             {
               label: 'Composer',
@@ -120,7 +120,7 @@ module.exports = {
               to: '/payments'
             },
             {
-              label: 'Console',
+              label: 'Cloud Console',
               to: '/console'
             }
           ]
@@ -130,15 +130,15 @@ module.exports = {
           items: [
             {
               label: 'Changelog',
-              to: '#'
+              to: '/platform/changelog'
             },
             {
               label: 'System status',
-              to: '#'
+              to: 'https://status.deity.io/'
             },
             {
               label: 'Support',
-              to: '#'
+              to: '/platform/support/contact'
             }
           ]
         },
@@ -151,11 +151,11 @@ module.exports = {
             },
             {
               label: 'Blog',
-              href: 'https://medium.com/deity-io'
+              href: 'https://deity.com/blog'
             },
             {
               label: 'Case studies',
-              href: '#'
+              href: 'https://deity.com/case-studies'
             }
           ]
         },

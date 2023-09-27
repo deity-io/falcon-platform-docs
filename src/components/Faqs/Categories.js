@@ -7,32 +7,32 @@ const FaqCategories = [
   {
     name: 'General',
     url: '/platform/support/faqs/general',
-    icon: '/img/icons/deity.svg'
+    icon: '/docs/img/icons/deity.svg'
   },
   {
     name: 'Storefront',
     url: '/platform/support/faqs/storefront',
-    icon: '/img/icons/data.svg'
+    icon: '/docs/img/icons/data.svg'
   },
   {
     name: 'Composer',
     url: '/platform/support/faqs/server',
-    icon: '/img/icons/ticker.svg'
+    icon: '/docs/img/icons/ticker.svg'
   },
   {
     name: 'Cloud Console',
     url: '/platform/support/faqs/cloud',
-    icon: '/img/icons/switch.svg'
+    icon: '/docs/img/icons/switch.svg'
   },
   {
     name: 'Configuration + Integrations',
     url: '/platform/support/faqs/config',
-    icon: '/img/icons/add-one.svg'
+    icon: '/docs/img/icons/add-one.svg'
   },
   {
     name: 'Miscellaneous + Troubleshooting',
     url: '/platform/support/faqs/misc',
-    icon: '/img/icons/lightbulb.svg'
+    icon: '/docs/img/icons/lightbulb.svg'
   }
 ];
 

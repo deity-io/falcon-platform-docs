@@ -1,7 +1,7 @@
 ---
 id: client
-title: Falcon Client
-sidebar_label: Falcon Client
+title: Storefront
+sidebar_label: Storefront
 ---
 
 ### Getting started with theming

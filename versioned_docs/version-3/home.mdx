@@ -29,16 +29,16 @@ import Button from '@site/src/components/Button';
     <CardContent>
       <LogoImg className="logo-content" />
       <div className="mb20">
-        <p >
+        <p>
           Deity is the endlessly flexible commerce platform providing the utmost customer centric approach to any
           fast-growing and forward thinking ecommerce merchant.
         </p>
       </div>  
        <Button variant="contained" size="medium" href="/docs/platform">
-          Learn more 
+          Learn more →
        </Button>&nbsp; &nbsp;
       <Button variant="outlined" size="medium" href="https://www.deity.com/contact" target="_blank">
-          Schedule a demo
+          Request a demo →
        </Button>
     </CardContent>
     <div className="right-big-card">
@@ -73,102 +73,24 @@ import Button from '@site/src/components/Button';
 </div>
 
 <Badge>Products</Badge>
-<h2 className="mb20 headline2">Pick your topic</h2>
-<div className="flex mb100 brighten">
-  <Card to="/docs/composer">
-    <img src="/docs/img/icons/ticker.svg" />
-    <h4>Composer</h4>
-    <p>Compose outstanding digital experiences to achieve transactional excellence.</p>
-  </Card>
-  <Card to="/docs/storefront">
-    <img src="/docs/img/icons/shop.svg" />
-    <h4>Storefront</h4>
-    <p>Focus on customer experience to exceed expectations.</p>
-  </Card>
-  <Card to="/docs/payments">
-    <img src="/docs/img/icons/coins.svg" />
-    <h4>Payments</h4>
-    <p>Integrate multiple payment service providers to use any payment method.</p>
-  </Card>
-  <Card to="/docs/console">
-    <img src="/docs/img/icons/switch.svg" />
-    <h4>Cloud Console</h4>
-    <p>Manage your subscriptions, users, deployments, integrations and more with our web-based application.</p>
-  </Card>
-</div>
+<h2 className="mb20 headline2">Pick your product</h2>
+
+import ProductContent from "./includes/products.mdx"
+
+<ProductContent />
+
 
 <Badge>Guides</Badge>
-<h2 className="mb20 headline2">Learn the basics</h2>
-<div className="flex brighten">
-  <Card variant="horizontal" to="#">
-    <img src="/docs/img/icons/ticker.svg" />
-    <div>
-      <h5>Working with extensions</h5>
-      <p>
-        Eu condimentum orci tristique felis sit est proin ipsum magna. Eget vestibulum et adipiscing in ornare tellus
-        libero cras at aliquam.
-      </p>
-    </div>
-  </Card>
-  <Card variant="horizontal" to="#">
-    <img src="/docs/img/icons/ticker.svg" />
-    <div>
-      <h5>Register a custom module</h5>
-      <p>
-        Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
-        risus.
-      </p>
-    </div>
-  </Card>
-</div>
-<div className="flex brighten">
-  <Card variant="horizontal" to="#">
-    <img src="/docs/img/icons/coins.svg" />
-    <div>
-      <h5>Setup a local development profile</h5>
-      <p>
-        Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
-        risus.
-      </p>
-    </div>
-  </Card>
-  <Card variant="horizontal" to="#">
-    <img src="/docs/img/icons/data.svg" />
-    <div>
-      <h5>Overriding components</h5>
-      <p>
-        Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
-        risus.
-      </p>
-    </div>
-  </Card>
-</div>
-<div className="flex mb100 brighten">
-  <Card variant="horizontal" to="#">
-    <img src="/docs/img/icons/switch.svg" />
-    <div>
-      <h5>Deploying a build to a remote environment</h5>
-      <p>
-        Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
-        risus.
-      </p>
-    </div>
-  </Card>
-  <Card variant="horizontal" to="#">
-    <img src="/docs/img/icons/switch.svg" />
-    <div>
-      <h5>Set a custom environment variable</h5>
-      <p>
-        Cras ultricies arcu dictum mauris condimentum ac massa scelerisque blandit. Neque purus nullam ornare volutpat
-        risus.
-      </p>
-    </div>
-  </Card>
-</div>
+<h2 className="mb20 headline2">Popular topics</h2>
+
+import PopularContent from "./includes/popular.mdx"
+
+<PopularContent />
+
 
 <h2 class="mb20 headline2">Integrations</h2>
 
-import IntegrationContent from "./integrations.mdx"
+import IntegrationContent from "./includes/integrations.mdx"
 
 <IntegrationContent />
 
