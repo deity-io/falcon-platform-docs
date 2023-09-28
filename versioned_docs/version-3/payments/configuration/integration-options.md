@@ -1,7 +1,8 @@
 ---
-id: key-concepts
-title: Key concepts
-sidebar_label: Key concepts
+id: integration-options
+title: Integration options
+sidebar_label: Integration options
+description: Key concepts of integrating DPSG
 ---
 
 ## Management your payment configuration

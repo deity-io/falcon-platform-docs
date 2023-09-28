@@ -6,7 +6,7 @@ sidebar_label: Method Sort Order
 
 ## Overview
 
-The sort order methods are returned from DPSG in can be configured per method, per environment and per country.
+The sort order can be configured per method, per environment and per country.
 
 ## How to configure sort orders
 

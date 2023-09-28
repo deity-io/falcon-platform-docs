@@ -1,7 +1,7 @@
 ---
-id: key-concepts
-title: Key concepts
-sidebar_label: Key concepts
+id: inversion-of-control
+title: Inversion of control
+sidebar_label: Inversion of control
 enterprise_only: true
 ---
 import Badge from '@site/src/components/Badge';

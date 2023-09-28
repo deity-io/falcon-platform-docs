@@ -18,7 +18,7 @@ Run `dcloud project:current:set [organization] [project]` to select the project 
 To get started, you first need to create a payments profile. A profile is a set of credentials and a configuration for payment providers and methods.
 A profile should be created for every cloud environment and every developer.
 
-:::info
+:::note
 Every developer that works on the project locally should create their own profile. This is to ensure that all payment updates provided by RabbitMQ are delivered to the correct event consumer.
 :::
 
@@ -31,7 +31,7 @@ Once configured, you can request information about a profile at any time, using 
 
 Run `dcloud payments:profile:apply`, this will set the authentication details for DPSG as environment variables for your Falcon app.
 
-:::info
+:::note
 This step should only be performed for profiles that you want to connect to your cloud instance, not for local development profiles.
 :::
 

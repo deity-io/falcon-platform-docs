@@ -535,19 +535,15 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-3/composer/core/inversion-of-control"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/core/caching"
+        },        
+        {
+          "type": "doc",
           "id": "version-3/composer/core/dynamic-routes"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/core/event-hooks"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/core/extending-composer"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/composer/core/extension-scopes"
         },
         {
           "type": "doc",
@@ -569,6 +565,10 @@
         {
           "type": "doc",
           "id": "version-3/composer/extensions/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/composer/extensions/extension-scopes"
         },
         {
           "type": "doc",
@@ -989,19 +989,23 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/payments/getting-started/installation"
+          "id": "version-3/payments/configuration/integration-options"
         },
         {
           "type": "doc",
-          "id": "version-3/payments/getting-started/config"
+          "id": "version-3/payments/configuration/installation"
         },
         {
           "type": "doc",
-          "id": "version-3/payments/getting-started/connect"
+          "id": "version-3/payments/configuration/config"
         },
         {
           "type": "doc",
-          "id": "version-3/payments/getting-started/usage"
+          "id": "version-3/payments/configuration/connect"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/configuration/usage"
         }
       ]
     },

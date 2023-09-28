@@ -1,0 +1,126 @@
+---
+id: key-concepts
+title: Key concepts
+sidebar_label: Key concepts
+hide_title: true
+---
+
+import SearchBar from '@theme/SearchBar';
+import { Card, CardContent } from '@site/src/components/Card';
+import Badge from '@site/src/components/Badge';
+import LogoImg from '/img/logo.svg';
+import Button from '@site/src/components/Button';
+
+# Key concepts of Deity Payments
+<p className="desc pb20">
+DPSG (Deity Payment Service Gateway) is a managed and hosted service that handles interactions between Falcon Platform and payment providers.
+Next to handling the full payment flow, DPSG is also a way to manage the configuration of your payment providers and methods used by your Falcon App.</p>
+
+## The benefits of using Deity Payments
+
+Integrate with multiple payment service providers to use any payment method. Customize your customers’ payment flows to match their location and preferences.
+
+<div className="flex mb40 brighten">
+  <Card open="true" to="">
+    <img src="/docs/img/icons/paymentmethods.svg" />
+    <h4>Any payment method</h4>
+    <p>Mix and match your preferred payment methods and deploy, manage, customize and optimize them through one platform.</p>
+  </Card>
+  <Card open="true" to="">
+    <img src="/docs/img/icons/happymask.svg"/>
+    <h4>Personalized check-out</h4>
+    <p>The Deity payment gateway allows you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value.</p>
+  </Card>
+  <Card open="true" to="">
+    <img src="/docs/img/icons/cart.svg" />
+    <h4>Your own shop platform</h4>
+    <p>Your composer application has an integration with the payment gateway out of the box, and is compatible with all the supported ecommerce platforms.</p>
+  </Card>
+</div>
+
+---
+
+## Deity Payments features
+
+<p className="desc pb20">The Deity payment gateway is highly configurable, allowing you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value.</p>
+
+<div className="flex brighten">
+  <Card variant="horizontal" to="/docs/payments/configuration/integration-options">
+    <img src="/docs/img/icons/composerdpsg.svg" />
+    <div>
+      <h5>Integration with Deity Composer</h5>
+      <p>
+        Your Composer application is connected with the payment gateway out of the box.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/providers">
+    <img src="/docs/img/icons/plugdpsg.svg" />
+    <div>
+      <h5>Payment providers</h5>
+      <p>
+        Connect your payment provider and Deity PWA Storefront.
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten">
+  <Card variant="horizontal" to="/docs/payments/methods/overview">
+    <img src="/docs/img/icons/creditcard.svg" />
+    <div>
+      <h5>Payment methods</h5>
+      <p>
+        Mix and match your preferred payment methods.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/methods/features/currencies">
+    <img src="/docs/img/icons/dollar.svg" />
+    <div>
+      <h5>Currencies</h5>
+      <p>
+        Each payment method can be enabled for only certain currencies. 
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten">
+  <Card variant="horizontal" to="/docs/payments/methods/features/locations">
+    <img src="/docs/img/icons/globe.svg" />
+    <div>
+      <h5>Localization</h5>
+      <p>
+        Each payment method can be enabled for only certain country codes.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/methods/features/surcharges">
+    <img src="/docs/img/icons/surcharges.svg" />
+    <div>
+      <h5>Surcharges</h5>
+      <p>
+        Surcharges can be configured to allow you to charge a %, set fee or a mixture of both.
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten mb100">
+  <Card variant="horizontal" to="/docs/payments/methods/features/min-max-amounts">
+    <img src="/docs/img/icons/sliders.svg" />
+    <div>
+      <h5>Min / max amount</h5>
+      <p>
+        Each payment method can be enabled for only certain order amounts.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/methods/features/sort">
+    <img src="/docs/img/icons/sort.svg" />
+    <div>
+      <h5>Sort order</h5>
+      <p>
+        The sort order can be configured per method, per environment and per country.
+      </p>
+    </div>
+  </Card>
+</div>
