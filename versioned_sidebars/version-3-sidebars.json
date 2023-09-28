@@ -1125,8 +1125,59 @@
           ]
         },
         {
-          "type": "doc",
-          "id": "version-3/integrations/commercetools"
+          "type": "category",
+          "label": "Commercetools",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/commercetools"},
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/integrations/commercetools/getting-started"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/commercetools/features"
+            },
+            {
+              "type": "category",
+              "label": "Configuration",
+              "collapsible": true,
+              "collapsed": true,
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/configuration"},
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "version-3/integrations/commercetools/configuration/getting-started"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/integrations/commercetools/configuration/payments"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Extending",
+              "collapsible": true,
+              "collapsed": true,
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending"},
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "version-3/integrations/commercetools/extending/getting-started"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/integrations/commercetools/extending/ctp-client"
+                },
+                {
+                  "type": "doc",
+                  "id": "version-3/integrations/commercetools/extending/ctp-session"
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "category",
@@ -1193,12 +1244,17 @@
           ]
         },
         {
-          "type": "doc",
-          "id": "version-3/integrations/unbxd",
-          "customProps": {
-            "disabled": true,
-            "label": "soon!"
-          }
+        "type": "category",
+          "label": "Unbxd",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/unbxd"},
+          "items": [
+            {
+            "type": "doc",
+            "id": "version-3/integrations/unbxd/getting-started"
+            }
+          ]
         }
       ]
     },
@@ -1260,12 +1316,34 @@
       "collapsed": true,
       "items": [
         {
-          "type": "doc",
-          "id": "version-3/integrations/contentful"
+          "type": "category",
+          "label": "Contentful",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/contentful"},
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/integrations/contentful/getting-started"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/contentful/content-models"
+            }
+          ]
         },
         {
-          "type": "doc",
-          "id": "version-3/integrations/wordpress"
+          "type": "category",
+          "label": "Wordpress",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/wordpress"},
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/integrations/wordpress/getting-started"
+            }
+          ]
         }
       ]
     },

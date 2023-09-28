@@ -16,7 +16,7 @@ sidebar_label: Mollie Payments
 
 Our integration with Mollie payments uses [https://github.com/mollie/mollie-api-node](https://github.com/mollie/mollie-api-node) to provide a production ready checkout that supports multiple payment methods. This ships with both our example projects.
 
-If you want to see a live example head over to [our demo site](https://demo.deity.io/).
+If you want to see a live example head over to [our demo site](https://v3demo2.deity.io/).
 
 Our integration includes:
 
@@ -124,4 +124,4 @@ You just need to add you `profileId` and `apiKey`. These should be added in your
 - [Mollie Docs](https://www.mollie.com/nl/developers)
 - [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview)
 - [Mollie Account Registration](https://www.mollie.com/dashboard/signup?lang=en)
-- [Our demo site](https://demo.deity.io/)
+- [Our demo site](https://v3demo2.deity.io/)

@@ -88,5 +88,5 @@ With our **BigCommerce** integration we use the WebHooks provided by **BigCommer
 
 ## Useful Links
 
-- [Our demo site](https://demo.deity.io/)
+- [Our demo site](https://v3demo2.deity.io/)
 - [Algolia site](https://www.algolia.com/)

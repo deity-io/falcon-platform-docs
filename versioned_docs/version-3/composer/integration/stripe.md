@@ -16,7 +16,7 @@ sidebar_label: Stripe Payments
 
 Our integration with Stripe payments uses [https://github.com/stripe/react-stripe-js](https://github.com/stripe/react-stripe-js) to provide a production ready credit card form in the checkout. This ships with our `demo-v2` example project.
 
-If you want to see a live example head over to [our demo site](https://demo.deity.io/).
+If you want to see a live example head over to [our demo site](https://v3demo2.deity.io/).
 
 You can test transactions using these details:
 
@@ -99,4 +99,4 @@ You just need to add your `secretKey` and `publicKey`. These should be added in 
 - [Stripe Docs](https://stripe.com/docs/)
 - [Stripe React Components Repository](https://github.com/stripe/react-stripe-js)
 - [Stripe Account Registration](https://dashboard.stripe.com/register)
-- [Our demo site](https://demo.deity.io/)
+- [Our demo site](https://v3demo2.deity.io/)

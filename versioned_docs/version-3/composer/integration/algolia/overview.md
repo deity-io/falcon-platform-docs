@@ -27,7 +27,7 @@ These integrate with:
 - `@deity/falcon-shop-extension`
 - `@deity/falcon-server`
 
-To see it in action please check out our [demo store](https://demo.deity.io/search).
+To see it in action please check out our [demo store](https://v3demo2.deity.io/search).
 
 <Button variant="contained" size="medium" href="/docs/integrations/algolia/getting-started">
   Get started →

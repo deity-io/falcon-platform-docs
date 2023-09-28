@@ -34,7 +34,7 @@
   --ifm-menu-color-adisabled: #99A39F;
   --ifm-link-color: #0E9888;//make them slightly lighter 
 
- 
+
   --docsearch-searchbox-background: var(--ifm-background-secondary);
   --docsearch-searchbox-focus-background: var(--ifm-background-secondary);
   --ifm-code-background:#f1f4f3;  
@@ -84,6 +84,12 @@
   --ifm-code-padding-horizontal: 5px;
   --ifm-code-padding-vertical: 3px;
   --ifm-button-font-weight: 500;
+
+  --ifm-table-border-width: 0px;
+  --ifm-table-head-background: transparent;
+  --ifm-table-background: transparent;
+  --ifm-table-stripe-background: rgba(15, 40, 69, 0.025);
+  --ifm-table-head-color: var(--ifm-p-color);
 
   /* Side Menu */
   --doc-sidebar-width: 240px;

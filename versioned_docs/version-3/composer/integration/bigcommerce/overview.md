@@ -7,7 +7,7 @@ description: Our BigCommerce integration provides everything you need to get you
 
 import Button from '@site/src/components/Button';
 
-<a href="https://www.bigcommerce.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the BigCommerce site">
+<a href="https://www.bigcommerce.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the BigCommerce site" className="brighten">
   <img src="/docs/img/docs/platform/bigcommerce-logo.svg" alt="BigCommerce Logo" width="300"/>
 </a>
 

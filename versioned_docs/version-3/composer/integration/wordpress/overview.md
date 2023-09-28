@@ -1,0 +1,41 @@
+---
+id: overview
+title: Wordpress Integration
+sidebar_label: Wordpress
+---
+
+import Button from '@site/src/components/Button';
+
+<a href="https://wordpress.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wordpress site">
+  <img src="/docs/img/docs/platform/wordpress-logo.svg" alt="Wordpress Logo" width="300"/>
+</a>
+
+## Build and grow your website with the best way
+
+
+
+Our Wordpress integration comes with both our examples apps, `demo-v1` and `demo-v2`.
+
+<Button variant="contained" size="medium" href="/docs/integrations/wordpress/getting-started">
+  Get started →
+</Button>
+<div className="mb60"></div>
+
+
+It works using our Wordpress Plugin to extend and add API endpoints.
+
+<img src="/docs/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
+
+
+
+## Supported Features
+
+Using `demo-v1` we have full support (including components and routes) for the following features:
+
+- Blog Posts
+- Blog Categories
+- Pages
+
+See our [demo](https://v3demo2.deity.io/blog).
+
+
