@@ -122,23 +122,35 @@ module.exports = {
             {
               label: 'Cloud Console',
               to: '/console'
+            },
+            {
+              label: 'Integrations',
+              to: '/integrations'
+            },
+            {
+              label: 'Sign up',
+              href: 'https://console.deity.cloud/signup'
             }
           ]
         },
         {
-          title: 'Developers',
+          title: 'Support',
           items: [
+            {
+              label: 'F.A.Q.',
+              to: '/platform/support/faqs'
+            },
             {
               label: 'Changelog',
               to: '/platform/changelog'
             },
             {
-              label: 'System status',
-              to: 'https://status.deity.io/'
+              label: 'Contact us',
+              to: 'https://deity.com/contact'
             },
             {
-              label: 'Support',
-              to: '/platform/support/contact'
+              label: 'System status',
+              to: 'https://status.deity.io/'
             }
           ]
         },

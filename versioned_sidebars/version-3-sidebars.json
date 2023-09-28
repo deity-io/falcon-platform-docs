@@ -682,7 +682,7 @@
         {
           "type": "doc",
           "label": "Tutorials",
-          "id": "version-3/composer/resources/tutorials"
+          "id": "version-3/platform/support/tutorials"
         },
         {
           "type": "doc",
@@ -888,41 +888,8 @@
           "id": "version-3/storefront/resources/app-store"
         },
         {
-          "type": "category",
-          "collapsible": true,
-          "link": {"type": "doc", "id": "version-3/storefront/resources/tutorials"},
-          "collapsed": true,
-          "label": "Tutorials",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/change-logo"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/analytics"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/icon"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/themeable-component"
-            },
-             {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/scss-global"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/post-css-support"
-            },
-            {
-              "type": "doc",
-              "id": "version-3/storefront/resources/tutorials/testing"
-            }
-          ]
+          "type": "doc",
+          "id": "version-3/platform/support/tutorials/storefront/overview"
         },
        {
           "type": "doc",
@@ -1254,29 +1221,12 @@
       "label": "Resources",
       "items": [
         {
-          "type": "category",
-          "label": "Tutorials",
-          "collapsible": true,
-           "collapsed": true,
-          "link": {"type": "doc", "id": "version-3/integrations/resources/tutorials"},
-          "items": [
-              {
-                "type": "doc",
-                "id": "version-3/integrations/resources/tutorials/jsonplaceholder"
-              },
-              {
-                "type": "doc",
-                "id": "version-3/integrations/resources/tutorials/contentful"
-              },
-              {
-                "type": "doc",
-                "id": "version-3/integrations/resources/tutorials/contentful2"
-              }
-            ]
+          "type": "doc",
+          "id": "version-3/platform/support/tutorials/integrations/overview"
         },
         {
           "type": "doc",
-          "id": "version-3/integrations/resources/faq"
+          "id": "version-3/platform/support/faqs"
         }
       ]
     }
@@ -1496,7 +1446,7 @@
       "items": [
         {
           "type": "category",
-          "label": "Video Guides",
+          "label": "Video guides",
           "collapsible": true,
           "collapsed": true,
           "link": {"type": "doc",  "id": "version-3/platform/support/guides"},
@@ -1521,62 +1471,58 @@
              {
               "type": "category",
               "collapsible": true,
-              "link": {"type": "doc", "id": "version-3/platform/support/storefront/tutorials"},
+              "link": {"type": "doc", "id": "version-3/platform/support/tutorials/storefront/overview"},
               "collapsed": true,
               "label": "Storefront",
               "items": [
                 {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/change-logo"
+                  "id": "version-3/platform/support/tutorials/storefront/change-logo"
                 },
                 {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/analytics"
+                  "id": "version-3/platform/support/tutorials/storefront/analytics"
                 },
                 {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/icon"
+                  "id": "version-3/platform/support/tutorials/storefront/icon"
                 },
                 {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/themeable-component"
+                  "id": "version-3/platform/support/tutorials/storefront/themeable-component"
                 },
                  {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/scss-global"
+                  "id": "version-3/platform/support/tutorials/storefront/scss-global"
                 },
                 {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/post-css-support"
+                  "id": "version-3/platform/support/tutorials/storefront/post-css-support"
                 },
                 {
                   "type": "doc",
-                  "id": "version-3/platform/support/storefront/tutorials/testing"
+                  "id": "version-3/platform/support/tutorials/storefront/testing"
                 }
               ]
             },
             {
               "type": "category",
               "collapsible": true,
-              "link": {"type": "doc", "id": "version-3/platform/support/integrations/tutorials"},         
+              "link": {"type": "doc", "id": "version-3/platform/support/tutorials/integrations/overview"},         
               "collapsed": true,
               "label": "Integrations",
               "items": [
                   {
                     "type": "doc",
-                    "id": "version-3/platform/support/integrations/tutorials/jsonplaceholder"
+                    "id": "version-3/platform/support/tutorials/integrations/jsonplaceholder"
                   },
                   {
                     "type": "doc",
-                    "id": "version-3/platform/support/integrations/tutorials/contentful"
+                    "id": "version-3/platform/support/tutorials/integrations/contentful"
                   },
                   {
                     "type": "doc",
-                    "id": "version-3/platform/support/integrations/tutorials/contentful2"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "version-3/platform/support/integrations/tutorials/braintree"
+                    "id": "version-3/platform/support/tutorials/integrations/contentful2"
                   }
               ]
             }
