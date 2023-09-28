@@ -1112,16 +1112,51 @@
       "link": {"type": "generated-index", "slug": "/integrations/shop-platforms"},
       "items": [
         {
-          "type": "doc",
-          "id": "version-3/integrations/magento2"
+          "type": "category",
+          "label": "Adobe Commerce CE",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/adobe"},
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/integrations/adobe/getting-started"
+            }
+          ]
         },
         {
           "type": "doc",
           "id": "version-3/integrations/commercetools"
         },
         {
-          "type": "doc",
-          "id": "version-3/integrations/bigcommerce"
+          "type": "category",
+          "label": "BigCommerce",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/bigcommerce"},
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/integrations/bigcommerce/getting-started"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/bigcommerce/features"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/bigcommerce/technical"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/bigcommerce/manual"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/bigcommerce/embedded-checkout"
+            }
+          ]
+         
         },
         {
           "type": "doc",
@@ -1141,12 +1176,29 @@
       "collapsed": true,
       "items": [
         {
-          "type": "doc",
-          "id": "version-3/integrations/algolia"
+        "type": "category",
+          "label": "Algolia",
+          "collapsible": true,
+          "collapsed": true,
+          "link": {"type": "doc", "id": "version-3/integrations/algolia"},
+          "items": [
+            {
+            "type": "doc",
+            "id": "version-3/integrations/algolia/getting-started"
+            },
+            {
+            "type": "doc",
+            "id": "version-3/integrations/algolia/indexing"
+            }
+          ]
         },
         {
           "type": "doc",
-          "id": "version-3/integrations/unbxd"
+          "id": "version-3/integrations/unbxd",
+          "customProps": {
+            "disabled": true,
+            "label": "soon!"
+          }
         }
       ]
     },
@@ -1175,7 +1227,11 @@
         },
         {
           "type": "doc",
-          "id": "version-3/integrations/wpay"
+          "id": "version-3/integrations/wpay",
+          "customProps": {
+            "disabled": true,
+            "label": "soon!"
+          }
         }
       ]
     },
@@ -1188,7 +1244,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-3/integrations/talonone"
+          "id": "version-3/integrations/talonone",
+          "customProps": {
+            "disabled": true,
+            "label": "soon!"
+          }
         }
       ]
     },       

@@ -4,15 +4,15 @@ title: Humm
 sidebar_label: Humm
 ---
 
-:::note Please note
 
-Even though Humm only offers one payment method, DPSG still requires a configuration of both, Humm as a payment provider and as a payment method.
-
-:::
 
 ## Restrictions
 
 Humm is an Australian payment provider and is only available for customers with a billing address in Australia. Therefore, Humm can only be configured on the Australian cluster of DPSG.
+
+:::note Please note
+Even though Humm only offers one payment method, DPSG still requires a configuration of both, Humm as a payment provider and as a payment method.
+:::
 
 ## Humm Configuration
 
