@@ -4,8 +4,8 @@ title: Humm
 sidebar_label: Humm
 hide_title: true
 ---
-<a href="https://www.shophumm.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Humm site" className="brighten">
-  <img src="/docs/img/docs/platform/humm-logo.svg" alt="Humm Logo" width="200"/>
+<a href="https://www.shophumm.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Humm site" className="invert">
+  <img src="/docs/img/docs/platform/humm-logo.svg" alt="Humm Logo" className="height80 pb20"/>
 </a>
 
 ## The bigger buy now pay later

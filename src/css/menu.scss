@@ -19,8 +19,9 @@
   }
   &__list {
     padding-top:0.7rem;
+    padding-bottom: 5rem; /* add some space for easier access to bottom items */
     .menu__list {
-      padding: 0 0 20px ;
+      padding: 0 0 20px;
         .theme-doc-sidebar-item-category-level-2 {
           div > a {
             font-size: 15px;
@@ -32,6 +33,7 @@
             }
           .menu__list {
             padding-left: 16px;
+            
             }
           .menu__list-item-collapsible--active .menu__link--active {
             color: var(--ifm-menu-color-active);

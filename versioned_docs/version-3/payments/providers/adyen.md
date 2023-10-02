@@ -5,8 +5,8 @@ sidebar_label: Adyen
 hide_title: true
 ---
 
-<a href="https://adyen.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adyen site" className="brighten">
-  <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" width="200"/>
+<a href="https://adyen.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adyen site" className="invert">
+  <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80" />
 </a>
 
 ## Engineered for ambition
@@ -17,7 +17,12 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 <Notice />
 
-## Supported payment methods
+## Supported features
+
+- Payments
+- Refunds
+
+### Payment methods
 
 *( Description : `code`)*
 
@@ -37,8 +42,7 @@ Need a method that Adyen supports adding to the list? Please contact us as it mi
 
 ## Adyen Configuration
 
-The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
-
+The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
 
 ```json
 {
@@ -50,47 +54,48 @@ The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud paym
 }
 ```
 
-To get your client, HMAC &amp; API keys you must have a [Adyen account](https://www.adyen.com/).  Please ensure `testMode` is set to true when using test credentials.
+To get your client, HMAC &amp; API keys you must have a [Adyen](https://www.adyen.com/) account. Please ensure `testMode` is set to true when using test credentials.
 
 ### `merchantAccount`
 
-You can get this from your Adyen account under **Account → Merchant Accounts**
-
+You can get this from your Adyen account under `Account -> Merchant Accounts`
 
 ### `apiKey`
 
-You can get this from your Adyen account under **Developer → API Credentials** then select `ws`.
-
+You can get this from your Adyen account under `Developer -> API Credentials` then select `ws`.
 
 ### `clientKey`
 
-You can get this from your Adyen account under **Developer → API Credentials** then select `ws`.
-
+You can get this from your Adyen account under `Developer -> API Credentials` then select `ws`.
 
 ### `hmacKey`
 
-This is used for receiving webhooks from Adyen. DPSG uses this when payments are updated.
+This is used for processing the webhooks from Adyen. DPSG uses this when payments are updated.
+Read below how to obtain it.
 
 :::note Allowed Origins
-Adyen requires you to set allowed origins so the frontend components can be rendered. You can see these when managing the API keys.  
+Adyen requires you to set allowed origins so the frontend components can be rendered. You can see these when managing the API keys.
 :::
 
 You can get your HMAC key when configuring your webhook. To do this, log into your Adyen account and visit `Developers -> Webhooks` in the left hand navigation.
 
 From their you can set up a `Standard Notification` webhook with the following configuration:
 
-**Transport**
-- URL: `https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen` (replacing `{region}`, `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted and the base url will be (https://dpsg.deity.cloud).
-- Active: `Yes`
-- SSL version: `TLSv1.2`
-- On Adyen page navigate to Developers > Webhooks > Edit webhook, make sure to select all "Additional Settings".
-- On Adyen page navigate to Developers > Additional data, make sure to enable "Toggle all fields".
+**General**
+
+- Server configuration: `https://dpsg.{region}.deity.cloud/api/payment/webhook/{organization}/{project}/{environment}/adyen` (replacing `{region}`, `{organization}`, `{project}` and `{environment}` with your details). If your region is Europe it will be omitted and the base url will be (https://dpsg.deity.cloud).
+- Method: `JSON`
+- Encryption protocol: `TLSv1.3`
+- Events: select all
+
+**Security**
+
+In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on DPSG).
 
 **Additional Settings**
 
-- Add Acquirer Result: `Yes`
-- HMAC Key: Generate one and add it to your config (above).
-
+- Make sure to select all "Additional Settings" (it will be helpful for future updates of DPSG)
+- Later navigate to `Developers -> Additional data`, make sure to enable `Toggle all fields`.
 
 :::note Test your webhook
 You should be able to test this and get a 200 ok response from within the Adyen dashboard.

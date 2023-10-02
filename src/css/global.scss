@@ -45,6 +45,9 @@
 .mt0 {
   margin-top: 0px !important;
 }
+.height80 {
+  height: 80px !important;
+}
 
 .negative-view-all {
   margin-top: -54px !important;
@@ -119,7 +122,10 @@ div.markdown :nth-last-child(1 of div[class^="accordion"]) {
     border-color:var(--ifm-card-background-color);
   }
   .brighten img { 
-      filter:brightness(1.75);
+    filter:brightness(1.75);
+  }
+  .invert img {
+    filter:  invert(1) grayscale(1) brightness(2);   
   }
   #__docusaurus  {
     background: var(--ifm-background-primary);

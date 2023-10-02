@@ -5,8 +5,8 @@ sidebar_label: Stripe
 hide_title: true
 ---
 
-<a href="https://stripe.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Stripe site" className="brighten">
-  <img src="/docs/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" width="200"/>
+<a href="https://stripe.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Stripe site" className="invert">
+  <img src="/docs/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" className="height80"/>
 </a>
 
 ## Payments infrastructure for the internet
@@ -17,7 +17,12 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 <Notice />
 
-## Supported payment methods
+## Supported features
+
+- Payments
+- Refunds
+
+### Payment methods
 
 *( Description : `code`)*
 

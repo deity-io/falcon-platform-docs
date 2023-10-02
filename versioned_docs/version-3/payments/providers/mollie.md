@@ -7,8 +7,8 @@ hide_title: true
 
 import Button from '@site/src/components/Button';
 
-<a href="https://mollie.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site" className="brighten">
-  <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" width="200"/>
+<a href="https://mollie.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site" className="invert">
+  <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" className="height80 pb20"/>
 </a>
 
 ## Payments designed for growth
@@ -19,7 +19,13 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 <Notice />
 
-## Supported payment methods
+## Supported features
+
+- Payments
+- Refunds
+- Shipments
+
+### Payment methods
 
 *( Description : `code`)*
 

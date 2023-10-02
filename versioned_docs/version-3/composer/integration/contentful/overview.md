@@ -8,8 +8,8 @@ import CodePackage from '@site/src/components/CodePackage';
 
 import Button from '@site/src/components/Button';
 
-<a href="https://contentful.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Contentful site" className="brighten">
-  <img src="/docs/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="300"/>
+<a href="https://contentful.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Contentful site" className="invert">
+  <img src="/docs/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" className="height80 pb20"/>
 </a>
 
 ## Endless possibilities powered by AI

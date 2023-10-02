@@ -7,8 +7,8 @@ sidebar_label: Overview
 import Button from '@site/src/components/Button';
 
 
-<a href="https://www.unbxd.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Unbxd site" className="brighten">
-  <img src="/docs/img/docs/platform/unbxd-logo.svg" alt="Unbxd Logo" width="300"/>
+<a href="https://www.unbxd.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Unbxd site" className="invert">
+  <img src="/docs/img/docs/platform/unbxd-logo.svg" alt="Unbxd Logo" className="height80 pb20"/>
 </a>
 
 ## Digital Commerce Transformed

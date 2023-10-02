@@ -5,8 +5,8 @@ sidebar_label: Magento 2
 ---
 import Button from '@site/src/components/Button';
 
-<a href="https://magento.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adobe site" className="brighten">
-  <img src="/docs/img/docs/platform/adobe-logo.svg" alt="Adobe Logo" width="250"/>
+<a href="https://magento.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adobe site" className="invert">
+  <img src="/docs/img/docs/platform/adobe-logo.svg" alt="Adobe Logo" className="height80 pb20"/>
 </a>
 
 ## The experience makes all the difference

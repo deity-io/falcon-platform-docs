@@ -7,8 +7,8 @@ sidebar_label: Algolia
 import Button from '@site/src/components/Button';
 
 
-<a href="https://www.algolia.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Algolia site">
-  <img src="/docs/img/docs/platform/algolia-logo.svg" alt="Algolia Logo" width="300"/>
+<a href="https://www.algolia.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Algolia site" className="invert">
+  <img src="/docs/img/docs/platform/algolia-logo.svg" alt="Algolia Logo" className="height80 pb20"/>
 </a>
 
 ## Powering Discovery for your world

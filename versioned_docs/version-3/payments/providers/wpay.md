@@ -4,8 +4,8 @@ title: Wpay
 sidebar_label: Wpay
 hide_title: true
 ---
-<a href="https://wpay.io/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wpay site" className="brighten">
-  <img src="/docs/img/docs/platform/wpay-logo.svg" alt="Wpay Logo" width="200"/>
+<a href="https://wpay.io/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wpay site" className="invert">
+  <img src="/docs/img/docs/platform/wpay-logo.svg" alt="Wpay Logo" className="height80"/>
 </a>
 
 ## Move beyond payments

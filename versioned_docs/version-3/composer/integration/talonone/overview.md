@@ -7,7 +7,7 @@ sidebar_label: Overview
 import Button from '@site/src/components/Button';
 
 
-<a href="https://talon.one/" rel="noreferrer noopener" target="_blank" aria-label="visit the Talon.one site" className="brighten">
+<a href="https://talon.one/" rel="noreferrer noopener" target="_blank" aria-label="visit the Talon.one site" className="invert">
   <img src="/docs/img/docs/platform/talonone-logo.svg" alt="UTalon.one Logo" width="300"/>
 </a>
 

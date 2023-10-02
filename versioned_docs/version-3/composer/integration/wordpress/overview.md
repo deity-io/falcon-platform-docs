@@ -6,8 +6,8 @@ sidebar_label: Wordpress
 
 import Button from '@site/src/components/Button';
 
-<a href="https://wordpress.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wordpress site">
-  <img src="/docs/img/docs/platform/wordpress-logo.svg" alt="Wordpress Logo" width="300"/>
+<a href="https://wordpress.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Wordpress site" className="invert">
+  <img src="/docs/img/docs/platform/wordpress-logo.svg" alt="Wordpress Logo" className="height80"/>
 </a>
 
 ## Build and grow your website with the best way
