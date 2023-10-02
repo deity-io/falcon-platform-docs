@@ -39,7 +39,7 @@ While these docs are updated frequently, make sure to also check for supported m
 Need a method that Adyen supports adding to the list? Please contact us as it might be in our development pipeline.
 
 :::
-
+test
 ## Adyen Configuration
 
 The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_adyen_create)
