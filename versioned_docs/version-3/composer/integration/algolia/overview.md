@@ -13,7 +13,28 @@ import Button from '@site/src/components/Button';
 
 ## Powering Discovery for your world
 
+Algolia is the leader in globally scalable, secure, digital search and discovery experiences that are ultrafast and reliable.
 
+<Button variant="contained" size="medium" href="/docs/integrations/algolia/getting-started">
+  Get started →
+</Button>
+<div className="mb60"></div>
+
+
+## Helpful links
+
+- [Getting started](/docs/integrations/algolia/getting-started)
+- [Indexing data in Algolia](/docs/integrations/algolia/indexing)
+- [Algolia demo app with BigCommerce](https://v3demo2.deity.io/)
+
+
+## Supported Features
+
+- Product search
+- Product search filtering
+
+
+## Algolia extension
 
 Our Algolia extension is used for search and comes out of the box with our example app, `demo-v2`.
 
@@ -28,19 +49,4 @@ These integrate with:
 - `@deity/falcon-server`
 
 To see it in action please check out our [demo store](https://v3demo2.deity.io/search).
-
-<Button variant="contained" size="medium" href="/docs/integrations/algolia/getting-started">
-  Get started →
-</Button>
-<div className="mb60"></div>
-
-
-
-## Supported Features
-
-- Product search
-- Product search filtering
-
-
-
 

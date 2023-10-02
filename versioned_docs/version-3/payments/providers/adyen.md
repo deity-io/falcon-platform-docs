@@ -4,6 +4,18 @@ title: Adyen
 sidebar_label: Adyen
 ---
 
+<a href="https://adyen.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adyen site" className="brighten">
+  <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" width="200"/>
+</a>
+
+## Engineered for ambition
+End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
+
+
+import Notice from "../../includes/integrated-with-dpsg.mdx"
+
+<Notice />
+
 ## Supported payment methods
 
 *( Description : `code`)*

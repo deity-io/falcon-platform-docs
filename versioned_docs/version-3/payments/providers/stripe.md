@@ -4,6 +4,18 @@ title: Stripe
 sidebar_label: Stripe
 ---
 
+<a href="https://stripe.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Stripe site" className="brighten">
+  <img src="/docs/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" width="200"/>
+</a>
+
+## Payments infrastructure for the internet
+Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.
+
+
+import Notice from "../../includes/integrated-with-dpsg.mdx"
+
+<Notice />
+
 ## Supported payment methods
 
 *( Description : `code`)*

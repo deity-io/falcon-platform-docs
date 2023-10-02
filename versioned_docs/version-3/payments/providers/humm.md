@@ -3,8 +3,16 @@ id: humm
 title: Humm
 sidebar_label: Humm
 ---
+<a href="https://www.shophumm.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Humm site" className="brighten">
+  <img src="/docs/img/docs/platform/humm-logo.svg" alt="Humm Logo" width="200"/>
+</a>
 
+## The bigger buy now pay later
+Shopping for little luxuries and bigger buys is easy as 1 - 2 - 3.
 
+import Notice from "../../includes/integrated-with-dpsg.mdx"
+
+<Notice />
 
 ## Restrictions
 

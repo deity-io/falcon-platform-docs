@@ -25,7 +25,7 @@ All you need is a BigCommerce store and our BigCommerce App and you can be up an
 
 ## Helpful links
 
-- [Get started](/docs/integrations/bigcommerce/getting-started)
+- [Getting started](/docs/integrations/bigcommerce/getting-started)
 - [Feature List](/docs/integrations/bigcommerce/features)
 - [BigCommerce demo app](https://v3demo2.deity.io/)
 - [BigCommerce partner page](https://www.bigcommerce.com/apps/deity-falcon-pwa-storefront/)

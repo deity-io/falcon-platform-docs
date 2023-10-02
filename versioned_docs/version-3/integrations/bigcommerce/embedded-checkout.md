@@ -1,7 +1,7 @@
 ---
 id: embedded-checkout
-title: Embedded Checkout
-sidebar_label: Embedded Checkout
+title: Embedded checkout
+sidebar_label: Embedded checkout
 description: How to use the BigCommerce Embedded Checkout
 ---
 

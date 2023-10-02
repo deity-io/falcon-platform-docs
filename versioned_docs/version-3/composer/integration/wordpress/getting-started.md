@@ -12,9 +12,13 @@ You must have a wordpress instance up and running.
 
 Now you must install our Wordpress Plugin. If you download the code into your `plugins` directory you should then be able to **activate** it in the admin.
 
-<img src="/docs/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
+<img src="/docs/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
+
+[Contact us](https://deity.com/contact) if you want to integrate Deity Composer with Wordpress.
 
 If it's working you should see our handy 'Clean API cache' button in your admin panel.
+
+<img src="/docs/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
 
 ## 3. Create your Falcon app
 

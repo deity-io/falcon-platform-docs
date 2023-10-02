@@ -22,10 +22,11 @@ Our Wordpress integration comes with both our examples apps, `demo-v1` and `demo
 <div className="mb60"></div>
 
 
-It works using our Wordpress Plugin to extend and add API endpoints.
 
-<img src="/docs/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
+## Helpful links
 
+- [Getting started](/docs/integrations/wordpress/getting-started)
+- [Wordpress demo app with BigCommerce](https://v3demo2.deity.io/blog)
 
 
 ## Supported Features

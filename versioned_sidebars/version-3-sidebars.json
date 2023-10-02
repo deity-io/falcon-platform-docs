@@ -888,6 +888,11 @@
           "id": "version-3/storefront/resources/app-store"
         },
         {
+          "type": "link",
+          "href": "https://falcon-ui.docs.deity.io/",
+          "label": "Falcon UI"
+        },
+        {
           "type": "doc",
           "id": "version-3/platform/support/tutorials/storefront/overview"
         },
@@ -1000,8 +1005,14 @@
           "id": "version-3/payments/providers/humm"
         },
         {
-          "type": "doc",
-          "id": "version-3/payments/providers/wpay"
+          "type": "link",
+          "label": "Wpay",
+          "description": "Documentation coming soon!",
+          "href": "#",
+          "customProps": {
+            "disabled": true,
+            "label": "soon!"
+          }
         }
       ]
     },
@@ -1121,6 +1132,10 @@
             {
               "type": "doc",
               "id": "version-3/integrations/adobe/getting-started"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/integrations/adobe/features"
             }
           ]
         },
@@ -1210,8 +1225,10 @@
          
         },
         {
-          "type": "doc",
-          "id": "version-3/integrations/shopware",
+          "type": "link",
+          "href": "#",
+          "label": "Shopware",
+          "description": "Documentation coming soon!",
           "customProps": {
             "disabled": true,
             "label": "soon!"
@@ -1282,8 +1299,10 @@
           "id": "version-3/integrations/humm"
         },
         {
-          "type": "doc",
-          "id": "version-3/integrations/wpay",
+          "type": "link",
+          "href": "#",
+          "label": "Wpay",
+          "description": "Documentation coming soon!",
           "customProps": {
             "disabled": true,
             "label": "soon!"
@@ -1299,8 +1318,10 @@
       "collapsed": true,
       "items": [
         {
-          "type": "doc",
-          "id": "version-3/integrations/talonone",
+          "type": "link",
+          "href": "#",
+          "label": "TalonOne",
+          "description": "Documentation coming soon!",
           "customProps": {
             "disabled": true,
             "label": "soon!"

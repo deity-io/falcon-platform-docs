@@ -4,6 +4,20 @@ title: Mollie
 sidebar_label: Mollie
 ---
 
+import Button from '@site/src/components/Button';
+
+
+<a href="https://mollie.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site" className="brighten">
+  <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" width="200"/>
+</a>
+
+## Payments designed for growth
+An advanced solution to accept payments, optimise conversion, and access funding.
+
+import Notice from "../../includes/integrated-with-dpsg.mdx"
+
+<Notice />
+
 ## Supported payment methods
 
 *( Description : `code`)*

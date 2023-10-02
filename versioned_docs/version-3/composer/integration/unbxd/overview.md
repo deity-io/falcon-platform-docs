@@ -28,6 +28,11 @@ This module provides GraphQL resolvers for `@deity/search-extension package`.
 
 This module is only compatible with Magento store data, exported by Unbxd extension. In case if any modifications are done to Magento -> Unbxd export format data formatting should be revised.
 
+## Helpful links
+
+- [Getting started](/docs/integrations/unbxd/getting-started)
+- [Unbxd Magento 2 Module](https://github.com/unbxd/Magento-2-Extension)
+
 ## Features
 
 - Search

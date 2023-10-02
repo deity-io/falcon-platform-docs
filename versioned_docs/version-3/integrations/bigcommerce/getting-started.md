@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: Getting Started
-sidebar_label: Getting Started
+title: Getting started
+sidebar_label: Getting started
 description: Using our BigCommerce App, getting started is easy.
 ---
 
