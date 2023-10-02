@@ -1,6 +1,7 @@
 ---
 id: overview
 title: Theming overview
+description: Deity Storefront comes with a powerful `ThemeProvider` and a library of composable, themeable, design-system-driven UI components.
 sidebar_label: Overview
 ---
 

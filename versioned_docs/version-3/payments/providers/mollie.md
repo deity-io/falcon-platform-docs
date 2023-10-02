@@ -2,10 +2,10 @@
 id: mollie
 title: Mollie
 sidebar_label: Mollie
+hide_title: true
 ---
 
 import Button from '@site/src/components/Button';
-
 
 <a href="https://mollie.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site" className="brighten">
   <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" width="200"/>
@@ -13,6 +13,7 @@ import Button from '@site/src/components/Button';
 
 ## Payments designed for growth
 An advanced solution to accept payments, optimise conversion, and access funding.
+
 
 import Notice from "../../includes/integrated-with-dpsg.mdx"
 
@@ -59,4 +60,4 @@ The easiest way to configure Mollie is by using `dcloud` CLI and the `dcloud pay
 }
 ```
 
-To get your profile ID &amp; API key you must have a [Mollie →](https://www.mollie.com/dashboard/) account.  Please ensure `testMode` is set to true when using test credentials.
+To get your profile ID &amp; API key you must have a [Mollie account](https://www.mollie.com/dashboard/).  Please ensure `testMode` is set to true when using test credentials.

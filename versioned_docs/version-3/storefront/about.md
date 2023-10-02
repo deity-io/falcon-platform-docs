@@ -1,6 +1,7 @@
 ---
 id: about
 title: What is Falcon Client?
+description: Falcon Client serves as your PWA theme. It's a set of ReactJs components that build up your UI.
 sidebar_label: About
 ---
 

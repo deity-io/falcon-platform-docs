@@ -1,6 +1,7 @@
 ---
 id: menu-navbar
 title: Menu navbar with depth
+description: Learn how to configure the MenuNavbar component.
 sidebar_label: Menu navbar
 ---
 

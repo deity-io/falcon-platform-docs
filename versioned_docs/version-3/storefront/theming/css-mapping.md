@@ -1,6 +1,7 @@
 ---
 id: css-mapping
 title: CSS mapping
+description: To keep your code slim Deity Storefront maps certain component props to css properties.
 sidebar_label: CSS mapping
 ---
 

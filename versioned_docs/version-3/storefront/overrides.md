@@ -1,6 +1,7 @@
 ---
 id: overrides
 title: Overriding components
+description: Deity Platform makes overriding components very simple.
 sidebar_label: Overriding components
 ---
 

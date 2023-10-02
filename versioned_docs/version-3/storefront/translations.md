@@ -1,6 +1,7 @@
 ---
 id: translations
 title: Internationalization
+description: Internationalization is based on i18next.
 sidebar_label: Internationalization
 ---
 

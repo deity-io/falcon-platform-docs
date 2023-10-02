@@ -2,6 +2,7 @@
 id: humm
 title: Humm
 sidebar_label: Humm
+hide_title: true
 ---
 <a href="https://www.shophumm.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Humm site" className="brighten">
   <img src="/docs/img/docs/platform/humm-logo.svg" alt="Humm Logo" width="200"/>
@@ -36,4 +37,4 @@ The easiest way to configure Humm is by using `dcloud` CLI and the `dcloud payme
 ```
 
 
-The merchant ID and gateway key can to be requested using [this form →](https://docs.shophumm.com.au/request_api.html). Once the request is approved, the `merchantId` and `gatewayKey` will be provided to you by Humm.
+The merchant ID and gateway key can to be requested using [this form](https://docs.shophumm.com.au/request_api.html). Once the request is approved, the `merchantId` and `gatewayKey` will be provided to you by Humm.

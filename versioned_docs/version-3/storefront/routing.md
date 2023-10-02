@@ -1,6 +1,7 @@
 ---
 id: routing
 title: Routing
+description: Dynamic routing relies on both Deity Storefront and Deity Composer.
 sidebar_label: Routing
 ---
 

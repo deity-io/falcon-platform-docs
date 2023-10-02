@@ -8,9 +8,9 @@ enterprise_only: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import Badge from '@site/src/components/Badge';
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+<NoticeV3 />
 
 Most of the integrations available in Falcon Platform are implemented as extensions + modules. When you want to add new features or change the existing behavior you'll need to add [Extension](../extensions/about) and module that implements features for that Extension.
 

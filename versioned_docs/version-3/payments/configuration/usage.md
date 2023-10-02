@@ -8,7 +8,7 @@ description: How to use DPSG
 
 Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built DPSG integrations. 
 
-This section explains how to add your own. If you're new to DPSG, please read our [Key concepts guide →](/docs/payments/key-concepts)
+This section explains how to add your own. If you're new to DPSG, please read our [Key concepts guide](/docs/payments/key-concepts).
 
 
 

@@ -1,6 +1,7 @@
 ---
 id: meta-data
 title: SEO / meta data
+description: Learn how to manage meta data such as `page titles` and `meta descriptions`.
 sidebar_label: SEO / meta data
 ---
 

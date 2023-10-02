@@ -1,6 +1,7 @@
 ---
 id: fonts
 title: Custom fonts
+description: Learn how to use custom and Google fonts in your Deity app.
 sidebar_label: Custom fonts
 ---
 

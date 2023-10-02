@@ -1,6 +1,7 @@
 ---
 id: static-files
 title: Static files
+description: Simply add your static files to the `client/public` directory.
 sidebar_label: Static files
 ---
 

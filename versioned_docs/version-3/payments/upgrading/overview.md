@@ -4,9 +4,11 @@ title: Upgrading to DPSG
 sidebar_label: Overview
 ---
 
-**DPSG is only available to Falcon >= 3.0.0**
+:::note Requires Deity Platform v3.0.0 or higher
+If you want to use DPSG in your Deity app, make sure to use Deity Platform version >= 3.0.0.
 
-If you're running Falcon 2.x you'll need to upgrade your project to v3.x to use DPSG.
+If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](/docs/platform/support/contact) to upgrade to the latest version.
+:::
 
 ## DPSG upgrade guide
 
@@ -18,8 +20,8 @@ The only real client updates are adding components for newly supported payment p
 
 To upgrade please use `create-falcon-app` to do a diff between your version and v3.
 
-[See guide here](https://docs.deity.io/docs/platform/upgrading/overview)
+[See guide here](/docs/platform/resources/upgrading)
 
 ### Server Updates
 
-Unless you've overridden the DPSG related methods in your shop API package (get methods, load method, place order etc) all you will need to do is remove old payment config values and define the new ones [seen here](../getting-started/config).
+Unless you've overridden the DPSG related methods in your shop API package (get methods, load method, place order etc) all you will need to do is remove old payment config values and define the new ones [seen here](../configuration/config).

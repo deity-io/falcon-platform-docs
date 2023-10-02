@@ -2,6 +2,7 @@
 id: adyen
 title: Adyen
 sidebar_label: Adyen
+hide_title: true
 ---
 
 <a href="https://adyen.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adyen site" className="brighten">
@@ -49,7 +50,7 @@ The easiest way to configure Adyen is by using `dcloud` CLI and the `dcloud paym
 }
 ```
 
-To get your client, HMAC &amp; API keys you must have a [Adyen](https://www.adyen.com/) account.  Please ensure `testMode` is set to true when using test credentials.
+To get your client, HMAC &amp; API keys you must have a [Adyen account](https://www.adyen.com/).  Please ensure `testMode` is set to true when using test credentials.
 
 ### `merchantAccount`
 

@@ -1,6 +1,7 @@
 ---
 id: data
 title: Data management
+description: Learn how to query and update data.
 sidebar_label: Data management
 ---
 

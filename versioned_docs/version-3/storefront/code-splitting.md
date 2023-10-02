@@ -1,6 +1,7 @@
 ---
 id: code-splitting
 title: Code splitting
+description: Split your code into various bundles which are loaded on demand.
 sidebar_label: Code splitting
 ---
 

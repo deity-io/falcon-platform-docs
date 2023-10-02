@@ -1,6 +1,7 @@
 ---
 id: browser-support
 title: Browser support
+description: We actively support and test the following browsers.
 sidebar_label: Browser support
 ---
 

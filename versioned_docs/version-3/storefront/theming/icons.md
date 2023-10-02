@@ -1,6 +1,7 @@
 ---
 id: icons
 title: Site icons
+description: Learn how to use icon components in your theme.
 sidebar_label: Site icons
 ---
 

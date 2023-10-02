@@ -1,6 +1,7 @@
 ---
 id: state
 title: Local state management
+description: Learn how to manage your local (client-side) state.
 sidebar_label: Local state management
 ---
 

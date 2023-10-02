@@ -1,6 +1,7 @@
 ---
 id: caching
 title: Caching
+description: Learn about the various cache levels in the Deity Platform.
 sidebar_label: Caching
 ---
 

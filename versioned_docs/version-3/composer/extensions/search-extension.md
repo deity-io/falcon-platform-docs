@@ -6,13 +6,15 @@ enterprise_only: true
 ---
 
 import CodePackage from '@site/src/components/CodePackage';
-import Badge from '@site/src/components/Badge';
 
 import { Card, CardContent } from '@site/src/components/Card';
 import LogoImg from '/img/logo.svg';
 
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
+
+<NoticeV3 />
+
 
 <CodePackage name="@deity/falcon-search-extension" /> 
 

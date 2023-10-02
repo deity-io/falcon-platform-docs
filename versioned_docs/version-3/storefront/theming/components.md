@@ -1,6 +1,7 @@
 ---
 id: components
 title: Themed components
+description: UI components such as 'Box', 'Text' etc are all built as themeable components.
 sidebar_label: Themed components
 ---
 

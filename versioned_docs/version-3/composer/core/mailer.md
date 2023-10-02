@@ -3,9 +3,10 @@ id: mailer
 title: Mail component
 sidebar_label: Mail component
 ---
-import Badge from '@site/src/components/Badge';
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
+
+<NoticeV3 />
 
 Out of the box Deity Composer allows emails to be sent easily using our `@deity/falcon-mailer` package. Under the hood this uses [Node Mailer →](https://nodemailer.com/about/).
 

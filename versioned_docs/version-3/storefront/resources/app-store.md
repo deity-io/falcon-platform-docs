@@ -1,6 +1,7 @@
 ---
 id: app-store
 title: App Store publishing
+description: Our PWA in App Store allows you to utilise all the native iOS app functionalities.
 sidebar_label: App Store publishing
 ---
 

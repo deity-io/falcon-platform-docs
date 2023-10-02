@@ -11,8 +11,9 @@ import Badge from '@site/src/components/Badge';
 import { Card, CardContent } from '@site/src/components/Card';
 import LogoImg from '/img/logo.svg';
 
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+<NoticeV3 />
 
 <CodePackage name="@deity/falcon-shop-extension" /> 
 

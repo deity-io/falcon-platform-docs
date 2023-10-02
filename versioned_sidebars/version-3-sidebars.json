@@ -63,7 +63,7 @@
           "id": "version-3/integrations",
           "customProps": {
             "icon": "integrations",
-            "count": 13
+            "count": 14
           }
         },
         {
@@ -890,7 +890,8 @@
         {
           "type": "link",
           "href": "https://falcon-ui.docs.deity.io/",
-          "label": "Falcon UI"
+          "label": "Falcon UI",
+          "description": "A library of composable, themable, design-system-driven UI components for React."
         },
         {
           "type": "doc",

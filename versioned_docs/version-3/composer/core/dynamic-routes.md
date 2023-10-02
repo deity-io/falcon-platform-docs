@@ -1,6 +1,7 @@
 ---
 id: dynamic-routes
 title: Dynamic route resolver
+description: DynamicRouteResolver handles dynamic route resolution for the client application.
 sidebar_label: Dynamic route resolver
 enterprise_only: true
 ---

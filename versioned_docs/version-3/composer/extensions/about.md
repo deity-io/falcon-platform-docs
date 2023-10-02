@@ -4,9 +4,10 @@ title: Extensions
 sidebar_label: Introduction
 enterprise_only: true
 ---
-import Badge from '@site/src/components/Badge';
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
+
+<NoticeV3 />
 
 Falcon-Server provides its own base GraphQL Schema, that defines data types, queries
 and mutations, so every Extension could use its types and extend them.

@@ -1,6 +1,7 @@
 ---
 id: technical
 title: Technical Information
+description: Deity Storefront is using the following core technologies.
 sidebar_label: Technical Information
 ---
 

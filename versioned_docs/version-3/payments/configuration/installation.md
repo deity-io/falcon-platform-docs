@@ -6,7 +6,9 @@ description: A step by step guide to install DPSG
 ---
 
 :::note Requires Deity Platform v3.0.0 or higher
-If you want to use DPSG in your Falcon app, make sure to use Falcon version >= 3.0.0. Version 2 is not supported.
+If you want to use DPSG in your Deity app, make sure to use Deity Platform version >= 3.0.0.
+
+If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](/docs/platform/support/contact) to upgrade to the latest version.
 :::
 
 To make use of DPSG, it first needs to be configured and then connected to your Falcon app.

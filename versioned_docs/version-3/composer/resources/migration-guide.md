@@ -5,8 +5,8 @@ sidebar_label: Migration guide
 enterprise_only: true
 ---
 
-import Badge from '@site/src/components/Badge';
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+<NoticeV3 />
 
 _(todo)_

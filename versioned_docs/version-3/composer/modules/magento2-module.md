@@ -7,9 +7,9 @@ enterprise_only: true
  
 import CodePackage from '@site/src/components/CodePackage';
 
-import Badge from '@site/src/components/Badge';
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+<NoticeV3 />
 
 <CodePackage name="@deity/falcon-magento2-module" /> 
 

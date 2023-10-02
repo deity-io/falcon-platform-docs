@@ -7,7 +7,7 @@ description: Key concepts of integrating DPSG
 
 ## Management your payment configuration
 
-The payment configuration, including providers, methods, payments and orders, can be done using our `dcloud` CLI tool. The configuration process is described in the [Configuration](/docs/payments/getting-started/config) section. `dcloud` interacts with the [management endpoints](https://dpsg.deity.cloud/#/Management) of DPSG.
+The payment configuration, including providers, methods, payments and orders, can be done using our `dcloud` CLI tool. The configuration process is described in the [Configuration](/docs/payments/configuration/config) section. `dcloud` interacts with the [management endpoints](https://dpsg.deity.cloud/#/Management) of DPSG.
 
 
 ## DPSG interactions with your Falcon app
@@ -18,7 +18,7 @@ Interacting with DPSG is done through our `@deity/falcon-payment-service-module`
 
 
 :::note Want to integrate DPSG yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please check out our [how to](/docs/payments/getting-started/usage) guide.
+If you're creating a custom integration or want more details on how Falcon Platform interacts with DPSG, please check out our [how to](/docs/payments/configuration/usage) guide.
 :::
 
 ---

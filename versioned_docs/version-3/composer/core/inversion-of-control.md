@@ -4,13 +4,10 @@ title: Inversion of control
 sidebar_label: Inversion of control
 enterprise_only: true
 ---
-import Badge from '@site/src/components/Badge';
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-:::note Composer version 3
-If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](./platform/support/contact)
-:::
+<NoticeV3 />
 
 _(todo: This page needs more general, high level information about Falcon Server)_
 

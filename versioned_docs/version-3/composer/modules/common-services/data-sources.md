@@ -8,9 +8,9 @@ enterprise_only: true
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import Badge from '@site/src/components/Badge';
+import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+<NoticeV3 />
 
 
 [Apollo Server documentation](https://www.apollographql.com/docs/apollo-server/data/data-sources/) says:

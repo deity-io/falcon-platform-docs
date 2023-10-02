@@ -4,9 +4,9 @@ title: Event handlers in Falcon Server
 sidebar_label: Event handlers
 enterprise_only: true
 ---
-import Badge from '@site/src/components/Badge';
+import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 
-<Badge variant="green">NEW V3 DOC</Badge><br/><br/>
+<NoticeV3 />
 
 Falcon Server uses asynchronous events to notify about internal processes. With event handlers you are able to "hook" into particular place in order to modify Falcon Server's behavior or modify particular thing.
 

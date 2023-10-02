@@ -1,6 +1,7 @@
 ---
 id: schema-json
 title: Schema markup / rich results
+description: Deity Storefront offers components to provide your app with Schema markup in the form of JSON.
 sidebar_label: Schema markup / rich results
 ---
 

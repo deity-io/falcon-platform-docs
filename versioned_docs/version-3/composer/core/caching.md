@@ -1,5 +1,6 @@
 ---
 title: Caching
+description: Learn how to work with cache in several ways.
 ---
 
 Falcon-Server provides several ways of working with cache.

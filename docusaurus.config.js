@@ -67,7 +67,7 @@ module.exports = {
               icon: 'integrations',
               to: '/integrations',
               customProps: {
-                count: 13
+                count: 14
               }
             },
             {
