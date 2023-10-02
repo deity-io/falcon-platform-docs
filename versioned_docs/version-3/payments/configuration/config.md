@@ -51,7 +51,7 @@ This will take you through steps to configure your methods, including the steps 
 
 <hr/>
 
-### Dcloud Commands Reference
+### Dcloud commands reference
 
 To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 

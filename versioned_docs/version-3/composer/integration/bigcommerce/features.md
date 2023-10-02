@@ -5,6 +5,8 @@ sidebar_label: Features
 description: Falcon Platform has a large percentage coverage of BigCommerce features.
 ---
 
+## Supported features
+
 :::note New features coming soon
 We are actively developing our BigCommerce integration and will be adding support for more features.
 :::

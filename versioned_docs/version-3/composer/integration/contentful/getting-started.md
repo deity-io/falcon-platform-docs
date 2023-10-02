@@ -8,6 +8,12 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-contentful-module" />
 
+## Introduction
+
+1. Update the configuration of Falcon Server - see the [Installation](#installation) section for that
+2. Add our set of Contentful Content Models - see the section [Content models](/docs/integrations/contentful/content-models) section for that
+
+
 ## Installation
 
 Using our example project, `demo-v3` you will have Contentful support without having to do any custom dev.

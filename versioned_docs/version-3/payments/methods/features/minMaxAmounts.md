@@ -1,14 +1,14 @@
 ---
 id: min-max-amounts
-title: Min / Max Amounts
-sidebar_label: Min / Max Amounts
+title: Min / max amounts
+sidebar_label: Min / max amounts
 ---
 
 ## Overview
 
 Each payment method can be enabled for only certain order amounts. By default, a new payment method will be available for all order amounts, but by specifying minimum and/or maximum order amounts per currency, a payment method will only show when the order amount and currency match the specified boundaries.
 
-## How to configure min/max amounts
+## How to configure min / max amounts
 
 All payment method config can be done via our `dcloud` cli tool.
 When configuring a new payment method using `dcloud payments:method:configure`, a wizard is launched to guide you through the configuration process.

@@ -1,13 +1,13 @@
 ---
 id: overview
-title: Payment Methods Overview
-sidebar_label: Payment Methods
+title: Payment methods
+sidebar_label: Payment methods
 ---
 
 Every payment provider has a specific set of payment methods that it supports. The available methods are listed in the respective `Payment Providers` documentation page. Some payment methods are available for more than one payment provider, which allows you to choose the provider that better fits your needs.
 
 
-## Payment Method Configuration
+## Payment method configuration
 
 The easiest way to configure a payment method is by using `dcloud` CLI and the `dcloud payments:method:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Payment%20Method/EnvironmentPaymentMethodController_add).
 

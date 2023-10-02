@@ -28,7 +28,7 @@ Algolia is the leader in globally scalable, secure, digital search and discovery
 - [Algolia demo app with BigCommerce](https://v3demo2.deity.io/)
 
 
-## Supported Features
+## Supported features
 
 - Product search
 - Product search filtering

@@ -1030,7 +1030,9 @@
         },
         {
            "type": "category",
-           "label": "Configuration",
+           "label": "Feature configuration",
+           "link": {"type": "generated-index", "slug": "/payments/methods/features"},
+           "collapsible": true,
            "items": [
             {
               "type": "doc",
@@ -1319,14 +1321,30 @@
       "collapsed": true,
       "items": [
         {
-          "type": "link",
-          "href": "#",
+          "type": "category",
           "label": "TalonOne",
-          "description": "Documentation coming soon!",
-          "customProps": {
-            "disabled": true,
-            "label": "soon!"
-          }
+          "link": {"type": "doc", "id": "version-3/integrations/talonone"},
+          "collapsible": true,
+          "collapsed": true,
+          "items": [
+            {"type":"doc","id":"version-3/integrations/talonone/getting-started"},
+            {"type":"doc","id":"version-3/integrations/talonone/features"},
+            {"type":"doc","id":"version-3/integrations/talonone/configuration"},
+            {
+              "type": "category",
+              "label": "Extending",
+              "collapsible": true,
+              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending"},
+              "items": [
+                {"type":"doc","id":"version-3/integrations/talonone/extending/module"},
+                {"type":"doc","id":"version-3/integrations/talonone/extending/client"},
+                {"type":"doc","id":"version-3/integrations/talonone/extending/datasource"},
+                {"type":"doc","id":"version-3/integrations/talonone/extending/data-mappers"},
+                {"type":"doc","id":"version-3/integrations/talonone/extending/event-handlers"},
+                {"type":"doc","id":"version-3/integrations/talonone/extending/track-events"}
+              ]
+            }
+          ]
         }
       ]
     },       

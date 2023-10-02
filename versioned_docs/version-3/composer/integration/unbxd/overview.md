@@ -33,7 +33,7 @@ This module is only compatible with Magento store data, exported by Unbxd extens
 - [Getting started](/docs/integrations/unbxd/getting-started)
 - [Unbxd Magento 2 Module](https://github.com/unbxd/Magento-2-Extension)
 
-## Features
+## Supported features
 
 - Search
 - Category product listing

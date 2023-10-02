@@ -1,7 +1,7 @@
 ---
 id: currencies
-title: Currency Specific Config
-sidebar_label: Currency Specific Config
+title: Currencies
+sidebar_label: Currencies
 ---
 
 ## Overview

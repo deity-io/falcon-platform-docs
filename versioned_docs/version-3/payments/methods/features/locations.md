@@ -1,7 +1,7 @@
 ---
 id: locations
-title: Location Specific Config
-sidebar_label: Location Specific Config
+title: Localization
+sidebar_label: Localization
 ---
 
 ## Overview

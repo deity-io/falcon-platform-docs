@@ -15,7 +15,7 @@ To connect your app to DPSG you'll just need to make a few simple configuration 
 DPSG is part of your subscription. You can get this information by running `dcloud payments:profile:info`.
 :::
 
-## Local Configuration
+## Local configuration
 
 In your server config you'll need to add a new payments module.
 
@@ -40,7 +40,7 @@ In your server config you'll need to add a new payments module.
 Some payment providers don't like passing `http://localhost` as a redirect URL (`redirectBaseUrl`). We recommend using a service like [ngrok](https://ngrok.com/) to tunnel your falcon server app.
 :::
 
-### Config Explained
+### Config explained
 
 (config : type : default value : description)
 
@@ -66,7 +66,7 @@ If you're adding a new module and need access to DPSG you'll need to make sure y
 },
 ```
 
-## Remote Configuration
+## Remote configuration
 
 Remote configuration should be done using env variables for any kind of sensitive data.
 

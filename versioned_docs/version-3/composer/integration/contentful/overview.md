@@ -21,9 +21,13 @@ This module provides Contentful API resolvers for the `@deity/falcon-blog-extens
 </Button>
 <div className="mb60"></div>
 
-### Introduction
+## Supported features
 
-<CodePackage name="@deity/falcon-contentful-module" /> 
+Using `demo-v3` we have full support (including components and routes) for the following features:
 
-1. Update the configuration of Falcon Server - see the [Getting started](/docs/integrations/contentful/getting-started) section for that
-2. Add our set of Contentful Content Models - see the section [Content models](/docs/integrations/contentful/content-models) section for that
+- Blog Posts
+- Blog Categories
+- Pages
+- Custom Content Models
+
+See our [demo](https://v3demo3.deity.io/blog).

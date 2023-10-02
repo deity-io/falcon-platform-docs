@@ -1,7 +1,7 @@
 ---
 id: sort
-title: Method Sort Order
-sidebar_label: Method Sort Order
+title: Sort order
+sidebar_label: Sort order
 ---
 
 ## Overview

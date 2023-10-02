@@ -29,7 +29,7 @@ Our Wordpress integration comes with both our examples apps, `demo-v1` and `demo
 - [Wordpress demo app with BigCommerce](https://v3demo2.deity.io/blog)
 
 
-## Supported Features
+## Supported features
 
 Using `demo-v1` we have full support (including components and routes) for the following features:
 
