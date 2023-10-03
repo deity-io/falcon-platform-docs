@@ -6,7 +6,7 @@ hide_title: true
 ---
 
 <a href="https://adyen.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adyen site" className="invert">
-  <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80" />
+  <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80 pb10" />
 </a>
 
 ## Engineered for ambition

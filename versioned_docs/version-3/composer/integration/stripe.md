@@ -12,6 +12,8 @@ sidebar_label: Stripe Payments
 
 ---
 
+**OBSOLETE OLD V2 WAY**
+
 ## Overview
 
 Our integration with Stripe payments uses [https://github.com/stripe/react-stripe-js](https://github.com/stripe/react-stripe-js) to provide a production ready credit card form in the checkout. This ships with our `demo-v2` example project.

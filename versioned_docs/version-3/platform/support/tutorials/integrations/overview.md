@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Integration Tutorials
+title: Integration tutorials
 description: Deity Platform Cookbook, examples of every day tasks you might need to do when building your app
 sidebar_label: Tutorials
 ---

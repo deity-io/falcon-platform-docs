@@ -12,6 +12,9 @@ sidebar_label: Mollie Payments
 
 ---
 
+**OBSOLETE OLD V2 WAY**
+
+
 ## Overview
 
 Our integration with Mollie payments uses [https://github.com/mollie/mollie-api-node](https://github.com/mollie/mollie-api-node) to provide a production ready checkout that supports multiple payment methods. This ships with both our example projects.

@@ -1388,9 +1388,24 @@
       ]
     },
     {
+      "type": "category",
+      "label": "Custom",
+      "collapsible": true,
+      "link": {"type": "doc", "id": "version-3/integrations/custom"},       
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "label": "Example integration",
+          "id": "version-3/integrations/custom/jsonplaceholder"
+        }
+      ]
+    },
+    {
       "type": "html",
       "value": "<hr/>"
     },
+
     {
       "type": "category",
       "collapsible": true,
