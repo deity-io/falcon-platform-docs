@@ -12,7 +12,7 @@ const FaqCategories = [
   {
     name: 'Storefront',
     url: '/platform/support/faqs/storefront',
-    icon: '/docs/img/icons/data.svg'
+    icon: '/docs/img/icons/shop.svg'
   },
   {
     name: 'Composer',
