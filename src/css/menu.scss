@@ -169,11 +169,13 @@
 }
 
 @include dark-mode {
-  .menu  div:not([class*="goBack"]) svg,.dropdown__menu svg {filter:brightness(1.5)};
+  .menu  div:not([class*="goBack"]) svg, .dropdown__menu svg {
+      filter: brightness(1.6);
+    }
 
    .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
     .menu__link {
-    filter:brightness(1.55);
+      filter: brightness(1.9) grayscale(0.2);
     }
   }
 

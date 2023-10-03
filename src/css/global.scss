@@ -130,7 +130,7 @@ div.markdown :nth-last-child(1 of div[class^="accordion"]) {
     border-color:var(--ifm-card-background-color);
   }
   .brighten img { 
-    filter:brightness(1.65);
+    filter: brightness(1.75) grayscale(0.2);
   }
   .invert img {
     filter:  invert(1) grayscale(1) brightness(2);   

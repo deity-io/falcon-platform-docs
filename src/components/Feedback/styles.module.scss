@@ -29,14 +29,15 @@
         font-size: 1px;
       }
 
-      li:first-child span:first-child:before {
-        content: '👎';
-        font-size: 24px;
+      li:first-child span:first-child {
+        background-image: url("../../../static/img/icons/thumbup.svg");
+        font-size:0;
       }
 
-      li:last-child span:first-child:before {
-        content: '👍';
-        font-size: 24px;
+      li:last-child span:first-child {
+       background-image: url("../../../static/img/icons/thumbdown.svg");
+        font-size:0;
+      
       }
     }
   }
@@ -60,7 +61,19 @@
 
 @include dark-mode {
   .feedback {
-    background: var(--ifm-background-secondary);
+    background: var(--ifm-background-color);
     
+    .container {
+      & > div {
+       
+        li:first-child span:first-child {
+          filter: grayscale(0.5) brightness(2.5);
+        }
+
+        li:last-child span:first-child {
+          filter: grayscale(0.5) brightness(2.5);
+        }
+      }
+    }
   }
 }
