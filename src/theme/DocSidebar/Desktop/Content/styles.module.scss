@@ -4,6 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+@import '../../../../css/mixins';
 
 @media (min-width: 997px) {
   .menu {
@@ -33,12 +34,23 @@
   margin-bottom: 0.7rem;
   padding-left: 12px;
   cursor: pointer;
+  padding-top:0.7rem;
+  padding-bottom:0;
 
   &:hover {
-    color: #000;
+    color: var(--ifm-color-primary);
   }
 }
 
 .goBackIcon {
   margin-right: 0.5rem;
+}
+
+@include dark-mode {
+  .goBack {
+    color: var(--ifm-breadcrumbs-color);
+     &:hover {
+      color: var(--ifm-color-primary);
+    }
+  }
 }

@@ -13,10 +13,7 @@
       color: #000;
     }
   }
-  .goBack_src-theme-DocSidebar-Desktop-Content-styles-module {
-     padding-top:0.7rem;
-     padding-bottom:0;
-  }
+
   &__list {
     padding-top:0.7rem;
     padding-bottom: 5rem; /* add some space for easier access to bottom items */
@@ -223,9 +220,6 @@
         color: var(--ifm-color-primary);
       }
     }
-    .goBack_src-theme-DocSidebar-Desktop-Content-styles-module {
-      color: var(--ifm-color-primary);
-    }
-    
+   
   }
 }
