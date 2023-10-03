@@ -15,6 +15,12 @@
 .text-center {
   text-align: center;
 }
+.vertical-center {
+  align-items: center;
+  > div {
+    padding-right: 40px;
+  }
+}
 
 
 
@@ -124,7 +130,7 @@ div.markdown :nth-last-child(1 of div[class^="accordion"]) {
     border-color:var(--ifm-card-background-color);
   }
   .brighten img { 
-    filter:brightness(1.75);
+    filter:brightness(1.65);
   }
   .invert img {
     filter:  invert(1) grayscale(1) brightness(2);   

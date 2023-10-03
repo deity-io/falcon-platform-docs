@@ -51,10 +51,10 @@ export default function DocSidebarDesktopContent({ path, sidebar, className }: P
         className
       )}
     >
-      {pathname !== '/' && (
+      {pathname !== '/docs/' && (
         <div className={styles.goBack} onClick={() => push('/docs/')}>
           <ArrowLeft className={styles.goBackIcon} />
-          <span>Go back</span>
+          <span>Home</span>
         </div>
       )}
       <ul className={clsx(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>

@@ -52,7 +52,7 @@
   text-decoration: none;
   box-shadow: var(--ifm-global-shadow-md);
   color:var(--ifm-color-primary);
-  
+
   .category__name {
     color:var(--ifm-color-primary);
   }
@@ -67,5 +67,5 @@
 }
 
 html[data-theme="dark"] .category__icon { 
-  filter: brightness(2);
+  filter: brightness(1.75);
 }
