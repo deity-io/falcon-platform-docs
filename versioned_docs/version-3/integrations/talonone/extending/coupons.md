@@ -4,6 +4,10 @@ title: Coupons
 sidebar_label: Coupons
 ---
 
-import Content from "../../../composer/integration/talonone/extending/coupons.md"
+import CodePackage from '@site/src/components/CodePackage';
 
-<Content />
+<CodePackage name="@deity/falcon-talonone-module" />
+
+```ts
+export declare type CouponState = 'active' | 'used' | 'expired' | 'pending' | 'disabled';
+```

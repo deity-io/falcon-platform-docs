@@ -1,9 +1,130 @@
 ---
 id: getting-started
-title: Extending the Integration
-sidebar_label: Getting Started
+title: Extending the integration
+sidebar_label: Getting started
 ---
 
-import Content from "../../../composer/integration/commercetools/extending/getting-started.mdx"
+import CodePackage from '@site/src/components/CodePackage';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<Content />
+<CodePackage name="@deity/falcon-commercetools-module" />
+
+### Introduction
+
+The example code below shows how you can start extending our Commercetools integration. It shows how you can create custom resolvers, add custom endpoints and creating a custom GQL resolver map.
+
+More generic information about module extension in our platform can be found [here](/docs/composer/modules/custom-module#extending-module).
+
+<Tabs>
+  <TabItem value="TypeScript" default>
+
+```ts
+const { EndpointManager } = require('@deity/falcon-server-env');
+const {
+  CommercetoolsDataSource: FalconCommercetoolsDataSource,
+  CommerceToolsModule: FalconCommerceToolsModule
+} = require('@deity/falcon-commercetools-module');
+
+class CommercetoolsDataSource extends FalconCommercetoolsDataSource {
+  // My custom resolvers
+}
+
+class MyCustomWebhookEndpointManager extends EndpointManager {
+  // My custom endpoint logic
+}
+
+class CommerceToolsModule extends FalconCommerceToolsModule {
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+    registry.rebind('CommercetoolsDataSource').toDataSource(CommercetoolsDataSource);
+    registry.bind('MyCustomWebhookEndpointManager').toEndpointManager(MyCustomWebhookEndpointManager);
+  }
+
+  gqlResolvers() {
+    return this.mergeGqlResolvers(super.gqlResolvers(), {
+      // My custom resolver map
+    });
+  }
+}
+
+module.exports = { CommerceToolsModule };
+```
+
+  </TabItem>
+  <TabItem value="JavaScript">
+
+```js
+const { EndpointManager } = require('@deity/falcon-server-env');
+const {
+  CommercetoolsDataSource: FalconCommercetoolsDataSource,
+  CommerceToolsModule: FalconCommerceToolsModule
+} = require('@deity/falcon-commercetools-module');
+
+class CommercetoolsDataSource extends FalconCommercetoolsDataSource {
+  // My custom resolvers
+}
+
+class MyCustomWebhookEndpointManager extends EndpointManager {
+  // My custom endpoint logic
+}
+
+class CommerceToolsModule extends FalconCommerceToolsModule {
+  servicesRegistry(registry) {
+    super.servicesRegistry(registry);
+    registry.rebind('CommercetoolsDataSource').toDataSource(CommercetoolsDataSource);
+    registry.bind('MyCustomWebhookEndpointManager').toEndpointManager(MyCustomWebhookEndpointManager);
+  }
+
+  gqlResolvers() {
+    return this.mergeGqlResolvers(super.gqlResolvers(), {
+      // My custom resolver map
+    });
+  }
+}
+
+module.exports = { CommerceToolsModule };
+```
+
+  </TabItem>
+</Tabs>
+
+### Accessing the SDK
+
+If you are extending an existing class, like the `CommercetoolsDataSource` in the example above, you will have access to [`ctpClient`](./ctp-client) and [`ctpSession`](./ctp-session) right away. These are used for managing and interacting with the SDK.
+
+For new classes, like the `MyCustomWebhookEndpointManager` in the example above, you will need to use `inversify` to injext the `ctpClient` and/or `ctpSession` into the class.
+
+<Tabs>
+<TabItem value="TypeScript" default>
+
+```ts
+import { injectable } from 'inversify';
+import { EndpointManager } from '@deity/falcon-server-env';
+
+@injectable()
+class MyCustomWebhookEndpointManager extends EndpointManager {
+  constructor(@inject('CtpClient') protected ctpClient: CtpClient) {}
+  // My custom endpoint logic
+}
+...
+```
+
+</TabItem>
+<TabItem value="JavaScript">
+
+```js
+const { injectable, decorate } = require('inversify');
+const { EndpointManager } = require('@deity/falcon-server-env');
+
+class MyCustomWebhookEndpointManager extends EndpointManager {
+  constructor(@inject('CtpClient') protected ctpClient: CtpClient) {}
+  // My custom endpoint logic
+}
+decorate(injectable(), MyCustomWebhookEndpointManager);
+
+...
+```
+
+</TabItem>
+</Tabs>
