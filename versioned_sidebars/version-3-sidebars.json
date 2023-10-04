@@ -535,6 +535,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-3/composer/core/configuration"
+        },
+        {
+          "type": "doc",
           "id": "version-3/composer/core/inversion-of-control"
         },
         {
