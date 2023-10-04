@@ -4,6 +4,22 @@ title: Tutorials
 description: Deity Platform Cookbook, examples of every day tasks you might need to do when building your app
 ---
 
-import Content from "./tutorials/storefront/overview.md"
+import { Card, CardContent } from '@site/src/components/Card';
 
-<Content />
+
+
+<p className="desc">Our Cookbook is a collection of 'recipes' for you to reference and use in your own projects.</p>
+
+<div className="flex mb100 brighten">
+  
+  <Card  to="/docs/platform/support/tutorials/storefront/overview">
+    <img src="/docs/img/icons/shop.svg" />
+    <h4>Storefront</h4>
+    <p>Tutorials varying from simple theming processes like changing the logo to more complex implementations like testing a component.</p>
+  </Card>
+  <Card to="/docs/platform/support/tutorials/integrations/overview">
+    <img src="/docs/img/icons/integrationtutorial.svg" />
+    <h4>Integrations</h4>
+    <p>Tutorials varying from simple integrations like using a json placeholder to more complex integrations like integrating Contentful.</p>
+  </Card>
+</div>

@@ -19,7 +19,7 @@ All you need is a BigCommerce store and our BigCommerce App and you can be up an
 
 
 <Button variant="contained" size="medium" href="/docs/integrations/bigcommerce/getting-started">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 

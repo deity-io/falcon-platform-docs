@@ -1121,9 +1121,9 @@
     },
     {
       "type": "category",
-      "label": "Shop platforms",
+      "label": "Ecommerce",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/shop-platforms"},
+      "link": {"type": "generated-index", "slug": "/integrations/ecommerce"},
       "items": [
         {
           "type": "category",
@@ -1389,7 +1389,7 @@
     },
     {
       "type": "category",
-      "label": "Custom",
+      "label": "Custom integration",
       "collapsible": true,
       "link": {"type": "doc", "id": "version-3/integrations/custom"},       
       "collapsed": true,

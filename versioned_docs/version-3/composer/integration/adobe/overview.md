@@ -19,7 +19,7 @@ Falcon magento module is required to run with Falcon Platform.
 Magento module is based on core REST API of Magento platform.
 
 <Button variant="contained" size="medium" href="/docs/integrations/adobe/getting-started">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 

@@ -16,7 +16,7 @@ import Button from '@site/src/components/Button';
 Algolia is the leader in globally scalable, secure, digital search and discovery experiences that are ultrafast and reliable.
 
 <Button variant="contained" size="medium" href="/docs/integrations/algolia/getting-started">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 

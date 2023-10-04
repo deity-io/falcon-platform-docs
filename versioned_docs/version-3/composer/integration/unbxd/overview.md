@@ -16,7 +16,7 @@ import Button from '@site/src/components/Button';
 Falcon Platform provides support for search using [https://unbxd.com/](https://unbxd.com/).
 
 <Button variant="contained" size="medium" href="/docs/integrations/unbxd/getting-started">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 

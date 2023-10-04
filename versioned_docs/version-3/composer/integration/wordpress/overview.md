@@ -17,7 +17,7 @@ import Button from '@site/src/components/Button';
 Our Wordpress integration comes with both our examples apps, `demo-v1` and `demo-v2`.
 
 <Button variant="contained" size="medium" href="/docs/integrations/wordpress/getting-started">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 

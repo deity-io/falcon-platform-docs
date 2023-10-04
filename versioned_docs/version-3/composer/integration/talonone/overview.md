@@ -16,7 +16,7 @@ import Button from '@site/src/components/Button';
 Talon.One is a flexible, scalable and API-first all-in-one promotion engine.
 
 <Button variant="contained" size="medium" href="/docs/integrations/talonone/getting-started">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 

@@ -13,16 +13,16 @@ import Button from '@site/src/components/Button';
 
 ## Unlock new business potential in your existing stack
 
-We've created an example integration to help you understand how to integrate your services with the Deity Platform. 
+We've created an example integration to help you understand how to integrate your custom micro-services or other API based solutions with the Deity Platform. 
 
 <Button variant="contained" size="medium" href="/docs/integrations/custom/jsonplaceholder">
-  Get started →
+  Start reading →
 </Button>
 <div className="mb60"></div>
 
 ### Can’t find what you are looking for?
 
-Is your integration not yet supported? Please contact us. With the Deity Commerce Composer you can connect to anything.
+Is your integration not yet supported, or you'd like us to help you with your stack? Please contact us. With the Deity Commerce Composer you can connect to anything.
 
 <Button variant="outlined" size="medium" href="https://www.deity.com/contact">
   Let's get in touch →
