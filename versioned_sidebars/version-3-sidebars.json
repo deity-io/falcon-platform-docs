@@ -979,10 +979,6 @@
         {
           "type": "doc",
           "id": "version-3/payments/configuration/connect"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/payments/configuration/usage"
         }
       ]
     },
@@ -1060,6 +1056,35 @@
             }
           ]
          }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Usage",
+      "collapsible": true,
+      "link": {"type": "generated-index", "slug": "/payments/usage"},
+      "collapsed": true,
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-3/payments/usage/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/usage/payment-list"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/usage/payment-update"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/usage/stored-payment-list"
+        },
+        {
+          "type": "doc",
+          "id": "version-3/payments/usage/ui-components"
+        }
       ]
     },
     {

@@ -46,7 +46,7 @@ There's an option to configure Redis or Memcached as a cache backend via Falcon-
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-## Cache Component
+## Cache component
 
 Falcon-Server provides Cache wrapper-component with additional features described below.
 
@@ -134,7 +134,7 @@ async getToken(parent, args, context, info) {
 
 - `key: string|string[]` - a key or a list of keys to be removed from the cache
 
-## Schema Caching
+## Schema caching
 
 To use cache within your Extension - you need to put `@cache` directive next to the field you want to cache
 in the Extension's GraphQL Schema:

@@ -30,4 +30,4 @@ To use DPSG in your Falcon app you need to connect to it. For this you just need
 
 Our demo applications are already setup to use DPSG. This section is only relevant for custom integrations or projects with bespoke functionality.
 
-[Find out how →](usage)
+[Find out how →](../usage/overview)

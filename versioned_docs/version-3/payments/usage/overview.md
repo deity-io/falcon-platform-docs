@@ -1,5 +1,5 @@
 ---
-id: usage
+id: overview
 title: Using DPSG
 sidebar_label: Using DPSG
 description: How to use DPSG

@@ -42,15 +42,67 @@ Integrate with multiple payment service providers to use any payment method. Cus
 
 ## Deity Payments features
 
-<p className="desc pb20">The Deity payment gateway is highly configurable, allowing you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value.</p>
+<p className="desc">
+Deity Payments is available to all Deity platform users. It acts as a middleman between payment providers and Deity Composer.
+</p>
+<p>
+It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
+</p>
+<p className="pb20">
+Alongside this it always exposes a message queue that Deity Composer subscribes to. This publishes events such as payment updates after refunds.
+</p>
 
+### Check-out experiences
+
+<div className="flex brighten">
+  <Card variant="horizontal" to="/docs/payments/usage/payment-list">
+    <img src="/docs/img/icons/creditcard.svg" />
+    <div>
+      <h5>Payment methods</h5>
+      <p>
+        Getting a list of payment methods is a case of using a simple GraphQL query.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/usage/stored-payment-list">
+    <img src="/docs/img/icons/storedpayment.svg" />
+    <div>
+      <h5>Stored payment methods</h5>
+      <p>
+        Offer your customers to store and retrieve their payment methods.
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten mb60">
+  <Card variant="horizontal" to="/docs/payments/usage/payment-update">
+    <img src="/docs/img/icons/transactionupdate.svg" />
+    <div>
+      <h5>Transaction updates</h5>
+      <p>
+        Deity Payments subscribes to transaction updates where possible.
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/usage/ui-components">
+    <img src="/docs/img/icons/uicomponent.svg" />
+    <div>
+      <h5>UI components</h5>
+      <p>
+        Deity Payments comes with UI components for Deity Storefront.
+      </p>
+    </div>
+  </Card>
+</div>
+
+### Configuration
 <div className="flex brighten">
   <Card variant="horizontal" to="/docs/payments/configuration/integration-options">
     <img src="/docs/img/icons/composerdpsg.svg" />
     <div>
       <h5>Integration with Deity Composer</h5>
       <p>
-        Your Composer application is connected with the payment gateway out of the box.
+        Your Composer application is connected with Deity Payments out of the box.
       </p>
     </div>
   </Card>
@@ -59,7 +111,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
     <div>
       <h5>Payment providers</h5>
       <p>
-        Connect your payment provider and Deity PWA Storefront.
+        Connect your payment provider with Deity Composer and Deity PWA Storefront.
       </p>
     </div>
   </Card>
@@ -68,7 +120,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
   <Card variant="horizontal" to="/docs/payments/methods/overview">
     <img src="/docs/img/icons/creditcard.svg" />
     <div>
-      <h5>Payment methods</h5>
+      <h5>Configuring payment methods</h5>
       <p>
         Mix and match your preferred payment methods.
       </p>

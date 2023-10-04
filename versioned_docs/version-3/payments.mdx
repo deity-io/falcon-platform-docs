@@ -41,7 +41,30 @@ import SignupContent from "./includes/signup.mdx"
 
 
 
-## Payment options
+
+## Configuration
+
+<div className="flex brighten mb80">
+  <Card variant="horizontal" to="/docs/payments/configuration/integration-options">
+    <img src="/docs/img/icons/composerdpsg.svg" />
+    <div>
+      <h5>Integration with Deity Composer</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/configuration/installation">
+    <img src="/docs/img/icons/plugdpsg.svg" />
+    <div>
+      <h5>Installation steps</h5>
+      <p>
+       
+      </p>
+    </div>
+  </Card>
+</div>  
+
 <h3 className="mt0 view-all">Payment providers <Button variant="outline" size="medium" href="/docs/payments/providers">View all →</Button></h3>
 
 <div className="flex ">
@@ -85,7 +108,7 @@ import SignupContent from "./includes/signup.mdx"
   </Card>
 </div>
 
-<h3 className="mt0 view-all">Payment features <Button variant="outline" size="medium" href="/docs/payments/methods/overview">View all →</Button></h3>
+<h3 className="mt0 view-all">Payment features</h3>
 
 <div className="flex brighten">
   <Card variant="horizontal" to="/docs/payments/methods/overview">
@@ -127,7 +150,7 @@ import SignupContent from "./includes/signup.mdx"
     </div>
   </Card>
 </div>
-<div className="flex brighten mb100">
+<div className="flex brighten mb80">
   <Card variant="horizontal" to="/docs/payments/methods/features/min-max-amounts">
     <img src="/docs/img/icons/sliders.svg" />
     <div>
@@ -148,6 +171,48 @@ import SignupContent from "./includes/signup.mdx"
   </Card>
 </div>
 
+## Usage
+
+<div className="flex brighten">
+  <Card variant="horizontal" to="/docs/payments/usage/payment-list">
+    <img src="/docs/img/icons/creditcard.svg" />
+    <div>
+      <h5>Payment methods</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/usage/stored-payment-list">
+    <img src="/docs/img/icons/storedpayment.svg" />
+    <div>
+      <h5>Stored payment methods</h5>
+      <p>
+        
+      </p>
+    </div>
+  </Card>
+</div>
+<div className="flex brighten mb80">
+  <Card variant="horizontal" to="/docs/payments/usage/payment-update">
+    <img src="/docs/img/icons/transactionupdate.svg" />
+    <div>
+      <h5>Transaction updates</h5>
+      <p>
+   
+      </p>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="/docs/payments/usage/ui-components">
+    <img src="/docs/img/icons/uicomponent.svg" />
+    <div>
+      <h5>UI components</h5>
+      <p>
+       
+      </p>
+    </div>
+  </Card>
+</div>
 
 ## API reference
 
@@ -156,12 +221,35 @@ import SignupContent from "./includes/signup.mdx"
   <Card >
     <img src="/docs/img/icons/swagger.svg"/>
     <h4>REST endpoints</h4>
-    <p className="mb20">To view all the available endpoints and schemas, please visit our dedicated Payments API documentation.</p>
-   		 <Button variant="contained" size="medium" href="https://dpsg.deity.cloud/" target="_blank">
-          Go to API reference
-          <svg width="15" height="15" aria-hidden="true" viewBox="0 0 15 15" class="iconExternalLink_src-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"></path></svg>
-       </Button>
-     
+    <p className="mb20">Our payment service exposes a public swagger so you can use for testing and documentation. Make sure you visit the instance you will be using and your payment profile is set up on.</p>
+	<div class="flex">
+		<div>
+	   		 <Button variant="contained" size="medium" href="https://dpsg.deity.cloud/" target="_blank">
+	          View EU (Default)
+	          <svg width="15" height="15" aria-hidden="true" viewBox="0 0 15 15" class="iconExternalLink_src-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"></path></svg>
+	       </Button>
+	    </div>
+	    <div>   
+	     	<Button variant="outlined" size="medium" href="https://dpsg.us.deity.cloud/" target="_blank">
+	          View US
+	          <svg width="15" height="15" aria-hidden="true" viewBox="0 0 15 15" class="iconExternalLink_src-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"></path></svg>
+	       </Button>
+	    </div>
+	    <div>   
+	       <Button variant="outlined" size="medium" href="https://dpsg.au.deity.cloud/" target="_blank">
+	          View AU
+	          <svg width="15" height="15" aria-hidden="true" viewBox="0 0 15 15" class="iconExternalLink_src-theme-Icon-ExternalLink-styles-module"><path fill="currentColor" d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z"></path></svg>
+	       </Button>
+	    </div>   
+   </div>
+   <hr/>
+
+   <h4>Swagger Authorization</h4>
+  
+	<p>To use the public swagger you'll need your payment profile credentials. You will need to use token based authorization.</p>
+	<p>Your token will be <code>[SERVICE_USER]:[SERVICE_TOKEN]</code>. It will look something like this:</p>
+	<p><code>project:environment:profile:123456</code></p>
+	
   </Card>
 
 </div>
