@@ -5,7 +5,7 @@ module.exports = {
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
   baseUrl: '/docs',
-  trailingSlash: false, // this reduces the amount of 301 redirects from /foo to /foo/
+  trailingSlash: false, // this reduces the amount of 301 redirects from /bar to /bar/
   noIndex: false,
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
