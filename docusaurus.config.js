@@ -5,7 +5,7 @@ module.exports = {
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
   baseUrl: '/docs',
-  trailingSlash: false,
+  trailingSlash: false, // this reduces the amount of 301 redirects from /foo to /foo/
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
