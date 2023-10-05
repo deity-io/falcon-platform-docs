@@ -1,10 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Deity',
-  tagline: 'Documentation',
+  title: 'Deity Commerce Platform',
+  tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
   baseUrl: '/docs/',
+  trailingSlash: true,
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
@@ -21,7 +22,7 @@ module.exports = {
     },
     navbar: {
       logo: {
-        alt: 'Deity Documentation',
+        alt: 'Deity Commerce Platform',
         src: 'img/deity-logo-docs.svg',
         srcDark: 'img/deity-logo-docs-dark.svg'
       },
@@ -105,7 +106,7 @@ module.exports = {
           items: [
             {
               label: 'Overview',
-              to: '/platform/'
+              to: '/platform'
             },
             {
               label: 'Composer',
@@ -264,7 +265,7 @@ module.exports = {
           onlyIncludeVersions: ['3'],
           versions: {
             3: {
-              label: 'V3 - BUT V2 DOCS'
+              label: 'Version 3'
             }
           }
         },
