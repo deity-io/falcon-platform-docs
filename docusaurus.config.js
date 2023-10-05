@@ -6,6 +6,7 @@ module.exports = {
   url: 'https://deity.com',
   baseUrl: '/docs',
   trailingSlash: false, // this reduces the amount of 301 redirects from /foo to /foo/
+  noIndex: false,
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
