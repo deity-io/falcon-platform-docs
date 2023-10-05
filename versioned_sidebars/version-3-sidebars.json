@@ -345,136 +345,144 @@
     },
     {
       "type": "category",
-      "label": "Releases",
+      "label": "Release changelog",
       "collapsible": true,
       "collapsed": true,
       "link": {"type": "generated-index", "slug": "/platform/releases"},
       "items": [
         {
           "type": "doc",
-          "label": "Release Notes",
-          "id": "version-3/platform/release/full-changelog",
-          "className": "gray-link"
+          "label": "V3.x.x",
+          "id": "version-3/platform/changelog"
         },
         {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-18"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-17"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-16"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-15"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-14"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-13"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-12"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-11"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-10"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-9"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-8"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-7"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-6"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-5"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-4"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-3"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-1"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-5"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-4"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-5-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-8"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-6"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-3-1"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-3-0"
+          "type": "category",
+          "label": "V2.x.x",
+          "link": {"type":"doc", "id": "version-3/platform/release/full-changelog"},
+          "collapsible": true,
+          "collapsed": true,       
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-18"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-17"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-16"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-15"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-14"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-13"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-12"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-11"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-10"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-9"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-8"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-7"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-6"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-5"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-4"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-3"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-1"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-5"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-4"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-5-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-8"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-6"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-3-1"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-3-0"
+            }
+          ]
         }
       ]
     }

@@ -4,15 +4,16 @@ import Check from '@site/static/img/icons/check.svg';
 import clsx from 'clsx';
 
 type Props = {
-  variant: 'breaking' | 'hotfix' | 'feature' | 'improvement' | 'bugfix' | 'deprecated';
+  variant: 'breaking' | 'hotfix' | 'feature' | 'improvement' | 'bugfix' | 'deprecated' | 'integration' | 'subheader';
   children: React.ReactNode;
   description?: JSX.Element;
 };
 
-function ChangelogItem({ children, variant, description }: Props): JSX.Element {
+function ChangelogItem({ children, variant, description, }: Props): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const divRef = useRef(null);
   const [isOverflowed, setIsOverflowed] = useState(false);
+  
 
   useEffect(() => {
     function handleOverflow() {
@@ -34,7 +35,7 @@ function ChangelogItem({ children, variant, description }: Props): JSX.Element {
 
   return (
     <div className={styles.item}>
-      <div className={styles.header}>
+      <div className={clsx(styles.header, { [styles.subheader]: variant === 'subheader' })}>
         <div className={styles.content}>
           <div className={styles.icon}>
             <Check />
