@@ -89,7 +89,7 @@ module.exports = {
         {
           label: 'Changelog',
           to: '/platform/changelog',
-          activeBasePath: '/platform'
+          activeBasePath: '/platform/changelog'
         },
         {
           label: 'Launch Console',

@@ -40,17 +40,28 @@ Integrate with multiple payment service providers to use any payment method. Cus
 
 ---
 
-## Deity Payments features
+## How it works
+<div className="pb20"></div>
+<div className="flex vertical-center mb80 brighten">
+  <div className="text-center ">
+    <img src="/docs/img/docs/platform/payments-concept.svg"/>
+  </div>
+  <div>
+    <h3>Payments orchestration</h3>
+    <p>
+    Deity Payments is available to all Deity platform users. It acts as a middleman between payment providers and Deity Composer.
+    </p>
+    <p>
+  It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
+  </p>
+  <p className="pb20">
+  Alongside this it always exposes a message queue that Deity Composer subscribes to. This publishes events such as payment updates after refunds.
+  </p>
+  </div>
+  
+</div>
 
-<p className="desc">
-Deity Payments is available to all Deity platform users. It acts as a middleman between payment providers and Deity Composer.
-</p>
-<p>
-It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
-</p>
-<p className="pb20">
-Alongside this it always exposes a message queue that Deity Composer subscribes to. This publishes events such as payment updates after refunds.
-</p>
+
 
 ### Check-out experiences
 
