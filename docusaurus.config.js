@@ -272,7 +272,13 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/main.scss')
-        }
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: [],
+          filename: 'sitemap.xml',
+        },
       }
     ]
   ],
