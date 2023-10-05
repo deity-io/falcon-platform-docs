@@ -1,7 +1,7 @@
 ---
 id: dcloud
-title: CLI Reference
-sidebar_label: CLI Reference
+title: CLI reference
+sidebar_label: CLI reference
 ---
 
 ## Build list

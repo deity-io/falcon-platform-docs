@@ -1,6 +1,6 @@
 ---
 id: configuration
-title: Falcon Server Configuration
+title: Falcon Server configuration
 sidebar_label: Configuration
 enterprise_only: true
 ---

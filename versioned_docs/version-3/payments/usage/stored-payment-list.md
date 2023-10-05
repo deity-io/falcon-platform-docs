@@ -1,6 +1,6 @@
 ---
 id: stored-payment-list
-title: Stored pyment methods
+title: Stored payment methods
 sidebar_label: Stored payment methods
 ---
 

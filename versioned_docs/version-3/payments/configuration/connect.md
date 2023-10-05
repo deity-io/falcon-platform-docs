@@ -1,6 +1,6 @@
 ---
 id: connect
-title: Connecting to your App
+title: Connecting to your app
 sidebar_label: Connecting to your app
 description: How to connect DPSG to your Falcon app
 ---
