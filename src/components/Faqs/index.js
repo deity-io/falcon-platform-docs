@@ -20,20 +20,20 @@ const Faqs = () => {
         </div>
       </section>
       <section className={styles.section}>
-        <h3 className={styles.section__title}>What is your question about?</h3>
+        <h2 className={styles.section__title}>What is your question about?</h2>
         <Categories />
       </section>
       <section>
         <h3 className={styles.section__title}>Can't find the answer?</h3>
         <p>
-          If you can't find the answer you're looking for please ask in our{" "}
+          If you can't find the answer you're looking for, feel free to {" "}
           <Link
-            href="https://deity-community.slack.com/archives/CDL2XDSHZ"
+            href="https://deity.com/contact"
             target="_blank"
             rel="noopener noreferrer"
-            title="Go to community our Slack Channel"
+            title="Go to Deity contact form"
           >
-            community Slack channel
+            contact us
           </Link>
           .
         </p>
