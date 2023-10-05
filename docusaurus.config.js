@@ -4,8 +4,8 @@ module.exports = {
   title: 'Deity Commerce Platform',
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
-  baseUrl: '/docs/',
-  trailingSlash: true,
+  baseUrl: '/docs',
+  trailingSlash: false,
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
