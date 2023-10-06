@@ -969,7 +969,7 @@
       "type": "category",
       "label": "Configuration",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/getting-started/configuration"},
+      "link": {"type": "generated-index", "slug": "/payments/configuration"},
       "collapsed": true,
       "items": [
         {
