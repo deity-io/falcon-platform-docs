@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Deity Commerce Platform documentation',
+  title: 'Deity Commerce Composer Docs',
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
   baseUrl: '/docs',
