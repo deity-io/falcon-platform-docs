@@ -1,6 +1,7 @@
 ---
 id: search-extension
 title: Search extension
+description: Search extension
 sidebar_label: Search extension
 enterprise_only: true
 ---
