@@ -1,6 +1,7 @@
 ---
 id: injectable-services
 title: Injectable services
+description: Injectable services
 sidebar_label: Injectable services
 enterprise_only: true
 ---

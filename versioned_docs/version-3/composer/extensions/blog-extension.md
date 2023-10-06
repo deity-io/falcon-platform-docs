@@ -1,6 +1,7 @@
 ---
 id: blog-extension
 title: Blog extension
+description: Blog extension
 sidebar_label: Blog extension
 enterprise_only: true
 ---

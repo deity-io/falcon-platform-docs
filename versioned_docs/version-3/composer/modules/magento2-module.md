@@ -1,6 +1,7 @@
 ---
 id: magento2-module
 title: Adobe Commerce CE (Magento) module
+description: Adobe Commerce CE (Magento) module
 sidebar_label: Adobe Commerce CE module
 enterprise_only: true
 ---

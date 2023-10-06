@@ -1,6 +1,7 @@
 ---
 id: bigcommerce-module
 title: BigCommerce module
+description: BigCommerce module
 sidebar_label: BigCommerce module
 enterprise_only: true
 ---

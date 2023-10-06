@@ -1,6 +1,7 @@
 ---
 id: custom-module
 title: Custom modules
+description: Custom modules
 sidebar_label: Custom modules
 enterprise_only: true
 ---

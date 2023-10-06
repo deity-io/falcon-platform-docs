@@ -1,6 +1,7 @@
 ---
 id: about
 title: Modules in Falcon Server
+description: Modules in Falcon Server
 sidebar_label: Introduction
 enterprise_only: true
 ---

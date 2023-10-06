@@ -1,7 +1,7 @@
 ---
 id: redirects
 title: Redirects
-description: Learn how to use redirects in the Deity Platform.
+description: Learn how to use redirects in the Deity Platform
 sidebar_label: Redirects
 ---
 

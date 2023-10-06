@@ -1,6 +1,7 @@
 ---
 id: about
 title: Extensions
+description: Extensions
 sidebar_label: Introduction
 enterprise_only: true
 ---

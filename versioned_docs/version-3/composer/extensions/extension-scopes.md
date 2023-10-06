@@ -1,6 +1,7 @@
 ---
 id: extension-scopes
 title: Extension scopes in Falcon Server
+description: Extension scopes in Falcon Server
 sidebar_label: Extension scopes
 enterprise_only: true
 ---

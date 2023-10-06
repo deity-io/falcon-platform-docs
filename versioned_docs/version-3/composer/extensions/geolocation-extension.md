@@ -1,6 +1,7 @@
 ---
 id: geolocation-extension
 title: Geo-location extension
+description: Geo-location extension
 sidebar_label: Geo-location extension
 enterprise_only: true
 ---

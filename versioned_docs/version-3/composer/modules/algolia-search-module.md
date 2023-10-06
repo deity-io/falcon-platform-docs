@@ -1,6 +1,7 @@
 ---
 id: algolia-search-module
 title: Algolia search module
+description: Algolia search module
 sidebar_label: Algolia search module
 enterprise_only: true
 ---

@@ -1,6 +1,7 @@
 ---
 id: inversion-of-control
 title: Inversion of control
+description: Inversion of control
 sidebar_label: Inversion of control
 enterprise_only: true
 ---

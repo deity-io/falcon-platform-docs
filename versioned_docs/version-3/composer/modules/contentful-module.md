@@ -1,6 +1,7 @@
 ---
 id: contentful-module
 title: Contentful module
+description: Contentful module
 sidebar_label: Contentful module
 enterprise_only: true
 ---
