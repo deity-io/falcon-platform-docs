@@ -23,7 +23,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 - fixed sign-up sidebar as it was impossible to open it
 
-## Falcon Platform 2.7.24 (2022-21-01)
+## Falcon Platform 2.7.24 (2022-01-21)
 
 ### Falcon Wordpress API
 
