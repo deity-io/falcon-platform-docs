@@ -67,9 +67,9 @@
           }
         },
         {
-          "type": "doc",
+          "type": "link",
           "label": "Orchestrator",
-          "id": "version-3/orchestrator",
+          "href": "#",
           "customProps": {
             "icon": "orchestrator",
             "disabled": true,
