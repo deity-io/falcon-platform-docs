@@ -4,6 +4,7 @@ title: What is Deity Cloud?
 sidebar_label: What is Deity Cloud?
 ---
 
+# What is Deity Cloud?
 
 <p className="desc">
 	Deity Cloud is an infrastructure that allows you to host your Deity Application. The platform will scale automatically based on your needs and traffic, meaning your site is always <strong><i>blazing fast</i></strong>. Depending on your plan you'll be able to have as many environments as you need making it easy to test new features before putting them live.

@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Deity Commerce Platform',
+  title: 'Deity Commerce Platform documentation',
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
   baseUrl: '/docs',
@@ -75,7 +75,7 @@ module.exports = {
             {
               label: 'Orchestrator',
               icon: 'orchestrator',
-              to: '/orchestrator',
+              to: '#',
               customProps: {
                 label: 'soon!',
                 disabled: true

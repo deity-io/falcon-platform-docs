@@ -3,7 +3,10 @@ id: deployments
 title: Deployments
 sidebar_label: Deployments
 ---
+
+# Deployments
+
 Completed builds with status success can be deployed to an environment of choice. Simply click the deploy button and select the environment to deploy to.
 
-### Rolling upgrades
+## Rolling upgrades
 Your build will be deployed with a rolling upgrade strategy, given the target environment is of the acceptance or production type. In that case, your new build will be deployed alongside your currently deployed application. Once the new deployment has completed, traffic will be switched over to it and the old application will be killed. This process ensures your application has 0 downtime. If the target environment is a test environment, the new app is started up and your old app is killed at the same time. This means there is a slight amount of downtime while the new app starts up, typically taking around 60-90 seconds.
