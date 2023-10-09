@@ -1,8 +1,10 @@
 ---
 id: css-sass
-title: CSS / sass support
-sidebar_label: CSS / sass support
+title: Storefront CSS & SASS support
+sidebar_label: CSS & SASS support
 ---
+
+# CSS & SASS support
 
 To add your styles using a `css` or `scss` file simply import it.
 

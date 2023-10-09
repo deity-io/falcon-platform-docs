@@ -1,9 +1,11 @@
 ---
 id: icons
-title: Site icons
+title: Storefront site icons
 description: Learn how to use icon components in your theme.
 sidebar_label: Site icons
 ---
+
+# Site icons
 
 Falcon Client comes with an Icon component `@deity/falcon-ui`. This component expects you to have icons set in your theme.
 

@@ -200,7 +200,7 @@
       "label": "Resources",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/platform/resources", "description": "Deity Platform resources"},
+      "link": {"type": "generated-index", "slug": "/platform/resources", "title":"Deity Platform resources", "description": "Deity Platform resources"},
       "items": [
         {
           "type": "doc",
@@ -687,7 +687,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/resources", "description": "Deity Composer resources"},
+      "link": {"type": "generated-index", "slug": "/composer/resources", "title": "Deity Composer resources", "description": "Deity Composer resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -1217,7 +1217,7 @@
               "label": "Extending",
               "collapsible": true,
               "collapsed": true,
-              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending", "description": "Deity x Commercetools extensions"},
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending", "title":"Extending the Commercetools integration", "description": "Deity x Commercetools extensions"},
               "items": [
                 {
                   "type": "doc",
@@ -1372,7 +1372,7 @@
               "type": "category",
               "label": "Extending",
               "collapsible": true,
-              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending", "description": "Deity x Talon.One extensions"},
+              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending", "title":"Extending the Talon.One integration", "description": "Deity x Talon.One extensions"},
               "items": [
                 {"type":"doc","id":"version-3/integrations/talonone/extending/module"},
                 {"type":"doc","id":"version-3/integrations/talonone/extending/client"},
@@ -1447,7 +1447,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/resources", "description": "Deity integrations resources"},         
+      "link": {"type": "generated-index", "slug": "/integrations/resources", "title":"Deity integrations resources", "description": "Deity integrations resources"},         
       "collapsed": true,
       "label": "Resources",
       "items": [

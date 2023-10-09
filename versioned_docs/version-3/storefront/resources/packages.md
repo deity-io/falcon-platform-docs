@@ -1,8 +1,10 @@
 ---
 id: packages
-title: Our Packages
+title: Storefront npm packages
 sidebar_label: Our Packages
 ---
+
+# npm packages
 
 Falcon Platform Ships with various `@deity` packages.
 

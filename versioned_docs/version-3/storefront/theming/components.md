@@ -1,9 +1,11 @@
 ---
 id: components
-title: Themed components
+title: Storefront themed components
 description: UI components such as 'Box', 'Text' etc are all built as themeable components.
 sidebar_label: Themed components
 ---
+
+# Themed components
 
 `@deity/falcon-ui` UI components such as `Box`, `Text` etc are all built as themeable components.
 
