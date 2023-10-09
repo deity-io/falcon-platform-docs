@@ -1,6 +1,6 @@
 ---
 id: search-extension
-title: Search extension
+title: Search extension in Deity Composer
 description: Search extension
 sidebar_label: Search extension
 enterprise_only: true
@@ -14,7 +14,9 @@ import LogoImg from '/img/logo.svg';
 
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+# Search extension
+
+
 
 
 <CodePackage name="@deity/falcon-search-extension" /> 

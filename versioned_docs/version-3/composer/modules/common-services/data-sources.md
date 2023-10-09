@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 
 import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+
 
 
 [Apollo Server documentation](https://www.apollographql.com/docs/apollo-server/data/data-sources/) says:

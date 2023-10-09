@@ -1,6 +1,6 @@
 ---
 id: shop-extension
-title: Shop extension 
+title: Shop extension in Deity Composer 
 sidebar_label: Shop extension
 enterprise_only: true
 ---
@@ -13,7 +13,9 @@ import LogoImg from '/img/logo.svg';
 
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+# Shop extension
+
+
 
 <CodePackage name="@deity/falcon-shop-extension" /> 
 

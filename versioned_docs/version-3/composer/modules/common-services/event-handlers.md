@@ -9,7 +9,7 @@ enterprise_only: true
 
 import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+
 
 Falcon Server uses asynchronous events to notify about internal processes. With event handlers you are able to "hook" into particular place in order to modify Falcon Server's behavior or modify particular thing.
 

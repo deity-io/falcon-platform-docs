@@ -1,14 +1,15 @@
 ---
 id: about
-title: Extensions
+title: Extensions in Deity Composer
 description: Extensions
 sidebar_label: Introduction
 enterprise_only: true
 ---
 
+# Extensions
+
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
 
 Falcon-Server provides its own base GraphQL Schema, that defines data types, queries
 and mutations, so every Extension could use its types and extend them.

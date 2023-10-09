@@ -1,6 +1,6 @@
 ---
 id: about
-title: Modules in Composer
+title: Modules in Deity Composer
 description: Modules in Composer.
 sidebar_label: Introduction
 enterprise_only: true
@@ -10,7 +10,7 @@ enterprise_only: true
 
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+
 
 ## List of available modules
 

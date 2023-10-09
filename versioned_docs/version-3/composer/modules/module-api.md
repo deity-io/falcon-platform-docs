@@ -1,7 +1,7 @@
 ---
 id: module-api
-title: Falcon Module API
-sidebar_label: Falcon Module API
+title: Module API
+sidebar_label: Module API
 enterprise_only: true
 ---
 
@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+
 
 As mentioned [here](./about#what-is-a-module-in-falcon) Falcon Module packs implementation of various things that are required to achieve a particular feature in Falcon Server.
 Its powerful api allows to:
