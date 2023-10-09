@@ -537,7 +537,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/core", "description": "Deity Composer core concepts"},
+      "link": {"type": "generated-index", "slug": "/composer/core", "title": "Composer core concepts", "description": "Deity Composer core concepts"},
       "collapsed": true,
       "label": "Core",
       "items": [

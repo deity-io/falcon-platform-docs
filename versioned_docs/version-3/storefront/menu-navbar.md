@@ -1,9 +1,11 @@
 ---
 id: menu-navbar
-title: Menu navbar with depth
+title: Storefront menu navbar with depth
 description: Learn how to configure the MenuNavbar component.
 sidebar_label: Menu navbar
 ---
+
+# Menu navbar with depth
 
 By default the MenuNavbar renders up to 3 layers of navigation levels items who could be styled trough overriding styles.
 

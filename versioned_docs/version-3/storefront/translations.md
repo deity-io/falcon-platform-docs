@@ -1,10 +1,11 @@
 ---
 id: translations
-title: Internationalization
+title: Internationalization in Storefront
 description: Internationalization is based on i18next.
 sidebar_label: Internationalization
 ---
 
+# Internationalization
 
 Internationalization is based on [i18next](https://www.i18next.com/).
 

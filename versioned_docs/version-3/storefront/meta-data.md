@@ -1,10 +1,11 @@
 ---
 id: meta-data
-title: SEO / meta data
+title: Storefront SEO & meta data
 description: Learn how to manage meta data such as `page titles` and `meta descriptions`.
-sidebar_label: SEO / meta data
+sidebar_label: SEO & meta data
 ---
 
+# SEO & meta data
 <a href="https://www.npmjs.com/package/react-helmet-async" rel="noreferrer noopener" target="_blank" aria-label="visit the React Helmet package">
   <img src="/docs/img/docs/platform/react-helmet.jpg" alt="React Helmet Logo" width="100" style={{ marginBottom: 20 }} />
 </a>

@@ -1,11 +1,11 @@
 ---
 id: schema-json
-title: Schema markup / rich results
+title: Storefront schema markup & rich results
 description: Deity Storefront offers components to provide your app with Schema markup in the form of JSON.
-sidebar_label: Schema markup / rich results
+sidebar_label: Schema markup & rich results
 ---
 
-## Overview
+# Schema markup & rich results
 
 Falcon UI Kit comes complete with a few handy components to provide your app with Schema markup in the form of JSON.
 

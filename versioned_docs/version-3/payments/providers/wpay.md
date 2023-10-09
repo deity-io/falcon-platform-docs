@@ -1,6 +1,7 @@
 ---
 id: wpay
-title: Wpay
+title: Wpay integration
+description: Deity x Wpay
 sidebar_label: Wpay
 hide_title: true
 ---

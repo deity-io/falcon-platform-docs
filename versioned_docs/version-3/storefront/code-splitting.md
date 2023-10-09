@@ -1,13 +1,15 @@
 ---
 id: code-splitting
-title: Code splitting
+title: Storefront code splitting
 description: Split your code into various bundles which are loaded on demand.
 sidebar_label: Code splitting
 ---
 
+# Code splitting
+
 This feature splits your code into various bundles which are loaded on demand. It is used to achieve smaller bundles and control resource load prioritization. This has a major impact on load time. To specify the splitting point you need to import modules in an asynchronous manner. To make it work with React, Falcon Client uses [loadable](#loadable).
 
-### Loadable
+## Loadable
 
 Asynchronous components are based on the [loadable](https://github.com/smooth-code/loadable-components) package.
 
@@ -47,6 +49,6 @@ export default component =>
 
 For more information see [`loadable` on GitHub](https://github.com/smooth-code/loadable-components).
 
-### Vendors bundle
+## Vendors bundle
 
 `vendors.js` is a chunk which combines only the common project dependencies into single file. As they should not change often, even between subsequent releases, it allows to turn on long term caching for rather big files.

@@ -1,9 +1,11 @@
 ---
 id: overrides
-title: Overriding components
+title: Overriding components in Storefront
 description: Deity Platform makes overriding components very simple.
 sidebar_label: Overriding components
 ---
+
+# Overriding components
 
 :::note Only override what you need
 We will occasionally be pushing changes to our components. If they have been overridden you won't automatically get these changes when you upgrade.

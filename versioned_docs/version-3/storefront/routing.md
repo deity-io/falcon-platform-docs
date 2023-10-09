@@ -1,11 +1,11 @@
 ---
 id: routing
-title: Routing
+title: Routing in Storefront
 description: Dynamic routing relies on both Deity Storefront and Deity Composer.
 sidebar_label: Routing
 ---
 
-## Overview
+# Routing
 
 In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
 

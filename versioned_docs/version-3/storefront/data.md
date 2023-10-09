@@ -1,10 +1,11 @@
 ---
 id: data
-title: Data management
+title: Storefront data management
 description: Learn how to query and update data.
 sidebar_label: Data management
 ---
 
+# Data management
 
 This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](/docs/storefront/state).
 
