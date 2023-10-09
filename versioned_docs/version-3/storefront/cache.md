@@ -43,4 +43,4 @@ import { ServiceWorkerRegistrar, ServiceWorker } from '@deity/falcon-service-wor
 
 ## Falcon Server
 
-Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/composer/caching) docs.
+Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/composer/core/caching) docs.

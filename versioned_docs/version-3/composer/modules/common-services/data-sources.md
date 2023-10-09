@@ -1,12 +1,14 @@
 ---
 id: data-sources
-title: Data sources in Falcon Server
+title: Data sources in Composer
 sidebar_label: Data sources
 enterprise_only: true
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+# Data sources
 
 import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 

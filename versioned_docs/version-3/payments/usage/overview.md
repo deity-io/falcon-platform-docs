@@ -1,8 +1,8 @@
 ---
 id: overview
-title: Using DPSG
-sidebar_label: Using DPSG
-description: How to use DPSG
+title: Using Deity Payments
+sidebar_label: Using Payments
+description: How to use Deity Payments.
 ---
 
 

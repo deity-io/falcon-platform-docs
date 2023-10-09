@@ -1,8 +1,10 @@
 ---
 id: features
-title: Features
+title: Talon.One features
 sidebar_label: Features
 ---
+
+# Features
 
 ## Supported features
 

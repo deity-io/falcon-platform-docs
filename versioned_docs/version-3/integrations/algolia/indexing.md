@@ -1,12 +1,14 @@
 ---
 id: indexing
-title: Indexing
+title: Indexing in Algolia
 sidebar_label: Indexing
 ---
 
+# Indexing
+
 This can be broken down into 3 sections. Configuring what data is searchable, running an initial index and updating indexes when products are updated.
 
-### 1. Configuring your indexes
+## 1. Configuring your indexes
 
 The first thing you'll need to do is configure what data is searchable. You can also configure **facets** (filters) here.
 
@@ -52,7 +54,7 @@ This is done in your server config:
 - `SEARCH_API_NAME`: You'll need to set Algolia as the search API. The value shoul be `algolia`
 
 
-### 2. Running an initial index
+## 2. Running an initial index
 
 To run your initial index you just need to use the `autoReindex` flag in your config files.
 
@@ -75,7 +77,7 @@ Now you just need to start your app (Falcon Server) and all the products will be
 This is a temporary config only needed for the initial index.
 
 
-### 3. Updating indexes when product data changes
+## 3. Updating indexes when product data changes
 
 To keep indexes up to date with product data we use webhooks. 
 

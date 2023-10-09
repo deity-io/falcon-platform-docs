@@ -1,6 +1,6 @@
 ---
 id: geoip
-title: GeoIP
+title: Using GeoIP in Composer
 sidebar_label: GeoIP
 ---
 

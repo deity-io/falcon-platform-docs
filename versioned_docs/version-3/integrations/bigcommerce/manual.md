@@ -1,9 +1,11 @@
 ---
 id: manual
-title: Manual configuration
+title: BigCommerce manual configuration
 sidebar_label: Manual configuration
 description: Step by step guide to configure your BigCommerce and Falcon integration.
 ---
+
+# Manual configuration
 
 ## Getting Started
 

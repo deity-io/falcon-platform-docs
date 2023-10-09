@@ -1,8 +1,10 @@
 ---
 id: getting-started
-title: Getting started
+title: Getting started with Algolia
 sidebar_label: Getting started
 ---
+
+# Getting started
 
 If you're using our example app, `demo-v2` most of the heavy lifting will be done for you and you'll only need to add a few configurations.
 

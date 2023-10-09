@@ -1,9 +1,11 @@
 ---
 id: technical
-title: Technical information
+title: Technical information about BigCommerce
 sidebar_label: Technical information
 description: Our integration is made up of 2 main pacakges, falcon-bigcommerce-api and falcon-bigcommerce-endpoints.
 ---
+
+# Technical information
 
 The key packages involved in the integration are:
 

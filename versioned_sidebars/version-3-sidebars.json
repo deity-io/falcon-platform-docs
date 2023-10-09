@@ -1070,7 +1070,7 @@
       "type": "category",
       "label": "Usage",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/usage", "description": "Deity Payments usage"},
+      "link": {"type": "generated-index", "slug": "/payments/usage", "title":"Using Deity Payments", "description": "Using Deity Payments"},
       "collapsed": true,
       "items": [
         {

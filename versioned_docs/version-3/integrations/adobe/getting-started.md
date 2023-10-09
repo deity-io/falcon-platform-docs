@@ -1,8 +1,10 @@
 ---
 id: getting-started
-title: Getting started
+title: Getting started with Adobe Commerce CE
 sidebar_label: Getting started
 ---
+
+# Getting started
 
 :::note
 Falcon magento module should be installed over preinstalled magento instance. In case you don't have magento installed yet

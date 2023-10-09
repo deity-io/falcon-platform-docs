@@ -1,9 +1,12 @@
 ---
 id: event-handlers
-title: Event handlers in Falcon Server
+title: Event handlers in Composer
 sidebar_label: Event handlers
 enterprise_only: true
 ---
+
+# Event handlers
+
 import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 
 <NoticeV3 />

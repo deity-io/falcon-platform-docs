@@ -1,8 +1,10 @@
 ---
 id: track-events
-title: Track events
+title: Custom events in Talon.one
 sidebar_label: Track custom events
 ---
+
+# Track custom events 
 
 import CodePackage from '@site/src/components/CodePackage';
 

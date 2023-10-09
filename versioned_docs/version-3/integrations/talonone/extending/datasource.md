@@ -1,8 +1,10 @@
 ---
 id: datasource
-title: Datasource
+title: Talon.One datasource
 sidebar_label: Datasource
 ---
+
+# Datasource
 
 import CodePackage from '@site/src/components/CodePackage';
 

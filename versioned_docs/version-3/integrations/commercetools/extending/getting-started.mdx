@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Extending the integration
+title: Extending the Commercetools integration
 sidebar_label: Getting started
 ---
 
@@ -8,9 +8,11 @@ import CodePackage from '@site/src/components/CodePackage';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# Extending the integration
+
 <CodePackage name="@deity/falcon-commercetools-module" />
 
-### Introduction
+## Introduction
 
 The example code below shows how you can start extending our Commercetools integration. It shows how you can create custom resolvers, add custom endpoints and creating a custom GQL resolver map.
 
@@ -89,7 +91,7 @@ module.exports = { CommerceToolsModule };
   </TabItem>
 </Tabs>
 
-### Accessing the SDK
+## Accessing the SDK
 
 If you are extending an existing class, like the `CommercetoolsDataSource` in the example above, you will have access to [`ctpClient`](./ctp-client) and [`ctpSession`](./ctp-session) right away. These are used for managing and interacting with the SDK.
 

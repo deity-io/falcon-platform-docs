@@ -1,8 +1,10 @@
 ---
 id: module
-title: Module
+title: Talon.One module
 sidebar_label: Module
 ---
+
+# Module
 
 import CodePackage from '@site/src/components/CodePackage';
 
