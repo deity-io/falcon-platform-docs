@@ -1,8 +1,10 @@
 ---
 id: payment-list
-title: Payment method list
+title: Payment method list in Deity Payments
 sidebar_label: Payment method list
 ---
+
+# Payment method list
 
 Getting a list of payment methods is a case of using a simple GraphQL query.
 

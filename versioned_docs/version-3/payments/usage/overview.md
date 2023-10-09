@@ -5,6 +5,7 @@ sidebar_label: Using Payments
 description: How to use Deity Payments.
 ---
 
+# Using Deity Payments
 
 Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built Deity Payments integrations. 
 

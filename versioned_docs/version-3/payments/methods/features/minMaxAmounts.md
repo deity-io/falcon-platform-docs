@@ -1,8 +1,10 @@
 ---
 id: min-max-amounts
-title: Min / max amounts
+title: Min / max amounts in Deity Payments
 sidebar_label: Min / max amounts
 ---
+
+# Min / max amounts
 
 ## Overview
 

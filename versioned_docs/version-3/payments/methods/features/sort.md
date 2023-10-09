@@ -1,8 +1,10 @@
 ---
 id: sort
-title: Sort order
+title: Sort order in Deity Payments
 sidebar_label: Sort order
 ---
+
+# Sort order
 
 ## Overview
 

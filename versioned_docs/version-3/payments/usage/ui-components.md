@@ -1,8 +1,10 @@
 ---
 id: ui-components
-title: UI components
+title: UI components in Deity Payments
 sidebar_label: UI components
 ---
+
+# UI components
 
 We offer UI components for all supported payment methods and highly recommend you use them.
 

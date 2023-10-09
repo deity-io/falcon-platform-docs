@@ -348,7 +348,7 @@
       "label": "Release changelog",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/platform/releases", "description": "Deity Platform changelog"},
+      "link": {"type": "generated-index", "slug": "/platform/releases", "title": "Deity Platform release changelog", "description": "Deity Platform changelog"},
       "items": [
         {
           "type": "doc",

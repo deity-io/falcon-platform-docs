@@ -1,8 +1,10 @@
 ---
 id: currencies
-title: Currencies
+title: Currencies in Deity Payments
 sidebar_label: Currencies
 ---
+
+# Currencies
 
 ## Overview
 

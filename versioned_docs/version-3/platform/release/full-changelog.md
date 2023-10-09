@@ -1,9 +1,11 @@
 ---
 id: full-changelog
-title: Falcon Changelog
+title: Platform release changelog
 sidebar_label: Version 2 changelog
 description: Falcon platform all versions and their release notes
 ---
+
+# Release changelog
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 

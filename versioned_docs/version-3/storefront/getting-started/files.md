@@ -1,8 +1,10 @@
 ---
 id: files
-title: File structure
+title: Storefront file structure
 sidebar_label: File structure
 ---
+
+# File structure
 
 ## Key files and folders
 

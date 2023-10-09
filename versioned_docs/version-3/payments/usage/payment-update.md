@@ -1,8 +1,10 @@
 ---
 id: payment-update
-title: Payment updates
+title: Payment updates in Deity Payments
 sidebar_label: Payment updates
 ---
+
+# Payment updates
 
 Our payment service subscribes to payment updates where possible. Most payment providers have webhooks when payments are updated, this is often in the form of a status update (e.g. pending -> complete) or a refund.
 

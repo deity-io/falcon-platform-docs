@@ -1,8 +1,10 @@
 ---
 id: locations
-title: Localization
+title: Localization in Deity Payments
 sidebar_label: Localization
 ---
+
+# Localization
 
 ## Overview
 
