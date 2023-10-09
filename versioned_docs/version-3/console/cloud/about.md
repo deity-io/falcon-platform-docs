@@ -1,7 +1,7 @@
 ---
 id: about
-title: What is Deity Cloud?
-sidebar_label: What is Deity Cloud?
+title: About Deity Cloud
+sidebar_label: About Deity Cloud
 ---
 
 # What is Deity Cloud?
