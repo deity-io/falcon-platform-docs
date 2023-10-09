@@ -6,9 +6,9 @@ description: How to use Deity Payments.
 ---
 
 
-Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built DPSG integrations. 
+Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built Deity Payments integrations. 
 
-This section explains how to add your own. If you're new to DPSG, please read our [Key concepts guide](/docs/payments/key-concepts).
+This section explains how to add your own. If you're new to Deity Payments, please read our [Key concepts guide](/docs/payments/key-concepts).
 
 
 

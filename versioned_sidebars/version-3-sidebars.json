@@ -624,7 +624,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/modules", "description": "Deity Composer modules"},
+      "link": {"type": "generated-index", "slug": "/composer/modules", "title":"Modules in Composer", "description": "Deity Composer modules"},
       "collapsed": true,
       "label": "Modules",
       "items": [
