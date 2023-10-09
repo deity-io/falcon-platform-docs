@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Deity Commerce Composer Docs',
+  title: 'Deity Platform Docs',
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
   baseUrl: '/docs',
@@ -23,7 +23,7 @@ module.exports = {
     },
     navbar: {
       logo: {
-        alt: 'Deity Commerce Platform',
+        alt: 'Deity Composable Commerce Platform',
         src: 'img/deity-logo-docs.svg',
         srcDark: 'img/deity-logo-docs-dark.svg'
       },
