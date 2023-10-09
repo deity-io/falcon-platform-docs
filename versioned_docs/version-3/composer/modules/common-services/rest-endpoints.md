@@ -1,6 +1,7 @@
 ---
 id: rest-endpoints
 title: REST endpoints in Falcon Server
+description: REST endpoints in Falcon Server
 sidebar_label: REST endpoints
 enterprise_only: true
 ---
