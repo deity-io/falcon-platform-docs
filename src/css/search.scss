@@ -73,12 +73,14 @@
 .DocSearch {  
   --docsearch-text-color: var(--ifm-p-color);
   --docsearch-muted-color: var(--ifm-menu-color-adisabled);
-  --docsearch-searchbox-focus-background: var(--ifm-background-color); 
+  --docsearch-searchbox-focus-background: var(--ifm-background-primary); 
   --docsearch-modal-background: var(--ifm-background-secondary); 
+
   .DocSearch-Modal {
     
     --docsearch-modal-shadow: box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(13, 54, 60, 0.05), 0px 16px 32px rgba(30, 96, 111, 0.1);
-
+    --docsearch-searchbox-focus-background: var(--ifm-background-color); 
+    
     @include large {
       border-radius: 12px;
     }
@@ -195,6 +197,8 @@
   
   .DocSearch {
 
+    --docsearch-searchbox-focus-background: var(--ifm-background-color); 
+  
     .DocSearch-Logo svg {
     filter:  invert(1) grayscale(1);   
     }
