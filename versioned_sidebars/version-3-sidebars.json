@@ -1360,7 +1360,7 @@
       "items": [
         {
           "type": "category",
-          "label": "TalonOne",
+          "label": "Talon.One",
           "link": {"type": "doc", "id": "version-3/integrations/talonone"},
           "collapsible": true,
           "collapsed": true,

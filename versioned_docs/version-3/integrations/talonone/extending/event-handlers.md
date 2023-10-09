@@ -53,7 +53,7 @@ export class MyCustomBeforeCartMutationEventHandler extends EventHandler<BeforeG
 Inside this handler's `execute` method we can perform some (asynchronous) action, after which the query/mutation resolver will continue.
 
 :::note Bind EventHandlers
-When adding event handlers we need to bind those for Falcon Platform to be able to find them. For more info on rebinding please check our [Binding services docs](../../../server-v3/modules/module-api)
+When adding event handlers we need to bind those for Falcon Platform to be able to find them. For more info on rebinding please check our [Binding services docs](/docs/composer/modules/module-api)
 :::
 
 ## Default event handlers
