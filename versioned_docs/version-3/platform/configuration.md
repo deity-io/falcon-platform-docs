@@ -1,6 +1,7 @@
 ---
 id: configuration
-title: Configuration
+title: Platform configuration
+description: A step by step guide on how to configure the Deity Platform.
 sidebar_label: Configuration
 ---
 

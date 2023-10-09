@@ -1,6 +1,7 @@
 ---
 id: analytics
-title: Setting up Google Analytics / Tag Manager
+title: Setting up Google Analytics & GTM
+description: Deity Platform Google Analytics and Google Tag Manager integration tutorial.
 sidebar_label: Setting up Google Analytics
 ---
 

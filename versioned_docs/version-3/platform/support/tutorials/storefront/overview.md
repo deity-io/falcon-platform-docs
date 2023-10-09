@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Storefront Tutorials
-description: Deity Platform Cookbook, examples of every day tasks you might need to do when building your app
+description: Deity Platform Cookbook, examples of every day tasks you might need to do when building your app.
 sidebar_label: Tutorials
 ---
 
