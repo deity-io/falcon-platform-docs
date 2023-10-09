@@ -1,12 +1,12 @@
 ---
 id: upgrading
-title: Upgrading
+title: Upgrading npm packages
 sidebar_label: Upgrading
 ---
 
 ## Overview
 
-Our packages are all published to our private NPM account, along side these packages you'll also have an app. `client` for most customers, `client` & `server` for enterprise customers. Your app will need upgrading manually according to the changes you want to include. 
+Our packages are all published to our private npm account, along side these packages you'll also have an app. `client` for most customers, `client` & `server` for enterprise customers. Your app will need upgrading manually according to the changes you want to include. 
 
 
 ## Package updates

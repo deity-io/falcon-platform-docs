@@ -887,7 +887,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/resources", "description": "Deity Storefront resources"},
+      "link": {"type": "generated-index", "slug": "/storefront/resources", "title": "Deity Storefront resources", "description": "Deity Storefront resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -1099,11 +1099,12 @@
       "type": "category",
       "label": "Upgrading",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/upgrading", "description": "Deity Payments upgrading"},
+      "link": {"type": "doc", "id": "version-3/payments/upgrading/overview"},
       "collapsed": true,
       "items": [
         {
           "type": "doc",
+          "label": "Overview",
           "id": "version-3/payments/upgrading/overview"
         }
       ]
@@ -1117,7 +1118,7 @@
       "type": "category",
       "label": "Releases",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/releases", "description": "Deity Payments releases"},      
+      "link": {"type": "generated-index", "slug": "/payments/releases", "title":"Deity Payments releases & changelog", "description": "Deity Payments releases"},      
       "collapsed": true,
       "items": [
         {

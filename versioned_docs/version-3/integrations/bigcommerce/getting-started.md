@@ -144,9 +144,9 @@ You repository should have the `client` folder in its `root` directory.
 If you have an Enterprise account your **Falcon Server** instance should also be in the same code repository. with `client` and `server` directories in the root.
 :::
 
-### i. Accessing our NPM packages
+### i. Accessing our npm packages
 
-To access our private packages you'll need to use your **NPM Token** and **NPM Username**, this can be found from the `Falcon Client` tab.
+To access our private packages you'll need to use your **npm Token** and **npm Username**, this can be found from the `Falcon Client` tab.
 
 You can log into [deity.npm.io](https://npm.deity.io/) to view these pacakges.
 

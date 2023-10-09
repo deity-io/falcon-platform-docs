@@ -1,8 +1,9 @@
 ---
 id: overview
-title: Upgrading to Payments
-sidebar_label: Overview
+title: Upgrading to Deity Payments
 ---
+
+# Upgrading to Deity Payments
 
 :::note Requires Deity Platform v3.0.0 or higher
 If you want to use Deity Payments in your Deity app, make sure to use Deity Platform version >= 3.0.0.
@@ -12,7 +13,7 @@ If you have existing project based on Falcon Platform v2.x please [contact us fo
 
 ## Deity Payments upgrade guide
 
-Once your app is running v3 the upgrade to Deity Payments is simple.
+Once your Deity app is running v3 the upgrade to Deity Payments is simple.
 
 ### Client updates
 

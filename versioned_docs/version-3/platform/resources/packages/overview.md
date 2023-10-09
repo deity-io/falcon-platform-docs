@@ -1,10 +1,11 @@
 ---
 id: overview
-title: Packages
+title: Npm packages
+description: Deity Platform ships with various '@deity' packages.
 sidebar_label: Packages
 ---
 
-Falcon Platform Ships with various `@deity` packages.
+Deity Platform ships with various `@deity` packages.
 
 - [create-falcon-app](create-falcon-app)
 - [falcon-blog-data](falcon-blog-data)
