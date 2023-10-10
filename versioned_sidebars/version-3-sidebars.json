@@ -117,12 +117,6 @@
         },
         {
           "type": "link",
-          "label": "Launch Console",
-          "href": "https://console.deity.cloud",
-          "className": "gray-link"
-        },
-        {
-          "type": "link",
           "label": "Deity.com",
           "href": "https://www.deity.com/",
           "className": "gray-link"
