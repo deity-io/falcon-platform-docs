@@ -92,10 +92,6 @@ module.exports = {
           label: 'Changelog',
           to: '/platform/changelog',
           activeBasePath: '/platform/changelog'
-        },
-        {
-          label: 'Launch Console',
-          href: 'https://console.deity.cloud'
         }
       ]
     },

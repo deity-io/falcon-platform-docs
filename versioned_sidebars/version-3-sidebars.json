@@ -155,9 +155,8 @@
       "label": "Getting Started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/platform/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -512,9 +511,8 @@
       "label": "Getting started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/composer/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -730,9 +728,8 @@
       "label": "Getting started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -943,9 +940,8 @@
       "label": "Getting started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/payments/getting-started/sign-up"
         },
         {
           "type": "doc",

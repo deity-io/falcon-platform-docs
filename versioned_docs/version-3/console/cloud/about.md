@@ -31,7 +31,7 @@ npm i -g dcloud
 
 ### Logging in
 
-The next step is to log into your Deity Cloud account. If you don't have an account yet, you can [sign up here →](https://console.deity.cloud/signup).
+The next step is to log into your Deity Cloud account. If you don't have an account yet, you can [request an account here →](https://deity.com/contact).
 
 From your terminal window run the login command.
 
