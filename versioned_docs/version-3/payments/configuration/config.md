@@ -29,7 +29,7 @@ To automatically create Deity Payments profiles for every cloud environment, you
 To create a profile manually, use the `dcloud payments:profile:create` command to launch the configuration wizard.
 Once configured, you can request information about a profile at any time, using the `dcloud payments:profile:info` command.
 
-## 3. Connect the Deity Payments profile to your Falcon app
+## 3. Connect the Deity Payments profile to your Deity app
 
 Run `dcloud payments:profile:apply`, this will set the authentication details for Deity Payments as environment variables for your Falcon app.
 
