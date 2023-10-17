@@ -34,7 +34,7 @@
             }
           .menu__list-item-collapsible--active .menu__link--active {
             color: var(--ifm-menu-color-active);
-          }  
+          }
         }
         .menu__link--active:not(.menu__link--sublist) {
           color: var(--ifm-menu-color-active);
@@ -49,8 +49,8 @@
    .menu__link--sublist-caret:after {
         background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
     }
-   
-   
+
+
     // the first title in the sidebar is bigger and sticky to the top
     .theme-doc-sidebar-item-category-level-1.icon>.menu__list-item-collapsible {
       .menu__link {
@@ -122,7 +122,7 @@
     background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
   }
 
-  
+
 
   &__list-item-collapsible .menu__link {
     color: var(--ifm-color-primary);
@@ -183,9 +183,9 @@
 
   .menu {
     background: inherit;
-   
 
-    .gray-link { 
+
+    .gray-link {
       a, a svg {
       color: var(--ifm-p-color);
       filter: brightness(1);
@@ -193,7 +193,7 @@
     }
     &__link {
 
-      &:not(.menu__link--sublist),  {
+      &:not(.menu__link--sublist) {
         color: var(--ifm-menu-color);
       }
       &[href]:hover {
@@ -225,6 +225,6 @@
         color: var(--ifm-color-primary);
       }
     }
-   
+
   }
 }

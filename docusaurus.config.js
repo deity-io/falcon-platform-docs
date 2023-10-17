@@ -1,4 +1,5 @@
 const path = require('path');
+const prismThemes = require('prism-react-renderer');
 
 module.exports = {
   title: 'Deity Platform Docs',
@@ -18,8 +19,8 @@ module.exports = {
   ],
   themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/nightOwl')
+      theme: prismThemes.themes.github,
+      darkTheme: prismThemes.themes.nightOwl
     },
     navbar: {
       logo: {
@@ -45,7 +46,6 @@ module.exports = {
               label: 'Storefront',
               icon: 'storefront',
               to: '/storefront'
-              
             },
             {
               label: 'Payments',
