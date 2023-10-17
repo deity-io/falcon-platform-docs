@@ -272,7 +272,7 @@ module.exports = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: [],
+          ignorePatterns: ['includes/'],
           filename: 'sitemap.xml',
         },
       }
