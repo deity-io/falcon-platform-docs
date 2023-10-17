@@ -1,9 +1,11 @@
 ---
 id: technical
-title: Technical Information
+title: Technical information about Storefront
 description: Deity Storefront is using the following core technologies.
 sidebar_label: Technical Information
 ---
+
+# Technical information
 
 Falcon Client is the frontend for your Falcon Platform App.
 

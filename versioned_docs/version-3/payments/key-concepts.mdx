@@ -1,6 +1,7 @@
 ---
 id: key-concepts
-title: Key concepts
+title: Deity Payments key concepts
+description: Integrate with multiple payment service providers to use any payment method. Customize your customers’ payment flows to match their location and preferences.
 sidebar_label: Key concepts
 hide_title: true
 ---
@@ -13,8 +14,8 @@ import Button from '@site/src/components/Button';
 
 # Key concepts of Deity Payments
 <p className="desc pb20">
-DPSG (Deity Payment Service Gateway) is a managed and hosted service that handles interactions between Falcon Platform and payment providers.
-Next to handling the full payment flow, DPSG is also a way to manage the configuration of your payment providers and methods used by your Falcon App.</p>
+Deity Payments (DPSG) is a managed and hosted service that handles interactions between Falcon Platform and payment providers.
+Next to handling the full payment flow, Deity Payments is also a way to manage the configuration of your payment providers and methods used by your Falcon App.</p>
 
 ## The benefits of using Deity Payments
 
@@ -41,6 +42,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
 ---
 
 ## How it works
+
 <div className="pb20"></div>
 <div className="flex vertical-center mb80 brighten">
   <div className="text-center ">
@@ -52,13 +54,12 @@ Integrate with multiple payment service providers to use any payment method. Cus
     Deity Payments is available to all Deity platform users. It acts as a middleman between payment providers and Deity Composer.
     </p>
     <p>
-  It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
-  </p>
-  <p className="pb20">
-  Alongside this it always exposes a message queue that Deity Composer subscribes to. This publishes events such as payment updates after refunds.
-  </p>
+    It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
+    </p>
+    <p>
+    Alongside this it always exposes a message queue that Deity Composer subscribes to. This publishes events such as payment updates after refunds.
+    </p>
   </div>
-  
 </div>
 
 

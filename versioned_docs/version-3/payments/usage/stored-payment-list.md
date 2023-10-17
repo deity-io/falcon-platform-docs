@@ -1,8 +1,10 @@
 ---
 id: stored-payment-list
-title: Stored pyment methods
+title: Stored payment methods in Deity Payments
 sidebar_label: Stored payment methods
 ---
+
+# Stored payment methods
 
 Getting a list of payment methods is a case of using a simple GraphQL query.
 

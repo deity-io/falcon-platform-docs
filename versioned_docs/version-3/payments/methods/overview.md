@@ -1,8 +1,10 @@
 ---
 id: overview
-title: Payment methods
+title: Payment methods in Deity Payments
 sidebar_label: Payment methods
 ---
+
+# Payment methods
 
 Every payment provider has a specific set of payment methods that it supports. The available methods are listed in the respective `Payment Providers` documentation page. Some payment methods are available for more than one payment provider, which allows you to choose the provider that better fits your needs.
 

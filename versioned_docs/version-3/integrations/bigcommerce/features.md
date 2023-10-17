@@ -1,9 +1,11 @@
 ---
 id: features
-title: Features
+title: BigCommerce features
 sidebar_label: Features
 description: Falcon Platform has a large percentage coverage of BigCommerce features.
 ---
+
+# Features
 
 ## Supported features
 

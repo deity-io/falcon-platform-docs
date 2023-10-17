@@ -1,6 +1,6 @@
 ---
 id: client
-title: Storefront
+title: Storefront video guides
 sidebar_label: Storefront
 ---
 

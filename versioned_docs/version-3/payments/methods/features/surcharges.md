@@ -1,8 +1,10 @@
 ---
 id: surcharges
-title: Surcharges
+title: Surcharges in Deity Payments
 sidebar_label: Surcharges
 ---
+
+# Surcharges
 
 ## Overview
 

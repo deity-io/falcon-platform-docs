@@ -1,8 +1,10 @@
 ---
 id: getting-started
-title: Getting started
+title: Getting started with WordPress
 sidebar_label: Getting started
 ---
+
+# Getting started
 
 ## 1. Prerequisites
 

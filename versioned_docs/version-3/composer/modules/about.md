@@ -1,12 +1,16 @@
 ---
 id: about
-title: Modules in Falcon Server
+title: Modules in Deity Composer
+description: Modules in Composer.
 sidebar_label: Introduction
 enterprise_only: true
 ---
+
+# Modules
+
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+
 
 ## List of available modules
 

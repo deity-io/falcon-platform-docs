@@ -1,8 +1,10 @@
 ---
 id: data-mappers
-title: Data mappers
+title: Talon.One data mappers
 sidebar_label: Data mappers
 ---
+
+# Data mappers
 
 import CodePackage from '@site/src/components/CodePackage';
 
@@ -38,7 +40,7 @@ export class ReferralMapper extends FalconReferralMapper {
 ```
 
 :::note Rebind ReferralMapper
-When extending or overwriting existing modules we need to rebind the new instance, otherwise Falcon Platform will continue to use the shipped `ReferralMapper` instead of our custom implementation. For more info on rebinding please check our [Binding services docs](../../../server-v3/modules/module-api)
+When extending or overwriting existing modules we need to rebind the new instance, otherwise Falcon Platform will continue to use the shipped `ReferralMapper` instead of our custom implementation. For more info on rebinding please check our [Binding services docs](/docs/composer/modules/module-api)
 :::
 
 ### Available Mappers

@@ -1,8 +1,10 @@
 ---
 id: client
-title: Client
+title: Extending the Talon.One client
 sidebar_label: Client
 ---
+
+# Client
 
 import CodePackage from '@site/src/components/CodePackage';
 

@@ -1,6 +1,7 @@
 ---
 id: humm
-title: Humm
+title: Humm integration
+description: Deity x Humm
 sidebar_label: Humm
 hide_title: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Caching
+title: Caching in Composer
 description: Learn how to work with cache in several ways.
 ---
 

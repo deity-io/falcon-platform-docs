@@ -1,6 +1,6 @@
 ---
 id: cloud
-title: Deity Cloud
+title: Deity Cloud video guides
 sidebar_label: Deity Cloud
 ---
 

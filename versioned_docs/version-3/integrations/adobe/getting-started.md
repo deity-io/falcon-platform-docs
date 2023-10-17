@@ -1,8 +1,10 @@
 ---
 id: getting-started
-title: Getting started
+title: Getting started with Adobe Commerce CE
 sidebar_label: Getting started
 ---
+
+# Getting started
 
 :::note
 Falcon magento module should be installed over preinstalled magento instance. In case you don't have magento installed yet
@@ -27,7 +29,7 @@ Afterwards update you `composer.json` file with following data
 ]
 ```
 
-## 2. Install falcon magento module
+## 2. Install Falcon Magento module
 Run the following composer command
 ```bash
   composer require deity/falcon-magento ^5.4.0

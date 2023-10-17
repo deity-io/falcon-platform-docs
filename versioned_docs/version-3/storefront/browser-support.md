@@ -1,9 +1,11 @@
 ---
 id: browser-support
-title: Browser support
+title: Storefront browser support
 description: We actively support and test the following browsers.
 sidebar_label: Browser support
 ---
+
+# Browser support
 
 <img src="/docs/img/browsers.svg" alt="Browser Logos" width="400" style={{ marginBottom: 20 }} />
 

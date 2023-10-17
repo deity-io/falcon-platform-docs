@@ -67,9 +67,9 @@
           }
         },
         {
-          "type": "doc",
+          "type": "link",
           "label": "Orchestrator",
-          "id": "version-3/orchestrator",
+          "href": "#",
           "customProps": {
             "icon": "orchestrator",
             "disabled": true,
@@ -117,12 +117,6 @@
         },
         {
           "type": "link",
-          "label": "Launch Console",
-          "href": "https://console.deity.cloud",
-          "className": "gray-link"
-        },
-        {
-          "type": "link",
           "label": "Deity.com",
           "href": "https://www.deity.com/",
           "className": "gray-link"
@@ -155,9 +149,8 @@
       "label": "Getting Started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/platform/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -200,7 +193,7 @@
       "label": "Resources",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/platform/resources"},
+      "link": {"type": "generated-index", "slug": "/platform/resources", "title":"Deity Platform resources", "description": "Deity Platform resources"},
       "items": [
         {
           "type": "doc",
@@ -345,136 +338,144 @@
     },
     {
       "type": "category",
-      "label": "Releases",
+      "label": "Release changelog",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/platform/releases"},
+      "link": {"type": "generated-index", "slug": "/platform/releases", "title": "Deity Platform release changelog", "description": "Deity Platform changelog"},
       "items": [
         {
           "type": "doc",
-          "label": "Release Notes",
-          "id": "version-3/platform/release/full-changelog",
-          "className": "gray-link"
+          "label": "V3.x.x",
+          "id": "version-3/platform/changelog"
         },
         {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-18"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-17"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-16"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-15"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-14"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-13"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-12"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-11"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-10"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-9"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-8"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-7"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-6"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-5"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-4"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-3"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-1"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-7-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-5"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-4"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-6-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-5-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-8"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-6"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-2"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-4-0"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-3-1"
-        },
-        {
-          "type": "doc",
-          "id": "version-3/platform/release/2-3-0"
+          "type": "category",
+          "label": "V2.x.x",
+          "link": {"type":"doc", "id": "version-3/platform/release/full-changelog"},
+          "collapsible": true,
+          "collapsed": true,       
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-18"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-17"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-16"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-15"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-14"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-13"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-12"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-11"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-10"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-9"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-8"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-7"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-6"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-5"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-4"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-3"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-1"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-7-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-5"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-4"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-6-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-5-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-8"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-6"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-2"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-4-0"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-3-1"
+            },
+            {
+              "type": "doc",
+              "id": "version-3/platform/release/2-3-0"
+            }
+          ]
         }
       ]
     }
@@ -504,9 +505,8 @@
       "label": "Getting started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/composer/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -529,7 +529,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/core"},
+      "link": {"type": "generated-index", "slug": "/composer/core", "title": "Composer core concepts", "description": "Deity Composer core concepts"},
       "collapsed": true,
       "label": "Core",
       "items": [
@@ -562,7 +562,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "composer/extensions"},
+      "link": {"type": "generated-index", "slug": "composer/extensions", "description": "Deity Composer extensions"},
       "collapsed": true,
       "label": "Extensions",
       "items": [
@@ -595,7 +595,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/common-services"},
+      "link": {"type": "generated-index", "slug": "/composer/common-services", "description": "Deity Composer common services"},
       "collapsed": true,
       "label": "Common services",
       "items": [
@@ -616,7 +616,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/modules"},
+      "link": {"type": "generated-index", "slug": "/composer/modules", "title":"Modules in Composer", "description": "Deity Composer modules"},
       "collapsed": true,
       "label": "Modules",
       "items": [
@@ -679,7 +679,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/resources"},
+      "link": {"type": "generated-index", "slug": "/composer/resources", "title": "Deity Composer resources", "description": "Deity Composer resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -722,9 +722,8 @@
       "label": "Getting started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/storefront/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -748,7 +747,7 @@
       "type": "category",
       "label": "Building an app",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/building-an-app"},
+      "link": {"type": "generated-index", "slug": "/storefront/building-an-app", "description": "Deity Storefront apps"},
       "collapsed": true,
       "items": [
         {
@@ -773,7 +772,7 @@
       "type": "category",
       "label": "Creating themes",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/theming"},
+      "link": {"type": "generated-index", "slug": "/storefront/theming", "description": "Deity Storefront theming"},
       "collapsed": true,
       "items": [
         {
@@ -806,7 +805,7 @@
       "type": "category",
       "label": "Building experiences",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/building-experiences"},
+      "link": {"type": "generated-index", "slug": "/storefront/building-experiences", "description": "Deity Storefront building experiences"},
       "collapsed": true,
       "items": [
         {
@@ -839,7 +838,7 @@
       "type": "category",
       "label": "Advanced features",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/advanced"},
+      "link": {"type": "generated-index", "slug": "/storefront/advanced", "description": "Deity Storefront advanced features"},
       "collapsed": true,
       "items": [
         {
@@ -879,7 +878,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/resources"},
+      "link": {"type": "generated-index", "slug": "/storefront/resources", "title": "Deity Storefront resources", "description": "Deity Storefront resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -935,9 +934,8 @@
       "label": "Getting started",
       "items": [
         {
-          "type": "link",
-          "label": "Sign up",
-          "href": "https://console.deity.cloud/signup"
+          "type": "doc",
+          "id": "version-3/payments/getting-started/sign-up"
         },
         {
           "type": "doc",
@@ -961,7 +959,7 @@
       "type": "category",
       "label": "Configuration",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/getting-started/configuration"},
+      "link": {"type": "generated-index", "slug": "/payments/configuration", "description": "Deity Payments configuration"},
       "collapsed": true,
       "items": [
         {
@@ -986,7 +984,7 @@
       "type": "category",
       "label": "Payment providers",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/providers"},
+      "link": {"type": "generated-index", "slug": "/payments/providers", "description": "Deity Payments providers"},
       "collapsed": true,
       "items": [
         {
@@ -1021,7 +1019,7 @@
       "type": "category",
       "label": "Payment features",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/methods"},
+      "link": {"type": "generated-index", "slug": "/payments/methods", "description": "Deity Payments methods"},
       "collapsed": true,
       "items": [
         {
@@ -1031,7 +1029,7 @@
         {
            "type": "category",
            "label": "Feature configuration",
-           "link": {"type": "generated-index", "slug": "/payments/methods/features"},
+           "link": {"type": "generated-index", "slug": "/payments/methods/features", "description": "Deity Payments features"},
            "collapsible": true,
            "items": [
             {
@@ -1062,7 +1060,7 @@
       "type": "category",
       "label": "Usage",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/usage"},
+      "link": {"type": "generated-index", "slug": "/payments/usage", "title":"Using Deity Payments", "description": "Using Deity Payments"},
       "collapsed": true,
       "items": [
         {
@@ -1091,11 +1089,12 @@
       "type": "category",
       "label": "Upgrading",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/upgrading"},
+      "link": {"type": "doc", "id": "version-3/payments/upgrading/overview"},
       "collapsed": true,
       "items": [
         {
           "type": "doc",
+          "label": "Overview",
           "id": "version-3/payments/upgrading/overview"
         }
       ]
@@ -1109,7 +1108,7 @@
       "type": "category",
       "label": "Releases",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/releases"},      
+      "link": {"type": "generated-index", "slug": "/payments/releases", "title":"Deity Payments releases & changelog", "description": "Deity Payments releases"},      
       "collapsed": true,
       "items": [
         {
@@ -1152,7 +1151,7 @@
       "type": "category",
       "label": "Ecommerce",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/ecommerce"},
+      "link": {"type": "generated-index", "slug": "/integrations/ecommerce", "title": "Ecommerce integrations", "description": "Deity integrations with ecommerce platforms"},
       "items": [
         {
           "type": "category",
@@ -1191,7 +1190,7 @@
               "label": "Configuration",
               "collapsible": true,
               "collapsed": true,
-              "link": {"type": "generated-index", "slug": "/integrations/commercetools/configuration"},
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/configuration", "description": "Deity x Commercetools configuration"},
               "items": [
                 {
                   "type": "doc",
@@ -1208,7 +1207,7 @@
               "label": "Extending",
               "collapsible": true,
               "collapsed": true,
-              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending"},
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending", "title":"Extending the Commercetools integration", "description": "Deity x Commercetools extensions"},
               "items": [
                 {
                   "type": "doc",
@@ -1272,7 +1271,7 @@
       "type": "category",
       "label": "Search",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/search"},      
+      "link": {"type": "generated-index", "slug": "/integrations/search", "title": "Search engine integrations", "description": "Deity integrations with search engines"},      
       "collapsed": true,
       "items": [
         {
@@ -1311,7 +1310,7 @@
       "type": "category",
       "label": "Payments",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/payments"},        
+      "link": {"type": "generated-index", "slug": "/integrations/payments",  "title": "Payment service providers integrations", "description": "Deity integrations with payment service providers"},        
       "collapsed": true,
       "items": [
         {
@@ -1344,14 +1343,14 @@
     },
     {
       "type": "category",
-      "label": "Promotions",
+      "label": "Promotions & loyalty",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/promotions"},         
+      "link": {"type": "generated-index", "slug": "/integrations/promotions", "title": "Promotion & loyalty integrations", "description": "Deity integrations with promotion engines"},         
       "collapsed": true,
       "items": [
         {
           "type": "category",
-          "label": "TalonOne",
+          "label": "Talon.One",
           "link": {"type": "doc", "id": "version-3/integrations/talonone"},
           "collapsible": true,
           "collapsed": true,
@@ -1363,7 +1362,7 @@
               "type": "category",
               "label": "Extending",
               "collapsible": true,
-              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending"},
+              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending", "title":"Extending the Talon.One integration", "description": "Deity x Talon.One extensions"},
               "items": [
                 {"type":"doc","id":"version-3/integrations/talonone/extending/module"},
                 {"type":"doc","id":"version-3/integrations/talonone/extending/client"},
@@ -1381,7 +1380,7 @@
       "type": "category",
       "label": "CMS",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/cms"},       
+      "link": {"type": "generated-index", "slug": "/integrations/cms", "title": "CMS integrations", "description": "Deity integrations with content management systems."},       
       "collapsed": true,
       "items": [
         {
@@ -1438,7 +1437,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/resources"},         
+      "link": {"type": "generated-index", "slug": "/integrations/resources", "title":"Deity integrations resources", "description": "Deity integrations resources"},         
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -1798,12 +1797,6 @@
            {
             "type": "doc",
             "id": "version-3/platform/support/contact",
-            "className": "gray-link"
-          },
-          {
-            "type": "link",
-            "label": "Launch Console",
-            "href": "https://console.deity.cloud",
             "className": "gray-link"
           },
           {

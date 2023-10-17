@@ -1,6 +1,7 @@
 ---
 id: blog-extension
-title: Blog extension
+title: Blog extension in Deity Composer
+description: Blog extension
 sidebar_label: Blog extension
 enterprise_only: true
 ---
@@ -13,7 +14,9 @@ import LogoImg from '/img/logo.svg';
 
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+# Blog extension
+
+
 
 <CodePackage name="@deity/falcon-blog-extension" /> 
 

@@ -1,8 +1,10 @@
 ---
 id: configuration
-title: Configuration
+title: Talon.One configuration
 sidebar_label: Configuration
 ---
+
+# Configuration
 
 import CodePackage from '@site/src/components/CodePackage';
 

@@ -77,10 +77,20 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    &.subheader {
+      .icon {display:none}
+      .badge {display:none}
+      font-size: 17px;
+      color: var(--ifm-heading-color);
+      font-weight: 500;
+    }
   }
-
+  
   .content {
     display: flex;
+    span {
+      color: var(--ifm-menu-color-adisabled);
+    }
   }
 
   .description {
@@ -142,7 +152,10 @@
     border-color: #0091ff;
     color: #0091ff;
   }
-
+  &.integration {
+    border-color: #0E9888;
+    color: #0E9888;
+  }
   &.feature {
     border-color: var(--ifm-color-purple);
     color: var(--ifm-color-purple);

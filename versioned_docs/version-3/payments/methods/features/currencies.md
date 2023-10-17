@@ -1,8 +1,10 @@
 ---
 id: currencies
-title: Currencies
+title: Currencies in Deity Payments
 sidebar_label: Currencies
 ---
+
+# Currencies
 
 ## Overview
 
@@ -20,7 +22,7 @@ Currencies should be passed as an array to each payment method on your environme
 `*` represents all currencies. If no currency data is passed the method will be enabled for all currencies (`*`).
 
 :::note Not all methods showing
-We allow filtering of methods based on currencies. At the same time we also pass the currency code to each payment provider. Meaning that some methods, whilst enabled in DPSG, may not be available from the provider itself.
+We allow filtering of methods based on currencies. At the same time we also pass the currency code to each payment provider. Meaning that some methods, whilst enabled in Deity Payments, may not be available from the provider itself.
 :::
 
 ```json

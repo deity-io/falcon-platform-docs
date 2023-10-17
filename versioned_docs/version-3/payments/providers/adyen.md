@@ -1,6 +1,7 @@
 ---
 id: adyen
-title: Adyen
+title: Adyen integration
+description: Deity x Adyen
 sidebar_label: Adyen
 hide_title: true
 ---
@@ -70,7 +71,7 @@ You can get this from your Adyen account under `Developer -> API Credentials` th
 
 ### `hmacKey`
 
-This is used for processing the webhooks from Adyen. DPSG uses this when payments are updated.
+This is used for processing the webhooks from Adyen. Deity Payments uses this when payments are updated.
 Read below how to obtain it.
 
 :::note Allowed Origins
@@ -90,11 +91,11 @@ From their you can set up a `Standard Notification` webhook with the following c
 
 **Security**
 
-In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on DPSG).
+In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on Deity Payments).
 
 **Additional Settings**
 
-- Make sure to select all "Additional Settings" (it will be helpful for future updates of DPSG)
+- Make sure to select all "Additional Settings" (it will be helpful for future updates of Deity Payments)
 - Later navigate to `Developers -> Additional data`, make sure to enable `Toggle all fields`.
 
 :::note Test your webhook

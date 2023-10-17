@@ -1,17 +1,15 @@
 ---
 id: inversion-of-control
 title: Inversion of control
+description: Inversion of control
 sidebar_label: Inversion of control
 enterprise_only: true
 ---
 
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
 
-_(todo: This page needs more general, high level information about Falcon Server)_
-
-## Falcon Server 3
+## How it works
 
 The focus for Falcon Server 3 is to provide much better internal structure which leads to much more possibilities when it comes to extending entire platform.
 

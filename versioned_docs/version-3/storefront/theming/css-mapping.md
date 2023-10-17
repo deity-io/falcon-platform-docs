@@ -1,9 +1,11 @@
 ---
 id: css-mapping
-title: CSS mapping
+title: Storefront CSS mapping
 description: To keep your code slim Deity Storefront maps certain component props to css properties.
 sidebar_label: CSS mapping
 ---
+
+# CSS mapping
 
 `@deity/falcon-ui` uses a mapping function to define 2 things:
 

@@ -1,9 +1,11 @@
 ---
 id: overview
-title: Theming overview
+title: Storefront theming
 description: Deity Storefront comes with a powerful `ThemeProvider` and a library of composable, themeable, design-system-driven UI components.
 sidebar_label: Overview
 ---
+
+# Theming
 
 :::note Falcon Client ships with `@deity/falcon-ui`.
 This contains a powerful `ThemeProvider` and a library of composable, themeable, design-system-driven UI components.

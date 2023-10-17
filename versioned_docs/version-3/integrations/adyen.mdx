@@ -1,6 +1,7 @@
 ---
 id: adyen
-title: Adyen
+title: Adyen integration
+description: Deity x Adyen
 sidebar_label: Adyen
 hide_title: true
 ---

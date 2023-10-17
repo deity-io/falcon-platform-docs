@@ -1,8 +1,10 @@
 ---
 id: coupons
-title: Coupons
+title: Talon.One coupons
 sidebar_label: Coupons
 ---
+
+# Coupons
 
 import CodePackage from '@site/src/components/CodePackage';
 

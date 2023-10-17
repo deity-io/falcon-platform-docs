@@ -1,5 +1,8 @@
 ---
 id: full-changelog
-title: Full Changelog
-sidebar_label: Full Changelog
+title: Full changelog
+description: Deity Payments changelog
+sidebar_label: Full changelog
 ---
+
+# Deity Payments changelog

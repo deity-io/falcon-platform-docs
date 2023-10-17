@@ -1,10 +1,11 @@
 ---
 id: state
-title: Local state management
+title: Local state management in Storefront
 description: Learn how to manage your local (client-side) state.
 sidebar_label: Local state management
 ---
 
+# Local state management 
 
 This page covers how to manage your local (client-side) state. If you're looking for information about querying or mutating data through a server, you can read more about that [here](/docs/storefront/data).
 

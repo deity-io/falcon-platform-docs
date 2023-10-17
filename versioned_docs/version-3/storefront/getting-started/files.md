@@ -1,8 +1,10 @@
 ---
 id: files
-title: File structure
+title: Storefront file structure
 sidebar_label: File structure
 ---
+
+# File structure
 
 ## Key files and folders
 
@@ -46,7 +48,7 @@ This directory contains your sites translations. The structure is `<language>/tr
 This is where everything starts. Other that exporting the app and client state nothing much happens here.
 
 ### moduleOverride.js
-From this file you can override components from within node packages. This is create if you want to change a component from `@deity/falcon-ui-kit` for example. [Find out more about overriding](./overrides).
+From this file you can override components from within node packages. This is create if you want to change a component from `@deity/falcon-ui-kit` for example. [Find out more about overriding](/docs/storefront/overrides).
 
 ### node_modules
 This is where npm packages are installed to.
@@ -79,7 +81,7 @@ This is the home to page & page specific components. You'll find most of the che
 This file exports SVG icons to be used throughout the site. 
 
 ### src/styling/theme.js
-This file contains your theme variables such as colors and spacing. [More information on theming](./theming/overview). 
+This file contains your theme variables such as colors and spacing. [More information on theming](/docs/storefront/theming/overview). 
 
 ### sw.js
 This is compiled into your sites service worker. You can add to this if you need custom service worker code.

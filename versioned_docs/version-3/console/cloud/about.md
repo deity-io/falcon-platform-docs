@@ -1,9 +1,10 @@
 ---
 id: about
-title: What is Deity Cloud?
-sidebar_label: What is Deity Cloud?
+title: About Deity Cloud
+sidebar_label: About Deity Cloud
 ---
 
+# What is Deity Cloud?
 
 <p className="desc">
 	Deity Cloud is an infrastructure that allows you to host your Deity Application. The platform will scale automatically based on your needs and traffic, meaning your site is always <strong><i>blazing fast</i></strong>. Depending on your plan you'll be able to have as many environments as you need making it easy to test new features before putting them live.
@@ -30,7 +31,7 @@ npm i -g dcloud
 
 ### Logging in
 
-The next step is to log into your Deity Cloud account. If you don't have an account yet, you can [sign up here →](https://console.deity.cloud/signup).
+The next step is to log into your Deity Cloud account. If you don't have an account yet, you can [request an account here →](https://deity.com/contact).
 
 From your terminal window run the login command.
 

@@ -1,9 +1,11 @@
 ---
 id: features
-title: Features
+title: Adobe Commecre CE features
 sidebar_label: Features
 description: Falcon Platform has a large percentage coverage of Adobe features.
 ---
+
+# Features
 
 ## Supported Features
 

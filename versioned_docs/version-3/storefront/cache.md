@@ -1,11 +1,11 @@
 ---
 id: caching
-title: Caching
+title: Storefront caching
 description: Learn about the various cache levels in the Deity Platform.
 sidebar_label: Caching
 ---
 
-## Overview
+# Caching
 
 Caching occurs in a few different forms with Falcon Platform. You have asset caches via the browser and a service worker, and data caches handled by Falcon Server (GraphQL).
 
@@ -43,4 +43,4 @@ import { ServiceWorkerRegistrar, ServiceWorker } from '@deity/falcon-service-wor
 
 ## Falcon Server
 
-Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/composer/caching) docs.
+Falcon Server also adds a layer of caching for all it's requests. Read our [Falcon Server caching](/docs/composer/core/caching) docs.

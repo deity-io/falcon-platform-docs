@@ -1,8 +1,10 @@
 ---
 id: configuration
-title: Configuration
+title: Storefront configuration
 sidebar_label: Configuration
 ---
+
+# Configuration
 
 Falcon Client configuration can be found in the `client/config` directory.
 

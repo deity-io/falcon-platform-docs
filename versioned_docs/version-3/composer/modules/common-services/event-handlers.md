@@ -1,12 +1,15 @@
 ---
 id: event-handlers
-title: Event handlers in Falcon Server
+title: Event handlers in Composer
 sidebar_label: Event handlers
 enterprise_only: true
 ---
+
+# Event handlers
+
 import NoticeV3 from "../../../includes/upgrade-to-v3.mdx"
 
-<NoticeV3 />
+
 
 Falcon Server uses asynchronous events to notify about internal processes. With event handlers you are able to "hook" into particular place in order to modify Falcon Server's behavior or modify particular thing.
 

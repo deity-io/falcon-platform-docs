@@ -7,8 +7,8 @@
     width: 240px;
     box-shadow: var(--ifm-global-shadow-tl);
     hr {
-      background-color: rgba(2, 44, 15, 0.08);
-      margin: 0.2rem 0;
+     
+      margin: 0.4rem 0;
     }
   }
 
@@ -127,7 +127,7 @@
  span[class^='disabled'], span[class^='soon'] {
     color: var(--ifm-menu-color-adisabled);
 
-    
+
   }
 
 }

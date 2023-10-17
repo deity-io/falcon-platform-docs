@@ -1,10 +1,8 @@
 #__docusaurus .DocSearch-Button {
   --docsearch-text-color: var(--ifm-p-color);
- 
+  --docsearch-searchbox-background: var(--ifm-background-secondary);
   --docsearch-key-gradient: none;
   --docsearch-key-shadow: none;
-  --docsearch-muted-color: rgba(1, 30, 17, 0.24);
-
   --docsearch-searchbox-shadow: none;
 
   &-Keys {
@@ -72,18 +70,24 @@
 .home-search-description {
   display:none;/*hide for now*/
 }
-.DocSearch {
-  .DocSearch-Modal {
-    --docsearch-modal-background: #fff;
-    --docsearch-modal-shadow: box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(13, 54, 60, 0.05), 0px 16px 32px rgba(30, 96, 111, 0.1);
+.DocSearch {  
+  --docsearch-text-color: var(--ifm-p-color);
+  --docsearch-muted-color: var(--ifm-menu-color-adisabled);
+  --docsearch-searchbox-focus-background: var(--ifm-background-primary); 
+  --docsearch-modal-background: var(--ifm-background-secondary); 
 
+  .DocSearch-Modal {
+    
+    --docsearch-modal-shadow: box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(13, 54, 60, 0.05), 0px 16px 32px rgba(30, 96, 111, 0.1);
+    --docsearch-searchbox-focus-background: var(--ifm-background-color); 
+    
     @include large {
       border-radius: 12px;
     }
 
     .DocSearch-SearchBar {
       padding: 0.5rem;
-      border-bottom: 1px solid rgba(2, 44, 15, 0.08);;
+      border-bottom: 1px solid var(--ifm-hr-background-color);
       margin-bottom: 0.5rem;
     }
   }
@@ -128,7 +132,7 @@
   }
 
   &-Form {
-    --docsearch-searchbox-focus-background: rgba(0, 56, 37, 0.05);
+
     --docsearch-searchbox-shadow: none;
     --docsearch-searchbox-height: 40px;
     padding: 0 15px;
@@ -153,7 +157,7 @@
     --docsearch-footer-shadow: none;
     --docsearch-footer-height: 36px;
     padding: 8px 12px;
-    border-top: 1px solid #f8faf9;
+    border-top: 1px solid var(--ifm-hr-background-color);
 
     .DocSearch-Commands-Key {
       --docsearch-key-gradient: none;
@@ -192,6 +196,12 @@
   }  
   
   .DocSearch {
+
+    --docsearch-searchbox-focus-background: var(--ifm-background-color); 
+  
+    .DocSearch-Logo svg {
+    filter:  invert(1) grayscale(1);   
+    }
     &-Hit a {
       background: none;
     }
@@ -201,13 +211,8 @@
     }
 
     &-Footer {
-      background: #fff;
+      background: var(--ifm-background-secondary);
     }
   }
 
-
-  .navbar .DocSearch-Button .DocSearch-Button-Placeholder,
-  .DocSearch-Button-Placeholder {
-    
-  }
 }

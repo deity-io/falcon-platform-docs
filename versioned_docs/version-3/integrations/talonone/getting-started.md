@@ -1,8 +1,10 @@
 ---
 id: getting-started
-title: Getting started
+title: Getting started with Talon.One
 sidebar_label: Getting started
 ---
+
+# Getting started
 
 import CodePackage from '@site/src/components/CodePackage';
 
