@@ -124,10 +124,6 @@ module.exports = {
             {
               label: 'Integrations',
               to: '/integrations'
-            },
-            {
-              label: 'Sign up',
-              href: 'https://console.deity.cloud/signup'
             }
           ]
         },
