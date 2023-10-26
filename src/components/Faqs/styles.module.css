@@ -66,6 +66,12 @@
   height: 56px;
 }
 
-html[data-theme="dark"] .category__icon { 
-  filter: brightness(1.75) grayscale(0.2);
+html[data-theme="dark"] {
+  .category__icon { 
+    filter: brightness(1.75) grayscale(0.2);
+  }
+  .category__link:hover {
+    box-shadow: none;
+    filter: opacity(0.65);
+  }
 }
