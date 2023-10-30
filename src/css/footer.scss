@@ -63,7 +63,7 @@
     flex: 1;
 
     @include large {
-      padding-left: 5.1875rem;
+      padding-left: 7.1875rem;
     }
   }
 
@@ -71,10 +71,10 @@
     flex-basis: 50%;
     
     @include large {
-      flex-basis: 28%;
+      flex-basis: 18%;
       padding: 0;
-      &:last-child {
-        flex-basis: 16%;
+      &:first-child {
+        flex-basis: 36%;
       }
     }
   }

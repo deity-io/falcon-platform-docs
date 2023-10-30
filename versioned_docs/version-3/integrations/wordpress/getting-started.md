@@ -16,7 +16,7 @@ Now you must install our Wordpress Plugin. If you download the code into your `p
 
 <img src="/docs/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
 
-[Contact us](https://deity.com/contact) if you want to integrate Deity Composer with Wordpress, we'll provide you with the plugin.
+[Contact us](https://deity.com/contact) if you want to integrate Deity Commerce Composer with Wordpress, we'll provide you with the plugin.
 
 If it's working you should see our handy 'Clean API cache' button in your admin panel.
 
