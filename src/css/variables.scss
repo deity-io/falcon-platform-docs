@@ -86,7 +86,7 @@
   --ifm-table-head-color: var(--ifm-p-color);
 
   /* Side Menu */
-  --doc-sidebar-width: 240px;
+  --doc-sidebar-width: 300px;
   --ifm-menu-background-color: rgba(255, 255, 255, 0.75);
   --ifm-menu-color: #1f2321;
   --ifm-menu-color-active: var(--ifm-color-primary);
@@ -161,7 +161,6 @@ html[data-theme='dark'] {
   --ifm-color-info-dark: var(--ifm-background-secondary);
 
     /* Side Menu */
-  --doc-sidebar-width: 240px;
   --ifm-menu-background-color: rgba(255, 255, 255, 0.75);
   --ifm-menu-color: #ECEFED;
   --ifm-menu-color-active: #C2C9C6;

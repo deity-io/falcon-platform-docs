@@ -63,15 +63,19 @@
     flex: 1;
 
     @include large {
-      padding-left: 7.1875rem;
+      padding-left: 5.1875rem;
     }
   }
 
   &__col {
     flex-basis: 50%;
-
+    
     @include large {
-      flex-basis: inherit;
+      flex-basis: 28%;
+      padding: 0;
+      &:last-child {
+        flex-basis: 16%;
+      }
     }
   }
 

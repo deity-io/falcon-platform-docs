@@ -37,18 +37,18 @@ module.exports = {
               to: '/platform'
             },
             {
-              label: 'Composer',
+              label: 'Commerce Composer',
               icon: 'composer',
               to: '/composer'
             },
             {
-              label: 'Storefront',
+              label: 'PWA & Native Storefronts',
               icon: 'storefront',
               to: '/storefront'
               
             },
             {
-              label: 'Payments',
+              label: 'Payment Orchestrator',
               icon: 'payments',
               to: '/payments'
             },
@@ -106,15 +106,15 @@ module.exports = {
               to: '/platform'
             },
             {
-              label: 'Composer',
+              label: 'Commerce Composer',
               to: '/composer'
             },
             {
-              label: 'Storefront',
+              label: 'PWA & Native Storefronts',
               to: '/storefront'
             },
             {
-              label: 'Payments',
+              label: 'Payment Orchestrator',
               to: '/payments'
             },
             {

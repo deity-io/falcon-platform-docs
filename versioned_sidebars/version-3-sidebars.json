@@ -22,11 +22,11 @@
     },
     {
       "type": "category",
-      "label": "Products",
+      "label": "Sections",
       "items": [
         {
           "type": "doc",
-          "label": "Composer",
+          "label": "Commerce Composer",
           "id": "version-3/composer",
           "customProps": {
             "icon": "composer"
@@ -34,7 +34,7 @@
         },
         {
           "type": "doc",
-          "label": "Storefront",
+          "label": "PWA & Native Storefronts",
           "id": "version-3/storefront",
           "customProps": {
             "icon": "storefront"
@@ -42,7 +42,7 @@
         },
         {
           "type": "doc",
-          "label": "Payments",
+          "label": "Payment Orchestrator",
           "id": "version-3/payments",
           "customProps": {
             "icon": "payments"
@@ -483,7 +483,7 @@
   "composer": [
     {
       "type": "category",
-      "label": "Composer",
+      "label": "Commerce Composer",
       "className": "icon composer",
       "items": [
         {
@@ -529,7 +529,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/core", "title": "Composer core concepts", "description": "Deity Composer core concepts"},
+      "link": {"type": "generated-index", "slug": "/composer/core", "title": "Commerce Composer core concepts", "description": "Deity Commerce Composer core concepts"},
       "collapsed": true,
       "label": "Core",
       "items": [
@@ -562,7 +562,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "composer/extensions", "description": "Deity Composer extensions"},
+      "link": {"type": "generated-index", "slug": "composer/extensions", "description": "Deity Commerce Composer extensions"},
       "collapsed": true,
       "label": "Extensions",
       "items": [
@@ -595,7 +595,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/common-services", "description": "Deity Composer common services"},
+      "link": {"type": "generated-index", "slug": "/composer/common-services", "description": "Deity Commerce Composer common services"},
       "collapsed": true,
       "label": "Common services",
       "items": [
@@ -616,7 +616,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/modules", "title":"Modules in Composer", "description": "Deity Composer modules"},
+      "link": {"type": "generated-index", "slug": "/composer/modules", "title":"Modules in Commerce Composer", "description": "Deity Commerce Composer modules"},
       "collapsed": true,
       "label": "Modules",
       "items": [
@@ -679,7 +679,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/resources", "title": "Deity Composer resources", "description": "Deity Composer resources"},
+      "link": {"type": "generated-index", "slug": "/composer/resources", "title": "Deity Commerce Composer resources", "description": "Deity Commerce Composer resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -699,7 +699,7 @@
   "storefront": [
     {
       "type": "category",
-      "label": "Storefront",
+      "label": "PWA & Native Storefronts",
       "collapsible": false,
       "className": "icon storefront",
       "items": [
@@ -878,7 +878,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/resources", "title": "Deity Storefront resources", "description": "Deity Storefront resources"},
+      "link": {"type": "generated-index", "slug": "/storefront/resources", "title": "Deity PWA & Native Storefronts resources", "description": "Deity PWA & Native Storefronts resources"},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -911,7 +911,7 @@
   "payments": [
     {
       "type": "category",
-      "label": "Payments",
+      "label": "Payment Orchestrator",
       "collapsible": false,
       "className": "icon payments",
       "items": [
@@ -1524,7 +1524,7 @@
     },
     {
       "type": "category",
-      "label": "Composer",
+      "label": "Commerce Composer",
       "collapsible": true,
       "collapsed": true,  
       "link": {
@@ -1543,7 +1543,7 @@
     },
     {
       "type": "category",
-      "label": "Payments",
+      "label": "Payment Orchestrator",
       "collapsible": true,
       "collapsed": true,
       "link": {
@@ -1566,7 +1566,7 @@
     },
     {
       "type": "category",
-      "label": "Storefront",
+      "label": "PWA & Native Storefronts",
       "collapsible": true,
       "collapsed": true,
       "link": {
@@ -1694,7 +1694,7 @@
               "collapsible": true,
               "link": {"type": "doc", "id": "version-3/platform/support/tutorials/storefront/overview"},
               "collapsed": true,
-              "label": "Storefront",
+              "label": "PWA & Native Storefronts",
               "items": [
                 {
                   "type": "doc",
@@ -1765,12 +1765,12 @@
             },
             {
               "type": "doc",
-              "label": "Storefront",
+              "label": "PWA & Native Storefronts",
               "id": "version-3/platform/support/faqs/storefront"
             },
             {
               "type": "doc",
-              "label": "Storefront",
+              "label": "Commerce Composer",
               "id": "version-3/platform/support/faqs/server"
             },
             {
