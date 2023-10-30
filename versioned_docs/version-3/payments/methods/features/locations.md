@@ -1,6 +1,6 @@
 ---
 id: locations
-title: Localization in Deity Payments
+title: Localization in Deity Payment Orchestrator
 sidebar_label: Localization
 ---
 
@@ -21,7 +21,7 @@ Countries should be passed as an array to each payment method on your environmen
 `*` represents all countries. If no country data is passed the method will be enabled for all locations.
 
 :::note Not all methods showing
-We allow filtering of methods based on country codes. At the same time we also pass country data to each payment provider. Meaning that some methods, whilst enabled in Deity Payments may not be available from the provider itself.
+We allow filtering of methods based on country codes. At the same time we also pass country data to each payment provider. Meaning that some methods, whilst enabled in Deity Payment Orchestrator may not be available from the provider itself.
 :::
 
 ```json

@@ -1,6 +1,6 @@
 ---
 id: ui-components
-title: UI components in Deity Payments
+title: UI components in Deity Payment Orchestrator
 sidebar_label: UI components
 ---
 

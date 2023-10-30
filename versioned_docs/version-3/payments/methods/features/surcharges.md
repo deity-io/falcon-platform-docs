@@ -1,6 +1,6 @@
 ---
 id: surcharges
-title: Surcharges in Deity Payments
+title: Surcharges in Deity Payment Orchestrator
 sidebar_label: Surcharges
 ---
 

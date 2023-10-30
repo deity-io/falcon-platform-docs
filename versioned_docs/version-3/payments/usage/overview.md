@@ -1,15 +1,15 @@
 ---
 id: overview
-title: Using Deity Payments
+title: Using Deity Payment Orchestrator
 sidebar_label: Using Payments
-description: How to use Deity Payments.
+description: How to use Deity Payment Orchestrator.
 ---
 
-# Using Deity Payments
+# Using Deity Payment Orchestrator
 
-Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built Deity Payments integrations. 
+Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built Deity Payment Orchestrator integrations. 
 
-This section explains how to add your own. If you're new to Deity Payments, please read our [Key concepts guide](/docs/payments/key-concepts).
+This section explains how to add your own. If you're new to Deity Payment Orchestrator, please read our [Key concepts guide](/docs/payments/key-concepts).
 
 
 
