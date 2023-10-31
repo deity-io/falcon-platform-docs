@@ -1,6 +1,6 @@
 ---
 id: payment-list
-title: Payment method list in Deity Payment Orchestrator
+title: Payment method list in Payment Orchestrator
 sidebar_label: Payment method list
 ---
 

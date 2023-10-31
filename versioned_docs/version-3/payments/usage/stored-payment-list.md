@@ -1,6 +1,6 @@
 ---
 id: stored-payment-list
-title: Stored payment methods in Deity Payment Orchestrator
+title: Stored payment methods in Payment Orchestrator
 sidebar_label: Stored payment methods
 ---
 

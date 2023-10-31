@@ -1,6 +1,6 @@
 ---
 id: min-max-amounts
-title: Min / max amounts in Deity Payment Orchestrator
+title: Min / max amounts in Payment Orchestrator
 sidebar_label: Min / max amounts
 ---
 

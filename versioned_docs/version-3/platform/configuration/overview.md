@@ -8,7 +8,7 @@ Falcon Client and Falcon Server configs work in the same way.
 
 Falcon Client configuration can be found in the `client/config` directory and Falcon Server's config is found in `server/config`.
 
-The config is set up use <a href="https://www.npmjs.com/package/config" target="_blank" rel="noopener noreferrer">`NPM Config`</a>.
+The config is set up use <a href="https://www.npmjs.com/package/config" target="_blank" rel="noopener noreferrer">`npm Config`</a>.
 
 Each of the config files is merged to create your applications configuration.
 

@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Payment methods in Deity Payment Orchestrator
+title: Payment methods in Payment Orchestrator
 sidebar_label: Payment methods
 ---
 

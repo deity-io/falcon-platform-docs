@@ -18,10 +18,10 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 ## Restrictions
 
-Humm is an Australian payment provider and is only available for customers with a billing address in Australia. Therefore, Humm can only be configured on the Australian cluster of Deity Payment Orchestrator.
+Humm is an Australian payment provider and is only available for customers with a billing address in Australia. Therefore, Humm can only be configured on the Australian cluster of Payment Orchestrator.
 
 :::note Please note
-Even though Humm only offers one payment method, Deity Payment Orchestrator still requires a configuration of both, Humm as a payment provider and as a payment method.
+Even though Humm only offers one payment method, Payment Orchestrator still requires a configuration of both, Humm as a payment provider and as a payment method.
 :::
 
 ## Humm Configuration

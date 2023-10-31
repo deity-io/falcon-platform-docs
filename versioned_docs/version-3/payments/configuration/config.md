@@ -1,21 +1,21 @@
 ---
 id: config
-title: Configuring Deity Payment Orchestrator
+title: Configuring Payment Orchestrator
 sidebar_label: Configuration
-description: How to configure Deity Payment Orchestrator
+description: How to configure Payment Orchestrator
 ---
 
 # Configuration
 
 ## Prerequisites
 
-These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [dcloud documentation](/console/cloud/dcloud). At the start of most Deity Payment Orchestrator commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct Deity Payment Orchestrator region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
+These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [dcloud documentation](/console/cloud/dcloud). At the start of most Payment Orchestrator commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct Payment Orchestrator region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
 
 ## 1. Select your project
 
 Run `dcloud project:current:set [organization] [project]` to select the project that you are working with. In case you don't know the exact organization or project name, run `dcloud project:list` to get a list of all projects that you have access to.
 
-## 2. Create a Deity Payment Orchestrator profile
+## 2. Create a Payment Orchestrator profile
 
 To get started, you first need to create a payments profile. A profile is a set of credentials and a configuration for payment providers and methods.
 A profile should be created for every cloud environment and every developer.
@@ -24,14 +24,14 @@ A profile should be created for every cloud environment and every developer.
 Every developer that works on the project locally should create their own profile. This is to ensure that all payment updates provided by RabbitMQ are delivered to the correct event consumer.
 :::
 
-To automatically create Deity Payment Orchestrator profiles for every cloud environment, you can use the `dcloud payments:profile:sync` command. For easy identification, the profiles' names will be identical to the cloud environment names.
+To automatically create Payment Orchestrator profiles for every cloud environment, you can use the `dcloud payments:profile:sync` command. For easy identification, the profiles' names will be identical to the cloud environment names.
 
 To create a profile manually, use the `dcloud payments:profile:create` command to launch the configuration wizard.
 Once configured, you can request information about a profile at any time, using the `dcloud payments:profile:info` command.
 
-## 3. Connect the Deity Payment Orchestrator profile to your Deity app
+## 3. Connect the Payment Orchestrator profile to your Deity app
 
-Run `dcloud payments:profile:apply`, this will set the authentication details for Deity Payment Orchestrator as environment variables for your Falcon app.
+Run `dcloud payments:profile:apply`, this will set the authentication details for Payment Orchestrator as environment variables for your Falcon app.
 
 :::note
 This step should only be performed for profiles that you want to connect to your cloud instance, not for local development profiles.
@@ -55,7 +55,7 @@ This will take you through steps to configure your methods, including the steps 
 
 ## Dcloud commands reference
 
-To configure and manage Deity Payment Orchestrator using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
+To configure and manage Payment Orchestrator using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 
 ### Profile
 

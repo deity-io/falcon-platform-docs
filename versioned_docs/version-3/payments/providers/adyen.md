@@ -71,7 +71,7 @@ You can get this from your Adyen account under `Developer -> API Credentials` th
 
 ### `hmacKey`
 
-This is used for processing the webhooks from Adyen. Deity Payment Orchestrator uses this when payments are updated.
+This is used for processing the webhooks from Adyen. Payment Orchestrator uses this when payments are updated.
 Read below how to obtain it.
 
 :::note Allowed Origins
@@ -91,11 +91,11 @@ From their you can set up a `Standard Notification` webhook with the following c
 
 **Security**
 
-In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on Deity Payment Orchestrator).
+In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on Payment Orchestrator).
 
 **Additional Settings**
 
-- Make sure to select all "Additional Settings" (it will be helpful for future updates of Deity Payment Orchestrator)
+- Make sure to select all "Additional Settings" (it will be helpful for future updates of Payment Orchestrator)
 - Later navigate to `Developers -> Additional data`, make sure to enable `Toggle all fields`.
 
 :::note Test your webhook
