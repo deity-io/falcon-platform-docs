@@ -110,8 +110,9 @@
 
 
   .clickable {
+
     &:hover {
-      filter: opacity(0.65);
+      filter: brightness(0.8);
       box-shadow: none;
     }
   }

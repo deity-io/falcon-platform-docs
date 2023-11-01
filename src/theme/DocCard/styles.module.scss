@@ -59,7 +59,7 @@
   .cardContainer {
     &:hover {
       box-shadow: none;
-      filter: opacity(0.65);
+      filter: brightness(0.8);
     }
     img {
       filter: invert(1);
