@@ -28,7 +28,12 @@
 
 }
 
-.cardContainer:hover {
+.cardContainer[href="#"] {
+    filter: opacity(0.5);
+    
+}
+
+.cardContainer:not([href="#"]):hover {
   box-shadow: var(--ifm-global-shadow-md);
 
   h2, p {
@@ -57,7 +62,10 @@
 
 @include dark-mode {
   .cardContainer {
-    &:hover {
+    &[href="#"] {
+        filter: brightness(0.8);
+    }
+    &:not([href="#"]):hover {
       box-shadow: none;
       filter: brightness(0.8);
     }
@@ -67,3 +75,4 @@
   }
 
 }
+
