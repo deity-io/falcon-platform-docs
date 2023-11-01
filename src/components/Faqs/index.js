@@ -3,7 +3,7 @@ import Link from "@docusaurus/Link";
 import SearchBar from "@theme/SearchBar";
 import Categories from "./Categories";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const Faqs = () => {
   return (
