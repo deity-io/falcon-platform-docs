@@ -67,13 +67,11 @@
           }
         },
         {
-          "type": "link",
+          "type": "doc",
           "label": "Orchestrator",
-          "href": "#",
+          "id": "version-3/orchestrator",
           "customProps": {
-            "icon": "orchestrator",
-            "disabled": true,
-            "label": "soon!"
+            "icon": "orchestrator"
           }
         }
       ]
