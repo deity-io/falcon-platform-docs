@@ -61,6 +61,11 @@ module.exports = {
               }
             },
             {
+              label: 'Orchestrator',
+              icon: 'orchestrator',
+              to: '/orchestrator'
+            },
+            {
               type: 'html',
               value: '<hr/>'
             },
@@ -70,15 +75,6 @@ module.exports = {
               to: '/integrations',
               customProps: {
                 count: 14
-              }
-            },
-            {
-              label: 'Orchestrator',
-              icon: 'orchestrator',
-              to: '#',
-              customProps: {
-                label: 'soon!',
-                disabled: true
               }
             }
           ]
