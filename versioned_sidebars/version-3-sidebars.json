@@ -59,19 +59,19 @@
         },
         {
           "type": "doc",
+          "label": "Orchestrator",
+          "id": "version-3/orchestrator",
+          "customProps": {
+            "icon": "orchestrator"
+          }
+        },
+        {
+          "type": "doc",
           "label": "Integrations",
           "id": "version-3/integrations",
           "customProps": {
             "icon": "integrations",
             "count": 14
-          }
-        },
-        {
-          "type": "doc",
-          "label": "Orchestrator",
-          "id": "version-3/orchestrator",
-          "customProps": {
-            "icon": "orchestrator"
           }
         }
       ]
@@ -1101,7 +1101,6 @@
       "type": "html",
       "value": "<hr/>"
     },
-    
     {
       "type": "category",
       "label": "Releases",
