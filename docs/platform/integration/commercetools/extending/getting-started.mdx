@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 The example code below shows how you can start extending our Commercetools integration. It shows how you can create custom resolvers, add custom endpoints and creating a custom GQL resolver map.
 
-More generic information about module extension in our platform can be found [here](/docs/next/platform/server-v3/modules/custom-module#extending-module).
+More generic information about module extension in our platform can be found [here](/next/platform/server-v3/modules/custom-module#extending-module).
 
 <Tabs>
   <TabItem value="TypeScript" default>
@@ -42,8 +42,8 @@ class CommerceToolsModule extends FalconCommerceToolsModule {
   }
 
   gqlResolvers() {
-      return this.mergeGqlResolvers(super.gqlResolvers(), {
-        // My custom resolver map
+    return this.mergeGqlResolvers(super.gqlResolvers(), {
+      // My custom resolver map
     });
   }
 }
@@ -77,8 +77,8 @@ class CommerceToolsModule extends FalconCommerceToolsModule {
   }
 
   gqlResolvers() {
-      return this.mergeGqlResolvers(super.gqlResolvers(), {
-        // My custom resolver map
+    return this.mergeGqlResolvers(super.gqlResolvers(), {
+      // My custom resolver map
     });
   }
 }
@@ -90,6 +90,7 @@ module.exports = { CommerceToolsModule };
 </Tabs>
 
 ### Accessing the SDK
+
 If you are extending an existing class, like the `CommercetoolsDataSource` in the example above, you will have access to [`ctpClient`](./ctp-client) and [`ctpSession`](./ctp-session) right away. These are used for managing and interacting with the SDK.
 
 For new classes, like the `MyCustomWebhookEndpointManager` in the example above, you will need to use `inversify` to injext the `ctpClient` and/or `ctpSession` into the class.
@@ -127,5 +128,3 @@ decorate(injectable(), MyCustomWebhookEndpointManager);
 
 </TabItem>
 </Tabs>
-
-

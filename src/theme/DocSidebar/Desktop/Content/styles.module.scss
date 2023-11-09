@@ -1,0 +1,56 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+@import '../../../../css/mixins';
+
+@media (min-width: 997px) {
+  .menu {
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+  @supports (scrollbar-gutter: stable) {
+    .menu {
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      scrollbar-gutter: stable;
+    }
+  }
+
+  .menuWithAnnouncementBar {
+    margin-bottom: var(--docusaurus-announcement-bar-height);
+  }
+}
+
+.goBack {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(0, 10, 6, 0.58);
+  margin-bottom: 0.7rem;
+  padding-left: 12px;
+  cursor: pointer;
+  padding-top:0.7rem;
+  padding-bottom:0;
+
+  &:hover {
+    color: var(--ifm-color-primary);
+  }
+}
+
+.goBackIcon {
+  margin-right: 0.5rem;
+}
+
+@include dark-mode {
+  .goBack {
+    color: var(--ifm-breadcrumbs-color);
+     &:hover {
+      color: var(--ifm-color-primary);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.menuExternalLink {
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  margin-right: 8px;
+}
+
+.disabled {
+  color: rgba(0, 15, 9, 0.46);
+}
+
+.disabled:hover {
+  color: rgba(0, 15, 9, 0.46);
+}
+
+.soon {
+  padding: 2px 4px;
+  color: #d7dcda;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: auto;
+  text-transform: capitalize;
+}
+
+.label {
+  height: 20px;
+  margin-left: auto;
+  padding: 2px 4px;
+  background: var(--ifm-adnomition-note-background);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--ifm-color-purple);
+  text-transform: capitalize;
+  
+}
+
+.count {
+  padding: 2px 4px;
+  color: var(--ifm-color-primary);
+  background: rgba(2, 177, 142, 0.15);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: auto;
+}

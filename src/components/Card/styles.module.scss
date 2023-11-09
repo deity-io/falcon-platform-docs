@@ -1,0 +1,119 @@
+@import '../../css/mixins';
+
+.root {
+  border: 1px solid rgba(2, 44, 15, 0.08);
+  box-shadow: var(--ifm-global-shadow-lw);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-card-background-color);
+  margin: 4px;
+
+  > h4 {
+    margin-top: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 18.2px;
+    margin-bottom: 0;
+  }
+}
+
+.horizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.25rem;
+  position: relative;
+  &.padding {
+    padding: 1.25rem;
+  }
+  > div {
+    padding-left: 1.25rem;
+    h5 {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+    
+  }
+  > a {
+    margin-left: auto;
+  }
+}
+
+.soon {
+  position:relative;
+  h4, p, div {
+    filter:saturate(0) opacity(0.5);
+  } 
+  &:before {
+      content: 'Soon!';
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      color: var(--ifm-menu-color-adisabled);
+    }
+}
+
+.padding {
+  padding: 1.25rem;
+}
+
+.content {
+  padding: 48px;
+
+  p {
+    font-size: 19px;
+    line-height: 32px;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow, background-color, filter;
+  &:hover {
+      box-shadow: var(--ifm-global-shadow-md);
+      h4, h5, p {
+        color: var(--ifm-color-primary) !important;
+      }
+  }
+}
+
+.open {
+  border:0px;
+  background:none;
+  padding-left: 0px;
+  padding-right: 40px;
+  box-shadow: none;
+  margin: 0px;
+  p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+
+@include dark-mode {
+  
+  .root {
+    color: #fff;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #fff;
+    }
+  }
+
+
+  .clickable {
+
+    &:hover {
+      filter: brightness(0.8);
+      box-shadow: none;
+    }
+  }
+}

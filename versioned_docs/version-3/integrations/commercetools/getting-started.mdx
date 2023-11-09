@@ -1,0 +1,73 @@
+---
+id: getting-started
+title: Getting started with Commercetools
+sidebar_label: Getting started
+---
+
+# Getting started
+
+import CodePackage from '@site/src/components/CodePackage';
+
+<CodePackage name="@deity/falcon-commercetools-module" />
+
+
+## Introduction
+
+Before you get started, we recommend reading this page to understand the core concepts.
+
+Once familiar with Commercetools, start the integration by [configuring your Falcon Middleware](/docs/integrations/commercetools/configuration/getting-started).
+
+If you reach a point where it is necessary for you to extend our integration, you can have a look at the [documentation](/docs/integrations/commercetools/extending/getting-started).
+
+
+## Getting started with Commercetools
+To get started with Commercetools, you can follow their tutorials and explore their platform.
+
+- [Getting started](https://docs.commercetools.com/tutorials)
+- [Commercetools HTTP API documentation](https://docs.commercetools.com/api/general-concepts)
+
+Deity's integration makes use of Commercetools' Typescript SDK. You can the documentation and repository here:
+
+- [Commercetools TypeScript SDK Client documentation](https://docs.commercetools.com/sdk/javascript-sdk)
+- [GitHub Repository](https://github.com/commercetools/commercetools-sdk-typescript)
+
+## Commercetools Postman Collection
+Commercetools provides a Postman collection containing examples of requests and responses for most endpoints and commands. For every command the smallest possible payload is given, optional fields can be found in the [API documentation](https://docs.commercetools.com/api/general-concepts).
+
+To get started with the Postman collection, you can follow these steps:
+
+### 1. Create an API key
+
+In your Commercetools dashboard you'll need to create a new API key that has permissions to `manage_types`. Save these credentials for a later step.
+
+:::note Create a new key
+We recommend creating a new key for this action so you can't reduce the permissions needed for your main API key used by the Deity application.
+:::
+
+### 2. Download and install the Postman client
+
+[Download Postman client](https://www.postman.com/downloads/)
+
+### 3. Download sample Postman collections
+
+Commercetools have a handy repository containing `JSON` collection files you can import directly into Postman.
+
+[https://github.com/commercetools/commercetools-postman-collection/tree/master/api](https://github.com/commercetools/commercetools-postman-collection/tree/master/api)
+
+Please download and import these.
+
+### 4. Add your credentials
+
+The collections from step 1 required you to add some credentials as Postman variables. You can set these variables in the `Variables` tab of the collection. These variables are from **step 1**:
+
+- `auth_url`
+- `client_id`
+- `client_secret`
+- `project-key`
+- `host`
+
+### 5. Authorize your requests
+
+If you completed **step 4** you should be able to run the request `Authorization -> Obtain access token`. This will create an access token and save it as a Postman variable for later requests.
+
+If the token is not saved automatically, you can manually save the access token as the `ctp_access_token` variable of the collection.

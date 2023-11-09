@@ -1,0 +1,44 @@
+code {
+  
+  border: 1px solid rgba(2, 44, 15, 0.08);
+  background: var(--ifm-background-secondary);
+  color: #AE1955; /*var(--ifm-menu-color)*/
+}
+
+.markdown {
+  .theme-code-block, .codeBlock {
+    box-shadow: none;
+    border: 1px solid var(--ifm-color-info-dark);
+    border-radius: var(--ifm-pre-border-radius);
+
+    .clean-btn {
+      border: 0;
+      background: none;
+    }
+  }
+
+  pre code {
+    background-color: var(--ifm-background-secondary);
+    -webkit-text-size-adjust: 100%;
+  }
+  .codeBlock {
+    background-color: var(--ifm-background-secondary);
+    font-size: var(--ifm-code-font-size);
+    padding: var(--ifm-pre-padding);
+    font-family: var(--ifm-font-family-monospace);
+  }
+}
+
+@include dark-mode {
+  .theme-code-block {
+    box-shadow: none;
+    border: inherit;
+  }
+  code {
+    color: #E58FB1; /*var(--ifm-menu-color)*/
+   
+  }
+  pre code {
+    
+  }
+}

@@ -1,10 +1,10 @@
 ---
 id: server
 title: Falcon Server
-sidebar_label: Falcon Server
+sidebar_label: Composer
 enterprise_only: true
 ---
 
-Our Falcon Server documentation can be found [here](/docs/v2019/platform/falcon-server/basics).
+Our Falcon Server documentation can be found [here](/v2019/platform/falcon-server/basics).
 
 Falcon Platform specific docs **coming soon**.

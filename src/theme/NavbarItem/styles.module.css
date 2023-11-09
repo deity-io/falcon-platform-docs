@@ -1,0 +1,37 @@
+.count {
+  padding: 2px 4px;
+  color: var(--ifm-color-primary);
+  background: rgba(2, 177, 142, 0.15);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: auto;
+}
+
+.disabled {
+  
+}
+
+.soon {
+  padding: 2px 4px;
+  color: #d7dcda;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: auto;
+  text-transform: capitalize;
+}
+
+.label {
+  padding: 2px 4px;
+  color: var(--ifm-color-purple);
+  background: var(--ifm-adnomition-note-background);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: auto;
+  text-transform: capitalize;
+}

@@ -9,6 +9,7 @@ You can extend your sites Webpack configuration in `client/falcon-client.build.c
 This is an optional build-time configuration file which is used to set up the entire build process. Bellow, there is an example of `falcon-client.build.config.js` file content with defaults:
 
 **`client/falcon-client.build.config.js`**
+
 ```js
 module.exports = {
   devServerPort: 3001,
@@ -23,14 +24,13 @@ module.exports = {
 
 - `devServerPort: number` - (default: `3001`) webpack dev server (HMR) port
 - `clearConsole: boolean` - (default: `true`) determines whether console should be cleared when starting script
-- `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/docs/platform/client/files#srcmanifestwebmanifest) should be processed via webpack and included in output bundle
-- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/v2019/platform/falcon-client/internationalization#configuration)
+- `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/platform/client/files#srcmanifestwebmanifest) should be processed via webpack and included in output bundle
+- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/v2019/platform/falcon-client/internationalization#configuration)
 - `envToBuildIn` - (default: `[]`) an array of environment variable names which should be build in into bundle, [see the details](#environment-variables)
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
 - `moduleOverride` - (default: `{}`) array of module names to override, [see the details](./overrides)
 
 Falcon Client provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
-
 
 ## Build process configuration
 

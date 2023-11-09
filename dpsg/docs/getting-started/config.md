@@ -7,7 +7,7 @@ description: How to configure DPSG
 
 ### Prerequisites
 
-These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [documentation](/docs/platform/cloud/dcloud). At the start of most DPSG commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct DPSG region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
+These steps assume you have `dcloud` installed. To find out more about `dcloud`, please refer to the [documentation](/platform/cloud/dcloud). At the start of most DPSG commands, you are asked to specify the region. This is to make sure that you perform the configurations on the correct DPSG region. If you are not sure about the region of the cloud environment that you work with, you can run `dcloud env [environment]` to fetch the environment region.
 
 ### 1. Select your project
 
@@ -45,13 +45,14 @@ This will take you through steps to enabling your required payment providers. In
 
 The final step is to enable payment methods.
 
-Run `dcloud payments:method:configure`. 
+Run `dcloud payments:method:configure`.
 
 This will take you through steps to configure your methods, including the steps for our [configuration features](/dpsg/docs/methods/features/currencies).
 
 <br /><br />
 
 ### Dcloud Commands Reference
+
 To configure and manage DPSG using `dcloud`, we have several commands available that cover the basic configuration as well as payment provider and method management.
 
 `payments:profile:sync`

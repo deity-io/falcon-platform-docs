@@ -1,0 +1,62 @@
+@import '../../css/mixins';
+
+.tag {
+  display: inline-block;
+  margin: 0 0.5rem;
+  height: 20px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  &.purple {
+    background: var(--ifm-adnomition-note-background);
+    color: var(--ifm-color-purple);
+  }
+
+  &.green {
+    background: rgba(1, 167, 54, 0.13);
+    color: var(--ifm-color-primary);
+  }
+  &.red {
+    background: var(--ifm-adnomition-danger-background);
+    color: var(--ifm-adnomition-danger);
+  }  
+  &.console {
+    background: var(--ifm-adnomition-info-background);
+    color: var(--ifm-adnomition-info);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin:0;
+    padding: 2px 8px;
+  }
+  &.rounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 40px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+  padding: 4px 8px;
+  background: none;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  @include large {
+    padding: 4px 8px;
+  }
+}

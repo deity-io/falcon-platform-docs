@@ -1,26 +1,25 @@
-import React, { useState } from "react";
-import classnames from "classnames";
+import React, { useState } from 'react';
+import clsx from 'clsx';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.scss';
 
 /**
  * Function to convert text to a slug format (stolen from https://gist.github.com/mathewbyrne/1280286)
  * @param {string} string
  * @returns {string}
  */
-const slugify = (string) => {
-  return string
+const slugify = string =>
+  string
     .toString()
     .toLowerCase()
-    .substring(0, 30) // We dont want it to be too long 
-    .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/[^\w\-]+/g, "") // Remove all non-word chars
-    .replace(/\-\-+/g, "-") // Replace multiple - with single -
-    .replace(/^-+/, "") // Trim - from start of text
-    .replace(/-+$/, "");
-};
+    .substring(0, 30) // We dont want it to be too long
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+    .replace(/\-\-+/g, '-') // Replace multiple - with single -
+    .replace(/^-+/, '') // Trim - from start of text
+    .replace(/-+$/, '');
 
-const Accordion = ({ title, open = false, children }) => {
+function Accordion({ title, open = false, children }) {
   const [isOpen, setIsOpen] = useState(open);
   const slug = slugify(title);
 
@@ -32,10 +31,7 @@ const Accordion = ({ title, open = false, children }) => {
         aria-expanded={isOpen}
         aria-controls={`answer-${slug}`}
         id={`question-${slug}`}
-        className={classnames(
-          styles.question,
-          isOpen ? styles.question__open : null
-        )}
+        className={clsx(styles.question, isOpen ? styles.question__open : null)}
       >
         {title}
       </button>
@@ -44,15 +40,12 @@ const Accordion = ({ title, open = false, children }) => {
         aria-hidden={!isOpen}
         aria-labelledby={`question-${slug}`}
         id={`answer-${slug}`}
-        className={classnames(
-          styles.answer,
-          !isOpen ? styles.answer__closed : null
-        )}
+        className={clsx(styles.answer, !isOpen ? styles.answer__closed : null)}
       >
         {children}
       </div>
     </div>
   );
-};
+}
 
 export default Accordion;

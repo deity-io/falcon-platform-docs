@@ -1,0 +1,142 @@
+#__docusaurus {
+  background: var(--ifm-background-primary) no-repeat top left url(#{$img-path}/glow-soft.png);
+}
+
+.flex {
+  @include large {
+    display: flex;
+  }
+
+  > div {
+    flex: 1;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.vertical-center {
+  align-items: center;
+  > div {
+    padding-right: 40px;
+  }
+}
+
+
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pt80 {
+  padding-top: 80px;
+}
+.mt0 {
+  margin-top: 0px !important;
+}
+.height80 {
+  height: 80px !important;
+}
+
+.negative-view-all {
+  margin-top: -54px !important;
+  text-align: right;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.right-big-card {
+  background-color: #1A1E1C;
+  border-radius: 0 12px 12px 0;
+  padding:48px;
+}
+.right-big-card > div {
+  padding:0px;
+}
+
+.home-search {
+  display: inline-block;
+  margin: 0 auto 100px;
+
+  &-description {
+    font-size: 13px;
+    color: rgba(1, 30, 17, 0.24);
+    padding-top: 1rem;
+  }
+}
+
+.logo-content {
+  color: #1a1e1c;
+  margin-bottom: 24px;
+}
+
+hr {
+  margin: var(--ifm-hr-margin-vertical) var(--ifm-hr-margin-horizontal);
+}
+details > summary {
+  &:before {
+    border-left-color:var(--ifm-p-color) !important;
+    }
+  font-family: var(--ifm-font-family-headline);
+    font-size: var(--ifm-h4-font-size);
+   
+}
+.hr {
+  height: 1px;
+  background: rgba(1, 40, 24, 0.13);
+  margin: 63px 0 25px;
+}
+
+.round-icon {
+  display: inline-block;
+  height: 56px;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  @include xl {
+    padding: 0;
+  }
+}
+div.markdown :nth-last-child(1 of div[class^="accordion"]) {
+  margin-bottom:4rem;
+}
+
+@include dark-mode {
+  .logo-content {
+    color: #fff;
+  }
+  .card:not(:hover) {
+    border-color:var(--ifm-card-background-color);
+  }
+  .brighten img { 
+    filter: brightness(1.75) grayscale(0.2);
+  }
+  .invert img {
+    filter:  invert(1) grayscale(1) brightness(2);   
+  }
+  #__docusaurus  {
+    background: var(--ifm-background-primary);
+  }
+  
+}

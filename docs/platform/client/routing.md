@@ -5,11 +5,12 @@ sidebar_label: Routing
 ---
 
 _(todo) this guide requires review as it's based on Falcon Server v2_
+
 ## Overview
 
 In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
 
-[Dynamic Routing](/docs/platform/server/dynamic-routes) relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/docs/platform/cookbook/integrations/contentful2).
+[Dynamic Routing](/platform/server/dynamic-routes) relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](/platform/cookbook/integrations/contentful2).
 
 ---
 
@@ -18,6 +19,7 @@ In our example projects the routing happens in `client/src/App.js`.
 `SwitchDynamicURL`, imported from `@deity/falcon-front-kit` is used to handle routes.
 
 **`client/src/App.js`**
+
 ```js
 ...
 import { Route } from 'react-router-dom';
@@ -45,7 +47,7 @@ export default App;
 
 This component `@deity/falcon-front-kit/src/DynamicRoute/SwitchDynamicUrl`, wraps your `<Route>` much like `import { Switch } from "react-router-dom";`.
 
-Using the current `location` and it's child components it will determine what to render. 
+Using the current `location` and it's child components it will determine what to render.
 
 If there is a `path` match in one of the child components that will take priority.
 
@@ -65,13 +67,15 @@ If you want your URL to match exactly you can pass `exact` as a prop. Read more 
 
 As explained above, static URLs use the `path` prop to match a path to a component.
 
-You will see we are also matching on `path` with a dynamic variable for `:page?`. In this instance it handles the blogs pagination and is later available as param passed automatically to the `Blog` component. 
+You will see we are also matching on `path` with a dynamic variable for `:page?`. In this instance it handles the blogs pagination and is later available as param passed automatically to the `Blog` component.
 
 ```js
 <Route exact path="/" component={Home} />
 <Route exact path="/blog/:page?" component={Blog} />
 ```
+
 **`Blog.js`**
+
 ```js
 const Blog = ({ match = {} }) => {
   const { params } = match;
@@ -95,7 +99,7 @@ In this case we would match on `type` and **not** `path`.
 
 The `type` is returned by a method in your API code (in Falcon Server).
 
-For more details please checkout out our [dynamic routing docs](/docs/platform/server/dynamic-routes).
+For more details please checkout out our [dynamic routing docs](/platform/server/dynamic-routes).
 
 **n.b.** If `path` prop is passed the `type` will be ignored.
 
@@ -109,10 +113,6 @@ An example of this is the account area. This will redirect to the `sign-in` page
 
 ```js
 <SwitchDynamicURL>
-  <ProtectedRoute
-    path="/account"
-    redirectTo={`/sign-in`}
-    component={Account}
-  />
+  <ProtectedRoute path="/account" redirectTo={`/sign-in`} component={Account} />
 </SwitchDynamicURL>
 ```

@@ -1,0 +1,79 @@
+@import '../../css/mixins';
+
+.feedback {
+  background: #e7f9f5;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  margin-top: 5rem;
+  min-height: 132px;
+  margin-bottom: 5rem;
+  .title {
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    color: var(--ifm-color-primary);
+  }
+
+  .container {
+    & > div {
+      display: flex;
+      flex-direction: initial;
+      min-height: 0;
+      height: 30px;
+
+      li button {
+        padding: 0;
+        font-size: 1px;
+      }
+
+      li:first-child span:first-child {
+        background-image: url("../../../static/img/icons/thumbup.svg");
+        font-size:0;
+      }
+
+      li:last-child span:first-child {
+       background-image: url("../../../static/img/icons/thumbdown.svg");
+        font-size:0;
+      
+      }
+    }
+  }
+
+  .reaction {
+    font-size: 1.6rem;
+
+    span:last-child {
+      display: none;
+    }
+  }
+
+  .loader {
+    font-size: 0;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@include dark-mode {
+  .feedback {
+    background: var(--ifm-background-color);
+    
+    .container {
+      & > div {
+       
+        li:first-child span:first-child {
+          filter: grayscale(0.5) brightness(2.5);
+        }
+
+        li:last-child span:first-child {
+          filter: grayscale(0.5) brightness(2.5);
+        }
+      }
+    }
+  }
+}

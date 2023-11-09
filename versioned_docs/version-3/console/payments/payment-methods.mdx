@@ -1,0 +1,44 @@
+---
+id: payment-methods
+title: Payment methods in Cloud Console
+sidebar_label: Payment methods
+---
+
+import Badge from '@site/src/components/Badge';
+
+# Payment methods
+
+Each payment provider has one or more supported payment methods. These are the actual payment instruments your customers pay with in your checkout, such as credit cards, PayPal or Klarna, to name a few. You can configure what methods to display in your checkout, set business rules for them and define sort orders. With these tools, you can build a personalized checkout experience for all your sh
+
+## Basic settings
+
+Similar to a provider, you can toggle the method to be enabled or not. Furthermore, you can customize the name of the method. This value determines what will be displayed to your shoppers in the checkout.
+
+Each method can have 1 out of 3 possible states:
+
+- <Badge variant="console">enabled</Badge> Method has been configured and is enabled and will be listed in your checkout according to configured rules
+
+- <Badge variant="console">disabled</Badge> Method has been configured and is disabled, it will not be listed in your checkout, no matter the configured rules
+
+- <Badge variant="console">not configured</Badge> Method has not been configured and will not be listed in your checkout
+
+### Localisation
+You can define which countries and currencies should be allowed for this method. Both fields are multi-select. By default, the ANY option is set for each method, which means the method will be displayed no matter the country or currency of the shopper. Note that a shopper’s checkout session must match both the country and currency to ensure the method is listed.
+
+Let’s say you’ve configured Mollie iDEAL to be shown for Dutch customers shopping in Euro. A few examples:
+
+- Shopper comes from The Netherlands, selected EUR as currency: iDEAL will be listed
+
+- Shopper comes from The Netherlands, selected GBP as currency: iDEAL will not be listed
+
+- Shopper comes from Belgium, selected EUR as currency: iDEAL will not be listed
+
+Any configuration set on the payment provider level will limit the options you have to localize its methods.
+
+### Surcharge
+Some payment methods might cost you, as a merchant, more than others. For example, credit cards and Buy Now, Pay Later methods often require processing fees. Often these fees are either a flat amount per successful transaction, a percentage of the grand total, or a combination of both.
+
+Since you may want to offset those fees to your shoppers, you can set surcharge rules per method. You can set a percentage or flat fee surcharge, or a combination of the two. In case of the latter, the percentage is always calculated based on the base total, excluding any fixed amount surcharge.
+
+### Min / max order amount
+You can further personalize the checkout by setting the minimum and maximum amounts for which a payment method must be shown. You can set one of these rules per currency.

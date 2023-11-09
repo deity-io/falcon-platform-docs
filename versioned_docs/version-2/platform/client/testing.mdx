@@ -18,7 +18,7 @@ sidebar_label: Testing
 Tests should be named `[component].test.js`.
 
 <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">
-  <img src="/img/docs/platform/jest.svg" alt="Jest Logo" width="100" style={{marginBottom: 20}} />
+  <img src="/img/docs/platform/jest.svg" alt="Jest Logo" width="100" style={{ marginBottom: 20 }} />
 </a>
 
 Under the hood `FalconClientMock` uses [Jest](https://jestjs.io/) and has access to all the same [mock functions](https://jestjs.io/docs/en/mock-functions).
@@ -27,31 +27,26 @@ Under the hood `FalconClientMock` uses [Jest](https://jestjs.io/) and has access
 
 Tests can be run in the command line from your `client` directory using `npm` or `yarn`. This will run **all** tests.
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
 
-<Tabs
-  defaultValue="npm"
-  values={[
-    { label: 'NPM', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', }
-  ]
-}>
-<TabItem value="npm">
-
-```bash
-npm test
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```bash
-yarn test
-```
-
-</TabItem>
-</Tabs>
+<TabsContainer>
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock language="bash">npm test</CodeBlock>
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock language="bash">yarn test</CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>
 
 ### Options
 
@@ -66,6 +61,7 @@ Running the `test` command will run all tests, you will then have access to the 
 - Press `Enter` to trigger a test run.
 
 ## Usage
+
 In this example we are testing the `Banner` component.
 
 `describe()` expects 2 arguments, `name` and `fn`.
@@ -76,13 +72,14 @@ In this example we are testing the `Banner` component.
 describe('<Banner />', ...
 ```
 
-<img src="/img/docs/platform/test-screengrab.png" alt="test screengrab" width="400" style={{marginBottom: 20}} />
+<img src="/img/docs/platform/test-screengrab.png" alt="test screengrab" width="400" style={{ marginBottom: 20 }} />
 
 Inside the function (`fn`) passed to `describe` you can run your tests.
 
 We advise familiarizing yourself with [Jest](https://jestjs.io/) before writing tests.
 
 **`Banner.test.js`**
+
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -106,4 +103,5 @@ describe('<Banner />', () => {
 In this simple test we check that the `<Banner />` component renders `<p>Banner</p>`.
 
 ## Cookbook
-We've created a few example tests and added them to our [Cookbook](/docs/platform/cookbook/client/testing).
+
+We've created a few example tests and added them to our [Cookbook](/platform/cookbook/client/testing).

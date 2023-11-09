@@ -1,0 +1,19 @@
+---
+id: profiles
+title: Profiles in Cloud Console
+sidebar_label: Profiles
+---
+
+# Payment profiles
+
+When you go to the Payments start page, it will automatically select a Payment profile that is matching your selected environment. You can review the available payment providers and transaction types for that payment profile. Or select another (local) profile from the Payment profiles dropdown. Your selection will be remembered for further payments configuration.
+
+## Configuring profiles
+Each payment profile comes with two Composer variables that you can use to access the required profile. So for a remote environment such as Test, you’d configure the two variables with the corresponding credentials. For local development, you’d create a local payment profile in Deity’s Payments Service and set the two Composer variables with the provided local profile credentials.
+
+`PAYMENTS_SERVICE_USERNAME <payments_service>:<scope>:<username>`
+
+`PAYMENTS_SERVICE_TOKEN <token>`
+
+## Creating payment profiles
+You can create as many local profiles as you see fit. As the name suggests, these profiles are not connected to a remote environment. We recommend to create one local profile for every developer working on the checkout or other payment-related components of the project.

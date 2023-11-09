@@ -1,0 +1,97 @@
+.markdown {
+  &:before {display:none; /*No idea what this :before element does*/}
+  .hash-link {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.67rem;
+      height: 0.68rem;
+      margin-left: 5px;
+      background: no-repeat center url(#{$icons-path}/link.svg);
+    }
+  }
+  > h1{
+    /* keep docusaurus setting */
+  }
+  > h2 {
+    /* keep docusaurus setting */
+  }
+  > h3 {
+    /* keep docusaurus setting */
+  }
+  > h4 {
+    font-size: var(--ifm-h3-font-size);
+  }
+  > h5 {
+    font-size: var(--ifm-h4-font-size);
+  }
+  > h6 {
+    font-size: var(--ifm-h5-font-size);
+  }
+  .date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4em;
+    color: var(--ifm-p-color);
+
+    & + h2 {
+      margin-top: 12px;
+    }
+  }
+
+  p.desc {
+    font-weight: 400;
+    font-size: var(--ifm-h3-font-size);
+    line-height: 32px;
+
+  }
+  
+  hr {
+    
+    margin: 24px 0;
+  }
+
+  ul {
+
+    li:not([role='tab']) {
+      color: var(--ifm-p-color);
+
+      &:before {
+        
+      }
+    }
+
+    &.bullet {
+      padding-top: 40px;
+
+      li {
+        margin-bottom: 42px;
+        font-size: 17px;
+        color: #1f2321;
+
+        &:before {
+          width: 24px;
+          height: 24px;
+          background: no-repeat center url(#{$icons-path}/bullet.svg);
+        }
+      }
+    }
+  }
+}
+
+@include dark-mode {
+  .markdown {
+    & > p,
+    .date {
+      /*color: #fff;*/
+    }
+
+    .hash-link:before {
+      filter: invert(1);
+    }
+  }
+}

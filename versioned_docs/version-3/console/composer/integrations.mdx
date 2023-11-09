@@ -1,0 +1,45 @@
+---
+id: integrations
+title: Integrations in Cloud Console
+sidebar_label: Integrations
+---
+
+# Platform integrations
+
+You can setup the configuration for a number of third party platforms, right from within your console. Each integration has a Type, Status and Account identifier.
+
+The type outlines what kind of integration this platform is. In most cases, it is recommended to have 0 to 1 integrations of a single type active per environment. The status of an integration indicates whether the platform is fully configured, and ready for use, or not. Finally, the Account identifier indicates at a quick glance which account you’ve configured for the particular platform. This is always one of the variables you’ve set, such as a `store-id`.
+
+## Setting up an integration
+You can expand an integration to show its variables. Every integration has at least two sections, default and custom variables. The default section lists all the basic configuration variables of which most are required (indicated by a *) to set for the integration to work.
+
+The custom section provides you the opportunity to define and set your own integration-specific variables. You’ll mostly want to make use of this feature when you are extending our core integrations and need to set dynamic configurations or sensitive credentials.
+
+Every integration variable is prefixed with their respective name in uppercase followed by an underscore, e.g. `CONTENTFUL_` or `TALONONE_`.
+
+### Secrets and sensitive credentials
+We’ve pre-configured some of the variables to encrypt your values by default. They will be managed by the Deity platform, ensures that only your application will be able to access the values at runtime injection.
+
+When you save an encrypted value, it will be displayed in your Cloud Console as `***`. You will not be able to see what value you saved. Therefore, if you want to edit the value, you can clear the current encrypted value and set a new one.
+
+### Custom integration variables
+You can define custom variables to store any configuration on the environment instead of in your repository. We recommend to use this method for any config value which may either change over time or is sensitive by nature.
+
+You can create as many custom variables as you see fit. Simply click the **Add variable** button and enter your variable name(s) and value(s). You can encrypt them if needed.
+
+:::caution Caution
+We recommend to keep the integration’s prefix as is. If you alter the prefix, the variable will show up in your global custom variables, instead of in the particular integration.
+:::
+
+[Read more about variables →](/console/composer/variables)
+
+
+## Supported integrations
+
+We currently support the following integrations with third party platforms out of the box. Check this page regularly to learn about new integrations!
+
+
+import IntegrationContent from "../../includes/integrations.mdx"
+
+<IntegrationContent />
+

@@ -4,7 +4,7 @@ title: Falcon Client Configuration
 sidebar_label: Falcon Client
 ---
 
-Configs are stored as an object in [Apollo State](/docs/platform/client/state).
+Configs are stored as an object in [Apollo State](/platform/client/state).
 
 `config` has **no schema** meaning you can add anything you like.
 
@@ -12,8 +12,8 @@ Configs are stored as an object in [Apollo State](/docs/platform/client/state).
 
 This example shows how to retrieve and use these configs in your components.
 
-
 **`graphql/analytics.gql`**
+
 ```gql
 query ANALYTICS {
   config @client {
@@ -23,6 +23,7 @@ query ANALYTICS {
   }
 }
 ```
+
 We pass our query to `withApollo` to access configs. This passes `client` as a prop:
 
 ```js
@@ -35,8 +36,8 @@ This can then be used to query the Apollo stateL
 const { config } = client.readQuery({ query: ANALYTICS }) || {};
 ```
 
-
 **See the full example component**
+
 ```js
 import React from 'react';
 import { withApollo } from '@apollo/react-hoc';

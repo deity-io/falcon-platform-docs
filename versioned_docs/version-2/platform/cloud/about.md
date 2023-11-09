@@ -14,7 +14,6 @@ Depending on your plan you'll be able to have as many environments as you need m
 
 Built with internationalization in mind, Cloud supports multi-region based on geolocation.
 
-
 ## DCloud CLI tool
 
-**DCloud** is our <a href="https://www.w3schools.com/whatis/whatis_cli.asp">CLI Tool</a> to help you make the most of Falcon Platform Cloud. Find out more [about DCloud](/docs/platform/cloud/dcloud).
+**DCloud** is our <a href="https://www.w3schools.com/whatis/whatis_cli.asp">CLI Tool</a> to help you make the most of Falcon Platform Cloud. Find out more [about DCloud](/platform/cloud/dcloud).

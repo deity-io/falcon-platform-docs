@@ -1,4 +1,167 @@
 {
+  "home": [
+    {
+      "type": "category",
+      "label": "Platform",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/app-store/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/key-concepts"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/client/getting-started"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Products",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/server",
+          "customProps": {
+            "icon": "doc"
+          }
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/storefront",
+          "customProps": {
+            "icon": "doc",
+            "label": "new"
+          }
+        },
+        {
+          "type": "link",
+          "label": "Payments",
+          "href": "/dpsg/docs/getting-started/overview",
+          "customProps": {
+            "icon": "doc"
+          }
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/console",
+          "customProps": {
+            "icon": "doc"
+          }
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/storefront-ui",
+          "customProps": {
+            "icon": "doc"
+          }
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/products/orchestrator",
+          "customProps": {
+            "icon": "doc",
+            "disabled": true,
+            "label": "soon!"
+          }
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Resources",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/resources/tutorials"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/resources/faq"
+        },
+        {
+          "type": "html",
+          "value": "<hr/>"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/release/full-changelog",
+          "className": "gray-link"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/support/contact",
+          "className": "gray-link"
+        },
+        {
+          "type": "link",
+          "label": "Launch Console",
+          "href": "https://console.deity.io",
+          "className": "gray-link"
+        },
+        {
+          "type": "link",
+          "label": "Deity.com",
+          "href": "https://www.deity.com/",
+          "className": "gray-link"
+        }
+      ]
+    }
+  ],
+  "platform": [
+    {
+      "type": "category",
+      "label": "Platform",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/overview/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/overview/plans"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/prerequisites"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/dcloud"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/npm"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/create"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/configure"
+        },
+        {
+          "type": "doc",
+          "id": "version-2/platform/getting-started/repository"
+        }
+      ]
+    }
+  ],
   "version-2/falconPlatformSidebar": [
     {
       "collapsed": true,

@@ -1,56 +1,54 @@
-import React from "react";
-import Link from "@docusaurus/Link";
+import React from 'react';
+import Link from '@docusaurus/Link';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.scss';
 
 const FaqCategories = [
   {
-    name: "General",
-    url: "/docs/platform/support/faqs/general",
-    icon: "/img/bxs-info-square.svg",
+    name: 'General',
+    url: '/platform/support/faqs/general',
+    icon: '/docs/img/icons/deity.svg'
   },
   {
-    name: "Falcon Client",
-    url: "/docs/platform/support/faqs/client",
-    icon: "/img/bx-mobile.svg",
+    name: 'PWA & Native Storefronts',
+    url: '/platform/support/faqs/storefront',
+    icon: '/docs/img/icons/shop.svg'
   },
   {
-    name: "Falcon Server",
-    url: "/docs/platform/support/faqs/server",
-    icon: "/img/bxs-server.svg",
+    name: 'Commerce Composer',
+    url: '/platform/support/faqs/server',
+    icon: '/docs/img/icons/ticker.svg'
   },
   {
-    name: "Falcon Cloud",
-    url: "/docs/platform/support/faqs/cloud",
-    icon: "/img/bxs-cloud.svg",
+    name: 'Cloud Console',
+    url: '/platform/support/faqs/cloud',
+    icon: '/docs/img/icons/switch.svg'
   },
   {
-    name: "Configuration + Integrations",
-    url: "/docs/platform/support/faqs/config",
-    icon: "/img/bxs-cog.svg",
+    name: 'Configuration + Integrations',
+    url: '/platform/support/faqs/config',
+    icon: '/docs/img/icons/add-one.svg'
   },
   {
-    name: "Miscellaneous + Troubleshooting",
-    url: "/docs/platform/support/faqs/misc",
-    icon: "/img/bx-question-mark.svg",
-  },
+    name: 'Miscellaneous + Troubleshooting',
+    url: '/platform/support/faqs/misc',
+    icon: '/docs/img/icons/lightbulb.svg'
+  }
 ];
 
-const Categories = () => (
-  <div className={styles.categories}>
-    {FaqCategories.map((category) => (
-      <div key={category.name} className={styles.category}>
-        <Link to={category.url} className={styles.category__link}>
-          <img
-            className={styles.category__icon}
-            src={category.icon}
-            alt={`${category.name} Icon`}
-          />
-          <span className={styles.category__name}>{category.name}</span>
-        </Link>
-      </div>
-    ))}
-  </div>
-);
+function Categories() {
+  return (
+    <div className={styles.categories}>
+      {FaqCategories.map(category => (
+        <div key={category.name} className={styles.category}>
+          <Link to={category.url} className={styles.category__link}>
+            <img className={styles.category__icon} src={category.icon} alt={`${category.name} Icon`} />
+            <h4 className={styles.category__name}>{category.name}</h4>
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default Categories;

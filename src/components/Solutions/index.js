@@ -2,20 +2,19 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-
 const PlatformSolutions = [
   {
     name: "I'm going to use the BigCommerce Extension",
     description: "From within BC's shop panel",
-    url: "/docs/platform/integration/bigcommerce/getting-started",
-    img: "/img/docs/platform/bc-solution.jpg",
+    url: '/platform/integration/bigcommerce/getting-started',
+    img: '/img/docs/platform/bc-solution.jpg'
   },
   {
     name: "I'm going to set up Falcon Platform on my own",
-    description: "For Magento 2 and custom integrations",
-    url: "/docs/platform/getting-started/prerequisites",
-    img: "/img/docs/platform/deity-solution.jpg",
-  },
+    description: 'For Magento 2 and custom integrations',
+    url: '/platform/getting-started/prerequisites',
+    img: '/img/docs/platform/deity-solution.jpg'
+  }
 ];
 
 const Solution = ({ solution }) => {
@@ -35,18 +34,14 @@ const Solution = ({ solution }) => {
       </div>
     </article>
   );
-}
+};
 
 const Solutions = () => {
-  const solutions = PlatformSolutions.map((solution) => {
+  const solutions = PlatformSolutions.map(solution => {
     return <Solution key={solution.name} solution={solution} />;
   });
 
-  return (
-    <section className={styles.solutions}>
-      {solutions}
-    </section>
-  );
+  return <section className={styles.solutions}>{solutions}</section>;
 };
 
 export default Solutions;

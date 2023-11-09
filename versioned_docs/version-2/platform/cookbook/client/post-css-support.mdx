@@ -6,65 +6,53 @@ sidebar_label: Adding Post CSS support
 
 ![PostCSS logo](/img/docs/platform/postcss.svg)
 
-<a href="https://postcss.org/" target="_blank" rel="noreferrer noopener">Learn about PostCSS here</a>.
+<a href="https://postcss.org/" target="_blank" rel="noreferrer noopener">
+  Learn about PostCSS here
+</a>
+.
 
 ## 1. Add PostCSS packages.
 
 You'll need to add 2 packages to get started:
 
-- <a href="https://www.npmjs.com/package/postcss-each" target="_blank" rel="noreferrer noopener">PostCSS Each</a>.
+import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+<TabsContainer packageName="postcss-each" href="https://www.npmjs.com/package/postcss-each">
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock language="bash">npm i postcss-each</CodeBlock>
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock language="bash">yarn add postcss-each</CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>
 
-<Tabs
-  defaultValue="npm"
-  values={[
-    { label: 'NPM', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', }
-  ]
-}>
-<TabItem value="npm">
-
-```bash
-npm i postcss-each
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```bash
-yarn add postcss-each
-```
-
-</TabItem>
-</Tabs>
-
-
-- <a href="https://www.npmjs.com/package/postcss-loader" target="_blank" rel="noreferrer noopener">PostCSS Loader</a>.
-
-<Tabs
-  defaultValue="npm"
-  values={[
-    { label: 'NPM', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', }
-  ]
-}>
-<TabItem value="npm">
-
-```bash
-npm i postcss-loader
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```bash
-yarn add postcss-loader
-```
-
-</TabItem>
-</Tabs>
+<TabsContainer packageName="postcss-loader" href="https://www.npmjs.com/package/postcss-loader">
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock language="bash">npm i postcss-loader</CodeBlock>
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock language="bash">yarn add postcss-loader</CodeBlock>
+    </TabItem>
+  </Tabs>
+</TabsContainer>
 
 ## 2. Add PostCSS to your build process.
 
@@ -73,6 +61,7 @@ Open `client/falcon-client.build.config.js`.
 Within the `plugins` section add a new rule to the `rules` array using `push`.
 
 **`client/falcon-client.build.config.js`**
+
 ```js
 plugins: [
   cfg => {
@@ -84,19 +73,17 @@ plugins: [
         {
           loader: 'postcss-loader',
           options: {
-            plugins: [
-              require('postcss-each')
-            ]
+            plugins: [require('postcss-each')]
           }
         }
       ]
     });
     return cfg;
   }
-]
+];
 ```
 
-You'll need to completely restart your app to see changes in the build process. 
+You'll need to completely restart your app to see changes in the build process.
 
 ```bash
 cmd + c (or ctrl + c)
@@ -106,6 +93,7 @@ yarn start
 3. Add your CSS
 
 **`client/src/poststyles.css`**
+
 ```css
 .box-wrap {
   padding: 50px;
@@ -115,7 +103,7 @@ yarn start
 @each $color in red, green, blue {
   .box-$(color) {
     width: 100px;
-    height: 100px; 
+    height: 100px;
     margin: 10px;
     display: block;
     background: $(color);
@@ -124,6 +112,7 @@ yarn start
 ```
 
 **`client/src/components/YourComponent.js`**
+
 ```js
 ...
 import '../poststyles.css'
@@ -138,4 +127,5 @@ import '../poststyles.css'
 ```
 
 ## 4. Finished
+
 And your done :-)

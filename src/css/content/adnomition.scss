@@ -1,0 +1,87 @@
+.theme-admonition {
+  --ifm-alert-border-width: 0;
+  --ifm-alert-border-radius: 9px;
+  --ifm-alert-padding-vertical: 14px;
+  --ifm-alert-padding-horizontal: 16px;
+  --ifm-alert-border-left-width: 0;
+  box-shadow: none;
+
+  p {
+    font-size: 13px;
+    line-height: 18.2px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  &-note {
+    color: var(--ifm-adnomition-note);
+    background: var(--ifm-adnomition-note-background);
+
+    p,
+    a {
+      color: var(--ifm-adnomition-note);
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-note)
+    }
+  }
+
+  &-info {
+    color: var(--ifm-adnomition-info);
+    background: var(--ifm-adnomition-info-background);
+
+    p,
+    a {
+      color: var(--ifm-adnomition-info);
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-info)
+    }
+  }
+
+  &-caution {
+    color: var(--ifm-adnomition-caution);
+    background: var(--ifm-adnomition-caution-background);
+
+    p,
+    a {
+      color: var(--ifm-adnomition-caution);
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-caution)
+    }
+  }
+
+  &-danger, &-warning {
+    color: var(--ifm-adnomition-danger);
+    background: var(--ifm-adnomition-danger-background);
+
+    p,
+    a {
+      color: var(--ifm-adnomition-danger);
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-danger)
+    }
+  }
+
+  &-tip {
+    color:  var(--ifm-adnomition-tip);
+    background: var(--ifm-adnomition-tip-background);
+
+    p,
+    a {
+      color: var(--ifm-adnomition-tip);
+      opacity: 0.85;
+    }
+    svg path {
+      stroke: var(--ifm-adnomition-tip)
+    }
+  }
+}

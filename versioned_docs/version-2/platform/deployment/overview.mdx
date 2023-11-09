@@ -6,36 +6,42 @@ sidebar_label: Overview
 
 Deployment is handled through **Falcon Cloud**, all you need to do is push your code.
 
-Read more about [Falcon Cloud](/docs/platform/cloud/about)
+Read more about [Falcon Cloud](/platform/cloud/about)
 
 To check your build code locally you can run the `build` & `start` commands with the `:prod` flag from both the `server` and `client`.
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import { TabsContainer, Tabs, TabItem } from '@site/src/components/Tabs';
+import CodeBlock from '@theme/CodeBlock';
 
-<Tabs
-  defaultValue="npm"
-  values={[
-    { label: 'NPM', value: 'npm', },
-    { label: 'Yarn', value: 'yarn', }
-  ]
-}>
-<TabItem value="npm">
-
-```bash
+<TabsContainer>
+  <Tabs
+    variant="secondary"
+    defaultValue="npm"
+    values={[
+      { label: 'NPM', value: 'npm' },
+      { label: 'Yarn', value: 'yarn' }
+    ]}
+  >
+    <TabItem value="npm">
+      <CodeBlock
+        language="bash"
+        children={`
 npm build:prod
 npm start:prod
-```
-
-</TabItem>
-<TabItem value="yarn">
-
-```bash
+      `.trim()}
+      />
+    </TabItem>
+    <TabItem value="yarn">
+      <CodeBlock
+        language="bash"
+        children={`
 yarn build:prod
 yarn start:prod
-```
+      `.trim()}
+      />
+    </TabItem>
+  </Tabs>
+</TabsContainer>
+;
 
-</TabItem>
-</Tabs>
-
-Find out more about our [CLI commands](/docs/platform/client/getting-started#build)
+Find out more about our [CLI commands](/platform/client/getting-started#build)

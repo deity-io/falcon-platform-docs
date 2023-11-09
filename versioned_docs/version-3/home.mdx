@@ -1,0 +1,92 @@
+---
+id: home
+title: Composable Commerce help center
+description: We deliver True Composable Commerce, based on the MACH (microservices, API-first, cloud based, headless) principles, to fulfill your growth ambitions.
+displayed_sidebar: home
+sidebar_class_name: home-sidebar
+slug: /
+hide_title: true
+hide_table_of_contents: true
+---
+
+import SearchBar from '@theme/SearchBar';
+import { Card, CardContent } from '@site/src/components/Card';
+import Badge from '@site/src/components/Badge';
+import LogoImg from '/img/logo.svg';
+import Button from '@site/src/components/Button';
+
+<div className="text-center">
+  <Badge>Help center</Badge>
+  <h1 className="headline mb20">Discover the power of Deity Composable Commerce through our documentation.</h1>
+  <div className="home-search mb100">
+    <SearchBar />
+    <div className="home-search-description">Some tips how to use the search...</div>
+  </div>
+</div>
+
+<Card isPadding={false}>
+  <div className="flex">
+    <CardContent>
+      <LogoImg className="logo-content" />
+      <div className="mb20">
+        <p>
+          The Deity Composable Commerce platform with it's strong engines empowers your business to grow, innovate and drive revenue like never before. All with unparalleled respect to your current stack - minimizing risk while maximizing growth. 
+        </p>
+      </div>  
+        <Button variant="contained" size="medium" href="/docs/platform">Learn more →</Button>&nbsp; &nbsp;
+        <Button variant="outlined" size="medium" href="https://www.deity.com/contact" target="_blank">Request a walkthrough demo →</Button>
+    </CardContent>
+    <div className="right-big-card">
+      <CardContent >
+        <img src="/docs/img/composable-commerce.svg"/>
+      </CardContent>
+    </div>
+  </div>
+</Card>
+
+<div className="flex mb100 brighten">
+  <Card to="/docs/platform">
+    <img src="/docs/img/icons/rings.svg" />
+    <h4>Overview</h4>
+    <p>Learn what Deity is, why we build it and how it works.</p>
+  </Card>
+  <Card to="/docs/platform/key-concepts">
+    <img src="/docs/img/icons/info.svg" />
+    <h4>Key concepts</h4>
+    <p>Learn the basics behind the Deity Composable Commerce platform.</p>
+  </Card>
+  <Card to="/docs/platform/getting-started/overview">
+    <img src="/docs/img/icons/lightning.svg" />
+    <h4>Getting started</h4>
+    <p>Jump right in and start with our Composable Commerce platform.</p>
+  </Card>  
+  <Card to="/docs/platform/support/tutorials">
+    <img src="/docs/img/icons/lightbulb.svg" />
+    <h4>Tutorials</h4>
+    <p>Learn by doing by following practical tutorials.</p>
+  </Card>
+</div>
+
+<Badge>Engines</Badge>
+<h2 className="mb20 headline2">Discover all our engines</h2>
+
+import ProductContent from "./includes/products.mdx"
+
+<ProductContent />
+
+
+<Badge>Guides</Badge>
+<h2 className="mb20 headline2">Popular topics</h2>
+
+import PopularContent from "./includes/popular.mdx"
+
+<PopularContent />
+
+<Badge>Integrations</Badge>
+<h2 class="mb20 headline2">Integrate literally anything</h2>
+
+import IntegrationContent from "./includes/integrations.mdx"
+
+<IntegrationContent />
+
+

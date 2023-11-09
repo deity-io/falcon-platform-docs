@@ -1,7 +1,7 @@
 ---
 id: full-changelog
 title: Falcon Changelog
-sidebar_label: 'Falcon Changelog'
+sidebar_label: 'Changelog'
 description: Falcon platform all versions and their release notes
 ---
 
@@ -31,9 +31,11 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 ## Falcon Platform 2.7.16 (2021-08-05)
 
 ### Falcon Shop Data
+
 - Fix remove cart mutation after upgrading to apollo/client
 
 ### Demo V2
+
 - Fix sidebar action after adding to cart
 
 ## Falcon Platform 2.7.15 (2021-08-04)
@@ -72,7 +74,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 ### Falcon BigCommerce API
 
-- Security patch 
+- Security patch
 
 ### Demo v1 & Demo v2
 
@@ -82,13 +84,13 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 
 ### Falcon Magento API
 
-- Security patch 
+- Security patch
 
 ## Falcon Platform 2.7.11 (2021-05-11)
 
 ### Falcon Server
 
-- Enabled introspection when debug mode is enabled 
+- Enabled introspection when debug mode is enabled
 
 ## Falcon Platform 2.7.10 (2021-05-11)
 
@@ -115,6 +117,7 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 ### Falcon Server
 
 - Added falcon-file-redirect-api
+
 ### Demo v1
 
 - Upgraded Falcon Payments packages to 2.7.1
@@ -253,7 +256,6 @@ Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)
 ### Falcon Shop Extension
 
 - BREAKING: renamed `itemId` to `id`
-
 
 ## Falcon Platform v2.5.0 (2020-10-28)
 

@@ -1,0 +1,117 @@
+.table-of-contents {
+  --ifm-toc-link-color: #6a716e;
+  --ifm-toc-link-color-active: #0c6d62;
+  padding: 0 0 0 3px;
+  margin-top: 8px;
+
+  &__link {
+    color: var(--ifm-toc-link-color);
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    padding: 0.5rem;
+
+    > [variant] {
+      display: inline-block;
+      margin-left: 0.5rem;
+      height: 20px;
+      padding: 2px 4px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    > [rounded] {
+      min-width: 20px;
+      margin: 0 0.5rem 0 0;
+      border-radius: 40px;
+      text-align: center;
+    }
+
+    > [variant='purple'] {
+      background: var(--ifm-adnomition-note-background);
+      color: var(--ifm-color-purple);
+    }
+
+    > [variant='green'] {
+      background: rgba(1, 167, 54, 0.13);
+      color: var(--ifm-color-primary);
+    }
+
+    &--active {
+      color: var(--ifm-toc-link-color-active);
+
+      &:before {
+        @include large {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -4px;
+          width: 1px;
+          height: 100%;
+          background: var(--ifm-toc-link-color-active);
+        }
+      }
+    }
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+
+    ul li a:before {
+      left: -12px;
+    }
+  }
+}
+
+.theme-doc-toc-desktop {
+  &:before {
+    @include large {
+      content: 'CONTENT';
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      color: var(--ifm-color-primary);
+      padding-left: 4px;
+    }
+  }
+}
+
+.theme-doc-toc-mobile {
+  .clean-btn {
+    color: var(--ifm-p-color );
+    height: 44px;
+    padding: 12px 20px;
+
+    &:after {
+      color: #000;
+      width: 8px;
+      height: 8px;
+      background: var(--ifm-menu-link-sublist-icon) 50% 50% / 1rem 1rem no-repeat;
+      filter: none;
+    }
+  }
+}
+
+@include dark-mode {
+  .table-of-contents {
+    &__link {
+      color: var(--ifm-color-white);
+
+      &--active {
+        color: var(--ifm-color-primary);
+
+        &:before {
+          @include large {
+            background: var(--ifm-color-white);
+          }
+        }
+      }
+    }
+  }
+
+  .clean-btn {
+    
+  }
+}

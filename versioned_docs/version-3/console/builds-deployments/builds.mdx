@@ -1,0 +1,19 @@
+---
+id: builds
+title: Builds in Cloud Console
+sidebar_label: Builds
+---
+
+# Builds
+
+Every git push event on your repository triggers an event to the Deity platform. When such an event is received, Deity reads the code of that branch and initiates a new build of that branch. You can easily test this my making any commit to your repository. A new build id will be listed in your build listing page, in status in progress.
+
+Various data of builds are displayed in the table. Each build has its own ID, which is incremented by 1 for each new build. You can see from which branch the code was pulled for a particular build, and who wrote the commit that triggered the build. Click Details to view a detailed build log.
+
+Furthermore, you can see the duration of the build and its status. 
+
+## Build status
+Each successful build can be deployed to the environment of your choice.
+
+If a build has failed, it can have various reasons. You can inspect the build output by clicking Details. In case it timed out, the first thing to try is restart the build. You can do so by navigating to the build list page and clicking restart. In case that does not resolve the issue, please inspect the build logs for any specific errors, such as a mismatch in configuration variables.
+

@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  line-height: var(--ifm-heading-line-height);
+  font-weight: 500;
+  font-family: var(--ifm-font-family-headline);
+  font-style: normal;
+
+  span + .hash-link {
+    padding-left: 0;
+  }
+}
+
+.markdown {
+  h1:first-child {
+   --ifm-h1-font-size: 2.3125rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .headline {
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    background: radial-gradient(34.52% 167.24% at 43.06% 84.91%, #0c6d62 0%, #111c18 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .headline2 {
+    font-size: 37px;
+    line-height: 44.4px;
+    margin-top: 0;
+  }
+
+
+  
+  blockquote {
+    font-style: italic;
+    color: var(--ifm-color-secondary);
+  }
+  p, li {
+   
+    color: var(--ifm-p-color);
+    line-height: 1.75rem;
+  }
+  h3.view-all {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@include dark-mode {
+  .headline,
+  .headline2 {
+    color: #fff;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #fff;
+    background-clip: none;
+  }
+}

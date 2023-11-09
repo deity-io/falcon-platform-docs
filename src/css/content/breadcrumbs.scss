@@ -1,0 +1,50 @@
+.breadcrumbs {
+  --ifm-breadcrumbs-font-size: 0.875rem;
+  --ifm-breadcrumbs-color: var(--ifm-p-color);
+  --ifm-breadcrumbs-color-active: --ifm-color-secondary;
+  --ifm-breadcrumb-spacing: 0;
+  margin-top: 0.2rem;
+  margin-bottom: 4.675rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(2, 44, 15, 0.08);
+
+  @include large {
+    margin-top: 0.95rem;
+    border-bottom: 0;
+  }
+
+  svg[class^="breadcrumbHomeIcon"] {
+    top: 4px;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__homeLink {
+    padding-left: 5px;
+  }
+
+  &__link {
+    font-size: 0.875rem;
+    color: var(--ifm-breadcrumbs-color);
+
+    &--active {
+      color: var(--ifm-breadcrumbs-color-active);
+    }
+  }
+
+  &__item {
+    font-size: var(--ifm-breadcrumbs-font-size);
+
+    &:not(:last-child):after {
+      width: 8px;
+    }
+
+    .breadcrumbs__link {
+      background: none;
+    }
+  }
+}
+
+@include dark-mode {
+
+}

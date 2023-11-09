@@ -1,0 +1,33 @@
+.codePackage {
+  border-radius: var(--ifm-code-border-radius);
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+  
+  color: var(--ifm-menu-color-adisabled);
+  margin-bottom: 2rem;
+  border: 1px solid rgba(2, 44, 15, 0.08);
+}
+
+.codePackage svg,
+.codePackage span {
+  display: flex;
+  align-self: center;
+  font-size: 1.1rem;
+  margin-right: 0.2rem;
+  text-align: center;
+}
+
+.packageName {
+  margin-left: 0.6rem;
+  font-weight: normal;
+  font-family: var(--ifm-font-family-monospace);
+   color: var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] {
+.codePackage {
+  background-color: var(--ifm-code-background);
+  }
+}

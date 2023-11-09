@@ -1,0 +1,79 @@
+@import '../../css/mixins';
+
+.section {
+  padding: 0 0 2rem;
+  margin: 0 0 2rem;
+  border-bottom: 0px solid var(--ifm-hr-background-color);
+}
+
+.section__title {
+  margin: 0 0 1em;
+}
+
+.search button {
+ 
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-hr-background-color);
+  text-align: left;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.category {
+  
+  padding: 0;
+  margin: .5rem 0;
+  width: 32%;
+}
+
+.category__link {
+  display: block;
+
+ 
+  justify-content: left;
+  text-align: left;
+  background: var(--ifm-background-secondary);
+  width: 100%;
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid rgba(2, 44, 15, 0.08);
+  box-shadow: var(--ifm-global-shadow-lw);
+  padding: 1.25rem;
+  color: var(--ifm-color-secondary);
+  font-size: var(--ifm-h5-font-size);
+  
+  transition: .3s;
+  height: 100%;
+}
+
+
+.category__link:hover {
+  text-decoration: none;
+  box-shadow: var(--ifm-global-shadow-md);
+  color:var(--ifm-color-primary);
+
+  .category__name {
+    color:var(--ifm-color-primary);
+  }
+}
+
+.category__name {
+  margin: .5em 0 0;
+}
+
+.category__icon { 
+  height: 56px;
+}
+
+@include dark-mode {
+  .category__icon { 
+    filter: brightness(1.75) grayscale(0.2);
+  }
+  .category__link:hover {
+    box-shadow: none;
+    filter: brightness(0.8);
+  }
+}

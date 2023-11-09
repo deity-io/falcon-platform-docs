@@ -1,42 +1,93 @@
 const path = require('path');
 
 module.exports = {
-  title: 'DEITY',
-  tagline: 'Documentation',
-  url: 'https://deity.io',
-  baseUrl: '/',
+  title: 'Deity Platform Docs',
+  tagline: 'The leading platform for Composable Commerce',
+  url: 'https://deity.com',
+  baseUrl: '/docs',
+  trailingSlash: false, // this reduces the amount of 301 redirects from /bar to /bar/
+  noIndex: false,
   favicon: 'img/favicon.png',
-  organizationName: 'DEITY', // Usually your GitHub org/user name.
+  organizationName: 'Deity', // Usually your GitHub org/user name.
   projectName: 'falcon-platform-docs', // Usually your repo name.
+  scripts: [
+    {
+      src: 'https://app.happyreact.com/widget/reactions.js',
+      defer: true
+    }
+  ],
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/vsDark')
+    },
     navbar: {
-      title: 'Deity Documentation',
       logo: {
-        alt: 'DEITY Logo',
-        src: 'img/deity-logo.svg'
+        alt: 'Deity Composable Commerce Platform',
+        src: 'img/deity-logo-docs.svg',
+        srcDark: 'img/deity-logo-docs-dark.svg'
       },
       items: [
         {
           label: 'Platform',
-          href: '/docs/platform/overview/about',
-          position: 'right',
-          activeBasePath: '/docs/platform'
+          items: [
+            {
+              label: 'Platform Overview',
+              icon: 'platform',
+              to: '/platform'
+            },
+            {
+              label: 'Commerce Composer',
+              icon: 'composer',
+              to: '/composer'
+            },
+            {
+              label: 'PWA & Native Storefronts',
+              icon: 'storefront',
+              to: '/storefront'
+              
+            },
+            {
+              label: 'Payment Orchestrator',
+              icon: 'payments',
+              to: '/payments'
+            },
+            {
+              label: 'Cloud Console',
+              icon: 'console',
+              to: '/console',
+              customProps: {
+                label: 'new'
+              }
+            },
+            {
+              label: 'Orchestrator',
+              icon: 'orchestrator',
+              to: '/orchestrator'
+            },
+            {
+              type: 'html',
+              value: '<hr/>'
+            },
+            {
+              label: 'Integrations',
+              icon: 'integrations',
+              to: '/integrations',
+              customProps: {
+                count: 14
+              }
+            }
+          ]
         },
-        // {
-        //   label: 'DPSG',
-        //   href: '/dpsg/docs/about',
-        //   position: 'right',
-        //   activeBasePath: '/docs/docs',
-        // },
-        /* {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownActiveClassDisabled: true,
-        }, */
         {
-          label: 'Falcon UI',
-          href: 'https://falcon-ui.docs.deity.io/',
-          position: 'right'
+          label: 'Support',
+          to: '/platform/support/contact',
+          activeBasePath: '/platform/support'
+        },
+        {
+          label: 'Changelog',
+          to: '/platform/changelog',
+          activeBasePath: '/platform/changelog'
         }
       ]
     },
@@ -44,65 +95,82 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Our documentation',
+          title: 'Platform',
           items: [
             {
-              label: 'Platform',
-              to: '/docs/platform/overview/about'
+              label: 'Overview',
+              to: '/platform'
             },
             {
-              label: 'Falcon Cloud',
-              to: '/docs/platform/cloud/about'
+              label: 'Commerce Composer',
+              to: '/composer'
             },
-            // {
-            //   label: 'DPSG',
-            //   to: '/dpsg/docs/about',
-            // },
             {
-              label: 'Falcon UI',
-              href: 'https://falcon-ui.docs.deity.io/'
+              label: 'PWA & Native Storefronts',
+              to: '/storefront'
+            },
+            {
+              label: 'Payment Orchestrator',
+              to: '/payments'
+            },
+            {
+              label: 'Cloud Console',
+              to: '/console'
+            },
+            {
+              label: 'Integrations',
+              to: '/integrations'
             }
           ]
         },
         {
-          title: 'Our Integrations',
+          title: 'Support',
           items: [
             {
-              label: 'Algolia',
-              to: '/docs/platform/integration/algolia'
+              label: 'F.A.Q.',
+              to: '/platform/support/faqs'
             },
             {
-              label: 'BigCommerce',
-              to: '/docs/platform/integration/bigcommerce/overview'
+              label: 'Changelog',
+              to: '/platform/changelog'
             },
             {
-              label: 'Magento 2',
-              to: '/docs/platform/integration/magento2/overview'
+              label: 'Contact us',
+              to: 'https://deity.com/contact'
             },
             {
-              label: 'Stripe',
-              to: '/docs/platform/integration/stripe'
-            },
-            {
-              label: 'Mollie',
-              to: '/docs/platform/integration/mollie'
-            },
-            {
-              label: 'Wordpress',
-              to: '/docs/platform/integration/wordpress'
+              label: 'System status',
+              to: 'https://status.deity.io/'
             }
           ]
         },
         {
-          title: 'Community & Help',
+          title: 'Resources',
           items: [
             {
-              label: 'Community Chat',
-              href: 'http://slack.deity.io/'
+              label: 'Website',
+              href: 'https://deity.com/'
             },
+            {
+              label: 'Blog',
+              href: 'https://deity.com/blog'
+            },
+            {
+              label: 'Case studies',
+              href: 'https://deity.com/case-studies'
+            }
+          ]
+        },
+        {
+          title: 'Connect',
+          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/deity_commerce'
+            },
+            {
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/company/deity-bv/'
             },
             {
               label: 'Instagram',
@@ -111,40 +179,15 @@ module.exports = {
             {
               label: 'YouTube',
               href: 'https://www.youtube.com/channel/UCCyszDV63yrqFHUY1uWf4mQ'
-            },
-            {
-              label: 'Contact Us',
-              href: 'https://deity.io/contact'
-            }
-          ]
-        },
-        {
-          title: 'Useful Links',
-          items: [
-            {
-              label: 'Marketing Site',
-              href: 'https://deity.io/'
-            },
-            {
-              label: 'Status',
-              href: 'https://status.deity.io/'
-            },
-            {
-              label: 'Blog',
-              href: 'https://medium.com/deity-io'
-            },
-            {
-              label: 'Privacy Policy',
-              href: 'https://deity.io/privacy-policy'
             }
           ]
         }
       ],
       logo: {
-        alt: 'DEITY Logo',
+        alt: 'Deity Logo',
         src: 'img/deity-logo.svg'
       },
-      copyright: `Copyright © ${new Date().getFullYear()} DEITY B.V.`
+      copyright: `COPYRIGHT © 2018–${new Date().getFullYear()} DEITY B.V. ALL RIGHTS RESERVED.`
     },
     image: 'img/deity-logo.svg',
 
@@ -156,12 +199,10 @@ module.exports = {
     },
     mailchimp: {
       submitUrl: 'https://Deity.us16.list-manage.com/subscribe/post-json?u=6c94229e24ca6964641a9d054&id=f7e67a2b7d'
-    },
-    intercom: {
-      appId: 'z91ewqiv'
     }
   },
   plugins: [
+    ['docusaurus-plugin-sass', {}],
     [
       path.resolve(__dirname, './src/plugins/deity-gtm/src/index.js'),
       {
@@ -196,43 +237,38 @@ module.exports = {
           }
         ]
       }
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'dpsg',
-        path: 'dpsg',
-        routeBasePath: 'dpsg',
-        sidebarPath: require.resolve('./sidebarsDpsg.js')
-      }
     ]
   ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        googleTagManager: {
+          containerId: 'G-V9XS75TE6K'
+        },
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/deity-io/falcon-platform-docs/edit/master',
-          lastVersion: '2',
+          sidebarCollapsible: false,
+          lastVersion: '3',
+          onlyIncludeVersions: ['3'],
           versions: {
-            current: {
-              label: 'Platform (v3) [BETA]',
-              path: 'next'
-            },
-            2: {
-              label: 'Platform (v2)'
-            },
-            2019: {
-              label: 'Platform (v2019)',
-              path: 'v2019'
+            3: {
+              label: 'Version 3'
             }
           }
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css')
-        }
+          customCss: require.resolve('./src/css/main.scss')
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['includes/'],
+          filename: 'sitemap.xml',
+        },
       }
     ]
-  ]
+  ],
+  onBrokenLinks: 'warn'
 };

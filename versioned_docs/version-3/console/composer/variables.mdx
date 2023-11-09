@@ -1,0 +1,27 @@
+---
+id: variables
+title: Variables in Cloud Console
+sidebar_label: Variables
+---
+
+# Environment variables
+
+You can define and manage any custom variable on each environment. Common use cases for custom variables are:
+
+- Storing an API key for one of your custom-built integrations
+
+- Storing the ID of a product category for which you’ve built a piece of custom logic
+
+- Storing the name of an additional search index which the frontend can query
+
+You can add as many variables as you’d like. Click **Add variable** to add one or more variables, enter the name and value and click the lock icon if you want to encrypt the value.
+
+Any changes to your variables, whether its editing, adding or removing will not take effect until you Save and apply the variables. Once you apply your changes, the variables are pushed to your environment and will be effective within a minute.
+
+## Duplicate variables
+
+You can duplicate all your custom variables from the currently selected environment to any other target environment.
+
+:::info Good to know
+If your target environment already has a variable with the same name as in the source environment, the value will not be overridden.
+:::

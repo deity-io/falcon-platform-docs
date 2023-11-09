@@ -1,0 +1,128 @@
+.footer {
+  padding-top: 2.5rem;
+
+  @include large {
+    padding-top: 5rem;
+  }
+
+  &.footer--dark {
+
+  }
+
+  &__content {
+    @include large {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__info {
+      max-width: 17.1875rem;
+      margin-bottom: 3rem;
+
+      @include large {
+        margin-bottom: 0;
+      }
+
+      h4 {
+        color: rgba(255, 255, 255, 0.93);
+      }
+
+      p {
+        color: var(--ifm-footer-color);
+        font-size: 13px;
+        line-height: 18.2px;
+      }
+
+      a {
+        color: var(--ifm-footer-link-color);
+        font-size: 14px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 0.875rem;
+  }
+
+  &__items {
+    padding: 0;
+    list-style-type: none;
+
+    a {
+      
+      font-size: 0.875rem;
+      &:hover {
+        color: #fff;
+        text-decoration:none;
+      }
+    }
+  }
+
+  &__links {
+    flex: 1;
+
+    @include large {
+      padding-left: 7.1875rem;
+    }
+  }
+
+  &__col {
+    flex-basis: 50%;
+    
+    @include large {
+      flex-basis: 18%;
+      padding: 0;
+      &:first-child {
+        flex-basis: 36%;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.6875rem;
+    line-height: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  &__bottom {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--ifm-darkmode-bg);
+    margin-top: 0;
+    text-align: center;
+
+    @include large {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5.4rem;
+      text-align: initial;
+    }
+
+    &__links {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      @include large {
+        justify-content: initial;
+      }
+
+      li {
+        margin-left: 3rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      a {
+        font-size: 0.6875rem;
+        line-height: 1.125rem;
+        text-transform: uppercase;
+        color: rgba(230, 255, 242, 0.4);
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+:root {
+  --ifm-font-family-base: 'Deity Sans Text', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+    sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --ifm-font-family-headline: 'Deity Sans Display', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-monospace: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+
+  --ifm-color-primary: #0c6d62;
+  --ifm-color-secondary: #1a1e1c;
+  --ifm-color-purple: #644FC1;
+  --ifm-color-white: #fff;
+  --ifm-footer-background-color: #ffffffa8;
+  --ifm-hero-text-color: #ffffff;
+  --ifm-button-color: #ffffff;
+  --ifm-button-background-color: rgb(12, 109, 98);
+  --ifm-button-border-color: var(--ifm-color-primary);
+  --ifm-button-padding-vertical: 1rem;
+  --ifm-background-color: #f3f5f4;
+  --ifm-background-secondary: #fff;
+  --ifm-background-primary: #FBFDFC;
+  --ifm-font-size-sm: 0.8rem;
+  --ifm-font-size-xs: 0.6rem;
+  --ifm-code-font-size: 0.85em; /* Using em because sometimes these are used in the headings as well*/
+  --ifm-table-background: white;
+  --ifm-table-border-color: whitesmoke;
+  --ifm-table-background-highlight: #ebecfb;
+  --ifm-table-border-color-highlight: #dcdcfc;
+  --ifm-container-width-xl: 1072px;
+  --ifm-container-width: 1040px;
+  --ifm-hr-background-color: #dfe4e2;
+  --ifm-hr-margin-horizontal: 4px;
+  --ifm-menu-color-adisabled: #99A39F;
+  --ifm-link-color: #0E9888;//make them slightly lighter 
+  
+  --ifm-code-background:#f1f4f3;  
+  --ifm-global-radius: 12px;
+  --ifm-card-border-radius: var(--ifm-global-radius);
+  --ifm-global-shadow-lw: 0px 4px 14px rgba(0, 130, 158, 0.02), 0px 4px 12px rgba(15, 40, 69, 0.04);
+  --ifm-global-shadow-md: 0 12px 48px 0 rgba(0, 0, 0, 0.1), rgba(15, 255, 187, 0.2) 0px 1px 20px -0.214286px;
+  --ifm-global-shadow-tl: 0 12px 48px 0 rgba(0, 0, 0, 0.1), rgba(15, 255, 187, 0.2) 0px 1px 20px -0.214286px;
+
+  --ifm-adnomition-note: #6E56CF;
+  --ifm-adnomition-note-background: #F1F0FC; 
+  --ifm-adnomition-info: #3E63DD;
+  --ifm-adnomition-info-background: #8DA4EF20; 
+  --ifm-adnomition-caution: #946800;
+  --ifm-adnomition-caution-background: #FFCCA728; 
+  --ifm-adnomition-danger: #832126;
+  --ifm-adnomition-danger-background: #F9C6C630;
+  --ifm-adnomition-tip: #6A716E;
+  --ifm-adnomition-tip-background: #C2C9C630;
+  
+  --ifm-color-info-contrast-background: var(--ifm-background-secondary);
+  --ifm-color-info-dark: #E6E9E8;
+
+  --ifm-dropdown-background-color: var(--ifm-navbar-background-color);
+
+  .footer--dark {
+    --ifm-footer-background-color: rgb(21, 23, 22);
+    --ifm-footer-color: #e6fff280;
+    --ifm-footer-link-color: #f0fff280;
+    --ifm-footer-title-color: #fff;
+  }
+  /* Header */
+  --ifm-navbar-link-color: #1f2321;
+  --ifm-menu-color-background-active: rgba(0, 56, 37, 0.05);
+  --ifm-navbar-link-background-hover: var(--ifm-menu-color-background-active);
+
+  /* Typography */
+  --ifm-h1-font-size: 2.3125rem;
+  --ifm-h2-font-size: 26px;
+  --ifm-h3-font-size: 20px;
+  --ifm-h4-font-size: 17px;
+  --ifm-h5-font-size: 15px;
+  --ifm-p-color: #6a716e;
+  --ifm-code-padding-horizontal: 5px;
+  --ifm-code-padding-vertical: 3px;
+  --ifm-button-font-weight: 500;
+
+  --ifm-table-border-width: 0px;
+  --ifm-table-head-background: transparent;
+  --ifm-table-background: transparent;
+  --ifm-table-stripe-background: rgba(15, 40, 69, 0.025);
+  --ifm-table-head-color: var(--ifm-p-color);
+
+  /* Side Menu */
+  --doc-sidebar-width: 300px;
+  --ifm-menu-background-color: rgba(255, 255, 255, 0.75);
+  --ifm-menu-color: #1f2321;
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-menu-font-size: 0.9375rem;
+  --ifm-menu-color-background-hover: rgba(2, 192, 151, 0.095);
+  --ifm-menu-color-background-active: rgba(2, 192, 151, 0.095);  
+
+  /* Dropdown */
+  --ifm-dropdown-hover-background-color: #e7f9f5;
+
+  /* Tabs */
+  --ifm-tabs-padding-vertical: 8px;
+  --ifm-tabs-padding-horizontal: 12px;
+
+  /* Code */
+  --ifm-pre-background: #fff;
+  --ifm-code-border-radius: 6px;
+  --docusaurus-highlighted-code-line-bg: rgb(72, 77, 91);
+
+  --ifm-toc-border-color: var(--ifm-hr-background-color);
+  
+  /* Icons */
+  -ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+  -ifm-doc-icon: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 13" height="13px" width="11px"><path d="M1 1.5C1 1.22386 1.22386 1 1.5 1H7.08579C7.21839 1 7.34557 1.05268 7.43934 1.14645L9.85355 3.56066C9.94732 3.65443 10 3.78161 10 3.91421V11.5C10 11.7761 9.77614 12 9.5 12H1.5C1.22386 12 1 11.7761 1 11.5V1.5ZM1.5 0C0.671573 0 0 0.671573 0 1.5V11.5C0 12.3284 0.671573 13 1.5 13H9.5C10.3284 13 11 12.3284 11 11.5V3.91421C11 3.51639 10.842 3.13486 10.5607 2.85355L8.14645 0.43934C7.86514 0.158035 7.48361 0 7.08579 0H1.5ZM2.5 3C2.22386 3 2 3.22386 2 3.5C2 3.77614 2.22386 4 2.5 4H5.5C5.77614 4 6 3.77614 6 3.5C6 3.22386 5.77614 3 5.5 3H2.5ZM2.5 6C2.22386 6 2 6.22386 2 6.5C2 6.77614 2.22386 7 2.5 7H8.5C8.77614 7 9 6.77614 9 6.5C9 6.22386 8.77614 6 8.5 6H2.5ZM2.5 9C2.22386 9 2 9.22386 2 9.5C2 9.77614 2.22386 10 2.5 10H8.5C8.77614 10 9 9.77614 9 9.5C9 9.22386 8.77614 9 8.5 9H2.5Z" /></svg>');
+
+  /* Dark mode */
+  --ifm-darkmode-bg: #242926;
+}
+
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: var(--ifm-darkmode-bg);
+  --ifm-background-secondary: var(--ifm-darkmode-bg);
+  --ifm-background-primary: rgb(21, 23, 22);
+
+  --ifm-color-purple: #AA99EC;
+  --ra-color-note: var(--ifm-darkmode-bg);
+  --ifm-background-color: #1A1E1C;
+  --ra-color-text-dark: rgb(21, 23, 22);
+  --ifm-color-primary: #8DCEC3;
+  --ifm-color-secondary: #d8ff68;
+  --ra-admonition-icon-color: #2DFE4E2;
+  --ifm-button-color: #1A1E1C;
+  --ifm-button-background-color: rgb(141, 206, 195);
+  --ifm-button-border-color: var(--ifm-color-primary);
+  --ifm-card-background-color: var(--ifm-darkmode-bg);
+  --ifm-text-color: #DFE4E2;
+  --ifm-heading-color: #F1F4F3;  
+  --ifm-p-color: #C2C9C6f0;
+  --ifm-table-background: rgb(21, 23, 22);
+  --ifm-table-border-color: var(--ifm-color-emphasis-200);
+  --ifm-table-background-highlight: #2d2459;
+  --ifm-table-border-color-highlight: #524691;
+  --ifm-navbar-link-color: #F1F4F3;
+  --ifm-navbar-link-background-hover: var(--ifm-background-color);
+  --ifm-hr-background-color: #4B534F;
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-breadcrumbs-color: var(--ifm-p-color);
+  --ifm-code-background: var(--ifm-background-secondary);
+
+  --ifm-adnomition-note: #EDE9FE;
+  --ifm-adnomition-note-background: #5746AF50; 
+  --ifm-adnomition-info: #C6D4F9;
+  --ifm-adnomition-info-background: #3E63DD48; 
+  --ifm-adnomition-caution: #FFDCC3;
+  --ifm-adnomition-caution-background: #EB5A0040; 
+  --ifm-adnomition-danger: #F9C6C6;
+  --ifm-adnomition-danger-background: #CD2B3150;
+  --ifm-adnomition-tip: #C2C9C6;
+  --ifm-adnomition-tip-background: #C2C9C630;
+
+  --ifm-color-info-contrast-background: var(--ifm-background-color);
+  --ifm-color-info-dark: var(--ifm-background-secondary);
+
+    /* Side Menu */
+  --ifm-menu-background-color: rgba(255, 255, 255, 0.75);
+  --ifm-menu-color: #ECEFED;
+  --ifm-menu-color-active: #C2C9C6;
+  --ifm-menu-color-adisabled: #6A716E;
+  --ifm-menu-font-size: 0.9375rem;
+  --ifm-menu-color-background-hover: var(--ifm-darkmode-bg);
+  --ifm-menu-color-background-active: var(--ifm-darkmode-bg);
+
+  --docsearch-logo-color: #fff;
+
+   .footer--dark {
+    --ifm-footer-background-color: var(--ifm-background-color);
+    --ifm-footer-color: #e6fff280;
+    --ifm-footer-link-color: #f0fff280;
+    --ifm-footer-title-color: #F1F4F3;
+  }
+}
+
+$img-path: '../../static/img';
+$icons-path: '../../static/img/icons';
