@@ -192,9 +192,9 @@ module.exports = {
     image: 'img/deity-logo.svg',
 
     algolia: {
-      appId: 'BPQ949H0LU',
-      apiKey: '3e60ad703b9aa8f07904844cceb1a018',
-      indexName: 'deity',
+      appId: 'L088LV7HZ1',
+      apiKey: 'bd50b48feeccd17d9bf98447d1f3c6e2',
+      indexName: 'deitydocs',
       algoliaOptions: {}
     },
     mailchimp: {
