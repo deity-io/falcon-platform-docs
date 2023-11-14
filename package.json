@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "build": "docusaurus build",
+    "build": "docusaurus build && mv build builddocs && mkdir -p build && mv builddocs build/docs && mv build/docs/rootredirect_index.html build/index.html",
     "build-storybook": "build-storybook",
     "deploy": "docusaurus deploy",
     "lint": "eslint",
