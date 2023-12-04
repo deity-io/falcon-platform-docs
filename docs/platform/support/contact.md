@@ -1,11 +1,11 @@
 ---
 id: contact
-title: Contact Us
-sidebar_label: Contact Us
+title: Contact us
+sidebar_label: Contact us
 ---
 
-## #help
+Curious to see how we can help you to quickly create a strong flexibile foundation for your business? Or do you have any other question? We are here to help! 
 
-The best place to go for support is our <a href="https://deity-community.slack.com/archives/CDL2XDSHZ" target="_blank" rel="noreferrer noopener">community Slack channel</a>. We do our best to respond as quickly as possible.
+You can use the chat feature at the bottom right to contact us directly.
 
-If Slack isn't your thing you can always contact us using our <a href="https://deity.io/contact" target="_blank" rel="noreferrer noopener">online form</a>.
+If chat isn't your thing, you can always contact us for technical support or to request a walkthrough demo. Please use our <a href="https://deity.com/contact" target="_blank" rel="noreferrer noopener">online form</a>, we love to hear from you!

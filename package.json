@@ -1,6 +1,6 @@
 {
-  "name": "falcon-platform-docs",
-  "version": "1.0.1",
+  "name": "deity-docs",
+  "version": "3.0.1",
   "private": true,
   "scripts": {
     "build": "docusaurus build && mv build builddocs && mkdir -p build && mv builddocs build/docs && mv build/docs/rootredirect_index.html build/index.html",
