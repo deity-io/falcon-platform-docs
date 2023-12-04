@@ -19,7 +19,7 @@ At the moment surcharges and country restrictions can only be configured in your
 
 A surcharge is an additional fee that the merchant might want to charge the customer for using a particular payment method.
 
-<img src="/img/docs/platform/payments/surcharges.png" alt="Falcon Payment surcharges" width="400" style={{ marginBottom: 20 }} />
+<img src="/docs/img/docs/platform/payments/surcharges.png" alt="Falcon Payment surcharges" width="400" style={{ marginBottom: 20 }} />
 
 This fee can be calculated in a few ways:
 

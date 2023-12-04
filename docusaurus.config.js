@@ -9,7 +9,7 @@ module.exports = {
   noIndex: false,
   favicon: 'img/favicon.png',
   organizationName: 'Deity', // Usually your GitHub org/user name.
-  projectName: 'falcon-platform-docs', // Usually your repo name.
+  projectName: 'deity-docs', // Usually your repo name.
   scripts: [
     {
       src: 'https://app.happyreact.com/widget/reactions.js',
@@ -250,13 +250,6 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: false,
-          lastVersion: '3',
-          onlyIncludeVersions: ['3'],
-          versions: {
-            3: {
-              label: 'Version 3'
-            }
-          }
         },
         theme: {
           customCss: require.resolve('./src/css/main.scss')

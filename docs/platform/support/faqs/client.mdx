@@ -1,29 +1,27 @@
 ---
-id: client
-title: Falcon Client FAQs
-sidebar_label: Falcon Client
-description: Falcon Client frequently asked questions, answered by the DEITY team.
+id: storefront
+title: Storefront F.A.Q.
+description: Deity PWA & Native Storefronts frequently asked questions, answered by the Deity team.
 ---
 
 import Link from '@docusaurus/Link';
-import Categories from '@site/src/components/Faqs/Categories';
-import Accordion from '@site/src/components/Accordion';
+import Categories from '../../../../src/components/Faqs/Categories';
+import Accordion from '../../../../src/components/Accordion';
 
 <Accordion title="Can I use NextJS">
-  Unfortunately, Falcon-Client (the frontend app) cannot be used together with NextJs. NextJs uses its own
-  template/routing system, which is incompatible with ours. Falcon-Server (data/graphql server app) could be used as a
-  middleware between Spree backend and your frontend. It could be even used to provide data for your NextJs frontend
-  (depending on how you want to organize your whole setup).
+  Unfortunately, Deity PWA & Native Storefronts (the frontend app) cannot be used together with NextJs. NextJs uses its own
+  template/routing system, which is incompatible with ours. However, Commerce Composer (data/graphql server app) could be used as a
+  middleware between your backend and your NextJS frontend.
 </Accordion>
 <Accordion title="How can I access configuration values?">
-  This works differently for Falcon Client and Falcon Server. Configuration information can be found{' '}
-  <Link to="/platform/configuration/overview">here</Link>.
+  This works differently for Deity PWA & Native Storefronts and Commerce Composer. Configuration information can be found{' '}
+  <Link to="/docs/storefront/getting-started/configuration">here</Link>.
 </Accordion>
-<Accordion title="Offline support doesn't seem to be working...">
+<Accordion title="Offline support doesn't seem to be working">
   Our service worker, that provides offline support is only used in production mode. If you're running your app in
   development `yarn start` rather than `yarn start:prod` offline mode won't work.
 </Accordion>
 
-### Check out our other FAQs
+### Other frequently asked questions
 
 <Categories />
