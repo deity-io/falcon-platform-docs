@@ -7,13 +7,13 @@ sidebar_label: Local state management
 
 # Local state management 
 
-This page covers how to manage your local (client-side) state. If you're looking for information about querying or mutating data through a server, you can read more about that [here](/docs/storefront/data).
+This page covers how to manage your local (client-side) state. 
 
 Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](/docs/storefront/getting-started/create-application) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
 
 ## The short version
 
-If you already know how to use Apollo Client, you pretty much know how to use it with Falcon. If you need a refresher, continue to the [long version](../falcon-client/local-state-management#the-long-version) or the [Apollo documentation](https://www.apollographql.com/docs/react/v2.5/essentials/get-started/). We also provide a few [additional components](#falcons-additional-components) you can use.
+If you already know how to use Apollo Client, you pretty much know how to use it with Falcon. If you need a refresher, continue to the [Apollo documentation](https://www.apollographql.com/docs/react/v2.5/essentials/get-started/). We also provide a few [additional components](#falcons-additional-components) you can use.
 
 ### Initial state
 
