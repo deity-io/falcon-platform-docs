@@ -12,6 +12,8 @@ import Button from '@site/src/components/Button';
   <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" className="height80 pb20"/>
 </a>
 
+<h1 className="headline mb20">Mollie</h1>
+
 ## Payments designed for growth
 An advanced solution to accept payments, optimise conversion, and access funding.
 
