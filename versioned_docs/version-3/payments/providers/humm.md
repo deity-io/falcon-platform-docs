@@ -9,6 +9,8 @@ hide_title: true
   <img src="/docs/img/docs/platform/humm-logo.svg" alt="Humm Logo" className="height80 pb20"/>
 </a>
 
+<h1 className="headline mb20">Humm</h1>
+
 ## The bigger buy now pay later
 Shopping for little luxuries and bigger buys is easy as 1 - 2 - 3.
 
