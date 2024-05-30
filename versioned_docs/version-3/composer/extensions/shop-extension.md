@@ -77,7 +77,7 @@ yarn add @deity/falcon-shop-extension
 
 <!--END_DOCUSAURUS_CODE_TABS-->
 
-and add extension and module (in this example it's [Magento2 module](/docs/integrations/magento2)) to the configuration of the server:
+and add extension and module (in this example it's Magento2 module) to the configuration of the server:
 
 ```js
 {
