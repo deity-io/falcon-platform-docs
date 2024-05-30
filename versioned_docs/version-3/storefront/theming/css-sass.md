@@ -28,10 +28,4 @@ import './styles.scss';
 </div>
 ```
 
-### Global SCSS files
 
-Want to include global `scss` files for you variables, mixins and function? [Check out our cookbook](/docs/platform/support/storefront/tutorials/scss-global).
-
-### POST CSS
-
-Want to use Post CSS files for you variables, mixins and function? [Check out our cookbook](/docs/platform/support/storefront/tutorials/post-css-support).
