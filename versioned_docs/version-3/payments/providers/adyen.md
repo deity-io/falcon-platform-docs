@@ -10,6 +10,8 @@ hide_title: true
   <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80 pb10" />
 </a>
 
+<h1 className="headline mb20">Adyen</h1>
+
 ## Engineered for ambition
 End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
 
