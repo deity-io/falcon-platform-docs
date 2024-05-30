@@ -271,7 +271,7 @@ type GraphQLContext<TDataSources extends DataSourcesMap = DataSourcesMap> = {
 
 where:
 
-- `scope` - an object key-value map of Extension name and Extension Scope Id [see the details](../extension-scopes)
+- `scope` - an object key-value map of Extension name and Extension Scope Id 
 - `dataSources` - an object key-value map of DataSource name and its instance, [see the details](#context-datasources-map)
 - `cache` - give you direct access to cache.
 - `session` - http session cookie, which is an object key-value map of Extension name, and actual session value.
