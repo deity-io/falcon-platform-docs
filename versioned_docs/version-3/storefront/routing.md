@@ -9,7 +9,7 @@ sidebar_label: Routing
 
 In-app routing is based on <a href="https://reacttraining.com/react-router/" target="_blank" rel="noreferrer noopener">react-router</a>.
 
-Dynamic Routing relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](versioned_docs/version-3/platform/support/tutorials/integrations/contentful2).
+Dynamic Routing relies on both Falcon Client and Falcon Server. To see an example of how to get dynamic routing working please look at our [Contentful integration guide](platform/support/tutorials/integrations/contentful).
 
 ---
 
