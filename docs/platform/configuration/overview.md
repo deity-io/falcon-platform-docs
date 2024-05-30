@@ -39,7 +39,7 @@ This file is **not** committed to your repository. It **can** contain sensitive 
 
 This file has the highest priority and should be used to map config to environment variables (set on your Node environment). These mapping can be used for sensitive data such as passwords that you wouldn't want committed to your repository.
 
-If you're using Falcon Cloud you can set env variables using the [dcloud CLI tool](/platform/cloud/dcloud).
+If you're using Falcon Cloud you can set env variables using the [dcloud CLI tool](versioned_docs/version-3/platform/getting-started/dcloud).
 
 **CLI Command**
 
