@@ -20,7 +20,7 @@ Interacting with Payment Orchestrator is done through our `@deity/falcon-payment
 
 
 :::note Want to integrate Payment Orchestrator yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with Payment Orchestrator, please check out our [how to](/docs/payments/configuration/usage) guide.
+If you're creating a custom integration or want more details on how Falcon Platform interacts with Payment Orchestrator, please check out our [how to](versioned_docs/version-3/payments/usage/overview) guide.
 :::
 
 ---

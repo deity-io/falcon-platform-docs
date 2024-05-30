@@ -40,7 +40,7 @@ We are actively developing our BigCommerce integration and will be adding suppor
 **Search**
 
 - Product search
-- Search aggregations/facets (when used with our [Algolia Extension](/platform/integration/algolia))
+- Search aggregations/facets (when used with our Algolia Extension)
 - Search sort order
 
 **Customer Area**

@@ -43,9 +43,3 @@ Falcon Client comes with all necessary features and development tools turned on 
 
 However, you can still modify Falcon Client defaults
 
-## Examples
-
-Checkout out our **cookbook** for examples of changing the build process.
-
-- [Adding a global SCSS file](/docs/platform/support/storefront/tutorials/scss-global)
-- [Adding Post CSS support](/docs/platform/support/storefront/tutorials/post-css-support)
