@@ -10,6 +10,8 @@ hide_title: true
   <img src="/docs/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" className="height80"/>
 </a>
 
+<h1 className="headline mb20">Stripw</h1>
+
 ## Payments infrastructure for the internet
 Millions of companies of all sizes use Stripe online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.
 
