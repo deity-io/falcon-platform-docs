@@ -19,10 +19,6 @@ Interacting with Payment Orchestrator is done through our `@deity/falcon-payment
 - By listening for events on the `RabbitMQ` instance
 
 
-:::note Want to integrate Payment Orchestrator yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with Payment Orchestrator, please check out our [how to](versioned_docs/version-3/payments/usage/overview) guide.
-:::
-
 ---
 ### REST Endpoints
 Our `@deity/falcon-payment-service-module` package interacts with Payment Orchestrator using our four client endpoints. The API Reference for the client endpoints can be found [here →](https://dpsg.dev.deity.cloud/).
