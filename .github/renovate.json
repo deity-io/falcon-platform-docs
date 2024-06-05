@@ -33,6 +33,10 @@
     {
       "packagePatterns": ["^@docusaurus"],
       "groupName": "docusaurus-packages"
+    },
+    {
+      "packagePatterns": ["^sass"],
+      "groupName": "sass-packages"
     }
   ]
 }
