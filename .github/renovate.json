@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "schedule:weekdays",
+    "group:reactMonorepo",
+    "group:storybookMonorepo",
+    "group:typescript-eslintMonorepo"
+  ],
+  "labels": ["dependencies"],
+  "prConcurrentLimit": 5,
+  "recreateWhen": "never",
+  "rangeStrategy": "bump",
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "updateInternalDeps": true,
+  "reviewers": ["@alex-deity"],
+  "nvm": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/storybookjs"],
+      "groupName": "storybook-packages"
+    },
+    {
+      "matchPackagePatterns": ["eslint*"],
+      "groupName": "eslint-packages"
+    },
+    {
+      "matchPackagePrefixes": ["@types/"],
+      "groupName": "types-packages"
+    },
+    {
+      "packagePatterns": ["^@docusaurus"],
+      "groupName": "docusaurus-packages"
+    }
+  ]
+}
