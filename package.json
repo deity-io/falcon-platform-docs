@@ -27,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "@algolia/client-search": "^4.20.0",
+    "@algolia/client-search": "^4.23.3",
     "@babel/helper-string-parser": "^7.24.6",
     "@docusaurus/core": "^2.4.3",
     "@docusaurus/plugin-content-docs": "^2.4.3",
