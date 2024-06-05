@@ -1,14 +1,14 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import { Card } from '../components/Card';
 
 export default {
   title: 'Components/Card',
   component: Card
-} as ComponentMeta<typeof Card>;
+} as Meta<typeof Card>;
 
-const Template: ComponentStory<typeof Card> = args => (
+const Template: StoryFn<typeof Card> = args => (
   <Card {...args}>
     <img
       alt="img"

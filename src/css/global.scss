@@ -97,7 +97,7 @@ details > summary {
     }
   font-family: var(--ifm-font-family-headline);
     font-size: var(--ifm-h4-font-size);
-   
+
 }
 .hr {
   height: 1px;
@@ -129,14 +129,14 @@ div.markdown :nth-last-child(1 of div[class^="accordion"]) {
   .card:not(:hover) {
     border-color:var(--ifm-card-background-color);
   }
-  .brighten img { 
+  .brighten img {
     filter: brightness(1.75) grayscale(0.2);
   }
   .invert img {
-    filter:  invert(1) grayscale(1) brightness(2);   
+    filter:  invert(1) grayscale(1) brightness(2);
   }
   #__docusaurus  {
     background: var(--ifm-background-primary);
   }
-  
+
 }
