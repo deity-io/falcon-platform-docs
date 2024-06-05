@@ -20,7 +20,7 @@ module.exports = {
   themeConfig: {
     prism: {
       theme: prismThemes.themes.github,
-      darkTheme: prismThemes.themes.nightOwl
+      darkTheme: prismThemes.themes.vsDark,
     },
     navbar: {
       logo: {
@@ -38,17 +38,17 @@ module.exports = {
               to: '/platform'
             },
             {
-              label: 'Composer',
+              label: 'Commerce Composer',
               icon: 'composer',
               to: '/composer'
             },
             {
-              label: 'Storefront',
+              label: 'PWA & Native Storefronts',
               icon: 'storefront',
               to: '/storefront'
             },
             {
-              label: 'Payments',
+              label: 'Payment Orchestrator',
               icon: 'payments',
               to: '/payments'
             },
@@ -61,6 +61,11 @@ module.exports = {
               }
             },
             {
+              label: 'Orchestrator',
+              icon: 'orchestrator',
+              to: '/orchestrator'
+            },
+            {
               type: 'html',
               value: '<hr/>'
             },
@@ -70,15 +75,6 @@ module.exports = {
               to: '/integrations',
               customProps: {
                 count: 14
-              }
-            },
-            {
-              label: 'Orchestrator',
-              icon: 'orchestrator',
-              to: '#',
-              customProps: {
-                label: 'soon!',
-                disabled: true
               }
             }
           ]
@@ -106,15 +102,15 @@ module.exports = {
               to: '/platform'
             },
             {
-              label: 'Composer',
+              label: 'Commerce Composer',
               to: '/composer'
             },
             {
-              label: 'Storefront',
+              label: 'PWA & Native Storefronts',
               to: '/storefront'
             },
             {
-              label: 'Payments',
+              label: 'Payment Orchestrator',
               to: '/payments'
             },
             {
@@ -124,10 +120,6 @@ module.exports = {
             {
               label: 'Integrations',
               to: '/integrations'
-            },
-            {
-              label: 'Sign up',
-              href: 'https://console.deity.cloud/signup'
             }
           ]
         },
@@ -200,9 +192,9 @@ module.exports = {
     image: 'img/deity-logo.svg',
 
     algolia: {
-      appId: 'BPQ949H0LU',
-      apiKey: '3e60ad703b9aa8f07904844cceb1a018',
-      indexName: 'deity',
+      appId: 'L088LV7HZ1',
+      apiKey: 'bd50b48feeccd17d9bf98447d1f3c6e2',
+      indexName: 'deitydocs',
       algoliaOptions: {}
     },
     mailchimp: {

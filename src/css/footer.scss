@@ -69,9 +69,13 @@
 
   &__col {
     flex-basis: 50%;
-
+    
     @include large {
-      flex-basis: inherit;
+      flex-basis: 18%;
+      padding: 0;
+      &:first-child {
+        flex-basis: 36%;
+      }
     }
   }
 

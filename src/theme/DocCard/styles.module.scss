@@ -17,7 +17,7 @@
   background-color: var(--ifm-card-background-color);
 
   transition: all var(--ifm-transition-fast) ease;
-  transition-property: border, box-shadow;
+  transition-property: border, box-shadow, filter, background-color;
   padding:1.25rem;
 
  
@@ -28,11 +28,15 @@
 
 }
 
-.cardContainer:hover {
+.cardContainer[href="#"] {
+    filter: opacity(0.5);
+    
+}
+
+.cardContainer:not([href="#"]):hover {
   box-shadow: var(--ifm-global-shadow-md);
 
-  h2,
-  p {
+  h2, p {
     color: var(--ifm-color-primary);
   }
 }
@@ -42,13 +46,11 @@
 }
 
 .cardTitle {
-  
+
     font-family: var(--ifm-font-family-headline);
     font-size: var(--ifm-h4-font-size);
-
-        margin-top: 1.1rem;
+    margin-top: 1.1rem;
     margin-bottom: 0.5rem;
-
 }
 
 .cardDescription {
@@ -60,10 +62,17 @@
 
 @include dark-mode {
   .cardContainer {
-
+    &[href="#"] {
+        filter: brightness(0.8);
+    }
+    &:not([href="#"]):hover {
+      box-shadow: none;
+      filter: brightness(0.8);
+    }
     img {
-    filter: invert(1);
+      filter: invert(1);
     }
   }
 
 }
+

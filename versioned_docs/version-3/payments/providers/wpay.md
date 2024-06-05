@@ -9,6 +9,8 @@ hide_title: true
   <img src="/docs/img/docs/platform/wpay-logo.svg" alt="Wpay Logo" className="height80"/>
 </a>
 
+<h1 className="headline mb20">Wpay</h1>
+
 ## Move beyond payments
 Connected payments, in-store and online solutions, co-creative collaboration and a complete Gift Card offering – all in one service. Discover how Wpay grows businesses through payment experiences. 
 

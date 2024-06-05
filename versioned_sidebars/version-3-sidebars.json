@@ -22,11 +22,11 @@
     },
     {
       "type": "category",
-      "label": "Products",
+      "label": "Sections",
       "items": [
         {
           "type": "doc",
-          "label": "Composer",
+          "label": "Commerce Composer",
           "id": "version-3/composer",
           "customProps": {
             "icon": "composer"
@@ -34,7 +34,7 @@
         },
         {
           "type": "doc",
-          "label": "Storefront",
+          "label": "PWA & Native Storefronts",
           "id": "version-3/storefront",
           "customProps": {
             "icon": "storefront"
@@ -42,7 +42,7 @@
         },
         {
           "type": "doc",
-          "label": "Payments",
+          "label": "Payment Orchestrator",
           "id": "version-3/payments",
           "customProps": {
             "icon": "payments"
@@ -59,21 +59,19 @@
         },
         {
           "type": "doc",
+          "label": "Orchestrator",
+          "id": "version-3/orchestrator",
+          "customProps": {
+            "icon": "orchestrator"
+          }
+        },
+        {
+          "type": "doc",
           "label": "Integrations",
           "id": "version-3/integrations",
           "customProps": {
             "icon": "integrations",
             "count": 14
-          }
-        },
-        {
-          "type": "link",
-          "label": "Orchestrator",
-          "href": "#",
-          "customProps": {
-            "icon": "orchestrator",
-            "disabled": true,
-            "label": "soon!"
           }
         }
       ]
@@ -193,7 +191,7 @@
       "label": "Resources",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/platform/resources", "title":"Deity Platform resources", "description": "Deity Platform resources"},
+      "link": {"type": "generated-index", "slug": "/platform/resources", "title":"Deity Platform resources", "description": "Please select a topic."},
       "items": [
         {
           "type": "doc",
@@ -341,7 +339,7 @@
       "label": "Release changelog",
       "collapsible": true,
       "collapsed": true,
-      "link": {"type": "generated-index", "slug": "/platform/releases", "title": "Deity Platform release changelog", "description": "Deity Platform changelog"},
+      "link": {"type": "generated-index", "slug": "/platform/releases", "title": "Deity Platform release changelog", "description": "Please select a topic."},
       "items": [
         {
           "type": "doc",
@@ -483,7 +481,7 @@
   "composer": [
     {
       "type": "category",
-      "label": "Composer",
+      "label": "Commerce Composer",
       "className": "icon composer",
       "items": [
         {
@@ -529,7 +527,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/core", "title": "Composer core concepts", "description": "Deity Composer core concepts"},
+      "link": {"type": "generated-index", "slug": "/composer/core", "title": "Commerce Composer core concepts", "description": "Please select a topic."},
       "collapsed": true,
       "label": "Core",
       "items": [
@@ -562,7 +560,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "composer/extensions", "description": "Deity Composer extensions"},
+      "link": {"type": "generated-index", "slug": "composer/extensions", "title": "Commerce Composer extensions", "description": "Please select a topic."},
       "collapsed": true,
       "label": "Extensions",
       "items": [
@@ -595,7 +593,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/common-services", "description": "Deity Composer common services"},
+      "link": {"type": "generated-index", "slug": "/composer/common-services", "title": "Commerce Composer common services", "description": "Please select a topic."},
       "collapsed": true,
       "label": "Common services",
       "items": [
@@ -616,7 +614,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/modules", "title":"Modules in Composer", "description": "Deity Composer modules"},
+      "link": {"type": "generated-index", "slug": "/composer/modules", "title":"Modules in Commerce Composer", "description": "Please select a topic."},
       "collapsed": true,
       "label": "Modules",
       "items": [
@@ -679,7 +677,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/composer/resources", "title": "Deity Composer resources", "description": "Deity Composer resources"},
+      "link": {"type": "generated-index", "slug": "/composer/resources", "title": "Commerce Composer resources", "description": "Please select a topic."},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -699,7 +697,7 @@
   "storefront": [
     {
       "type": "category",
-      "label": "Storefront",
+      "label": "PWA & Native Storefronts",
       "collapsible": false,
       "className": "icon storefront",
       "items": [
@@ -747,7 +745,7 @@
       "type": "category",
       "label": "Building an app",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/building-an-app", "description": "Deity Storefront apps"},
+      "link": {"type": "generated-index", "slug": "/storefront/building-an-app", "title": "Building an app", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -772,7 +770,7 @@
       "type": "category",
       "label": "Creating themes",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/theming", "description": "Deity Storefront theming"},
+      "link": {"type": "generated-index", "slug": "/storefront/theming", "title": "Creating themes", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -805,7 +803,7 @@
       "type": "category",
       "label": "Building experiences",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/building-experiences", "description": "Deity Storefront building experiences"},
+      "link": {"type": "generated-index", "slug": "/storefront/building-experiences", "title": "Building experiences", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -838,7 +836,7 @@
       "type": "category",
       "label": "Advanced features",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/advanced", "description": "Deity Storefront advanced features"},
+      "link": {"type": "generated-index", "slug": "/storefront/advanced", "title": "Advanced features", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -878,7 +876,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/storefront/resources", "title": "Deity Storefront resources", "description": "Deity Storefront resources"},
+      "link": {"type": "generated-index", "slug": "/storefront/resources", "title": "PWA & Native Storefronts resources", "description":"Please select a topic."},
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -911,7 +909,7 @@
   "payments": [
     {
       "type": "category",
-      "label": "Payments",
+      "label": "Payment Orchestrator",
       "collapsible": false,
       "className": "icon payments",
       "items": [
@@ -959,7 +957,7 @@
       "type": "category",
       "label": "Configuration",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/configuration", "description": "Deity Payments configuration"},
+      "link": {"type": "generated-index", "slug": "/payments/configuration", "title": "Payment Orchestrator configuration", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -984,7 +982,7 @@
       "type": "category",
       "label": "Payment providers",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/providers", "description": "Deity Payments providers"},
+      "link": {"type": "generated-index", "slug": "/payments/providers", "title": "Configuring payment providers", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -1017,9 +1015,9 @@
     },
     {
       "type": "category",
-      "label": "Payment features",
+      "label": "Payment methods & features",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/methods", "description": "Deity Payments methods"},
+      "link": {"type": "generated-index", "slug": "/payments/methods", "title": "Payment methods & features", "description":"Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -1029,7 +1027,7 @@
         {
            "type": "category",
            "label": "Feature configuration",
-           "link": {"type": "generated-index", "slug": "/payments/methods/features", "description": "Deity Payments features"},
+           "link": {"type": "generated-index", "slug": "/payments/methods/features", "title": "Payment Orchestrator features", "description":"Please select a topic."},
            "collapsible": true,
            "items": [
             {
@@ -1060,7 +1058,7 @@
       "type": "category",
       "label": "Usage",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/usage", "title":"Using Deity Payments", "description": "Using Deity Payments"},
+      "link": {"type": "generated-index", "slug": "/payments/usage", "title":"Using Payment Orchestrator", "description": "Please select a topic."},
       "collapsed": true,
       "items": [
         {
@@ -1103,12 +1101,11 @@
       "type": "html",
       "value": "<hr/>"
     },
-    
     {
       "type": "category",
       "label": "Releases",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/payments/releases", "title":"Deity Payments releases & changelog", "description": "Deity Payments releases"},      
+      "link": {"type": "generated-index", "slug": "/payments/releases", "title":"Releases & changelog", "description": "Please select a topic."},      
       "collapsed": true,
       "items": [
         {
@@ -1151,7 +1148,7 @@
       "type": "category",
       "label": "Ecommerce",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/ecommerce", "title": "Ecommerce integrations", "description": "Deity integrations with ecommerce platforms"},
+      "link": {"type": "generated-index", "slug": "/integrations/ecommerce", "title": "Ecommerce integrations", "description": "Please select a topic."},
       "items": [
         {
           "type": "category",
@@ -1190,7 +1187,7 @@
               "label": "Configuration",
               "collapsible": true,
               "collapsed": true,
-              "link": {"type": "generated-index", "slug": "/integrations/commercetools/configuration", "description": "Deity x Commercetools configuration"},
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/configuration", "title": "Configuring the Commercetools integration", "description": "Please select a topic."},
               "items": [
                 {
                   "type": "doc",
@@ -1207,7 +1204,7 @@
               "label": "Extending",
               "collapsible": true,
               "collapsed": true,
-              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending", "title":"Extending the Commercetools integration", "description": "Deity x Commercetools extensions"},
+              "link": {"type": "generated-index", "slug": "/integrations/commercetools/extending", "title":"Extending the Commercetools integration", "description": "Please select a topic."},
               "items": [
                 {
                   "type": "doc",
@@ -1271,7 +1268,7 @@
       "type": "category",
       "label": "Search",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/search", "title": "Search engine integrations", "description": "Deity integrations with search engines"},      
+      "link": {"type": "generated-index", "slug": "/integrations/search", "title": "Search engine integrations", "description": "Please select a topic."},      
       "collapsed": true,
       "items": [
         {
@@ -1310,7 +1307,7 @@
       "type": "category",
       "label": "Payments",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/payments",  "title": "Payment service providers integrations", "description": "Deity integrations with payment service providers"},        
+      "link": {"type": "generated-index", "slug": "/integrations/payments",  "title": "Integrations with payment service providers", "description": "Please select a topic."},        
       "collapsed": true,
       "items": [
         {
@@ -1345,7 +1342,7 @@
       "type": "category",
       "label": "Promotions & loyalty",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/promotions", "title": "Promotion & loyalty integrations", "description": "Deity integrations with promotion engines"},         
+      "link": {"type": "generated-index", "slug": "/integrations/promotions", "title": "Integrations with promotion & loyalty platforms", "description": "Please select a topic."},         
       "collapsed": true,
       "items": [
         {
@@ -1360,9 +1357,9 @@
             {"type":"doc","id":"version-3/integrations/talonone/configuration"},
             {
               "type": "category",
-              "label": "Extending",
+              "label": "Extending Talon.One",
               "collapsible": true,
-              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending", "title":"Extending the Talon.One integration", "description": "Deity x Talon.One extensions"},
+              "link": {"type": "generated-index", "slug": "/integrations/talonone/extending", "title":"Extending the Talon.One integration", "description": "Please select a topic."},
               "items": [
                 {"type":"doc","id":"version-3/integrations/talonone/extending/module"},
                 {"type":"doc","id":"version-3/integrations/talonone/extending/client"},
@@ -1380,7 +1377,7 @@
       "type": "category",
       "label": "CMS",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/cms", "title": "CMS integrations", "description": "Deity integrations with content management systems."},       
+      "link": {"type": "generated-index", "slug": "/integrations/cms", "title": "CMS integrations", "description": "Please select a topic."},       
       "collapsed": true,
       "items": [
         {
@@ -1437,7 +1434,7 @@
     {
       "type": "category",
       "collapsible": true,
-      "link": {"type": "generated-index", "slug": "/integrations/resources", "title":"Deity integrations resources", "description": "Deity integrations resources"},         
+      "link": {"type": "generated-index", "slug": "/integrations/resources", "title":"Integration resources", "description": "Please select a topic."},         
       "collapsed": true,
       "label": "Resources",
       "items": [
@@ -1524,7 +1521,7 @@
     },
     {
       "type": "category",
-      "label": "Composer",
+      "label": "Commerce Composer",
       "collapsible": true,
       "collapsed": true,  
       "link": {
@@ -1543,7 +1540,7 @@
     },
     {
       "type": "category",
-      "label": "Payments",
+      "label": "Payment Orchestrator",
       "collapsible": true,
       "collapsed": true,
       "link": {
@@ -1566,7 +1563,7 @@
     },
     {
       "type": "category",
-      "label": "Storefront",
+      "label": "PWA & Native Storefronts",
       "collapsible": true,
       "collapsed": true,
       "link": {
@@ -1694,7 +1691,7 @@
               "collapsible": true,
               "link": {"type": "doc", "id": "version-3/platform/support/tutorials/storefront/overview"},
               "collapsed": true,
-              "label": "Storefront",
+              "label": "PWA & Native Storefronts",
               "items": [
                 {
                   "type": "doc",
@@ -1765,12 +1762,12 @@
             },
             {
               "type": "doc",
-              "label": "Storefront",
+              "label": "PWA & Native Storefronts",
               "id": "version-3/platform/support/faqs/storefront"
             },
             {
               "type": "doc",
-              "label": "Storefront",
+              "label": "Commerce Composer",
               "id": "version-3/platform/support/faqs/server"
             },
             {

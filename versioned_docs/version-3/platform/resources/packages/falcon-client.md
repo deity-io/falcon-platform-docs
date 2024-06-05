@@ -6,4 +6,4 @@ sidebar_label: '@deity/falcon-client'
 
 Falcon Client is your applications frontend.
 
-To find out more about `falcon-client` see [the docs](/platform/client/about)
+To find out more about `falcon-client` see the docs

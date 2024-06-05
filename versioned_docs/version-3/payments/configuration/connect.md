@@ -2,17 +2,17 @@
 id: connect
 title: Connecting to your app
 sidebar_label: Connecting to your app
-description: How to connect Deity Payments to your Deity app
+description: How to connect Payment Orchestrator to your Deity app
 ---
 
 # Connecting to your app
 
-All the setup is done on our side. All you need to do is configure your Deity App to use Deity Payments and you're good to go.
+All the setup is done on our side. All you need to do is configure your Deity App to use Payment Orchestrator and you're good to go.
 
-To connect your app to Deity Payments you'll just need to make a few simple configuration changes.
+To connect your app to Payment Orchestrator you'll just need to make a few simple configuration changes.
 
-:::note Get your Deity Payments credentials?
-Deity Payments is part of your subscription. You can get this information by running `dcloud payments:profile:info`.
+:::note Get your Payment Orchestrator credentials?
+Payment Orchestrator is part of your subscription. You can get this information by running `dcloud payments:profile:info`.
 :::
 
 ## Local configuration
@@ -46,14 +46,14 @@ Some payment providers don't like passing `http://localhost` as a redirect URL (
 
 - `redirectBaseUrl` : string : "" : The base url to be redirected to after payments (usually your client app)
 - `redirectUrl` : string : "/checkout/pending" : The url to be redirected to after payments (usually your client app)
-- `serviceUser` : string : "" : The Deity Payments username, in the following format "org:project:env" e.g. "deity:falcon:production"
-- `serviceToken` : string : "" : The Deity Payments token associated with the user above
-- `region` : string : null : The region of the Deity Payments instance you wish to use. This defaults to `null` which connects to our European instance. Accepted values are `eu` (Europe), `us` (America) and `au` (Australia).
+- `serviceUser` : string : "" : The Payment Orchestrator username, in the following format "org:project:env" e.g. "deity:falcon:production"
+- `serviceToken` : string : "" : The Payment Orchestrator token associated with the user above
+- `region` : string : null : The region of the Payment Orchestrator instance you wish to use. This defaults to `null` which connects to our European instance. Accepted values are `eu` (Europe), `us` (America) and `au` (Australia).
 
 
 ### Need payments in a custom module?
 
-If you're adding a new module and need access to Deity Payments you'll need to make sure you pass the payments module name to it.
+If you're adding a new module and need access to Payment Orchestrator you'll need to make sure you pass the payments module name to it.
 
 ```json
 "yourModule": {

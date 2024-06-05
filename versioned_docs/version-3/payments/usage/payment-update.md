@@ -1,6 +1,6 @@
 ---
 id: payment-update
-title: Payment updates in Deity Payments
+title: Payment updates in Payment Orchestrator
 sidebar_label: Payment updates
 ---
 

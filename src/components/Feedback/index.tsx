@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 
 type Props = {
@@ -33,7 +33,7 @@ export default function Feedback({ resource }: Props) {
       ) : (
         <div
           className={styles.widget}
-          data-hr-token="2cb66ba3-54e8-41e3-a66d-45320ca50f5f"
+          data-hr-token="38285585-9be2-4009-9457-5263181d22bf"
           data-hr-resource={resource}
           data-hr-styles={JSON.stringify({
             container: styles.container,

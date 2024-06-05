@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const FaqCategories = [
   {
@@ -10,12 +10,12 @@ const FaqCategories = [
     icon: '/docs/img/icons/deity.svg'
   },
   {
-    name: 'Storefront',
+    name: 'PWA & Native Storefronts',
     url: '/platform/support/faqs/storefront',
     icon: '/docs/img/icons/shop.svg'
   },
   {
-    name: 'Composer',
+    name: 'Commerce Composer',
     url: '/platform/support/faqs/server',
     icon: '/docs/img/icons/ticker.svg'
   },

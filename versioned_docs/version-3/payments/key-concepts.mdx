@@ -1,6 +1,6 @@
 ---
 id: key-concepts
-title: Deity Payments key concepts
+title: Payment Orchestrator key concepts
 description: Integrate with multiple payment service providers to use any payment method. Customize your customers’ payment flows to match their location and preferences.
 sidebar_label: Key concepts
 hide_title: true
@@ -12,12 +12,10 @@ import Badge from '@site/src/components/Badge';
 import LogoImg from '/img/logo.svg';
 import Button from '@site/src/components/Button';
 
-# Key concepts of Deity Payments
-<p className="desc pb20">
-Deity Payments (DPSG) is a managed and hosted service that handles interactions between Falcon Platform and payment providers.
-Next to handling the full payment flow, Deity Payments is also a way to manage the configuration of your payment providers and methods used by your Falcon App.</p>
+# Key concepts of Payment Orchestrator
+<p className="desc pb20">Payment Orchestrator (DPSG) is a managed and hosted service that handles interactions between Commerce Composer and payment providers. Next to handling the full payment flow, Payment Orchestrator is also a way to manage the configuration of your payment providers and methods used by your Falcon App.</p>
 
-## The benefits of using Deity Payments
+## The benefits of using Payment Orchestrator
 
 Integrate with multiple payment service providers to use any payment method. Customize your customers’ payment flows to match their location and preferences.
 
@@ -30,7 +28,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
   <Card open="true" to="">
     <img src="/docs/img/icons/happymask.svg"/>
     <h4>Personalized check-out</h4>
-    <p>The Deity payment gateway allows you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value.</p>
+    <p>The Payment Orchestrator allows you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value.</p>
   </Card>
   <Card open="true" to="">
     <img src="/docs/img/icons/cart.svg" />
@@ -46,18 +44,18 @@ Integrate with multiple payment service providers to use any payment method. Cus
 <div className="pb20"></div>
 <div className="flex vertical-center mb80 brighten">
   <div className="text-center ">
-    <img src="/docs/img/docs/platform/payments-concept.svg"/>
+    <img src="/docs/img/docs/platform/payments-concept.svg" alt="Payments concept"/>
   </div>
   <div>
-    <h3>Payments orchestration</h3>
+    <h3>Payment orchestration</h3>
     <p>
-    Deity Payments is available to all Deity platform users. It acts as a middleman between payment providers and Deity Composer.
+    Payment Orchestrator is available to all Deity Platform users. It acts as a middleman between payment providers and Commerce Composer.
     </p>
     <p>
     It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
     </p>
     <p>
-    Alongside this it always exposes a message queue that Deity Composer subscribes to. This publishes events such as payment updates after refunds.
+    Alongside this it always exposes a message queue that Commerce Composer subscribes to. This publishes events such as payment updates after refunds.
     </p>
   </div>
 </div>
@@ -92,7 +90,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
     <div>
       <h5>Transaction updates</h5>
       <p>
-        Deity Payments subscribes to transaction updates where possible.
+        Payment Orchestrator subscribes to transaction updates where possible.
       </p>
     </div>
   </Card>
@@ -101,7 +99,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
     <div>
       <h5>UI components</h5>
       <p>
-        Deity Payments comes with UI components for Deity Storefront.
+        Payment Orchestrator comes with UI components for Deity Storefront.
       </p>
     </div>
   </Card>
@@ -112,9 +110,9 @@ Integrate with multiple payment service providers to use any payment method. Cus
   <Card variant="horizontal" to="/docs/payments/configuration/integration-options">
     <img src="/docs/img/icons/composerdpsg.svg" />
     <div>
-      <h5>Integration with Deity Composer</h5>
+      <h5>Integration with Commerce Composer</h5>
       <p>
-        Your Composer application is connected with Deity Payments out of the box.
+        Your Composer application is connected with Payment Orchestrator out of the box.
       </p>
     </div>
   </Card>
@@ -123,7 +121,7 @@ Integrate with multiple payment service providers to use any payment method. Cus
     <div>
       <h5>Payment providers</h5>
       <p>
-        Connect your payment provider with Deity Composer and Deity PWA Storefront.
+        Connect your payment provider with Commerce Composer and Deity PWA Storefront.
       </p>
     </div>
   </Card>

@@ -71,11 +71,11 @@
 .clickable {
   cursor: pointer;
   transition: all var(--ifm-transition-fast) ease;
-  transition-property: border, box-shadow;
+  transition-property: border, box-shadow, background-color, filter;
   &:hover {
       box-shadow: var(--ifm-global-shadow-md);
-      h4, p {
-        color: var(--ifm-color-primary)
+      h4, h5, p {
+        color: var(--ifm-color-primary) !important;
       }
   }
 }
@@ -105,6 +105,15 @@
     h5,
     h6 {
       color: #fff;
+    }
+  }
+
+
+  .clickable {
+
+    &:hover {
+      filter: brightness(0.8);
+      box-shadow: none;
     }
   }
 }

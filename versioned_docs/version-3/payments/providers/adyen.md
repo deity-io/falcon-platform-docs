@@ -10,6 +10,8 @@ hide_title: true
   <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80 pb10" />
 </a>
 
+<h1 className="headline mb20">Adyen</h1>
+
 ## Engineered for ambition
 End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
 
@@ -71,7 +73,7 @@ You can get this from your Adyen account under `Developer -> API Credentials` th
 
 ### `hmacKey`
 
-This is used for processing the webhooks from Adyen. Deity Payments uses this when payments are updated.
+This is used for processing the webhooks from Adyen. Payment Orchestrator uses this when payments are updated.
 Read below how to obtain it.
 
 :::note Allowed Origins
@@ -91,11 +93,11 @@ From their you can set up a `Standard Notification` webhook with the following c
 
 **Security**
 
-In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on Deity Payments).
+In "Security" section - generate a new HMAC key (make sure to store it in a safe place - you will need it for configuring the provider on Payment Orchestrator).
 
 **Additional Settings**
 
-- Make sure to select all "Additional Settings" (it will be helpful for future updates of Deity Payments)
+- Make sure to select all "Additional Settings" (it will be helpful for future updates of Payment Orchestrator)
 - Later navigate to `Developers -> Additional data`, make sure to enable `Toggle all fields`.
 
 :::note Test your webhook

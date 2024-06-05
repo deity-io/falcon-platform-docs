@@ -1,6 +1,6 @@
 ---
 id: integration-options
-title: Integration options of Deity Payments
+title: Integration options of Payment Orchestrator
 sidebar_label: Integration options
 description: Key concepts of integrating Payments
 ---
@@ -9,23 +9,19 @@ description: Key concepts of integrating Payments
 
 ## Management your payment configuration
 
-The payment configuration, including providers, methods, payments and orders, can be done using our `dcloud` CLI tool. The configuration process is described in the [Configuration](/docs/payments/configuration/config) section. `dcloud` interacts with the [management endpoints](https://dpsg.deity.cloud/#/Management) of Deity Payments.
+The payment configuration, including providers, methods, payments and orders, can be done using our `dcloud` CLI tool. The configuration process is described in the [Configuration](/docs/payments/configuration/config) section. `dcloud` interacts with the [management endpoints](https://dpsg.deity.cloud/#/Management) of Payment Orchestrator.
 
 
-## Deity Payments interactions with your Deity app
+## Payment Orchestrator interactions with your Deity app
 
-Interacting with Deity Payments is done through our `@deity/falcon-payment-service-module` package. This package interacts with Deity Payments in two ways:
+Interacting with Payment Orchestrator is done through our `@deity/falcon-payment-service-module` package. This package interacts with Payment Orchestrator in two ways:
 - Through the `REST API` client endpoints
 - By listening for events on the `RabbitMQ` instance
 
 
-:::note Want to integrate Deity Payments yourself?
-If you're creating a custom integration or want more details on how Falcon Platform interacts with Deity Payments, please check out our [how to](/docs/payments/configuration/usage) guide.
-:::
-
 ---
 ### REST Endpoints
-Our `@deity/falcon-payment-service-module` package interacts with Deity Payments using our four client endpoints. The API Reference for the client endpoints can be found [here →](https://dpsg.dev.deity.cloud/).
+Our `@deity/falcon-payment-service-module` package interacts with Payment Orchestrator using our four client endpoints. The API Reference for the client endpoints can be found [here →](https://dpsg.dev.deity.cloud/).
 
 **`loadMethodList`**
 
@@ -46,13 +42,13 @@ This method is used for order updates from the shop, e.g. refunds or shipments. 
 2. Falcon shop endpoint package
 3. Falcon shop API package
 4. Falcon Payment Service Client
-5. Deity Payments (message queue)
+5. Payment Orchestrator (message queue)
 6. Payment provider (REST API)
 
 ---
 ### Events
 
-`@deity/falcon-payment-service-module` also emits an event based on updates pushed to Deity Payments. This event is for payment updates.
+`@deity/falcon-payment-service-module` also emits an event based on updates pushed to Payment Orchestrator. This event is for payment updates.
 
 **`PaymentEvents.PAYMENT_STATUS_UPDATED`**
 

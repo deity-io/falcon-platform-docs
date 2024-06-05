@@ -7,11 +7,11 @@ sidebar_label: Payments
 import Badge from '@site/src/components/Badge';
 import { Card, CardContent } from '@site/src/components/Card';
 
-# Payments
+# Payment Orchestrator
 
-The Deity platform comes with access to our payment gateway out of the box. You can configure one or more payment service providers and select which methods you want to use. The Deity payment gateway is highly configurable, allowing you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value. Your composer application has an integration with the payment gateway out of the box, and is compatible with all the supported ecommerce platforms.
+The Deity platform comes with access to our Payment Orchestrator out of the box. You can configure one or more payment service providers and select which methods you want to use. The Payment Orchestrator is highly configurable, allowing you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value. Your composer application has an integration with the payment gateway out of the box, and is compatible with all the supported ecommerce platforms.
 
-The payment gateway has several components, most notably the Integration API and Message Queue. Your Composer application interfaces with both of these components. Broadly speaking, you consume the integration API to make new payments, list payment methods or receive webhook events. The message queue in turn receives updates - and notifies your Composer application - from the various payment service providers, such as payment status changes.
+The payment gateway has several components, most notably the Integration API and Message Queue. Your Composer application interfaces with both of these components. Broadly speaking, you consume the integration API to make new payments, list payment methods or receive webhook events. The message queue in turn receives updates - and notifies your Commerce Composer application - from the various payment service providers, such as payment status changes.
 
 
 import Notice from "../includes/console-user-role.mdx";

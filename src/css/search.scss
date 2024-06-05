@@ -177,22 +177,20 @@
     .DocSearch-Button {
       --docsearch-muted-color: rgba(255,255,255, 0.5);
 
-
-       &-Keys,
-        &-Key {
+       &-Keys, &-Key {
           border-color: var(--ifm-hr-background-color);
           color: var(--ifm-hr-background-color);
         }
-
+       &:hover {
+         box-shadow: none;
+       }
     }
+
     .navbar {
       .DocSearch-Button {
         border-color: var(--ifm-hr-background-color);
-
-
       }
     }
-
   }
 
   .DocSearch {
@@ -200,14 +198,10 @@
     --docsearch-searchbox-focus-background: var(--ifm-background-color);
 
     .DocSearch-Logo svg {
-    filter:  invert(1) grayscale(1);
+      filter:  invert(1) grayscale(1);
     }
     &-Hit a {
       background: none;
-    }
-
-    &-Input {
-
     }
 
     &-Footer {

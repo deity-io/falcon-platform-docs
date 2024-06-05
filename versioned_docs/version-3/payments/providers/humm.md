@@ -9,6 +9,8 @@ hide_title: true
   <img src="/docs/img/docs/platform/humm-logo.svg" alt="Humm Logo" className="height80 pb20"/>
 </a>
 
+<h1 className="headline mb20">Humm</h1>
+
 ## The bigger buy now pay later
 Shopping for little luxuries and bigger buys is easy as 1 - 2 - 3.
 
@@ -18,10 +20,10 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 ## Restrictions
 
-Humm is an Australian payment provider and is only available for customers with a billing address in Australia. Therefore, Humm can only be configured on the Australian cluster of Deity Payments.
+Humm is an Australian payment provider and is only available for customers with a billing address in Australia. Therefore, Humm can only be configured on the Australian cluster of Payment Orchestrator.
 
 :::note Please note
-Even though Humm only offers one payment method, Deity Payments still requires a configuration of both, Humm as a payment provider and as a payment method.
+Even though Humm only offers one payment method, Payment Orchestrator still requires a configuration of both, Humm as a payment provider and as a payment method.
 :::
 
 ## Humm Configuration

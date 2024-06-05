@@ -1,6 +1,6 @@
 ---
 id: sort
-title: Sort order in Deity Payments
+title: Sort order in Payment Orchestrator
 sidebar_label: Sort order
 ---
 
