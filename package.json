@@ -2,6 +2,7 @@
   "name": "falcon-platform-docs",
   "version": "1.0.1",
   "private": true,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "build": "docusaurus build && mv build builddocs && mkdir -p build && mv builddocs build/docs && mv build/docs/rootredirect_index.html build/index.html",
     "build-storybook": "build-storybook",
