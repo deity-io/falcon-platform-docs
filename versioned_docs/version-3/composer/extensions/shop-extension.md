@@ -1,6 +1,6 @@
 ---
 id: shop-extension
-title: Shop extension in Deity Composer 
+title: Shop extension in Deity Composer
 sidebar_label: Shop extension
 enterprise_only: true
 ---
@@ -15,9 +15,7 @@ import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
 # Shop extension
 
-
-
-<CodePackage name="@deity/falcon-shop-extension" /> 
+<CodePackage name="@deity/falcon-shop-extension" />
 
 This extension provides basic features for a webshop implementation:
 
@@ -32,7 +30,7 @@ This extension provides basic features for a webshop implementation:
 <div className="flex">
   <Card to="/docs/integrations/magento2">
     <div className="round-icon">
-      <img src="/docs/img/icons/adobe.svg" />
+      <img src="/img/icons/adobe.svg" />
     </div>
     <h4>Adobe Commerce CE</h4>
     <p>The experience makes all the difference. Grow with Adobe Commerce CE.</p>
