@@ -11,15 +11,11 @@ import CodePackage from '@site/src/components/CodePackage';
 import { Card, CardContent } from '@site/src/components/Card';
 import LogoImg from '/img/logo.svg';
 
-
 import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
 # Search extension
 
-
-
-
-<CodePackage name="@deity/falcon-search-extension" /> 
+<CodePackage name="@deity/falcon-search-extension" />
 
 _(todo)_
 
@@ -28,7 +24,7 @@ _(todo)_
 <div className="flex">
   <Card to="/docs/integrations/algolia">
     <div className="round-icon">
-      <img src="/docs/img/icons/algolia.svg" />
+      <img src="/img/icons/algolia.svg" />
     </div>
     <h4>Algolia</h4>
     <p>
@@ -37,7 +33,7 @@ _(todo)_
   </Card>
    <Card to="/docs/integrations/unbxd">
     <div className="round-icon">
-      <img src="/docs/img/icons/unbxd.svg" />
+      <img src="/img/icons/unbxd.svg" />
     </div>
     <h4>Unbxd</h4>
     <p>Build retail stores for the future with AI-powered search, merchandizing, personalized recommendations and PIM.</p>

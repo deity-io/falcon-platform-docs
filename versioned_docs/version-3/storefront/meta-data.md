@@ -6,8 +6,9 @@ sidebar_label: SEO & meta data
 ---
 
 # SEO & meta data
+
 <a href="https://www.npmjs.com/package/react-helmet-async" rel="noreferrer noopener" target="_blank" aria-label="visit the React Helmet package">
-  <img src="/docs/img/docs/platform/react-helmet.jpg" alt="React Helmet Logo" width="100" style={{ marginBottom: 20 }} />
+  <img src="/img/docs/platform/react-helmet.jpg" alt="React Helmet Logo" width="100" style={{ marginBottom: 20 }} />
 </a>
 
 Falcon Platform uses [React Helmet Async](https://www.npmjs.com/package/react-helmet-async) to manage meta data such as `page titles` and `meta descriptions`. React Helmet supports server side rendering making it perfect for Falcon Platform.
@@ -18,6 +19,7 @@ Falcon Platform uses [React Helmet Async](https://www.npmjs.com/package/react-he
 ## Example code
 
 **`client/src/App.js`**
+
 ```js
 import { Helmet } from 'react-helmet-async';
 ...

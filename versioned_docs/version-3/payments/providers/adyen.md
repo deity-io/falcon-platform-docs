@@ -7,14 +7,14 @@ hide_title: true
 ---
 
 <a href="https://adyen.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Adyen site" className="invert">
-  <img src="/docs/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80 pb10" />
+  <img src="/img/docs/platform/adyen-logo.svg" alt="Adyen Logo" className="height80 pb10" />
 </a>
 
 <h1 className="headline mb20">Adyen</h1>
 
 ## Engineered for ambition
-End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
 
+End-to-end payments, data, and financial management in a single solution. Meet the financial technology platform that helps you realize your ambitions faster.
 
 import Notice from "../../includes/integrated-with-dpsg.mdx"
 
@@ -27,7 +27,7 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 ### Payment methods
 
-*( Description : `code`)*
+_( Description : `code`)_
 
 - Credit card (with and without 3D secure) : `scheme`
 - PayPal : `paypal`

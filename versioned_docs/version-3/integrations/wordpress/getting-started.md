@@ -14,13 +14,13 @@ You must have a Wordpress instance up and running.
 
 Now you must install our Wordpress Plugin. If you download the code into your `plugins` directory you should then be able to **activate** it in the admin.
 
-<img src="/docs/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
+<img src="/img/docs/platform/wordpress-admin-1.png" alt="Wordpress Admin" width="500" style={{ marginBottom: 20 }} />
 
 [Contact us](https://deity.com/contact) if you want to integrate Commerce Composer with Wordpress, we'll provide you with the plugin.
 
 If it's working you should see our handy 'Clean API cache' button in your admin panel.
 
-<img src="/docs/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
+<img src="/img/docs/platform/wordpress-admin-2.png" alt="Wordpress Admin" width="300" style={{marginBottom: 20}}/>
 
 ## 3. Create your Falcon app
 
@@ -42,7 +42,6 @@ All you need to do is add your sites URL and you're away.
     }
   }
 }
-
 ```
 
 ### Deity Cloud Environment Variables
@@ -50,7 +49,6 @@ All you need to do is add your sites URL and you're away.
 - `WORDPRESS_API_HOST` - defaults to our demo instance `wordpress.deity.io`
 - `WORDPRESS_API_PROTOCOL` - defaults to `https`
 - `WORDPRESS_API_PREFIX` - defaults to `/wp-json/wp/v2`
-
 
 ## 5. Finished
 

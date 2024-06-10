@@ -17,19 +17,19 @@ If you're using our example app, `demo-v2` most of the heavy lifting will be don
 
 You can create an account and start your free trial [here](https://www.bigcommerce.com/essentials/free-trial/)
 
-<img src="/docs/img/docs/platform/bigcommerce-account-1.png" alt="BigCommerce Account" width="300" style={{marginBottom: 20}}/>
+<img src="/img/docs/platform/bigcommerce-account-1.png" alt="BigCommerce Account" width="300" style={{marginBottom: 20}}/>
 
 Once you've created an account, or if you already had one you'll need to create API keys. From within your dashboard visit **Advanced Settings -> API Accounts**.
 
-<img src="/docs/img/docs/platform/bigcommerce-account-2.png" alt="BigCommerce Account" width="180" style={{marginBottom: 20}}/>
+<img src="/img/docs/platform/bigcommerce-account-2.png" alt="BigCommerce Account" width="180" style={{marginBottom: 20}}/>
 
 You should then be able to create a **V2/V3 API Token**.
 
-<img src="/docs/img/docs/platform/bigcommerce-account-3.png" alt="BigCommerce Account" width="180" style={{marginBottom: 20}}/>
+<img src="/img/docs/platform/bigcommerce-account-3.png" alt="BigCommerce Account" width="180" style={{marginBottom: 20}}/>
 
 We recommend enabling **all permissions** for you API so you don't have to regenerate it at a later date.
 
-<img src="/docs/img/docs/platform/bigcommerce-account-4.png" alt="BigCommerce Account" width="140" style={{marginBottom: 20}}/>
+<img src="/img/docs/platform/bigcommerce-account-4.png" alt="BigCommerce Account" width="140" style={{marginBottom: 20}}/>
 
 You will then get a download with your API keys. Keep this safe as you won't be able to generate it again. We recommend storing this information in a secure password manager such as 1password.
 
@@ -43,7 +43,7 @@ You should get the following credentials:
 
 #### Your Store hash
 
-From your `API Path` you will be able to get your `Store Hash`. 
+From your `API Path` you will be able to get your `Store Hash`.
 
 If you `API Path` is https://api.bigcommerce.com/stores/abcdefg123/v3/ then your `Store Hash` is `abcdefg123`. You will need this later.
 
@@ -67,6 +67,7 @@ This will be your store URL with `graphql` at the end. e.g. `https://test-store.
 The default configuration for BigCommerce looks like this:
 
 **`server/config/default.json`**
+
 ```json
 "endpoints": {
   "bigcommerce": {

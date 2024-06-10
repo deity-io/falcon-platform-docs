@@ -37,7 +37,7 @@ This extension provides basic features for a webshop implementation:
   </Card>
   <Card to="/docs/integrations/bigcommerce">
     <div className="round-icon">
-      <img src="/docs/img/icons/bigcommerce.svg" />
+      <img src="/img/icons/bigcommerce.svg" />
     </div>
     <h4>Bigcommerce</h4>
     <p>
@@ -46,7 +46,7 @@ This extension provides basic features for a webshop implementation:
   </Card>
   <Card to="/docs/integrations/commercetools">
     <div className="round-icon">
-      <img src="/docs/img/icons/commercetools.svg" />
+      <img src="/img/icons/commercetools.svg" />
     </div>
     <h4>Commercetools</h4>
     <p>Built for businesses that require unlimited flexibility and infinite scale at lower costs.</p>

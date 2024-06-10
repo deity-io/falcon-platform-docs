@@ -13,7 +13,12 @@ import LogoImg from '/img/logo.svg';
 import Button from '@site/src/components/Button';
 
 # Key concepts of Payment Orchestrator
-<p className="desc pb20">Payment Orchestrator (DPSG) is a managed and hosted service that handles interactions between Commerce Composer and payment providers. Next to handling the full payment flow, Payment Orchestrator is also a way to manage the configuration of your payment providers and methods used by your Falcon App.</p>
+
+<p className="desc pb20">
+  Payment Orchestrator (DPSG) is a managed and hosted service that handles interactions between Commerce Composer and
+  payment providers. Next to handling the full payment flow, Payment Orchestrator is also a way to manage the
+  configuration of your payment providers and methods used by your Falcon App.
+</p>
 
 ## The benefits of using Payment Orchestrator
 
@@ -21,19 +26,27 @@ Integrate with multiple payment service providers to use any payment method. Cus
 
 <div className="flex mb40 invert">
   <Card open="true" to="">
-    <img src="/docs/img/icons/paymentmethods.svg" />
+    <img src="/img/icons/paymentmethods.svg" />
     <h4>Any payment method</h4>
-    <p>Mix and match your preferred payment methods and deploy, manage, customize and optimize them through one platform.</p>
+    <p>
+      Mix and match your preferred payment methods and deploy, manage, customize and optimize them through one platform.
+    </p>
   </Card>
   <Card open="true" to="">
-    <img src="/docs/img/icons/happymask.svg"/>
+    <img src="/img/icons/happymask.svg" />
     <h4>Personalized check-out</h4>
-    <p>The Payment Orchestrator allows you to define rules so that you can personalize the checkout experience based on shopper data such as country, currency and order value.</p>
+    <p>
+      The Payment Orchestrator allows you to define rules so that you can personalize the checkout experience based on
+      shopper data such as country, currency and order value.
+    </p>
   </Card>
   <Card open="true" to="">
-    <img src="/docs/img/icons/cart.svg" />
+    <img src="/img/icons/cart.svg" />
     <h4>Your own shop platform</h4>
-    <p>Your composer application has an integration with the payment gateway out of the box, and is compatible with all the supported ecommerce platforms.</p>
+    <p>
+      Your composer application has an integration with the payment gateway out of the box, and is compatible with all
+      the supported ecommerce platforms.
+    </p>
   </Card>
 </div>
 
@@ -44,145 +57,123 @@ Integrate with multiple payment service providers to use any payment method. Cus
 <div className="pb20"></div>
 <div className="flex vertical-center mb80 brighten">
   <div className="text-center ">
-    <img src="/docs/img/docs/platform/payments-concept.svg" alt="Payments concept"/>
+    <img src="/img/docs/platform/payments-concept.svg" alt="Payments concept" />
   </div>
   <div>
     <h3>Payment orchestration</h3>
     <p>
-    Payment Orchestrator is available to all Deity Platform users. It acts as a middleman between payment providers and Commerce Composer.
+      Payment Orchestrator is available to all Deity Platform users. It acts as a middleman between payment providers
+      and Commerce Composer.
     </p>
     <p>
-    It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing payment methods.
+      It exposes various REST API endpoints for doing things like querying payment methods, making payments and storing
+      payment methods.
     </p>
     <p>
-    Alongside this it always exposes a message queue that Commerce Composer subscribes to. This publishes events such as payment updates after refunds.
+      Alongside this it always exposes a message queue that Commerce Composer subscribes to. This publishes events such
+      as payment updates after refunds.
     </p>
   </div>
 </div>
-
-
 
 ### Check-out experiences
 
 <div className="flex brighten">
   <Card variant="horizontal" to="/docs/payments/usage/payment-list">
-    <img src="/docs/img/icons/creditcard.svg" />
+    <img src="/img/icons/creditcard.svg" />
     <div>
       <h5>Payment methods</h5>
-      <p>
-        Getting a list of payment methods is a case of using a simple GraphQL query.
-      </p>
+      <p>Getting a list of payment methods is a case of using a simple GraphQL query.</p>
     </div>
   </Card>
   <Card variant="horizontal" to="/docs/payments/usage/stored-payment-list">
-    <img src="/docs/img/icons/storedpayment.svg" />
+    <img src="/img/icons/storedpayment.svg" />
     <div>
       <h5>Stored payment methods</h5>
-      <p>
-        Offer your customers to store and retrieve their payment methods.
-      </p>
+      <p>Offer your customers to store and retrieve their payment methods.</p>
     </div>
   </Card>
 </div>
 <div className="flex brighten mb60">
   <Card variant="horizontal" to="/docs/payments/usage/payment-update">
-    <img src="/docs/img/icons/transactionupdate.svg" />
+    <img src="/img/icons/transactionupdate.svg" />
     <div>
       <h5>Transaction updates</h5>
-      <p>
-        Payment Orchestrator subscribes to transaction updates where possible.
-      </p>
+      <p>Payment Orchestrator subscribes to transaction updates where possible.</p>
     </div>
   </Card>
   <Card variant="horizontal" to="/docs/payments/usage/ui-components">
-    <img src="/docs/img/icons/uicomponent.svg" />
+    <img src="/img/icons/uicomponent.svg" />
     <div>
       <h5>UI components</h5>
-      <p>
-        Payment Orchestrator comes with UI components for Deity Storefront.
-      </p>
+      <p>Payment Orchestrator comes with UI components for Deity Storefront.</p>
     </div>
   </Card>
 </div>
 
 ### Configuration
+
 <div className="flex brighten">
   <Card variant="horizontal" to="/docs/payments/configuration/integration-options">
-    <img src="/docs/img/icons/composerdpsg.svg" />
+    <img src="/img/icons/composerdpsg.svg" />
     <div>
       <h5>Integration with Commerce Composer</h5>
-      <p>
-        Your Composer application is connected with Payment Orchestrator out of the box.
-      </p>
+      <p>Your Composer application is connected with Payment Orchestrator out of the box.</p>
     </div>
   </Card>
   <Card variant="horizontal" to="/docs/payments/providers">
-    <img src="/docs/img/icons/plugdpsg.svg" />
+    <img src="/img/icons/plugdpsg.svg" />
     <div>
       <h5>Payment providers</h5>
-      <p>
-        Connect your payment provider with Commerce Composer and Deity PWA Storefront.
-      </p>
+      <p>Connect your payment provider with Commerce Composer and Deity PWA Storefront.</p>
     </div>
   </Card>
 </div>
 <div className="flex brighten">
   <Card variant="horizontal" to="/docs/payments/methods/overview">
-    <img src="/docs/img/icons/creditcard.svg" />
+    <img src="/img/icons/creditcard.svg" />
     <div>
       <h5>Configuring payment methods</h5>
-      <p>
-        Mix and match your preferred payment methods.
-      </p>
+      <p>Mix and match your preferred payment methods.</p>
     </div>
   </Card>
   <Card variant="horizontal" to="/docs/payments/methods/features/currencies">
-    <img src="/docs/img/icons/dollar.svg" />
+    <img src="/img/icons/dollar.svg" />
     <div>
       <h5>Currencies</h5>
-      <p>
-        Each payment method can be enabled for only certain currencies. 
-      </p>
+      <p>Each payment method can be enabled for only certain currencies.</p>
     </div>
   </Card>
 </div>
 <div className="flex brighten">
   <Card variant="horizontal" to="/docs/payments/methods/features/locations">
-    <img src="/docs/img/icons/globe.svg" />
+    <img src="/img/icons/globe.svg" />
     <div>
       <h5>Localization</h5>
-      <p>
-        Each payment method can be enabled for only certain country codes.
-      </p>
+      <p>Each payment method can be enabled for only certain country codes.</p>
     </div>
   </Card>
   <Card variant="horizontal" to="/docs/payments/methods/features/surcharges">
-    <img src="/docs/img/icons/surcharges.svg" />
+    <img src="/img/icons/surcharges.svg" />
     <div>
       <h5>Surcharges</h5>
-      <p>
-        Surcharges can be configured to allow you to charge a %, set fee or a mixture of both.
-      </p>
+      <p>Surcharges can be configured to allow you to charge a %, set fee or a mixture of both.</p>
     </div>
   </Card>
 </div>
 <div className="flex brighten mb100">
   <Card variant="horizontal" to="/docs/payments/methods/features/min-max-amounts">
-    <img src="/docs/img/icons/sliders.svg" />
+    <img src="/img/icons/sliders.svg" />
     <div>
       <h5>Min / max amount</h5>
-      <p>
-        Each payment method can be enabled for only certain order amounts.
-      </p>
+      <p>Each payment method can be enabled for only certain order amounts.</p>
     </div>
   </Card>
   <Card variant="horizontal" to="/docs/payments/methods/features/sort">
-    <img src="/docs/img/icons/sort.svg" />
+    <img src="/img/icons/sort.svg" />
     <div>
       <h5>Sort order</h5>
-      <p>
-        The sort order can be configured per method, per environment and per country.
-      </p>
+      <p>The sort order can be configured per method, per environment and per country.</p>
     </div>
   </Card>
 </div>

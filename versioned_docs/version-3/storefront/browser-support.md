@@ -7,8 +7,7 @@ sidebar_label: Browser support
 
 # Browser support
 
-<img src="/docs/img/browsers.svg" alt="Browser Logos" width="400" style={{ marginBottom: 20 }} />
-
+<img src="/img/browsers.svg" alt="Browser Logos" width="400" style={{ marginBottom: 20 }} />
 
 We actively support and test the **latest 2** versions of **Google Chrome**, **FireFox**, **Safari**, **Edge** & **Opera**.
 
