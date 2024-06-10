@@ -22,7 +22,7 @@ _(todo)_
 ## Available integrations
 
 <div className="flex">
-  <Card to="/docs/integrations/algolia">
+  <Card to="/integrations/algolia">
     <div className="round-icon">
       <img src="/img/icons/algolia.svg" />
     </div>
@@ -31,7 +31,7 @@ _(todo)_
       Powering Discovery for your world.
     </p>
   </Card>
-   <Card to="/docs/integrations/unbxd">
+   <Card to="/integrations/unbxd">
     <div className="round-icon">
       <img src="/img/icons/unbxd.svg" />
     </div>

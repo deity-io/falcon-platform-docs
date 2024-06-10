@@ -28,14 +28,14 @@ This extension provides basic features for blog implementation:
 ## Available integrations
 
 <div className="flex">
-  <Card to="/docs/integrations/contentful">
+  <Card to="/integrations/contentful">
     <div className="round-icon">
       <img src="/img/icons/contentful.svg" />
     </div>
     <h4>Contentful</h4>
     <p>Build captivating experiences that stand out with the intelligent composable content platform.</p>
   </Card>
-  <Card to="/docs/integrations/wordpress">
+  <Card to="/integrations/wordpress">
     <div className="round-icon">
       <img src="/img/icons/wordpress.svg" />
     </div>

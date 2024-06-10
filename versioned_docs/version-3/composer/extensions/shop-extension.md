@@ -28,14 +28,14 @@ This extension provides basic features for a webshop implementation:
 ## Available integrations
 
 <div className="flex">
-  <Card to="/docs/integrations/magento2">
+  <Card to="/integrations/magento2">
     <div className="round-icon">
       <img src="/img/icons/adobe.svg" />
     </div>
     <h4>Adobe Commerce CE</h4>
     <p>The experience makes all the difference. Grow with Adobe Commerce CE.</p>
   </Card>
-  <Card to="/docs/integrations/bigcommerce">
+  <Card to="/integrations/bigcommerce">
     <div className="round-icon">
       <img src="/img/icons/bigcommerce.svg" />
     </div>
@@ -44,7 +44,7 @@ This extension provides basic features for a webshop implementation:
       Learn how BigCommerce powers your business with enterprise ecommerce capabilities—with lower cost and complexity.
     </p>
   </Card>
-  <Card to="/docs/integrations/commercetools">
+  <Card to="/integrations/commercetools">
     <div className="round-icon">
       <img src="/img/icons/commercetools.svg" />
     </div>
