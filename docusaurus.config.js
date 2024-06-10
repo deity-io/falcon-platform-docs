@@ -4,7 +4,7 @@ module.exports = {
   title: 'Deity Platform Docs',
   tagline: 'The leading platform for Composable Commerce',
   url: 'https://deity.com',
-  baseUrl: '/docs',
+  baseUrl: '/',
   trailingSlash: false, // this reduces the amount of 301 redirects from /bar to /bar/
   noIndex: false,
   favicon: 'img/favicon.png',
@@ -45,7 +45,6 @@ module.exports = {
               label: 'PWA & Native Storefronts',
               icon: 'storefront',
               to: '/storefront'
-              
             },
             {
               label: 'Payment Orchestrator',
@@ -265,8 +264,8 @@ module.exports = {
           changefreq: 'weekly',
           priority: 0.5,
           ignorePatterns: ['includes/'],
-          filename: 'sitemap.xml',
-        },
+          filename: 'sitemap.xml'
+        }
       }
     ]
   ],
