@@ -12,9 +12,9 @@ import CodePackage from '@site/src/components/CodePackage';
 
 ## Introduction
 
-Before you get started, we recommend reading the [developer resources of Talon.One](/docs/integrations/talonone/getting-started) to understand the core concepts of Talon.One.
+Before you get started, we recommend reading the [developer resources of Talon.One](/integrations/talonone/getting-started) to understand the core concepts of Talon.One.
 
-Once familiar with Talon.One and the integration concepts, start the integration by [configuring your Falcon Middleware](/docs/integrations/talonone/configuration).
+Once familiar with Talon.One and the integration concepts, start the integration by [configuring your Falcon Middleware](/integrations/talonone/configuration).
 
 The `@deity/falcon-talonone-module` communicates only with the [Talon.One Integration API](https://docs.talon.one/integration-api/) trough the [Talon.One JS SDK](https://github.com/talon-one/talon_one.js). The [Talon.One Management API](https://docs.talon.one/management-api/) can come in handy during development but is not used in the integration.
 

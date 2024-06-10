@@ -7,11 +7,9 @@ description: How to use Payment Orchestrator.
 
 # Using Payment Orchestrator
 
-Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built Payment Orchestrator integrations. 
+Our core modules (Magento 2, BigCommerce, Commercetools) all have pre built Payment Orchestrator integrations.
 
-This section explains how to add your own. If you're new to Payment Orchestrator, please read our [Key concepts guide](/docs/payments/key-concepts).
-
-
+This section explains how to add your own. If you're new to Payment Orchestrator, please read our [Key concepts guide](/payments/key-concepts).
 
 ### 1. Load Payment Service Client into your API package
 
@@ -56,8 +54,8 @@ this.paymentServiceClient.sendOrderUpdate({...})
 
 In your endpoints package you can listen for the event emitted by `PaymentServiceClient` when a payment is updated. You'll need this for events such as when payments are authorized after a successful 3D secure check.
 
-
 **Example in the BigCommerce endpoints package**
+
 ```ts
 import { PaymentEvents, PaymentWebhookResult } from '@deity/falcon-payment-extension';
 ...

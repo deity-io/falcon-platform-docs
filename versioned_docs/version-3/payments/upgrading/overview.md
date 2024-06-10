@@ -8,7 +8,7 @@ title: Upgrading to Payment Orchestrator
 :::note Requires Deity Platform v3.0.0 or higher
 If you want to use Payment Orchestrator in your Deity app, make sure to use Deity Platform version >= 3.0.0.
 
-If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](/docs/platform/support/contact) to upgrade to the latest version.
+If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](/platform/support/contact) to upgrade to the latest version.
 :::
 
 ## Payment Orchestrator upgrade guide
@@ -21,7 +21,7 @@ The only real client updates are adding components for newly supported payment p
 
 To upgrade please use `create-falcon-app` to do a diff between your version and v3.
 
-[See guide here](/docs/platform/resources/upgrading)
+[See guide here](/platform/resources/upgrading)
 
 ### Server Updates
 

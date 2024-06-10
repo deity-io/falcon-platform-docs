@@ -9,7 +9,7 @@ You're in luck, Falcon support both Google Analytics and Tag Manager out of the 
 
 ## Adding & committing your credentials in a file.
 
-The config can be added to the config files in the `client/config` directory. Find out more about that [here](/docs/storefront/getting-started/configuration)
+The config can be added to the config files in the `client/config` directory. Find out more about that [here](/storefront/getting-started/configuration)
 
 ```js
 {
@@ -49,7 +49,7 @@ Once you've got that file you'll need to map your environment variables to the c
 
 ### 2. Set the environment variable values on the server
 
-You can find a full explanation [here](/docs/platform/configuration#custom-environment-variablesjson).
+You can find a full explanation [here](/platform/configuration#custom-environment-variablesjson).
 
 - Log into your `dcloud` instance.
 - Set your value `dcloud env:var production GTM_CODE XXXXXXXXX`

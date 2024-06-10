@@ -13,8 +13,7 @@ import CodePackage from '@site/src/components/CodePackage';
 ## Introduction
 
 1. Update the configuration of Falcon Server - see the [Installation](#installation) section for that
-2. Add our set of Contentful Content Models - see the section [Content models](/docs/integrations/contentful/content-models) section for that
-
+2. Add our set of Contentful Content Models - see the section [Content models](/integrations/contentful/content-models) section for that
 
 ## Installation
 

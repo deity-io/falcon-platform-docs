@@ -5,11 +5,11 @@ description: Learn how to manage your local (client-side) state.
 sidebar_label: Local state management
 ---
 
-# Local state management 
+# Local state management
 
-This page covers how to manage your local (client-side) state. 
+This page covers how to manage your local (client-side) state.
 
-Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](/docs/storefront/getting-started/create-application) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
+Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](/storefront/getting-started/create-application) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
 
 ## The short version
 
@@ -44,9 +44,9 @@ You can use `cache.writeData` for one-off mutations that don't depend on the dat
 > It's important to note that direct writes are not implemented as GraphQL mutations under the hood, so you shouldn't include them in your schema. They also do not validate that the data you're writing to the cache is in the shape of valid GraphQL data. If either of these features are important to you, you should opt to use a local resolver instead. - [Apollo Docs](https://www.apollographql.com/docs/react/v2.5/essentials/local-state/#direct-writes)
 
 ```jsx
-import React from "react";
-import { ApolloConsumer } from "react-apollo";
-import { Button } from "@deity/falcon-ui";
+import React from 'react';
+import { ApolloConsumer } from 'react-apollo';
+import { Button } from '@deity/falcon-ui';
 
 const FilterButton = ({ filter, children }) => (
   <ApolloConsumer>
@@ -65,10 +65,10 @@ const FilterButton = ({ filter, children }) => (
 You can then subscribe to this data with a `Query` component. The `@client` directive in the GraphQL query lets Apollo Client know to fetch this data locally, as opposed to fetching it from a server. All cache writes and reads are synchronous, so you don't have to worry about loading state.
 
 ```jsx
-import React from "react";
-import { Query } from "react-apollo";
-import gql from "graphql-tag";
-import { Button } from "@deity/falcon-ui";
+import React from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
+import { Button } from '@deity/falcon-ui';
 
 const GET_VISIBILITY_FILTER = gql`
   {
@@ -98,8 +98,8 @@ First, you should write the GraphQL query. In this example we use a sidebar comp
 
 ```js
 /// components/Sidebar/SidebarQuery.js
-import gql from "graphql-tag";
-import { Query } from "@deity/falcon-ecommerce-uikit";
+import gql from 'graphql-tag';
+import { Query } from '@deity/falcon-ecommerce-uikit';
 
 export const GET_SIDEBAR_STATE = gql`
   query Sidebar {
@@ -120,13 +120,13 @@ Then we write our resolver functions so we can change the `isOpen` state.
 
 ```jsx
 // client/src/clientState.js
-import { GET_SIDEBAR_STATE } from "./pages/shop/components/Sidebar";
+import { GET_SIDEBAR_STATE } from './pages/shop/components/Sidebar';
 export default {
   // Your initial cache state
   data: {
     sidebar: {
       isOpen: false,
-      __typename: "SidebarStatus" // any name you like
+      __typename: 'SidebarStatus' // any name you like
     }
   },
   // Resolvers to get or edit the state
@@ -158,8 +158,8 @@ At this point you are ready to write your `Mutation` component which will expose
 
 ```jsx
 // SidebarMutation.js
-import gql from "graphql-tag";
-import { Mutation } from "react-apollo";
+import gql from 'graphql-tag';
+import { Mutation } from 'react-apollo';
 
 const TOGGLE_SIDEBAR_MUTATION = gql`
   mutation ToggleSidebarMutation {
@@ -177,10 +177,10 @@ export class ToggleSidebarMutation extends Mutation {
 Then you can use the components like this to manage the state of your sidebar component:
 
 ```jsx
-import React from "react";
-import PropTypes from "prop-types";
-import { ToggleSidebarMutation } from "./SidebarMutation";
-import { SidebarQuery } from "./SidebarQuery";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ToggleSidebarMutation } from './SidebarMutation';
+import { SidebarQuery } from './SidebarQuery';
 
 export const SidebarContainer = ({ children }) => (
   <SidebarQuery>

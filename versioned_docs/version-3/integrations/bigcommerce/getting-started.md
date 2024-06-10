@@ -150,7 +150,7 @@ To access our private packages you'll need to use your **npm Token** and **npm U
 
 You can log into [deity.npm.io](https://npm.deity.io/) to view these pacakges.
 
-To have access to the packages for local development you can follow [these steps](/docs/platform/getting-started/access-packages).
+To have access to the packages for local development you can follow [these steps](/platform/getting-started/access-packages).
 
 <img
 src="/img/docs/platform/bigcommerce/npm-token.png"
@@ -161,19 +161,19 @@ style={{ marginBottom: "20px", display: "block" }}
 
 ### ii. Create your app
 
-Once you have access to our packages you'll be able to create your app using `npx @deity/create-falcon-app --example demo-v2 [YOUR_DIRECTORY_NAME]`. For more information about creating an app follow [these instructions](/docs/platform/getting-started/create-application).
+Once you have access to our packages you'll be able to create your app using `npx @deity/create-falcon-app --example demo-v2 [YOUR_DIRECTORY_NAME]`. For more information about creating an app follow [these instructions](/platform/getting-started/create-application).
 
 ### iii. Connect your app
 
 The last step is to connect your app so it's being used by your Falcon Cloud account. If you visit the the `Falcon Client` tab you'll see information about **Authorising** Cloud to have access to your repository and adding a **Webhook** so cloud can listen for changes (so your Cloud instance knows when you push code).
 
-You can see detailed docs for this step [here](/docs/platform/getting-started/link-repository).
+You can see detailed docs for this step [here](/platform/getting-started/link-repository).
 
 ## 5. Local development
 
 When developing your app locally you'll want to connect your Falcon Client app to Falcon Server, which in turn will connect to BigCommerce.
 
-This can be done by adding your Falcon Server credentials to your `client/config/local.json` file. You can find out more about configurations [here](/docs/platform/configuration).
+This can be done by adding your Falcon Server credentials to your `client/config/local.json` file. You can find out more about configurations [here](/platform/configuration).
 
 Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` with your site URL.
 
@@ -185,7 +185,7 @@ Add the following code to your `local.json` file, replacing `[YOUR_SITE_URL]` wi
 
 ## 6. Falcon Cloud + Deployments
 
-Falcon Cloud comes as part of Falcon Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/docs/console/cloud/about). You'll need an **access token** to log into using DCloud. This can be found in the `Falcon Server` tab.
+Falcon Cloud comes as part of Falcon Platform and is where your site is hosted. To manage deployments you can use our [DCloud CLI tool](/console/cloud/about). You'll need an **access token** to log into using DCloud. This can be found in the `Falcon Server` tab.
 
 <img
 src="/img/docs/platform/bigcommerce/falcon-server.png"

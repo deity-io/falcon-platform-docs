@@ -9,18 +9,19 @@ description: Key concepts of integrating Payments
 
 ## Management your payment configuration
 
-The payment configuration, including providers, methods, payments and orders, can be done using our `dcloud` CLI tool. The configuration process is described in the [Configuration](/docs/payments/configuration/config) section. `dcloud` interacts with the [management endpoints](https://dpsg.deity.cloud/#/Management) of Payment Orchestrator.
-
+The payment configuration, including providers, methods, payments and orders, can be done using our `dcloud` CLI tool. The configuration process is described in the [Configuration](/payments/configuration/config) section. `dcloud` interacts with the [management endpoints](https://dpsg.deity.cloud/#/Management) of Payment Orchestrator.
 
 ## Payment Orchestrator interactions with your Deity app
 
 Interacting with Payment Orchestrator is done through our `@deity/falcon-payment-service-module` package. This package interacts with Payment Orchestrator in two ways:
+
 - Through the `REST API` client endpoints
 - By listening for events on the `RabbitMQ` instance
 
-
 ---
+
 ### REST Endpoints
+
 Our `@deity/falcon-payment-service-module` package interacts with Payment Orchestrator using our four client endpoints. The API Reference for the client endpoints can be found [here →](https://dpsg.dev.deity.cloud/).
 
 **`loadMethodList`**
@@ -38,6 +39,7 @@ The validate method is/should be triggered by the shop element that places an or
 **`sendOrderUpdate`**
 
 This method is used for order updates from the shop, e.g. refunds or shipments. The flow is as follows:
+
 1. Shop update (webhook)
 2. Falcon shop endpoint package
 3. Falcon shop API package
@@ -46,6 +48,7 @@ This method is used for order updates from the shop, e.g. refunds or shipments. 
 6. Payment provider (REST API)
 
 ---
+
 ### Events
 
 `@deity/falcon-payment-service-module` also emits an event based on updates pushed to Payment Orchestrator. This event is for payment updates.

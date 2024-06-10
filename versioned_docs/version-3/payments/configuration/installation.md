@@ -10,12 +10,12 @@ description: A step by step guide to install Payment Orchestrator
 :::note Requires Deity Platform v3.0.0 or higher
 If you want to use Payment Orchestrator in your Deity app, make sure to use Deity Platform version >= 3.0.0.
 
-If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](/docs/platform/support/contact) to upgrade to the latest version.
+If you have existing project based on Falcon Platform v2.x please [contact us for the migration guide](/platform/support/contact) to upgrade to the latest version.
 :::
 
 To make use of Payment Orchestrator, it first needs to be configured and then connected to your Falcon app.
 
-## 1. Configuring Payment Orchestrator 
+## 1. Configuring Payment Orchestrator
 
 This involves creating an Payment Orchestrator profile and enabling payment providers and payment methods.
 This configuration can be done entirely using our `dcloud` CLI tool.

@@ -11,4 +11,4 @@ import noticeV3 from "../../includes/upgrade-to-v3.mdx"
 
 _(todo)_
 
-This should replace the old [Dynamic Routes](/docs/composer/core/dynamic-routes)
+This should replace the old [Dynamic Routes](/composer/core/dynamic-routes)

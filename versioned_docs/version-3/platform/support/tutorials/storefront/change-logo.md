@@ -4,14 +4,15 @@ title: Changing the site logo
 sidebar_label: Changing the site logo
 ---
 
-
 Changing the site logo is probably one of the first things you will want to do, so we've created a step by step guide to doing it.
-We will base these changes on the [demo-v2 example](/docs/platform/getting-started/create-application#our-examples) client, but the same principles will apply regardless of specific implementation.
+We will base these changes on the [demo-v2 example](/platform/getting-started/create-application#our-examples) client, but the same principles will apply regardless of specific implementation.
 
 ## The header logo
-The header logo uses your themes [icon component](/docs/storefront/theming/icons) out of the box.  
+
+The header logo uses your themes [icon component](/storefront/theming/icons) out of the box.
 
 **`client/src/styling/icons.js`**
+
 ```js
 ...
 import Logo from '../assets/logo.svg';
@@ -26,6 +27,7 @@ export const icons = {
 ```
 
 **`client/src/components/Header/HeaderMenuBar.js`**
+
 ```js
 ...
 import { ... Icon ...  } from '@deity/falcon-ui';
@@ -42,6 +44,7 @@ If you don't want to use an SVG or the icon component then you could just load y
 Your favicon and other `meta` icons such as touch icons are added in your `client/src/App.js` file. All you need to do is change the src or replace these assets.
 
 **`client/src/App.js`**
+
 ```js
 ...
 import logo from 'src/assets/logo.png';
@@ -72,6 +75,7 @@ const HeadMetaTags = () => (
 It wouldn't be a **PWA** with your `manifest.json` file. You can change this by editing `client/src/manifest.webmanifest`.
 
 **`client/src/manifest.webmanifest`**
+
 ```js
 {
   ...
@@ -89,10 +93,10 @@ It wouldn't be a **PWA** with your `manifest.json` file. You can change this by 
   ]
 }
 ```
+
 ---
 
 That's it! Your site is ready to go.
-
 
 :::note Don't forget your emails...
 Falcon client doesn't handle your transactional emails. Don't forget to change the logo in your backend / email system (BigCommerce, Magento etc).
