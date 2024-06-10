@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "yarn@1.22.22",
   "scripts": {
-    "build": "docusaurus build && mv build builddocs && mkdir -p build && mv builddocs build/docs && mv build/docs/rootredirect_index.html build/index.html",
+    "build": "docusaurus build && mv build builddocs && mkdir -p build && mv builddocs build/docs",
     "build-storybook": "build-storybook",
     "deploy": "docusaurus deploy",
     "lint": "eslint",
