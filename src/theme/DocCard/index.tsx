@@ -5,34 +5,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {type ReactNode} from 'react';
+import React, { type ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import {
-  findFirstCategoryLink,
-  useDocById,
-} from '@docusaurus/theme-common/internal';
+import { findFirstCategoryLink, useDocById } from '@docusaurus/theme-common/internal';
 import isInternalUrl from '@docusaurus/isInternalUrl';
-import {translate} from '@docusaurus/Translate';
-import type {Props} from '@theme/DocCard';
+import { translate } from '@docusaurus/Translate';
+import type { Props } from '@theme/DocCard';
 
 import styles from './styles.module.scss';
-import type {
-  PropSidebarItemCategory,
-  PropSidebarItemLink,
-} from '@docusaurus/plugin-content-docs';
+import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';
 
-function CardContainer({
-  href,
-  children,
-}: {
-  href: string;
-  children: ReactNode;
-}): JSX.Element {
+function CardContainer({ href, children }: { href: string; children: ReactNode }): JSX.Element {
   return (
-    <Link
-      href={href}
-      className={clsx('card ', styles.cardContainer)}>
+    <Link href={href} className={clsx('card', styles.cardContainer)}>
       {children}
     </Link>
   );
@@ -42,7 +28,7 @@ function CardLayout({
   href,
   icon,
   title,
-  description,
+  description
 }: {
   href: string;
   icon: ReactNode;
@@ -51,14 +37,12 @@ function CardLayout({
 }): JSX.Element {
   return (
     <CardContainer href={href}>
-      <img src={icon}/> 
+      <img src={icon} />
       <h2 className={clsx('text--truncate', styles.cardTitle)} title={title}>
         {title}
       </h2>
       {description && (
-        <p
-          className={clsx('text--truncate', styles.cardDescription)}
-          title={description}>
+        <p className={clsx('text--truncate', styles.cardDescription)} title={description}>
           {description}
         </p>
       )}
@@ -66,11 +50,7 @@ function CardLayout({
   );
 }
 
-function CardCategory({
-  item,
-}: {
-  item: PropSidebarItemCategory;
-}): JSX.Element | null {
+function CardCategory({ item }: { item: PropSidebarItemCategory }): JSX.Element | null {
   const href = findFirstCategoryLink(item);
 
   // Unexpected: categories that don't have a link have been filtered upfront
@@ -81,7 +61,7 @@ function CardCategory({
   return (
     <CardLayout
       href={href}
-      icon="/docs/img/icons/pages.svg"
+      icon="/img/icons/pages.svg"
       title={item.label}
       description={
         item.description ??
@@ -90,29 +70,24 @@ function CardCategory({
             message: '{count} items',
             id: 'theme.docs.DocCard.categoryDescription',
             description:
-              'The default description for a category card in the generated index about how many items this category includes',
+              'The default description for a category card in the generated index about how many items this category includes'
           },
-          {count: item.items.length},
+          { count: item.items.length }
         )
       }
     />
   );
 }
 
-function CardLink({item}: {item: PropSidebarItemLink}): JSX.Element {
-  const icon = isInternalUrl(item.href) ? '/docs/img/icons/page.svg' : '/docs/img/icons/link.svg';
+function CardLink({ item }: { item: PropSidebarItemLink }): JSX.Element {
+  const icon = isInternalUrl(item.href) ? '/img/icons/page.svg' : '/img/icons/link.svg';
   const doc = useDocById(item.docId ?? undefined);
   return (
-    <CardLayout
-      href={item.href}
-      icon={icon}
-      title={item.label}
-      description={item.description ?? doc?.description}
-    />
+    <CardLayout href={item.href} icon={icon} title={item.label} description={item.description ?? doc?.description} />
   );
 }
 
-export default function DocCard({item}: Props): JSX.Element {
+export default function DocCard({ item }: Props): JSX.Element {
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;
