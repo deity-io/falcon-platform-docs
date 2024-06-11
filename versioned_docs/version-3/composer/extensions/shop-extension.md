@@ -1,6 +1,6 @@
 ---
 id: shop-extension
-title: Shop extension in Deity Composer 
+title: Shop extension in Deity Composer
 sidebar_label: Shop extension
 enterprise_only: true
 ---
@@ -15,9 +15,7 @@ import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
 # Shop extension
 
-
-
-<CodePackage name="@deity/falcon-shop-extension" /> 
+<CodePackage name="@deity/falcon-shop-extension" />
 
 This extension provides basic features for a webshop implementation:
 
@@ -30,25 +28,25 @@ This extension provides basic features for a webshop implementation:
 ## Available integrations
 
 <div className="flex">
-  <Card to="/docs/integrations/magento2">
+  <Card to="/integrations/magento2">
     <div className="round-icon">
-      <img src="/docs/img/icons/adobe.svg" />
+      <img src="/img/icons/adobe.svg" />
     </div>
     <h4>Adobe Commerce CE</h4>
     <p>The experience makes all the difference. Grow with Adobe Commerce CE.</p>
   </Card>
-  <Card to="/docs/integrations/bigcommerce">
+  <Card to="/integrations/bigcommerce">
     <div className="round-icon">
-      <img src="/docs/img/icons/bigcommerce.svg" />
+      <img src="/img/icons/bigcommerce.svg" />
     </div>
     <h4>Bigcommerce</h4>
     <p>
       Learn how BigCommerce powers your business with enterprise ecommerce capabilities—with lower cost and complexity.
     </p>
   </Card>
-  <Card to="/docs/integrations/commercetools">
+  <Card to="/integrations/commercetools">
     <div className="round-icon">
-      <img src="/docs/img/icons/commercetools.svg" />
+      <img src="/img/icons/commercetools.svg" />
     </div>
     <h4>Commercetools</h4>
     <p>Built for businesses that require unlimited flexibility and infinite scale at lower costs.</p>

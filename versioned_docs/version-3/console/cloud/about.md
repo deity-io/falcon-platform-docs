@@ -17,7 +17,7 @@ Built with internationalization in mind, Deity Cloud supports multi-region based
 
 ## DCloud CLI tool
 
-**DCloud** is our CLI Too to help you make the most of the Deity Platform and Deity Cloud. 
+**DCloud** is our CLI Too to help you make the most of the Deity Platform and Deity Cloud.
 
 ### Installing DCloud
 
@@ -41,4 +41,4 @@ dcloud login:token [token]
 
 After successfull login, you're **Ready to rock & roll!**
 
-You'll now be able to execute all DCloud commands. Please read the [detailed CLI reference](/docs/console/cloud/dcloud) for further information.
+You'll now be able to execute all DCloud commands. Please read the [detailed CLI reference](/console/cloud/dcloud) for further information.

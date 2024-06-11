@@ -4,7 +4,7 @@ title: '@deity/falcon-blog-data'
 sidebar_label: '@deity/falcon-blog-data'
 ---
 
-This extension get data from [`@detiy/falcon-blog-extension`](falcon-blog-extension).
+This extension get data from [`@detiy/falcon-blog-extension`](platform/resources/packages/falcon-blog-extension).
 
 It includes GraphQL queries for blog data (Post and PostList)
 
@@ -31,11 +31,12 @@ query BlogPost($path: String!) {
 The blog list expects, but doesn't require a pagniation object as a parameter.
 
 **Pagination Object**
+
 ```js
 const pagination = {
   perPage: [ITEMS_PER_PAGE],
   page: [CURRENT_PAGE]
-}
+};
 ```
 
 ```js

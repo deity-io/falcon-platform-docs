@@ -98,7 +98,7 @@ In this case we would match on `type` and **not** `path`.
 
 The `type` is returned by a method in your API code (in Falcon Server).
 
-For more details please checkout out our [dynamic routing docs](/docs/composer/core/dynamic-routes).
+For more details please checkout out our [dynamic routing docs](/composer/core/dynamic-routes).
 
 **n.b.** If `path` prop is passed the `type` will be ignored.
 

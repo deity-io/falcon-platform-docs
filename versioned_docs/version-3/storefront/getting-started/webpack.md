@@ -24,11 +24,11 @@ module.exports = {
 
 - `devServerPort: number` - (default: `3001`) webpack dev server (HMR) port
 - `clearConsole: boolean` - (default: `true`) determines whether console should be cleared when starting script
-- `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/docs/storefront/getting-started/files#srcmanifestwebmanifest) should be processed via webpack and included in output bundle
-- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/docs/storefront/translations#configuration)
+- `useWebmanifest: boolean` - (default: `false`) determines whether [Web App Manifest](/storefront/getting-started/files#srcmanifestwebmanifest) should be processed via webpack and included in output bundle
+- `i18n: object` - (default: `{}`) internationalization configuration, [see the details](/storefront/translations#configuration)
 - `envToBuildIn` - (default: `[]`) an array of environment variable names which should be build in into bundle, [see the details](#environment-variables)
 - `plugins` - (default: `[]`) an array of plugins which can modify underlying [webpack configuration](#webpack).
-- `moduleOverride` - (default: `{}`) array of module names to override, [see the details](/docs/storefront/overrides)
+- `moduleOverride` - (default: `{}`) array of module names to override, [see the details](/storefront/overrides)
 
 Falcon Client provides you much more build configuration options. You can find all of them described in [Build process configuration](#build-process-configuration) section.
 
@@ -42,4 +42,3 @@ Falcon Client comes with all necessary features and development tools turned on 
 - Jest test runner setup with sensible defaults.
 
 However, you can still modify Falcon Client defaults
-

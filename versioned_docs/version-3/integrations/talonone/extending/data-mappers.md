@@ -10,7 +10,6 @@ import CodePackage from '@site/src/components/CodePackage';
 
 <CodePackage name="@deity/falcon-talonone-module" />
 
-
 Since the Falcon Middleware serves as an agnostic layer, incomming data from Talon.One API needs to be transformed in a format that is understood by `deity/falcon-promotion-extension` (and vice versa). A set of mapper classes are available to unify this process. Those mappers can be extended and partly overwritten.
 
 :::note Overwriting existing mappers
@@ -40,7 +39,7 @@ export class ReferralMapper extends FalconReferralMapper {
 ```
 
 :::note Rebind ReferralMapper
-When extending or overwriting existing modules we need to rebind the new instance, otherwise Falcon Platform will continue to use the shipped `ReferralMapper` instead of our custom implementation. For more info on rebinding please check our [Binding services docs](/docs/composer/modules/module-api)
+When extending or overwriting existing modules we need to rebind the new instance, otherwise Falcon Platform will continue to use the shipped `ReferralMapper` instead of our custom implementation. For more info on rebinding please check our [Binding services docs](/composer/modules/module-api)
 :::
 
 ### Available Mappers

@@ -7,9 +7,9 @@ sidebar_label: Data management
 
 # Data management
 
-This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](/docs/storefront/state).
+This page covers how to query and update data. If you're looking for information about local state managemment or ways to combine queries to the server with client-side queries, you can read more about that [here](/storefront/state).
 
-Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](/docs/storefront/getting-started/create-application) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
+Falcon comes with [Apollo Client](https://www.apollographql.com/docs/react/v2.5/api/apollo-client/) for client-side state management when you use [`create-falcon-app`](/storefront/getting-started/create-application) to generate a new application. Apollo Client will be pre-configured and does not require any additional setup. You can start using it right away.
 
 ## The short version
 
@@ -21,7 +21,7 @@ Falcon extends and is compatible with Apollo's standard `Query` and `Mutation` c
 
 ## Falcon's additional components
 
-Falcon comes with a few pre-defined queries and mutations when you create a project with [`create-falcon-app`](/docs/storefront/getting-started/create-application). These are primarily from our `@deity/falcon-front-kit` package and can be of great use when starting out with an eCommerce application with an integrated blog.
+Falcon comes with a few pre-defined queries and mutations when you create a project with [`create-falcon-app`](/storefront/getting-started/create-application). These are primarily from our `@deity/falcon-front-kit` package and can be of great use when starting out with an eCommerce application with an integrated blog.
 
 Something you will see in our optional components is a custom `Query` component with the query added as a default prop. This can come in handy if you use the same query in multiple files.
 
@@ -36,8 +36,8 @@ export class CustomerQuery extends Query {
 You can also use our wrapper `Query` component, which extends Apollo's `Query` component. The wrapper component will handle loading and error states for you. You can use our `Query` component in the same way you would use the Apollo Client version.
 
 ```jsx
-import { GET_BLOG_POST } from "./my-queries";
-import { Query } from "@deity/falcon-data";
+import { GET_BLOG_POST } from './my-queries';
+import { Query } from '@deity/falcon-data';
 
 export class BlogPostQuery extends Query {
   static defaultProps = {
@@ -115,8 +115,8 @@ If you need to notify the user when you are refetching data or if their network 
 #### Manually firing a query
 
 ```jsx
-import React, { Component } from "react";
-import { ApolloConsumer } from "react-apollo";
+import React, { Component } from 'react';
+import { ApolloConsumer } from 'react-apollo';
 
 class DelayedQuery extends Component {
   state = { product: null };
@@ -128,9 +128,7 @@ class DelayedQuery extends Component {
       <ApolloConsumer>
         {client => (
           <div>
-            {this.state.product && (
-              <img src={this.state.product.gallery.thumbnail} />
-            )}
+            {this.state.product && <img src={this.state.product.gallery.thumbnail} />}
             <button
               onClick={async () => {
                 const { data } = await client.query({
@@ -157,8 +155,8 @@ Here is [a guide about GraphQL mutations](http://graphql.org/learn/queries/#muta
 React will call the render prop function you provide with a mutate function and an object with your mutation result containing loading, error, called, and data properties
 
 ```jsx
-import gql from "graphql-tag";
-import { Mutation } from "react-apollo";
+import gql from 'graphql-tag';
+import { Mutation } from 'react-apollo';
 
 const ADD_TODO = gql`
   mutation AddTodo($type: String!) {
@@ -179,7 +177,7 @@ const AddTodo = () => {
           onSubmit={e => {
             e.preventDefault();
             addTodo({ variables: { type: input.value } });
-            input.value = "";
+            input.value = '';
           }}
         >
           <input
@@ -237,7 +235,7 @@ const AddTodo = () => {
           onSubmit={e => {
             e.preventDefault();
             addTodo({ variables: { type: input.value } });
-            input.value = "";
+            input.value = '';
           }}
         >
           <input
@@ -274,7 +272,7 @@ In the render prop function, we can destructure `loading` and `error` properties
 
 ## Local state management
 
-Continue reading about managing your [local state here](/docs/storefront/state).
+Continue reading about managing your [local state here](/storefront/state).
 
 ## Additional resources
 
@@ -285,4 +283,3 @@ Continue reading about managing your [local state here](/docs/storefront/state).
 - [Official GraphQL Learn section](https://graphql.org/learn/)
 
 - [Official GraphQL specification](https://graphql.github.io/graphql-spec/)
-

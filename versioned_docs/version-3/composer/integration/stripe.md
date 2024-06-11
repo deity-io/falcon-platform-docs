@@ -7,7 +7,7 @@ sidebar_label: Stripe Payments
 ---
 
 <a href="https://stripe.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Stripe site">
-  <img src="/docs/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" width="200"/>
+  <img src="/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" width="200"/>
 </a>
 
 ---
@@ -46,11 +46,11 @@ You can register for an account [here](https://dashboard.stripe.com/register).
 
 Once you've created an account you should be able to find your API keys in the developer section.
 
-<img src="/docs/img/docs/platform/stripe-account-1.png" alt="Stripe Account Sidebar" width="200" style={{marginBottom: 20}}/>
+<img src="/img/docs/platform/stripe-account-1.png" alt="Stripe Account Sidebar" width="200" style={{marginBottom: 20}}/>
 
 **n.b.** Take note of if you're in `test` or `live` mode.
 
-<img src="/docs/img/docs/platform/stripe-account-2.png" alt="Stripe Account API section" style={{marginBottom: 20}} />
+<img src="/img/docs/platform/stripe-account-2.png" alt="Stripe Account API section" style={{marginBottom: 20}} />
 
 You'll need your API keys later.
 

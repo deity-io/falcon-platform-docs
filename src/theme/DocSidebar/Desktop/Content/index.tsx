@@ -51,8 +51,8 @@ export default function DocSidebarDesktopContent({ path, sidebar, className }: P
         className
       )}
     >
-      {pathname !== '/docs/' && (
-        <div className={styles.goBack} onClick={() => push('/docs/')}>
+      {pathname !== '/' && (
+        <div className={styles.goBack} onClick={() => push('/')}>
           <ArrowLeft className={styles.goBackIcon} />
           <span>Home</span>
         </div>

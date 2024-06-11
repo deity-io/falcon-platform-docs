@@ -21,19 +21,17 @@ To convert React Component into a component which can be fetched on demand later
 // AppRoutes.js
 import loadable from '@loadable/component';
 
-const AsyncHome = loadable(() =>
-  import(/* webpackChunkName: "home" */ "./pages/Home")
-);
+const AsyncHome = loadable(() => import(/* webpackChunkName: "home" */ './pages/Home'));
 
 export default () => (
   <Switch>
     <Route exact path="/" component={AsyncHome} />
     // Your other routes...
   </Switch>
-)
+);
 ```
 
-When you create your project using [`create-falcon-app`](/docs/storefront/getting-started/create-application) Falcon provides a wrapper function for `loadable`. This wrapper function shows a spinner while the component is loading to indicate to the user that the contents of the page are currently being fetched. Using this wrapper function is optional, but it is recommended to provide a fallback state to `loadable` if you choose to write your own.
+When you create your project using [`create-falcon-app`](/storefront/getting-started/create-application) Falcon provides a wrapper function for `loadable`. This wrapper function shows a spinner while the component is loading to indicate to the user that the contents of the page are currently being fetched. Using this wrapper function is optional, but it is recommended to provide a fallback state to `loadable` if you choose to write your own.
 
 ```jsx
 // components/loadable.js

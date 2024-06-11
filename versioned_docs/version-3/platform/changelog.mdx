@@ -9,17 +9,15 @@ import { TabsContainer, Tabs, TabItem, ChangelogItem } from '@site/src/component
 import CodeBlock from '@theme/CodeBlock';
 import Button from '@site/src/components/Button';
 
-
 # Deity Platform changelog
 
 <p className="desc">Learn about the latest and previous releases of Deity Platform.</p>
-
-
 
 <div className="hr" />
 <div className="date">November 20th, 2022</div>
 
 ## Deity Platform v3.0.1 <Badge variant="green">Stable</Badge>
+
 <div className="mb60">
 <TabsContainer packageName="@deity/deity-composer">
   <Tabs
@@ -28,17 +26,15 @@ import Button from '@site/src/components/Button';
     values={[
       { label: 'Integrations', value: 'integrations' },
       { label: 'Updates', value: 'updates' }
-    ]}
-    
-  >
+    ]}>
     <TabItem value="integrations">
       <ChangelogItem variant="subheader">Integrations</ChangelogItem>
       <ChangelogItem variant="integration" description="">ShopWare &nbsp; <span>Docs coming soon!</span></ChangelogItem>
       <ChangelogItem variant="integration" description="">WPay/Gr4vy &nbsp; <span>Docs coming soon!</span></ChangelogItem>
-      <ChangelogItem variant="integration" description="Talon.One is a flexible, scalable and API-first all-in-one promotion engine.">Talon.One &nbsp; <a href="/docs/integrations/talonone">Read docs</a></ChangelogItem>
-      <ChangelogItem variant="integration" description="Commercetools is a headless e-commerce platform built on MACH principles.">Commercetools &nbsp; <a href="/docs/integrations/commercetools">Read docs</a></ChangelogItem>
-      <ChangelogItem variant="integration" description="Integrate with multiple payment service providers to use any payment method.">Payment Orchestrator (DPSG) &nbsp; <a href="/docs/payments">Read docs</a></ChangelogItem>
-      <ChangelogItem variant="integration" description="Endless possibilities powered by AI.">Contentful &nbsp; <a href="/docs/integrations/contentful">Read docs</a></ChangelogItem>
+      <ChangelogItem variant="integration" description="Talon.One is a flexible, scalable and API-first all-in-one promotion engine.">Talon.One &nbsp; <a href="/integrations/talonone">Read docs</a></ChangelogItem>
+      <ChangelogItem variant="integration" description="Commercetools is a headless e-commerce platform built on MACH principles.">Commercetools &nbsp; <a href="/integrations/commercetools">Read docs</a></ChangelogItem>
+      <ChangelogItem variant="integration" description="Integrate with multiple payment service providers to use any payment method.">Payment Orchestrator (DPSG) &nbsp; <a href="/payments">Read docs</a></ChangelogItem>
+      <ChangelogItem variant="integration" description="Endless possibilities powered by AI.">Contentful &nbsp; <a href="/integrations/contentful">Read docs</a></ChangelogItem>
     </TabItem>
     <TabItem value="updates">
       <ChangelogItem variant="subheader">Updates</ChangelogItem>
@@ -51,17 +47,15 @@ import Button from '@site/src/components/Button';
       <ChangelogItem variant="improvement">Entire Codebase rewritten in TypeScript</ChangelogItem>
       <ChangelogItem variant="improvement">Countless minor updates</ChangelogItem>
     </TabItem>
+
   </Tabs>
 </TabsContainer>
 </div>
 
-
-
 ## Searching for earlier versions?
 
-<Button variant="outlined" size="medium" href="/docs/platform/release/full-changelog">
-    View changelog earlier versions →
+<Button variant="outlined" size="medium" href="/platform/release/full-changelog">
+  View changelog earlier versions →
 </Button>
 
 <div className="mb100">&nbsp;</div>
-

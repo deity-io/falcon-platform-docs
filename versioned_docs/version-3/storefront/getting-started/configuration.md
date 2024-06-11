@@ -8,7 +8,7 @@ sidebar_label: Configuration
 
 Falcon Client configuration can be found in the `client/config` directory.
 
-Configs are stored as an object in [Apollo State](/docs/storefront/state).
+Configs are stored as an object in [Apollo State](/storefront/state).
 
 `config` has **no schema** meaning you can add anything you like.
 

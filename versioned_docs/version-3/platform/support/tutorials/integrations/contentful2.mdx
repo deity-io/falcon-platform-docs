@@ -7,7 +7,7 @@ enterprise_only: true
 ---
 
 <a href="https://www.contentful.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Contentful site">
-  <img src="/docs/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{ margin: '0 0 40px' }} />
+  <img src="/img/docs/platform/contentful-logo.svg" alt="Contentful Logo" width="200" style={{ margin: '0 0 40px' }} />
 </a>
 
 In this tutorials we will look at **dynamic routing** using the `extension` from [part 1](contentful).
@@ -117,7 +117,7 @@ At the moment we are only querying the title and description. If you want more d
 
 At the moment we just rendering the title, description and changing the page title.
 
-Notice we are using `<Helmet>` to change the page title. To learn more about this read how [falcon manages meta data via helmet](/docs/storefront/meta-data).
+Notice we are using `<Helmet>` to change the page title. To learn more about this read how [falcon manages meta data via helmet](/storefront/meta-data).
 
 **`client/src/components/Course/Course.js`**
 
@@ -157,14 +157,14 @@ export default Course;
 
 ## 3. Return URL data from our API
 
-`<SwitchDynamicURL>` is used for routing in Falcon Platform, it's worth looking at routing details [here](/docs/storefront/routing).
+`<SwitchDynamicURL>` is used for routing in Falcon Platform, it's worth looking at routing details [here](/storefront/routing).
 
 All APIs that are registered in our `server/config/default.json` and contain **both** the below methods will be checked.
 
 - `fetchUrl`
 - `getFetchUrlPriority`
 
-`getFetchUrlPriority` is used to set priority of your API. You might want to alter the priority if you're worried about URLs clashing. This is covered in our [docs](/docs/storefront/routing).
+`getFetchUrlPriority` is used to set priority of your API. You might want to alter the priority if you're worried about URLs clashing. This is covered in our [docs](/storefront/routing).
 
 **`server/src/falcon-contentful-api/index.js`**
 

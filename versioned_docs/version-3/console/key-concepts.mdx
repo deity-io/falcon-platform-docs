@@ -11,44 +11,46 @@ import Button from '@site/src/components/Button';
 # Key concepts
 
 ## Deity Cloud
+
 Deity Cloud is an infrastructure that allows you to build and host your Deity platform. It will scale automatically depending on your needs and traffic, meaning your site is always blazing fast. Deity Cloud uses Google web services to provide a scalable and geo appropriate hosting solution for your app.
 
-<Button variant="outlined" size="medium" href="/docs/console/cloud/about">
+<Button variant="outlined" size="medium" href="/console/cloud/about">
   More about Deity Cloud →
 </Button>
 
-
 ## Organization
+
 Your organization is the billing entity which holds all your projects and users. You can manage your contact details, invite and manage your users, add or delete billing methods and download your invoices.
 
-<Button variant="outlined" size="medium" href="/docs/console/organization">
+<Button variant="outlined" size="medium" href="/console/organization">
   More about organizations →
 </Button>
 
 ## Projects
+
 Depending on the number of projects your organization is managing in the Deity Platform, you’ll see a list of projects to choose from, or you’ll directly see the specific project dashboard you’ve been granted access to.
 
-<Button variant="outlined" size="medium" href="/docs/console/organization/projects">
+<Button variant="outlined" size="medium" href="/console/organization/projects">
   More about projects →
 </Button>
 
 <div className="mb80"></div>
 
-
 ## Managing your Deity products
+
 <div className="flex mb100 brighten">
-  <Card to="/docs/console/composer">
-    <img src="/docs/img/icons/ticker.svg" />
+  <Card to="/console/composer">
+    <img src="/img/icons/ticker.svg" />
     <h4>Composer</h4>
     <p>Compose outstanding digital experiences to achieve transactional excellence.</p>
   </Card>
-  <Card to="/docs/console/storefront">
-    <img src="/docs/img/icons/shop.svg" />
+  <Card to="/console/storefront">
+    <img src="/img/icons/shop.svg" />
     <h4>Storefront</h4>
     <p>Focus on customer experience to exceed expectations.</p>
   </Card>
-  <Card to="/docs/console/payments">
-    <img src="/docs/img/icons/coins.svg" />
+  <Card to="/console/payments">
+    <img src="/img/icons/coins.svg" />
     <h4>Payments</h4>
     <p>Integrate multiple payment service providers to use any payment method.</p>
   </Card>
@@ -57,28 +59,40 @@ Depending on the number of projects your organization is managing in the Deity P
 ## Other platform concepts
 
 <div className="flex brighten">
-  <Card to="/docs/console/organization/projects">
-    <img src="/docs/img/icons/activity.svg" />
+  <Card to="/console/organization/projects">
+    <img src="/img/icons/activity.svg" />
     <h4>Platform usage</h4>
-    <p>For each organization project, Deity offers pre-paid subscriptions that include a large number of GraphQL client requests. Once you go over this threshold, you’ll be billed surcharges separately based on the number of incoming client requests.</p>
+    <p>
+      For each organization project, Deity offers pre-paid subscriptions that include a large number of GraphQL client
+      requests. Once you go over this threshold, you’ll be billed surcharges separately based on the number of incoming
+      client requests.
+    </p>
   </Card>
-  <Card to="/docs/console/settings/environments">
-    <img src="/docs/img/icons/cloud.svg" />
+  <Card to="/console/settings/environments">
+    <img src="/img/icons/cloud.svg" />
     <h4>Environments</h4>
-    <p>For each project, Deity offers three Deity Cloud environments to start with; Test, acceptance & production. If you need more environments for your project, you can always request more.</p>
+    <p>
+      For each project, Deity offers three Deity Cloud environments to start with; Test, acceptance & production. If you
+      need more environments for your project, you can always request more.
+    </p>
   </Card>
 </div>
 
 <div className="flex mb80 brighten">
-  <Card to="/docs/console/builds-deployments/builds">
-    <img src="/docs/img/icons/cpu.svg" />
+  <Card to="/console/builds-deployments/builds">
+    <img src="/img/icons/cpu.svg" />
     <h4>Builds</h4>
-    <p>A build is a full build of a particular commit. This is not accessible unless it's deployed. Having builds for each of your commits means it's near instant to update your environments.</p>
+    <p>
+      A build is a full build of a particular commit. This is not accessible unless it's deployed. Having builds for
+      each of your commits means it's near instant to update your environments.
+    </p>
   </Card>
-  <Card to="/docs/console/builds-deployments/deployments">
-    <img src="/docs/img/icons/deployment.svg" />
+  <Card to="/console/builds-deployments/deployments">
+    <img src="/img/icons/deployment.svg" />
     <h4>Deployments</h4>
-    <p>Deployments are when a build has been pushed to an environment. You can deploy these builds to one of your environments.</p>
+    <p>
+      Deployments are when a build has been pushed to an environment. You can deploy these builds to one of your
+      environments.
+    </p>
   </Card>
 </div>
-

@@ -4,21 +4,21 @@ import Link from '@docusaurus/Link';
 
 import styles from './styles.module.css';
 
-const getDocType = (path) => {
-  const platformDocsPath = 'docs/platform';
-  const openSourceDocsPath = 'docs/v2019';
+const getDocType = path => {
+  const platformDocsPath = 'platform';
+  const openSourceDocsPath = 'v2019';
 
   if (path.includes(platformDocsPath)) {
     return {
       id: 1,
       title: 'Falcon Platform',
-      url: '/docs/platform/overview'
+      url: '/platform/overview'
     };
   } else if (path.includes(openSourceDocsPath)) {
     return {
       id: 2,
       title: 'Falcon 2019',
-      url: '/docs/v2019/platform/getting-started/intro'
+      url: '/v2019/platform/getting-started/intro'
     };
   }
 

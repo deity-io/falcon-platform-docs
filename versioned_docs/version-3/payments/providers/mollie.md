@@ -9,14 +9,14 @@ hide_title: true
 import Button from '@site/src/components/Button';
 
 <a href="https://mollie.com/" rel="noreferrer noopener" target="_blank" aria-label="visit the Mollie site" className="invert">
-  <img src="/docs/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" className="height80 pb20"/>
+  <img src="/img/docs/platform/mollie-logo.svg" alt="Mollie Logo" className="height80 pb20"/>
 </a>
 
 <h1 className="headline mb20">Mollie</h1>
 
 ## Payments designed for growth
-An advanced solution to accept payments, optimise conversion, and access funding.
 
+An advanced solution to accept payments, optimise conversion, and access funding.
 
 import Notice from "../../includes/integrated-with-dpsg.mdx"
 
@@ -30,7 +30,7 @@ import Notice from "../../includes/integrated-with-dpsg.mdx"
 
 ### Payment methods
 
-*( Description : `code`)*
+_( Description : `code`)_
 
 - Credit card (with and without 3D secure) : `creditcard`
 - iDEAL : `ideal`
@@ -60,7 +60,6 @@ Need a method that Mollie supports adding to the list? Please contact us as it m
 
 The easiest way to configure Mollie is by using `dcloud` CLI and the `dcloud payments:provider:configure` command. If you want to configure it manually, this can be achieved using [this endpoint →](https://dpsg.deity.cloud/#/Management/EnvironmentPaymentProviderController_mollie_create)
 
-
 ```json
 {
   "profileId": "string", // Private
@@ -69,4 +68,4 @@ The easiest way to configure Mollie is by using `dcloud` CLI and the `dcloud pay
 }
 ```
 
-To get your profile ID &amp; API key you must have a [Mollie account](https://www.mollie.com/dashboard/).  Please ensure `testMode` is set to true when using test credentials.
+To get your profile ID &amp; API key you must have a [Mollie account](https://www.mollie.com/dashboard/). Please ensure `testMode` is set to true when using test credentials.

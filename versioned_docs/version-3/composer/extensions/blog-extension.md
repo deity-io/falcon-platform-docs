@@ -16,10 +16,7 @@ import NoticeV3 from "../../includes/upgrade-to-v3.mdx"
 
 # Blog extension
 
-
-
-<CodePackage name="@deity/falcon-blog-extension" /> 
-
+<CodePackage name="@deity/falcon-blog-extension" />
 
 This extension provides basic features for blog implementation:
 
@@ -31,22 +28,21 @@ This extension provides basic features for blog implementation:
 ## Available integrations
 
 <div className="flex">
-  <Card to="/docs/integrations/contentful">
+  <Card to="/integrations/contentful">
     <div className="round-icon">
-      <img src="/docs/img/icons/contentful.svg" />
+      <img src="/img/icons/contentful.svg" />
     </div>
     <h4>Contentful</h4>
     <p>Build captivating experiences that stand out with the intelligent composable content platform.</p>
   </Card>
-  <Card to="/docs/integrations/wordpress">
+  <Card to="/integrations/wordpress">
     <div className="round-icon">
-      <img src="/docs/img/icons/wordpress.svg" />
+      <img src="/img/icons/wordpress.svg" />
     </div>
     <h4>Wordpress</h4>
     <p>Build and grow your website with the best way to WordPress. </p>
   </Card>
 </div>
-
 
 ## Usage
 
