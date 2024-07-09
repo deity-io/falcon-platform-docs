@@ -10,7 +10,7 @@ hide_title: true
   <img src="/img/docs/platform/stripe-logo.svg" alt="Stripe Logo" className="height80"/>
 </a>
 
-<h1 className="headline mb20">Stripw</h1>
+<h1 className="headline mb20">Stripe</h1>
 
 ## Payments infrastructure for the internet
 
