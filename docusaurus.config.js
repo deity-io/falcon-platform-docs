@@ -192,7 +192,7 @@ module.exports = {
 
     algolia: {
       appId: 'BPQ949H0LU',
-      apiKey: '3e60ad703b9aa8f07904844cceb1a018',
+      apiKey: 'b344afb72f98b64b6dd8e8038f1b0292',
       indexName: 'deity',
       algoliaOptions: {}
     },
