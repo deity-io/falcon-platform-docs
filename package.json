@@ -58,7 +58,7 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.2.2",
     "@tsconfig/docusaurus": "^1.0.7",
-    "@types/react": "^18.3.4",
+    "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "babel-loader": "^8.3.0",
     "css-loader": "^6.11.0",
