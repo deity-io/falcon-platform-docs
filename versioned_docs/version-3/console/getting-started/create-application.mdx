@@ -5,63 +5,75 @@ description: Create Deity application
 sidebar_label: 2. Create application
 ---
 
-import { Card, CardContent } from '@site/src/components/Card';
 import Badge from '@site/src/components/Badge';
 import Button from '@site/src/components/Button';
+import { Card, CardContent } from '@site/src/components/Card';
 
 Now that you have access to our packages, let’s create a Deity template application. You can choose from three of our templates.
 
 ## Choose demo template
 
 <div class="mb20">
- <Card variant="horizontal" to="">
- 	<span style={{height:56}}><img src="/img/icons/adobe.svg" className="round-icon" /></span>&nbsp;+&nbsp;
- 	<span style={{height:56}} className="brighten"><img src="/img/icons/deity.svg" className="round-icon" /></span>&nbsp;+&nbsp;
-    <span style={{height:56}}><img src="/img/icons/wordpress.svg" className="round-icon" /></span>
+  <Card variant="horizontal" to="">
+    <span style={{ height: 56 }}>
+      <img src="/img/icons/adobe.svg" className="round-icon" />
+    </span>
+    &nbsp;+&nbsp;
+    <span style={{ height: 56 }} className="brighten">
+      <img src="/img/icons/deity.svg" className="round-icon" />
+    </span>
+    &nbsp;+&nbsp;
+    <span style={{ height: 56 }}>
+      <img src="/img/icons/wordpress.svg" className="round-icon" />
+    </span>
     <div>
       <h5>demo-v1</h5>
-      <p>
-       Template with Adobe Commerce CE store and a WordPress blog.
-      </p>
-    </div>
-
-    <Button variant="outlined" size="small" href="https://v3demo1.deity.io/" target="_blank">
+      <p style={{ marginBottom: 8 }}>Template with Adobe Commerce CE store and a WordPress blog.</p>
+      <Button variant="outlined" size="small" href="https://v3demo1.deity.io/" target="_blank">
         View demo →
-     </Button>
-
- </Card>
- <Card variant="horizontal" to="">
-    <span style={{height:56}}><img src="/img/icons/bigcommerce.svg" className="round-icon" /></span>&nbsp;+&nbsp;
-    <span style={{height:56}} className="brighten"><img src="/img/icons/deity.svg" className="round-icon" /></span>&nbsp;+&nbsp;
-    <span style={{height:56}}><img src="/img/icons/algolia.svg" className="round-icon" /></span>
+      </Button>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="">
+    <span style={{ height: 56 }}>
+      <img src="/img/icons/bigcommerce.svg" className="round-icon" />
+    </span>
+    &nbsp;+&nbsp;
+    <span style={{ height: 56 }} className="brighten">
+      <img src="/img/icons/deity.svg" className="round-icon" />
+    </span>
+    &nbsp;+&nbsp;
+    <span style={{ height: 56 }}>
+      <img src="/img/icons/algolia.svg" className="round-icon" />
+    </span>
     <div>
       <h5>demo-v2</h5>
-      <p>
-       Template based on BigCommerce and Algolia search engine.
-      </p>
-    </div>
-
-    <Button variant="outlined" size="small" href="https://v3demo2.deity.io/" target="_blank">
+      <p style={{ marginBottom: 8 }}>Template based on BigCommerce and Algolia search engine.</p>
+      <Button variant="outlined" size="small" href="https://v3demo2.deity.io/" target="_blank">
         View demo →
-     </Button>
-
- </Card>
- <Card variant="horizontal" to="">
-   	<span style={{height:56}}><img src="/img/icons/commercetools.svg" className="round-icon" /></span>&nbsp;+&nbsp;
-    <span style={{height:56}} className="brighten"><img src="/img/icons/deity.svg" className="round-icon" /></span>&nbsp;+&nbsp;
-    <span style={{height:56}}><img src="/img/icons/contentful.svg" className="round-icon" /></span>
+      </Button>
+    </div>
+  </Card>
+  <Card variant="horizontal" to="">
+    <span style={{ height: 56 }}>
+      <img src="/img/icons/commercetools.svg" className="round-icon" />
+    </span>
+    &nbsp;+&nbsp;
+    <span style={{ height: 56 }} className="brighten">
+      <img src="/img/icons/deity.svg" className="round-icon" />
+    </span>
+    &nbsp;+&nbsp;
+    <span style={{ height: 56 }}>
+      <img src="/img/icons/contentful.svg" className="round-icon" />
+    </span>
     <div>
       <h5>demo-v3</h5>
-      <p>
-       Template based on a Commercetools store and Contentful blog.
-      </p>
-    </div>
-
-    <Button variant="outlined" size="small" href="https://v3demo3.deity.io/" target="_blank">
+      <p style={{ marginBottom: 8 }}>Template based on a Commercetools store and Contentful blog.</p>
+      <Button variant="outlined" size="small" href="https://v3demo3.deity.io/" target="_blank">
         View demo →
-     </Button>
-
- </Card>
+      </Button>
+    </div>
+  </Card>
 </div>
 
 You can generate one of these template apps by running the following command in your terminal:
