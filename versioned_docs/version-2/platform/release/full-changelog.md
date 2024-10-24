@@ -7,6 +7,100 @@ description: Falcon platform all versions and their release notes
 
 Versions marked with a number and date (e.g. Falcon Platform v2.1.1 (2020-05-08)) are already released and available via npm.
 
+## Falcon Platform 2.7.25 (2022-05-18)
+
+- updated dependencies of all packages
+
+### Falcon BigCommerce API
+
+- fixed resolver for stock quantity field
+
+### Falcon Client
+
+- allow hidden files to be served by webserver (in order to use .well-known folder)
+
+### Examples
+
+- fixed sign-up sidebar as it was impossible to open it
+
+## Falcon Platform 2.7.24 (2022-01-21)
+
+### Falcon Wordpress API
+
+- Fixed resolver `blogPage` (uses a proper url now to fetch the data)
+
+## Falcon Platform 2.7.23 (2021-12-06)
+
+- updated dependencies of all packages
+
+### Examples
+
+- Fixed GalleryPagination interaction
+
+- Fixed generation of cache ids for MenuItem (on the client)
+
+- Fixed rendering of ProductOptionList
+
+### Falcon Demo
+
+- BREAKING: changed `id` value for Product operations
+
+### Falcon BigCommerce Endpoints
+
+- added handlers for `store/sku/*` webhooks
+- BREAKING: flushing cache tags using `id` value for products/categories
+
+### Falcon Shop Extension
+
+- BREAKING: using `id` instead of `sku` value for most of the Product operations
+
+## Falcon Platform 2.7.22 (2021-11-10)
+
+### Examples
+
+- Change iDEAL in translations files from iDeal to iDEAL
+
+### Falcon UI Kit
+- Added support for multi level children support for `MenuNavigation`
+
+### Falcon BigCommerce API
+- Added support for multi level navigation children in `Menu` resolver
+
+### Falcon Magento2 API
+- Added support for multi level navigation children in `Menu` resolver
+
+## Falcon Platform 2.7.21 (2021-10-08)
+
+### Falcon Algolia API
+
+- Improved error logging
+
+### Falcon BigCommerce API
+
+- Improved caching of backend configuration to speed up resovlers which use that config
+- Fixed issue with cache context - removed `async` as this method must be synchronous and is used in that way
+
+## Falcon Platform 2.7.20 (2021-10-07)
+
+### Falcon BigCommerce API
+
+- Fixed issues with password reset logic
+
+### Falcon Client
+
+- Added geolocation data to page renderer so it's possible to select scope based on geo location
+- Fixed scope changing logic (when scope gets saved to cookie)
+
+### Falcon Algolia API
+
+- Removed session-related code from Algolia endpoints
+
+## Falcon Platform 2.7.19 (2021-09-14)
+
+### Falcon Algolia API
+
+- Fixed enpoint that updates Algolia index configuration
+
 ## Falcon Platform 2.7.18 (2021-09-08)
 
 ### Demo V2
