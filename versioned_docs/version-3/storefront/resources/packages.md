@@ -36,9 +36,9 @@ Falcon Platform Ships with various `@deity` packages.
 - [payment/falcon-adyen-plugin](/platform/resources/packages/falcon-adyen-plugin)
 - [payment/falcon-paypal-plugin](/platform/resources/packages/falcon-paypal-plugin)
 
-There are a few naming convensions that will help you understand each package.
+There are a few naming conventions that will help you understand each package.
 
 - `[PACKAGE]-[SERVICE]-api` Packages named this way connect to APIs. An example is `falcon-wordpress-api`
-- `[PACKAGE]-[TYPE]-extension` These packages handle data from APIs. `TYPE` referes to the data type e.g. `blog` or `shop`.
+- `[PACKAGE]-[TYPE]-extension` These packages handle data from APIs. `TYPE` refers to the data type e.g. `blog` or `shop`.
 - `[PACKAGE]-[TYPE]-data` These packages handle the data from `extension` packages. They usually contain components that pass a GraphQL query to the extension package. `TYPE` is the data type, e.g. `blog`.
 - `[PACKAGE]-[TYPE/SERVICE]-plugin` These packages usually extend their corresponding extension.
