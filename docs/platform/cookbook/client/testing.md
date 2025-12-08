@@ -10,7 +10,7 @@ We are going to mock a **Falcon Client** component that grabs data from `Apollo`
 
 ## 1. Create your component
 
-We our going to create a simple component that grabs store configuration (using `Apollo`) and renders it on the page.
+We are going to create a simple component that grabs store configuration (using `Apollo`) and renders it on the page.
 
 **`client/src/components/Banner.js`**
 ```js
@@ -61,7 +61,7 @@ If that's not working, check you have the config `appName` in your `client/confi
 
 Create the file `client/src/components/Banner.test.js`.
 
-Now we are going to add our first test. This test won't test the component but we just want to check out tet file is being run.
+Now we are going to add our first test. This test won't test the component but we just want to check out test file is being run.
 
 **`client/src/components/Banner.test.js`**
 ```js
@@ -84,7 +84,7 @@ Now type `o` from in the same command line window. That will watch for tests tha
 
 Change the description of the text, save it and you should see the test run again automatically, this time with a little more detail.
 
-```conosle
+```console
  PASS  src/components/Banner.test.js
   <Banner />
     ✓ Check test is run
@@ -154,7 +154,7 @@ describe('<Banner />', () => {
 
 We are testing that the text `loading...` is rendered. In reality you might want to test something less specific.
 
-We use the `apollo` prop with our `<FalconClientMock />` component to **map our GraphQL queries**. This means that we don't need to rely on an API to test our component, it's completely seperated....a **unit test**.
+We use the `apollo` prop with our `<FalconClientMock />` component to **map our GraphQL queries**. This means that we don't need to rely on an API to test our component, it's completely separated....a **unit test**.
 
 ```js
 const mocks = [

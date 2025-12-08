@@ -28,7 +28,7 @@ This file path can be configured in your `server/config` files. The config varia
 
 ### 1 to 1 redirect
 
-The format of this file should have each redirect on a new line with the orgin and destination seperated by a space.
+The format of this file should have each redirect on a new line with the origin and destination separated by a space.
 
 ```
 origin destination
@@ -57,9 +57,9 @@ In this example any url that ends in `/product-1` will be redirected to `/produc
 
 ### Query string support
 
-If you want to pass query parameters accross that is also possible by assigning them to a variable using `(.*)$`.
+If you want to pass query parameters across that is also possible by assigning them to a variable using `(.*)$`.
 
-Each time you use the string `(.*)$` it is passed as a variable in numberical order to `$1` and then `$2` and so on.
+Each time you use the string `(.*)$` it is passed as a variable in numerical order to `$1` and then `$2` and so on.
 
 **example**
 
